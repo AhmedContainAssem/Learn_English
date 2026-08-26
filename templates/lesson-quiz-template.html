@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ✏️ 1. عنوان الصفحة في المتصفح -->
+    <title>Unit X - Lesson X: Lesson Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- ✏️ 2. مسار الدرس (Breadcrumb) -->
+        <div class="breadcrumb">
+            <span>الصف الدراسي</span> / <span>الوحدة الأولى</span> / <span>اسم الدرس</span>
+        </div>
+
+        <!-- ✏️ 3. رأس الدرس -->
+        <div class="teacher-profile-header">
+            <h1 id="title" class="lesson-header-title">Unit X - Lesson X</h1>
+            <p id="description" class="lesson-desc-display">وصف أو موضوع الدرس هنا</p>
+        </div>
+
+        <!-- لوحة النتيجة والأسئلة (تلقائية بالكامل) -->
+        <div class="score-board">
+            <span>السؤال: <span id="current-q">1</span> / <span id="total-q">0</span></span>
+            <span>النقاط: <span id="score">0</span> 🌟</span>
+        </div>
+
+        <div class="question-card">
+            <span class="emoji-display" id="emoji">🎯</span>
+            <div class="question-text" id="question">جاري تحميل السؤال...</div>
+            <div class="options-grid" id="options"></div>
+            <div class="feedback" id="feedback"></div>
+        </div>
+
+        <div class="center-row">
+            <button class="action-btn next-btn" id="next-btn" onclick="nextQuestion()">السؤال التالي ➔</button>
+        </div>
+
+        <!-- أزرار التحكم -->
+        <div class="nav-controls">
+            <a href="./index.html" class="action-btn secondary" data-sound-click="click">⬅ العودة لقائمة الدروس</a>
+        </div>
+    </div>
+
+    <!-- ============================================================
+         ✏️ 4. منطقة كتابة الأسئلة فقط (انسخ وعدّل حسب رغبتك)
+         ============================================================ -->
+    <script>
+        window.lessonData = {
+            title: "Unit 1 - Lesson 1: Vocabulary & Grammar 🎯",
+            description: "اختبر معلوماتك في الدرس مع مستر أحمد عاصم!",
+            questions: [
+                // 👇 السؤال الأول
+                {
+                    emoji: "🍎",
+                    question: "We eat with our mouth. What is 'Apple' in Arabic?",
+                    options: [
+                        { text: "تفاحة", isCorrect: true },
+                        { text: "موزة", isCorrect: false },
+                        { text: "برتقالة", isCorrect: false }
+                    ],
+                    correctMsg: "ممتاز! أحسنت 🎯 (+10)",
+                    wrongMsg: "إجابة خاطئة، حاول مرة أخرى!"
+                },
+
+                // 👇 السؤال الثاني
+                {
+                    emoji: "🏃‍♂️",
+                    question: "He _______ to school every morning.",
+                    options: [
+                        { text: "walks", isCorrect: true },
+                        { text: "walk", isCorrect: false },
+                        { text: "walking", isCorrect: false }
+                    ],
+                    correctMsg: "رائع! مع المفرد نضيف s للفعل (+10)",
+                    wrongMsg: "تذكر قاعدة المضارع البسيط!"
+                }
+
+                // ➕ يمكنك تكرار الأقواس {} لإضافة أي عدد تريده من الأسئلة!
+            ]
+        };
+    </script>
+
+    <!-- ملفات النظام والمحرك (لا تقم بتعديلها) -->
+    <script src="../../assets/js/bidi.js"></script>
+    <script src="../../assets/js/audio.js"></script>
+    <script src="../../assets/js/quiz-engine.js"></script>
+    <script src="../../assets/js/ui.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,384 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="100%" height="100%">
+  <defs>
+    <!-- Background Canvas Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a13" />
+      <stop offset="50%" stop-color="#0d1424" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <!-- Chrome / Window Gradients -->
+    <linearGradient id="windowHeader" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <linearGradient id="panelBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#131b2e" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#0b101d" stop-opacity="0.98" />
+    </linearGradient>
+
+    <linearGradient id="cardActive" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#162c46" />
+      <stop offset="100%" stop-color="#0d1f33" />
+    </linearGradient>
+
+    <linearGradient id="cyanNeon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f3ff" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+
+    <linearGradient id="magentaNeon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff007a" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+
+    <linearGradient id="greenNeon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ff88" />
+      <stop offset="100%" stop-color="#00f3ff" />
+    </linearGradient>
+
+    <linearGradient id="orangeNeon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff9d5c" />
+      <stop offset="100%" stop-color="#ff5e00" />
+    </linearGradient>
+
+    <!-- Shadow & Glow Filters -->
+    <filter id="windowDropShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="18" stdDeviation="25" flood-color="#000000" flood-opacity="0.8" />
+      <feDropShadow dx="0" dy="0" stdDeviation="15" flood-color="#00f3ff" flood-opacity="0.12" />
+    </filter>
+
+    <filter id="cyanGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .title-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 800; }
+    .mono-text { font-family: 'Fira Code', 'SF Mono', Consolas, Monaco, monospace; }
+    .regular-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+  </style>
+
+  <!-- Outer Canvas Background -->
+  <rect width="1200" height="780" fill="url(#bgGrad)" rx="16" />
+
+  <!-- Ambient Backdrop Lights -->
+  <circle cx="150" cy="180" r="160" fill="#00f3ff" opacity="0.06" filter="url(#cyanGlow)" />
+  <circle cx="1080" cy="620" r="180" fill="#ff007a" opacity="0.05" filter="url(#cyanGlow)" />
+
+  <!-- Showcase Header Label -->
+  <g transform="translate(50, 40)">
+    <rect x="0" y="0" width="160" height="26" rx="13" fill="rgba(0, 243, 255, 0.12)" stroke="#00f3ff" stroke-width="1" />
+    <text x="80" y="17" fill="#00f3ff" font-size="11" class="mono-text" font-weight="bold" text-anchor="middle">TEACHER PORTAL</text>
+    <text x="175" y="19" fill="#ffffff" font-size="20" class="title-text">Lesson Studio &amp; Curriculum Builder Interface</text>
+    <text x="175" y="38" fill="#94a3b8" font-size="12" class="regular-text">Zero-backend Jamstack authoring environment with direct GitHub sync &amp; multi-archetype scaffolding</text>
+  </g>
+
+  <!-- MAIN WINDOW FRAME CONTAINER -->
+  <g transform="translate(50, 95)" filter="url(#windowDropShadow)">
+    <!-- Window Outer Shell -->
+    <rect width="1100" height="645" rx="14" fill="#0c121e" stroke="#334155" stroke-width="1.2" />
+
+    <!-- Window Top Header Bar (OS Titlebar) -->
+    <rect width="1100" height="42" rx="14" fill="url(#windowHeader)" />
+    <!-- Flatten bottom corners of titlebar -->
+    <rect y="28" width="1100" height="14" fill="#0f172a" />
+    <line x1="0" y1="42" x2="1100" y2="42" stroke="#1e293b" stroke-width="1" />
+
+    <!-- Window Control Buttons (Red, Yellow, Green) -->
+    <circle cx="24" cy="21" r="6" fill="#ef4444" />
+    <circle cx="44" cy="21" r="6" fill="#f59e0b" />
+    <circle cx="64" cy="21" r="6" fill="#10b981" />
+
+    <!-- Window URL Address Bar -->
+    <rect x="110" y="9" width="480" height="24" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+    <circle cx="126" cy="21" r="4" fill="#00f3ff" />
+    <text x="140" y="25" fill="#38bdf8" font-size="11" class="mono-text">https://learn-english.edu/admin/index.html</text>
+
+    <!-- Session Status Badges on Titlebar -->
+    <rect x="860" y="9" width="110" height="24" rx="6" fill="rgba(0, 255, 136, 0.12)" stroke="#00ff88" stroke-width="1" />
+    <circle cx="875" cy="21" r="3.5" fill="#00ff88" />
+    <text x="925" y="24" fill="#00ff88" font-size="11" class="mono-text" text-anchor="middle">SYNCED (v3.4)</text>
+
+    <rect x="980" y="9" width="105" height="24" rx="6" fill="rgba(255, 0, 122, 0.15)" stroke="#ff007a" stroke-width="1" />
+    <text x="1032" y="24" fill="#ff70a6" font-size="11" class="mono-text" text-anchor="middle">TEACHER AUTH</text>
+
+    <!-- ========================================== -->
+    <!-- APP TOOLBAR SECTION -->
+    <!-- ========================================== -->
+    <g transform="translate(20, 56)">
+      <!-- Studio Brand & Breadcrumb -->
+      <text x="0" y="22" fill="#ffffff" font-size="16" class="title-text">⚡ Lesson Studio</text>
+      <text x="145" y="22" fill="#64748b" font-size="13" class="mono-text">/</text>
+      <text x="160" y="22" fill="#00f3ff" font-size="13" class="mono-text" font-weight="bold">Prep_3</text>
+      <text x="215" y="22" fill="#64748b" font-size="13" class="mono-text">/</text>
+      <text x="230" y="22" fill="#38bdf8" font-size="13" class="mono-text">unit-1</text>
+      <text x="285" y="22" fill="#64748b" font-size="13" class="mono-text">/</text>
+      <text x="300" y="22" fill="#a855f7" font-size="13" class="mono-text">Around Town.html</text>
+
+      <!-- Action Buttons Cluster -->
+      <g transform="translate(480, 0)">
+        <!-- Quick Load File -->
+        <rect x="0" y="2" width="75" height="28" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="37" y="19" fill="#cbd5e1" font-size="11" class="regular-text" text-anchor="middle">📂 Open</text>
+
+        <!-- Live Preview -->
+        <rect x="85" y="2" width="85" height="28" rx="6" fill="rgba(56, 189, 248, 0.15)" stroke="#38bdf8" stroke-width="1" />
+        <text x="127" y="19" fill="#38bdf8" font-size="11" class="regular-text" font-weight="bold" text-anchor="middle">👁️ Preview</text>
+
+        <!-- Quality Linter -->
+        <rect x="180" y="2" width="75" height="28" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="217" y="19" fill="#cbd5e1" font-size="11" class="regular-text" text-anchor="middle">🩺 Audit</text>
+
+        <!-- Diagnostics -->
+        <rect x="265" y="2" width="95" height="28" rx="6" fill="rgba(255, 94, 0, 0.15)" stroke="#ff9d5c" stroke-width="1" />
+        <text x="312" y="19" fill="#ff9d5c" font-size="11" class="regular-text" font-weight="bold" text-anchor="middle">🐞 Diagnostics</text>
+
+        <!-- Direct Download -->
+        <rect x="370" y="2" width="85" height="28" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1" />
+        <text x="412" y="19" fill="#e2e8f0" font-size="11" class="regular-text" text-anchor="middle">💾 Export</text>
+
+        <!-- Publish GitHub -->
+        <rect x="465" y="2" width="115" height="28" rx="6" fill="url(#greenNeon)" />
+        <text x="522" y="19" fill="#090d16" font-size="11" class="title-text" text-anchor="middle">🚀 Publish (Sync)</text>
+      </g>
+    </g>
+
+    <line x1="20" y1="96" x2="1080" y2="96" stroke="#1e293b" stroke-width="1" />
+
+    <!-- ========================================== -->
+    <!-- SECTION 1: ARCHETYPE TEMPLATE SELECTOR -->
+    <!-- ========================================== -->
+    <g transform="translate(20, 108)">
+      <text x="0" y="14" fill="#94a3b8" font-size="11" class="mono-text" font-weight="bold">PAGE ARCHETYPE &amp; STRUCTURAL TEMPLATES</text>
+
+      <!-- 6 Clean Archetype Cards (2 rows x 3 columns) -->
+      <!-- Card 1: Curriculum Tabs (Active) -->
+      <g transform="translate(0, 24)">
+        <rect width="345" height="74" rx="10" fill="url(#cardActive)" stroke="#00f3ff" stroke-width="1.8" />
+        <text x="14" y="26" fill="#ffffff" font-size="13" class="title-text">📚 Curriculum Tabs</text>
+        <rect x="270" y="12" width="60" height="18" rx="5" fill="rgba(0,243,255,0.2)" />
+        <text x="300" y="25" fill="#00f3ff" font-size="9.5" class="mono-text" font-weight="bold" text-anchor="middle">Active</text>
+        <text x="14" y="47" fill="#94a3b8" font-size="10.5" class="regular-text">5 Tab Structure: Verbs, Vocabulary, Synonyms,</text>
+        <text x="14" y="61" fill="#94a3b8" font-size="10.5" class="regular-text">Affixes &amp; Interactive Practice Quiz.</text>
+      </g>
+
+      <!-- Card 2: Flashcards & Dialogue -->
+      <g transform="translate(358, 24)">
+        <rect width="345" height="74" rx="10" fill="url(#panelBg)" stroke="#1e293b" stroke-width="1.2" />
+        <text x="14" y="26" fill="#e2e8f0" font-size="13" class="title-text">🎴 Flashcards &amp; Dialogue</text>
+        <rect x="250" y="12" width="80" height="18" rx="5" fill="rgba(168,85,247,0.15)" />
+        <text x="290" y="25" fill="#c084fc" font-size="9.5" class="mono-text" text-anchor="middle">Cards &amp; Audio</text>
+        <text x="14" y="47" fill="#64748b" font-size="10.5" class="regular-text">3D Flip cards with native voice speaker,</text>
+        <text x="14" y="61" fill="#64748b" font-size="10.5" class="regular-text">Two-actor dialogue player &amp; homework task.</text>
+      </g>
+
+      <!-- Card 3: Direct Quiz -->
+      <g transform="translate(715, 24)">
+        <rect width="345" height="74" rx="10" fill="url(#panelBg)" stroke="#1e293b" stroke-width="1.2" />
+        <text x="14" y="26" fill="#e2e8f0" font-size="13" class="title-text">🎯 Direct Quiz</text>
+        <rect x="245" y="12" width="85" height="18" rx="5" fill="rgba(244,63,94,0.15)" />
+        <text x="287" y="25" fill="#fb7185" font-size="9.5" class="mono-text" text-anchor="middle">MCQ Practice</text>
+        <text x="14" y="47" fill="#64748b" font-size="10.5" class="regular-text">Exam-focused layout with audio pronunciation,</text>
+        <text x="14" y="61" fill="#64748b" font-size="10.5" class="regular-text">Instant evaluation &amp; confetti rewards.</text>
+      </g>
+
+      <!-- Card 4: Stage Index Hub -->
+      <g transform="translate(0, 106)">
+        <rect width="345" height="68" rx="10" fill="url(#panelBg)" stroke="#1e293b" stroke-width="1.2" />
+        <text x="14" y="25" fill="#e2e8f0" font-size="13" class="title-text">🏫 Stage Index Hub</text>
+        <rect x="260" y="11" width="70" height="18" rx="5" fill="rgba(0,255,136,0.15)" />
+        <text x="295" y="24" fill="#00ff88" font-size="9.5" class="mono-text" text-anchor="middle">Stage Hub</text>
+        <text x="14" y="46" fill="#64748b" font-size="10.5" class="regular-text">Main grade portal index listing all units &amp; terms.</text>
+      </g>
+
+      <!-- Card 5: Unit Lessons Hub -->
+      <g transform="translate(358, 106)">
+        <rect width="345" height="68" rx="10" fill="url(#panelBg)" stroke="#1e293b" stroke-width="1.2" />
+        <text x="14" y="25" fill="#e2e8f0" font-size="13" class="title-text">📁 Unit Lessons Hub</text>
+        <rect x="270" y="11" width="60" height="18" rx="5" fill="rgba(56,189,248,0.15)" />
+        <text x="300" y="24" fill="#38bdf8" font-size="9.5" class="mono-text" text-anchor="middle">Unit Hub</text>
+        <text x="14" y="46" fill="#64748b" font-size="10.5" class="regular-text">Unit subfolder portal listing lessons &amp; tests.</text>
+      </g>
+
+      <!-- Card 6: 3D Storybook Reader -->
+      <g transform="translate(715, 106)">
+        <rect width="345" height="68" rx="10" fill="url(#panelBg)" stroke="#1e293b" stroke-width="1.2" />
+        <text x="14" y="25" fill="#e2e8f0" font-size="13" class="title-text">📖 Storybook Reader</text>
+        <rect x="255" y="11" width="75" height="18" rx="5" fill="rgba(255,0,122,0.15)" />
+        <text x="292" y="24" fill="#ff70a6" font-size="9.5" class="mono-text" text-anchor="middle">Storyteller</text>
+        <text x="14" y="46" fill="#64748b" font-size="10.5" class="regular-text">Interactive 3D book with dual-page narration.</text>
+      </g>
+    </g>
+
+    <line x1="20" y1="295" x2="1080" y2="295" stroke="#1e293b" stroke-width="1" />
+
+    <!-- ========================================== -->
+    <!-- SECTION 2: METADATA & EDITOR TABS -->
+    <!-- ========================================== -->
+    <g transform="translate(20, 308)">
+      <!-- Lesson Meta Inputs Row -->
+      <g transform="translate(0, 0)">
+        <!-- Grade / Stage Select -->
+        <g transform="translate(0, 0)">
+          <text x="0" y="12" fill="#94a3b8" font-size="10.5" class="mono-text">GRADE / STAGE</text>
+          <rect x="0" y="20" width="200" height="32" rx="6" fill="#090d16" stroke="#334155" stroke-width="1" />
+          <text x="12" y="41" fill="#00f3ff" font-size="12" class="title-text">Prep 3 (Third Prep)</text>
+        </g>
+
+        <!-- Unit Name -->
+        <g transform="translate(215, 0)">
+          <text x="0" y="12" fill="#94a3b8" font-size="10.5" class="mono-text">UNIT IDENTIFIER</text>
+          <rect x="0" y="20" width="180" height="32" rx="6" fill="#090d16" stroke="#334155" stroke-width="1" />
+          <text x="12" y="41" fill="#ffffff" font-size="12" class="regular-text">unit-1</text>
+        </g>
+
+        <!-- Lesson Title -->
+        <g transform="translate(410, 0)">
+          <text x="0" y="12" fill="#94a3b8" font-size="10.5" class="mono-text">LESSON TITLE (ENGLISH)</text>
+          <rect x="0" y="20" width="310" height="32" rx="6" fill="#090d16" stroke="#334155" stroke-width="1" />
+          <text x="12" y="41" fill="#ffffff" font-size="12" class="regular-text">Unit 1: Around Town - Lesson 1 &amp; 2</text>
+        </g>
+
+        <!-- Target File Path Display -->
+        <g transform="translate(735, 0)">
+          <text x="0" y="12" fill="#94a3b8" font-size="10.5" class="mono-text">TARGET REPOSITORY PATH</text>
+          <rect x="0" y="20" width="325" height="32" rx="6" fill="#090d16" stroke="#00f3ff" stroke-width="1" />
+          <text x="12" y="41" fill="#38bdf8" font-size="11.5" class="mono-text">Prep_3/unit-1/lesson-1.html</text>
+        </g>
+      </g>
+
+      <!-- Editor Content Tabs -->
+      <g transform="translate(0, 68)">
+        <!-- Tab 1: General Info -->
+        <rect x="0" y="0" width="145" height="30" rx="6" fill="#1e293b" />
+        <text x="72" y="19" fill="#94a3b8" font-size="11" class="regular-text" text-anchor="middle">⚙️ Overview</text>
+
+        <!-- Tab 2: Verbs Conjugation (Active) -->
+        <rect x="152" y="0" width="165" height="30" rx="6" fill="rgba(0,243,255,0.15)" stroke="#00f3ff" stroke-width="1.2" />
+        <text x="234" y="19" fill="#00f3ff" font-size="11" class="title-text" text-anchor="middle">🔤 Irregular Verbs (12)</text>
+
+        <!-- Tab 3: Vocabulary & Definitions -->
+        <rect x="324" y="0" width="180" height="30" rx="6" fill="#1e293b" />
+        <text x="414" y="19" fill="#94a3b8" font-size="11" class="regular-text" text-anchor="middle">📖 Vocab &amp; Defs (18)</text>
+
+        <!-- Tab 4: Synonyms & Antonyms -->
+        <rect x="511" y="0" width="170" height="30" rx="6" fill="#1e293b" />
+        <text x="596" y="19" fill="#94a3b8" font-size="11" class="regular-text" text-anchor="middle">🔄 Syn &amp; Ant (10)</text>
+
+        <!-- Tab 5: Interactive Quiz -->
+        <rect x="688" y="0" width="170" height="30" rx="6" fill="#1e293b" />
+        <text x="773" y="19" fill="#94a3b8" font-size="11" class="regular-text" text-anchor="middle">🎯 MCQ Quiz (15)</text>
+
+        <!-- Add Item Button -->
+        <rect x="945" y="0" width="115" height="30" rx="6" fill="rgba(0,255,136,0.15)" stroke="#00ff88" stroke-width="1" />
+        <text x="1002" y="19" fill="#00ff88" font-size="11" class="title-text" text-anchor="middle">+ Add Verb Item</text>
+      </g>
+
+      <!-- Dynamic Items Editor Table Content -->
+      <g transform="translate(0, 110)">
+        <rect width="1060" height="205" rx="8" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+
+        <!-- Table Header -->
+        <rect width="1060" height="32" rx="8" fill="#131b2e" />
+        <line x1="0" y1="32" x2="1060" y2="32" stroke="#1e293b" stroke-width="1" />
+        <text x="20" y="21" fill="#94a3b8" font-size="11" class="mono-text">#</text>
+        <text x="60" y="21" fill="#94a3b8" font-size="11" class="mono-text">BASE FORM (V1)</text>
+        <text x="240" y="21" fill="#94a3b8" font-size="11" class="mono-text">PAST SIMPLE (V2)</text>
+        <text x="430" y="21" fill="#94a3b8" font-size="11" class="mono-text">PAST PARTICIPLE (V3)</text>
+        <text x="630" y="21" fill="#94a3b8" font-size="11" class="mono-text">ARABIC MEANING</text>
+        <text x="830" y="21" fill="#94a3b8" font-size="11" class="mono-text">AUDIO &amp; ACTIONS</text>
+
+        <!-- Table Row 1 -->
+        <g transform="translate(0, 36)">
+          <text x="20" y="24" fill="#64748b" font-size="11" class="mono-text">01</text>
+          <rect x="55" y="8" width="160" height="26" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1" />
+          <text x="67" y="25" fill="#00f3ff" font-size="12" class="title-text">catch</text>
+
+          <rect x="235" y="8" width="170" height="26" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1" />
+          <text x="247" y="25" fill="#ffffff" font-size="12" class="regular-text">caught</text>
+
+          <rect x="425" y="8" width="180" height="26" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1" />
+          <text x="437" y="25" fill="#ffffff" font-size="12" class="regular-text">caught</text>
+
+          <rect x="625" y="8" width="180" height="26" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1" />
+          <text x="637" y="25" fill="#a5f3fc" font-size="12" class="regular-text">يلحق بـ / يمسك</text>
+
+          <rect x="825" y="8" width="30" height="26" rx="4" fill="#1e293b" />
+          <text x="840" y="24" fill="#38bdf8" font-size="11" text-anchor="middle">🔊</text>
+          <rect x="865" y="8" width="30" height="26" rx="4" fill="#1e293b" />
+          <text x="880" y="24" fill="#cbd5e1" font-size="11" text-anchor="middle">▲</text>
+          <rect x="905" y="8" width="30" height="26" rx="4" fill="#1e293b" />
+          <text x="920" y="24" fill="#cbd5e1" font-size="11" text-anchor="middle">▼</text>
+          <rect x="945" y="8" width="30" height="26" rx="4" fill="rgba(244,63,94,0.2)" stroke="#f43f5e" stroke-width="1" />
+          <text x="960" y="24" fill="#f43f5e" font-size="11" text-anchor="middle">✕</text>
+        </g>
+
+        <!-- Table Row 2 -->
+        <g transform="translate(0, 78)">
+          <line x1="15" y1="0" x2="1045" y2="0" stroke="#1e293b" stroke-width="0.8" />
+          <text x="20" y="24" fill="#64748b" font-size="11" class="mono-text">02</text>
+          <rect x="55" y="8" width="160" height="26" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1" />
+          <text x="67" y="25" fill="#00f3ff" font-size="12" class="title-text">leave</text>
+
+          <rect x="235" y="8" width="170" height="26" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1" />
+          <text x="247" y="25" fill="#ffffff" font-size="12" class="regular-text">left</text>
+
+          <rect x="425" y="8" width="180" height="26" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1" />
+          <text x="437" y="25" fill="#ffffff" font-size="12" class="regular-text">left</text>
+
+          <rect x="625" y="8" width="180" height="26" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1" />
+          <text x="637" y="25" fill="#a5f3fc" font-size="12" class="regular-text">يغادر / يترك</text>
+
+          <rect x="825" y="8" width="30" height="26" rx="4" fill="#1e293b" />
+          <text x="840" y="24" fill="#38bdf8" font-size="11" text-anchor="middle">🔊</text>
+          <rect x="865" y="8" width="30" height="26" rx="4" fill="#1e293b" />
+          <text x="880" y="24" fill="#cbd5e1" font-size="11" text-anchor="middle">▲</text>
+          <rect x="905" y="8" width="30" height="26" rx="4" fill="#1e293b" />
+          <text x="920" y="24" fill="#cbd5e1" font-size="11" text-anchor="middle">▼</text>
+          <rect x="945" y="8" width="30" height="26" rx="4" fill="rgba(244,63,94,0.2)" stroke="#f43f5e" stroke-width="1" />
+          <text x="960" y="24" fill="#f43f5e" font-size="11" text-anchor="middle">✕</text>
+        </g>
+
+        <!-- Table Row 3 -->
+        <g transform="translate(0, 120)">
+          <line x1="15" y1="0" x2="1045" y2="0" stroke="#1e293b" stroke-width="0.8" />
+          <text x="20" y="24" fill="#64748b" font-size="11" class="mono-text">03</text>
+          <rect x="55" y="8" width="160" height="26" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1" />
+          <text x="67" y="25" fill="#00f3ff" font-size="12" class="title-text">show</text>
+
+          <rect x="235" y="8" width="170" height="26" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1" />
+          <text x="247" y="25" fill="#ffffff" font-size="12" class="regular-text">showed</text>
+
+          <rect x="425" y="8" width="180" height="26" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1" />
+          <text x="437" y="25" fill="#ffffff" font-size="12" class="regular-text">shown</text>
+
+          <rect x="625" y="8" width="180" height="26" rx="4" fill="#0f172a" stroke="#334155" stroke-width="1" />
+          <text x="637" y="25" fill="#a5f3fc" font-size="12" class="regular-text">يوضح / يُبيّن / يعرض</text>
+
+          <rect x="825" y="8" width="30" height="26" rx="4" fill="#1e293b" />
+          <text x="840" y="24" fill="#38bdf8" font-size="11" text-anchor="middle">🔊</text>
+          <rect x="865" y="8" width="30" height="26" rx="4" fill="#1e293b" />
+          <text x="880" y="24" fill="#cbd5e1" font-size="11" text-anchor="middle">▲</text>
+          <rect x="905" y="8" width="30" height="26" rx="4" fill="#1e293b" />
+          <text x="920" y="24" fill="#cbd5e1" font-size="11" text-anchor="middle">▼</text>
+          <rect x="945" y="8" width="30" height="26" rx="4" fill="rgba(244,63,94,0.2)" stroke="#f43f5e" stroke-width="1" />
+          <text x="960" y="24" fill="#f43f5e" font-size="11" text-anchor="middle">✕</text>
+        </g>
+
+        <!-- Bottom Table Status -->
+        <g transform="translate(0, 162)">
+          <rect y="0" width="1060" height="43" rx="0" fill="#0f172a" />
+          <text x="20" y="26" fill="#94a3b8" font-size="11.5" class="mono-text">Showing 3 of 12 items | Auto-Saved to LocalStorage at 00:38:12 | Zero Schema Errors</text>
+          <rect x="900" y="8" width="140" height="26" rx="5" fill="rgba(0,243,255,0.15)" stroke="#00f3ff" stroke-width="1" />
+          <text x="970" y="24" fill="#00f3ff" font-size="11" class="title-text" text-anchor="middle">⚡ Quick Bulk Add</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

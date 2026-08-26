@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgFlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <linearGradient id="stepCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f3ff" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="stepPink" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff007a" />
+      <stop offset="100%" stop-color="#9333ea" />
+    </linearGradient>
+    <linearGradient id="stepYellow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+    <linearGradient id="stepGreen" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#00f3ff" />
+    </marker>
+  </defs>
+
+  <rect width="1100" height="480" fill="url(#bgFlow)" rx="16" />
+
+  <!-- Section Header -->
+  <text x="550" y="45" fill="#00f3ff" font-family="sans-serif" font-size="14" font-weight="700" text-anchor="middle" letter-spacing="2">INTERACTION &amp; LEARNING WORKFLOW</text>
+  <text x="550" y="80" fill="#ffffff" font-family="sans-serif" font-size="24" font-weight="800" text-anchor="middle">From Concept to Mastery (Student &amp; Teacher Journey)</text>
+
+  <!-- Step 1: Input / Authoring -->
+  <g transform="translate(40, 130)">
+    <rect width="220" height="270" rx="14" fill="#111827" stroke="#00f3ff" stroke-width="1.5" />
+    <circle cx="110" cy="45" r="24" fill="url(#stepCyan)" />
+    <text x="110" y="53" fill="#090d16" font-family="sans-serif" font-size="16" font-weight="900" text-anchor="middle">1</text>
+    <text x="110" y="105" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">Authoring</text>
+    <text x="110" y="130" fill="#94a3b8" font-family="sans-serif" font-size="12" text-anchor="middle">Select Archetype</text>
+    <text x="110" y="150" fill="#94a3b8" font-family="sans-serif" font-size="12" text-anchor="middle">Add Vocab / Story / Quiz</text>
+    <rect x="25" y="175" width="170" height="70" rx="8" fill="#1e293b" />
+    <text x="110" y="200" fill="#00f3ff" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle">items-builder.js</text>
+    <text x="110" y="220" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">Autosave &amp; Linter Audit</text>
+  </g>
+
+  <!-- Step 2: Live Simulator -->
+  <g transform="translate(300, 130)">
+    <rect width="220" height="270" rx="14" fill="#111827" stroke="#ff007a" stroke-width="1.5" />
+    <circle cx="110" cy="45" r="24" fill="url(#stepPink)" />
+    <text x="110" y="53" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="900" text-anchor="middle">2</text>
+    <text x="110" y="105" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">Instant Simulation</text>
+    <text x="110" y="130" fill="#94a3b8" font-family="sans-serif" font-size="12" text-anchor="middle">Interactive Sandbox</text>
+    <text x="110" y="150" fill="#94a3b8" font-family="sans-serif" font-size="12" text-anchor="middle">Test Voice Pronunciation</text>
+    <rect x="25" y="175" width="170" height="70" rx="8" fill="#1e293b" />
+    <text x="110" y="200" fill="#ff79c6" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle">preview.js</text>
+    <text x="110" y="220" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">Live Storybook &amp; Tabs</text>
+  </g>
+
+  <!-- Step 3: Publish -->
+  <g transform="translate(560, 130)">
+    <rect width="220" height="270" rx="14" fill="#111827" stroke="#f59e0b" stroke-width="1.5" />
+    <circle cx="110" cy="45" r="24" fill="url(#stepYellow)" />
+    <text x="110" y="53" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="900" text-anchor="middle">3</text>
+    <text x="110" y="105" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">Direct Sync</text>
+    <text x="110" y="130" fill="#94a3b8" font-family="sans-serif" font-size="12" text-anchor="middle">GitHub REST API</text>
+    <text x="110" y="150" fill="#94a3b8" font-family="sans-serif" font-size="12" text-anchor="middle">Single-Click Push (PAT)</text>
+    <rect x="25" y="175" width="170" height="70" rx="8" fill="#1e293b" />
+    <text x="110" y="200" fill="#fbbf24" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle">github.js</text>
+    <text x="110" y="220" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">Zero Command-Line</text>
+  </g>
+
+  <!-- Step 4: Student Learning -->
+  <g transform="translate(820, 130)">
+    <rect width="220" height="270" rx="14" fill="#111827" stroke="#10b981" stroke-width="1.5" />
+    <circle cx="110" cy="45" r="24" fill="url(#stepGreen)" />
+    <text x="110" y="53" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="900" text-anchor="middle">4</text>
+    <text x="110" y="105" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="700" text-anchor="middle">Student Experience</text>
+    <text x="110" y="130" fill="#94a3b8" font-family="sans-serif" font-size="12" text-anchor="middle">Play Quizzes &amp; Chimes</text>
+    <text x="110" y="150" fill="#94a3b8" font-family="sans-serif" font-size="12" text-anchor="middle">Listen to Web Speech</text>
+    <rect x="25" y="175" width="170" height="70" rx="8" fill="#1e293b" />
+    <text x="110" y="200" fill="#34d399" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle">audio.js &amp; quiz-engine</text>
+    <text x="110" y="220" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">Instant Reward Feedback</text>
+  </g>
+
+  <!-- Arrows -->
+  <line x1="260" y1="265" x2="300" y2="265" stroke="#00f3ff" stroke-width="2" marker-end="url(#arrow)" />
+  <line x1="520" y1="265" x2="560" y2="265" stroke="#00f3ff" stroke-width="2" marker-end="url(#arrow)" />
+  <line x1="780" y1="265" x2="820" y2="265" stroke="#00f3ff" stroke-width="2" marker-end="url(#arrow)" />
+</svg>

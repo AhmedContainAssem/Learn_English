@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 1 - Lesson 2: Vocabulary & Expressions (Part 2)</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+    <div class="container" style="max-width: 650px;">
+        <div class="breadcrumb" style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 15px;">
+            <span>الصف الرابع الابتدائي</span> / <span>الوحدة الأولى</span> / <span>الدرس الثاني (الجزء 2)</span>
+        </div>
+
+        <div style="text-align: center; border-bottom: 2px solid var(--border-color); padding-bottom: 15px; margin-bottom: 20px;">
+            <h1 id="title" class="title" style="font-size: 1.8rem; margin-bottom: 8px;">Unit 1 - Lesson 2 (Part 2)</h1>
+            <p id="description" class="subtitle" style="margin-bottom: 0;">اختر الكلمة أو التعبير الصحيح للمنهج!</p>
+        </div>
+
+        <div class="score-board">
+            <span>السؤال: <span id="current-q">1</span> / <span id="total-q">8</span></span>
+            <span>النقاط: <span id="score">0</span> 🌟</span>
+        </div>
+
+        <div class="question-card" style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 16px; padding: 25px; margin-bottom: 20px; text-align: center;">
+            <span class="emoji-display" id="emoji" style="font-size: 3.5rem; display: block; margin-bottom: 15px;">🍞🌾</span>
+            <div class="question-text" id="question" style="font-size: 1.2rem; margin-bottom: 20px; color: var(--text-main); line-height: 1.5;">جاري تحميل السؤال...</div>
+            <div class="options-grid" id="options" style="display: flex; flex-direction: column; gap: 12px;"></div>
+            <div class="feedback" id="feedback"></div>
+        </div>
+
+        <div class="nav-controls" style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+            <a href="./index.html" class="back-btn" data-sound-click="click">⬅ العودة لقائمة الدروس</a>
+            <button class="action-btn next-btn" id="next-btn" onclick="nextQuestion()" style="display: none;">السؤال التالي ➔</button>
+        </div>
+    </div>
+
+    <script>
+        // ==========================================
+        // 📌 بيانات الدرس فقط (يتم معالجتها تلقائياً بواسطة ملف الـ JS المركزي)
+        // ==========================================
+        window.lessonData = {
+            title: "Unit 1 - Lesson 2: Vocabulary & Expressions (Part 2)",
+            description: "اختر الكلمة أو التعبير المناسب حسب كتاب المنهج!",
+            sections: [
+                {
+                    questions: [
+                        {
+                            emoji: "🍞🌾",
+                            question: "Healthy food gives us ________ to play and study. (طاقة)",
+                            options: [
+                                { text: "vitamins", isCorrect: false },
+                                { text: "energy", isCorrect: true },
+                                { text: "sweets", isCorrect: false }
+                            ],
+                            correctMsg: "ممتاز! ⚡ energy تعني طاقة (+10)",
+                            wrongMsg: "فكر في الشيء الذي يعطينا القوة للعب والمذاكرة!"
+                        },
+                        {
+                            emoji: "🧠⚡",
+                            question: "Healthy habits help your ________ stay sharp. (عقل)",
+                            options: [
+                                { text: "mind", isCorrect: true },
+                                { text: "kitchen", isCorrect: false },
+                                { text: "sweets", isCorrect: false }
+                            ],
+                            correctMsg: "أحسنت! 🧠 mind تعني عقل (+10)",
+                            wrongMsg: "العضو الذي يفكر ويتذكر!"
+                        },
+                        {
+                            emoji: "🥗🥕",
+                            question: "Vegetables contain a lot of ________. (فيتامينات)",
+                            options: [
+                                { text: "vitamins", isCorrect: true },
+                                { text: "sweets", isCorrect: false },
+                                { text: "orange juice", isCorrect: false }
+                            ],
+                            correctMsg: "بطل! 🥦 vitamins تعني فيتامينات (+10)",
+                            wrongMsg: "العناصر المفيدة الموجودة في الخضروات!"
+                        },
+                        {
+                            emoji: "🍞🥖",
+                            question: "We can eat ________ bread for breakfast. (خبز القمح / البلدي)",
+                            options: [
+                                { text: "fresh", isCorrect: false },
+                                { text: "brown", isCorrect: true },
+                                { text: "simple", isCorrect: false }
+                            ],
+                            correctMsg: "صح كدة! 🍞 brown bread يعني خبز القمح/البلدي (+10)",
+                            wrongMsg: "الخبز الأسمر الصحي!"
+                        },
+                        {
+                            emoji: "😴⏰",
+                            question: "Don't stay up ________ at night. (متأخراً)",
+                            options: [
+                                { text: "early", isCorrect: false },
+                                { text: "late", isCorrect: true },
+                                { text: "sharp", isCorrect: false }
+                            ],
+                            correctMsg: "رائع! 🌙 late تعني متأخراً (+10)",
+                            wrongMsg: "عكس كلمة مبكراً!"
+                        },
+                        {
+                            emoji: "🔔🏫",
+                            question: "We play with friends ________. (أثناء وقت الفسحة)",
+                            options: [
+                                { text: "during break time", isCorrect: true },
+                                { text: "at night", isCorrect: false },
+                                { text: "between classes", isCorrect: false }
+                            ],
+                            correctMsg: "عبقري! 🔔 during break time يعني أثناء وقت الفسحة (+10)",
+                            wrongMsg: "الوقت الذي نلعب فيه في المدرسة!"
+                        },
+                        {
+                            emoji: "👁️💡",
+                            question: "Getting enough sleep helps you ________. (تكون يقظاً/منتبهاً)",
+                            options: [
+                                { text: "make friends", isCorrect: false },
+                                { text: "stay sharp", isCorrect: true },
+                                { text: "take a shower", isCorrect: false }
+                            ],
+                            correctMsg: "ممتاز جداً! 👁️ stay sharp تعني تكون يقظاً/منتبهاً (+10)",
+                            wrongMsg: "تعبير يعني أن تبقي عقلك منتبهاً!"
+                        },
+                        {
+                            emoji: "💧🥤",
+                            question: "Drink ________ water every day. (الكثير من)",
+                            options: [
+                                { text: "plenty of", isCorrect: true },
+                                { text: "late of", isCorrect: false },
+                                { text: "between", isCorrect: false }
+                            ],
+                            correctMsg: "رائع! 💧 plenty of تساوي a lot of (الكثير من) (+10)",
+                            wrongMsg: "تعبير يماثل a lot of!"
+                        }
+                    ]
+                }
+            ]
+        };
+    </script>
+
+    <script src="../../assets/js/bidi.js"></script>
+    <script src="../../assets/js/audio.js"></script>
+    <script src="../../assets/js/quiz-engine.js"></script>
+    <script src="../../assets/js/ui.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>

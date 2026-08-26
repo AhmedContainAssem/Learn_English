@@ -1,0 +1,32 @@
+/* ==========================================
+   Mr. Ahmed Assem - Educational Platform
+   Design Tokens & CSS Variables (variables.css)
+   ========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap');
+
+:root {
+    /* Color Palette */
+    --bg-color: #0b0f19;
+    --bg-card: #131b2e;
+    --card-bg: #131b2e;
+    --card-hover: #1c2a47;
+
+    /* Accent & Brand Colors */
+    --accent-primary: #00f3ff;
+    --accent-secondary: #e086ff;
+    --accent-green: #00ff9d;
+    --accent-orange: #ffb703;
+    --accent-red: #ff477e;
+
+    /* Text System */
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+
+    /* Borders & Glow Effects */
+    --border-color: rgba(0, 243, 255, 0.22);
+    --border-hover: rgba(0, 243, 255, 0.6);
+    --glow-cyan: 0 0 20px rgba(0, 243, 255, 0.35);
+    --glow-magenta: 0 0 20px rgba(224, 134, 255, 0.35);
+    --glow-green: 0 0 15px rgba(0, 255, 157, 0.35);
+}

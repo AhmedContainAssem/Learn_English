@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ✏️ 1. عنوان الصفحة -->
+    <title>Session X - Topic Title | Mr. Ahmed Assem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- مسار الدرس -->
+        <div class="breadcrumb">
+            <span>الكورس / المرحلة</span> / <span>الوحدة</span> / <span>اسم الحصة</span>
+        </div>
+
+        <!-- رأس الحصة -->
+        <div class="teacher-profile-header">
+            <h1 id="title" class="lesson-header-title">Session X: Topic Title</h1>
+            <p id="description" class="lesson-desc-display">✨ Easy Peasy Ya Englezeey ✨</p>
+        </div>
+
+        <!-- أزرار التبويبات (Tabs) -->
+        <div class="tabs-container">
+            <button class="tab-btn active" onclick="switchTab('vocab')">📚 المفردات (Vocabulary)</button>
+            <button class="tab-btn" onclick="switchTab('grammar')">🧠 الشرح (Grammar)</button>
+            <button class="tab-btn" onclick="switchTab('quiz')">🎯 الاختبار التفاعلي (Quiz)</button>
+        </div>
+
+        <!-- ✏️ التبويب 1: جدول المفردات -->
+        <div id="tab-vocab" class="tab-content active">
+            <h3 class="section-subtitle">📌 أهم الكلمات والمصطلحات:</h3>
+            <div class="grid-cards">
+                <!-- بطاقة كلمة مع زر نطق صوتي -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun</span>
+                            <div class="word-en">Teacher</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('Teacher')" title="استمع للنطق">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> معلم / مدرس
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun</span>
+                            <div class="word-en">School</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('School')" title="استمع للنطق">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> مدرسة
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ✏️ التبويب 2: شرح القواعد أو الملاحظات -->
+        <div id="tab-grammar" class="tab-content">
+            <h3 class="section-subtitle">🧠 شرح الدرس والقواعد:</h3>
+            <div class="card">
+                <p><strong>1. استخدام a / an:</strong></p>
+                <p>نستخدم <code>a</code> قبل الكلمات التي تبدأ بصوت ساكن، و <code>an</code> قبل الكلمات التي تبدأ بصوت متحرك (a, e, i, o, u).</p>
+                <p class="highlight-vocab green-tag">مثال: He is a doctor. / She is an engineer.</p>
+            </div>
+        </div>
+
+        <!-- ✏️ التبويب 3: الاختبار التفاعلي -->
+        <div id="tab-quiz" class="tab-content">
+            <div class="score-board">
+                <span>السؤال: <span id="current-q">1</span> / <span id="total-q">0</span></span>
+                <span>النقاط: <span id="score">0</span> 🌟</span>
+            </div>
+
+            <div class="question-card">
+                <span class="emoji-display" id="emoji">🎯</span>
+                <div class="question-text" id="question">جاري تحميل السؤال...</div>
+                <div class="options-grid" id="options"></div>
+                <div class="feedback" id="feedback"></div>
+            </div>
+
+            <div class="quiz-footer-actions">
+                <button class="action-btn next-btn" id="next-btn" onclick="nextQuestion()">السؤال التالي ➔</button>
+            </div>
+        </div>
+
+        <!-- أسفل الصفحة: العودة للقائمة -->
+        <div class="nav-controls">
+            <a href="./index.html" class="action-btn secondary" data-sound-click="click">⬅ العودة لقائمة الدروس</a>
+        </div>
+    </div>
+
+    <!-- ✏️ بيانات الاختبار -->
+    <script>
+        window.lessonData = {
+            title: "Session Quiz",
+            description: "اختبر فهمك لمحتوى الحصة!",
+            questions: [
+                {
+                    emoji: "🏫",
+                    question: "Where does a teacher work?",
+                    options: [
+                        { text: "In a school", isCorrect: true },
+                        { text: "In a hospital", isCorrect: false },
+                        { text: "In a bank", isCorrect: false }
+                    ],
+                    correctMsg: "ممتاز! أحسنت 🎯 (+10)",
+                    wrongMsg: "إجابة خاطئة، ركز مجدداً!"
+                }
+            ]
+        };
+
+        // تبديل التبويبات بسهولة
+        function switchTab(tabName) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+            
+            const target = document.getElementById('tab-' + tabName);
+            if (target) target.classList.add('active');
+            
+            const activeBtn = Array.from(document.querySelectorAll('.tab-btn')).find(b => b.getAttribute('onclick').includes(tabName));
+            if (activeBtn) activeBtn.classList.add('active');
+            
+            if (typeof window.playSound === 'function') window.playSound('click');
+        }
+    </script>
+
+    <!-- ملفات النظام والمحرك -->
+    <script src="../../assets/js/bidi.js"></script>
+    <script src="../../assets/js/audio.js"></script>
+    <script src="../../assets/js/quiz-engine.js"></script>
+    <script src="../../assets/js/ui.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>

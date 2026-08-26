@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Assessment Quiz (Part 2) | Grade 2 - Mr. Ahmed Assem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb">
+            <span>Grade_2</span> / <span>Unit 1</span> / <span>Lesson 1 (Part 2): Extra Vocabulary & Expressions</span>
+        </div>
+
+        <!-- Teacher Profile Header -->
+        <div class="teacher-profile-header">
+            <div class="avatar-wrapper">
+                <img src="../../my-photo-profile.png" alt="Mr. Ahmed Assem" class="teacher-avatar" onerror="this.onerror=null; this.src='../../my-photo-profile.png';">
+            </div>
+            <h1 class="teacher-title">Mr. Ahmed Assem</h1>
+            <div class="slogan">✨ Easy Peasy Ya Englezeey ✨</div>
+            <div class="lesson-meta-badge">
+                <span class="badge badge-cyan">Grade_2 • Unit 1</span>
+            </div>
+            <h2 id="title" class="lesson-main-title">Lesson 1 (Part 2): Extra Vocabulary & Expressions</h2>
+            <p id="description" class="lesson-desc">اختبار تدريبي تفاعلي - مفردات وتعبيرات وحروف الجر الهامة (Part 2)</p>
+        </div>
+
+        <div class="quiz-card">
+            <div class="score-board">
+                <span>السؤال: <span id="current-q">1</span> / <span id="total-q">10</span></span>
+                <span>النقاط: <span id="score">0</span> 🌟</span>
+            </div>
+
+            <div class="question-box">
+                <span class="emoji-display" id="emoji">🗣️</span>
+                <div class="question-text" id="question">جاري تحميل السؤال...</div>
+                <div class="options-grid" id="options"></div>
+                <div class="feedback" id="feedback"></div>
+            </div>
+
+            <div class="quiz-footer-actions">
+                <button class="action-btn next-btn" id="next-btn" onclick="nextQuestion()">السؤال التالي ➔</button>
+            </div>
+        </div>
+
+        <!-- Bottom Return Controls -->
+        <div class="nav-controls">
+            <a href="./index.html" class="action-btn secondary" data-sound-click="click">⬅ العودة لقائمة دروس الوحدة</a>
+        </div>
+    </div>
+
+    <!-- Data Injection -->
+    <script>
+        window.lessonData = {
+            title: "Lesson 1 (Part 2): Extra Vocabulary & Expressions",
+            description: "اختبار تدريبي تفاعلي - مفردات وتعبيرات وحروف الجر الهامة (Part 2)",
+            questions: [
+                {
+                    "emoji": "🗣️",
+                    "question": "يقول (يتكلم)",
+                    "options": [
+                        { "text": "say", "isCorrect": true },
+                        { "text": "sit", "isCorrect": false },
+                        { "text": "help", "isCorrect": false }
+                    ],
+                    "correctMsg": "ممتاز! أحسنت 🎯 (+10)",
+                    "wrongMsg": "إجابة غير صحيحة، حاول مجدداً!"
+                },
+                {
+                    "emoji": "📚",
+                    "question": "يتعلم",
+                    "options": [
+                        { "text": "teach", "isCorrect": false },
+                        { "text": "learn", "isCorrect": true },
+                        { "text": "play", "isCorrect": false }
+                    ],
+                    "correctMsg": "رائع! إجابة صحيحة 🌟 (+10)",
+                    "wrongMsg": "حاول مجدداً!"
+                },
+                {
+                    "emoji": "🤝",
+                    "question": "يساعد",
+                    "options": [
+                        { "text": "help", "isCorrect": true },
+                        { "text": "learn", "isCorrect": false },
+                        { "text": "friend", "isCorrect": false }
+                    ],
+                    "correctMsg": "أحسنت! إجابة صحيحة 🎯 (+10)",
+                    "wrongMsg": "حاول مرة أخرى!"
+                },
+                {
+                    "emoji": "👨‍🏫",
+                    "question": "يُعلّم / يُدرّس",
+                    "options": [
+                        { "text": "student", "isCorrect": false },
+                        { "text": "say", "isCorrect": false },
+                        { "text": "teach", "isCorrect": true }
+                    ],
+                    "correctMsg": "ممتاز! أحسنت 🎯 (+10)",
+                    "wrongMsg": "إجابة غير صحيحة، حاول مجدداً!"
+                },
+                {
+                    "emoji": "🪑",
+                    "question": "يجلس",
+                    "options": [
+                        { "text": "sit down", "isCorrect": true },
+                        { "text": "stand up", "isCorrect": false },
+                        { "text": "sit on", "isCorrect": false }
+                    ],
+                    "correctMsg": "برافو! إجابة صحيحة 🌟 (+10)",
+                    "wrongMsg": "حاول مجدداً!"
+                },
+                {
+                    "emoji": "🏫",
+                    "question": "مدرسة",
+                    "options": [
+                        { "text": "home", "isCorrect": false },
+                        { "text": "school", "isCorrect": true },
+                        { "text": "class", "isCorrect": false }
+                    ],
+                    "correctMsg": "ممتاز! أحسنت 🎯 (+10)",
+                    "wrongMsg": "إجابة غير صحيحة، حاول مجدداً!"
+                },
+                {
+                    "emoji": "🧑‍🤝‍🧑",
+                    "question": "صديق",
+                    "options": [
+                        { "text": "friend", "isCorrect": true },
+                        { "text": "teacher", "isCorrect": false },
+                        { "text": "kind", "isCorrect": false }
+                    ],
+                    "correctMsg": "ممتاز يا بطل! 🌟 (+10)",
+                    "wrongMsg": "حاول مجدداً!"
+                },
+                {
+                    "emoji": "❤️",
+                    "question": "طيب / عطوف",
+                    "options": [
+                        { "text": "school", "isCorrect": false },
+                        { "text": "kind", "isCorrect": true },
+                        { "text": "name", "isCorrect": false }
+                    ],
+                    "correctMsg": "إجابة صحيحة (+10) 💖",
+                    "wrongMsg": "حاول مجدداً!"
+                },
+                {
+                    "emoji": "🌅",
+                    "question": "في نهاية اليوم ، ...",
+                    "options": [
+                        { "text": "At the end of the day,", "isCorrect": true },
+                        { "text": "In the morning,", "isCorrect": false },
+                        { "text": "Good afternoon,", "isCorrect": false }
+                    ],
+                    "correctMsg": "ممتاز! إجابة رائعة 🎯 (+10)",
+                    "wrongMsg": "إجابة غير صحيحة، حاول مجدداً!"
+                },
+                {
+                    "emoji": "🙋‍♂️",
+                    "question": "هل يمكنني أن أجلس ؟",
+                    "options": [
+                        { "text": "May I help you ?", "isCorrect": false },
+                        { "text": "May I sit down ?", "isCorrect": true },
+                        { "text": "Can I play ?", "isCorrect": false }
+                    ],
+                    "correctMsg": "ممتاز! أحسنت يا بطل 🌟 (+10)",
+                    "wrongMsg": "حاول مجدداً!"
+                }
+            ]
+        };
+    </script>
+
+    <!-- Framework & Shared Scripts -->
+    <script src="../../assets/js/bidi.js"></script>
+    <script src="../../assets/js/audio.js"></script>
+    <script src="../../assets/js/tabs.js"></script>
+    <script src="../../assets/js/quiz-engine.js"></script>
+    <script src="../../assets/js/ui.js"></script>
+    <script src="../../assets/js/main.js"></script>
+
+    <!-- Studio Data Payload for 100% Lossless Roundtrip Editing -->
+    <script id="studio-payload" type="application/json">
+{
+  "archetype": "direct_quiz",
+  "stage": "Grade_2",
+  "unit": "unit-1",
+  "fileName": "lesson-1-part-2.html",
+  "title": "Lesson 1 (Part 2): Extra Vocabulary & Expressions",
+  "description": "اختبار تدريبي تفاعلي - مفردات وتعبيرات وحروف الجر الهامة (Part 2)",
+  "quiz": [
+    {
+      "emoji": "🗣️",
+      "question": "يقول (يتكلم)",
+      "options": [
+        { "text": "say", "isCorrect": true },
+        { "text": "sit", "isCorrect": false },
+        { "text": "help", "isCorrect": false }
+      ],
+      "correctMsg": "ممتاز! أحسنت 🎯 (+10)",
+      "wrongMsg": "إجابة غير صحيحة، حاول مجدداً!"
+    },
+    {
+      "emoji": "📚",
+      "question": "يتعلم",
+      "options": [
+        { "text": "teach", "isCorrect": false },
+        { "text": "learn", "isCorrect": true },
+        { "text": "play", "isCorrect": false }
+      ],
+      "correctMsg": "رائع! إجابة صحيحة 🌟 (+10)",
+      "wrongMsg": "حاول مجدداً!"
+    },
+    {
+      "emoji": "🤝",
+      "question": "يساعد",
+      "options": [
+        { "text": "help", "isCorrect": true },
+        { "text": "learn", "isCorrect": false },
+        { "text": "friend", "isCorrect": false }
+      ],
+      "correctMsg": "أحسنت! إجابة صحيحة 🎯 (+10)",
+      "wrongMsg": "حاول مرة أخرى!"
+    },
+    {
+      "emoji": "👨‍🏫",
+      "question": "يُعلّم / يُدرّس",
+      "options": [
+        { "text": "student", "isCorrect": false },
+        { "text": "say", "isCorrect": false },
+        { "text": "teach", "isCorrect": true }
+      ],
+      "correctMsg": "ممتاز! أحسنت 🎯 (+10)",
+      "wrongMsg": "إجابة غير صحيحة، حاول مجدداً!"
+    },
+    {
+      "emoji": "🪑",
+      "question": "يجلس",
+      "options": [
+        { "text": "sit down", "isCorrect": true },
+        { "text": "stand up", "isCorrect": false },
+        { "text": "sit on", "isCorrect": false }
+      ],
+      "correctMsg": "برافو! إجابة صحيحة 🌟 (+10)",
+      "wrongMsg": "حاول مجدداً!"
+    },
+    {
+      "emoji": "🏫",
+      "question": "مدرسة",
+      "options": [
+        { "text": "home", "isCorrect": false },
+        { "text": "school", "isCorrect": true },
+        { "text": "class", "isCorrect": false }
+      ],
+      "correctMsg": "ممتاز! أحسنت 🎯 (+10)",
+      "wrongMsg": "إجابة غير صحيحة، حاول مجدداً!"
+    },
+    {
+      "emoji": "🧑‍🤝‍🧑",
+      "question": "صديق",
+      "options": [
+        { "text": "friend", "isCorrect": true },
+        { "text": "teacher", "isCorrect": false },
+        { "text": "kind", "isCorrect": false }
+      ],
+      "correctMsg": "ممتاز يا بطل! 🌟 (+10)",
+      "wrongMsg": "حاول مجدداً!"
+    },
+    {
+      "emoji": "❤️",
+      "question": "طيب / عطوف",
+      "options": [
+        { "text": "school", "isCorrect": false },
+        { "text": "kind", "isCorrect": true },
+        { "text": "name", "isCorrect": false }
+      ],
+      "correctMsg": "إجابة صحيحة (+10) 💖",
+      "wrongMsg": "حاول مجدداً!"
+    },
+    {
+      "emoji": "🌅",
+      "question": "في نهاية اليوم ، ...",
+      "options": [
+        { "text": "At the end of the day,", "isCorrect": true },
+        { "text": "In the morning,", "isCorrect": false },
+        { "text": "Good afternoon,", "isCorrect": false }
+      ],
+      "correctMsg": "ممتاز! إجابة رائعة 🎯 (+10)",
+      "wrongMsg": "إجابة غير صحيحة، حاول مجدداً!"
+    },
+    {
+      "emoji": "🙋‍♂️",
+      "question": "هل يمكنني أن أجلس ؟",
+      "options": [
+        { "text": "May I help you ?", "isCorrect": false },
+        { "text": "May I sit down ?", "isCorrect": true },
+        { "text": "Can I play ?", "isCorrect": false }
+      ],
+      "correctMsg": "ممتاز! أحسنت يا بطل 🌟 (+10)",
+      "wrongMsg": "حاول مجدداً!"
+    }
+  ]
+}
+    </script>
+</body>
+</html>

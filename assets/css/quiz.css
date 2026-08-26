@@ -1,0 +1,185 @@
+/* ==========================================
+   Mr. Ahmed Assem - Neon Cyberpunk Educational Theme
+   Modern Nested Quiz Engine Styles (quiz.css)
+   Enhanced with Universal Option Matching & Mobile-First Controls
+   ========================================== */
+
+/* Quizzes & Question Cards */
+.quiz-card, .question-card {
+    background: rgba(19, 27, 46, 0.95);
+    border: 1px solid var(--border-color, rgba(0, 243, 255, 0.22));
+    border-radius: clamp(16px, 3.5vw, 24px);
+    padding: clamp(16px, 4vw, 32px);
+    margin-top: clamp(16px, 3vw, 24px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 243, 255, 0.1);
+    overflow: hidden;
+
+    & .quiz-header-bar, & .score-board {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(11, 15, 25, 0.9);
+        padding: clamp(12px, 2.5vw, 18px) clamp(16px, 3.5vw, 26px);
+        border-radius: clamp(14px, 2.5vw, 18px);
+        margin-bottom: clamp(18px, 3.5vw, 26px);
+        font-weight: 800;
+        border: 1.5px solid var(--border-color, rgba(0, 243, 255, 0.25));
+        color: var(--accent-primary, #00f3ff);
+        font-size: clamp(1rem, 2.8vw, 1.15rem);
+        flex-wrap: wrap;
+        gap: 12px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+    }
+
+    & .quiz-question, & .question-text, & #question-box, & #question {
+        font-size: clamp(1.15rem, 3.8vw, 1.45rem);
+        font-weight: 800;
+        color: var(--text-main, #f8fafc);
+        margin-bottom: clamp(18px, 3.5vw, 26px);
+        line-height: 1.55;
+        text-align: center;
+        width: 100%;
+        display: block;
+        word-break: normal;
+        overflow-wrap: break-word;
+    }
+
+    & .emoji-display, & #emoji {
+        font-size: clamp(3rem, 8vw, 4.2rem);
+        display: block;
+        margin: 0 auto clamp(12px, 2.5vw, 18px) auto;
+        line-height: 1;
+        filter: drop-shadow(0 4px 12px rgba(0, 243, 255, 0.3));
+    }
+
+    & .quiz-options, & .options, & .options-grid, & #options, & #options-box {
+        display: flex;
+        flex-direction: column;
+        gap: clamp(10px, 2vw, 14px);
+        margin-bottom: clamp(18px, 3.5vw, 26px);
+        max-width: 620px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    & .quiz-feedback, & .feedback, & #feedback, & #quiz-result {
+        font-weight: 800;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: clamp(14px, 3vw, 20px);
+        min-height: 36px;
+        font-size: clamp(1.05rem, 3.2vw, 1.25rem);
+        line-height: 1.5;
+
+        &.success {
+            color: var(--accent-green, #00ff9d);
+            text-shadow: 0 0 14px rgba(0, 255, 157, 0.6);
+        }
+
+        &.error {
+            color: var(--accent-red, #ff477e);
+            text-shadow: 0 0 14px rgba(255, 71, 126, 0.6);
+        }
+    }
+
+    & .quiz-footer-actions {
+        margin-top: clamp(16px, 3.5vw, 24px);
+        margin-bottom: clamp(14px, 3vw, 24px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+}
+
+/* Universal Quiz Option Buttons (Direct Class & Container Matching) */
+.quiz-option-btn, .option-btn, #options-box button, .quiz-options button, .options button {
+    background: rgba(11, 15, 25, 0.85);
+    border: 2px solid var(--border-color, rgba(0, 243, 255, 0.25));
+    color: var(--text-main, #f8fafc);
+    padding: clamp(12px, 3vw, 16px) clamp(16px, 3.5vw, 24px);
+    border-radius: clamp(12px, 2.5vw, 16px);
+    text-align: right;
+    font-family: inherit;
+    font-size: clamp(1rem, 3.2vw, 1.15rem);
+    font-weight: 800;
+    cursor: pointer;
+    min-height: 52px;
+    touch-action: manipulation;
+    transition: all 0.25s ease;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    box-sizing: border-box;
+
+    &:hover:not(:disabled) {
+        border-color: var(--accent-primary, #00f3ff);
+        background: rgba(0, 243, 255, 0.14);
+        transform: translateX(-4px);
+        box-shadow: var(--glow-cyan, 0 0 20px rgba(0, 243, 255, 0.35));
+
+        @media (max-width: 600px) {
+            transform: none;
+        }
+    }
+
+    &:active:not(:disabled) {
+        transform: scale(0.98);
+    }
+
+    &.correct {
+        background: rgba(0, 255, 157, 0.22) !important;
+        border-color: var(--accent-green, #00ff9d) !important;
+        color: var(--accent-green, #00ff9d) !important;
+        box-shadow: var(--glow-green, 0 0 15px rgba(0, 255, 157, 0.35)) !important;
+    }
+
+    &.wrong {
+        background: rgba(255, 71, 126, 0.22) !important;
+        border-color: var(--accent-red, #ff477e) !important;
+        color: var(--accent-red, #ff477e) !important;
+    }
+
+    &:disabled {
+        cursor: default;
+    }
+}
+
+/* Universal Action Buttons for Next/Restart */
+.next-btn, #next-btn, #next-q-btn, .quiz-footer-actions button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: clamp(12px, 3vw, 16px) clamp(24px, 5vw, 36px);
+    border-radius: 50px;
+    background: linear-gradient(135deg, var(--accent-primary, #00f3ff), var(--accent-secondary, #e086ff));
+    color: #0b0f19 !important;
+    border: none !important;
+    font-weight: 900 !important;
+    font-size: clamp(1rem, 3vw, 1.15rem);
+    cursor: pointer;
+    min-height: 50px;
+    touch-action: manipulation;
+    transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+    box-shadow: var(--glow-cyan, 0 0 20px rgba(0, 243, 255, 0.35)), 0 6px 20px rgba(0, 0, 0, 0.4);
+    margin: 16px auto 0 auto;
+    text-decoration: none;
+    outline: none;
+    white-space: nowrap;
+
+    &:hover {
+        transform: translateY(-2px) scale(1.02);
+        box-shadow: 0 0 28px rgba(0, 243, 255, 0.85), 0 0 40px rgba(224, 134, 255, 0.65);
+        background: linear-gradient(135deg, #33f6ff, #ea9dff) !important;
+        color: #050811 !important;
+    }
+
+    &:active {
+        transform: translateY(0) scale(0.97);
+    }
+}

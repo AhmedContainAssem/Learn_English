@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ✏️ 1. عنوان الصفحة -->
+    <title>Session 1: Greetings & Introductions - Mr. Ahmed Assem 🌟</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- مسار التنقل -->
+        <div class="breadcrumb">
+            <span>Courses</span> / <span>A1</span> / <strong>Session 1</strong>
+        </div>
+
+        <!-- عنوان السيشن -->
+        <div class="teacher-profile-header">
+            <h1 class="lesson-header-title">Session 1: Greetings & Daily Expressions</h1>
+            <p class="lesson-desc-display">المستوى: A1 | التأسيس الشامل للمفردات والمحادثة</p>
+        </div>
+
+        <!-- 1. المفردات والتراكيب بنظام Flashcards -->
+        <h3 class="section-subtitle">المفردات الأساسية (Key Vocabulary)</h3>
+        <p class="section-hint">💡 اضغط على البطاقة لعرض الترجمة، واضغط 🔊 للاستماع للنطق.</p>
+
+        <div class="grid-cards">
+            
+            <!-- بطاقة 1 -->
+            <div class="flashcard" onclick="this.classList.toggle('flipped'); if(typeof playSound==='function') playSound('click');">
+                <div class="card-face card-front">
+                    <span class="word-en">Hello / Hi</span>
+                    <button class="audio-btn" onclick="event.stopPropagation(); speakText('Hello and Hi')">🔊</button>
+                </div>
+                <div class="card-face card-back">
+                    <span>مرحباً / أهلاً</span>
+                </div>
+            </div>
+
+            <!-- بطاقة 2 -->
+            <div class="flashcard" onclick="this.classList.toggle('flipped'); if(typeof playSound==='function') playSound('click');">
+                <div class="card-face card-front">
+                    <span class="word-en">Good morning</span>
+                    <button class="audio-btn" onclick="event.stopPropagation(); speakText('Good morning')">🔊</button>
+                </div>
+                <div class="card-face card-back">
+                    <span>صباح الخير</span>
+                </div>
+            </div>
+
+            <!-- ✏️ أضف المزيد من البطاقات هنا بنفس التنسيق أعلاه -->
+
+        </div>
+
+        <!-- 2. المحادثة والحوار التفاعلي -->
+        <h3 class="section-subtitle">🗣️ محادثة التعارف (Dialogue)</h3>
+        <div class="story-dialogue-container">
+            
+            <div class="story-line-bubble">
+                <div class="speaker-avatar">A</div>
+                <div class="speaker-body">
+                    <div class="speaker-header">
+                        <div class="speaker-title">Ali</div>
+                        <button class="audio-btn" onclick="speakText('Hello! What is your name?')">🔊</button>
+                    </div>
+                    <div class="story-en-sentence">Hello! What is your name?</div>
+                    <div class="story-ar-translation">مرحباً! ما هو اسمك؟</div>
+                </div>
+            </div>
+
+            <div class="story-line-bubble speaker-alt">
+                <div class="speaker-avatar alt-avatar">O</div>
+                <div class="speaker-body">
+                    <div class="speaker-header">
+                        <div class="speaker-title alt-title">Omar</div>
+                        <button class="audio-btn" onclick="speakText('My name is Omar. Nice to meet you!')">🔊</button>
+                    </div>
+                    <div class="story-en-sentence">My name is Omar. Nice to meet you!</div>
+                    <div class="story-ar-translation">اسمي عمر. سررت بلقائك!</div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 3. صندوق الواجب والتطبيق العملي -->
+        <div class="homework-box">
+            <div class="homework-title">📝 الواجب المنزلي (Homework Task)</div>
+            <div class="homework-desc">
+                سجل مقطعاً صوتياً تقدم فيه نفسك باللغة الإنجليزية وتذكر اسمك وبلدك وهوايتك.
+            </div>
+        </div>
+
+        <!-- 4. اختبار نهاية الحصة -->
+        <h3 class="section-subtitle">🎯 اختبار الحصة (Session Quiz)</h3>
+        <div class="score-board">
+            <span>السؤال: <span id="current-q">1</span> / <span id="total-q">1</span></span>
+            <span>النقاط: <span id="score">0</span> 🌟</span>
+        </div>
+
+        <div class="question-card">
+            <span class="emoji-display" id="emoji">👋</span>
+            <div class="question-text" id="question">جاري تحميل السؤال...</div>
+            <div class="options-grid" id="options"></div>
+            <div class="feedback" id="feedback"></div>
+        </div>
+
+        <div class="center-row">
+            <button class="action-btn next-btn" id="next-btn" onclick="nextQuestion()">السؤال التالي ➔</button>
+        </div>
+
+        <div class="nav-controls">
+            <a href="./index.html" class="action-btn secondary" data-sound-click="click">⬅ العودة لقائمة الحصص</a>
+        </div>
+    </div>
+
+    <!-- ✏️ بيانات أسئلة الاختبار -->
+    <script>
+        window.lessonData = {
+            title: "Session 1 Quiz",
+            description: "اختبار المفردات والتحيات",
+            questions: [
+                {
+                    emoji: "👋",
+                    question: "How do you respond to 'Nice to meet you'?",
+                    options: [
+                        { text: "Nice to meet you too", isCorrect: true },
+                        { text: "Good night", isCorrect: false },
+                        { text: "I am fine", isCorrect: false }
+                    ],
+                    correctMsg: "ممتاز! أحسنت 🎯 (+10)",
+                    wrongMsg: "حاول مجدداً!"
+                }
+            ]
+        };
+    </script>
+
+    <script src="../../assets/js/bidi.js"></script>
+    <script src="../../assets/js/audio.js"></script>
+    <script src="../../assets/js/quiz-engine.js"></script>
+    <script src="../../assets/js/ui.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>

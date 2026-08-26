@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2: Around the classroom & Phonics | Grade 2 - Mr. Ahmed Assem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb">
+            <span>Grade_2</span> / <span>Unit 1</span> / <span>Lesson 2: Around the classroom & Phonics</span>
+        </div>
+
+        <!-- Teacher Profile Header -->
+        <div class="teacher-profile-header">
+            <div class="avatar-wrapper">
+                <img src="../../my-photo-profile.png" alt="Mr. Ahmed Assem" class="teacher-avatar" onerror="this.onerror=null; this.src='../../my-photo-profile.png';">
+            </div>
+            <h1 class="teacher-title">Mr. Ahmed Assem</h1>
+            <div class="slogan">✨ Easy Peasy Ya Englezeey ✨</div>
+            <div class="lesson-meta-badge">
+                <span class="badge badge-cyan">Grade_2 • Unit 1</span>
+            </div>
+            <h2 id="title" class="lesson-main-title">Lesson 2: Around the classroom & Phonics</h2>
+            <p id="description" class="lesson-desc">أدوات الفصل الدراسي، قاعدة (This is a/an)، وصوتيات حرف A القصير (Short 'a' sound /æ/)</p>
+        </div>
+
+        <div class="quiz-card">
+            <div class="score-board">
+                <span>السؤال: <span id="current-q">1</span> / <span id="total-q">12</span></span>
+                <span>النقاط: <span id="score">0</span> 🌟</span>
+            </div>
+
+            <div class="question-box">
+                <span class="emoji-display" id="emoji">🖊️</span>
+                <div class="question-text" id="question">جاري تحميل السؤال...</div>
+                <div class="options-grid" id="options"></div>
+                <div class="feedback" id="feedback"></div>
+            </div>
+
+            <div class="quiz-footer-actions">
+                <button class="action-btn next-btn" id="next-btn" onclick="nextQuestion()">السؤال التالي ➔</button>
+            </div>
+        </div>
+
+        <!-- Bottom Return Controls -->
+        <div class="nav-controls">
+            <a href="./index.html" class="action-btn secondary" data-sound-click="click">⬅ العودة لقائمة دروس الوحدة</a>
+        </div>
+    </div>
+
+    <!-- Data Injection -->
+    <script>
+        window.lessonData = {
+            title: "Lesson 2: Around the classroom & Phonics",
+            description: "أدوات الفصل الدراسي، قاعدة (This is a/an)، وصوتيات حرف A القصير (Short 'a' sound /æ/)",
+            questions: [
+                {
+                    "emoji": "🖊️",
+                    "question": "قلم جاف",
+                    "options": [
+                        { "text": "pen", "isCorrect": true },
+                        { "text": "book", "isCorrect": false },
+                        { "text": "bag", "isCorrect": false }
+                    ],
+                    "correctMsg": "ممتاز! أحسنت 🎯 (+10)",
+                    "wrongMsg": "إجابة غير صحيحة، حاول مجدداً!"
+                },
+                {
+                    "emoji": "📖",
+                    "question": "كتاب",
+                    "options": [
+                        { "text": "board", "isCorrect": false },
+                        { "text": "book", "isCorrect": true },
+                        { "text": "notebook", "isCorrect": false }
+                    ],
+                    "correctMsg": "برافو! إجابة صحيحة 🌟 (+10)",
+                    "wrongMsg": "حاول مجدداً!"
+                },
+                {
+                    "emoji": "🪟",
+                    "question": "نافذة / شباك",
+                    "options": [
+                        { "text": "door", "isCorrect": false },
+                        { "text": "window", "isCorrect": true },
+                        { "text": "board", "isCorrect": false }
+                    ],
+                    "correctMsg": "ممتاز يا بطل! 🎯 (+10)",
+                    "wrongMsg": "حاول مرة أخرى!"
+                },
+                {
+                    "emoji": "📓",
+                    "question": "كراسة / دفتر ملاحظات",
+                    "options": [
+                        { "text": "notebook", "isCorrect": true },
+                        { "text": "book", "isCorrect": false },
+                        { "text": "pen", "isCorrect": false }
+                    ],
+                    "correctMsg": "أحسنت! إجابة دقيقة 🌟 (+10)",
+                    "wrongMsg": "حاول مجدداً!"
+                },
+                {
+                    "emoji": "📋",
+                    "question": "سبورة",
+                    "options": [
+                        { "text": "window", "isCorrect": false },
+                        { "text": "board", "isCorrect": true },
+                        { "text": "bag", "isCorrect": false }
+                    ],
+                    "correctMsg": "ممتاز! 🎯 (+10)",
+                    "wrongMsg": "إجابة غير صحيحة، حاول مجدداً!"
+                },
+                {
+                    "emoji": "🎒",
+                    "question": "حقيبة",
+                    "options": [
+                        { "text": "bag", "isCorrect": true },
+                        { "text": "pen", "isCorrect": false },
+                        { "text": "hat", "isCorrect": false }
+                    ],
+                    "correctMsg": "برافو! أحسنت 🌟 (+10)",
+                    "wrongMsg": "حاول مجدداً!"
+                },
+                {
+                    "emoji": "🚪",
+                    "question": "Writing: هذا باب",
+                    "options": [
+                        { "text": "This is a door.", "isCorrect": true },
+                        { "text": "This is a window.", "isCorrect": false },
+                        { "text": "This is a board.", "isCorrect": false }
+                    ],
+                    "correctMsg": "ممتاز جداً! قواعد سليمة 🎯 (+10)",
+                    "wrongMsg": "إجابة غير صحيحة، حاول مجدداً!"
+                },
+                {
+                    "emoji": "🪟",
+                    "question": "Writing: هذه نافذة",
+                    "options": [
+                        { "text": "This is a book.", "isCorrect": false },
+                        { "text": "This is a door.", "isCorrect": false },
+                        { "text": "This is a window.", "isCorrect": true }
+                    ],
+                    "correctMsg": "رائع يا بطل! 🌟 (+10)",
+                    "wrongMsg": "حاول مجدداً!"
+                },
+                {
+                    "emoji": "🐱",
+                    "question": "Phonics (Short a): قطة",
+                    "options": [
+                        { "text": "cat", "isCorrect": true },
+                        { "text": "cap", "isCorrect": false },
+                        { "text": "hat", "isCorrect": false }
+                    ],
+                    "correctMsg": "ممتاز! صوت حرف A القصير 🐱 (+10)",
+                    "wrongMsg": "حاول مجدداً!"
+                },
+                {
+                    "emoji": "👒",
+                    "question": "Phonics (Short a): قبعة",
+                    "options": [
+                        { "text": "fan", "isCorrect": false },
+                        { "text": "hat", "isCorrect": true },
+                        { "text": "man", "isCorrect": false }
+                    ],
+                    "correctMsg": "أحسنت! 👒 (+10)",
+                    "wrongMsg": "حاول مجدداً!"
+                },
+                {
+                    "emoji": "🪭",
+                    "question": "Phonics (Short a): مروحة",
+                    "options": [
+                        { "text": "fan", "isCorrect": true },
+                        { "text": "man", "isCorrect": false },
+                        { "text": "map", "isCorrect": false }
+                    ],
+                    "correctMsg": "برافو! إجابة صحيحة 🪭 (+10)",
+                    "wrongMsg": "حاول مجدداً!"
+                },
+                {
+                    "emoji": "🗺️",
+                    "question": "Phonics (Short a): خريطة",
+                    "options": [
+                        { "text": "cap", "isCorrect": false },
+                        { "text": "map", "isCorrect": true },
+                        { "text": "cat", "isCorrect": false }
+                    ],
+                    "correctMsg": "ممتاز! أحسنت 🗺️ (+10)",
+                    "wrongMsg": "حاول مجدداً!"
+                }
+            ]
+        };
+    </script>
+
+    <!-- Framework & Shared Scripts -->
+    <script src="../../assets/js/bidi.js"></script>
+    <script src="../../assets/js/audio.js"></script>
+    <script src="../../assets/js/tabs.js"></script>
+    <script src="../../assets/js/quiz-engine.js"></script>
+    <script src="../../assets/js/ui.js"></script>
+    <script src="../../assets/js/main.js"></script>
+
+    <!-- Studio Data Payload for 100% Lossless Roundtrip Editing -->
+    <script id="studio-payload" type="application/json">
+{
+  "archetype": "direct_quiz",
+  "stage": "Grade_2",
+  "unit": "unit-1",
+  "fileName": "lesson-2.html",
+  "title": "Lesson 2: Around the classroom & Phonics",
+  "description": "أدوات الفصل الدراسي، قاعدة (This is a/an)، وصوتيات حرف A القصير (Short 'a' sound /æ/)",
+  "quiz": [
+    {
+      "emoji": "🖊️",
+      "question": "قلم جاف",
+      "options": [
+        { "text": "pen", "isCorrect": true },
+        { "text": "book", "isCorrect": false },
+        { "text": "bag", "isCorrect": false }
+      ],
+      "correctMsg": "ممتاز! أحسنت 🎯 (+10)",
+      "wrongMsg": "إجابة غير صحيحة، حاول مجدداً!"
+    },
+    {
+      "emoji": "📖",
+      "question": "كتاب",
+      "options": [
+        { "text": "board", "isCorrect": false },
+        { "text": "book", "isCorrect": true },
+        { "text": "notebook", "isCorrect": false }
+      ],
+      "correctMsg": "برافو! إجابة صحيحة 🌟 (+10)",
+      "wrongMsg": "حاول مجدداً!"
+    },
+    {
+      "emoji": "🪟",
+      "question": "نافذة / شباك",
+      "options": [
+        { "text": "door", "isCorrect": false },
+        { "text": "window", "isCorrect": true },
+        { "text": "board", "isCorrect": false }
+      ],
+      "correctMsg": "ممتاز يا بطل! 🎯 (+10)",
+      "wrongMsg": "حاول مرة أخرى!"
+    },
+    {
+      "emoji": "📓",
+      "question": "كراسة / دفتر ملاحظات",
+      "options": [
+        { "text": "notebook", "isCorrect": true },
+        { "text": "book", "isCorrect": false },
+        { "text": "pen", "isCorrect": false }
+      ],
+      "correctMsg": "أحسنت! إجابة دقيقة 🌟 (+10)",
+      "wrongMsg": "حاول مجدداً!"
+    },
+    {
+      "emoji": "📋",
+      "question": "سبورة",
+      "options": [
+        { "text": "window", "isCorrect": false },
+        { "text": "board", "isCorrect": true },
+        { "text": "bag", "isCorrect": false }
+      ],
+      "correctMsg": "ممتاز! 🎯 (+10)",
+      "wrongMsg": "إجابة غير صحيحة، حاول مجدداً!"
+    },
+    {
+      "emoji": "🎒",
+      "question": "حقيبة",
+      "options": [
+        { "text": "bag", "isCorrect": true },
+        { "text": "pen", "isCorrect": false },
+        { "text": "hat", "isCorrect": false }
+      ],
+      "correctMsg": "برافو! أحسنت 🌟 (+10)",
+      "wrongMsg": "حاول مجدداً!"
+    },
+    {
+      "emoji": "🚪",
+      "question": "Writing: هذا باب",
+      "options": [
+        { "text": "This is a door.", "isCorrect": true },
+        { "text": "This is a window.", "isCorrect": false },
+        { "text": "This is a board.", "isCorrect": false }
+      ],
+      "correctMsg": "ممتاز جداً! قواعد سليمة 🎯 (+10)",
+      "wrongMsg": "إجابة غير صحيحة، حاول مجدداً!"
+    },
+    {
+      "emoji": "🪟",
+      "question": "Writing: هذه نافذة",
+      "options": [
+        { "text": "This is a book.", "isCorrect": false },
+        { "text": "This is a door.", "isCorrect": false },
+        { "text": "This is a window.", "isCorrect": true }
+      ],
+      "correctMsg": "رائع يا بطل! 🌟 (+10)",
+      "wrongMsg": "حاول مجدداً!"
+    },
+    {
+      "emoji": "🐱",
+      "question": "Phonics (Short a): قطة",
+      "options": [
+        { "text": "cat", "isCorrect": true },
+        { "text": "cap", "isCorrect": false },
+        { "text": "hat", "isCorrect": false }
+      ],
+      "correctMsg": "ممتاز! صوت حرف A القصير 🐱 (+10)",
+      "wrongMsg": "حاول مجدداً!"
+    },
+    {
+      "emoji": "👒",
+      "question": "Phonics (Short a): قبعة",
+      "options": [
+        { "text": "fan", "isCorrect": false },
+        { "text": "hat", "isCorrect": true },
+        { "text": "man", "isCorrect": false }
+      ],
+      "correctMsg": "أحسنت! 👒 (+10)",
+      "wrongMsg": "حاول مجدداً!"
+    },
+    {
+      "emoji": "🪭",
+      "question": "Phonics (Short a): مروحة",
+      "options": [
+        { "text": "fan", "isCorrect": true },
+        { "text": "man", "isCorrect": false },
+        { "text": "map", "isCorrect": false }
+      ],
+      "correctMsg": "برافو! إجابة صحيحة 🪭 (+10)",
+      "wrongMsg": "حاول مجدداً!"
+    },
+    {
+      "emoji": "🗺️",
+      "question": "Phonics (Short a): خريطة",
+      "options": [
+        { "text": "cap", "isCorrect": false },
+        { "text": "map", "isCorrect": true },
+        { "text": "cat", "isCorrect": false }
+      ],
+      "correctMsg": "ممتاز! أحسنت 🗺️ (+10)",
+      "wrongMsg": "حاول مجدداً!"
+    }
+  ]
+}
+    </script>
+</body>
+</html>

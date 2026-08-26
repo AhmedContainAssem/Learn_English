@@ -1,0 +1,365 @@
+{
+  "platform": "Learn English - Mr. Ahmed Assem",
+  "version": "2.0.0",
+  "lastUpdated": "2026-08-21",
+  "teacher": {
+    "name": "Mr. Ahmed Assem",
+    "slogan": "✨ Easy Peasy Ya Englezeey ✨",
+    "avatar": "my-photo-profile.png"
+  },
+  "stages": [
+    {
+      "id": "Course",
+      "slug": "Course",
+      "name": "كورسات التأسيس (Courses)",
+      "category": "كورسات وتأسيس",
+      "icon": "🚀",
+      "indexPath": "Course/index.html",
+      "status": "active",
+      "units": [
+        {
+          "id": "A1",
+          "slug": "A1",
+          "name": "Level A1 (المستوى الأول)",
+          "arabicName": "المستوى الأول A1",
+          "icon": "🚀",
+          "indexPath": "Course/A1/index.html",
+          "status": "active",
+          "lessons": [
+            {
+              "id": "session-1",
+              "slug": "session-1.html",
+              "name": "Session 1: Key Vocabulary & Sentences",
+              "arabicName": "الحصة الأولى: المفردات والجمل الأساسية",
+              "path": "Course/A1/session-1.html",
+              "archetype": "flashcards_dialogue",
+              "status": "active"
+            },
+            {
+              "id": "session-2",
+              "slug": "session-2.html",
+              "name": "Session 2: Job, Workplace & Contact Info",
+              "arabicName": "الحصة الثانية: الوظائف ومعلومات التواصل",
+              "path": "Course/A1/session-2.html",
+              "archetype": "flashcards_dialogue",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "id": "A2",
+          "slug": "A2",
+          "name": "Level A2 (المستوى الثاني)",
+          "arabicName": "المستوى الثاني A2",
+          "icon": "🚀",
+          "indexPath": "Course/A2/index.html",
+          "status": "locked",
+          "lessons": []
+        }
+      ]
+    },
+    {
+      "id": "Grade_2",
+      "slug": "Grade_2",
+      "name": "الصف الثاني الابتدائي (Grade 2)",
+      "category": "المرحلة الابتدائية",
+      "icon": "🌿",
+      "indexPath": "Grade_2/index.html",
+      "status": "active",
+      "units": [
+        {
+          "id": "unit-1",
+          "slug": "unit-1",
+          "name": "Unit 1: Greetings & Classroom Objects",
+          "arabicName": "الوحدة الأولى: التحيات وأدوات الفصل",
+          "icon": "📘",
+          "indexPath": "Grade_2/unit-1/index.html",
+          "status": "active",
+          "lessons": [
+            {
+              "id": "lesson-1-part-1",
+              "slug": "lesson-1-part-1.html",
+              "name": "Lesson 1 (Part 1) - Quick Assessment Quiz",
+              "arabicName": "الدرس الأول (جزء 1) - اختبار تدريبي سريع",
+              "path": "Grade_2/unit-1/lesson-1-part-1.html",
+              "archetype": "direct_quiz",
+              "status": "active"
+            },
+            {
+              "id": "lesson-1-part-2",
+              "slug": "lesson-1-part-2.html",
+              "name": "Lesson 1 (Part 2) - Extra Vocabulary & Expressions",
+              "arabicName": "الدرس الأول (جزء 2) - مفردات وتعبيرات هامة",
+              "path": "Grade_2/unit-1/lesson-1-part-2.html",
+              "archetype": "direct_quiz",
+              "status": "active"
+            },
+            {
+              "id": "lesson-2",
+              "slug": "lesson-2.html",
+              "name": "Lesson 2: Around the classroom & Phonics",
+              "arabicName": "الدرس الثاني: أدوات الفصل وقاعدة This is وصوتيات Short A",
+              "path": "Grade_2/unit-1/lesson-2.html",
+              "archetype": "direct_quiz",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "id": "unit-2",
+          "slug": "unit-2",
+          "name": "Unit 2",
+          "arabicName": "الوحدة الثانية",
+          "icon": "📗",
+          "indexPath": "Grade_2/unit-2/index.html",
+          "status": "locked",
+          "lessons": []
+        }
+      ]
+    },
+    {
+      "id": "Grade_4",
+      "slug": "Grade_4",
+      "name": "الصف الرابع الابتدائي (Grade 4)",
+      "category": "المرحلة الابتدائية",
+      "icon": "📚",
+      "indexPath": "Grade_4/index.html",
+      "status": "active",
+      "units": [
+        {
+          "id": "unit-1",
+          "slug": "unit-1",
+          "name": "Unit 1: Key Vocabulary & Habits",
+          "arabicName": "الوحدة الأولى",
+          "icon": "📘",
+          "indexPath": "Grade_4/unit-1/index.html",
+          "status": "active",
+          "lessons": [
+            {
+              "id": "lesson-1",
+              "slug": "lesson-1.html",
+              "name": "Lesson 1: Our Senses",
+              "arabicName": "الدرس الأول: حواسنا",
+              "path": "Grade_4/unit-1/lesson-1.html",
+              "archetype": "quiz_only",
+              "status": "active"
+            },
+            {
+              "id": "lesson-2_part-1",
+              "slug": "lesson-2_part-1.html",
+              "name": "Lesson 2 (Part 1): Healthy Habits",
+              "arabicName": "الدرس الثاني (جزء 1): عادات صحية",
+              "path": "Grade_4/unit-1/lesson-2_part-1.html",
+              "archetype": "quiz_only",
+              "status": "active"
+            },
+            {
+              "id": "lesson-2_part-2",
+              "slug": "lesson-2_part-2.html",
+              "name": "Lesson 2 (Part 2): Extra Vocabulary",
+              "arabicName": "الدرس الثاني (جزء 2): مفردات إضافية",
+              "path": "Grade_4/unit-1/lesson-2_part-2.html",
+              "archetype": "quiz_only",
+              "status": "active"
+            },
+            {
+              "id": "lesson-2_part-3",
+              "slug": "lesson-2_part-3.html",
+              "name": "Lesson 2 (Part 3): Verbs & Expressions",
+              "arabicName": "الدرس الثاني (جزء 3): أفعال وتعبيرات",
+              "path": "Grade_4/unit-1/lesson-2_part-3.html",
+              "archetype": "quiz_only",
+              "status": "active"
+            },
+            {
+              "id": "lesson-3_part-1",
+              "slug": "lesson-3_part-1.html",
+              "name": "Lesson 3 (Part 1): Key & Extra Vocabulary",
+              "arabicName": "الدرس الثالث (جزء 1): مفردات هامة",
+              "path": "Grade_4/unit-1/lesson-3_part-1.html",
+              "archetype": "quiz_only",
+              "status": "active"
+            },
+            {
+              "id": "lesson-4-5",
+              "slug": "lesson-4-5.html",
+              "name": "Lessons 4 & 5: Writing, Vocabulary & Pronunciation",
+              "arabicName": "الدرسان الرابع والخامس: الروتين والصوتيات",
+              "path": "Grade_4/unit-1/lesson-4-5.html",
+              "archetype": "direct_quiz",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "id": "unit-2",
+          "slug": "unit-2",
+          "name": "Unit 2",
+          "arabicName": "الوحدة الثانية",
+          "icon": "📗",
+          "indexPath": "Grade_4/unit-2/index.html",
+          "status": "locked",
+          "lessons": []
+        }
+      ]
+    },
+    {
+      "id": "Prep_3",
+      "slug": "Prep_3",
+      "name": "الصف الثالث الإعدادي (Prep 3)",
+      "category": "المرحلة الإعدادية",
+      "icon": "🎓",
+      "indexPath": "Prep_3/index.html",
+      "status": "active",
+      "units": [
+        {
+          "id": "unit-1",
+          "slug": "unit-1",
+          "name": "Unit 1: Identity & Key Vocabulary",
+          "arabicName": "الوحدة الأولى",
+          "icon": "📘",
+          "indexPath": "Prep_3/unit-1/index.html",
+          "status": "active",
+          "lessons": [
+            {
+              "id": "lesson-1-part-1",
+              "slug": "lesson-1-part-1.html",
+              "name": "Lesson 1 (Part 1): Key & Extra Vocabulary",
+              "arabicName": "الدرس الأول (جزء 1): الكلمات والمفردات الأساسية",
+              "path": "Prep_3/unit-1/lesson-1-part-1.html",
+              "archetype": "direct_quiz",
+              "status": "active"
+            },
+            {
+              "id": "lesson-1-part-2",
+              "slug": "lesson-1-part-2.html",
+              "name": "Lesson 1 (Part 2): Verbs, Definitions, Synonyms & Quiz",
+              "arabicName": "الدرس الأول (جزء 2): أفعال وتعريفات ومترادفات",
+              "path": "Prep_3/unit-1/lesson-1-part-2.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            },
+            {
+              "id": "lesson-3",
+              "slug": "lesson-2.html",
+              "name": "Lesson 3: Digital Devices (Full Vocabulary, Definitions, Structure & Quiz)",
+              "arabicName": "الدرس الثالث: الأجهزة الرقمية (مفردات وتصريفات وتعريفات وبوادئ واختبار 73 سؤال)",
+              "path": "Prep_3/unit-1/lesson-2.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            },
+            {
+              "id": "lesson-5-6",
+              "slug": "lesson-5-6.html",
+              "name": "Lessons 5 & 6: Let's Talk • This is Me (Full Structure, Story Book & Quiz)",
+              "arabicName": "الدرس الخامس والسادس: لنتحدث • هذا أنا (قصة وحوار تفاعلي ومفردات وأفعال ومتلازمات واختبار 65 سؤال)",
+              "path": "Prep_3/unit-1/lesson-5-6.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "id": "unit-2",
+          "slug": "unit-2",
+          "name": "Unit 2",
+          "arabicName": "الوحدة الثانية",
+          "icon": "📗",
+          "indexPath": "Prep_3/unit-2/index.html",
+          "status": "locked",
+          "lessons": []
+        }
+      ]
+    },
+    {
+      "id": "Grade_1",
+      "slug": "Grade_1",
+      "name": "الصف الأول الابتدائي (Grade 1)",
+      "category": "المرحلة الابتدائية",
+      "icon": "🌱",
+      "indexPath": "Grade_1/index.html",
+      "status": "locked",
+      "units": []
+    },
+    {
+      "id": "Grade_3",
+      "slug": "Grade_3",
+      "name": "الصف الثالث الابتدائي (Grade 3)",
+      "category": "المرحلة الابتدائية",
+      "icon": "🌳",
+      "indexPath": "Grade_3/index.html",
+      "status": "locked",
+      "units": []
+    },
+    {
+      "id": "Grade_5",
+      "slug": "Grade_5",
+      "name": "الصف الخامس الابتدائي (Grade 5)",
+      "category": "المرحلة الابتدائية",
+      "icon": "🌿",
+      "indexPath": "Grade_5/index.html",
+      "status": "locked",
+      "units": []
+    },
+    {
+      "id": "Grade_6",
+      "slug": "Grade_6",
+      "name": "الصف السادس الابتدائي (Grade 6)",
+      "category": "المرحلة الابتدائية",
+      "icon": "🌳",
+      "indexPath": "Grade_6/index.html",
+      "status": "locked",
+      "units": []
+    },
+    {
+      "id": "Prep_1",
+      "slug": "Prep_1",
+      "name": "الصف الأول الإعدادي (Prep 1)",
+      "category": "المرحلة الإعدادية",
+      "icon": "🎒",
+      "indexPath": "Prep_1/index.html",
+      "status": "locked",
+      "units": []
+    },
+    {
+      "id": "Prep_2",
+      "slug": "Prep_2",
+      "name": "الصف الثاني الإعدادي (Prep 2)",
+      "category": "المرحلة الإعدادية",
+      "icon": "📖",
+      "indexPath": "Prep_2/index.html",
+      "status": "locked",
+      "units": []
+    },
+    {
+      "id": "Sec_1",
+      "slug": "Sec_1",
+      "name": "الصف الأول الثانوي (Sec 1)",
+      "category": "المرحلة الثانوية",
+      "icon": "🏛️",
+      "indexPath": "Sec_1/index.html",
+      "status": "locked",
+      "units": []
+    },
+    {
+      "id": "Sec_2",
+      "slug": "Sec_2",
+      "name": "الصف الثاني الثانوي (Sec 2)",
+      "category": "المرحلة الثانوية",
+      "icon": "📜",
+      "indexPath": "Sec_2/index.html",
+      "status": "locked",
+      "units": []
+    },
+    {
+      "id": "Sec_3",
+      "slug": "Sec_3",
+      "name": "الصف الثالث الثانوي (Sec 3)",
+      "category": "المرحلة الثانوية",
+      "icon": "🏆",
+      "indexPath": "Sec_3/index.html",
+      "status": "locked",
+      "units": []
+    }
+  ]
+}

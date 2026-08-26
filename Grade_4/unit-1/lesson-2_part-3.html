@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 1 - Lesson 2: Verbs & Expressions (Part 3)</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+    <div class="container" style="max-width: 650px;">
+        <div class="breadcrumb" style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 15px;">
+            <span>الصف الرابع الابتدائي</span> / <span>الوحدة الأولى</span> / <span>الدرس الثاني (الجزء 3)</span>
+        </div>
+
+        <div style="text-align: center; border-bottom: 2px solid var(--border-color); padding-bottom: 15px; margin-bottom: 20px;">
+            <h1 id="title" class="title" style="font-size: 1.8rem; margin-bottom: 8px;">Unit 1 - Lesson 2 (Part 3)</h1>
+            <p id="description" class="subtitle" style="margin-bottom: 0;">اختر الإجابة الصحيحة للأفعال والتعبيرات من الكتاب!</p>
+        </div>
+
+        <div class="score-board">
+            <span>السؤال: <span id="current-q">1</span> / <span id="total-q">10</span></span>
+            <span>النقاط: <span id="score">0</span> 🌟</span>
+        </div>
+
+        <div class="question-card" style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 16px; padding: 25px; margin-bottom: 20px; text-align: center;">
+            <span class="emoji-display" id="emoji" style="font-size: 3.5rem; display: block; margin-bottom: 15px;">⚡</span>
+            <div class="question-text" id="question" style="font-size: 1.2rem; margin-bottom: 20px; color: var(--text-main); line-height: 1.5;">جاري تحميل السؤال...</div>
+            <div class="options-grid" id="options" style="display: flex; flex-direction: column; gap: 12px;"></div>
+            <div class="feedback" id="feedback"></div>
+        </div>
+
+        <div class="nav-controls" style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+            <a href="./index.html" class="back-btn" data-sound-click="click">⬅ العودة لقائمة الدروس</a>
+            <button class="action-btn next-btn" id="next-btn" onclick="nextQuestion()" style="display: none;">السؤال التالي ➔</button>
+        </div>
+    </div>
+
+    <script>
+        window.lessonData = {
+            title: "Unit 1 - Lesson 2: Verbs & Expressions (Part 3)",
+            description: "اختبر نفسك في تصريفات الأفعال والتعبيرات من كتاب الدرس!",
+            sections: [
+                {
+                    title: "✨ Verbs & Expressions",
+                    questions: [
+                        {
+                            id: "q1",
+                            emoji: "🏆",
+                            question: "What is the past of: 'win'? (يفوز)",
+                            options: [
+                                { text: "winned", isCorrect: false },
+                                { text: "won", isCorrect: true },
+                                { text: "winning", isCorrect: false }
+                            ],
+                            correctMsg: "ممتاز! 🏆 الماضي من win هو won (+10)",
+                            wrongMsg: "فعل غير منتظم، لا نضيف ed!"
+                        },
+                        {
+                            id: "q2",
+                            emoji: "🏃‍♂️",
+                            question: "What is the past of: 'practice'? (يتدرب)",
+                            options: [
+                                { text: "practiced", isCorrect: true },
+                                { text: "practicing", isCorrect: false },
+                                { text: "proctice", isCorrect: false }
+                            ],
+                            correctMsg: "أحسنت! 🏃‍♂️ الماضي من practice هو practiced (+10)",
+                            wrongMsg: "فعل منتظم، نضيف ed!"
+                        },
+                        {
+                            id: "q3",
+                            emoji: "☀️",
+                            question: "What is the past of: 'wake up'? (يستيقظ)",
+                            options: [
+                                { text: "waked up", isCorrect: false },
+                                { text: "woke up", isCorrect: true },
+                                { text: "woken up", isCorrect: false }
+                            ],
+                            correctMsg: "بطل! ☀️ الماضي من wake up هو woke up (+10)",
+                            wrongMsg: "فعل غير منتظم!"
+                        },
+                        {
+                            id: "q4",
+                            emoji: "🎉",
+                            question: "What is the past of: 'enjoy'? (يستمتع بـ)",
+                            options: [
+                                { text: "enjoyed", isCorrect: true },
+                                { text: "enjoied", isCorrect: false },
+                                { text: "enjoying", isCorrect: false }
+                            ],
+                            correctMsg: "صح كدة! 🎉 الماضي من enjoy هو enjoyed (+10)",
+                            wrongMsg: "فعل منتظم!"
+                        },
+                        {
+                            id: "q5",
+                            emoji: "📸",
+                            question: "What is the past of: 'take'? (يأخذ)",
+                            options: [
+                                { text: "taked", isCorrect: false },
+                                { text: "took", isCorrect: true },
+                                { text: "taken", isCorrect: false }
+                            ],
+                            correctMsg: "رائع! 📸 الماضي من take هو took (+10)",
+                            wrongMsg: "فعل غير منتظم!"
+                        },
+                        {
+                            id: "q6",
+                            emoji: "🌱",
+                            question: "What is the past of: 'grow'? (يزرع / ينقش)",
+                            options: [
+                                { text: "grew", isCorrect: true },
+                                { text: "growed", isCorrect: false },
+                                { text: "growing", isCorrect: false }
+                            ],
+                            correctMsg: "عبقري! 🌱 الماضي من grow هو grew (+10)",
+                            wrongMsg: "فعل غير منتظم!"
+                        },
+                        {
+                            id: "q7",
+                            emoji: "⚡",
+                            question: "Healthy food can ________ us energy. (يمدنا بالطاقة)",
+                            options: [
+                                { text: "give", isCorrect: true },
+                                { text: "take", isCorrect: false },
+                                { text: "sleep", isCorrect: false }
+                            ],
+                            correctMsg: "ممتاز جداً! ⚡ Give energy تعني يمد بالطاقة (+10)",
+                            wrongMsg: "ركز في التعبير الخاص بالطاقة!"
+                        },
+                        {
+                            id: "q8",
+                            emoji: "🧠",
+                            question: "Sleeping early helps us to ________ sharp. (يكون يقظاً)",
+                            options: [
+                                { text: "stay", isCorrect: true },
+                                { text: "go", isCorrect: false },
+                                { text: "make", isCorrect: false }
+                            ],
+                            correctMsg: "رائع! 🧠 Stay sharp تعني يكون يقظاً/منتبهاً (+10)",
+                            wrongMsg: "التعبير الصحيح هو stay sharp!"
+                        },
+                        {
+                            id: "q9",
+                            emoji: "🤝",
+                            question: "At school, it is good to ________ friends. (يكوّن صداقات)",
+                            options: [
+                                { text: "do", isCorrect: false },
+                                { text: "make", isCorrect: true },
+                                { text: "take", isCorrect: false }
+                            ],
+                            correctMsg: "بطل! 🤝 Make friends تعني يكوّن صداقات (+10)",
+                            wrongMsg: "التعبير الصحيح مع الأصدقاء هو make!"
+                        },
+                        {
+                            id: "q10",
+                            emoji: "📊",
+                            question: "The phrase 'plenty of' means: (الكثير من)",
+                            options: [
+                                { text: "a lot of", isCorrect: true },
+                                { text: "a little of", isCorrect: false },
+                                { text: "few of", isCorrect: false }
+                            ],
+                            correctMsg: "ممتاز! 📊 Plenty of تعني a lot of (+10)",
+                            wrongMsg: "في الكتاب Plenty of تترجم a lot of!"
+                        }
+                    ]
+                }
+            ]
+        };
+    </script>
+    <script src="../../assets/js/bidi.js"></script>
+    <script src="../../assets/js/audio.js"></script>
+    <script src="../../assets/js/quiz-engine.js"></script>
+    <script src="../../assets/js/ui.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,293 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c16" />
+      <stop offset="50%" stop-color="#0e172a" />
+      <stop offset="100%" stop-color="#060913" />
+    </linearGradient>
+
+    <!-- Glass Windows -->
+    <linearGradient id="winHeader2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#19243b" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0e1526" stop-opacity="0.95" />
+    </linearGradient>
+
+    <linearGradient id="cyanNeon2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f3ff" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <linearGradient id="bookGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="50%" stop-color="#312e81" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+
+    <filter id="shadow2" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.75" />
+      <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#00f3ff" flood-opacity="0.1" />
+    </filter>
+
+    <filter id="glowMagenta" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 800; }
+    .mono { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; }
+    .body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+  </style>
+
+  <!-- Background -->
+  <rect width="1200" height="760" fill="url(#bgGrad2)" rx="16" />
+
+  <!-- Ambient Lights -->
+  <circle cx="200" cy="180" r="150" fill="#00f3ff" opacity="0.06" filter="url(#glowMagenta)" />
+  <circle cx="1000" cy="580" r="160" fill="#a855f7" opacity="0.05" filter="url(#glowMagenta)" />
+
+  <!-- Showcase Header -->
+  <g transform="translate(50, 38)">
+    <rect x="0" y="0" width="165" height="26" rx="13" fill="rgba(0, 255, 136, 0.12)" stroke="#00ff88" stroke-width="1" />
+    <text x="82" y="17" fill="#00ff88" font-size="11" class="mono" font-weight="bold" text-anchor="middle">STUDENT EXPERIENCE</text>
+    <text x="180" y="19" fill="#ffffff" font-size="20" class="title">Interactive Learning Layouts &amp; Reading Archetypes</text>
+    <text x="180" y="38" fill="#94a3b8" font-size="12" class="body">Dynamic curriculum hubs, multi-tab lessons with pronunciation, and 3D dual-page storybook narrator</text>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- LEFT PANEL: CURRICULUM STAGE HUB & LESSON -->
+  <!-- ========================================== -->
+  <g transform="translate(50, 95)" filter="url(#shadow2)">
+    <rect width="535" height="625" rx="14" fill="#0c121e" stroke="#334155" stroke-width="1.2" />
+
+    <!-- Window Topbar -->
+    <rect width="535" height="38" rx="14" fill="url(#winHeader2)" />
+    <rect y="24" width="535" height="14" fill="#0f172a" />
+    <line x1="0" y1="38" x2="535" y2="38" stroke="#1e293b" stroke-width="1" />
+
+    <circle cx="20" cy="19" r="5" fill="#ef4444" />
+    <circle cx="36" cy="19" r="5" fill="#f59e0b" />
+    <circle cx="52" cy="19" r="5" fill="#10b981" />
+
+    <rect x="75" y="8" width="280" height="22" rx="5" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+    <text x="90" y="23" fill="#38bdf8" font-size="10.5" class="mono">Learn_English/Prep_3/index.html</text>
+
+    <!-- Student Header & Avatar -->
+    <g transform="translate(20, 52)">
+      <circle cx="24" cy="24" r="22" fill="#00f3ff" fill-opacity="0.2" stroke="#00f3ff" stroke-width="1.5" />
+      <text x="24" y="30" fill="#00f3ff" font-size="16" text-anchor="middle">🎓</text>
+
+      <text x="58" y="20" fill="#ffffff" font-size="15" class="title">Preparatory Stage 3 (Grade 9)</text>
+      <text x="58" y="36" fill="#94a3b8" font-size="11" class="body">Interactive Term 1 Curriculum Hub | 6 Active Units</text>
+
+      <rect x="395" y="10" width="95" height="24" rx="12" fill="rgba(0,243,255,0.15)" stroke="#00f3ff" stroke-width="1" />
+      <text x="442" y="26" fill="#00f3ff" font-size="10.5" class="mono" font-weight="bold" text-anchor="middle">85% SCORE</text>
+    </g>
+
+    <line x1="20" y1="110" x2="515" y2="110" stroke="#1e293b" stroke-width="1" />
+
+    <!-- Unit Card 1: Around Town (Expanded) -->
+    <g transform="translate(20, 122)">
+      <rect width="495" height="155" rx="10" fill="url(#cardGrad)" stroke="#00f3ff" stroke-width="1.4" />
+      <text x="18" y="28" fill="#00f3ff" font-size="14" class="title">📁 Unit 1: Around Town</text>
+      <rect x="380" y="12" width="98" height="22" rx="5" fill="rgba(0,255,136,0.15)" />
+      <text x="429" y="27" fill="#00ff88" font-size="10" class="mono" font-weight="bold" text-anchor="middle">4 LESSONS</text>
+
+      <!-- Lesson Items -->
+      <g transform="translate(18, 44)">
+        <!-- Lesson 1 -->
+        <rect width="458" height="28" rx="6" fill="#090d16" stroke="#334155" stroke-width="1" />
+        <text x="12" y="19" fill="#ffffff" font-size="11" class="body">Lesson 1 &amp; 2: Key Vocabulary &amp; Irregular Verbs</text>
+        <rect x="365" y="4" width="80" height="20" rx="4" fill="rgba(0,243,255,0.15)" />
+        <text x="405" y="17" fill="#00f3ff" font-size="10" class="mono" text-anchor="middle">Start 🔊</text>
+
+        <!-- Lesson 2 -->
+        <rect y="34" width="458" height="28" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+        <text x="12" y="53" fill="#cbd5e1" font-size="11" class="body">Lesson 3 &amp; 4: Definitions, Synonyms &amp; Antonyms</text>
+        <rect x="365" y="38" width="80" height="20" rx="4" fill="#1e293b" />
+        <text x="405" y="51" fill="#94a3b8" font-size="10" class="mono" text-anchor="middle">Practice</text>
+
+        <!-- Unit Quiz -->
+        <rect y="68" width="458" height="28" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+        <text x="12" y="87" fill="#fb7185" font-size="11" class="title">🎯 Unit 1 Comprehensive Assessment Quiz</text>
+        <rect x="365" y="72" width="80" height="20" rx="4" fill="rgba(244,63,94,0.15)" />
+        <text x="405" y="85" fill="#fb7185" font-size="10" class="mono" text-anchor="middle">Quiz (20 Qs)</text>
+      </g>
+    </g>
+
+    <!-- Unit Card 2: Let's Go Shopping -->
+    <g transform="translate(20, 290)">
+      <rect width="495" height="70" rx="10" fill="url(#cardGrad)" stroke="#1e293b" stroke-width="1" />
+      <text x="18" y="28" fill="#e2e8f0" font-size="14" class="title">📁 Unit 2: Let's Go Shopping</text>
+      <rect x="380" y="14" width="98" height="22" rx="5" fill="#1e293b" />
+      <text x="429" y="29" fill="#94a3b8" font-size="10" class="mono" text-anchor="middle">4 LESSONS</text>
+      <text x="18" y="52" fill="#64748b" font-size="11" class="body">Electronic devices, smart appliances, customer reviews &amp; deals.</text>
+    </g>
+
+    <!-- Interactive 3D Flashcard Mini-Preview -->
+    <g transform="translate(20, 375)">
+      <rect width="495" height="225" rx="10" fill="#090d16" stroke="#00f3ff" stroke-width="1.2" />
+
+      <text x="18" y="26" fill="#00f3ff" font-size="13" class="title">🎴 3D Flip Flashcard &amp; Audio Player</text>
+      <text x="18" y="44" fill="#94a3b8" font-size="10.5" class="body">Tap to flip &amp; listen to native UK/US accent pronunciation</text>
+
+      <!-- Center 3D Card Representation -->
+      <g transform="translate(85, 58)">
+        <rect width="325" height="115" rx="12" fill="url(#cardGrad)" stroke="#00f3ff" stroke-width="1.5" />
+        <text x="162" y="42" fill="#ffffff" font-size="20" class="title" text-anchor="middle">aquarium</text>
+        <text x="162" y="64" fill="#38bdf8" font-size="12" class="mono" text-anchor="middle">/əˈkweə.ri.əm/</text>
+        <text x="162" y="90" fill="#a5f3fc" font-size="13" class="body" text-anchor="middle">متحف الأحياء المائية (حوض أسماك كبير)</text>
+
+        <!-- Audio Floating Trigger -->
+        <circle cx="285" cy="35" r="16" fill="rgba(0,243,255,0.2)" stroke="#00f3ff" stroke-width="1" />
+        <text x="285" y="40" fill="#00f3ff" font-size="13" text-anchor="middle">🔊</text>
+      </g>
+
+      <!-- Flashcard Controls -->
+      <g transform="translate(18, 185)">
+        <rect width="100" height="26" rx="5" fill="#1e293b" />
+        <text x="50" y="17" fill="#cbd5e1" font-size="11" class="body" text-anchor="middle">◀ Previous</text>
+
+        <text x="247" y="17" fill="#64748b" font-size="11" class="mono" text-anchor="middle">Card 4 of 24</text>
+
+        <rect x="358" y="0" width="100" height="26" rx="5" fill="rgba(0,243,255,0.15)" stroke="#00f3ff" stroke-width="1" />
+        <text x="408" y="17" fill="#00f3ff" font-size="11" class="body" text-anchor="middle">Next ▶</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- RIGHT PANEL: 3D DUAL-PAGE STORYBOOK READER -->
+  <!-- ========================================== -->
+  <g transform="translate(615, 95)" filter="url(#shadow2)">
+    <rect width="535" height="625" rx="14" fill="#0c121e" stroke="#334155" stroke-width="1.2" />
+
+    <!-- Window Topbar -->
+    <rect width="535" height="38" rx="14" fill="url(#winHeader2)" />
+    <rect y="24" width="535" height="14" fill="#0f172a" />
+    <line x1="0" y1="38" x2="535" y2="38" stroke="#1e293b" stroke-width="1" />
+
+    <circle cx="20" cy="19" r="5" fill="#ef4444" />
+    <circle cx="36" cy="19" r="5" fill="#f59e0b" />
+    <circle cx="52" cy="19" r="5" fill="#10b981" />
+
+    <rect x="75" y="8" width="310" height="22" rx="5" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+    <text x="90" y="23" fill="#a855f7" font-size="10.5" class="mono">Learn_English/Prep_3/story/black-beauty.html</text>
+
+    <!-- Story Header -->
+    <g transform="translate(20, 52)">
+      <rect x="0" y="0" width="32" height="32" rx="8" fill="rgba(168,85,247,0.2)" stroke="#a855f7" stroke-width="1" />
+      <text x="16" y="22" fill="#c084fc" font-size="16" text-anchor="middle">📖</text>
+      <text x="44" y="18" fill="#ffffff" font-size="15" class="title">Black Beauty: Chapter 1 - My Early Home</text>
+      <text x="44" y="34" fill="#94a3b8" font-size="11" class="body">Interactive Dual-Page Narrator with Synchronized Audio</text>
+    </g>
+
+    <line x1="20" y1="98" x2="515" y2="98" stroke="#1e293b" stroke-width="1" />
+
+    <!-- Audio Player Controls Bar -->
+    <g transform="translate(20, 108)">
+      <rect width="495" height="42" rx="8" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+
+      <!-- Play Button -->
+      <circle cx="28" cy="21" r="14" fill="url(#cyanNeon2)" />
+      <polygon points="25,15 35,21 25,27" fill="#090d16" />
+
+      <!-- Progress Track -->
+      <text x="54" y="25" fill="#00f3ff" font-size="11" class="mono">01:42</text>
+      <rect x="95" y="18" width="270" height="6" rx="3" fill="#1e293b" />
+      <rect x="95" y="18" width="135" height="6" rx="3" fill="#00f3ff" />
+      <circle cx="230" cy="21" r="6" fill="#ffffff" stroke="#00f3ff" stroke-width="2" />
+      <text x="375" y="25" fill="#64748b" font-size="11" class="mono">04:15</text>
+
+      <!-- Auto Turn Toggle -->
+      <rect x="420" y="8" width="65" height="26" rx="5" fill="rgba(168,85,247,0.15)" stroke="#a855f7" stroke-width="1" />
+      <text x="452" y="24" fill="#c084fc" font-size="10" class="mono" text-anchor="middle">AUTO ↻</text>
+    </g>
+
+    <!-- 3D DUAL-PAGE BOOK OPENING -->
+    <g transform="translate(20, 162)">
+      <!-- Left Page -->
+      <g transform="translate(0, 0)">
+        <rect width="242" height="385" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1.2" />
+
+        <!-- Illustration Box -->
+        <rect x="12" y="12" width="218" height="150" rx="6" fill="#1e1b4b" stroke="#4338ca" stroke-width="1" />
+        <!-- Mock Artwork elements -->
+        <circle cx="121" cy="70" r="38" fill="#312e81" opacity="0.6" />
+        <text x="121" y="80" fill="#a5b4fc" font-size="28" text-anchor="middle">🐎</text>
+        <text x="121" y="142" fill="#c7d2fe" font-size="10" class="mono" text-anchor="middle">SCENE: The Meadow by the Pond</text>
+
+        <!-- Left Page Paragraph -->
+        <text x="14" y="185" fill="#ffffff" font-size="11.5" class="title">1. The First Meadow</text>
+        <text x="14" y="206" fill="#cbd5e1" font-size="10" class="body">The first place that I can well remember</text>
+        <text x="14" y="222" fill="#cbd5e1" font-size="10" class="body">was a large pleasant meadow with a pond</text>
+        <text x="14" y="238" fill="#cbd5e1" font-size="10" class="body">of clear water in it. Some shady trees</text>
+        <text x="14" y="254" fill="#cbd5e1" font-size="10" class="body">leaned over it, and rushes and water-lilies</text>
+        <text x="14" y="270" fill="#cbd5e1" font-size="10" class="body">grew at the deep end.</text>
+
+        <rect x="14" y="290" width="214" height="50" rx="6" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+        <text x="22" y="308" fill="#00f3ff" font-size="9.5" class="mono" font-weight="bold">KEY COLLOCATIONS:</text>
+        <text x="22" y="325" fill="#94a3b8" font-size="9.5" class="body">• pleasant meadow (مرج لطيف)</text>
+
+        <text x="121" y="368" fill="#64748b" font-size="10" class="mono" text-anchor="middle">- 1 -</text>
+      </g>
+
+      <!-- Book Spine Shadow -->
+      <line x1="247" y1="0" x2="247" y2="385" stroke="#000000" stroke-width="4" stroke-opacity="0.6" />
+
+      <!-- Right Page -->
+      <g transform="translate(253, 0)">
+        <rect width="242" height="385" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1.2" />
+
+        <text x="14" y="28" fill="#ffffff" font-size="11.5" class="title">2. Mother's Advice</text>
+        <text x="14" y="48" fill="#cbd5e1" font-size="10" class="body">When I was old enough to eat grass,</text>
+        <text x="14" y="64" fill="#cbd5e1" font-size="10" class="body">my mother used to feed me by day,</text>
+        <text x="14" y="80" fill="#cbd5e1" font-size="10" class="body">and at night I lay down close by her.</text>
+        <text x="14" y="96" fill="#cbd5e1" font-size="10" class="body">She said: <tspan fill="#38bdf8">"I hope you will grow up</tspan></text>
+        <text x="14" y="112" fill="#38bdf8" font-size="10" class="body">gentle and good, and never learn bad</text>
+        <text x="14" y="128" fill="#38bdf8" font-size="10" class="body">ways; do your work with a good will."</text>
+
+        <!-- Highlighted Vocab Card -->
+        <rect x="12" y="152" width="218" height="135" rx="6" fill="#131b2e" stroke="#00f3ff" stroke-width="1" />
+        <text x="22" y="172" fill="#00f3ff" font-size="10.5" class="title">💡 Vocabulary Spotlight</text>
+
+        <rect x="20" y="184" width="202" height="24" rx="4" fill="#090d16" />
+        <text x="28" y="200" fill="#ffffff" font-size="10" class="body">good will = نية طيبة / إخلاص</text>
+
+        <rect x="20" y="214" width="202" height="24" rx="4" fill="#090d16" />
+        <text x="28" y="230" fill="#ffffff" font-size="10" class="body">gentle = لطيف / رقيق المعاملة</text>
+
+        <rect x="20" y="244" width="202" height="24" rx="4" fill="#090d16" />
+        <text x="28" y="260" fill="#ffffff" font-size="10" class="body">meadow = مرج / حقل أعشاب</text>
+
+        <!-- Chapter Quiz Trigger -->
+        <rect x="12" y="300" width="218" height="34" rx="6" fill="rgba(255,0,122,0.15)" stroke="#ff007a" stroke-width="1" />
+        <text x="121" y="322" fill="#ff70a6" font-size="11" class="title" text-anchor="middle">🎯 Take Chapter 1 Quiz</text>
+
+        <text x="121" y="368" fill="#64748b" font-size="10" class="mono" text-anchor="middle">- 2 -</text>
+      </g>
+    </g>
+
+    <!-- Bottom Page Flip Bar -->
+    <g transform="translate(20, 560)">
+      <rect width="495" height="42" rx="8" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+      <text x="20" y="26" fill="#94a3b8" font-size="11" class="mono">Pages 1-2 of 18</text>
+
+      <rect x="330" y="8" width="70" height="26" rx="5" fill="#1e293b" />
+      <text x="365" y="24" fill="#64748b" font-size="11" class="body" text-anchor="middle">◀ Prev</text>
+
+      <rect x="410" y="8" width="75" height="26" rx="5" fill="url(#cyanNeon2)" />
+      <text x="447" y="24" fill="#090d16" font-size="11" class="title" text-anchor="middle">Next ▶</text>
+    </g>
+  </g>
+</svg>

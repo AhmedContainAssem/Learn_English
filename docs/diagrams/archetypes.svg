@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgArchType" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+    <linearGradient id="cardTypeBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1100" height="480" fill="url(#bgArchType)" rx="16" />
+
+  <text x="550" y="38" fill="#00f3ff" font-family="sans-serif" font-size="13" font-weight="800" text-anchor="middle" letter-spacing="3">STANDARDIZED TEMPLATES</text>
+  <text x="550" y="66" fill="#ffffff" font-family="sans-serif" font-size="20" font-weight="900" text-anchor="middle">🧩 7 MODULAR EDUCATIONAL ARCHETYPES</text>
+
+  <!-- Row 1: 4 Cards -->
+  <!-- 1: Curriculum Tabs -->
+  <g transform="translate(40, 95)">
+    <rect width="235" height="160" rx="12" fill="url(#cardTypeBg)" stroke="#00f3ff" stroke-width="1.2" />
+    <circle cx="35" cy="35" r="18" fill="#0f172a" stroke="#00f3ff" stroke-width="1.5" />
+    <text x="35" y="42" font-size="16" text-anchor="middle">📑</text>
+    <text x="65" y="38" fill="#00f3ff" font-family="sans-serif" font-size="14" font-weight="800">Curriculum Tabs</text>
+    <text x="20" y="75" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="600">Formal School Units</text>
+    <text x="20" y="98" fill="#94a3b8" font-family="sans-serif" font-size="11">Verbs tables, Collocations,</text>
+    <text x="20" y="116" fill="#94a3b8" font-family="sans-serif" font-size="11">Affixes, Video, and Quiz.</text>
+    <text x="20" y="142" fill="#38bdf8" font-family="monospace" font-size="10">curriculum_tabs</text>
+  </g>
+
+  <!-- 2: 3D Storybook -->
+  <g transform="translate(295, 95)">
+    <rect width="235" height="160" rx="12" fill="url(#cardTypeBg)" stroke="#ff007a" stroke-width="1.2" />
+    <circle cx="35" cy="35" r="18" fill="#0f172a" stroke="#ff007a" stroke-width="1.5" />
+    <text x="35" y="42" font-size="16" text-anchor="middle">📖</text>
+    <text x="65" y="38" fill="#ff007a" font-family="sans-serif" font-size="14" font-weight="800">3D Storybook</text>
+    <text x="20" y="75" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="600">Graded Readers</text>
+    <text x="20" y="98" fill="#94a3b8" font-family="sans-serif" font-size="11">Dual-page flip, auto narrator,</text>
+    <text x="20" y="116" fill="#94a3b8" font-family="sans-serif" font-size="11">translation, &amp; video modal.</text>
+    <text x="20" y="142" fill="#f472b6" font-family="monospace" font-size="10">storybook_reading</text>
+  </g>
+
+  <!-- 3: Flashcards and Dialogue -->
+  <g transform="translate(550, 95)">
+    <rect width="235" height="160" rx="12" fill="url(#cardTypeBg)" stroke="#00ff66" stroke-width="1.2" />
+    <circle cx="35" cy="35" r="18" fill="#0f172a" stroke="#00ff66" stroke-width="1.5" />
+    <text x="35" y="42" font-size="16" text-anchor="middle">🃏</text>
+    <text x="65" y="38" fill="#00ff66" font-family="sans-serif" font-size="14" font-weight="800">Flashcards &amp; Talks</text>
+    <text x="20" y="75" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="600">Speaking &amp; Courses</text>
+    <text x="20" y="98" fill="#94a3b8" font-family="sans-serif" font-size="11">3D card flipping, 2-speaker</text>
+    <text x="20" y="116" fill="#94a3b8" font-family="sans-serif" font-size="11">dialogues &amp; homework tests.</text>
+    <text x="20" y="142" fill="#4ade80" font-family="monospace" font-size="10">flashcards_dialogue</text>
+  </g>
+
+  <!-- 4: Direct Quiz -->
+  <g transform="translate(805, 95)">
+    <rect width="255" height="160" rx="12" fill="url(#cardTypeBg)" stroke="#fbbf24" stroke-width="1.2" />
+    <circle cx="35" cy="35" r="18" fill="#0f172a" stroke="#fbbf24" stroke-width="1.5" />
+    <text x="35" y="42" font-size="16" text-anchor="middle">🎯</text>
+    <text x="65" y="38" fill="#fbbf24" font-family="sans-serif" font-size="14" font-weight="800">Direct Quiz</text>
+    <text x="20" y="75" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="600">Rapid Exam Drill</text>
+    <text x="20" y="98" fill="#94a3b8" font-family="sans-serif" font-size="11">Fisher-Yates shuffle, instant</text>
+    <text x="20" y="116" fill="#94a3b8" font-family="sans-serif" font-size="11">scoring, and chime feedback.</text>
+    <text x="20" y="142" fill="#fde047" font-family="monospace" font-size="10">direct_quiz</text>
+  </g>
+
+  <!-- Row 2: 3 Portal Cards -->
+  <!-- 5: Main Hub -->
+  <g transform="translate(40, 275)">
+    <rect width="320" height="170" rx="12" fill="url(#cardTypeBg)" stroke="#a855f7" stroke-width="1.2" />
+    <circle cx="35" cy="35" r="18" fill="#0f172a" stroke="#a855f7" stroke-width="1.5" />
+    <text x="35" y="42" font-size="16" text-anchor="middle">🌐</text>
+    <text x="65" y="38" fill="#a855f7" font-family="sans-serif" font-size="14" font-weight="800">Index Hub (Root Portal)</text>
+    <text x="20" y="75" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="600">National Stage Navigation</text>
+    <text x="20" y="98" fill="#94a3b8" font-family="sans-serif" font-size="11">Displays primary, prep, secondary, and</text>
+    <text x="20" y="116" fill="#94a3b8" font-family="sans-serif" font-size="11">general courses with progress counters.</text>
+    <text x="20" y="145" fill="#c084fc" font-family="monospace" font-size="10">index_hub</text>
+  </g>
+
+  <!-- 6: Stage Index -->
+  <g transform="translate(385, 275)">
+    <rect width="330" height="170" rx="12" fill="url(#cardTypeBg)" stroke="#38bdf8" stroke-width="1.2" />
+    <circle cx="35" cy="35" r="18" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" />
+    <text x="35" y="42" font-size="16" text-anchor="middle">🏛️</text>
+    <text x="65" y="38" fill="#38bdf8" font-family="sans-serif" font-size="14" font-weight="800">Stage Index (e.g. Prep 3)</text>
+    <text x="20" y="75" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="600">Semester &amp; Unit Directory</text>
+    <text x="20" y="98" fill="#94a3b8" font-family="sans-serif" font-size="11">Filters curriculum units per semester</text>
+    <text x="20" y="116" fill="#94a3b8" font-family="sans-serif" font-size="11">with direct links to all active modules.</text>
+    <text x="20" y="145" fill="#7dd3fc" font-family="monospace" font-size="10">stage_index</text>
+  </g>
+
+  <!-- 7: Unit Index -->
+  <g transform="translate(740, 275)">
+    <rect width="320" height="170" rx="12" fill="url(#cardTypeBg)" stroke="#f43f5e" stroke-width="1.2" />
+    <circle cx="35" cy="35" r="18" fill="#0f172a" stroke="#f43f5e" stroke-width="1.5" />
+    <text x="35" y="42" font-size="16" text-anchor="middle">📂</text>
+    <text x="65" y="38" fill="#f43f5e" font-family="sans-serif" font-size="14" font-weight="800">Unit Index (e.g. Unit 1)</text>
+    <text x="20" y="75" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="600">Lesson Breakdown Portal</text>
+    <text x="20" y="98" fill="#94a3b8" font-family="sans-serif" font-size="11">Links directly to lesson parts,</text>
+    <text x="20" y="116" fill="#94a3b8" font-family="sans-serif" font-size="11">practice drills, and story chapters.</text>
+    <text x="20" y="145" fill="#fb7185" font-family="monospace" font-size="10">unit_index</text>
+  </g>
+</svg>

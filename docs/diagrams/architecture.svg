@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 520" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgArch" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f3ff" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+
+    <linearGradient id="pinkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff007a" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ff66" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <filter id="glowEffect" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <marker id="arrowCyan" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#00f3ff" />
+    </marker>
+    <marker id="arrowPink" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#ff007a" />
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#00ff66" />
+    </marker>
+  </defs>
+
+  <rect width="1100" height="520" fill="url(#bgArch)" rx="16" />
+
+  <!-- Section Title -->
+  <text x="550" y="45" fill="#00f3ff" font-family="sans-serif" font-size="14" font-weight="700" text-anchor="middle" letter-spacing="2">SYSTEM ARCHITECTURE</text>
+  <text x="550" y="78" fill="#ffffff" font-family="sans-serif" font-size="24" font-weight="800" text-anchor="middle">Jamstack &amp; Self-Contained Payload Pipeline</text>
+
+  <!-- 3 Main Columns: Studio (Left), Core Engines (Center), Deployment and Execution (Right) -->
+
+  <!-- Left: Studio -->
+  <g transform="translate(60, 110)">
+    <rect width="280" height="360" rx="14" fill="#111827" stroke="#00f3ff" stroke-width="1.5" stroke-opacity="0.8" />
+    <rect x="0" y="0" width="280" height="42" rx="14" fill="url(#cyanGrad)" />
+    <text x="140" y="27" fill="#090d16" font-family="sans-serif" font-size="15" font-weight="800" text-anchor="middle">🛠️ LESSON STUDIO (ADMIN)</text>
+    
+    <!-- Inner Modules -->
+    <rect x="20" y="60" width="240" height="45" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="35" y="87" fill="#e2e8f0" font-family="sans-serif" font-size="13" font-weight="600">state.js (Reactive State)</text>
+
+    <rect x="20" y="115" width="240" height="45" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="35" y="142" fill="#e2e8f0" font-family="sans-serif" font-size="13" font-weight="600">generators.js (HTML Engine)</text>
+
+    <rect x="20" y="170" width="240" height="45" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="35" y="197" fill="#e2e8f0" font-family="sans-serif" font-size="13" font-weight="600">preview.js (Live Simulator)</text>
+
+    <rect x="20" y="225" width="240" height="45" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="35" y="252" fill="#e2e8f0" font-family="sans-serif" font-size="13" font-weight="600">tree-explorer.js &amp; linter.js</text>
+
+    <rect x="20" y="280" width="240" height="55" rx="8" fill="#0f172a" stroke="#00f3ff" stroke-width="1" />
+    <text x="35" y="305" fill="#00f3ff" font-family="sans-serif" font-size="13" font-weight="700">github.js &amp; store.js</text>
+    <text x="35" y="323" fill="#94a3b8" font-family="sans-serif" font-size="11">Direct PAT Commit &amp; Local Autosave</text>
+  </g>
+
+  <!-- Center: Self-Contained Payload -->
+  <g transform="translate(410, 150)">
+    <rect width="280" height="280" rx="14" fill="#111827" stroke="#ff007a" stroke-width="1.5" stroke-opacity="0.8" />
+    <rect x="0" y="0" width="280" height="42" rx="14" fill="url(#pinkGrad)" />
+    <text x="140" y="27" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="800" text-anchor="middle">📦 SINGLE-FILE LESSON HTML</text>
+
+    <rect x="20" y="60" width="240" height="60" rx="8" fill="#1e293b" stroke="#ff007a" stroke-width="1" />
+    <text x="35" y="85" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="700">Embedded JSON Payload</text>
+    <text x="35" y="105" fill="#ff79c6" font-family="monospace" font-size="11">&lt;script id="studio-payload"&gt;</text>
+
+    <rect x="20" y="130" width="240" height="50" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="35" y="155" fill="#e2e8f0" font-family="sans-serif" font-size="13" font-weight="600">DOM UI Structure</text>
+    <text x="35" y="170" fill="#94a3b8" font-family="sans-serif" font-size="11">Tabs, Storybook, Tables, Quiz UI</text>
+
+    <rect x="20" y="190" width="240" height="65" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1" />
+    <text x="35" y="215" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="600">Zero Server Dependency</text>
+    <text x="35" y="235" fill="#94a3b8" font-family="sans-serif" font-size="11">Works 100% Offline via file:// or Web</text>
+  </g>
+
+  <!-- Right: Student Runtime Assets -->
+  <g transform="translate(760, 110)">
+    <rect width="280" height="360" rx="14" fill="#111827" stroke="#00ff66" stroke-width="1.5" stroke-opacity="0.8" />
+    <rect x="0" y="0" width="280" height="42" rx="14" fill="url(#greenGrad)" />
+    <text x="140" y="27" fill="#090d16" font-family="sans-serif" font-size="15" font-weight="800" text-anchor="middle">⚡ CLIENT RUNTIME (ASSETS)</text>
+
+    <rect x="20" y="60" width="240" height="55" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="35" y="85" fill="#00ff66" font-family="sans-serif" font-size="13" font-weight="700">audio.js</text>
+    <text x="35" y="103" fill="#94a3b8" font-family="sans-serif" font-size="11">Web Speech TTS + Web Audio FX</text>
+
+    <rect x="20" y="125" width="240" height="55" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="35" y="150" fill="#00ff66" font-family="sans-serif" font-size="13" font-weight="700">quiz-engine.js</text>
+    <text x="35" y="168" fill="#94a3b8" font-family="sans-serif" font-size="11">Shuffle, scoring, timer, chime feedback</text>
+
+    <rect x="20" y="190" width="240" height="55" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="35" y="215" fill="#00ff66" font-family="sans-serif" font-size="13" font-weight="700">tabs.js</text>
+    <text x="35" y="233" fill="#94a3b8" font-family="sans-serif" font-size="11">Tab routing &amp; 3D card flips</text>
+
+    <rect x="20" y="255" width="240" height="55" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+    <text x="35" y="280" fill="#00ff66" font-family="sans-serif" font-size="13" font-weight="700">ui.js &amp; main.js</text>
+    <text x="35" y="298" fill="#94a3b8" font-family="sans-serif" font-size="11">DOM events &amp; responsive controllers</text>
+  </g>
+
+  <!-- Connectors / Flow Arrows -->
+  <line x1="340" y1="280" x2="410" y2="280" stroke="#00f3ff" stroke-width="2.5" stroke-dasharray="5,5" marker-end="url(#arrowCyan)" />
+  <line x1="690" y1="280" x2="760" y2="280" stroke="#00ff66" stroke-width="2.5" stroke-dasharray="5,5" marker-end="url(#arrowGreen)" />
+</svg>

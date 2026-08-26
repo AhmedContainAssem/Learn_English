@@ -1,0 +1,175 @@
+/* ==========================================
+   Mr. Ahmed Assem - Educational Platform
+   Global Reset, Baseline & Animations (base.css)
+   ========================================== */
+
+/* Universal Box-Sizing & Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    background-color: var(--bg-color);
+    background-image: 
+        radial-gradient(circle at 15% 20%, rgba(0, 243, 255, 0.1) 0%, transparent 45%),
+        radial-gradient(circle at 85% 80%, rgba(224, 134, 255, 0.1) 0%, transparent 45%),
+        linear-gradient(rgba(11, 15, 25, 0.65), rgba(11, 15, 25, 0.75)),
+        url("../../blur-bg.png");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: var(--text-main);
+    font-family: 'Cairo', system-ui, -apple-system, sans-serif;
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: clamp(12px, 3vw, 32px);
+    padding-bottom: max(24px, env(safe-area-inset-bottom, 24px));
+    direction: rtl;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #070a12;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 243, 255, 0.3);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-primary);
+}
+
+/* Global Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes neonPulse {
+    0% {
+        box-shadow: 0 0 18px rgba(0, 243, 255, 0.4), 0 0 30px rgba(224, 134, 255, 0.2);
+    }
+    100% {
+        box-shadow: 0 0 30px rgba(0, 243, 255, 0.7), 0 0 50px rgba(0, 255, 157, 0.5);
+    }
+}
+
+@keyframes pulseSlow {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.06);
+    }
+}
+
+@keyframes pulseStoryteller {
+    0%, 100% {
+        box-shadow: 0 0 15px rgba(255, 71, 126, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(255, 71, 126, 0.85);
+    }
+}
+
+/* Utility Helpers */
+.hidden {
+    display: none !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.rtl {
+    direction: rtl;
+    text-align: right;
+}
+
+.ltr {
+    direction: ltr;
+    text-align: left;
+}
+
+/* BiDi Isolation System - Solves Mixed Arabic/English Punctuation & Layout Distortion */
+bdi,
+.bidi-isolate {
+    unicode-bidi: isolate;
+}
+
+.bidi-isolate-en,
+.en-term,
+.en-text {
+    direction: ltr;
+    unicode-bidi: isolate;
+    display: inline-block;
+    color: var(--accent-secondary);
+    font-weight: 700;
+}
+
+.bidi-isolate-ar,
+.ar-term {
+    direction: rtl;
+    unicode-bidi: isolate;
+    display: inline-block;
+}
+
+.question-text,
+.q-main-text {
+    direction: rtl;
+    text-align: right;
+    unicode-bidi: isolate;
+}
+
+.quiz-option-btn,
+.quiz-option-text {
+    unicode-bidi: isolate;
+}
+
+.highlight-vocab {
+    background: rgba(0, 243, 255, 0.18);
+    color: var(--accent-primary);
+    font-weight: 800;
+    padding: 2px 6px;
+    border-radius: 6px;
+    border-bottom: 2px solid var(--accent-primary);
+    unicode-bidi: isolate;
+
+    &.green-tag {
+        background: rgba(0, 255, 157, 0.15);
+        color: var(--accent-green);
+        border-color: var(--accent-green);
+    }
+
+    &.orange-tag {
+        background: rgba(255, 183, 3, 0.15);
+        color: var(--accent-orange);
+        border-color: var(--accent-orange);
+    }
+}

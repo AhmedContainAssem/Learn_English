@@ -1,0 +1,211 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c16" />
+      <stop offset="50%" stop-color="#0e172a" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <!-- Modal Backgrounds -->
+    <linearGradient id="modalBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141d33" />
+      <stop offset="100%" stop-color="#0c1220" />
+    </linearGradient>
+
+    <!-- Neon Gradients -->
+    <linearGradient id="orangeNeon3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff9d5c" />
+      <stop offset="100%" stop-color="#ff5e00" />
+    </linearGradient>
+
+    <linearGradient id="greenNeon3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ff88" />
+      <stop offset="100%" stop-color="#00f3ff" />
+    </linearGradient>
+
+    <filter id="modalShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#000000" flood-opacity="0.85" />
+      <feDropShadow dx="0" dy="0" stdDeviation="15" flood-color="#00f3ff" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <style>
+    .title3 { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 800; }
+    .mono3 { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; }
+    .body3 { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+  </style>
+
+  <!-- Background -->
+  <rect width="1200" height="680" fill="url(#bgGrad3)" rx="16" />
+
+  <!-- Showcase Header -->
+  <g transform="translate(50, 36)">
+    <rect x="0" y="0" width="180" height="26" rx="13" fill="rgba(255, 94, 0, 0.12)" stroke="#ff5e00" stroke-width="1" />
+    <text x="90" y="17" fill="#ff9d5c" font-size="11" class="mono3" font-weight="bold" text-anchor="middle">MAINTENANCE &amp; DEPLOY</text>
+    <text x="195" y="19" fill="#ffffff" font-size="20" class="title3">System Diagnostics &amp; Direct GitHub REST API Publisher</text>
+    <text x="195" y="38" fill="#94a3b8" font-size="12" class="body3">Real-time health audits, reactive state inspect, and zero-server client-side continuous deployment</text>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- LEFT MODAL: SYSTEM DIAGNOSTICS & DEBUGGER -->
+  <!-- ========================================== -->
+  <g transform="translate(50, 90)" filter="url(#modalShadow)">
+    <rect width="535" height="550" rx="14" fill="url(#modalBg)" stroke="#ff5e00" stroke-width="1.4" />
+
+    <!-- Modal Header -->
+    <g transform="translate(24, 24)">
+      <text x="0" y="20" fill="#ff9d5c" font-size="16" class="title3">🐞 System Diagnostics &amp; Health Audit</text>
+      <rect x="440" y="2" width="45" height="24" rx="5" fill="#1e293b" />
+      <text x="462" y="18" fill="#94a3b8" font-size="11" class="body3" text-anchor="middle">✕</text>
+      <text x="0" y="44" fill="#94a3b8" font-size="11" class="body3">Inspect runtime state schema, memory bounds, and audio engine readiness.</text>
+    </g>
+
+    <line x1="24" y1="80" x2="510" y2="80" stroke="#1e293b" stroke-width="1" />
+
+    <!-- Health Checks List Box -->
+    <g transform="translate(24, 95)">
+      <rect width="487" height="175" rx="8" fill="#090d16" stroke="#1e293b" stroke-width="1" />
+
+      <text x="14" y="22" fill="#00f3ff" font-size="12" class="title3">🩺 Real-Time Runtime Audits</text>
+      <rect x="390" y="8" width="85" height="20" rx="4" fill="rgba(0,255,136,0.15)" />
+      <text x="432" y="21" fill="#00ff88" font-size="10" class="mono3" text-anchor="middle">ALL PASSED</text>
+
+      <!-- Check 1 -->
+      <g transform="translate(14, 38)">
+        <rect width="459" height="26" rx="5" fill="#0f172a" />
+        <text x="10" y="17" fill="#00ff88" font-size="12">✅</text>
+        <text x="32" y="17" fill="#ffffff" font-size="11" class="body3">LocalStorage Quota &amp; Read/Write</text>
+        <text x="390" y="17" fill="#00ff88" font-size="10.5" class="mono3">0.14 MB / 5 MB</text>
+      </g>
+
+      <!-- Check 2 -->
+      <g transform="translate(14, 70)">
+        <rect width="459" height="26" rx="5" fill="#0f172a" />
+        <text x="10" y="17" fill="#00ff88" font-size="12">✅</text>
+        <text x="32" y="17" fill="#ffffff" font-size="11" class="body3">Lesson State Schema Integrity</text>
+        <text x="360" y="17" fill="#38bdf8" font-size="10.5" class="mono3">Archetype: tabs</text>
+      </g>
+
+      <!-- Check 3 -->
+      <g transform="translate(14, 102)">
+        <rect width="459" height="26" rx="5" fill="#0f172a" />
+        <text x="10" y="17" fill="#00ff88" font-size="12">✅</text>
+        <text x="32" y="17" fill="#ffffff" font-size="11" class="body3">Web SpeechSynthesis TTS Engine</text>
+        <text x="375" y="17" fill="#00ff88" font-size="10.5" class="mono3">Ready (24 Voices)</text>
+      </g>
+
+      <!-- Check 4 -->
+      <g transform="translate(14, 134)">
+        <rect width="459" height="26" rx="5" fill="#0f172a" />
+        <text x="10" y="17" fill="#00ff88" font-size="12">✅</text>
+        <text x="32" y="17" fill="#ffffff" font-size="11" class="body3">Critical DOM Element Bindings</text>
+        <text x="385" y="17" fill="#00ff88" font-size="10.5" class="mono3">8/8 Bound</text>
+      </g>
+    </g>
+
+    <!-- State JSON Code Viewer -->
+    <g transform="translate(24, 285)">
+      <text x="0" y="14" fill="#94a3b8" font-size="11" class="mono3" font-weight="bold">ACTIVE LESSON DRAFT JSON (STATE DUMP)</text>
+      <rect x="410" y="0" width="75" height="18" rx="4" fill="#1e293b" />
+      <text x="447" y="13" fill="#cbd5e1" font-size="9.5" class="mono3" text-anchor="middle">📋 Copy</text>
+
+      <rect y="22" width="487" height="150" rx="8" fill="#070a12" stroke="#1e293b" stroke-width="1" />
+
+      <!-- Code lines -->
+      <g transform="translate(14, 40)" class="mono3" font-size="10.5">
+        <text y="0" fill="#64748b">1</text>
+        <text x="24" y="0" fill="#c084fc">{"archetype"</text><text x="105" y="0" fill="#ffffff">: </text><text x="115" y="0" fill="#a5f3fc">"curriculum_tabs"</text><text x="235" y="0" fill="#ffffff">,</text>
+
+        <text y="18" fill="#64748b">2</text>
+        <text x="24" y="18" fill="#c084fc"> "title"</text><text x="75" y="18" fill="#ffffff">: </text><text x="85" y="18" fill="#a5f3fc">"Unit 1: Around Town - Lesson 1"</text><text x="315" y="18" fill="#ffffff">,</text>
+
+        <text y="36" fill="#64748b">3</text>
+        <text x="24" y="36" fill="#c084fc"> "stage"</text><text x="75" y="36" fill="#ffffff">: </text><text x="85" y="36" fill="#a5f3fc">"Prep_3"</text><text x="135" y="36" fill="#ffffff">, </text><text x="145" y="36" fill="#c084fc">"unit"</text><text x="185" y="36" fill="#ffffff">: </text><text x="195" y="36" fill="#a5f3fc">"unit-1"</text><text x="245" y="36" fill="#ffffff">,</text>
+
+        <text y="54" fill="#64748b">4</text>
+        <text x="24" y="54" fill="#c084fc"> "verbs"</text><text x="75" y="54" fill="#ffffff">: [</text><text x="90" y="54" fill="#a5f3fc">{"v1": "catch", "v2": "caught", "ar": "يلحق بـ"}</text><text x="425" y="54" fill="#ffffff">, ...],</text>
+
+        <text y="72" fill="#64748b">5</text>
+        <text x="24" y="72" fill="#c084fc"> "quiz"</text><text x="68" y="72" fill="#ffffff">: [</text><text x="80" y="72" fill="#a5f3fc">{"q": "We can see fish at the...", "ans": "aquarium"}</text><text x="430" y="72" fill="#ffffff">, ...],</text>
+
+        <text y="90" fill="#64748b">6</text>
+        <text x="24" y="90" fill="#c084fc"> "lastModified"</text><text x="125" y="90" fill="#ffffff">: </text><text x="135" y="90" fill="#38bdf8">1771746231000</text>
+
+        <text y="108" fill="#64748b">7</text>
+        <text x="24" y="108" fill="#ffffff">}</text>
+      </g>
+    </g>
+
+    <!-- Export Action -->
+    <g transform="translate(24, 480)">
+      <rect width="230" height="38" rx="8" fill="rgba(255,94,0,0.15)" stroke="#ff5e00" stroke-width="1.2" />
+      <text x="115" y="24" fill="#ff9d5c" font-size="12" class="title3" text-anchor="middle">📥 Export Debug Bundle (.json)</text>
+
+      <rect x="365" y="0" width="120" height="38" rx="8" fill="#1e293b" />
+      <text x="425" y="24" fill="#e2e8f0" font-size="12" class="body3" text-anchor="middle">Close</text>
+    </g>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- RIGHT MODAL: DIRECT GITHUB REST API PUBLISH -->
+  <!-- ========================================== -->
+  <g transform="translate(615, 90)" filter="url(#modalShadow)">
+    <rect width="535" height="550" rx="14" fill="url(#modalBg)" stroke="#00ff88" stroke-width="1.4" />
+
+    <!-- Modal Header -->
+    <g transform="translate(24, 24)">
+      <text x="0" y="20" fill="#00ff88" font-size="16" class="title3">🚀 Direct GitHub API One-Click Publisher</text>
+      <rect x="440" y="2" width="45" height="24" rx="5" fill="#1e293b" />
+      <text x="462" y="18" fill="#94a3b8" font-size="11" class="body3" text-anchor="middle">✕</text>
+      <text x="0" y="44" fill="#94a3b8" font-size="11" class="body3">Pushes generated HTML files straight to your GitHub Pages repository.</text>
+    </g>
+
+    <line x1="24" y1="80" x2="510" y2="80" stroke="#1e293b" stroke-width="1" />
+
+    <!-- Form Inputs -->
+    <g transform="translate(24, 95)">
+      <!-- Repo Destination -->
+      <text x="0" y="14" fill="#94a3b8" font-size="10.5" class="mono3">TARGET REPOSITORY</text>
+      <rect y="22" width="487" height="34" rx="6" fill="#090d16" stroke="#334155" stroke-width="1" />
+      <text x="14" y="44" fill="#00f3ff" font-size="12" class="mono3">AhmedContainAssem/Learn_English (main)</text>
+
+      <!-- Target File Path -->
+      <text x="0" y="80" fill="#94a3b8" font-size="10.5" class="mono3">FILE COMMIT PATH</text>
+      <rect y="88" width="487" height="34" rx="6" fill="#090d16" stroke="#334155" stroke-width="1" />
+      <text x="14" y="110" fill="#ffffff" font-size="12" class="mono3">Learn_English/Prep_3/unit-1/lesson-1.html</text>
+
+      <!-- Commit Message -->
+      <text x="0" y="146" fill="#94a3b8" font-size="10.5" class="mono3">GIT COMMIT MESSAGE</text>
+      <rect y="154" width="487" height="34" rx="6" fill="#090d16" stroke="#334155" stroke-width="1" />
+      <text x="14" y="176" fill="#cbd5e1" font-size="12" class="body3">feat(prep3): add Unit 1 Around Town Lesson 1 interactive tabs</text>
+
+      <!-- Publishing Progress & Live Pipeline Box -->
+      <rect y="210" width="487" height="150" rx="8" fill="#090d16" stroke="#00ff88" stroke-width="1.2" />
+
+      <g transform="translate(18, 230)">
+        <text x="0" y="0" fill="#00ff88" font-size="12" class="title3">⚡ Deployment Pipeline Progress</text>
+        <text x="360" y="0" fill="#00ff88" font-size="11" class="mono3">100% DONE</text>
+
+        <!-- Progress Bar -->
+        <rect y="12" width="450" height="8" rx="4" fill="#1e293b" />
+        <rect y="12" width="450" height="8" rx="4" fill="url(#greenNeon3)" />
+
+        <!-- Progress Steps -->
+        <g transform="translate(0, 36)" class="mono3" font-size="11">
+          <text y="0" fill="#00ff88">✔ Step 1: HTML Output Generated (28.4 KB)</text>
+          <text y="20" fill="#00ff88">✔ Step 2: Base64 UTF-8 Encoded</text>
+          <text y="40" fill="#00ff88">✔ Step 3: SHA Blob Verified against GitHub API</text>
+          <text y="60" fill="#00ff88">✔ Step 4: Commit #7b9e14 created on main</text>
+          <text y="80" fill="#38bdf8">🌐 Live at: https://ahmedcontainassem.github.io/Learn_English/...</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Bottom Action Button -->
+    <g transform="translate(24, 480)">
+      <rect width="487" height="42" rx="8" fill="url(#greenNeon3)" />
+      <text x="243" y="26" fill="#090d16" font-size="13" class="title3" text-anchor="middle">🚀 Push &amp; Publish to GitHub Pages (Live)</text>
+    </g>
+  </g>
+</svg>

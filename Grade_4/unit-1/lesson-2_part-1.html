@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 1 - Lesson 2: Healthy Habits (Part 1)</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+    <div class="container" style="max-width: 650px;">
+        <div class="breadcrumb" style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 15px;">
+            <span>الصف الرابع الابتدائي</span> / <span>الوحدة الأولى</span> / <span>الدرس الثاني (الجزء 1)</span>
+        </div>
+
+        <div style="text-align: center; border-bottom: 2px solid var(--border-color); padding-bottom: 15px; margin-bottom: 20px;">
+            <h1 id="title" class="title" style="font-size: 1.8rem; margin-bottom: 8px;">Unit 1 - Lesson 2</h1>
+            <p id="description" class="subtitle" style="margin-bottom: 0;">اختر العادة الصحية الصحيحة المناسبة للصورة والتعريف!</p>
+        </div>
+
+        <div class="score-board">
+            <span>السؤال: <span id="current-q">1</span> / <span id="total-q">7</span></span>
+            <span>النقاط: <span id="score">0</span> 🌟</span>
+        </div>
+
+        <div class="question-card" style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 16px; padding: 25px; margin-bottom: 20px; text-align: center;">
+            <span class="emoji-display" id="emoji" style="font-size: 3.5rem; display: block; margin-bottom: 15px;">🪥🦷</span>
+            <div class="question-text" id="question" style="font-size: 1.2rem; margin-bottom: 20px; color: var(--text-main); line-height: 1.5;">جاري تحميل السؤال...</div>
+            <div class="options-grid" id="options" style="display: flex; flex-direction: column; gap: 12px;"></div>
+            <div class="feedback" id="feedback"></div>
+        </div>
+
+        <div class="nav-controls" style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+            <a href="./index.html" class="back-btn" data-sound-click="click">⬅ العودة لقائمة الدروس</a>
+            <button class="action-btn next-btn" id="next-btn" onclick="nextQuestion()" style="display: none;">السؤال التالي ➔</button>
+        </div>
+    </div>
+
+    <script>
+        window.lessonData = {
+            sections: [
+                {
+                    questions: [
+                        {
+                            emoji: "🪥🦷",
+                            question: "What is the healthy habit shown? (يغسل أسنانه)",
+                            options: [
+                                { text: "wash face", isCorrect: false },
+                                { text: "brush teeth", isCorrect: true },
+                                { text: "take a shower", isCorrect: false }
+                            ],
+                            correctMsg: "ممتاز! 🪥 Brush teeth تعني يغسل أسنانه (+10)",
+                            wrongMsg: "حاول مرة أخرى!"
+                        },
+                        {
+                            emoji: "🧼😊",
+                            question: "What is the healthy habit shown? (يغسل وجهه)",
+                            options: [
+                                { text: "wash face", isCorrect: true },
+                                { text: "do exercises", isCorrect: false },
+                                { text: "play sports", isCorrect: false }
+                            ],
+                            correctMsg: "أحسنت! 🧼 Wash face تعني يغسل وجهه (+10)",
+                            wrongMsg: "ركز في غسيل الوجه!"
+                        },
+                        {
+                            emoji: "⏰☀️",
+                            question: "I ________ to be ready for school early. (يستيقظ مبكراً)",
+                            options: [
+                                { text: "drink plenty of water", isCorrect: false },
+                                { text: "wake up early", isCorrect: true },
+                                { text: "brush teeth", isCorrect: false }
+                            ],
+                            correctMsg: "بطل! ⏰ Wake up early تعني يستيقظ مبكراً (+10)",
+                            wrongMsg: "فكر متى نستيقظ للمدرسة!"
+                        },
+                        {
+                            emoji: "⚽🏃‍♂️",
+                            question: "To keep our bodies strong, we should ________. (يلعب رياضة)",
+                            options: [
+                                { text: "play sports", isCorrect: true },
+                                { text: "sleep late", isCorrect: false },
+                                { text: "wash face", isCorrect: false }
+                            ],
+                            correctMsg: "ممتاز جداً! ⚽ Play sports تعني يلعب رياضة (+10)",
+                            wrongMsg: "ركز في الحركة واللعب!"
+                        },
+                        {
+                            emoji: "💧🥤",
+                            question: "It is important to ________ every day. (يشرب الكثير من المياه)",
+                            options: [
+                                { text: "drink plenty of water", isCorrect: true },
+                                { text: "take a shower", isCorrect: false },
+                                { text: "do exercises", isCorrect: false }
+                            ],
+                            correctMsg: "رائع! 💧 Drink plenty of water (+10)",
+                            wrongMsg: "اختر الكلمة التي فيها water!"
+                        },
+                        {
+                            emoji: "🚿🛁",
+                            question: "After playing sports, I ________ to stay clean. (يستحم)",
+                            options: [
+                                { text: "wake up early", isCorrect: false },
+                                { text: "take a shower", isCorrect: true },
+                                { text: "brush teeth", isCorrect: false }
+                            ],
+                            correctMsg: "صح كدة! 🚿 Take a shower تعني يستحم (+10)",
+                            wrongMsg: "حاول مجدداً!"
+                        },
+                        {
+                            emoji: "🤸‍♂️🏋️‍♂️",
+                            question: "We ________ in the morning to stay active. (يتدرب / يتمرن)",
+                            options: [
+                                { text: "wash face", isCorrect: false },
+                                { text: "do exercises", isCorrect: true },
+                                { text: "drink plenty of water", isCorrect: false }
+                            ],
+                            correctMsg: "عبقري! 🤸‍♂️ Do exercises تعني يتمرن (+10)",
+                            wrongMsg: "فكر في التمارين الرياضية!"
+                        }
+                    ]
+                }
+            ]
+        };
+    </script>
+    <script src="../../assets/js/bidi.js"></script>
+    <script src="../../assets/js/audio.js"></script>
+    <script src="../../assets/js/quiz-engine.js"></script>
+    <script src="../../assets/js/ui.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>

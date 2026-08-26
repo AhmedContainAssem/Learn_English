@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 1 - Lesson 3: Vocabulary (Part 1)</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+    <div class="container" style="max-width: 650px;">
+        <div class="breadcrumb" style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 15px;">
+            <span>الصف الرابع الابتدائي</span> / <span>الوحدة الأولى</span> / <span>الدرس الثالث (الجزء 1)</span>
+        </div>
+
+        <div style="text-align: center; border-bottom: 2px solid var(--border-color); padding-bottom: 15px; margin-bottom: 20px;">
+            <h1 id="title" class="title" style="font-size: 1.8rem; margin-bottom: 8px;">Unit 1 - Lesson 3</h1>
+            <p id="description" class="subtitle" style="margin-bottom: 0;">شامل جميع كلمات Key Vocabulary & Extra Vocabulary!</p>
+        </div>
+
+        <div class="score-board">
+            <span>السؤال: <span id="current-q">1</span> / <span id="total-q">23</span></span>
+            <span>النقاط: <span id="score">0</span> 🌟</span>
+        </div>
+
+        <div class="question-card" style="background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 16px; padding: 25px; margin-bottom: 20px; text-align: center;">
+            <span class="emoji-display" id="emoji" style="font-size: 3.5rem; display: block; margin-bottom: 15px;">🪙</span>
+            <div class="question-text" id="question" style="font-size: 1.2rem; margin-bottom: 20px; color: var(--text-main); line-height: 1.5;">جاري تحميل السؤال...</div>
+            <div class="options-grid" id="options" style="display: flex; flex-direction: column; gap: 12px;"></div>
+            <div class="feedback" id="feedback"></div>
+        </div>
+
+        <div class="nav-controls" style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+            <a href="./index.html" class="back-btn" data-sound-click="click">⬅ العودة لقائمة الدروس</a>
+            <button class="action-btn next-btn" id="next-btn" onclick="nextQuestion()" style="display: none;">السؤال التالي ➔</button>
+        </div>
+    </div>
+
+    <script>
+        window.lessonData = {
+            title: "Unit 1 - Lesson 3: Key & Extra Vocabulary 🪙🍲",
+            description: "اختبر معرفتك بجميع مفردات وقصة الدرس الثالث من الكتاب!",
+            questions: [
+            {
+                emoji: "🪙",
+                question: "ما معنى كلمة 'عملات معدنية'؟",
+                options: [
+                    { text: "coins", isCorrect: true },
+                    { text: "soup", isCorrect: false },
+                    { text: "pockets", isCorrect: false }
+                ],
+                correctMsg: "ممتاز! 🪙 Coins تعني عملات معدنية (+10)",
+                wrongMsg: "إجابة خاطئة، حاول مجدداً!"
+            },
+
+            {
+                emoji: "🍲",
+                question: "ما معنى كلمة 'حساء / شوربة'؟",
+                options: [
+                    { text: "meal", isCorrect: false },
+                    { text: "soup", isCorrect: true },
+                    { text: "restaurant", isCorrect: false }
+                ],
+                correctMsg: "أحسنت! 🍲 Soup تعني حساء/شوربة (+10)",
+                wrongMsg: "ركز في معنى الشوربة!"
+            },
+            {
+                emoji: "👃",
+                question: "ما معنى 'رائحة / يشم'؟",
+                options: [
+                    { text: "smell", isCorrect: true },
+                    { text: "taste", isCorrect: false },
+                    { text: "sound", isCorrect: false }
+                ],
+                correctMsg: "بطل! 👃 Smell تعني رائحة/يشم (+10)",
+                wrongMsg: "فكر في حاسة الشم!"
+            },
+            {
+                emoji: "🔑",
+                question: "ما معنى كلمة 'مالك'؟",
+                options: [
+                    { text: "greedy", isCorrect: false },
+                    { text: "owner", isCorrect: true },
+                    { text: "character", isCorrect: false }
+                ],
+                correctMsg: "صح كدة! 🔑 Owner تعني مالك (+10)",
+                wrongMsg: "صاحب الشيء يسمى owner!"
+            },
+            {
+                emoji: "😋",
+                question: "ما معنى كلمة 'لذيذ'؟",
+                options: [
+                    { text: "yummy", isCorrect: true },
+                    { text: "light", isCorrect: false },
+                    { text: "hungry", isCorrect: false }
+                ],
+                correctMsg: "رائع! 😋 Yummy تعني لذيذ (+10)",
+                wrongMsg: "الكلمة تعبر عن الطعم اللذيذ!"
+            },
+            {
+                emoji: "🍽️",
+                question: "ما معنى كلمة 'مطعم'؟",
+                options: [
+                    { text: "market", isCorrect: false },
+                    { text: "restaurant", isCorrect: true },
+                    { text: "kitchen", isCorrect: false }
+                ],
+                correctMsg: "عبقري! 🍽️ Restaurant تعني مطعم (+10)",
+                wrongMsg: "المكان الذي نطلب منه الطعام!"
+            },
+            {
+                emoji: "🔔",
+                question: "ما معنى 'صوت رنين خفيف'؟",
+                options: [
+                    { text: "jingling sound", isCorrect: true },
+                    { text: "deep breath", isCorrect: false },
+                    { text: "clever answer", isCorrect: false }
+                ],
+                correctMsg: "ممتاز! 🔔 Jingling sound تعني صوت رنين خفيف (+10)",
+                wrongMsg: "صوت العملات المعدنية وهو يرن!"
+            },
+            {
+                emoji: "🤑",
+                question: "ما معنى كلمة 'طماع / جشع'؟",
+                options: [
+                    { text: "clever", isCorrect: false },
+                    { text: "greedy", isCorrect: true },
+                    { text: "wonderful", isCorrect: false }
+                ],
+                correctMsg: "بطل! 🤑 Greedy تعني طماع (+10)",
+                wrongMsg: "الشخص الذي يريد كل شيء لنفسه!"
+            },
+            {
+                emoji: "😮‍💨",
+                question: "ما معنى 'نفس عميق'؟",
+                options: [
+                    { text: "deep breath", isCorrect: true },
+                    { text: "heavy meal", isCorrect: false },
+                    { text: "light soup", isCorrect: false }
+                ],
+                correctMsg: "رائع! 😮‍💨 Deep breath تعني نفس عميق (+10)",
+                wrongMsg: "أخذ الهواء ببطء وعمق!"
+            },
+            {
+                emoji: "🛒",
+                question: "ما معنى كلمة 'السوق'؟",
+                options: [
+                    { text: "restaurant", isCorrect: false },
+                    { text: "market", isCorrect: true },
+                    { text: "window", isCorrect: false }
+                ],
+                correctMsg: "صح! 🛒 Market تعني السوق (+10)",
+                wrongMsg: "المكان الذي نتسوق منه!"
+            },
+            {
+                emoji: "🤤",
+                question: "ما معنى كلمة 'جائع'؟",
+                options: [
+                    { text: "hungry", isCorrect: true },
+                    { text: "greedy", isCorrect: false },
+                    { text: "clever", isCorrect: false }
+                ],
+                correctMsg: "ممتاز! 🤤 Hungry تعني جائع (+10)",
+                wrongMsg: "من يحتاج إلى تناول الطعام!"
+            },
+            {
+                emoji: "🪟",
+                question: "ما معنى كلمة 'نافذة'؟",
+                options: [
+                    { text: "pocket", isCorrect: false },
+                    { text: "window", isCorrect: true },
+                    { text: "market", isCorrect: false }
+                ],
+                correctMsg: "أحسنت! 🪟 Window تعني نافذة (+10)",
+                wrongMsg: "الشباك بالإنجليزي!"
+            },
+            {
+                emoji: "📖",
+                question: "ما معنى كلمة 'الدرس المستفاد'؟",
+                options: [
+                    { text: "lesson", isCorrect: true },
+                    { text: "answer", isCorrect: false },
+                    { text: "character", isCorrect: false }
+                ],
+                correctMsg: "بطل! 📖 Lesson تعني درس مستفاد (+10)",
+                wrongMsg: "العبرة أو الدرس المستفاد!"
+            },
+            {
+                emoji: "👖",
+                question: "ما معنى كلمة 'جيب' (في الملابس)؟",
+                options: [
+                    { text: "pocket", isCorrect: true },
+                    { text: "market", isCorrect: false },
+                    { text: "window", isCorrect: false }
+                ],
+                correctMsg: "رائع! 👖 Pocket تعني جيب (+10)",
+                wrongMsg: "المكان الذي نضع فيه النقود في البنطال!"
+            },
+            {
+                emoji: "🍱",
+                question: "ما معنى كلمة 'وجبة'؟",
+                options: [
+                    { text: "soup", isCorrect: false },
+                    { text: "meal", isCorrect: true },
+                    { text: "lesson", isCorrect: false }
+                ],
+                correctMsg: "صح كدة! 🍱 Meal تعني وجبة (+10)",
+                wrongMsg: "الإفطار أو الغداء يسمى meal!"
+            },
+            {
+                emoji: "🪶",
+                question: "ما معنى كلمة 'خفيف'؟",
+                options: [
+                    { text: "light", isCorrect: true },
+                    { text: "greedy", isCorrect: false },
+                    { text: "clever", isCorrect: false }
+                ],
+                correctMsg: "ممتاز! 🪶 Light تعني خفيف (+10)",
+                wrongMsg: "عكس ثقيل!"
+            },
+            {
+                emoji: "🏡",
+                question: "ما معنى كلمة 'بالخارج'؟",
+                options: [
+                    { text: "outside", isCorrect: true },
+                    { text: "suddenly", isCorrect: false },
+                    { text: "cleverly", isCorrect: false }
+                ],
+                correctMsg: "بطل! 🏡 Outside تعني بالخارج (+10)",
+                wrongMsg: "خارج المنزل أو المكان!"
+            },
+            {
+                emoji: "✨",
+                question: "ما معنى كلمة 'رائع'؟",
+                options: [
+                    { text: "wonderful", isCorrect: true },
+                    { text: "yummy", isCorrect: false },
+                    { text: "clever", isCorrect: false }
+                ],
+                correctMsg: "أحسنت! ✨ Wonderful تعني رائع (+10)",
+                wrongMsg: "شيء جميل ورائع!"
+            },
+            {
+                emoji: "🎭",
+                question: "ما معنى كلمة 'شخصيات' (في القصة)؟",
+                options: [
+                    { text: "characters", isCorrect: true },
+                    { text: "lessons", isCorrect: false },
+                    { text: "responses", isCorrect: false }
+                ],
+                correctMsg: "رائع! 🎭 Characters تعني شخصيات (+10)",
+                wrongMsg: "أبطال القصة والمسرحيات!"
+            },
+            {
+                emoji: "⚡",
+                question: "ما معنى كلمة 'فجأة'؟",
+                options: [
+                    { text: "suddenly", isCorrect: true },
+                    { text: "cleverly", isCorrect: false },
+                    { text: "outside", isCorrect: false }
+                ],
+                correctMsg: "صح! ⚡ Suddenly تعني فجأة (+10)",
+                wrongMsg: "حدوث شيء دون توقع!"
+            },
+            {
+                emoji: "💡",
+                question: "ما معنى كلمة 'بطريقة بارعة'؟",
+                options: [
+                    { text: "cleverly", isCorrect: true },
+                    { text: "suddenly", isCorrect: false },
+                    { text: "wonderful", isCorrect: false }
+                ],
+                correctMsg: "عبقري! 💡 Cleverly تعني بطريقة بارعة (+10)",
+                wrongMsg: "التصرف بذكاء وبراعة!"
+            },
+            {
+                emoji: "💬",
+                question: "ما معنى 'رد / إجابة'؟",
+                options: [
+                    { text: "response / answer", isCorrect: true },
+                    { text: "character / lesson", isCorrect: false },
+                    { text: "jingling sound", isCorrect: false }
+                ],
+                correctMsg: "ممتاز! 💬 Response / Answer تعني رد أو إجابة (+10)",
+                wrongMsg: "الإجابة على السؤال!"
+            },
+            {
+                emoji: "🧠",
+                question: "ما معنى كلمة 'ماهر / ذكي'؟",
+                options: [
+                    { text: "clever", isCorrect: true },
+                    { text: "greedy", isCorrect: false },
+                    { text: "hungry", isCorrect: false }
+                ],
+                correctMsg: "بطل! 🧠 Clever تعني ذكي أو ماهر (+10)",
+                wrongMsg: "الشخص الفطن والذكي!"
+            }
+        ]
+    };
+</script>
+
+    <script src="../../assets/js/bidi.js"></script>
+    <script src="../../assets/js/audio.js"></script>
+    <script src="../../assets/js/quiz-engine.js"></script>
+    <script src="../../assets/js/ui.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>

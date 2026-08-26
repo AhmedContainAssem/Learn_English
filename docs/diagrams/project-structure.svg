@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgTree" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+    <linearGradient id="ideBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117" />
+      <stop offset="100%" stop-color="#010409" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1100" height="480" fill="url(#bgTree)" rx="16" />
+
+  <text x="550" y="38" fill="#00f3ff" font-family="sans-serif" font-size="13" font-weight="800" text-anchor="middle" letter-spacing="3">WORKSPACE ORGANIZATION</text>
+  <text x="550" y="66" fill="#ffffff" font-family="sans-serif" font-size="20" font-weight="900" text-anchor="middle">📁 PROJECT TREE HIERARCHY</text>
+
+  <!-- IDE Window -->
+  <g transform="translate(50, 95)">
+    <rect width="1000" height="355" rx="12" fill="url(#ideBg)" stroke="#30363d" stroke-width="1.5" />
+    
+    <!-- Window Bar -->
+    <rect width="1000" height="34" rx="12" fill="#161b22" />
+    <circle cx="20" cy="17" r="5" fill="#ff5f56" />
+    <circle cx="36" cy="17" r="5" fill="#ffbd2e" />
+    <circle cx="52" cy="17" r="5" fill="#27c93f" />
+    <text x="500" y="22" fill="#8b949e" font-family="monospace" font-size="12" text-anchor="middle">Learn_English / Project Workspace Explorer</text>
+
+    <!-- Column 1 -->
+    <g transform="translate(30, 55)" font-family="monospace" font-size="12">
+      <text x="0" y="20" fill="#58a6ff" font-weight="700">📁 admin/</text>
+      <text x="20" y="38" fill="#8b949e">├── 📁 js/ (state, generators, preview, linter, github)</text>
+      <text x="20" y="56" fill="#8b949e">└── 📄 index.html (Lesson Studio Suite)</text>
+
+      <text x="0" y="85" fill="#58a6ff" font-weight="700">📁 assets/</text>
+      <text x="20" y="103" fill="#8b949e">├── 📁 js/ (audio.js, quiz-engine.js, tabs.js, main.js)</text>
+      <text x="20" y="121" fill="#8b949e">└── 📁 css/ (main.css, quiz.css, style.css)</text>
+
+      <text x="0" y="150" fill="#58a6ff" font-weight="700">📁 docs/diagrams/</text>
+      <text x="20" y="168" fill="#8b949e">├── 📄 readme-hero.svg &amp; architecture.svg</text>
+      <text x="20" y="186" fill="#8b949e">└── 📄 archetypes.svg, audio-engine.svg, etc.</text>
+
+      <text x="0" y="215" fill="#58a6ff" font-weight="700">📁 documentations/</text>
+      <text x="20" y="233" fill="#8b949e">└── 📄 Architectural records &amp; decisions</text>
+    </g>
+
+    <!-- Column 2 -->
+    <g transform="translate(540, 55)" font-family="monospace" font-size="12">
+      <text x="0" y="20" fill="#58a6ff" font-weight="700">📁 Course/ (A1 / A2 General Courses)</text>
+      <text x="0" y="45" fill="#58a6ff" font-weight="700">📁 Grade_1/ ... Grade_4/ (Primary)</text>
+      <text x="0" y="70" fill="#58a6ff" font-weight="700">📁 Prep_1/ ... Prep_3/ (Preparatory)</text>
+      <text x="0" y="95" fill="#58a6ff" font-weight="700">📁 Sec_1/ ... Sec_3/ (Secondary)</text>
+      <text x="0" y="120" fill="#58a6ff" font-weight="700">📁 templates/ (Standard archetypes)</text>
+
+      <text x="0" y="160" fill="#7ee787">📄 curriculum-manifest.json (Master Map)</text>
+      <text x="0" y="185" fill="#7ee787">📄 blur-bg.png &amp; my-photo-profile.png</text>
+      <text x="0" y="210" fill="#7ee787">📄 index.html (Universal Entrance)</text>
+      <text x="0" y="235" fill="#7ee787">📄 README.md (Unified Visual Docs)</text>
+    </g>
+  </g>
+</svg>
