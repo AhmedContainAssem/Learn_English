@@ -1,0 +1,1545 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prep 3 - Unit 2 - Lessons 1 & 2 | Mr. Ahmed Assem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <style>
+        /* Pop Quiz Interactive Box */
+        .pop-quiz-box {
+            background: var(--bg-card);
+            border: 2px solid var(--border-color);
+            border-radius: 16px;
+            padding: 24px;
+            margin: 24px 0 32px;
+            box-shadow: var(--shadow-sm);
+        }
+        .pop-quiz-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .pop-quiz-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--accent-primary);
+        }
+        .words-bank {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            background: var(--bg-main);
+            padding: 14px 18px;
+            border-radius: 12px;
+            border: 1px dashed var(--accent-primary);
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+        .word-token {
+            display: inline-flex;
+            align-items: center;
+            padding: 6px 14px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            font-weight: 700;
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            box-shadow: var(--shadow-xs);
+        }
+        .pop-exercise-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        .pop-exercise-item {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            background: var(--bg-main);
+            padding: 12px 16px;
+            border-radius: 12px;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+        .pop-exercise-item select {
+            padding: 6px 12px;
+            border-radius: 8px;
+            border: 1.5px solid var(--border-color);
+            font-family: inherit;
+            font-weight: 700;
+            font-size: 0.95rem;
+            background: var(--bg-card);
+            color: var(--text-primary);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .pop-exercise-item select.correct {
+            border-color: #10b981;
+            background-color: rgba(16, 185, 129, 0.1);
+            color: #065f46;
+        }
+        .pop-exercise-item select.wrong {
+            border-color: #ef4444;
+            background-color: rgba(239, 68, 68, 0.1);
+            color: #991b1b;
+        }
+        .pop-feedback-status {
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb">
+            <span>Prep_3</span> / <span>Unit 2</span> / <span>Lessons 1 & 2</span>
+        </div>
+
+        <!-- Teacher Profile Header -->
+        <div class="teacher-profile-header">
+            <div class="avatar-wrapper">
+                <img src="../../my-photo-profile.png" alt="Mr. Ahmed Assem" class="teacher-avatar" onerror="this.onerror=null; this.src='../../my-photo-profile.png';">
+            </div>
+            <h1 class="teacher-title">Mr. Ahmed Assem</h1>
+            <div class="slogan">✨ Easy Peasy Ya Englezeey ✨</div>
+            <div class="badges-row">
+                <span class="badge badge-active">Prep 3 • Unit 2</span>
+                <span class="badge badge-gold">📖 SB pages 28 : 31</span>
+            </div>
+            <h2 id="title" class="lesson-header-title">Lessons 1 & 2: Stay connected • Communication, Challenges and Solutions</h2>
+            <p id="description" class="lesson-desc-display">المفردات الأساسية والتكميلية كاملة، تدريب Pop Quiz التفاعلي، تصريف الأفعال غير المنتظمة، التعريفات الهامة، المتلازمات اللفظية، المرادفات والمتضادات، المقاطع البادئة والناهية، واختبار شامل 🎯</p>
+        </div>
+
+        <!-- Tabs Navigation Bar -->
+        <div class="tabs-container">
+            <button class="tab-btn active" onclick="switchTab('vocab', this)">📖 المفردات (Vocabulary)</button>
+            <button class="tab-btn" onclick="switchTab('verbs', this)">⚡ تصريف الأفعال (Verbs)</button>
+            <button class="tab-btn" onclick="switchTab('definitions', this)">📚 التعريفات والمتلازمات</button>
+            <button class="tab-btn" onclick="switchTab('synonyms', this)">⚖️ المرادفات والمتضادات</button>
+            <button class="tab-btn" onclick="switchTab('affixes', this)">🔤 البوادئ واللواحق (Affixes)</button>
+            <button class="tab-btn" onclick="switchTab('quiz', this)">🎯 اختبار الدرس الشامل (Quiz)</button>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- Tab 1: Key & Lesson Vocabulary             -->
+        <!-- ========================================== -->
+        <div id="vocab" class="tab-content active">
+            <!-- Key Vocabulary -->
+            <h3 class="section-subtitle">🌟 المفردات الرئيسية (Key Vocabulary):</h3>
+            <div class="grid-cards">
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun (n)</span>
+                            <div class="word-en">communication</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('communication'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> تواصل
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun (n)</span>
+                            <div class="word-en">connection</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('connection'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> اتصال / تواصل
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun (n)</span>
+                            <div class="word-en">relationship</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('relationship'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> علاقة / ارتباط / صلة
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Verb (v)</span>
+                            <div class="word-en">misunderstand</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('misunderstand'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> يسيء فهم
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun (n)</span>
+                            <div class="word-en">misunderstanding</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('misunderstanding'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> سوء فهم / خلاف
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun (n)</span>
+                            <div class="word-en">bond</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('bond'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> صلة / علاقة / رابطة
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Adjective (adj)</span>
+                            <div class="word-en">calm</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('calm'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> هادئ
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun (n)</span>
+                            <div class="word-en">sibling</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('sibling'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> شقيق - شقيقة [أخ أو أخت]
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Adjective (adj)</span>
+                            <div class="word-en">respectful</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('respectful'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> محترم للآخرين
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun (n)</span>
+                            <div class="word-en">conflict</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('conflict'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> صراع / نزاع
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Adjective (adj)</span>
+                            <div class="word-en">supportive</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('supportive'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> مساند / داعم
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Regular Verb (d) (v)</span>
+                            <div class="word-en">resolve</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('resolve resolved'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> يحل (resolved)
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun (n)</span>
+                            <div class="word-en">texting</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('texting'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> المراسلة / إرسال الرسائل
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Expression / Adj</span>
+                            <div class="word-en">face-to-face</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('face to face'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> مباشر / وجهاً لوجه
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pop Quiz Interactive Box (From SB Page 62) -->
+            <div class="pop-quiz-box">
+                <div class="pop-quiz-header">
+                    <div class="pop-quiz-title">
+                        <span>⏱️ Pop Quiz</span>
+                        <span class="badge badge-active">تدريب تلقائي يهدف لإتقان المفردات اللغوية</span>
+                    </div>
+                    <button class="play-btn" style="padding: 6px 16px; font-size: 0.9rem;" onclick="checkPopQuizAnswers()">✅ تحقق من الإجابات</button>
+                </div>
+                <p style="margin-bottom: 12px; font-weight: 700;">• Complete the following sentences using the words in the box :</p>
+                <div class="words-bank">
+                    <span class="word-token" onclick="speakText('calm')">calm 🔊</span>
+                    <span class="word-token" onclick="speakText('resolve')">resolve 🔊</span>
+                    <span class="word-token" onclick="speakText('siblings')">siblings 🔊</span>
+                    <span class="word-token" onclick="speakText('communication')">communication 🔊</span>
+                    <span class="word-token" onclick="speakText('misunderstand')">misunderstand 🔊</span>
+                    <span class="word-token" onclick="speakText('texting')">texting 🔊</span>
+                </div>
+                <div class="pop-exercise-list">
+                    <div class="pop-exercise-item" id="pop-q1">
+                        <span>1. Social media has improved</span>
+                        <select id="pop-ans-1" data-correct="communication">
+                            <option value="">-- اختر الكلمة --</option>
+                            <option value="calm">calm</option>
+                            <option value="resolve">resolve</option>
+                            <option value="siblings">siblings</option>
+                            <option value="communication">communication</option>
+                            <option value="misunderstand">misunderstand</option>
+                            <option value="texting">texting</option>
+                        </select>
+                        <span>between different people.</span>
+                        <button class="audio-btn" onclick="speakText('Social media has improved communication between different people.');" title="استمع للجملة">🔊</button>
+                        <span class="pop-feedback-status"></span>
+                    </div>
+
+                    <div class="pop-exercise-item" id="pop-q2">
+                        <span>2. They will feel upset if they</span>
+                        <select id="pop-ans-2" data-correct="misunderstand">
+                            <option value="">-- اختر الكلمة --</option>
+                            <option value="calm">calm</option>
+                            <option value="resolve">resolve</option>
+                            <option value="siblings">siblings</option>
+                            <option value="communication">communication</option>
+                            <option value="misunderstand">misunderstand</option>
+                            <option value="texting">texting</option>
+                        </select>
+                        <span>my idea.</span>
+                        <button class="audio-btn" onclick="speakText('They will feel upset if they misunderstand my idea.');" title="استمع للجملة">🔊</button>
+                        <span class="pop-feedback-status"></span>
+                    </div>
+
+                    <div class="pop-exercise-item" id="pop-q3">
+                        <span>3. Honesty helps</span>
+                        <select id="pop-ans-3" data-correct="resolve">
+                            <option value="">-- اختر الكلمة --</option>
+                            <option value="calm">calm</option>
+                            <option value="resolve">resolve</option>
+                            <option value="siblings">siblings</option>
+                            <option value="communication">communication</option>
+                            <option value="misunderstand">misunderstand</option>
+                            <option value="texting">texting</option>
+                        </select>
+                        <span>many of the problems we face.</span>
+                        <button class="audio-btn" onclick="speakText('Honesty helps resolve many of the problems we face.');" title="استمع للجملة">🔊</button>
+                        <span class="pop-feedback-status"></span>
+                    </div>
+
+                    <div class="pop-exercise-item" id="pop-q4">
+                        <span>4. I have three</span>
+                        <select id="pop-ans-4" data-correct="siblings">
+                            <option value="">-- اختر الكلمة --</option>
+                            <option value="calm">calm</option>
+                            <option value="resolve">resolve</option>
+                            <option value="siblings">siblings</option>
+                            <option value="communication">communication</option>
+                            <option value="misunderstand">misunderstand</option>
+                            <option value="texting">texting</option>
+                        </select>
+                        <span>: one brother and two sisters.</span>
+                        <button class="audio-btn" onclick="speakText('I have three siblings : one brother and two sisters.');" title="استمع للجملة">🔊</button>
+                        <span class="pop-feedback-status"></span>
+                    </div>
+
+                    <div class="pop-exercise-item" id="pop-q5">
+                        <span>5. Keep</span>
+                        <select id="pop-ans-5" data-correct="calm">
+                            <option value="">-- اختر الكلمة --</option>
+                            <option value="calm">calm</option>
+                            <option value="resolve">resolve</option>
+                            <option value="siblings">siblings</option>
+                            <option value="communication">communication</option>
+                            <option value="misunderstand">misunderstand</option>
+                            <option value="texting">texting</option>
+                        </select>
+                        <span>when you have a problem and ask for help.</span>
+                        <button class="audio-btn" onclick="speakText('Keep calm when you have a problem and ask for help.');" title="استمع للجملة">🔊</button>
+                        <span class="pop-feedback-status"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lesson 1 Vocabulary (SB pages 28 & 29) -->
+            <h3 class="section-subtitle" style="margin-top: 36px;">📘 مفردات الدرس الأول (Lesson 1 ▸ SB pages 28 & 29):</h3>
+            <div class="grid-cards">
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun</span>
+                            <div class="word-en">text message</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('text message'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> رسالة نصية
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Verb (d) (v)</span>
+                            <div class="word-en">care</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('care cared'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> يهتم / يرعى (cared)
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Adjective (adj)</span>
+                            <div class="word-en">upset</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('upset'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> منزعج / حزين
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun (n)</span>
+                            <div class="word-en">discussion</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('discussion'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> مناقشة
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Adjective (adj)</span>
+                            <div class="word-en">thoughtful</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('thoughtful'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> مراعٍ لشعور الآخرين
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Verb (d) (v)</span>
+                            <div class="word-en">cause</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('cause caused'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> يسبب (caused)
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun (n)</span>
+                            <div class="word-en">conversation</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('conversation'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> محادثة
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun</span>
+                            <div class="word-en">social media</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('social media'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> وسائل التواصل الاجتماعي
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun (n)</span>
+                            <div class="word-en">distance</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('distance'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> بعد / مسافة
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Verb (ed) (v)</span>
+                            <div class="word-en">strengthen</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('strengthen strengthened'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> يقوي / يدعم (strengthened)
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Adjective (adj)</span>
+                            <div class="word-en">caring</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('caring'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> مهتم
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Adjective (adj)</span>
+                            <div class="word-en">supported</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('supported'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> مؤيد / معزز
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Verb (ed) (v)</span>
+                            <div class="word-en">avoid</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('avoid avoided'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> يتجنب (avoided)
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun (n)</span>
+                            <div class="word-en">miscommunication</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('miscommunication'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> سوء التواصل
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun Phrase</span>
+                            <div class="word-en">facial expressions</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('facial expressions'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> تعبيرات الوجه
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun Phrase</span>
+                            <div class="word-en">body language</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('body language'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> لغة الجسد
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Verb (d) (v)</span>
+                            <div class="word-en">ignore</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('ignore ignored'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> يتجاهل (ignored)
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun (n)</span>
+                            <div class="word-en">issue</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('issue'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> موضوع / قضية
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun Phrase</span>
+                            <div class="word-en">group project</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('group project'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> مشروع جماعي
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Adjective (adj)</span>
+                            <div class="word-en">meaningful</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('meaningful'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> مفهوم / ذو معنى
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lesson 2 Vocabulary (SB pages 30 & 31) -->
+            <h3 class="section-subtitle" style="margin-top: 36px;">📗 مفردات الدرس الثاني (Lesson 2 ▸ SB pages 30 & 31):</h3>
+            <div class="grid-cards">
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Adjective (adj)</span>
+                            <div class="word-en">serious</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('serious'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> جاد / خطير
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Adverb (adv)</span>
+                            <div class="word-en">loudly</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('loudly'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> بصوت مرتفع
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun (n)</span>
+                            <div class="word-en">ride</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('ride'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> جولة / قيادة
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun (n)</span>
+                            <div class="word-en">solution</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('solution'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> حل
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- Tab 2: Irregular Verbs Conjugation         -->
+        <!-- ========================================== -->
+        <div id="verbs" class="tab-content">
+            <h3 class="section-subtitle">⚡ تصريف الأفعال غير المنتظمة (Conjugation of Irregular Verbs):</h3>
+            <div class="table-responsive">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>المضارع (Present)</th>
+                            <th>المعنى باللغة العربية</th>
+                            <th>الماضي (Past)</th>
+                            <th>التصريف الثالث (P.P.)</th>
+                            <th>استماع</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong class="en-text">misunderstand</strong></td>
+                            <td>يسيء الفهم</td>
+                            <td><span class="en-text">misunderstood</span></td>
+                            <td><span class="en-text">misunderstood</span></td>
+                            <td><button class="audio-btn" onclick="speakText('misunderstand, misunderstood, misunderstood'); playSound('click');" title="استمع للتصريفات">🔊</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong class="en-text">forgive</strong></td>
+                            <td>يسامح / يغفر</td>
+                            <td><span class="en-text">forgave</span></td>
+                            <td><span class="en-text">forgiven</span></td>
+                            <td><button class="audio-btn" onclick="speakText('forgive, forgave, forgiven'); playSound('click');" title="استمع للتصريفات">🔊</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong class="en-text">forget</strong></td>
+                            <td>ينسى</td>
+                            <td><span class="en-text">forgot</span></td>
+                            <td><span class="en-text">forgotten</span></td>
+                            <td><button class="audio-btn" onclick="speakText('forget, forgot, forgotten'); playSound('click');" title="استمع للتصريفات">🔊</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong class="en-text">speak</strong></td>
+                            <td>يتحدث</td>
+                            <td><span class="en-text">spoke</span></td>
+                            <td><span class="en-text">spoken</span></td>
+                            <td><button class="audio-btn" onclick="speakText('speak, spoke, spoken'); playSound('click');" title="استمع للتصريفات">🔊</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong class="en-text">lead</strong></td>
+                            <td>يؤدي</td>
+                            <td><span class="en-text">led</span></td>
+                            <td><span class="en-text">led</span></td>
+                            <td><button class="audio-btn" onclick="speakText('lead, led, led'); playSound('click');" title="استمع للتصريفات">🔊</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong class="en-text">bring</strong></td>
+                            <td>يحضر</td>
+                            <td><span class="en-text">brought</span></td>
+                            <td><span class="en-text">brought</span></td>
+                            <td><button class="audio-btn" onclick="speakText('bring, brought, brought'); playSound('click');" title="استمع للتصريفات">🔊</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="grid-cards" style="margin-top: 30px;">
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <span class="tag-badge">Verb 1</span>
+                        <div class="word-en">misunderstand</div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('misunderstand misunderstood'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> يسيء الفهم
+                        <div class="details-box">الماضي والتصريف الثالث: <span>misunderstood / misunderstood</span></div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <span class="tag-badge">Verb 2</span>
+                        <div class="word-en">forgive</div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('forgive forgave forgiven'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> يسامح / يغفر
+                        <div class="details-box">الماضي والتصريف الثالث: <span>forgave / forgiven</span></div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <span class="tag-badge">Verb 3</span>
+                        <div class="word-en">forget</div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('forget forgot forgotten'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> ينسى
+                        <div class="details-box">الماضي والتصريف الثالث: <span>forgot / forgotten</span></div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <span class="tag-badge">Verb 4</span>
+                        <div class="word-en">speak</div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('speak spoke spoken'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> يتحدث
+                        <div class="details-box">الماضي والتصريف الثالث: <span>spoke / spoken</span></div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <span class="tag-badge">Verb 5</span>
+                        <div class="word-en">lead</div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('lead led led'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> يؤدي
+                        <div class="details-box">الماضي والتصريف الثالث: <span>led / led</span></div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <span class="tag-badge">Verb 6</span>
+                        <div class="word-en">bring</div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('bring brought brought'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> يحضر
+                        <div class="details-box">الماضي والتصريف الثالث: <span>brought / brought</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- Tab 3: Definitions & Collocations          -->
+        <!-- ========================================== -->
+        <div id="definitions" class="tab-content">
+            <h3 class="section-subtitle">📚 ادرس هذه التعريفات (Study these definitions):</h3>
+            <div class="grid-cards">
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div class="word-en">misunderstanding</div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('misunderstanding: failure to understand correctly'); playSound('click');" title="نطق التعريف">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <span class="def-text">failure to understand correctly</span>
+                        <div class="details-box">المعنى بالعربية: <span>سوء فهم</span></div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div class="word-en">bond</div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('bond: a strong connection between people'); playSound('click');" title="نطق التعريف">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <span class="def-text">a strong connection between people</span>
+                        <div class="details-box">المعنى بالعربية: <span>رابطة / صلة</span></div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div class="word-en">respectful</div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('respectful: showing care and regard for others'); playSound('click');" title="نطق التعريف">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <span class="def-text">showing care and regard for others</span>
+                        <div class="details-box">المعنى بالعربية: <span>محترم</span></div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div class="word-en">supportive</div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('supportive: giving help or encouragement'); playSound('click');" title="نطق التعريف">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <span class="def-text">giving help or encouragement</span>
+                        <div class="details-box">المعنى بالعربية: <span>داعم / مساند</span></div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div class="word-en">communicate</div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('communicate: to share thoughts, feelings, or ideas'); playSound('click');" title="نطق التعريف">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <span class="def-text">to share thoughts, feelings, or ideas</span>
+                        <div class="details-box">المعنى بالعربية: <span>يتواصل</span></div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div class="word-en">resolve</div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('resolve: to find a solution to a problem or conflict'); playSound('click');" title="نطق التعريف">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <span class="def-text">to find a solution to a problem or conflict</span>
+                        <div class="details-box">المعنى بالعربية: <span>يحل</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Collocations -->
+            <h3 class="section-subtitle" style="margin-top: 36px;">🔗 متلازمات لفظية (Collocations):</h3>
+            <div class="grid-cards">
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div class="word-en">make time</div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('make time'); playSound('click');" title="نطق العبارة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> يخصص وقت
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div class="word-en">get worse</div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('get worse'); playSound('click');" title="نطق العبارة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> يتدهور / يسوء
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div class="word-en">have a conversation</div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('have a conversation'); playSound('click');" title="نطق العبارة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> يجري محادثة
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div class="word-en">make misunderstanding</div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('make misunderstanding'); playSound('click');" title="نطق العبارة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> يسبب سوء فهم
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- Tab 4: Synonyms and Antonyms               -->
+        <!-- ========================================== -->
+        <div id="synonyms" class="tab-content">
+            <h3 class="section-subtitle">⚖️ مترادفات ومتضادات (Synonyms and Antonyms):</h3>
+            <div class="table-responsive">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>الكلمة (Word)</th>
+                            <th>المرادف (Synonym)</th>
+                            <th>المضاد (Antonym / Opposite)</th>
+                            <th>استماع</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="en-text">care</span> <br><small>يهتم</small></td>
+                            <td><span class="en-text">concern / regard</span></td>
+                            <td><span class="en-text">ignore</span> <br><small>يتجاهل</small></td>
+                            <td><button class="audio-btn" onclick="speakText('care, synonym: concern, regard, antonym: ignore'); playSound('click');">🔊</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="en-text">stay in touch</span> <br><small>يظل على اتصال</small></td>
+                            <td><span class="en-text">keep in touch</span></td>
+                            <td><span class="en-text">lose touch with</span> <br><small>يفقد التواصل</small></td>
+                            <td><button class="audio-btn" onclick="speakText('stay in touch, synonym: keep in touch, antonym: lose touch with'); playSound('click');">🔊</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="en-text">conflict</span> <br><small>خلاف / صراع</small></td>
+                            <td><span class="en-text">disagreement / argument</span></td>
+                            <td><span class="en-text">agreement / harmony</span> <br><small>توافق / انسجام</small></td>
+                            <td><button class="audio-btn" onclick="speakText('conflict, disagreement, agreement'); playSound('click');">🔊</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="en-text">respectful</span> <br><small>محترم للآخرين</small></td>
+                            <td><span class="en-text">polite</span></td>
+                            <td><span class="en-text">disrespectful</span> <br><small>غير محترم</small></td>
+                            <td><button class="audio-btn" onclick="speakText('respectful, polite, disrespectful'); playSound('click');">🔊</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="en-text">upset</span> <br><small>قلق / منزعج</small></td>
+                            <td><span class="en-text">worried / disturbed</span></td>
+                            <td><span class="en-text">relaxed / happy</span> <br><small>مسترخٍ / سعيد</small></td>
+                            <td><button class="audio-btn" onclick="speakText('upset, worried, relaxed, happy'); playSound('click');">🔊</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="en-text">thoughtful</span> <br><small>مراعٍ لشعور الآخرين / عقلاني</small></td>
+                            <td><span class="en-text">helpful / friendly / wise</span></td>
+                            <td><span class="en-text">unkind / thoughtless</span> <br><small>غير مراعٍ للآخرين</small></td>
+                            <td><button class="audio-btn" onclick="speakText('thoughtful, helpful, thoughtless'); playSound('click');">🔊</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="en-text">failure</span> <br><small>فشل</small></td>
+                            <td><span class="en-text">defeat / decline</span></td>
+                            <td><span class="en-text">success</span> <br><small>نجاح</small></td>
+                            <td><button class="audio-btn" onclick="speakText('failure, defeat, success'); playSound('click');">🔊</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="en-text">encouragement</span> <br><small>تشجيع</small></td>
+                            <td><span class="en-text">support / inspiration</span></td>
+                            <td><span class="en-text">discouragement</span> <br><small>إحباط</small></td>
+                            <td><button class="audio-btn" onclick="speakText('encouragement, support, discouragement'); playSound('click');">🔊</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="en-text">imaginary</span> <br><small>خيالي / تصوري</small></td>
+                            <td><span class="en-text">ideal</span></td>
+                            <td><span class="en-text">real / ordinary</span> <br><small>واقعي / عادي</small></td>
+                            <td><button class="audio-btn" onclick="speakText('imaginary, ideal, real'); playSound('click');">🔊</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="en-text">serious</span> <br><small>جاد / خطير</small></td>
+                            <td><span class="en-text">dangerous / important</span></td>
+                            <td><span class="en-text">unimportant</span> <br><small>غير هام</small></td>
+                            <td><button class="audio-btn" onclick="speakText('serious, dangerous, unimportant'); playSound('click');">🔊</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="en-text">bond</span> <br><small>رابطة / قيد</small></td>
+                            <td><span class="en-text">connection / relation</span></td>
+                            <td><span class="en-text">disconnection</span> <br><small>انفصال</small></td>
+                            <td><button class="audio-btn" onclick="speakText('bond, connection, disconnection'); playSound('click');">🔊</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="en-text">honest</span> <br><small>أمين</small></td>
+                            <td><span class="en-text">trusted / sincere</span></td>
+                            <td><span class="en-text">liar / deceitful</span> <br><small>كاذب / مخادع</small></td>
+                            <td><button class="audio-btn" onclick="speakText('honest, sincere, deceitful'); playSound('click');">🔊</button></td>
+                        </tr>
+                        <tr>
+                            <td><span class="en-text">strengthen</span> <br><small>يعزز / يقوي</small></td>
+                            <td><span class="en-text">support / promote</span></td>
+                            <td><span class="en-text">weaken</span> <br><small>يضعف</small></td>
+                            <td><button class="audio-btn" onclick="speakText('strengthen, promote, weaken'); playSound('click');">🔊</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- Tab 5: Prefixes & Suffixes                 -->
+        <!-- ========================================== -->
+        <div id="affixes" class="tab-content">
+            <h3 class="section-subtitle">🔤 مقاطع بادئة وناهية (Prefixes & Suffixes):</h3>
+            <div class="table-responsive">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>المقطع (Prefix / Suffix)</th>
+                            <th>الوظيفة (Function)</th>
+                            <th>أمثلة توضيحية (Examples)</th>
+                            <th>استماع</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong class="en-text" style="color: var(--accent-primary); font-size: 1.15rem;">-ion</strong> <br><small>Suffix (لاحقة)</small></td>
+                            <td><strong>تكون الاسم من الفعل</strong></td>
+                            <td>
+                                <div><span class="en-text">communicat<strong>ion</strong></span> (تواصل)</div>
+                                <div style="margin-top: 4px;"><span class="en-text">connect<strong>ion</strong></span> (ارتباط / اتصال)</div>
+                            </td>
+                            <td><button class="audio-btn" onclick="speakText('communication, connection'); playSound('click');">🔊</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong class="en-text" style="color: var(--accent-primary); font-size: 1.15rem;">mis-</strong> <br><small>Prefix (بادئة)</small></td>
+                            <td><strong>تعطي عكس الفعل / الاسم</strong></td>
+                            <td>
+                                <div><span class="en-text"><strong>mis</strong>understand</span> (يسيء الفهم)</div>
+                                <div style="margin-top: 4px;"><span class="en-text"><strong>mis</strong>communication</span> (سوء التواصل)</div>
+                            </td>
+                            <td><button class="audio-btn" onclick="speakText('misunderstand, miscommunication'); playSound('click');">🔊</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong class="en-text" style="color: var(--accent-primary); font-size: 1.15rem;">-ful</strong> <br><small>Suffix (لاحقة)</small></td>
+                            <td><strong>تكون الصفة من الفعل / الاسم</strong></td>
+                            <td>
+                                <div><span class="en-text">respect<strong>ful</strong></span> (محترم للآخرين)</div>
+                                <div style="margin-top: 4px;"><span class="en-text">meaning<strong>ful</strong></span> (ذات معنى)</div>
+                            </td>
+                            <td><button class="audio-btn" onclick="speakText('respectful, meaningful'); playSound('click');">🔊</button></td>
+                        </tr>
+                        <tr>
+                            <td><strong class="en-text" style="color: var(--accent-primary); font-size: 1.15rem;">-en</strong> <br><small>Suffix (لاحقة)</small></td>
+                            <td><strong>يكون الفعل من الاسم</strong></td>
+                            <td>
+                                <div><span class="en-text">strength<strong>en</strong></span> (يقوى / يعزز)</div>
+                            </td>
+                            <td><button class="audio-btn" onclick="speakText('strengthen'); playSound('click');">🔊</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="grid-cards" style="margin-top: 30px;">
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <span class="tag-badge">Suffix</span>
+                        <div class="word-en">-ion</div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('communication, connection'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>الوظيفة:</strong> تكوّن الاسم من الفعل
+                        <div class="details-box">أمثلة: <span>communication, connection</span></div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <span class="tag-badge">Prefix</span>
+                        <div class="word-en">mis-</div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('misunderstand, miscommunication'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>الوظيفة:</strong> تعطي عكس الفعل أو الاسم
+                        <div class="details-box">أمثلة: <span>misunderstand, miscommunication</span></div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <span class="tag-badge">Suffix</span>
+                        <div class="word-en">-ful</div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('respectful, meaningful'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>الوظيفة:</strong> تكوّن الصفة من الفعل أو الاسم
+                        <div class="details-box">أمثلة: <span>respectful, meaningful</span></div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <span class="tag-badge">Suffix</span>
+                        <div class="word-en">-en</div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('strengthen'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>الوظيفة:</strong> يكوّن الفعل من الاسم
+                        <div class="details-box">أمثلة: <span>strengthen (يقوى / يعزز)</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- Tab 6: Comprehensive Interactive Quiz      -->
+        <!-- ========================================== -->
+        <div id="quiz" class="tab-content">
+            <div class="score-board">
+                <span>السؤال: <span id="current-q">1</span> / <span id="total-q">61</span></span>
+                <span>النقاط: <span id="score">0</span> 🌟</span>
+            </div>
+
+            <div class="question-card">
+                <span class="emoji-display" id="emoji">🎯</span>
+                <div class="question-text" id="question">جاري تحميل السؤال...</div>
+                <div class="options-grid" id="options"></div>
+                <div class="feedback" id="feedback"></div>
+            </div>
+
+            <div class="center-row">
+                <button class="action-btn next-btn" id="next-btn" onclick="nextQuestion()" style="display: none;">السؤال التالي ➔</button>
+            </div>
+        </div>
+
+        <!-- Navigation Controls -->
+        <div class="nav-controls" style="margin-top: 40px;">
+            <a href="./index.html" class="back-btn" data-sound-click="click">⬅️ العودة لقائمة دروس الوحدة الثانية</a>
+            <a href="../index.html" class="back-btn" data-sound-click="click">🏫 العودة لجميع وحدات Prep 3</a>
+        </div>
+    </div>
+
+    <!-- Interactive Pop Quiz Script -->
+    <script>
+        function checkPopQuizAnswers() {
+            let total = 5;
+            let score = 0;
+            for (let i = 1; i <= total; i++) {
+                const select = document.getElementById('pop-ans-' + i);
+                const feedback = document.querySelector('#pop-q' + i + ' .pop-feedback-status');
+                if (!select) continue;
+
+                const val = select.value.trim().toLowerCase();
+                const correct = select.getAttribute('data-correct').trim().toLowerCase();
+
+                if (val === correct) {
+                    select.className = 'correct';
+                    if (feedback) {
+                        feedback.textContent = '✅ إجابة صحيحة!';
+                        feedback.style.color = '#10b981';
+                    }
+                    score++;
+                } else if (val === '') {
+                    select.className = '';
+                    if (feedback) {
+                        feedback.textContent = '⚠️ الرجاء اختيار كلمة';
+                        feedback.style.color = '#f59e0b';
+                    }
+                } else {
+                    select.className = 'wrong';
+                    if (feedback) {
+                        feedback.textContent = '❌ إجابة خاطئة (الصحيح: ' + correct + ')';
+                        feedback.style.color = '#ef4444';
+                    }
+                }
+            }
+
+            if (typeof window.playSound === 'function') {
+                if (score === total) {
+                    window.playSound('cheer');
+                } else if (score > 0) {
+                    window.playSound('correct');
+                } else {
+                    window.playSound('wrong');
+                }
+            }
+        }
+    </script>
+
+    <!-- Lesson Data Setup -->
+    <script>
+        window.lessonData = {
+            title: "Lessons 1 & 2: Stay connected • Communication, Challenges and Solutions",
+            description: "المفردات الأساسية والتكميلية كاملة، تدريب Pop Quiz التفاعلي، تصريف الأفعال غير المنتظمة، التعريفات الهامة، المتلازمات اللفظية، المرادفات والمتضادات، المقاطع البادئة والناهية، واختبار شامل 🎯",
+            questions: [
+                // Pop Quiz Sentences
+                { emoji: "📱", question: "Social media has improved .................... between different people.", options: [{ text: "communication", isCorrect: true }, { text: "conflict", isCorrect: false }, { text: "failure", isCorrect: false }, { text: "distance", isCorrect: false }], correctMsg: "ممتاز! communication = تواصل (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🤔", question: "They will feel upset if they .................... my idea.", options: [{ text: "misunderstand", isCorrect: true }, { text: "strengthen", isCorrect: false }, { text: "support", isCorrect: false }, { text: "resolve", isCorrect: false }], correctMsg: "أحسنت! misunderstand = يسيء فهم (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🤝", question: "Honesty helps .................... many of the problems we face.", options: [{ text: "resolve", isCorrect: true }, { text: "worsen", isCorrect: false }, { text: "ignore", isCorrect: false }, { text: "cause", isCorrect: false }], correctMsg: "رائع! resolve = يحل المشاكل (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "👨‍👩‍👧‍👦", question: "I have three .................... : one brother and two sisters.", options: [{ text: "siblings", isCorrect: true }, { text: "conflicts", isCorrect: false }, { text: "issues", isCorrect: false }, { text: "solutions", isCorrect: false }], correctMsg: "بطل! siblings = إخوة أشقاء (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🧘‍♂️", question: "Keep .................... when you have a problem and ask for help.", options: [{ text: "calm", isCorrect: true }, { text: "loudly", isCorrect: false }, { text: "upset", isCorrect: false }, { text: "serious", isCorrect: false }], correctMsg: "ممتاز! Keep calm = ابقَ هادئاً (+10)", wrongMsg: "حاول مجدداً!" },
+
+                // Key Vocabulary Questions
+                { emoji: "🔗", question: "ما معنى كلمة 'connection'؟", options: [{ text: "اتصال / تواصل", isCorrect: true }, { text: "سوء تفاهم", isCorrect: false }, { text: "صراع", isCorrect: false }], correctMsg: "صحيح! connection = اتصال / تواصل (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "👥", question: "ما معنى كلمة 'relationship'؟", options: [{ text: "علاقة / ارتباط / صلة", isCorrect: true }, { text: "مسافة بعيدة", isCorrect: false }, { text: "مشروع جماعي", isCorrect: false }], correctMsg: "ممتاز! relationship = علاقة أو صلة (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🎗️", question: "ما معنى كلمة 'bond'؟", options: [{ text: "صلة / رابطة", isCorrect: true }, { text: "تجاهل", isCorrect: false }, { text: "نزاع", isCorrect: false }], correctMsg: "أحسنت! bond = رابطة أو صلة قوية (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🙌", question: "أي كلمة تعني 'محترم للآخرين'؟", options: [{ text: "respectful", isCorrect: true }, { text: "disrespectful", isCorrect: false }, { text: "thoughtless", isCorrect: false }], correctMsg: "بطل! respectful = محترم للآخرين (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "⚔️", question: "ما معنى كلمة 'conflict'؟", options: [{ text: "صراع / نزاع", isCorrect: true }, { text: "توافق", isCorrect: false }, { text: "حل", isCorrect: false }], correctMsg: "رائع! conflict = صراع أو نزاع (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🛡️", question: "ما معنى كلمة 'supportive'؟", options: [{ text: "مساند / داعم", isCorrect: true }, { text: "محبط", isCorrect: false }, { text: "منزعج", isCorrect: false }], correctMsg: "ممتاز! supportive = داعم ومساند (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "💬", question: "ما المقصود بـ 'texting'؟", options: [{ text: "المراسلة / إرسال الرسائل النصية", isCorrect: true }, { text: "التحدث وجهاً لوجه", isCorrect: false }, { text: "لغة الجسد", isCorrect: false }], correctMsg: "أحسنت! texting = إرسال الرسائل (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "👀", question: "ما التعبير الذي يعني 'مباشر / وجهاً لوجه'؟", options: [{ text: "face-to-face", isCorrect: true }, { text: "lose touch", isCorrect: false }, { text: "group project", isCorrect: false }], correctMsg: "بطل! face-to-face = وجهاً لوجه (+10)", wrongMsg: "حاول مجدداً!" },
+
+                // Lesson 1 & 2 Extra Vocab
+                { emoji: "😠", question: "ما معنى كلمة 'upset'؟", options: [{ text: "منزعج / حزين", isCorrect: true }, { text: "مسترخٍ", isCorrect: false }, { text: "محترم", isCorrect: false }], correctMsg: "رائع! upset = منزعج (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "💭", question: "ما معنى كلمة 'thoughtful'؟", options: [{ text: "مراعٍ لشعور الآخرين / عقلاني", isCorrect: true }, { text: "قاسٍ", isCorrect: false }, { text: "مهمل", isCorrect: false }], correctMsg: "ممتاز! thoughtful = مراعٍ لشعور الآخرين (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🚫", question: "ما معنى الفعل 'avoid'؟", options: [{ text: "يتجنب", isCorrect: true }, { text: "يشارك", isCorrect: false }, { text: "يؤيد", isCorrect: false }], correctMsg: "أحسنت! avoid = يتجنب (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🙈", question: "ما معنى الفعل 'ignore'؟", options: [{ text: "يتجاهل", isCorrect: true }, { text: "يهتم بـ", isCorrect: false }, { text: "يقوي", isCorrect: false }], correctMsg: "بطل! ignore = يتجاهل (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "😊", question: "ما المقصود بـ 'facial expressions'؟", options: [{ text: "تعبيرات الوجه", isCorrect: true }, { text: "لغة الجسد", isCorrect: false }, { text: "وسائل التواصل", isCorrect: false }], correctMsg: "رائع! facial expressions = تعبيرات الوجه (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🧍", question: "ما المقصود بـ 'body language'؟", options: [{ text: "لغة الجسد", isCorrect: true }, { text: "مشروع جماعي", isCorrect: false }, { text: "رسالة نصية", isCorrect: false }], correctMsg: "ممتاز! body language = لغة الجسد (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "📢", question: "ما معنى كلمة 'loudly'؟", options: [{ text: "بصوت مرتفع", isCorrect: true }, { text: "بهدوء", isCorrect: false }, { text: "بجدية", isCorrect: false }], correctMsg: "أحسنت! loudly = بصوت عالٍ (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "📩", question: "ما معنى 'text message'؟", options: [{ text: "رسالة نصية", isCorrect: true }, { text: "بريد إلكتروني", isCorrect: false }, { text: "مكالمة هاتفية", isCorrect: false }], correctMsg: "ممتاز! text message = رسالة نصية (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🗣️", question: "ما معنى كلمة 'discussion'؟", options: [{ text: "مناقشة", isCorrect: true }, { text: "جدال عنيف", isCorrect: false }, { text: "سوء فهم", isCorrect: false }], correctMsg: "أحسنت! discussion = مناقشة (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "⚡", question: "ما معنى الفعل 'cause'؟", options: [{ text: "يسبب", isCorrect: true }, { text: "يحل", isCorrect: false }, { text: "يتجنب", isCorrect: false }], correctMsg: "رائع! cause = يسبب (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "💬", question: "ما معنى كلمة 'conversation'؟", options: [{ text: "محادثة", isCorrect: true }, { text: "صمت", isCorrect: false }, { text: "مشروع", isCorrect: false }], correctMsg: "بطل! conversation = محادثة (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "📱", question: "ما المقصود بـ 'social media'؟", options: [{ text: "وسائل التواصل الاجتماعي", isCorrect: true }, { text: "الصحف الورقية", isCorrect: false }, { text: "الكتب المدرسية", isCorrect: false }], correctMsg: "ممتاز! social media = وسائل التواصل الاجتماعي (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "📏", question: "ما معنى كلمة 'distance'؟", options: [{ text: "بعد / مسافة", isCorrect: true }, { text: "سرعة", isCorrect: false }, { text: "وقت", isCorrect: false }], correctMsg: "أحسنت! distance = بعد أو مسافة (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "❤️", question: "ما معنى الصفة 'caring'؟", options: [{ text: "مهتم / عطوف", isCorrect: true }, { text: "قاسٍ", isCorrect: false }, { text: "أناني", isCorrect: false }], correctMsg: "رائع! caring = مهتم وعطوف (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🤝", question: "ما معنى الصفة 'supported'؟", options: [{ text: "مؤيد / معزز", isCorrect: true }, { text: "مرفوض", isCorrect: false }, { text: "منعزل", isCorrect: false }], correctMsg: "بطل! supported = مؤيد ومعزز (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "📵", question: "ما معنى كلمة 'miscommunication'؟", options: [{ text: "سوء التواصل", isCorrect: true }, { text: "التواصل الفعال", isCorrect: false }, { text: "الاحترام المتبادل", isCorrect: false }], correctMsg: "ممتاز! miscommunication = سوء التواصل (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "📑", question: "ما معنى كلمة 'issue'؟", options: [{ text: "موضوع / قضية / مشكلة", isCorrect: true }, { text: "حل نهائي", isCorrect: false }, { text: "رحلة قصيرة", isCorrect: false }], correctMsg: "أحسنت! issue = قضية أو موضوع (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "👥", question: "ما المقصود بـ 'group project'؟", options: [{ text: "مشروع جماعي", isCorrect: true }, { text: "امتحان فردي", isCorrect: false }, { text: "واجب منزلي فردي", isCorrect: false }], correctMsg: "رائع! group project = مشروع جماعي (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "✨", question: "ما معنى كلمة 'meaningful'؟", options: [{ text: "مفهوم / ذو مغزى ومعنى", isCorrect: true }, { text: "بلا فائدة", isCorrect: false }, { text: "غامض", isCorrect: false }], correctMsg: "بطل! meaningful = ذو معنى وقيمة (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🧐", question: "ما معنى كلمة 'serious'؟", options: [{ text: "جاد / خطير", isCorrect: true }, { text: "مضحك", isCorrect: false }, { text: "بسيط", isCorrect: false }], correctMsg: "ممتاز! serious = جاد أو خطير (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🚗", question: "ما معنى كلمة 'ride' (اسم في الدرس الثاني)؟", options: [{ text: "جولة / توصيلة بالسيارة", isCorrect: true }, { text: "مباراة", isCorrect: false }, { text: "محادثة", isCorrect: false }], correctMsg: "أحسنت! ride = جولة / توصيلة (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "💡", question: "ما معنى كلمة 'solution'؟", options: [{ text: "حل", isCorrect: true }, { text: "مشكلة", isCorrect: false }, { text: "سبب", isCorrect: false }], correctMsg: "رائع! solution = حل (+10)", wrongMsg: "حاول مجدداً!" },
+
+                // Irregular Verbs Questions
+                { emoji: "📖", question: "ما الماضي والتصريف الثالث للفعل 'misunderstand'؟", options: [{ text: "misunderstood / misunderstood", isCorrect: true }, { text: "misunderstanded / misunderstanded", isCorrect: false }, { text: "misunderstood / misunderstanding", isCorrect: false }], correctMsg: "ممتاز! misunderstand -> misunderstood (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🤍", question: "ما التصريف الثاني والثالث للفعل 'forgive' (يسامح)؟", options: [{ text: "forgave / forgiven", isCorrect: true }, { text: "forgive / forgiven", isCorrect: false }, { text: "forgived / forgived", isCorrect: false }], correctMsg: "أحسنت! forgive -> forgave / forgiven (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🧠", question: "ما التصريف الماضي والتصريف الثالث للفعل 'forget' (ينسى)؟", options: [{ text: "forgot / forgotten", isCorrect: true }, { text: "forgot / forgot", isCorrect: false }, { text: "forgetted / forgetted", isCorrect: false }], correctMsg: "رائع! forget -> forgot / forgotten (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🗣️", question: "ما التصريف الماضي للفعل 'speak' (يتحدث)؟", options: [{ text: "spoke / spoken", isCorrect: true }, { text: "spaked / spoken", isCorrect: false }, { text: "speaked / speaked", isCorrect: false }], correctMsg: "بطل! speak -> spoke / spoken (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🧭", question: "ما الماضي والتصريف الثالث للفعل 'lead' (يؤدي)؟", options: [{ text: "led / led", isCorrect: true }, { text: "leaded / leaded", isCorrect: false }, { text: "load / loaden", isCorrect: false }], correctMsg: "ممتاز! lead -> led / led (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🎁", question: "ما التصريف الماضي والتصريف الثالث للفعل 'bring' (يحضر)؟", options: [{ text: "brought / brought", isCorrect: true }, { text: "bringed / bringed", isCorrect: false }, { text: "bought / bought", isCorrect: false }], correctMsg: "أحسنت! bring -> brought / brought (+10)", wrongMsg: "حاول مجدداً!" },
+
+                // Definitions Questions
+                { emoji: "❓", question: "Which word means: 'failure to understand correctly'?", options: [{ text: "misunderstanding", isCorrect: true }, { text: "conflict", isCorrect: false }, { text: "bond", isCorrect: false }], correctMsg: "رائع! misunderstanding = failure to understand correctly (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🤝", question: "Which word means: 'a strong connection between people'?", options: [{ text: "bond", isCorrect: true }, { text: "distance", isCorrect: false }, { text: "text message", isCorrect: false }], correctMsg: "بطل! bond = a strong connection between people (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "💖", question: "Which word means: 'showing care and regard for others'?", options: [{ text: "respectful", isCorrect: true }, { text: "disrespectful", isCorrect: false }, { text: "honest", isCorrect: false }], correctMsg: "ممتاز! respectful = showing care and regard (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🌟", question: "Which word means: 'giving help or encouragement'?", options: [{ text: "supportive", isCorrect: true }, { text: "calm", isCorrect: false }, { text: "upset", isCorrect: false }], correctMsg: "أحسنت! supportive = giving help or encouragement (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "💡", question: "Which word means: 'to share thoughts, feelings, or ideas'?", options: [{ text: "communicate", isCorrect: true }, { text: "ignore", isCorrect: false }, { text: "avoid", isCorrect: false }], correctMsg: "رائع! communicate = to share thoughts, feelings, or ideas (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🧩", question: "Which word means: 'to find a solution to a problem or conflict'?", options: [{ text: "resolve", isCorrect: true }, { text: "cause", isCorrect: false }, { text: "lead", isCorrect: false }], correctMsg: "بطل! resolve = to find a solution to a problem (+10)", wrongMsg: "حاول مجدداً!" },
+
+                // Collocations Questions
+                { emoji: "⏰", question: "ما المتلازمة اللفظية التي تعني 'يخصص وقت'؟", options: [{ text: "make time", isCorrect: true }, { text: "lose time", isCorrect: false }, { text: "break time", isCorrect: false }], correctMsg: "ممتاز! make time = يخصص وقتاً (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "📉", question: "ما التعبير الذي يعني 'يتدهور أو يسوء'؟", options: [{ text: "get worse", isCorrect: true }, { text: "get better", isCorrect: false }, { text: "make time", isCorrect: false }], correctMsg: "أحسنت! get worse = يسوء (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🗣️", question: "ما التعبير الذي يعني 'يجري محادثة'؟", options: [{ text: "have a conversation", isCorrect: true }, { text: "make a conversation", isCorrect: false }, { text: "do a conversation", isCorrect: false }], correctMsg: "رائع! have a conversation (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "⚠️", question: "ما التعبير الذي يعني 'يسبب سوء فهم'؟", options: [{ text: "make misunderstanding", isCorrect: true }, { text: "do misunderstanding", isCorrect: false }, { text: "have misunderstanding", isCorrect: false }], correctMsg: "بطل! make misunderstanding (+10)", wrongMsg: "حاول مجدداً!" },
+
+                // Synonyms & Antonyms Questions
+                { emoji: "⚖️", question: "ما مرادف (Synonym) كلمة 'care' ومضادها (Antonym)؟", options: [{ text: "Synonym: concern / regard | Antonym: ignore", isCorrect: true }, { text: "Synonym: ignore | Antonym: concern", isCorrect: false }, { text: "Synonym: hate | Antonym: love", isCorrect: false }], correctMsg: "ممتاز! care: concern x ignore (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "📞", question: "ما مضاد (Antonym) التعبير 'stay in touch'؟", options: [{ text: "lose touch with", isCorrect: true }, { text: "keep in touch", isCorrect: false }, { text: "have in touch", isCorrect: false }], correctMsg: "أحسنت! stay in touch x lose touch with (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "⚔️", question: "ما مرادف (Synonym) كلمة 'conflict' (صراع) ومضادها؟", options: [{ text: "Synonym: disagreement / argument | Antonym: agreement / harmony", isCorrect: true }, { text: "Synonym: harmony | Antonym: argument", isCorrect: false }, { text: "Synonym: peace | Antonym: quiet", isCorrect: false }], correctMsg: "رائع! conflict = disagreement x agreement (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🤝", question: "ما مرادف ومضاد كلمة 'respectful'؟", options: [{ text: "Synonym: polite | Antonym: disrespectful", isCorrect: true }, { text: "Synonym: disrespectful | Antonym: polite", isCorrect: false }, { text: "Synonym: kind | Antonym: friendly", isCorrect: false }], correctMsg: "بطل! respectful = polite x disrespectful (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🏆", question: "ما مضاد كلمة 'failure' (فشل)؟", options: [{ text: "success", isCorrect: true }, { text: "defeat", isCorrect: false }, { text: "decline", isCorrect: false }], correctMsg: "ممتاز! failure x success (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "💪", question: "ما مرادف ومضاد الفعل 'strengthen' (يقوي/يعزز)؟", options: [{ text: "Synonym: support / promote | Antonym: weaken", isCorrect: true }, { text: "Synonym: weaken | Antonym: support", isCorrect: false }, { text: "Synonym: ignore | Antonym: resolve", isCorrect: false }], correctMsg: "أحسنت! strengthen = promote x weaken (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "😇", question: "ما مرادف كلمة 'honest' (أمين) ومضادها؟", options: [{ text: "Synonym: trusted / sincere | Antonym: liar / deceitful", isCorrect: true }, { text: "Synonym: liar | Antonym: sincere", isCorrect: false }, { text: "Synonym: calm | Antonym: upset", isCorrect: false }], correctMsg: "رائع! honest = sincere x liar (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "👏", question: "ما مرادف ومضاد كلمة 'encouragement' (تشجيع)؟", options: [{ text: "Synonym: support / inspiration | Antonym: discouragement", isCorrect: true }, { text: "Synonym: discouragement | Antonym: support", isCorrect: false }, { text: "Synonym: defeat | Antonym: success", isCorrect: false }], correctMsg: "بطل! encouragement: support x discouragement (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🦄", question: "ما مرادف ومضاد كلمة 'imaginary' (خيالي)؟", options: [{ text: "Synonym: ideal | Antonym: real / ordinary", isCorrect: true }, { text: "Synonym: real | Antonym: ideal", isCorrect: false }, { text: "Synonym: honest | Antonym: liar", isCorrect: false }], correctMsg: "ممتاز! imaginary: ideal x real (+10)", wrongMsg: "حاول مجدداً!" },
+
+                // Prefixes & Suffixes Questions
+                { emoji: "🔤", question: "ما وظيفة اللاحقة (Suffix) '-ion' في كلمات مثل 'communication' و 'connection'؟", options: [{ text: "تكوّن الاسم من الفعل", isCorrect: true }, { text: "تكوّن الفعل من الاسم", isCorrect: false }, { text: "تعطي عكس المعنى", isCorrect: false }], correctMsg: "بطل! -ion تكوّن الاسم من الفعل (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🔤", question: "ما وظيفة البادئة (Prefix) 'mis-' في 'misunderstand' و 'miscommunication'؟", options: [{ text: "تعطي عكس الفعل / الاسم", isCorrect: true }, { text: "تكوّن الصفة من الاسم", isCorrect: false }, { text: "تكوّن الاسم من الفعل", isCorrect: false }], correctMsg: "ممتاز! mis- تعطي عكس الفعل/الاسم (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🔤", question: "ما وظيفة اللاحقة (Suffix) '-ful' في 'respectful' و 'meaningful'؟", options: [{ text: "تكوّن الصفة من الفعل / الاسم", isCorrect: true }, { text: "تكوّن الفعل من الاسم", isCorrect: false }, { text: "تفيد النفي المطلق", isCorrect: false }], correctMsg: "أحسنت! -ful تكوّن الصفة (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🔤", question: "ما المقطع الذي يضاف للاسم 'strength' ليكون الفعل 'strengthen' (يقوي)؟", options: [{ text: "-en", isCorrect: true }, { text: "-ful", isCorrect: false }, { text: "-ion", isCorrect: false }], correctMsg: "رائع! strength + en = strengthen (+10)", wrongMsg: "حاول مجدداً!" }
+            ]
+        };
+
+    </script>
+
+    <!-- Framework & Shared Scripts -->
+    <script src="../../assets/js/bidi.js"></script>
+    <script src="../../assets/js/audio.js"></script>
+    <script src="../../assets/js/tabs.js"></script>
+    <script src="../../assets/js/quiz-engine.js"></script>
+    <script src="../../assets/js/ui.js"></script>
+    <script src="../../assets/js/main.js"></script>
+
+    <!-- Studio Payload for Lossless Round-Trip Import -->
+    <script id="studio-payload" type="application/json">
+{
+  "archetype": "curriculum_tabs",
+  "stage": "Prep_3",
+  "unit": "unit-2",
+  "fileName": "lesson-1-2.html",
+  "title": "Lessons 1 & 2: Stay connected • Communication, Challenges and Solutions",
+  "description": "المفردات الأساسية والتكميلية كاملة، تدريب Pop Quiz التفاعلي، تصريف الأفعال غير المنتظمة، التعريفات الهامة، المتلازمات اللفظية، المرادفات والمتضادات، المقاطع البادئة والناهية، واختبار شامل (SB 28:31)",
+  "vocabulary": [
+    { "word": "communication", "type": "n", "ar": "تواصل" },
+    { "word": "connection", "type": "n", "ar": "اتصال / تواصل" },
+    { "word": "relationship", "type": "n", "ar": "علاقة / ارتباط / صلة" },
+    { "word": "misunderstand", "type": "v", "ar": "يسيء فهم" },
+    { "word": "misunderstanding", "type": "n", "ar": "سوء فهم / خلاف" },
+    { "word": "bond", "type": "n", "ar": "صلة / علاقة / رابطة" },
+    { "word": "calm", "type": "adj", "ar": "هادئ" },
+    { "word": "sibling", "type": "n", "ar": "شقيق - شقيقة [أخ أو أخت]" },
+    { "word": "respectful", "type": "adj", "ar": "محترم للآخرين" },
+    { "word": "conflict", "type": "n", "ar": "صراع / نزاع" },
+    { "word": "supportive", "type": "adj", "ar": "مساند / داعم" },
+    { "word": "resolve", "type": "v (d)", "ar": "يحل" },
+    { "word": "texting", "type": "n", "ar": "المراسلة / إرسال الرسائل" },
+    { "word": "face-to-face", "type": "expression", "ar": "مباشر / وجهاً لوجه" },
+    { "word": "text message", "type": "n", "ar": "رسالة نصية" },
+    { "word": "care", "type": "v (d)", "ar": "يهتم / يرعى" },
+    { "word": "upset", "type": "adj", "ar": "منزعج / حزين" },
+    { "word": "discussion", "type": "n", "ar": "مناقشة" },
+    { "word": "thoughtful", "type": "adj", "ar": "مراعٍ لشعور الآخرين" },
+    { "word": "cause", "type": "v (d)", "ar": "يسبب" },
+    { "word": "conversation", "type": "n", "ar": "محادثة" },
+    { "word": "social media", "type": "n", "ar": "وسائل التواصل الاجتماعي" },
+    { "word": "distance", "type": "n", "ar": "بعد / مسافة" },
+    { "word": "strengthen", "type": "v (ed)", "ar": "يقوي / يدعم" },
+    { "word": "caring", "type": "adj", "ar": "مهتم" },
+    { "word": "supported", "type": "adj", "ar": "مؤيد / معزز" },
+    { "word": "avoid", "type": "v (ed)", "ar": "يتجنب" },
+    { "word": "miscommunication", "type": "n", "ar": "سوء التواصل" },
+    { "word": "facial expressions", "type": "n phrase", "ar": "تعبيرات الوجه" },
+    { "word": "body language", "type": "n phrase", "ar": "لغة الجسد" },
+    { "word": "ignore", "type": "v (d)", "ar": "يتجاهل" },
+    { "word": "issue", "type": "n", "ar": "موضوع / قضية" },
+    { "word": "group project", "type": "n phrase", "ar": "مشروع جماعي" },
+    { "word": "meaningful", "type": "adj", "ar": "مفهوم / ذو معنى" },
+    { "word": "serious", "type": "adj", "ar": "جاد / خطير" },
+    { "word": "loudly", "type": "adv", "ar": "بصوت مرتفع" },
+    { "word": "ride", "type": "n", "ar": "جولة / قيادة" },
+    { "word": "solution", "type": "n", "ar": "حل" }
+  ],
+  "verbs": [
+    { "word": "misunderstand", "tag": "Present", "meaning": "يسيء الفهم", "forms": "misunderstood / misunderstood" },
+    { "word": "forgive", "tag": "Present", "meaning": "يسامح / يغفر", "forms": "forgave / forgiven" },
+    { "word": "forget", "tag": "Present", "meaning": "ينسى", "forms": "forgot / forgotten" },
+    { "word": "speak", "tag": "Present", "meaning": "يتحدث", "forms": "spoke / spoken" },
+    { "word": "lead", "tag": "Present", "meaning": "يؤدي", "forms": "led / led" },
+    { "word": "bring", "tag": "Present", "meaning": "يحضر", "forms": "brought / brought" }
+  ],
+  "definitions": [
+    { "word": "misunderstanding", "def": "failure to understand correctly", "ar": "سوء فهم" },
+    { "word": "bond", "def": "a strong connection between people", "ar": "رابطة / صلة" },
+    { "word": "respectful", "def": "showing care and regard for others", "ar": "محترم" },
+    { "word": "supportive", "def": "giving help or encouragement", "ar": "داعم / مساند" },
+    { "word": "communicate", "def": "to share thoughts, feelings, or ideas", "ar": "يتواصل" },
+    { "word": "resolve", "def": "to find a solution to a problem or conflict", "ar": "يحل" }
+  ],
+  "collocations": [
+    { "phrase": "make time", "ar": "يخصص وقت" },
+    { "phrase": "get worse", "ar": "يتدهور / يسوء" },
+    { "phrase": "have a conversation", "ar": "يجري محادثة" },
+    { "phrase": "make misunderstanding", "ar": "يسبب سوء فهم" }
+  ],
+  "synonyms": [
+    { "word": "care", "arWord": "يهتم", "synonym": "concern / regard", "antonym": "ignore", "arAnt": "يتجاهل" },
+    { "word": "stay in touch", "arWord": "يظل على اتصال", "synonym": "keep in touch", "antonym": "lose touch with", "arAnt": "يفقد التواصل" },
+    { "word": "conflict", "arWord": "خلاف / صراع", "synonym": "disagreement / argument", "antonym": "agreement / harmony", "arAnt": "توافق / انسجام" },
+    { "word": "respectful", "arWord": "محترم للآخرين", "synonym": "polite", "antonym": "disrespectful", "arAnt": "غير محترم" },
+    { "word": "upset", "arWord": "قلق / منزعج", "synonym": "worried / disturbed", "antonym": "relaxed / happy", "arAnt": "مسترخٍ / سعيد" },
+    { "word": "thoughtful", "arWord": "مراعٍ لشعور الآخرين / عقلاني", "synonym": "helpful / friendly / wise", "antonym": "unkind / thoughtless", "arAnt": "غير مراعٍ للآخرين" },
+    { "word": "failure", "arWord": "فشل", "synonym": "defeat / decline", "antonym": "success", "arAnt": "نجاح" },
+    { "word": "encouragement", "arWord": "تشجيع", "synonym": "support / inspiration", "antonym": "discouragement", "arAnt": "إحباط" },
+    { "word": "imaginary", "arWord": "خيالي / تصوري", "synonym": "ideal", "antonym": "real / ordinary", "arAnt": "واقعي / عادي" },
+    { "word": "serious", "arWord": "جاد / خطير", "synonym": "dangerous / important", "antonym": "unimportant", "arAnt": "غير هام" },
+    { "word": "bond", "arWord": "رابطة / قيد", "synonym": "connection / relation", "antonym": "disconnection", "arAnt": "انفصال" },
+    { "word": "honest", "arWord": "أمين", "synonym": "trusted / sincere", "antonym": "liar / deceitful", "arAnt": "كاذب / مخادع" },
+    { "word": "strengthen", "arWord": "يعزز / يقوي", "synonym": "support / promote", "antonym": "weaken", "arAnt": "يضعف" }
+  ],
+  "affixes": [
+    { "affix": "-ion", "role": "تكون الاسم من الفعل", "examples": "communication / connection" },
+    { "affix": "mis-", "role": "تعطي عكس الفعل / الاسم", "examples": "misunderstand / miscommunication" },
+    { "affix": "-ful", "role": "تكون الصفه من الفعل / الاسم", "examples": "respectful / meaningful" },
+    { "affix": "-en", "role": "يكون الفعل من الاسم", "examples": "strengthen" }
+  ],
+  "quiz": [
+    { "emoji": "📱", "question": "Social media has improved .................... between different people.", "options": [{ "text": "communication", "isCorrect": true }, { "text": "conflict", "isCorrect": false }, { "text": "failure", "isCorrect": false }, { "text": "distance", "isCorrect": false }], "correctMsg": "ممتاز! communication = تواصل (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🤔", "question": "They will feel upset if they .................... my idea.", "options": [{ "text": "misunderstand", "isCorrect": true }, { "text": "strengthen", "isCorrect": false }, { "text": "support", "isCorrect": false }, { "text": "resolve", "isCorrect": false }], "correctMsg": "أحسنت! misunderstand = يسيء فهم (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🤝", "question": "Honesty helps .................... many of the problems we face.", "options": [{ "text": "resolve", "isCorrect": true }, { "text": "worsen", "isCorrect": false }, { "text": "ignore", "isCorrect": false }, { "text": "cause", "isCorrect": false }], "correctMsg": "رائع! resolve = يحل المشاكل (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "👨‍👩‍👧‍👦", "question": "I have three .................... : one brother and two sisters.", "options": [{ "text": "siblings", "isCorrect": true }, { "text": "conflicts", "isCorrect": false }, { "text": "issues", "isCorrect": false }, { "text": "solutions", "isCorrect": false }], "correctMsg": "بطل! siblings = إخوة أشقاء (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🧘‍♂️", "question": "Keep .................... when you have a problem and ask for help.", "options": [{ "text": "calm", "isCorrect": true }, { "text": "loudly", "isCorrect": false }, { "text": "upset", "isCorrect": false }, { "text": "serious", "isCorrect": false }], "correctMsg": "ممتاز! Keep calm = ابقَ هادئاً (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🔗", "question": "ما معنى كلمة 'connection'؟", "options": [{ "text": "اتصال / تواصل", "isCorrect": true }, { "text": "سوء تفاهم", "isCorrect": false }, { "text": "صراع", "isCorrect": false }], "correctMsg": "صحيح! connection = اتصال / تواصل (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "👥", "question": "ما معنى كلمة 'relationship'؟", "options": [{ "text": "علاقة / ارتباط / صلة", "isCorrect": true }, { "text": "مسافة بعيدة", "isCorrect": false }, { "text": "مشروع جماعي", "isCorrect": false }], "correctMsg": "ممتاز! relationship = علاقة أو صلة (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🎗️", "question": "ما معنى كلمة 'bond'؟", "options": [{ "text": "صلة / رابطة", "isCorrect": true }, { "text": "تجاهل", "isCorrect": false }, { "text": "نزاع", "isCorrect": false }], "correctMsg": "أحسنت! bond = رابطة أو صلة قوية (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🙌", "question": "أي كلمة تعني 'محترم للآخرين'؟", "options": [{ "text": "respectful", "isCorrect": true }, { "text": "disrespectful", "isCorrect": false }, { "text": "thoughtless", "isCorrect": false }], "correctMsg": "بطل! respectful = محترم للآخرين (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "⚔️", "question": "ما معنى كلمة 'conflict'؟", "options": [{ "text": "صراع / نزاع", "isCorrect": true }, { "text": "توافق", "isCorrect": false }, { "text": "حل", "isCorrect": false }], "correctMsg": "رائع! conflict = صراع أو نزاع (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🛡️", "question": "ما معنى كلمة 'supportive'؟", "options": [{ "text": "مساند / داعم", "isCorrect": true }, { "text": "محبط", "isCorrect": false }, { "text": "منزعج", "isCorrect": false }], "correctMsg": "ممتاز! supportive = داعم ومساند (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "💬", "question": "ما المقصود بـ 'texting'؟", "options": [{ "text": "المراسلة / إرسال الرسائل النصية", "isCorrect": true }, { "text": "التحدث وجهاً لوجه", "isCorrect": false }, { "text": "لغة الجسد", "isCorrect": false }], "correctMsg": "أحسنت! texting = إرسال الرسائل (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "👀", "question": "ما التعبير الذي يعني 'مباشر / وجهاً لوجه'؟", "options": [{ "text": "face-to-face", "isCorrect": true }, { "text": "lose touch", "isCorrect": false }, { "text": "group project", "isCorrect": false }], "correctMsg": "بطل! face-to-face = وجهاً لوجه (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "😠", "question": "ما معنى كلمة 'upset'؟", "options": [{ "text": "منزعج / حزين", "isCorrect": true }, { "text": "مسترخٍ", "isCorrect": false }, { "text": "محترم", "isCorrect": false }], "correctMsg": "رائع! upset = منزعج (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "💭", "question": "ما معنى كلمة 'thoughtful'؟", "options": [{ "text": "مراعٍ لشعور الآخرين / عقلاني", "isCorrect": true }, { "text": "قاسٍ", "isCorrect": false }, { "text": "مهمل", "isCorrect": false }], "correctMsg": "ممتاز! thoughtful = مراعٍ لشعور الآخرين (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🚫", "question": "ما معنى الفعل 'avoid'؟", "options": [{ "text": "يتجنب", "isCorrect": true }, { "text": "يشارك", "isCorrect": false }, { "text": "يؤيد", "isCorrect": false }], "correctMsg": "أحسنت! avoid = يتجنب (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🙈", "question": "ما معنى الفعل 'ignore'؟", "options": [{ "text": "يتجاهل", "isCorrect": true }, { "text": "يهتم بـ", "isCorrect": false }, { "text": "يقوي", "isCorrect": false }], "correctMsg": "بطل! ignore = يتجاهل (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "😊", "question": "ما المقصود بـ 'facial expressions'؟", "options": [{ "text": "تعبيرات الوجه", "isCorrect": true }, { "text": "لغة الجسد", "isCorrect": false }, { "text": "وسائل التواصل", "isCorrect": false }], "correctMsg": "رائع! facial expressions = تعبيرات الوجه (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🧍", "question": "ما المقصود بـ 'body language'؟", "options": [{ "text": "لغة الجسد", "isCorrect": true }, { "text": "مشروع جماعي", "isCorrect": false }, { "text": "رسالة نصية", "isCorrect": false }], "correctMsg": "ممتاز! body language = لغة الجسد (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "📢", "question": "ما معنى كلمة 'loudly'؟", "options": [{ "text": "بصوت مرتفع", "isCorrect": true }, { "text": "بهدوء", "isCorrect": false }, { "text": "بجدية", "isCorrect": false }], "correctMsg": "أحسنت! loudly = بصوت عالٍ (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "📩", "question": "ما معنى 'text message'؟", "options": [{ "text": "رسالة نصية", "isCorrect": true }, { "text": "بريد إلكتروني", "isCorrect": false }, { "text": "مكالمة هاتفية", "isCorrect": false }], "correctMsg": "ممتاز! text message = رسالة نصية (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🗣️", "question": "ما معنى كلمة 'discussion'؟", "options": [{ "text": "مناقشة", "isCorrect": true }, { "text": "جدال عنيف", "isCorrect": false }, { "text": "سوء فهم", "isCorrect": false }], "correctMsg": "أحسنت! discussion = مناقشة (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "⚡", "question": "ما معنى الفعل 'cause'؟", "options": [{ "text": "يسبب", "isCorrect": true }, { "text": "يحل", "isCorrect": false }, { "text": "يتجنب", "isCorrect": false }], "correctMsg": "رائع! cause = يسبب (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "💬", "question": "ما معنى كلمة 'conversation'؟", "options": [{ "text": "محادثة", "isCorrect": true }, { "text": "صمت", "isCorrect": false }, { "text": "مشروع", "isCorrect": false }], "correctMsg": "بطل! conversation = محادثة (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "📱", "question": "ما المقصود بـ 'social media'؟", "options": [{ "text": "وسائل التواصل الاجتماعي", "isCorrect": true }, { "text": "الصحف الورقية", "isCorrect": false }, { "text": "الكتب المدرسية", "isCorrect": false }], "correctMsg": "ممتاز! social media = وسائل التواصل الاجتماعي (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "📏", "question": "ما معنى كلمة 'distance'؟", "options": [{ "text": "بعد / مسافة", "isCorrect": true }, { "text": "سرعة", "isCorrect": false }, { "text": "وقت", "isCorrect": false }], "correctMsg": "أحسنت! distance = بعد أو مسافة (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "❤️", "question": "ما معنى الصفة 'caring'؟", "options": [{ "text": "مهتم / عطوف", "isCorrect": true }, { "text": "قاسٍ", "isCorrect": false }, { "text": "أناني", "isCorrect": false }], "correctMsg": "رائع! caring = مهتم وعطوف (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🤝", "question": "ما معنى الصفة 'supported'؟", "options": [{ "text": "مؤيد / معزز", "isCorrect": true }, { "text": "مرفوض", "isCorrect": false }, { "text": "منعزل", "isCorrect": false }], "correctMsg": "بطل! supported = مؤيد ومعزز (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "📵", "question": "ما معنى كلمة 'miscommunication'؟", "options": [{ "text": "سوء التواصل", "isCorrect": true }, { "text": "التواصل الفعال", "isCorrect": false }, { "text": "الاحترام المتبادل", "isCorrect": false }], "correctMsg": "ممتاز! miscommunication = سوء التواصل (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "📑", "question": "ما معنى كلمة 'issue'؟", "options": [{ "text": "موضوع / قضية / مشكلة", "isCorrect": true }, { "text": "حل نهائي", "isCorrect": false }, { "text": "رحلة قصيرة", "isCorrect": false }], "correctMsg": "أحسنت! issue = قضية أو موضوع (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "👥", "question": "ما المقصود بـ 'group project'؟", "options": [{ "text": "مشروع جماعي", "isCorrect": true }, { "text": "امتحان فردي", "isCorrect": false }, { "text": "واجب منزلي فردي", "isCorrect": false }], "correctMsg": "رائع! group project = مشروع جماعي (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "✨", "question": "ما معنى كلمة 'meaningful'؟", "options": [{ "text": "مفهوم / ذو مغزى ومعنى", "isCorrect": true }, { "text": "بلا فائدة", "isCorrect": false }, { "text": "غامض", "isCorrect": false }], "correctMsg": "بطل! meaningful = ذو معنى وقيمة (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🧐", "question": "ما معنى كلمة 'serious'؟", "options": [{ "text": "جاد / خطير", "isCorrect": true }, { "text": "مضحك", "isCorrect": false }, { "text": "بسيط", "isCorrect": false }], "correctMsg": "ممتاز! serious = جاد أو خطير (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🚗", "question": "ما معنى كلمة 'ride' (اسم في الدرس الثاني)؟", "options": [{ "text": "جولة / توصيلة بالسيارة", "isCorrect": true }, { "text": "مباراة", "isCorrect": false }, { "text": "محادثة", "isCorrect": false }], "correctMsg": "أحسنت! ride = جولة / توصيلة (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "💡", "question": "ما معنى كلمة 'solution'؟", "options": [{ "text": "حل", "isCorrect": true }, { "text": "مشكلة", "isCorrect": false }, { "text": "سبب", "isCorrect": false }], "correctMsg": "رائع! solution = حل (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "📖", "question": "ما الماضي والتصريف الثالث للفعل 'misunderstand'؟", "options": [{ "text": "misunderstood / misunderstood", "isCorrect": true }, { "text": "misunderstanded / misunderstanded", "isCorrect": false }, { "text": "misunderstood / misunderstanding", "isCorrect": false }], "correctMsg": "ممتاز! misunderstand -> misunderstood (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🤍", "question": "ما التصريف الثاني والثالث للفعل 'forgive' (يسامح)؟", "options": [{ "text": "forgave / forgiven", "isCorrect": true }, { "text": "forgive / forgiven", "isCorrect": false }, { "text": "forgived / forgived", "isCorrect": false }], "correctMsg": "أحسنت! forgive -> forgave / forgiven (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🧠", "question": "ما التصريف الماضي والتصريف الثالث للفعل 'forget' (ينسى)؟", "options": [{ "text": "forgot / forgotten", "isCorrect": true }, { "text": "forgot / forgot", "isCorrect": false }, { "text": "forgetted / forgetted", "isCorrect": false }], "correctMsg": "رائع! forget -> forgot / forgotten (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🗣️", "question": "ما التصريف الماضي للفعل 'speak' (يتحدث)؟", "options": [{ "text": "spoke / spoken", "isCorrect": true }, { "text": "spaked / spoken", "isCorrect": false }, { "text": "speaked / speaked", "isCorrect": false }], "correctMsg": "بطل! speak -> spoke / spoken (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🧭", "question": "ما الماضي والتصريف الثالث للفعل 'lead' (يؤدي)؟", "options": [{ "text": "led / led", "isCorrect": true }, { "text": "leaded / leaded", "isCorrect": false }, { "text": "load / loaden", "isCorrect": false }], "correctMsg": "ممتاز! lead -> led / led (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🎁", "question": "ما التصريف الماضي والتصريف الثالث للفعل 'bring' (يحضر)؟", "options": [{ "text": "brought / brought", "isCorrect": true }, { "text": "bringed / bringed", "isCorrect": false }, { "text": "bought / bought", "isCorrect": false }], "correctMsg": "أحسنت! bring -> brought / brought (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "❓", "question": "Which word means: 'failure to understand correctly'?", "options": [{ "text": "misunderstanding", "isCorrect": true }, { "text": "conflict", "isCorrect": false }, { "text": "bond", "isCorrect": false }], "correctMsg": "رائع! misunderstanding = failure to understand correctly (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🤝", "question": "Which word means: 'a strong connection between people'?", "options": [{ "text": "bond", "isCorrect": true }, { "text": "distance", "isCorrect": false }, { "text": "text message", "isCorrect": false }], "correctMsg": "بطل! bond = a strong connection between people (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "💖", "question": "Which word means: 'showing care and regard for others'?", "options": [{ "text": "respectful", "isCorrect": true }, { "text": "disrespectful", "isCorrect": false }, { "text": "honest", "isCorrect": false }], "correctMsg": "ممتاز! respectful = showing care and regard (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🌟", "question": "Which word means: 'giving help or encouragement'?", "options": [{ "text": "supportive", "isCorrect": true }, { "text": "calm", "isCorrect": false }, { "text": "upset", "isCorrect": false }], "correctMsg": "أحسنت! supportive = giving help or encouragement (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "💡", "question": "Which word means: 'to share thoughts, feelings, or ideas'?", "options": [{ "text": "communicate", "isCorrect": true }, { "text": "ignore", "isCorrect": false }, { "text": "avoid", "isCorrect": false }], "correctMsg": "رائع! communicate = to share thoughts, feelings, or ideas (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🧩", "question": "Which word means: 'to find a solution to a problem or conflict'?", "options": [{ "text": "resolve", "isCorrect": true }, { "text": "cause", "isCorrect": false }, { "text": "lead", "isCorrect": false }], "correctMsg": "بطل! resolve = to find a solution to a problem (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "⏰", "question": "ما المتلازمة اللفظية التي تعني 'يخصص وقت'؟", "options": [{ "text": "make time", "isCorrect": true }, { "text": "lose time", "isCorrect": false }, { "text": "break time", "isCorrect": false }], "correctMsg": "ممتاز! make time = يخصص وقتاً (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "📉", "question": "ما التعبير الذي يعني 'يتدهور أو يسوء'؟", "options": [{ "text": "get worse", "isCorrect": true }, { "text": "get better", "isCorrect": false }, { "text": "make time", "isCorrect": false }], "correctMsg": "أحسنت! get worse = يسوء (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🗣️", "question": "ما التعبير الذي يعني 'يجري محادثة'؟", "options": [{ "text": "have a conversation", "isCorrect": true }, { "text": "make a conversation", "isCorrect": false }, { "text": "do a conversation", "isCorrect": false }], "correctMsg": "رائع! have a conversation (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "⚠️", "question": "ما التعبير الذي يعني 'يسبب سوء فهم'؟", "options": [{ "text": "make misunderstanding", "isCorrect": true }, { "text": "do misunderstanding", "isCorrect": false }, { "text": "have misunderstanding", "isCorrect": false }], "correctMsg": "بطل! make misunderstanding (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "⚖️", "question": "ما مرادف (Synonym) كلمة 'care' ومضادها (Antonym)؟", "options": [{ "text": "Synonym: concern / regard | Antonym: ignore", "isCorrect": true }, { "text": "Synonym: ignore | Antonym: concern", "isCorrect": false }, { "text": "Synonym: hate | Antonym: love", "isCorrect": false }], "correctMsg": "ممتاز! care: concern x ignore (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "📞", "question": "ما مضاد (Antonym) التعبير 'stay in touch'؟", "options": [{ "text": "lose touch with", "isCorrect": true }, { "text": "keep in touch", "isCorrect": false }, { "text": "have in touch", "isCorrect": false }], "correctMsg": "أحسنت! stay in touch x lose touch with (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "⚔️", "question": "ما مرادف (Synonym) كلمة 'conflict' (صراع) ومضادها؟", "options": [{ "text": "Synonym: disagreement / argument | Antonym: agreement / harmony", "isCorrect": true }, { "text": "Synonym: harmony | Antonym: argument", "isCorrect": false }, { "text": "Synonym: peace | Antonym: quiet", "isCorrect": false }], "correctMsg": "رائع! conflict = disagreement x agreement (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🤝", "question": "ما مرادف ومضاد كلمة 'respectful'؟", "options": [{ "text": "Synonym: polite | Antonym: disrespectful", "isCorrect": true }, { "text": "Synonym: disrespectful | Antonym: polite", "isCorrect": false }, { "text": "Synonym: kind | Antonym: friendly", "isCorrect": false }], "correctMsg": "بطل! respectful = polite x disrespectful (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🏆", "question": "ما مضاد كلمة 'failure' (فشل)؟", "options": [{ "text": "success", "isCorrect": true }, { "text": "defeat", "isCorrect": false }, { "text": "decline", "isCorrect": false }], "correctMsg": "ممتاز! failure x success (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "💪", "question": "ما مرادف ومضاد الفعل 'strengthen' (يقوي/يعزز)؟", "options": [{ "text": "Synonym: support / promote | Antonym: weaken", "isCorrect": true }, { "text": "Synonym: weaken | Antonym: support", "isCorrect": false }, { "text": "Synonym: ignore | Antonym: resolve", "isCorrect": false }], "correctMsg": "أحسنت! strengthen = promote x weaken (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "😇", "question": "ما مرادف كلمة 'honest' (أمين) ومضادها؟", "options": [{ "text": "Synonym: trusted / sincere | Antonym: liar / deceitful", "isCorrect": true }, { "text": "Synonym: liar | Antonym: sincere", "isCorrect": false }, { "text": "Synonym: calm | Antonym: upset", "isCorrect": false }], "correctMsg": "رائع! honest = sincere x liar (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "👏", "question": "ما مرادف ومضاد كلمة 'encouragement' (تشجيع)؟", "options": [{ "text": "Synonym: support / inspiration | Antonym: discouragement", "isCorrect": true }, { "text": "Synonym: discouragement | Antonym: support", "isCorrect": false }, { "text": "Synonym: defeat | Antonym: success", "isCorrect": false }], "correctMsg": "بطل! encouragement: support x discouragement (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🦄", "question": "ما مرادف ومضاد كلمة 'imaginary' (خيالي)؟", "options": [{ "text": "Synonym: ideal | Antonym: real / ordinary", "isCorrect": true }, { "text": "Synonym: real | Antonym: ideal", "isCorrect": false }, { "text": "Synonym: honest | Antonym: liar", "isCorrect": false }], "correctMsg": "ممتاز! imaginary: ideal x real (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🔤", "question": "ما وظيفة اللاحقة (Suffix) '-ion' في كلمات مثل 'communication' و 'connection'؟", "options": [{ "text": "تكوّن الاسم من الفعل", "isCorrect": true }, { "text": "تكوّن الفعل من الاسم", "isCorrect": false }, { "text": "تعطي عكس المعنى", "isCorrect": false }], "correctMsg": "بطل! -ion تكوّن الاسم من الفعل (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🔤", "question": "ما وظيفة البادئة (Prefix) 'mis-' في 'misunderstand' و 'miscommunication'؟", "options": [{ "text": "تعطي عكس الفعل / الاسم", "isCorrect": true }, { "text": "تكوّن الصفة من الاسم", "isCorrect": false }, { "text": "تكوّن الاسم من الفعل", "isCorrect": false }], "correctMsg": "ممتاز! mis- تعطي عكس الفعل/الاسم (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🔤", "question": "ما وظيفة اللاحقة (Suffix) '-ful' في 'respectful' و 'meaningful'؟", "options": [{ "text": "تكوّن الصفة من الفعل / الاسم", "isCorrect": true }, { "text": "تكوّن الفعل من الاسم", "isCorrect": false }, { "text": "تفيد النفي المطلق", "isCorrect": false }], "correctMsg": "أحسنت! -ful تكوّن الصفة (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🔤", "question": "ما المقطع الذي يضاف للاسم 'strength' ليكون الفعل 'strengthen' (يقوي)؟", "options": [{ "text": "-en", "isCorrect": true }, { "text": "-ful", "isCorrect": false }, { "text": "-ion", "isCorrect": false }], "correctMsg": "رائع! strength + en = strengthen (+10)", "wrongMsg": "حاول مجدداً!" }
+  ]
+}
+    </script>
+</body>
+</html>

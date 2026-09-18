@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Assessment Quiz | Grade 2 - Mr. Ahmed Assem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb">
+            <span>Grade_2</span> / <span>Unit 1</span> / <span>Quick Assessment Quiz (Part 1)</span>
+        </div>
+
+        <!-- Teacher Profile Header -->
+        <div class="teacher-profile-header">
+            <div class="avatar-wrapper">
+                <img src="../../my-photo-profile.png" alt="Mr. Ahmed Assem" class="teacher-avatar" onerror="this.onerror=null; this.src='../../my-photo-profile.png';">
+            </div>
+            <h1 class="teacher-title">Mr. Ahmed Assem</h1>
+            <div class="slogan">✨ Easy Peasy Ya Englezeey ✨</div>
+            <div class="lesson-meta-badge">
+                <span class="badge badge-cyan">Grade_2 • Unit 1</span>
+            </div>
+            <h2 id="title" class="lesson-main-title">Quick Assessment Quiz</h2>
+            <p id="description" class="lesson-desc">اختبار تدريبي سريع ومباشر - مفردات الدرس الأول (Part 1)</p>
+        </div>
+
+        <div class="quiz-card">
+            <div class="score-board">
+                <span>السؤال: <span id="current-q">1</span> / <span id="total-q">6</span></span>
+                <span>النقاط: <span id="score">0</span> 🌟</span>
+            </div>
+
+            <div class="question-box">
+                <span class="emoji-display" id="emoji">🌞</span>
+                <div class="question-text" id="question">جاري تحميل السؤال...</div>
+                <div class="options-grid" id="options"></div>
+                <div class="feedback" id="feedback"></div>
+            </div>
+
+            <div class="quiz-footer-actions">
+                <button class="action-btn next-btn" id="next-btn" onclick="nextQuestion()">السؤال التالي ➔</button>
+            </div>
+        </div>
+
+        <!-- Bottom Return Controls -->
+        <div class="nav-controls">
+            <a href="./index.html" class="action-btn secondary" data-sound-click="click">⬅ العودة لقائمة دروس الوحدة</a>
+        </div>
+    </div>
+
+    <!-- Data Injection -->
+    <script>
+        window.lessonData = {
+            title: "Quick Assessment Quiz",
+            description: "اختبار تدريبي سريع ومباشر - مفردات الدرس الأول (Part 1)",
+            questions: [
+                {
+                    "emoji": "🌞",
+                    "question": "صباح الخير ",
+                    "options": [
+                        {
+                            "text": "Goodbye",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Good morning",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Hello",
+                            "isCorrect": false
+                        }
+                    ],
+                    "correctMsg": "إجابة صحيحة (+10)",
+                    "wrongMsg": "حاول مجدداً"
+                },
+                {
+                    "emoji": "🙋",
+                    "question": "اهلا!",
+                    "options": [
+                        {
+                            "text": "Bye",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Good Morning",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Hello",
+                            "isCorrect": true
+                        }
+                    ],
+                    "correctMsg": "إجابة صحيحة (+10)",
+                    "wrongMsg": "حاول مجدداً"
+                },
+                {
+                    "emoji": "🪑",
+                    "question": "كرسي",
+                    "options": [
+                        {
+                            "text": "Teacher",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Chair",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Chicken",
+                            "isCorrect": false
+                        }
+                    ],
+                    "correctMsg": "ممتاز! أحسنت 🎯 (+10)",
+                    "wrongMsg": "إجابة غير صحيحة، حاول مجدداً!"
+                },
+                {
+                    "emoji": "📝",
+                    "question": "مكتب",
+                    "options": [
+                        {
+                            "text": "Desk",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Table",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Hello",
+                            "isCorrect": false
+                        }
+                    ],
+                    "correctMsg": "ممتاز! أحسنت 🎯 (+10)",
+                    "wrongMsg": "إجابة غير صحيحة، حاول مجدداً!"
+                },
+                {
+                    "emoji": "👨🏻‍🏫",
+                    "question": "مدرس",
+                    "options": [
+                        {
+                            "text": "Student",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Teacher",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Pen",
+                            "isCorrect": false
+                        }
+                    ],
+                    "correctMsg": "ممتاز! أحسنت 🎯 (+10)",
+                    "wrongMsg": "إجابة غير صحيحة، حاول مجدداً!"
+                },
+                {
+                    "emoji": "👩🏻‍🎓",
+                    "question": "طالب",
+                    "options": [
+                        {
+                            "text": "Student",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Teacher",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Book",
+                            "isCorrect": false
+                        }
+                    ],
+                    "correctMsg": "ممتاز! أحسنت 🎯 (+10)",
+                    "wrongMsg": "إجابة غير صحيحة، حاول مجدداً!"
+                }
+            ]
+        };
+
+        // Tab Switching Helper if needed
+        function switchTab(tabName) {
+            document.querySelectorAll('.tab-content').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+            
+            const target = document.getElementById('tab-' + tabName);
+            if (target) target.style.display = 'block';
+            
+            const activeBtn = Array.from(document.querySelectorAll('.tab-btn')).find(b => b.getAttribute('onclick')?.includes(tabName));
+            if (activeBtn) activeBtn.classList.add('active');
+            
+            if (typeof window.playSound === 'function') window.playSound('click');
+        }
+
+        // Card Flip Helper
+        function flipCard(card) {
+            if (typeof window.playSound === 'function') window.playSound('flip');
+            card.classList.toggle('flipped');
+        }
+    </script>
+
+    <!-- Framework & Shared Scripts -->
+    <script src="../../assets/js/bidi.js"></script>
+    <script src="../../assets/js/audio.js"></script>
+    <script src="../../assets/js/tabs.js"></script>
+    <script src="../../assets/js/quiz-engine.js"></script>
+    <script src="../../assets/js/ui.js"></script>
+    <script src="../../assets/js/main.js"></script>
+
+    <!-- Studio Data Payload for 100% Lossless Roundtrip Editing -->
+    <script id="studio-payload" type="application/json">
+{
+  "archetype": "direct_quiz",
+  "stage": "Grade_2",
+  "unit": "unit-1",
+  "fileName": "lesson-1-part-1.html",
+  "title": "Quick Assessment Quiz",
+  "description": "اختبار تدريبي سريع ومباشر - مفردات الدرس الأول (Part 1)",
+  "quiz": [
+    {
+      "emoji": "🌞",
+      "question": "صباح الخير ",
+      "options": [
+        {
+          "text": "Goodbye",
+          "isCorrect": false
+        },
+        {
+          "text": "Good morning",
+          "isCorrect": true
+        },
+        {
+          "text": "Hello",
+          "isCorrect": false
+        }
+      ],
+      "correctMsg": "إجابة صحيحة (+10)",
+      "wrongMsg": "حاول مجدداً"
+    },
+    {
+      "emoji": "🙋",
+      "question": "اهلا!",
+      "options": [
+        {
+          "text": "Bye",
+          "isCorrect": false
+        },
+        {
+          "text": "Good Morning",
+          "isCorrect": false
+        },
+        {
+          "text": "Hello",
+          "isCorrect": true
+        }
+      ],
+      "correctMsg": "إجابة صحيحة (+10)",
+      "wrongMsg": "حاول مجدداً"
+    },
+    {
+      "emoji": "🪑",
+      "question": "كرسي",
+      "options": [
+        {
+          "text": "Teacher",
+          "isCorrect": false
+        },
+        {
+          "text": "Chair",
+          "isCorrect": true
+        },
+        {
+          "text": "Chicken",
+          "isCorrect": false
+        }
+      ],
+      "correctMsg": "ممتاز! أحسنت 🎯 (+10)",
+      "wrongMsg": "إجابة غير صحيحة، حاول مجدداً!"
+    },
+    {
+      "emoji": "📝",
+      "question": "مكتب",
+      "options": [
+        {
+          "text": "Desk",
+          "isCorrect": true
+        },
+        {
+          "text": "Table",
+          "isCorrect": false
+        },
+        {
+          "text": "Hello",
+          "isCorrect": false
+        }
+      ],
+      "correctMsg": "ممتاز! أحسنت 🎯 (+10)",
+      "wrongMsg": "إجابة غير صحيحة، حاول مجدداً!"
+    },
+    {
+      "emoji": "👨🏻‍🏫",
+      "question": "مدرس",
+      "options": [
+        {
+          "text": "Student",
+          "isCorrect": false
+        },
+        {
+          "text": "Teacher",
+          "isCorrect": true
+        },
+        {
+          "text": "Pen",
+          "isCorrect": false
+        }
+      ],
+      "correctMsg": "ممتاز! أحسنت 🎯 (+10)",
+      "wrongMsg": "إجابة غير صحيحة، حاول مجدداً!"
+    },
+    {
+      "emoji": "👩🏻‍🎓",
+      "question": "طالب",
+      "options": [
+        {
+          "text": "Student",
+          "isCorrect": true
+        },
+        {
+          "text": "Teacher",
+          "isCorrect": false
+        },
+        {
+          "text": "Book",
+          "isCorrect": false
+        }
+      ],
+      "correctMsg": "ممتاز! أحسنت 🎯 (+10)",
+      "wrongMsg": "إجابة غير صحيحة، حاول مجدداً!"
+    }
+  ]
+}
+    </script>
+</body>
+</html>

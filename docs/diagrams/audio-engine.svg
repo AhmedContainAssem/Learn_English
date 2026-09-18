@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgEngine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#050811" />
+    </linearGradient>
+
+    <linearGradient id="neonAudio" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#bd00ff" />
+      <stop offset="100%" stop-color="#00f3ff" />
+    </linearGradient>
+
+    <marker id="arrowAudio" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#00f3ff" />
+    </marker>
+  </defs>
+
+  <rect width="1100" height="480" fill="url(#bgEngine)" rx="16" />
+
+  <!-- Section Header -->
+  <text x="550" y="45" fill="#00f3ff" font-family="sans-serif" font-size="14" font-weight="700" text-anchor="middle" letter-spacing="2">DUAL AUDIO ENGINE (TTS &amp; SYNTHESIZER)</text>
+  <text x="550" y="80" fill="#ffffff" font-family="sans-serif" font-size="24" font-weight="800" text-anchor="middle">Speech Synthesis Queue &amp; Procedural Frequency FX</text>
+
+  <!-- Left: Web Speech API TTS -->
+  <g transform="translate(80, 120)">
+    <rect width="420" height="300" rx="14" fill="#111827" stroke="#00f3ff" stroke-width="1.5" />
+    <rect x="0" y="0" width="420" height="42" rx="14" fill="#1e293b" />
+    <text x="210" y="27" fill="#00f3ff" font-family="sans-serif" font-size="15" font-weight="800" text-anchor="middle">🔊 WEB SPEECH API (PRONUNCIATION TTS)</text>
+
+    <!-- Sub boxes -->
+    <rect x="25" y="60" width="370" height="60" rx="8" fill="#1e293b" />
+    <text x="40" y="85" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="700">1. Queue Canceller (Queue Isolation)</text>
+    <text x="40" y="105" fill="#94a3b8" font-family="monospace" font-size="11">window.speechSynthesis.cancel()</text>
+
+    <rect x="25" y="135" width="370" height="60" rx="8" fill="#1e293b" />
+    <text x="40" y="160" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="700">2. Text Sanitizer (Bilingual Filter)</text>
+    <text x="40" y="180" fill="#94a3b8" font-family="sans-serif" font-size="11">Extracts clean English utterances without Arabic mixing</text>
+
+    <rect x="25" y="210" width="370" height="60" rx="8" fill="#1e293b" />
+    <text x="40" y="235" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="700">3. Voice Selector (en-US / en-GB)</text>
+    <text x="40" y="255" fill="#94a3b8" font-family="sans-serif" font-size="11">Selects natural native voices with 0.95 pitch tuning</text>
+  </g>
+
+  <!-- Right: Web Audio API Synthesizer -->
+  <g transform="translate(600, 120)">
+    <rect width="420" height="300" rx="14" fill="#111827" stroke="#bd00ff" stroke-width="1.5" />
+    <rect x="0" y="0" width="420" height="42" rx="14" fill="#1e293b" />
+    <text x="210" y="27" fill="#bd00ff" font-family="sans-serif" font-size="15" font-weight="800" text-anchor="middle">🎵 WEB AUDIO API (PROCEDURAL FX)</text>
+
+    <!-- Sub boxes -->
+    <rect x="25" y="60" width="370" height="60" rx="8" fill="#1e293b" />
+    <text x="40" y="85" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="700">1. AudioContext Oscillator</text>
+    <text x="40" y="105" fill="#94a3b8" font-family="monospace" font-size="11">Sine / Square / Triangle Waves</text>
+
+    <rect x="25" y="135" width="370" height="60" rx="8" fill="#1e293b" />
+    <text x="40" y="160" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="700">2. Correct Answer Chime</text>
+    <text x="40" y="180" fill="#94a3b8" font-family="sans-serif" font-size="11">523.25Hz (C5) ➔ 659.25Hz (E5) ➔ 783.99Hz (G5) Major Chord</text>
+
+    <rect x="25" y="210" width="370" height="60" rx="8" fill="#1e293b" />
+    <text x="40" y="235" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="700">3. Wrong Answer Buzz</text>
+    <text x="40" y="255" fill="#94a3b8" font-family="sans-serif" font-size="11">Low pitch dissonance (150Hz ➔ 110Hz Sawtooth)</text>
+  </g>
+
+  <!-- Central Bridge -->
+  <line x1="500" y1="270" x2="600" y2="270" stroke="#00f3ff" stroke-width="2" stroke-dasharray="4,4" marker-end="url(#arrowAudio)" />
+</svg>

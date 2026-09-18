@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Studio | Learn English</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         SECURITY LOCK SCREEN (Custom In-Page Modal)
+         ========================================== -->
+    <div id="securityLockModal" class="custom-modal-overlay">
+        <div class="modal-card">
+            <div class="lock-icon-lg">🔒</div>
+            <h2 id="lockModalTitle" class="lock-title">Teacher Portal</h2>
+            <p id="lockModalSubtitle" class="lock-subtitle">Enter teacher passcode to access Lesson Studio.</p>
+            
+            <form onsubmit="event.preventDefault(); verifyPasscode();">
+                <div class="form-group mb-sm">
+                    <input type="password" id="passcodeInput" class="form-input passcode-field" placeholder="••••" autocomplete="off" autofocus>
+                </div>
+                
+                <div id="lockErrorMsg" class="lock-error-text"></div>
+
+                <div class="btn-col-group">
+                    <button type="submit" class="action-btn w-full justify-center p-md">
+                        <span id="lockSubmitBtnText">🔓 Enter Studio</span>
+                    </button>
+                    <a href="../index.html" class="action-btn secondary w-full justify-center no-underline">
+                        <span>⬅ Back to Platform</span>
+                    </a>
+                    <button type="button" onclick="resetPinToDefault()" class="btn-reset-link">
+                        🔄 Reset passcode to default
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         CHANGE PIN MODAL
+         ========================================== -->
+    <div id="changePinModal" class="custom-modal-overlay d-none">
+        <div class="modal-card">
+            <div class="lock-icon-md">🔑</div>
+            <h3 class="color-primary fw-800 mb-xs">Change Studio PIN</h3>
+            <p class="color-muted fs-sm mb-md">Your new passcode is stored securely in your browser.</p>
+            
+            <div class="form-group text-left mb-sm">
+                <label class="form-label">Current PIN:</label>
+                <input type="password" id="oldPinInput" class="form-input" placeholder="Current PIN">
+            </div>
+
+            <div class="form-group text-left mb-sm">
+                <label class="form-label">New PIN:</label>
+                <input type="password" id="newPinInput" class="form-input" placeholder="New PIN (3+ digits)">
+            </div>
+
+            <div class="form-group text-left mb-md">
+                <label class="form-label">Confirm New PIN:</label>
+                <input type="password" id="confirmPinInput" class="form-input" placeholder="Re-enter new PIN">
+            </div>
+
+            <div id="changePinAlert" class="p-sm rounded mb-sm fs-sm fw-bold d-none"></div>
+
+            <div class="d-flex gap-sm justify-center">
+                <button type="button" onclick="saveNewPin()" class="action-btn flex-1 justify-center">Save PIN</button>
+                <button type="button" onclick="closeChangePinModal()" class="action-btn secondary flex-1 justify-center">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         MAIN STUDIO APPLICATION
+         ========================================== -->
+    <div id="mainStudioApp" class="container admin-container d-none">
+        
+        <!-- Header -->
+        <div class="teacher-profile-header">
+            <div class="avatar-wrapper">
+                <img src="../my-photo-profile.png" alt="Mr. Ahmed Assem" class="teacher-avatar">
+            </div>
+            <h1 class="teacher-title">Lesson Studio</h1>
+            <div class="slogan">✨ Interactive Curriculum Creator & Publisher ✨</div>
+            <div class="studio-toolbar-cluster">
+                <!-- Group 1: Quality & Control -->
+                <div class="toolbar-group">
+                    <span class="toolbar-group-title">Quality & Edit</span>
+                    <button type="button" id="btnStudioUndo" onclick="StudioStore.undo()" class="toolbar-btn disabled-btn" title="Undo last action (Ctrl+Z)">
+                        ↩️ Undo <span id="undoCountBadge" class="preset-badge d-none fs-xs">0</span>
+                    </button>
+                    <button type="button" id="btnStudioRedo" onclick="StudioStore.redo()" class="toolbar-btn disabled-btn" title="Redo action (Ctrl+Y)">
+                        ↪️ Redo
+                    </button>
+                    <button type="button" onclick="openLinterModal()" class="toolbar-btn success" title="Check pedagogical quality and links">
+                        🩺 Quality: <span id="linterScoreBadge" class="fw-800 ml-xs">100% Optimal 🏆</span>
+                        <span id="linterIssuesCountBadge" class="badge-warning d-none fs-xs ml-xs">0</span>
+                    </button>
+                </div>
+
+                <!-- Group 2: Curriculum & Data Tools -->
+                <div class="toolbar-group">
+                    <span class="toolbar-group-title">Curriculum & Data</span>
+                    <button type="button" onclick="openTreeExplorerModal()" class="toolbar-btn primary">🌳 Curriculum Tree</button>
+                    <button type="button" onclick="openBulkImportModal()" class="toolbar-btn warning" title="Import lists and quizzes in bulk">⚡ Bulk Ingest</button>
+                    <button type="button" onclick="openFileImportModal()" class="toolbar-btn">📥 Open File</button>
+                    <button type="button" onclick="openStagesManagerModal()" class="toolbar-btn">🏫 Stages & Hubs</button>
+                </div>
+
+                <!-- Group 3: System & Security -->
+                <div class="toolbar-group">
+                    <span class="toolbar-group-title">System</span>
+                    <button type="button" onclick="openDiagnosticsModal()" class="toolbar-btn btn-diagnostics">🐞 Diagnostics</button>
+                    <button type="button" onclick="toggleTeacherGuide()" class="toolbar-btn">📖 Guide</button>
+                    <button type="button" onclick="openChangePinModal()" class="toolbar-btn">🔑 PIN</button>
+                    <button type="button" onclick="lockStudio()" class="toolbar-btn danger">🔒 Lock</button>
+                    <a href="../index.html" class="toolbar-btn">⬅ Exit</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- TEACHER QUICK GUIDE -->
+        <div id="teacherGuideSection" class="admin-section section-guide d-none">
+            <div class="admin-title title-guide">
+                <span>📖 How to Create & Publish Any Lesson</span>
+            </div>
+            <div class="guide-steps-grid">
+                <div class="guide-step-box">
+                    <div class="guide-step-title">1️⃣ Select Page Archetype</div>
+                    <div class="guide-step-desc">Choose Curriculum Tabs, Flashcards & Dialogue, Direct Quiz, or Stage / Unit Index.</div>
+                </div>
+                <div class="guide-step-box">
+                    <div class="guide-step-title">2️⃣ Fill Content & Data</div>
+                    <div class="guide-step-desc">Enter verbs, vocabulary, questions, and test pronunciation via audio buttons 🔊.</div>
+                </div>
+                <div class="guide-step-box">
+                    <div class="guide-step-title">3️⃣ Direct Publish or Download</div>
+                    <div class="guide-step-desc">Click "Publish to GitHub Repo" for automatic publishing or download a standalone HTML file.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 1. METADATA & LOCATION -->
+        <div class="admin-section">
+            <div class="admin-title">
+                <span>📍 Page Details, Stage & Target Location</span>
+            </div>
+            
+            <div class="form-grid">
+                <!-- Stage Selection with Full Custom Freedom -->
+                <div class="form-group">
+                    <div class="d-flex justify-between items-center mb-xs">
+                        <label class="form-label mb-0">
+                            <span>Academic Stage / Grade:</span>
+                            <span id="stageBadgeInfo" class="fs-sm color-secondary">Stage Folder</span>
+                        </label>
+                        <button type="button" onclick="openStagesManagerModal()" class="action-btn secondary btn-xs-primary">🏫 Manage Stages</button>
+                    </div>
+                    <select id="stageSelect" class="form-select" onchange="handleStageSelectChange()">
+                        <optgroup label="Preparatory Stage">
+                            <option value="Prep_3">Prep 3 (الصف الثالث الإعدادي)</option>
+                            <option value="Prep_2">Prep 2 (الصف الثاني الإعدادي)</option>
+                            <option value="Prep_1">Prep 1 (الصف الأول الإعدادي)</option>
+                        </optgroup>
+                        <optgroup label="Secondary Stage">
+                            <option value="Sec_1">Secondary 1 (Sec 1)</option>
+                            <option value="Sec_2">Secondary 2 (Sec 2)</option>
+                            <option value="Sec_3">Secondary 3 (Sec 3)</option>
+                        </optgroup>
+                        <optgroup label="Primary Stage">
+                            <option value="Grade_6">Primary 6 (Grade 6)</option>
+                            <option value="Grade_5">Primary 5 (Grade 5)</option>
+                            <option value="Grade_4">Primary 4 (Grade 4)</option>
+                            <option value="Grade_3">Primary 3 (Grade 3)</option>
+                            <option value="Grade_2">Primary 2 (Grade 2)</option>
+                            <option value="Grade_1">Primary 1 (Grade 1)</option>
+                        </optgroup>
+                        <optgroup label="General & Foundation">
+                            <option value="Course">English Course Hub</option>
+                            <option value="Grammar">Grammar Hub</option>
+                            <option value="Phonics">Phonics & Foundation</option>
+                            <option value="Kindergarten">Kindergarten</option>
+                            <option value="General_English">General English</option>
+                        </optgroup>
+                        <optgroup label="Custom">
+                            <option value="__custom__">➕ Add New Custom Stage / Section...</option>
+                        </optgroup>
+                    </select>
+
+                    <div id="customStageContainer" class="d-none mt-xs">
+                        <input type="text" id="customStageInput" class="form-input" placeholder="Type custom stage folder (e.g., Sec_3 or Phonics_Level_1)" oninput="handleCustomStageInput(this.value)">
+                    </div>
+                </div>
+
+                <!-- Unit Subfolder with quick chips -->
+                <div class="form-group">
+                    <label class="form-label">
+                        <span>Unit Subfolder (Unit Folder):</span>
+                        <span class="fs-xs color-muted">Optional</span>
+                    </label>
+                    <input type="text" id="unitInput" class="form-input" value="unit-1" placeholder="e.g. unit-1 or leave blank for root index pages" oninput="state.unit = this.value.trim(); updateTargetFilePath(); saveDraft();">
+                    <div class="path-chips-container">
+                        <span class="path-chip" onclick="setUnitQuick('unit-1')">unit-1</span>
+                        <span class="path-chip" onclick="setUnitQuick('unit-2')">unit-2</span>
+                        <span class="path-chip" onclick="setUnitQuick('unit-3')">unit-3</span>
+                        <span class="path-chip" onclick="setUnitQuick('unit-4')">unit-4</span>
+                        <span class="path-chip" onclick="setUnitQuick('session-1')">session-1</span>
+                        <span class="path-chip chip-secondary" onclick="setUnitQuick('')">No subfolder (Root)</span>
+                    </div>
+                </div>
+
+                <!-- Filename with quick chips -->
+                <div class="form-group">
+                    <label class="form-label">
+                        <span>File Name (Filename):</span>
+                        <span class="fs-xs color-primary">Target HTML file</span>
+                    </label>
+                    <input type="text" id="lessonFilenameInput" class="form-input" value="lesson-1-part-2.html" placeholder="e.g. index.html or lesson-1.html" oninput="state.filename = this.value.trim(); updateTargetFilePath(); saveDraft();">
+                    <div class="path-chips-container">
+                        <span class="path-chip chip-green" onclick="setFilenameQuick('index.html')">index.html</span>
+                        <span class="path-chip" onclick="setFilenameQuick('lesson-1.html')">lesson-1.html</span>
+                        <span class="path-chip" onclick="setFilenameQuick('lesson-1-part-1.html')">lesson-1-part-1.html</span>
+                        <span class="path-chip" onclick="setFilenameQuick('lesson-1-part-2.html')">lesson-1-part-2.html</span>
+                        <span class="path-chip" onclick="setFilenameQuick('lesson-2.html')">lesson-2.html</span>
+                        <span class="path-chip" onclick="setFilenameQuick('quiz.html')">quiz.html</span>
+                        <span class="path-chip" onclick="setFilenameQuick('revision.html')">revision.html</span>
+                    </div>
+                </div>
+
+                <!-- Page Title -->
+                <div class="form-group">
+                    <label class="form-label">Page Title (Displayed to Students):</label>
+                    <input type="text" id="lessonTitleInput" class="form-input" value="Lesson 1 (Part 2)" placeholder="e.g. Lesson 1 (Part 2) or Prep 3 Curriculum" oninput="state.title = this.value; triggerLiveUpdate(); saveDraft();">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Page Description & Pedagogical Objective:</label>
+                <input type="text" id="lessonDescInput" class="form-input" value="Study verbs, definitions, synonyms, and test understanding interactively." placeholder="Brief description or instructions for students" oninput="state.description = this.value; triggerLiveUpdate(); saveDraft();">
+            </div>
+        </div>
+
+        <!-- 2. ARCHETYPE SELECTION -->
+        <div class="admin-section">
+            <div class="admin-title">
+                <span>🎨 Page Archetype & Structural Template</span>
+            </div>
+
+            <div class="archetype-selector-grid">
+                <!-- Archetype 1 -->
+                <div id="arch-card-curriculum_tabs" class="archetype-card active" onclick="loadArchetypePreset('curriculum_tabs')">
+                    <div class="arch-header">
+                        <div class="arch-title">
+                            <span>📚</span>
+                            <span>Curriculum Tabs</span>
+                        </div>
+                        <span class="arch-badge">Tabs</span>
+                    </div>
+                    <div class="arch-desc">
+                        5 organized tabs: Verbs, Definitions, Synonyms/Antonyms, Affixes, and Quiz.
+                    </div>
+                </div>
+
+                <!-- Archetype 2 -->
+                <div id="arch-card-flashcards_dialogue" class="archetype-card" onclick="loadArchetypePreset('flashcards_dialogue')">
+                    <div class="arch-header">
+                        <div class="arch-title">
+                            <span>🎴</span>
+                            <span>Flashcards & Dialogue</span>
+                        </div>
+                        <span class="arch-badge">Cards & Audio</span>
+                    </div>
+                    <div class="arch-desc">
+                        3D flip cards for vocabulary, interactive dialogue speaker, homework task, and quiz.
+                    </div>
+                </div>
+
+                <!-- Archetype 3 -->
+                <div id="arch-card-quiz_only" class="archetype-card" onclick="loadArchetypePreset('quiz_only')">
+                    <div class="arch-header">
+                        <div class="arch-title">
+                            <span>🎯</span>
+                            <span>Direct Quiz</span>
+                        </div>
+                        <span class="arch-badge">MCQ Practice</span>
+                    </div>
+                    <div class="arch-desc">
+                        Focused quiz page with MCQ questions, audio pronunciation, and instant scoring.
+                    </div>
+                </div>
+
+                <!-- Archetype 4: Stage Index (Main Grade / Root Folder Index) -->
+                <div id="arch-card-stage_index" class="archetype-card" onclick="loadArchetypePreset('stage_index')">
+                    <div class="arch-header">
+                        <div class="arch-title">
+                            <span>🏫</span>
+                            <span>Stage Index Hub</span>
+                        </div>
+                        <span class="arch-badge badge-green-pill">Stage Hub</span>
+                    </div>
+                    <div class="arch-desc">
+                        Main grade index (e.g. <code>Prep_3/index.html</code>) displaying all units (Unit 1, Unit 2...).
+                    </div>
+                </div>
+
+                <!-- Archetype 5: Unit Index (Subfolder Lessons Hub) -->
+                <div id="arch-card-unit_index" class="archetype-card" onclick="loadArchetypePreset('unit_index')">
+                    <div class="arch-header">
+                        <div class="arch-title">
+                            <span>📁</span>
+                            <span>Unit Lessons Hub</span>
+                        </div>
+                        <span class="arch-badge badge-primary-pill">Unit Hub</span>
+                    </div>
+                    <div class="arch-desc">
+                        Specific unit hub (e.g. <code>Prep_3/unit-1/index.html</code>) listing unit lessons and tests.
+                    </div>
+                </div>
+
+                <!-- Archetype 6: Storybook & Reading -->
+                <div id="arch-card-storybook_reading" class="archetype-card" onclick="loadArchetypePreset('storybook_reading')">
+                    <div class="arch-header">
+                        <div class="arch-title">
+                            <span>📖</span>
+                            <span>Storybook & Reading</span>
+                        </div>
+                        <span class="arch-badge badge-secondary-pill">Storyteller</span>
+                    </div>
+                    <div class="arch-desc">
+                        Interactive 3D book reader with auto page-turn narration, scene artwork, video explainer, and quiz.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. CONTENT BUILDERS & SECTIONS -->
+        <div class="admin-section">
+            <div class="admin-title">
+                <span>📝 Page Content & Interactive Sections</span>
+                <span id="activeArchetypeBadge" class="preset-badge ml-auto">Curriculum Tabs</span>
+            </div>
+
+            <!-- Tab Navigation for Editors -->
+            <div id="editorTabsBar" class="section-tabs-bar"></div>
+
+            <!-- Pane 8: Index Hub Cards Builder (When in index_hub / stage_index / unit_index mode) -->
+            <div id="pane-index_hub" class="editor-pane d-none">
+                <div class="index-scope-container">
+                    <div class="d-flex justify-between items-center mb-md fw-800 color-primary fs-md">
+                        <span>📑 Index Scope & Target Type:</span>
+                        <span id="indexTypeBadge" class="preset-badge badge-green-pill">🏫 Stage Index Hub</span>
+                    </div>
+
+                    <!-- 2 Main Distinct Index Type Cards -->
+                    <div class="index-types-grid">
+                        <!-- Type 1: Stage Index -->
+                        <div id="index-mode-stage-card" class="index-type-option active-stage" onclick="switchIndexType('stage')">
+                            <div class="d-flex justify-between items-center mb-xs">
+                                <span class="fw-800 color-main">🏫 1. Stage / Grade Hub</span>
+                                <span class="badge-tag-green">Stage Index</span>
+                            </div>
+                            <div class="color-muted fs-sm lh-relaxed">
+                                Generates <code>[Stage]/index.html</code> listing all units and returns to <code>../index.html</code>.
+                            </div>
+                        </div>
+
+                        <!-- Type 2: Unit Lessons Index -->
+                        <div id="index-mode-unit-card" class="index-type-option inactive" onclick="switchIndexType('unit')">
+                            <div class="d-flex justify-between items-center mb-xs">
+                                <span class="fw-800 color-main">📁 2. Unit Lessons Hub</span>
+                                <span class="badge-tag-primary">Unit Index</span>
+                            </div>
+                            <div class="color-muted fs-sm lh-relaxed">
+                                Generates <code>[Stage]/[Unit]/index.html</code> listing all unit lessons and returns to <code>../index.html</code>.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label">Cards Grid Layout:</label>
+                            <select id="indexLayoutSelect" class="form-select" onchange="state.indexLayoutType = this.value; triggerLiveUpdate(); saveDraft();">
+                                <option value="units">🗂️ Square Units Grid</option>
+                                <option value="lessons">📝 Vertical Lessons List</option>
+                                <option value="courses">🚀 Course Sessions List</option>
+                                <option value="custom">✨ Custom Grid</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Return Button Link (Back Link):</label>
+                            <input type="text" id="indexBackLinkInput" class="form-input" value="../index.html" placeholder="e.g. ../index.html" oninput="state.indexBackLink = this.value; triggerLiveUpdate(); saveDraft();">
+                        </div>
+                        <div class="form-group col-span-all">
+                            <label class="form-label">Return Button Text:</label>
+                            <input type="text" id="indexBackTextInput" class="form-input" value="⬅️ Back to Main Menu" placeholder="e.g. ⬅️ Back to Main Menu" oninput="state.indexBackText = this.value; triggerLiveUpdate(); saveDraft();">
+                        </div>
+                    </div>
+
+                    <!-- Quick Auto-Fill Helpers -->
+                    <div class="mt-md pt-sm border-t-dashed">
+                        <div class="fs-sm color-muted mb-xs fw-bold">🪄 Quick Presets Generator:</div>
+                        <div class="d-flex gap-xs flex-wrap">
+                            <button type="button" onclick="generateSixUnitsPreset()" class="action-btn secondary btn-sm-padding">🏫 Generate 6 Stage Units</button>
+                            <button type="button" onclick="generateLessonsPreset()" class="action-btn secondary btn-sm-padding">📁 Generate Unit Lessons List</button>
+                            <button type="button" onclick="generateCoursesPreset()" class="action-btn secondary btn-sm-padding">🚀 Course Levels & Sessions</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-between items-center mb-md">
+                    <div>
+                        <h4 class="m-0 color-primary fs-md">📑 Index Cards & Navigation Links:</h4>
+                        <span class="fs-xs color-muted">Each card includes a Smart Destination Assistant for quick routing.</span>
+                    </div>
+                    <button type="button" onclick="addIndexCardItem()" class="action-btn secondary btn-header-add">➕ Add Index Card</button>
+                </div>
+                <div id="indexCardsList"></div>
+                <button type="button" onclick="addIndexCardItem()" class="add-item-bottom-btn">➕ Add New Index Card</button>
+
+                <!-- Integration Helper Box -->
+                <div class="integration-card-box">
+                    <div class="fw-800 color-green fs-sm mb-xs d-flex items-center gap-xs">
+                        <span>🔗 Home Page Integration Code:</span>
+                    </div>
+                    <div class="fs-sm color-muted mb-sm lh-relaxed">
+                        When creating a new stage (e.g. <code id="curStageNameHint" class="color-primary">Prep_3</code>), you can copy this ready-to-use card snippet to include it into <code>Learn_English/index.html</code>:
+                    </div>
+                    <div id="homeCardSnippet" class="code-output max-h-snippet mb-xs"></div>
+                    <button type="button" onclick="copyHomeCardSnippet()" class="action-btn secondary btn-snippet-copy">📋 Copy Stage Card Snippet</button>
+                </div>
+            </div>
+
+            <!-- Pane 1: Verbs -->
+            <div id="pane-verbs" class="editor-pane d-block">
+                <div class="d-flex justify-between items-center mb-md">
+                    <h4 class="m-0 color-primary fs-md">📌 Verbs & Conjugations:</h4>
+                    <button type="button" onclick="addVerbItem()" class="action-btn secondary btn-header-add">➕ Add Verb</button>
+                </div>
+                <div id="verbsList"></div>
+                <button type="button" onclick="addVerbItem()" class="add-item-bottom-btn">➕ Add Another Verb</button>
+            </div>
+
+            <!-- Pane 2: Definitions -->
+            <div id="pane-definitions" class="editor-pane d-none">
+                <div class="d-flex justify-between items-center mb-md">
+                    <h4 class="m-0 color-primary fs-md">📚 Definitions & Collocations:</h4>
+                    <button type="button" onclick="addDefItem()" class="action-btn secondary btn-header-add">➕ Add Definition</button>
+                </div>
+                <div id="defsList"></div>
+                <button type="button" onclick="addDefItem()" class="add-item-bottom-btn">➕ Add Another Definition</button>
+            </div>
+
+            <!-- Pane 3: Synonyms -->
+            <div id="pane-synonyms" class="editor-pane d-none">
+                <div class="d-flex justify-between items-center mb-md">
+                    <h4 class="m-0 color-primary fs-md">⚖️ Synonyms & Antonyms:</h4>
+                    <button type="button" onclick="addSynonymRow()" class="action-btn secondary btn-header-add">➕ Add Row</button>
+                </div>
+                <div id="synonymsList"></div>
+                <button type="button" onclick="addSynonymRow()" class="add-item-bottom-btn">➕ Add Another Synonym Row</button>
+            </div>
+
+            <!-- Pane 4: Affixes -->
+            <div id="pane-affixes" class="editor-pane d-none">
+                <div class="d-flex justify-between items-center mb-md">
+                    <h4 class="m-0 color-primary fs-md">🔤 Prefixes & Suffixes:</h4>
+                    <button type="button" onclick="addAffixItem()" class="action-btn secondary btn-header-add">➕ Add Affix</button>
+                </div>
+                <div id="affixesList"></div>
+                <button type="button" onclick="addAffixItem()" class="add-item-bottom-btn">➕ Add Another Affix</button>
+            </div>
+
+            <!-- Pane 5: Flashcards -->
+            <div id="pane-flashcards" class="editor-pane d-none">
+                <div class="d-flex justify-between items-center mb-md">
+                    <h4 class="m-0 color-primary fs-md">🎴 Vocabulary Flashcards:</h4>
+                    <button type="button" onclick="addFlashcardItem()" class="action-btn secondary btn-header-add">➕ Add Card</button>
+                </div>
+                <div id="flashcardsList"></div>
+                <button type="button" onclick="addFlashcardItem()" class="add-item-bottom-btn">➕ Add Another Flashcard</button>
+            </div>
+
+            <!-- Pane 6: Dialogue & Homework -->
+            <div id="pane-dialogue" class="editor-pane d-none">
+                <div class="form-group mb-md">
+                    <label class="form-label">Dialogue Title:</label>
+                    <input type="text" id="dialogueTitle" class="form-input" value="Introductions & Workplace Conversation" oninput="state.dialogueTitle = this.value; triggerLiveUpdate(); saveDraft();">
+                </div>
+                <div class="d-flex justify-between items-center mb-md">
+                    <h4 class="m-0 color-primary fs-md">🗣️ Dialogue Lines:</h4>
+                    <button type="button" onclick="addDialogueLine()" class="action-btn secondary btn-header-add">➕ Add Dialogue Line</button>
+                </div>
+                <div id="dialogueLinesList"></div>
+                <button type="button" onclick="addDialogueLine()" class="add-item-bottom-btn">➕ Add Another Dialogue Line</button>
+
+                <div class="mt-lg border-t-solid pt-md">
+                    <h4 class="color-primary mb-sm fs-md">📝 Homework Task:</h4>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label">Task Title:</label>
+                            <input type="text" id="homeworkTitle" class="form-input" value="Homework Task" oninput="state.homeworkTitle = this.value; saveDraft();">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Task Description:</label>
+                            <input type="text" id="homeworkDesc" class="form-input" value="Write 5 complete sentences and practice pronunciation." oninput="state.homeworkDesc = this.value; saveDraft();">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pane 6.5: Story Pages (For Storybook Archetype) -->
+            <div id="pane-story_pages" class="editor-pane d-none">
+                <div class="d-flex justify-between items-center mb-md flex-wrap gap-xs">
+                    <div>
+                        <h4 class="m-0 color-primary fs-md">📖 Story Pages & Visual Scenes:</h4>
+                        <div class="fs-xs color-muted mt-2px">Each page features scene artwork, English story paragraph, Arabic translation, and vocabulary notes.</div>
+                    </div>
+                    <button type="button" onclick="addStoryPageItem()" class="action-btn secondary btn-header-add">➕ Add Story Page</button>
+                </div>
+                <div id="storyPagesList"></div>
+                <button type="button" onclick="addStoryPageItem()" class="add-item-bottom-btn">➕ Add Another Story Page</button>
+            </div>
+
+            <!-- Pane 6.6: Video Lesson -->
+            <div id="pane-video_lesson" class="editor-pane d-none">
+                <h4 class="m-0 mb-md color-primary fs-md">🎥 Video Lesson & Explainer Integration:</h4>
+                <div class="video-lesson-box">
+                    <div class="form-group mb-sm">
+                        <label class="form-label">YouTube Video URL or Embed Link:</label>
+                        <input type="url" id="videoUrlInput" class="form-input" placeholder="e.g. https://www.youtube.com/watch?v=kJQP7kiw5Fk or https://youtu.be/..." oninput="state.videoUrl = this.value; triggerLiveUpdate(); saveDraft();">
+                        <div class="fs-xs color-muted mt-2px">Paste any standard YouTube video URL, short link, or embed link. Leave empty if this lesson does not have a video.</div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Video Title / Topic Description:</label>
+                        <input type="text" id="videoTitleInput" class="form-input" placeholder="e.g. شرح ومناقشة أحداث القصة وتفاصيل المفردات" oninput="state.videoTitle = this.value; triggerLiveUpdate(); saveDraft();">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pane 7: Quiz Questions -->
+            <div id="pane-quiz" class="editor-pane d-none">
+                <div class="d-flex justify-between items-center mb-md">
+                    <h4 class="m-0 color-primary fs-md">🎯 Quiz Questions:</h4>
+                    <button type="button" onclick="addQuizQuestion()" class="action-btn secondary btn-header-add">➕ Add Question</button>
+                </div>
+                <div id="quizQuestionsList"></div>
+                <button type="button" onclick="addQuizQuestion()" class="add-item-bottom-btn">➕ Add Another Quiz Question</button>
+            </div>
+
+            <div class="btn-group border-t-solid pt-md mt-md justify-between">
+                <button type="button" onclick="resetAllData()" class="action-btn secondary btn-danger-text">🗑️ Reset Content</button>
+                <div class="d-flex gap-sm">
+                    <button type="button" onclick="downloadCompleteHTMLFile()" class="action-btn secondary">📥 Download HTML</button>
+                    <button type="button" onclick="saveDraft(); showAdminToast('✅ Draft saved successfully');" class="action-btn">💾 Save Draft</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. LIVE SIMULATOR WITH DEVICE VIEWPORT CONTROLS -->
+        <div class="admin-section">
+            <div class="admin-title d-flex justify-between items-center flex-wrap gap-sm">
+                <span>👁️ Live Student Preview</span>
+                
+                <!-- Viewport Switcher Toolbar -->
+                <div class="d-flex items-center gap-xs flex-wrap">
+                    <div class="viewport-toolbar">
+                        <button type="button" class="action-btn secondary viewport-btn active" data-mode="desktop" onclick="setViewportMode('desktop')">🖥️ Full Desktop</button>
+                        <button type="button" class="action-btn secondary viewport-btn" data-mode="tablet" onclick="setViewportMode('tablet')">💻 Tablet (768px)</button>
+                        <button type="button" class="action-btn secondary viewport-btn" data-mode="mobile" onclick="setViewportMode('mobile')">📱 Mobile (375px)</button>
+                    </div>
+                    <span id="viewportDimBadge" class="preset-badge badge-viewport-indicator">🖥️ 100% Fluid</span>
+                </div>
+            </div>
+
+            <div id="liveSimulatorWrapper" class="simulator-viewport-container">
+                <div id="liveSimulatorBox" class="simulator-box"></div>
+            </div>
+        </div>
+
+        <!-- 5. GITHUB DIRECT PUBLISHER -->
+        <div class="admin-section section-github">
+            <div class="admin-title title-github">
+                <span>🚀 GitHub Direct Publisher</span>
+            </div>
+
+            <p class="color-muted fs-sm mb-md lh-relaxed">
+                Publish generated lesson files directly to your GitHub repository via GitHub API. Your access token is stored safely in your local browser only.
+            </p>
+
+            <div class="form-grid">
+                <div class="form-group">
+                    <label class="form-label">GitHub Owner:</label>
+                    <input type="text" id="ghOwner" class="form-input" value="ahmedassem" placeholder="ahmedassem" onchange="saveGitHubConfig()">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Repo Name:</label>
+                    <input type="text" id="ghRepo" class="form-input" value="Learn_English" placeholder="Learn_English" onchange="saveGitHubConfig()">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Branch:</label>
+                    <input type="text" id="ghBranch" class="form-input" value="main" placeholder="main" onchange="saveGitHubConfig()">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">GitHub Personal Access Token (PAT):</label>
+                    <input type="password" id="ghToken" class="form-input" placeholder="ghp_xxxxxxxxxxxx" onchange="saveGitHubConfig()">
+                </div>
+            </div>
+
+            <div class="form-group mt-xs">
+                <label class="form-label">Target File Repository Path:</label>
+                <input type="text" id="ghTargetFilePath" class="form-input input-target-path" value="Learn_English/Prep_3/unit-1/lesson-1-part-2.html">
+            </div>
+
+            <div class="btn-group mt-md">
+                <button type="button" onclick="testGitHubConnection()" class="action-btn secondary">
+                    <span>🔌 Test Connection</span>
+                </button>
+                <button type="button" id="btnGhPublish" onclick="publishDirectlyToGitHub()" class="action-btn btn-publish-green">
+                    <span>🚀 Publish to GitHub Repo</span>
+                </button>
+                <button type="button" onclick="downloadCompleteHTMLFile()" class="action-btn secondary">
+                    <span>📥 Download HTML File</span>
+                </button>
+            </div>
+
+            <div id="ghConsoleLogs" class="github-console d-none"></div>
+
+            <!-- Navigation Integration Snippet -->
+            <div id="navSnippetContainer" class="nav-snippet-box d-none">
+                <div class="fw-800 color-green mb-xs">
+                    ✅ Lesson published successfully! To link it in the unit hub, add this card snippet inside your unit <code>index.html</code>:
+                </div>
+                <div id="navSnippetCode" class="code-output max-h-snippet mb-xs"></div>
+                <button type="button" onclick="copyNavSnippet()" class="action-btn secondary btn-snippet-copy">📋 Copy Card Snippet</button>
+            </div>
+        </div>
+
+        <!-- 6. CODE PREVIEWS & BACKUPS -->
+        <div class="admin-section">
+            <div class="admin-title">
+                <span>💻 Generated Source & Backup</span>
+            </div>
+
+            <div class="d-flex gap-sm mb-sm flex-wrap">
+                <button type="button" onclick="copyFullHTMLCode()" class="action-btn secondary btn-code-action">📋 Copy Full HTML</button>
+                <button type="button" onclick="copyJSONState()" class="action-btn secondary btn-code-action">💾 Copy JSON State</button>
+                <button type="button" onclick="downloadCompleteHTMLFile()" class="action-btn secondary btn-code-action">📥 Download .html File</button>
+            </div>
+
+            <div id="generatedCodePreview" class="code-output"></div>
+        </div>
+
+    </div>
+
+    <!-- Modals (File Import, Tree Explorer, Stages Manager, Bulk Importer, Linter) -->
+    <!-- FILE IMPORT MODAL -->
+    <div id="fileImportModal" class="custom-modal-overlay d-none">
+        <div class="modal-card modal-card-md">
+            <div class="lock-icon-sm">📥</div>
+            <h3 class="color-primary mb-xs fw-800">Open & Import Lesson File</h3>
+            <p class="modal-lead-desc">Select an existing lesson HTML file to extract and edit its content.</p>
+            
+            <div class="file-dropzone-box">
+                <input type="file" id="lessonFileInput" accept=".html,.htm" class="d-none" onchange="handleFileSelected(this)">
+                <button type="button" onclick="document.getElementById('lessonFileInput').click()" class="action-btn secondary p-md fs-md">📂 Select HTML File from Device</button>
+                <div id="selectedFileName" class="mt-sm fs-sm color-primary"></div>
+            </div>
+
+            <div class="d-flex gap-sm justify-center">
+                <button type="button" onclick="processImportedFile()" class="action-btn flex-1 justify-center">Import & Edit</button>
+                <button type="button" onclick="closeFileImportModal()" class="action-btn secondary flex-1 justify-center">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- BULK QUICK INGEST MODAL -->
+    <div id="bulkImportModal" class="custom-modal-overlay d-none">
+        <div class="modal-card modal-card-lg">
+            <div class="modal-header-row">
+                <h3 class="color-orange modal-header-title">⚡ Bulk Ingest Tool</h3>
+                <button type="button" onclick="closeBulkImportModal()" class="action-btn secondary btn-xs-padding">✖ Close</button>
+            </div>
+            
+            <p class="modal-lead-desc">
+                Copy and paste rows of vocabulary or questions from Excel, Word, or Text to generate interactive cards instantly:
+            </p>
+
+            <div class="form-group mb-sm">
+                <label class="form-label">Target Section:</label>
+                <select id="bulkTargetSection" class="form-select">
+                    <option value="verbs">📌 Verbs & Conjugations Table</option>
+                    <option value="definitions">📚 Definitions & Collocations</option>
+                    <option value="synonyms">⚖️ Synonyms & Antonyms</option>
+                    <option value="flashcards">🎴 Vocabulary Flashcards</option>
+                    <option value="quiz">🎯 Quiz Multiple-Choice Questions</option>
+                </select>
+            </div>
+
+            <div class="form-group mb-md">
+                <div class="d-flex justify-between items-center">
+                    <label class="form-label">Raw Text or Table Rows:</label>
+                    <span id="bulkFormatHint" class="fs-xs color-primary">Row format: Verb / Past / Past Participle / Arabic Meaning</span>
+                </div>
+                <textarea id="bulkTextInput" class="form-textarea" rows="7" placeholder="Paste rows here... each line represents one item"></textarea>
+            </div>
+
+            <div class="d-flex gap-sm justify-end">
+                <button type="button" onclick="executeBulkImport()" class="action-btn btn-bulk-parse">⚡ Parse & Import Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- PEDAGOGICAL QUALITY LINTER MODAL -->
+    <div id="linterModal" class="custom-modal-overlay d-none">
+        <div class="modal-card modal-card-lg">
+            <div class="modal-header-row">
+                <h3 class="color-green modal-header-title">🩺 Pedagogical Quality & Link Validator</h3>
+                <button type="button" onclick="closeLinterModal()" class="action-btn secondary btn-xs-padding">✖ Close</button>
+            </div>
+
+            <div class="linter-score-box">
+                <div id="linterModalScoreBox">
+                    <div class="fs-sm color-muted">Overall Pedagogical Quality:</div>
+                    <div id="linterModalScore" class="fs-xl fw-900 color-green">100% Optimal 🏆</div>
+                </div>
+                <div class="d-flex gap-xs items-center">
+                    <button type="button" onclick="StudioLinter.autoFix()" class="action-btn btn-autofix">⚡ Auto-Fix All</button>
+                    <button type="button" onclick="StudioLinter.audit()" class="action-btn secondary btn-recheck">🔄 Re-check</button>
+                </div>
+            </div>
+
+            <div id="linterIssuesList" class="linter-issues-container">
+                <!-- Dynamically populated issues -->
+            </div>
+        </div>
+    </div>
+
+    <!-- TREE EXPLORER MODAL -->
+    <div id="treeExplorerModal" class="custom-modal-overlay d-none">
+        <div class="modal-card modal-card-xl">
+            <div class="modal-header-row">
+                <h3 class="color-green modal-header-title">🌳 Curriculum Tree Explorer</h3>
+                <button type="button" onclick="closeTreeExplorerModal()" class="action-btn secondary btn-xs-padding">✖ Close</button>
+            </div>
+
+            <p class="modal-lead-desc">
+                Browse all folders and lesson files in the platform. Open any file to edit, or target any new path easily:
+            </p>
+
+            <div class="d-flex gap-sm mb-sm">
+                <input type="text" id="treeFilterInput" class="form-input" placeholder="🔍 Filter stage, unit, or lesson..." oninput="filterCurriculumTree(this.value)">
+                <button type="button" onclick="refreshCurriculumTree()" class="action-btn secondary ws-nowrap btn-tree-refresh">🔄 Refresh</button>
+            </div>
+
+            <div id="treeExplorerContainer" class="tree-view-container">
+                <!-- Dynamically rendered repo tree -->
+            </div>
+
+            <div class="mt-sm d-flex justify-between items-center">
+                <span id="treeStatsInfo" class="fs-xs color-muted">Scanning repository...</span>
+                <button type="button" onclick="closeTreeExplorerModal()" class="action-btn secondary btn-done">Done</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- STAGES & SECTIONS MANAGER MODAL -->
+    <div id="stagesManagerModal" class="custom-modal-overlay d-none">
+        <div class="modal-card modal-card-lg">
+            <div class="modal-header-row">
+                <h3 class="color-secondary modal-header-title">🏫 Stages & Custom Hubs Manager</h3>
+                <button type="button" onclick="closeStagesManagerModal()" class="action-btn secondary btn-xs-padding">✖ Close</button>
+            </div>
+
+            <p class="modal-lead-desc">
+                Add custom grade stages, exam hubs, or foundation courses to make them available throughout Lesson Studio:
+            </p>
+
+            <div class="box-dark-subtle p-sm rounded mb-md">
+                <div class="fw-700 color-primary fs-sm mb-xs">➕ Add New Stage / Section:</div>
+                <div class="form-grid mb-xs">
+                    <div class="form-group">
+                        <label class="form-label fs-xs">Folder Key (ID - English):</label>
+                        <input type="text" id="newStageKeyInput" class="form-input" placeholder="e.g. Sec_3 or Phonics_Advanced">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label fs-xs">Display Name:</label>
+                        <input type="text" id="newStageLabelInput" class="form-input" placeholder="e.g. Secondary 3 (Sec 3)">
+                    </div>
+                </div>
+                <div class="form-group mb-xs">
+                    <label class="form-label fs-xs">Category:</label>
+                    <select id="newStageCategorySelect" class="form-select">
+                        <option value="secondary">Secondary Stage</option>
+                        <option value="prep">Preparatory Stage</option>
+                        <option value="primary">Primary Stage</option>
+                        <option value="general">Courses & General Hubs</option>
+                    </select>
+                </div>
+                <button type="button" onclick="saveCustomStageItem()" class="action-btn w-full justify-center p-xs">➕ Save & Add Stage</button>
+            </div>
+
+            <div class="fw-700 color-main fs-sm mb-xs">📋 Custom Stages Added:</div>
+            <div id="customStagesListContainer" class="custom-stages-list mb-md">
+                <!-- Populated dynamically -->
+            </div>
+
+            <div class="d-flex justify-end">
+                <button type="button" onclick="closeStagesManagerModal()" class="action-btn secondary btn-done">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- DIAGNOSTICS & SYSTEM HEALTH MODAL -->
+    <div id="diagnosticsModal" class="custom-modal-overlay d-none">
+        <div class="modal-card modal-card-xl">
+            <div class="modal-header-row">
+                <h3 class="modal-header-title d-flex items-center gap-xs color-orange-soft">
+                    <span>🐞 System Diagnostics & Debugger</span>
+                </h3>
+                <button type="button" onclick="closeDiagnosticsModal()" class="action-btn secondary btn-xs-padding">✖ Close</button>
+            </div>
+
+            <p class="modal-lead-desc">
+                Inspect runtime health, validate state schema integrity, and export debugging bundles for fast troubleshooting:
+            </p>
+
+            <div class="box-dark-subtle p-sm rounded mb-sm">
+                <div class="d-flex justify-between items-center mb-xs">
+                    <span class="fw-700 color-primary fs-sm">🩺 Real-Time Health Checks:</span>
+                    <button type="button" onclick="refreshDiagnosticsPanel()" class="action-btn secondary btn-xs-padding">🔄 Re-Run</button>
+                </div>
+                <div id="diagnosticsChecksList" class="d-flex flex-col gap-xs">
+                    <!-- Populated dynamically -->
+                </div>
+            </div>
+
+            <div class="box-dark-subtle p-sm rounded mb-sm">
+                <div class="d-flex justify-between items-center mb-xs">
+                    <span class="fw-700 color-secondary fs-sm">📦 Active Lesson State JSON:</span>
+                    <button type="button" onclick="copyStateJSON()" class="action-btn secondary btn-xs-padding">📋 Copy JSON</button>
+                </div>
+                <textarea id="diagStateViewer" readonly class="diag-state-textarea"></textarea>
+            </div>
+
+            <div class="d-flex justify-between items-center gap-sm flex-wrap">
+                <button type="button" onclick="downloadDebugReport()" class="action-btn btn-debug-export">
+                    📥 Export Debug Bundle (.json)
+                </button>
+                <button type="button" onclick="closeDiagnosticsModal()" class="action-btn secondary btn-done">Done</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts Bundle -->
+    <script src="../assets/js/bidi.js"></script>
+    <script src="../assets/js/audio.js"></script>
+    <script src="js/debug-logger.js"></script>
+    <script src="js/state.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/stages-manager.js"></script>
+    <script src="js/items-builder.js"></script>
+    <script src="js/index-hub-builder.js"></script>
+    <script src="js/generators.js"></script>
+    <script src="js/preview.js"></script>
+    <script src="js/importer.js"></script>
+    <script src="js/github.js"></script>
+    <script src="js/bulk-importer.js"></script>
+    <script src="js/linter.js"></script>
+    <script src="js/tree-explorer.js"></script>
+    <script src="js/editor-ui.js"></script>
+</body>
+</html>

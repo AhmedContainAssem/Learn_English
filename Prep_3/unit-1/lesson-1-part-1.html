@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prep 3 - Unit 1 - Lesson 1 Part 1 | Mr. Ahmed Assem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb">
+            <span>Prep_3</span> / <span>Unit 1</span> / <span>Lesson 1 (Part 1)</span>
+        </div>
+
+        <!-- Teacher Profile Header -->
+        <div class="teacher-profile-header">
+            <div class="avatar-wrapper">
+                <img src="../../my-photo-profile.png" alt="Mr. Ahmed Assem" class="teacher-avatar" onerror="this.onerror=null; this.src='../../my-photo-profile.png';">
+            </div>
+            <h1 class="teacher-title">Mr. Ahmed Assem</h1>
+            <div class="slogan">✨ Easy Peasy Ya Englezeey ✨</div>
+            <div class="badges-row">
+                <span class="badge badge-active">Prep_3 • Unit 1</span>
+            </div>
+            <h2 id="title" class="lesson-header-title">Lesson 1: Key & Extra Vocabulary</h2>
+            <p id="description" class="lesson-desc-display">اختبر معلوماتك في جميع كلمات الدرس الأول (37 كلمة)!</p>
+        </div>
+
+        <div class="score-board">
+            <span>السؤال: <span id="current-q">1</span> / <span id="total-q">37</span></span>
+            <span>النقاط: <span id="score">0</span> 🌟</span>
+        </div>
+
+        <div class="question-card">
+            <span class="emoji-display" id="emoji">🔍</span>
+            <div class="question-text" id="question">جاري تحميل السؤال...</div>
+            <div class="options-grid" id="options"></div>
+            <div class="feedback" id="feedback"></div>
+        </div>
+
+        <div class="center-row">
+            <button class="action-btn next-btn" id="next-btn" onclick="nextQuestion()" style="display: none;">السؤال التالي ➔</button>
+        </div>
+
+        <!-- Bottom Return Controls -->
+        <div class="nav-controls">
+            <a href="./index.html" class="action-btn secondary" data-sound-click="click">⬅ العودة لقائمة دروس الوحدة</a>
+        </div>
+    </div>
+
+    <!-- Self-Contained Data Injection -->
+    <script>
+        window.lessonData = {
+            title: "Lesson 1: Key & Extra Vocabulary",
+            description: "اختبر معلوماتك في جميع كلمات الدرس الأول (37 كلمة)!",
+            questions: [
+                { emoji: "👀", question: "ما معنى كلمة 'يبدو / مظهر'؟", options: [{ text: "look", isCorrect: true }, { text: "belief", isCorrect: false }, { text: "power", isCorrect: false }], correctMsg: "ممتاز! Look تعني يبدو / مظهر (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🪪", question: "ما معنى كلمة 'هوية'؟", options: [{ text: "identity", isCorrect: true }, { text: "individuality", isCorrect: false }, { text: "background", isCorrect: false }], correctMsg: "أحسنت! Identity تعني هوية (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "💭", question: "ما معنى كلمة 'معتقد / مبدأ'؟", options: [{ text: "value", isCorrect: false }, { text: "belief", isCorrect: true }, { text: "realness", isCorrect: false }], correctMsg: "بطل! Belief تعني معتقد (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "💎", question: "ما معنى كلمة 'فريد / مميز'؟", options: [{ text: "unique", isCorrect: true }, { text: "strange", isCorrect: false }, { text: "popular", isCorrect: false }], correctMsg: "رائع! Unique تعني فريد (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🧭", question: "ما معنى 'اكتشاف الذات'؟", options: [{ text: "self-discovery", isCorrect: true }, { text: "self-respect", isCorrect: false }, { text: "confidence", isCorrect: false }], correctMsg: "ممتاز! Self-discovery تعني اكتشاف الذات (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🏋️‍♂️", question: "ما معنى 'القوة / القدرة على التحمل'؟", options: [{ text: "weakness", isCorrect: false }, { text: "strength", isCorrect: true }, { text: "power", isCorrect: false }], correctMsg: "أحسنت! Strength تعني القوة (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🎭", question: "ما معنى كلمة 'شخصية'؟", options: [{ text: "personality", isCorrect: true }, { text: "background", isCorrect: false }, { text: "identity", isCorrect: false }], correctMsg: "بطل! Personality تعني شخصية (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "⭐", question: "ما معنى كلمة 'تميز / تفرد'؟", options: [{ text: "individuality", isCorrect: true }, { text: "kindness", isCorrect: false }, { text: "realness", isCorrect: false }], correctMsg: "رائع! Individuality تعني تفرد (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🌱", question: "ما معنى كلمة 'نمو / نضج'؟", options: [{ text: "growth", isCorrect: true }, { text: "shape", isCorrect: false }, { text: "challenge", isCorrect: false }], correctMsg: "ممتاز! Growth تعني نمو (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🏡", question: "ما معنى 'خلفية اجتماعية / النشأة'؟", options: [{ text: "background", isCorrect: true }, { text: "identity", isCorrect: false }, { text: "traditions", isCorrect: false }], correctMsg: "أحسنت! Background تعني خلفية اجتماعية (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🏅", question: "ما معنى 'يقدر / قيمة'؟", options: [{ text: "value", isCorrect: true }, { text: "score", isCorrect: false }, { text: "goals", isCorrect: false }], correctMsg: "بطل! Value تعني قيمة (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "✅", question: "ما كلمة المرادف لـ 'حقيقي / واقعي' (real)؟", options: [{ text: "true", isCorrect: true }, { text: "strange", isCorrect: false }, { text: "popular", isCorrect: false }], correctMsg: "رائع! Real = True تعني حقيقي (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🦁", question: "ما معنى كلمة 'الثقة'؟", options: [{ text: "confidence", isCorrect: true }, { text: "weakness", isCorrect: false }, { text: "kindness", isCorrect: false }], correctMsg: "ممتاز! Confidence تعني الثقة (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "👑", question: "ما معنى 'احترام الذات'؟", options: [{ text: "self-respect", isCorrect: true }, { text: "self-discovery", isCorrect: false }, { text: "realness", isCorrect: false }], correctMsg: "أحسنت! Self-respect تعني احترام الذات (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "📉", question: "ما معنى 'نقطة ضعف'؟", options: [{ text: "weakness", isCorrect: true }, { text: "strength", isCorrect: false }, { text: "power", isCorrect: false }], correctMsg: "بطل! Weakness تعني نقطة ضعف (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "👨‍⚕️", question: "ما معنى 'جراح للقلب'؟", options: [{ text: "heart surgeon", isCorrect: true }, { text: "heart diseases", isCorrect: false }, { text: "medicine", isCorrect: false }], correctMsg: "رائع! Heart surgeon تعني جراح قلب (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🫀", question: "ما معنى 'أمراض القلب'؟", options: [{ text: "heart diseases", isCorrect: true }, { text: "heart surgeon", isCorrect: false }, { text: "weakness", isCorrect: false }], correctMsg: "ممتاز! Heart diseases تعني أمراض القلب (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🎬", question: "ما معنى 'يسلك / يتصرف'؟", options: [{ text: "act", isCorrect: true }, { text: "dress", isCorrect: false }, { text: "remind", isCorrect: false }], correctMsg: "أحسنت! Act تعني يتصرف (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "💖", question: "ما معنى 'العطف / الطيبة'؟", options: [{ text: "kindness", isCorrect: true }, { text: "confidence", isCorrect: false }, { text: "power", isCorrect: false }], correctMsg: "بطل! Kindness تعني العطف (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "👤", question: "ما معنى كلمة 'شخصية' (في قصة)؟", options: [{ text: "character", isCorrect: true }, { text: "personality", isCorrect: false }, { text: "identity", isCorrect: false }], correctMsg: "رائع! Character تعني شخصية (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🌟", question: "ما معنى كلمة 'محبوب'؟", options: [{ text: "popular", isCorrect: true }, { text: "strange", isCorrect: false }, { text: "unique", isCorrect: false }], correctMsg: "ممتاز! Popular تعني محبوب (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "📐", question: "ما معنى 'يشكل / شكل'؟", options: [{ text: "shape", isCorrect: true }, { text: "growth", isCorrect: false }, { text: "look", isCorrect: false }], correctMsg: "أحسنت! Shape تعني شكل (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "👗", question: "ما معنى كلمة 'يرتدي'؟", options: [{ text: "dress", isCorrect: true }, { text: "act", isCorrect: false }, { text: "shape", isCorrect: false }], correctMsg: "بطل! Dress تعني يرتدي (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "📱", question: "ما معنى 'وسائل التواصل الاجتماعي'؟", options: [{ text: "social media", isCorrect: true }, { text: "realness", isCorrect: false }, { text: "background", isCorrect: false }], correctMsg: "رائع! Social media تعني وسائل التواصل (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "👽", question: "ما معنى 'غريب / غير مألوف'؟", options: [{ text: "strange", isCorrect: true }, { text: "popular", isCorrect: false }, { text: "unique", isCorrect: false }], correctMsg: "ممتاز! Strange تعني غريب (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🏆", question: "ما معنى 'يتغلب على'؟", options: [{ text: "overcome", isCorrect: true }, { text: "score", isCorrect: false }, { text: "affect", isCorrect: false }], correctMsg: "أحسنت! Overcome تعني يتغلب على (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "⚽", question: "ما معنى 'يحرز / يسجل'؟", options: [{ text: "score", isCorrect: true }, { text: "act", isCorrect: false }, { text: "win", isCorrect: false }], correctMsg: "بطل! Score تعني يسجل (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🙏", question: "ما معنى 'يعتقد / يصدق'؟", options: [{ text: "believe", isCorrect: true }, { text: "remind", isCorrect: false }, { text: "affect", isCorrect: false }], correctMsg: "رائع! Believe تعني يعتقد (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "😫", question: "ما معنى 'مجهد / مرهق'؟", options: [{ text: "stressed", isCorrect: true }, { text: "confident", isCorrect: false }, { text: "strange", isCorrect: false }], correctMsg: "ممتاز! Stressed تعني مجهد (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "⚡", question: "ما معنى كلمة 'قوة'؟", options: [{ text: "power", isCorrect: true }, { text: "strength", isCorrect: false }, { text: "value", isCorrect: false }], correctMsg: "أحسنت! Power تعني قوة (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🔔", question: "ما معنى كلمة 'يُذكِّر'؟", options: [{ text: "remind", isCorrect: true }, { text: "believe", isCorrect: false }, { text: "affect", isCorrect: false }], correctMsg: "بطل! Remind تعني يذكر (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "😎", question: "ما معنى 'واثق بنفسه'؟", options: [{ text: "confident", isCorrect: true }, { text: "stressed", isCorrect: false }, { text: "popular", isCorrect: false }], correctMsg: "رائع! Confident تعني واثق بنفسه (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🥊", question: "ما معنى كلمة 'تحدي'؟", options: [{ text: "challenge", isCorrect: true }, { text: "overcome", isCorrect: false }, { text: "score", isCorrect: false }], correctMsg: "ممتاز! Challenge تعني تحدي (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🎯", question: "ما معنى 'أهداف (في الحياة)' (goals)؟", options: [{ text: "purposes", isCorrect: true }, { text: "challenges", isCorrect: false }, { text: "beliefs", isCorrect: false }], correctMsg: "أحسنت! Goals = Purposes (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "🔄", question: "ما معنى 'يؤثر على'؟", options: [{ text: "affect", isCorrect: true }, { text: "remind", isCorrect: false }, { text: "believe", isCorrect: false }], correctMsg: "بطل! Affect تعني يؤثر على (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "💯", question: "ما معنى 'حقيقة / واقعية'؟", options: [{ text: "realness", isCorrect: true }, { text: "kindness", isCorrect: false }, { text: "weakness", isCorrect: false }], correctMsg: "رائع! Realness تعني واقعية (+10)", wrongMsg: "حاول مجدداً!" },
+                { emoji: "⚰️", question: "ما معنى كلمة 'يموت'؟", options: [{ text: "die", isCorrect: true }, { text: "act", isCorrect: false }, { text: "dress", isCorrect: false }], correctMsg: "ممتاز! Die تعني يموت (+10)", wrongMsg: "حاول مجدداً!" }
+            ]
+        };
+    </script>
+
+    <!-- Framework & Shared Scripts -->
+    <script src="../../assets/js/bidi.js"></script>
+    <script src="../../assets/js/audio.js"></script>
+    <script src="../../assets/js/tabs.js"></script>
+    <script src="../../assets/js/quiz-engine.js"></script>
+    <script src="../../assets/js/ui.js"></script>
+    <script src="../../assets/js/main.js"></script>
+
+    <!-- Studio Payload for Lossless Studio Roundtrip -->
+    <script id="studio-payload" type="application/json">
+{
+  "archetype": "direct_quiz",
+  "stage": "Prep_3",
+  "unit": "unit-1",
+  "fileName": "lesson-1-part-1.html",
+  "title": "Lesson 1: Key & Extra Vocabulary",
+  "description": "اختبر معلوماتك في جميع كلمات الدرس الأول (37 كلمة)!",
+  "quiz": [
+    { "emoji": "👀", "question": "ما معنى كلمة 'يبدو / مظهر'؟", "options": [{ "text": "look", "isCorrect": true }, { "text": "belief", "isCorrect": false }, { "text": "power", "isCorrect": false }], "correctMsg": "ممتاز! Look تعني يبدو / مظهر (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🪪", "question": "ما معنى كلمة 'هوية'؟", "options": [{ "text": "identity", "isCorrect": true }, { "text": "individuality", "isCorrect": false }, { "text": "background", "isCorrect": false }], "correctMsg": "أحسنت! Identity تعني هوية (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "💭", "question": "ما معنى كلمة 'معتقد / مبدأ'؟", "options": [{ "text": "value", "isCorrect": false }, { "text": "belief", "isCorrect": true }, { "text": "realness", "isCorrect": false }], "correctMsg": "بطل! Belief تعني معتقد (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "💎", "question": "ما معنى كلمة 'فريد / مميز'؟", "options": [{ "text": "unique", "isCorrect": true }, { "text": "strange", "isCorrect": false }, { "text": "popular", "isCorrect": false }], "correctMsg": "رائع! Unique تعني فريد (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🧭", "question": "ما معنى 'اكتشاف الذات'؟", "options": [{ "text": "self-discovery", "isCorrect": true }, { "text": "self-respect", "isCorrect": false }, { "text": "confidence", "isCorrect": false }], "correctMsg": "ممتاز! Self-discovery تعني اكتشاف الذات (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🏋️‍♂️", "question": "ما معنى 'القوة / القدرة على التحمل'؟", "options": [{ "text": "weakness", "isCorrect": false }, { "text": "strength", "isCorrect": true }, { "text": "power", "isCorrect": false }], "correctMsg": "أحسنت! Strength تعني القوة (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🎭", "question": "ما معنى كلمة 'شخصية'؟", "options": [{ "text": "personality", "isCorrect": true }, { "text": "background", "isCorrect": false }, { "text": "identity", "isCorrect": false }], "correctMsg": "بطل! Personality تعني شخصية (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "⭐", "question": "ما معنى كلمة 'تميز / تفرد'؟", "options": [{ "text": "individuality", "isCorrect": true }, { "text": "kindness", "isCorrect": false }, { "text": "realness", "isCorrect": false }], "correctMsg": "رائع! Individuality تعني تفرد (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🌱", "question": "ما معنى كلمة 'نمو / نضج'؟", "options": [{ "text": "growth", "isCorrect": true }, { "text": "shape", "isCorrect": false }, { "text": "challenge", "isCorrect": false }], "correctMsg": "ممتاز! Growth تعني نمو (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🏡", "question": "ما معنى 'خلفية اجتماعية / النشأة'؟", "options": [{ "text": "background", "isCorrect": true }, { "text": "identity", "isCorrect": false }, { "text": "traditions", "isCorrect": false }], "correctMsg": "أحسنت! Background تعني خلفية اجتماعية (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🏅", "question": "ما معنى 'يقدر / قيمة'؟", "options": [{ "text": "value", "isCorrect": true }, { "text": "score", "isCorrect": false }, { "text": "goals", "isCorrect": false }], "correctMsg": "بطل! Value تعني قيمة (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "✅", "question": "ما كلمة المرادف لـ 'حقيقي / واقعي' (real)؟", "options": [{ "text": "true", "isCorrect": true }, { "text": "strange", "isCorrect": false }, { "text": "popular", "isCorrect": false }], "correctMsg": "رائع! Real = True تعني حقيقي (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🦁", "question": "ما معنى كلمة 'الثقة'؟", "options": [{ "text": "confidence", "isCorrect": true }, { "text": "weakness", "isCorrect": false }, { "text": "kindness", "isCorrect": false }], "correctMsg": "ممتاز! Confidence تعني الثقة (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "👑", "question": "ما معنى 'احترام الذات'؟", "options": [{ "text": "self-respect", "isCorrect": true }, { "text": "self-discovery", "isCorrect": false }, { "text": "realness", "isCorrect": false }], "correctMsg": "أحسنت! Self-respect تعني احترام الذات (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "📉", "question": "ما معنى 'نقطة ضعف'؟", "options": [{ "text": "weakness", "isCorrect": true }, { "text": "strength", "isCorrect": false }, { "text": "power", "isCorrect": false }], "correctMsg": "بطل! Weakness تعني نقطة ضعف (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "👨‍⚕️", "question": "ما معنى 'جراح للقلب'؟", "options": [{ "text": "heart surgeon", "isCorrect": true }, { "text": "heart diseases", "isCorrect": false }, { "text": "medicine", "isCorrect": false }], "correctMsg": "رائع! Heart surgeon تعني جراح قلب (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🫀", "question": "ما معنى 'أمراض القلب'؟", "options": [{ "text": "heart diseases", "isCorrect": true }, { "text": "heart surgeon", "isCorrect": false }, { "text": "weakness", "isCorrect": false }], "correctMsg": "ممتاز! Heart diseases تعني أمراض القلب (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🎬", "question": "ما معنى 'يسلك / يتصرف'؟", "options": [{ "text": "act", "isCorrect": true }, { "text": "dress", "isCorrect": false }, { "text": "remind", "isCorrect": false }], "correctMsg": "أحسنت! Act تعني يتصرف (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "💖", "question": "ما معنى 'العطف / الطيبة'؟", "options": [{ "text": "kindness", "isCorrect": true }, { "text": "confidence", "isCorrect": false }, { "text": "power", "isCorrect": false }], "correctMsg": "بطل! Kindness تعني العطف (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "👤", "question": "ما معنى كلمة 'شخصية' (في قصة)؟", "options": [{ "text": "character", "isCorrect": true }, { "text": "personality", "isCorrect": false }, { "text": "identity", "isCorrect": false }], "correctMsg": "رائع! Character تعني شخصية (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🌟", "question": "ما معنى كلمة 'محبوب'؟", "options": [{ "text": "popular", "isCorrect": true }, { "text": "strange", "isCorrect": false }, { "text": "unique", "isCorrect": false }], "correctMsg": "ممتاز! Popular تعني محبوب (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "📐", "question": "ما معنى 'يشكل / شكل'؟", "options": [{ "text": "shape", "isCorrect": true }, { "text": "growth", "isCorrect": false }, { "text": "look", "isCorrect": false }], "correctMsg": "أحسنت! Shape تعني شكل (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "👗", "question": "ما معنى كلمة 'يرتدي'؟", "options": [{ "text": "dress", "isCorrect": true }, { "text": "act", "isCorrect": false }, { "text": "shape", "isCorrect": false }], "correctMsg": "بطل! Dress تعني يرتدي (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "📱", "question": "ما معنى 'وسائل التواصل الاجتماعي'؟", "options": [{ "text": "social media", "isCorrect": true }, { "text": "realness", "isCorrect": false }, { "text": "background", "isCorrect": false }], "correctMsg": "رائع! Social media تعني وسائل التواصل (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "👽", "question": "ما معنى 'غريب / غير مألوف'؟", "options": [{ "text": "strange", "isCorrect": true }, { "text": "popular", "isCorrect": false }, { "text": "unique", "isCorrect": false }], "correctMsg": "ممتاز! Strange تعني غريب (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🏆", "question": "ما معنى 'يتغلب على'؟", "options": [{ "text": "overcome", "isCorrect": true }, { "text": "score", "isCorrect": false }, { "text": "affect", "isCorrect": false }], "correctMsg": "أحسنت! Overcome تعني يتغلب على (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "⚽", "question": "ما معنى 'يحرز / يسجل'؟", "options": [{ "text": "score", "isCorrect": true }, { "text": "act", "isCorrect": false }, { "text": "win", "isCorrect": false }], "correctMsg": "بطل! Score تعني يسجل (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🙏", "question": "ما معنى 'يعتقد / يصدق'؟", "options": [{ "text": "believe", "isCorrect": true }, { "text": "remind", "isCorrect": false }, { "text": "affect", "isCorrect": false }], "correctMsg": "رائع! Believe تعني يعتقد (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "😫", "question": "ما معنى 'مجهد / مرهق'؟", "options": [{ "text": "stressed", "isCorrect": true }, { "text": "confident", "isCorrect": false }, { "text": "strange", "isCorrect": false }], "correctMsg": "ممتاز! Stressed تعني مجهد (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "⚡", "question": "ما معنى كلمة 'قوة'؟", "options": [{ "text": "power", "isCorrect": true }, { "text": "strength", "isCorrect": false }, { "text": "value", "isCorrect": false }], "correctMsg": "أحسنت! Power تعني قوة (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🔔", "question": "ما معنى كلمة 'يُذكِّر'؟", "options": [{ "text": "remind", "isCorrect": true }, { "text": "believe", "isCorrect": false }, { "text": "affect", "isCorrect": false }], "correctMsg": "بطل! Remind تعني يذكر (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "😎", "question": "ما معنى 'واثق بنفسه'؟", "options": [{ "text": "confident", "isCorrect": true }, { "text": "stressed", "isCorrect": false }, { "text": "popular", "isCorrect": false }], "correctMsg": "رائع! Confident تعني واثق بنفسه (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🥊", "question": "ما معنى كلمة 'تحدي'؟", "options": [{ "text": "challenge", "isCorrect": true }, { "text": "overcome", "isCorrect": false }, { "text": "score", "isCorrect": false }], "correctMsg": "ممتاز! Challenge تعني تحدي (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🎯", "question": "ما معنى 'أهداف (في الحياة)' (goals)؟", "options": [{ "text": "purposes", "isCorrect": true }, { "text": "challenges", "isCorrect": false }, { "text": "beliefs", "isCorrect": false }], "correctMsg": "أحسنت! Goals = Purposes (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "🔄", "question": "ما معنى 'يؤثر على'؟", "options": [{ "text": "affect", "isCorrect": true }, { "text": "remind", "isCorrect": false }, { "text": "believe", "isCorrect": false }], "correctMsg": "بطل! Affect تعني يؤثر على (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "💯", "question": "ما معنى 'حقيقة / واقعية'؟", "options": [{ "text": "realness", "isCorrect": true }, { "text": "kindness", "isCorrect": false }, { "text": "weakness", "isCorrect": false }], "correctMsg": "رائع! Realness تعني واقعية (+10)", "wrongMsg": "حاول مجدداً!" },
+    { "emoji": "⚰️", "question": "ما معنى كلمة 'يموت'؟", "options": [{ "text": "die", "isCorrect": true }, { "text": "act", "isCorrect": false }, { "text": "dress", "isCorrect": false }], "correctMsg": "ممتاز! Die تعني يموت (+10)", "wrongMsg": "حاول مجدداً!" }
+  ]
+}
+    </script>
+</body>
+</html>
