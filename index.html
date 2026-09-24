@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn English - Mr. Ahmed Assem</title>
+    <meta name="description" content="Refactored interactive English learning platform for prep school students with gamified quizzes, audio pronunciation, and structured lesson materials.">
+    <meta property="og:title" content="Learn English - Mr. Ahmed Assem">
+    <meta property="og:description" content="Refactored interactive English learning platform for prep school students with gamified quizzes, audio pronunciation, and structured lesson materials.">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="index-page home-page">
+
+    <!-- Global Top Navigation Bar -->
+    <header class="app-top-nav">
+        <div class="top-nav-inner">
+            <div class="brand-cluster">
+                <span class="brand-logo-symbol">✨</span>
+                <div class="brand-text">
+                    <span class="brand-name">منصة مستر أحمد عاصم</span>
+                    <span class="brand-en">Learn English Platform</span>
+                </div>
+            </div>
+            <div class="top-nav-actions">
+                <a href="admin/index.html" class="teacher-portal-pill" title="استوديو إعداد الدروس">
+                    <span class="gear-icon">⚙️</span>
+                    <span class="pill-text">استوديو المعلم</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="teacher-profile-header">
+            <div class="profile-main-layout">
+                <div class="profile-identity-group">
+                    <div class="avatar-wrapper">
+                        <img src="./my-photo-profile.webp" alt="Mr. Ahmed Assem" class="teacher-avatar">
+                        <span class="avatar-verified-badge" title="Teacher Verified">✓</span>
+                    </div>
+                    <div class="profile-details">
+                        <h1 class="teacher-title">Mr. Ahmed Assem</h1>
+                        <div class="slogan-pill">✨ Easy Peasy Ya Englezeey ✨</div>
+                    </div>
+                </div>
+                <div class="profile-actions">
+                    <button type="button" class="contact-pill practice-hub-trigger" id="practiceHubBtn" aria-label="بنك الكلمات المخصصة للمراجعة">
+                        <span class="btn-icon">⭐</span>
+                        <span class="contact-hint">بنك المراجعة الذكي</span>
+                        <span class="practice-hub-badge" id="practiceBankBadge" style="display:none;">0</span>
+                    </button>
+                    <a href="https://wa.me/201027131369" target="_blank" rel="noopener noreferrer" class="contact-pill whatsapp-pill">
+                        <span class="status-dot"></span>
+                        <span class="contact-num">01027131369</span>
+                        <span class="contact-hint">تواصل واتساب</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Signature Cyane Glowing Center-Node Divider -->
+        <div class="cyane-divider" aria-hidden="true"></div>
+
+        <!-- Dynamic Resume Learning Container -->
+        <div id="dashboardResumeContainer" class="dashboard-resume-wrapper"></div>
+
+        <!-- Search & Discovery Bar -->
+        <div class="dashboard-tools-row">
+            <div class="search-input-wrapper">
+                <span class="search-icon">🔍</span>
+                <input 
+                    type="search" 
+                    id="dashboardSearchInput" 
+                    class="dashboard-search-input" 
+                    placeholder="ابحث عن مرحلة، صف دراسي، أو كورس... (مثال: تانية ثانوي، رابع ابتدائي، تأسيس)"
+                    aria-label="البحث في المراحل والصفوف الدراسية"
+                    autocomplete="off"
+                >
+            </div>
+        </div>
+
+        <!-- Tracked Section Eyebrow -->
+        <div class="cyane-eyebrow">ACADEMIC STAGES & CURRICULUM</div>
+
+        <!-- Stage Filter Navigation -->
+        <nav class="stages-filter-nav" aria-label="تصفية المراحل الدراسية">
+            <button class="stage-filter-btn active" data-filter="all" type="button">
+                <span>جميع المراحل</span>
+                <span class="filter-count">4</span>
+            </button>
+            <button class="stage-filter-btn" data-filter="foundation" type="button">
+                <span>التأسيس</span>
+                <span class="filter-count">1</span>
+            </button>
+            <button class="stage-filter-btn" data-filter="primary" type="button">
+                <span>الابتدائية</span>
+                <span class="filter-count">6</span>
+            </button>
+            <button class="stage-filter-btn" data-filter="preparatory" type="button">
+                <span>الإعدادية</span>
+                <span class="filter-count">3</span>
+            </button>
+            <button class="stage-filter-btn" data-filter="secondary" type="button">
+                <span>الثانوية</span>
+                <span class="filter-count">3</span>
+            </button>
+        </nav>
+
+        <!-- Foundation Courses Spotlight -->
+        <div class="stage-group spotlight-stage" data-stage="foundation">
+            <div class="stage-header">
+                <div class="stage-header-main">
+                    <span class="stage-icon-badge">
+                        <svg class="icon-svg" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+                    </span>
+                    <div>
+                        <h2 class="stage-name">كورسات التأسيس</h2>
+                        <span class="stage-en-sub">Foundation Courses</span>
+                    </div>
+                </div>
+                <span class="stage-counter"><strong class="count-active">متاح الآن</strong></span>
+            </div>
+
+            <a href="Course/index.html" class="featured-course-card" data-sound-click="click">
+                <div class="featured-course-content">
+                    <div class="featured-icon-wrapper">
+                        <svg class="icon-svg" style="width:28px;height:28px;" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+                    </div>
+                    <div class="featured-text-details">
+                        <div class="featured-tags-row">
+                            <span class="tag-pill cyan">كورس تأسيسي متكامل</span>
+                            <span class="tag-pill green">متاح للدراسة</span>
+                            <span class="tag-pill slate">Grammar • Vocab • Phonics</span>
+                        </div>
+                        <h3 class="featured-title">كورسات التأسيس الشاملة في اللغة الإنجليزية</h3>
+                        <p class="featured-description">منهج متكامل مصمم خطوة بخطوة لبناء الأساس اللغوي السليم مع تمارين ونطق تفاعلي.</p>
+                    </div>
+                </div>
+                <div class="featured-cta">
+                    <span class="btn-start-course">
+                        <span>دخول الكورس</span>
+                        <span class="cta-arrow">←</span>
+                    </span>
+                </div>
+            </a>
+        </div>
+
+        <!-- Primary Stage -->
+        <div class="stage-group" data-stage="primary">
+            <div class="stage-header">
+                <div class="stage-header-main">
+                    <span class="stage-icon-badge">
+                        <svg class="icon-svg" viewBox="0 0 24 24"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
+                    </span>
+                    <div>
+                        <h2 class="stage-name">المرحلة الابتدائية</h2>
+                        <span class="stage-en-sub">Primary Stage</span>
+                    </div>
+                </div>
+                <span class="stage-counter"><strong class="count-active">2 متاح</strong> • <span class="count-locked">4 قريباً</span></span>
+            </div>
+            <div class="grid-cards">
+                <a href="Grade_1/index.html" class="grade-card locked" data-sound-click="click">
+                    <div class="grade-main-info">
+                        <span class="grade-icon">
+                            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
+                        </span>
+                        <div class="grade-text-group">
+                            <span class="grade-title">الصف الأول الابتدائي</span>
+                            <span class="grade-en-tag">Primary 1 (Grade 1)</span>
+                        </div>
+                    </div>
+                    <span class="badge badge-locked"><svg class="icon-svg" style="width:13px;height:13px;display:inline-block;vertical-align:-1px;" viewBox="0 0 24 24"><rect width="16" height="11" x="4" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> قريباً</span>
+                </a>
+                <a href="Grade_2/index.html" class="grade-card active-card" data-sound-click="click">
+                    <div class="grade-main-info">
+                        <span class="grade-icon">
+                            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
+                        </span>
+                        <div class="grade-text-group">
+                            <span class="grade-title">الصف الثاني الابتدائي</span>
+                            <span class="grade-en-tag">Primary 2 (Grade 2)</span>
+                        </div>
+                    </div>
+                    <span class="badge badge-active"><span class="status-dot"></span> متاح</span>
+                </a>
+                <a href="Grade_3/index.html" class="grade-card locked" data-sound-click="click">
+                    <div class="grade-main-info">
+                        <span class="grade-icon">
+                            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
+                        </span>
+                        <div class="grade-text-group">
+                            <span class="grade-title">الصف الثالث الابتدائي</span>
+                            <span class="grade-en-tag">Primary 3 (Grade 3)</span>
+                        </div>
+                    </div>
+                    <span class="badge badge-locked"><svg class="icon-svg" style="width:13px;height:13px;display:inline-block;vertical-align:-1px;" viewBox="0 0 24 24"><rect width="16" height="11" x="4" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> قريباً</span>
+                </a>
+                <a href="Grade_4/index.html" class="grade-card active-card" data-sound-click="click">
+                    <div class="grade-main-info">
+                        <span class="grade-icon">
+                            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
+                        </span>
+                        <div class="grade-text-group">
+                            <span class="grade-title">الصف الرابع الابتدائي</span>
+                            <span class="grade-en-tag">Primary 4 (Grade 4)</span>
+                        </div>
+                    </div>
+                    <span class="badge badge-active"><span class="status-dot"></span> متاح</span>
+                </a>
+                <a href="Grade_5/index.html" class="grade-card locked" data-sound-click="click">
+                    <div class="grade-main-info">
+                        <span class="grade-icon">
+                            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
+                        </span>
+                        <div class="grade-text-group">
+                            <span class="grade-title">الصف الخامس الابتدائي</span>
+                            <span class="grade-en-tag">Primary 5 (Grade 5)</span>
+                        </div>
+                    </div>
+                    <span class="badge badge-locked"><svg class="icon-svg" style="width:13px;height:13px;display:inline-block;vertical-align:-1px;" viewBox="0 0 24 24"><rect width="16" height="11" x="4" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> قريباً</span>
+                </a>
+                <a href="Grade_6/index.html" class="grade-card locked" data-sound-click="click">
+                    <div class="grade-main-info">
+                        <span class="grade-icon">
+                            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
+                        </span>
+                        <div class="grade-text-group">
+                            <span class="grade-title">الصف السادس الابتدائي</span>
+                            <span class="grade-en-tag">Primary 6 (Grade 6)</span>
+                        </div>
+                    </div>
+                    <span class="badge badge-locked"><svg class="icon-svg" style="width:13px;height:13px;display:inline-block;vertical-align:-1px;" viewBox="0 0 24 24"><rect width="16" height="11" x="4" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> قريباً</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Preparatory Stage -->
+        <div class="stage-group" data-stage="preparatory">
+            <div class="stage-header">
+                <div class="stage-header-main">
+                    <span class="stage-icon-badge">
+                        <svg class="icon-svg" viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 10h2"/><path d="M9 14h2"/><path d="M13 10h2"/><path d="M13 14h2"/><path d="M10 21v-3h4v3"/></svg>
+                    </span>
+                    <div>
+                        <h2 class="stage-name">المرحلة الإعدادية</h2>
+                        <span class="stage-en-sub">Preparatory Stage</span>
+                    </div>
+                </div>
+                <span class="stage-counter"><strong class="count-active">1 متاح</strong> • <span class="count-locked">2 قريباً</span></span>
+            </div>
+            <div class="grid-cards">
+                <a href="Prep_1/index.html" class="grade-card locked" data-sound-click="click">
+                    <div class="grade-main-info">
+                        <span class="grade-icon">
+                            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 10h2"/><path d="M9 14h2"/><path d="M13 10h2"/><path d="M13 14h2"/><path d="M10 21v-3h4v3"/></svg>
+                        </span>
+                        <div class="grade-text-group">
+                            <span class="grade-title">الصف الأول الإعدادي</span>
+                            <span class="grade-en-tag">Prep 1</span>
+                        </div>
+                    </div>
+                    <span class="badge badge-locked"><svg class="icon-svg" style="width:13px;height:13px;display:inline-block;vertical-align:-1px;" viewBox="0 0 24 24"><rect width="16" height="11" x="4" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> قريباً</span>
+                </a>
+                <a href="Prep_2/index.html" class="grade-card locked" data-sound-click="click">
+                    <div class="grade-main-info">
+                        <span class="grade-icon">
+                            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 10h2"/><path d="M9 14h2"/><path d="M13 10h2"/><path d="M13 14h2"/><path d="M10 21v-3h4v3"/></svg>
+                        </span>
+                        <div class="grade-text-group">
+                            <span class="grade-title">الصف الثاني الإعدادي</span>
+                            <span class="grade-en-tag">Prep 2</span>
+                        </div>
+                    </div>
+                    <span class="badge badge-locked"><svg class="icon-svg" style="width:13px;height:13px;display:inline-block;vertical-align:-1px;" viewBox="0 0 24 24"><rect width="16" height="11" x="4" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> قريباً</span>
+                </a>
+                <a href="Prep_3/index.html" class="grade-card active-card" data-sound-click="click">
+                    <div class="grade-main-info">
+                        <span class="grade-icon">
+                            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 10h2"/><path d="M9 14h2"/><path d="M13 10h2"/><path d="M13 14h2"/><path d="M10 21v-3h4v3"/></svg>
+                        </span>
+                        <div class="grade-text-group">
+                            <span class="grade-title">الصف الثالث الإعدادي</span>
+                            <span class="grade-en-tag">Prep 3 & Connect Plus</span>
+                        </div>
+                    </div>
+                    <span class="badge badge-active"><span class="status-dot"></span> متاح</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Secondary Stage -->
+        <div class="stage-group" data-stage="secondary">
+            <div class="stage-header">
+                <div class="stage-header-main">
+                    <span class="stage-icon-badge">
+                        <svg class="icon-svg" viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+                    </span>
+                    <div>
+                        <h2 class="stage-name">المرحلة الثانوية</h2>
+                        <span class="stage-en-sub">Secondary Stage</span>
+                    </div>
+                </div>
+                <span class="stage-counter"><strong class="count-active">2 متاح</strong> • <span class="count-locked">1 قريباً</span></span>
+            </div>
+            <div class="grid-cards">
+                <a href="Sec_1/index.html" class="grade-card active-card" data-sound-click="click">
+                    <div class="grade-main-info">
+                        <span class="grade-icon">
+                            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+                        </span>
+                        <div class="grade-text-group">
+                            <span class="grade-title">الصف الأول الثانوي</span>
+                            <span class="grade-en-tag">Sec 1</span>
+                        </div>
+                    </div>
+                    <span class="badge badge-active"><span class="status-dot"></span> متاح</span>
+                </a>
+                <a href="Sec_2/index.html" class="grade-card active-card" data-sound-click="click">
+                    <div class="grade-main-info">
+                        <span class="grade-icon">
+                            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+                        </span>
+                        <div class="grade-text-group">
+                            <span class="grade-title">الصف الثاني الثانوي</span>
+                            <span class="grade-en-tag">Sec 2</span>
+                        </div>
+                    </div>
+                    <span class="badge badge-active"><span class="status-dot"></span> متاح</span>
+                </a>
+                <a href="Sec_3/index.html" class="grade-card locked" data-sound-click="click">
+                    <div class="grade-main-info">
+                        <span class="grade-icon">
+                            <svg class="icon-svg" viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+                        </span>
+                        <div class="grade-text-group">
+                            <span class="grade-title">الصف الثالث الثانوي</span>
+                            <span class="grade-en-tag">Sec 3</span>
+                        </div>
+                    </div>
+                    <span class="badge badge-locked"><svg class="icon-svg" style="width:13px;height:13px;display:inline-block;vertical-align:-1px;" viewBox="0 0 24 24"><rect width="16" height="11" x="4" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> قريباً</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Signature Cyane Glowing Center-Node Divider -->
+        <div class="cyane-divider" aria-hidden="true"></div>
+
+        <footer class="footer-note">
+            <p>© 2026 Learn English Platform • Mr. Ahmed Assem</p>
+        </footer>
+
+    </div>
+
+    <!-- Global Practice Hub Modal / Slide-in Sheet -->
+    <div id="practiceHubModal" class="practice-modal-backdrop" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="practiceModalTitle">
+        <div class="practice-modal-container">
+            <div class="practice-modal-header">
+                <div class="practice-modal-title-group">
+                    <span class="practice-modal-icon">⭐</span>
+                    <div>
+                        <h2 id="practiceModalTitle" class="practice-modal-title">بنك المراجعة الذكي</h2>
+                        <span class="practice-modal-subtitle">كلماتك المحفوظة للمراجعة من الدروس والكويزات</span>
+                    </div>
+                </div>
+                <div class="practice-modal-actions">
+                    <button type="button" class="modal-mode-toggle" id="practiceModeToggleBtn">🃏 وضع البطاقات</button>
+                    <button type="button" class="practice-modal-close" id="practiceModalCloseBtn" aria-label="إغلاق النافذة">✕</button>
+                </div>
+            </div>
+
+            <div class="practice-modal-body">
+                <!-- List View Mode -->
+                <div id="practiceListView" class="practice-list-view">
+                    <div id="practiceListContainer" class="practice-items-grid"></div>
+                </div>
+
+                <!-- Flashcard View Mode -->
+                <div id="practiceFlashcardView" class="practice-flashcard-view" style="display: none;">
+                    <div class="practice-flashcard-wrapper">
+                        <div class="flashcard-counter" id="flashcardCounter">بطاقة 1 من 1</div>
+                        <div class="flashcard-box" id="practiceFlashcardBox" role="button" tabindex="0" title="انقر لقلب البطاقة">
+                            <div class="flashcard-inner">
+                                <div class="flashcard-face flashcard-front">
+                                    <span class="flashcard-prompt">انقر لإظهار الترجمة 👆</span>
+                                    <h3 class="flashcard-word" id="flashcardFrontWord">Word</h3>
+                                    <button type="button" class="audio-btn flashcard-audio-btn" id="flashcardAudioBtn" title="استمع للكلمة">🔊</button>
+                                </div>
+                                <div class="flashcard-face flashcard-back">
+                                    <span class="flashcard-prompt">الترجمة العربية</span>
+                                    <div class="flashcard-trans" id="flashcardBackTrans">الترجمة</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flashcard-controls">
+                            <button type="button" class="flashcard-nav-btn" id="flashcardPrevBtn">السابق</button>
+                            <button type="button" class="flashcard-action-mastered" id="flashcardMasteredBtn">✅ أتقنتها (إزالة)</button>
+                            <button type="button" class="flashcard-nav-btn" id="flashcardNextBtn">التالي</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/utils.js"></script>
+    <script src="./assets/js/storage.js"></script>
+    <script src="./assets/js/ui.js"></script>
+</body>
+</html>

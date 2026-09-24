@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgWork" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+    <linearGradient id="boxBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#161b22" />
+      <stop offset="100%" stop-color="#0d1117" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1100" height="360" fill="url(#bgWork)" rx="16" />
+
+  <text x="550" y="38" fill="#00f3ff" font-family="sans-serif" font-size="13" font-weight="800" text-anchor="middle" letter-spacing="3">LESSON CREATION &amp; PUBLISHING</text>
+  <text x="550" y="66" fill="#ffffff" font-family="sans-serif" font-size="20" font-weight="900" text-anchor="middle">📝 LESSON AUTHORING WORKFLOW</text>
+
+  <!-- Left: Studio Visual Creation -->
+  <g transform="translate(50, 95)">
+    <rect width="470" height="230" rx="12" fill="url(#boxBg)" stroke="#00f3ff" stroke-width="1.2" />
+    <rect width="470" height="32" rx="12" fill="#21262d" />
+    <text x="20" y="21" fill="#00f3ff" font-family="sans-serif" font-size="13" font-weight="700">🎨 Visual Studio Creation (Recommended)</text>
+
+    <g transform="translate(25, 55)" font-family="sans-serif" font-size="12">
+      <text x="0" y="20" fill="#ffffff" font-weight="700">1. Open Studio Suite</text>
+      <text x="15" y="38" fill="#94a3b8">Navigate to /admin/index.html in your browser.</text>
+
+      <text x="0" y="68" fill="#ffffff" font-weight="700">2. Pick Archetype &amp; Fill Items</text>
+      <text x="15" y="86" fill="#94a3b8">Add verbs, cards, chapters, or questions.</text>
+
+      <text x="0" y="116" fill="#ffffff" font-weight="700">3. Live Simulation &amp; Push</text>
+      <text x="15" y="134" fill="#94a3b8">Instant 1-click commit to GitHub or file download.</text>
+    </g>
+  </g>
+
+  <!-- Right: Embedded JSON Structure -->
+  <g transform="translate(580, 95)">
+    <rect width="470" height="230" rx="12" fill="url(#boxBg)" stroke="#ff007a" stroke-width="1.2" />
+    <rect width="470" height="32" rx="12" fill="#21262d" />
+    <text x="20" y="21" fill="#ff007a" font-family="sans-serif" font-size="13" font-weight="700">⚙️ Self-Contained JSON Structure</text>
+
+    <g transform="translate(25, 55)" font-family="monospace" font-size="11">
+      <text x="0" y="18" fill="#79c0ff">window<tspan fill="#d2a8ff">.lessonData</tspan> = {</text>
+      <text x="15" y="36" fill="#7ee787">title: <tspan fill="#a5d6ff">"Unit 1: Identity &amp; Strengths"</tspan>,</text>
+      <text x="15" y="54" fill="#7ee787">archetype: <tspan fill="#a5d6ff">"curriculum_tabs"</tspan>,</text>
+      <text x="15" y="72" fill="#7ee787">questions: [</text>
+      <text x="30" y="90" fill="#ffa657">{ question: <tspan fill="#a5d6ff">"..."</tspan>, options: [...] }</text>
+      <text x="15" y="108" fill="#7ee787">]</text>
+      <text x="0" y="126" fill="#79c0ff">};</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgQuick" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+    <linearGradient id="codeBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#161b22" />
+      <stop offset="100%" stop-color="#0d1117" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1100" height="360" fill="url(#bgQuick)" rx="16" />
+
+  <text x="550" y="38" fill="#00f3ff" font-family="sans-serif" font-size="13" font-weight="800" text-anchor="middle" letter-spacing="3">GETTING STARTED</text>
+  <text x="550" y="66" fill="#ffffff" font-family="sans-serif" font-size="20" font-weight="900" text-anchor="middle">🚀 ZERO-SETUP QUICK START</text>
+
+  <!-- Left: Direct Browser Run -->
+  <g transform="translate(50, 95)">
+    <rect width="470" height="230" rx="12" fill="url(#codeBg)" stroke="#00f3ff" stroke-width="1.2" />
+    <rect width="470" height="32" rx="12" fill="#21262d" />
+    <text x="20" y="21" fill="#00f3ff" font-family="sans-serif" font-size="13" font-weight="700">⚡ Method 1: Instant Local / Static Preview</text>
+
+    <g transform="translate(25, 55)" font-family="monospace" font-size="12">
+      <text x="0" y="20" fill="#8b949e"># 1. Open main portal in any modern browser</text>
+      <text x="0" y="45" fill="#79c0ff">file:///.../Learn_English/index.html</text>
+
+      <text x="0" y="85" fill="#8b949e"># 2. Open Teacher Lesson Studio</text>
+      <text x="0" y="110" fill="#7ee787">file:///.../Learn_English/admin/index.html</text>
+
+      <text x="0" y="145" fill="#e6edf3">✅ Works 100% offline with zero dependencies!</text>
+    </g>
+  </g>
+
+  <!-- Right: Local Server Run -->
+  <g transform="translate(580, 95)">
+    <rect width="470" height="230" rx="12" fill="url(#codeBg)" stroke="#00ff66" stroke-width="1.2" />
+    <rect width="470" height="32" rx="12" fill="#21262d" />
+    <text x="20" y="21" fill="#00ff66" font-family="sans-serif" font-size="13" font-weight="700">🌐 Method 2: Node.js / Vite Server</text>
+
+    <g transform="translate(25, 55)" font-family="monospace" font-size="12">
+      <text x="0" y="20" fill="#8b949e"># Clone and start dev environment</text>
+      <text x="0" y="45" fill="#ffa657">git clone <tspan fill="#ffffff">https://github.com/AhmedContainAssem/Learn_English.git</tspan></text>
+      <text x="0" y="70" fill="#ffa657">npm install &amp;&amp; npm run dev</text>
+
+      <text x="0" y="105" fill="#8b949e"># Access in browser</text>
+      <text x="0" y="130" fill="#7ee787">http://localhost:3000</text>
+    </g>
+  </g>
+</svg>
