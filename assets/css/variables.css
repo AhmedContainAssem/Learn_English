@@ -1,0 +1,44 @@
+/* ==========================================
+   Mr. Ahmed Assem - Educational Platform
+   Design Tokens & CSS Variables (variables.css)
+   ========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap');
+
+:root {
+    /* Color Palette - Cyane Deep Obsidian Midnight System */
+    --bg-color: #030712;
+    --surface-ground: #070e1c;
+    --bg-card: #09101f;
+    --card-bg: #09101f;
+    --card-hover: #0f1c38;
+
+    /* Accent & Brand Colors */
+    --accent-primary: #00f3ff;
+    --accent-secondary: #38bdf8;
+    --accent-green: #00ff9d;
+    --accent-orange: #ffb703;
+    --accent-red: #ff477e;
+    --accent-glow: rgba(0, 243, 255, 0.2);
+
+    /* Text System */
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --text-subtle: #64748b;
+
+    /* Borders & Hairline Structure (Cyane Refined Precision) */
+    --border-color: rgba(56, 189, 248, 0.12);
+    --border-subtle: rgba(255, 255, 255, 0.07);
+    --border-hover: rgba(0, 243, 255, 0.45);
+    --border-accent: rgba(0, 243, 255, 0.35);
+
+    /* Fluid Radiant Gradients */
+    --gradient-cta: linear-gradient(135deg, #00f3ff 0%, #0284c7 100%);
+    --gradient-card: linear-gradient(180deg, rgba(13, 22, 42, 0.85) 0%, rgba(7, 14, 28, 0.95) 100%);
+
+    /* Soft Atmospheric Shadows */
+    --glow-cyan: 0 4px 20px rgba(0, 243, 255, 0.18);
+    --glow-secondary: 0 4px 18px rgba(56, 189, 248, 0.18);
+    --glow-card: 0 6px 24px rgba(0, 0, 0, 0.4);
+    --glow-green: 0 4px 18px rgba(0, 255, 157, 0.18);
+}
