@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 320" width="100%" height="100%">
+  <rect width="960" height="320" rx="14" fill="#0b0f19" stroke="#1e293b" stroke-width="2"/>
+  <text x="480" y="38" fill="#00f3ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" text-anchor="middle">7 MODULAR EDUCATIONAL ARCHETYPES</text>
+  
+  <!-- Archetypes Grid -->
+  <g transform="translate(30, 65)">
+    <!-- Card 1 -->
+    <rect x="0" y="0" width="210" height="105" rx="8" fill="#131b2e" stroke="#00f3ff" stroke-width="1"/>
+    <text x="15" y="28" fill="#00f3ff" font-family="sans-serif" font-size="14" font-weight="bold">1. Curriculum Tabs</text>
+    <text x="15" y="52" fill="#94a3b8" font-family="sans-serif" font-size="11">Verbs, collocations, synonyms,</text>
+    <text x="15" y="68" fill="#94a3b8" font-family="sans-serif" font-size="11">antonyms &amp; grammar points</text>
+    <text x="15" y="90" fill="#38bdf8" font-family="sans-serif" font-size="10" font-weight="600">Tabbed Content Architecture</text>
+
+    <!-- Card 2 -->
+    <rect x="230" y="0" width="210" height="105" rx="8" fill="#131b2e" stroke="#38bdf8" stroke-width="1"/>
+    <text x="245" y="28" fill="#38bdf8" font-family="sans-serif" font-size="14" font-weight="bold">2. 3D Storybook</text>
+    <text x="245" y="52" fill="#94a3b8" font-family="sans-serif" font-size="11">Realistic scenes, artwork,</text>
+    <text x="245" y="68" fill="#94a3b8" font-family="sans-serif" font-size="11">bilingual text &amp; narrative TTS</text>
+    <text x="245" y="90" fill="#00ff9d" font-family="sans-serif" font-size="10" font-weight="600">StoryEngine Dual-Page</text>
+
+    <!-- Card 3 -->
+    <rect x="460" y="0" width="210" height="105" rx="8" fill="#131b2e" stroke="#00ff9d" stroke-width="1"/>
+    <text x="475" y="28" fill="#00ff9d" font-family="sans-serif" font-size="14" font-weight="bold">3. Gamified Quiz</text>
+    <text x="475" y="52" fill="#94a3b8" font-family="sans-serif" font-size="11">Question randomization, audio</text>
+    <text x="475" y="68" fill="#94a3b8" font-family="sans-serif" font-size="11">feedback &amp; performance score</text>
+    <text x="475" y="90" fill="#00f3ff" font-family="sans-serif" font-size="10" font-weight="600">QuizEngine Interactive</text>
+
+    <!-- Card 4 -->
+    <rect x="690" y="0" width="210" height="105" rx="8" fill="#131b2e" stroke="#ffb703" stroke-width="1"/>
+    <text x="705" y="28" fill="#ffb703" font-family="sans-serif" font-size="14" font-weight="bold">4. Expression Hub</text>
+    <text x="705" y="52" fill="#94a3b8" font-family="sans-serif" font-size="11">Idioms &amp; colloquial phrases,</text>
+    <text x="705" y="68" fill="#94a3b8" font-family="sans-serif" font-size="11">photographic visual cards &amp; audio</text>
+    <text x="705" y="90" fill="#ffb703" font-family="sans-serif" font-size="10" font-weight="600">Idiom &amp; Phrase Mastery</text>
+
+    <!-- Card 5 -->
+    <rect x="0" y="125" width="280" height="105" rx="8" fill="#131b2e" stroke="#38bdf8" stroke-width="1"/>
+    <text x="15" y="153" fill="#38bdf8" font-family="sans-serif" font-size="14" font-weight="bold">5. 3D Flip Flashcards</text>
+    <text x="15" y="177" fill="#94a3b8" font-family="sans-serif" font-size="11">CSS 3D perspective transforms with term</text>
+    <text x="15" y="193" fill="#94a3b8" font-family="sans-serif" font-size="11">on front and translation/example on back</text>
+    <text x="15" y="215" fill="#00f3ff" font-family="sans-serif" font-size="10" font-weight="600">VocabMastery Engine</text>
+
+    <!-- Card 6 -->
+    <rect x="310" y="125" width="280" height="105" rx="8" fill="#131b2e" stroke="#00ff9d" stroke-width="1"/>
+    <text x="325" y="153" fill="#00ff9d" font-family="sans-serif" font-size="14" font-weight="bold">6. Two-Speaker Dialogue</text>
+    <text x="325" y="177" fill="#94a3b8" font-family="sans-serif" font-size="11">Interactive conversation turns with distinct</text>
+    <text x="325" y="193" fill="#94a3b8" font-family="sans-serif" font-size="11">speech synthesis voices and role-playing</text>
+    <text x="325" y="215" fill="#38bdf8" font-family="sans-serif" font-size="10" font-weight="600">Conversational Audio Flow</text>
+
+    <!-- Card 7 -->
+    <rect x="620" y="125" width="280" height="105" rx="8" fill="#131b2e" stroke="#ffb703" stroke-width="1"/>
+    <text x="635" y="153" fill="#ffb703" font-family="sans-serif" font-size="14" font-weight="bold">7. Teacher Lesson Studio</text>
+    <text x="635" y="177" fill="#94a3b8" font-family="sans-serif" font-size="11">Visual WYSIWYG lesson builder, passcode</text>
+    <text x="635" y="193" fill="#94a3b8" font-family="sans-serif" font-size="11">protection &amp; 1-click HTML generator</text>
+    <text x="635" y="215" fill="#ffb703" font-family="sans-serif" font-size="10" font-weight="600">Admin Studio / Roundtrip</text>
+  </g>
+</svg>

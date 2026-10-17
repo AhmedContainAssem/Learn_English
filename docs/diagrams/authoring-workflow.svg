@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 280" width="100%" height="100%">
+  <rect width="960" height="280" rx="14" fill="#0b0f19" stroke="#1e293b" stroke-width="2"/>
+  <text x="480" y="38" fill="#ffb703" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" text-anchor="middle">LESSON AUTHORING WORKFLOW (TEACHER STUDIO)</text>
+  
+  <g transform="translate(50, 70)">
+    <rect width="860" height="175" rx="10" fill="#131b2e" stroke="#1c2a47" stroke-width="1.5"/>
+    
+    <!-- Step A -->
+    <circle cx="80" cy="50" r="24" fill="#1c2a47" stroke="#ffb703" stroke-width="1.5"/>
+    <text x="80" y="56" fill="#ffb703" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle">A</text>
+    <text x="80" y="100" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">Enter Content</text>
+    <text x="80" y="122" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">Vocabulary, definitions,</text>
+    <text x="80" y="140" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">collocations &amp; quiz</text>
+
+    <!-- Connector 1 -->
+    <line x1="140" y1="50" x2="240" y2="50" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4"/>
+
+    <!-- Step B -->
+    <circle cx="290" cy="50" r="24" fill="#1c2a47" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="290" y="56" fill="#38bdf8" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle">B</text>
+    <text x="290" y="100" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">Live Preview</text>
+    <text x="290" y="122" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">Instant real-time DOM</text>
+    <text x="290" y="140" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">simulation with audio</text>
+
+    <!-- Connector 2 -->
+    <line x1="350" y1="50" x2="450" y2="50" stroke="#00f3ff" stroke-width="2" stroke-dasharray="4"/>
+
+    <!-- Step C -->
+    <circle cx="500" cy="50" r="24" fill="#1c2a47" stroke="#00f3ff" stroke-width="1.5"/>
+    <text x="500" y="56" fill="#00f3ff" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle">C</text>
+    <text x="500" y="100" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">Verify Security</text>
+    <text x="500" y="122" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">Passcode check</text>
+    <text x="500" y="140" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">via in-page modal</text>
+
+    <!-- Connector 3 -->
+    <line x1="560" y1="50" x2="660" y2="50" stroke="#00ff9d" stroke-width="2" stroke-dasharray="4"/>
+
+    <!-- Step D -->
+    <circle cx="710" cy="50" r="24" fill="#1c2a47" stroke="#00ff9d" stroke-width="1.5"/>
+    <text x="710" y="56" fill="#00ff9d" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle">D</text>
+    <text x="710" y="100" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">Publish &amp; Export</text>
+    <text x="710" y="122" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">Direct GitHub PAT push</text>
+    <text x="710" y="140" fill="#94a3b8" font-family="sans-serif" font-size="11" text-anchor="middle">or 1-click HTML download</text>
+  </g>
+</svg>

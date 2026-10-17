@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" width="100%" height="100%">
+  <rect width="960" height="300" rx="14" fill="#0b0f19" stroke="#1e293b" stroke-width="2"/>
+  <text x="480" y="38" fill="#00f3ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" text-anchor="middle">DUAL AUDIO ENGINE PIPELINE</text>
+  
+  <g transform="translate(60, 65)">
+    <!-- Branch 1: TTS -->
+    <rect x="0" y="0" width="390" height="190" rx="10" fill="#131b2e" stroke="#00f3ff" stroke-width="1.2"/>
+    <text x="195" y="32" fill="#00f3ff" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle">1. Web Speech Synthesis TTS</text>
+    <line x1="20" y1="46" x2="370" y2="46" stroke="#1c2a47" stroke-width="1"/>
+    <text x="30" y="74" fill="#e2e8f0" font-family="sans-serif" font-size="12">API: window.speechSynthesis</text>
+    <text x="30" y="98" fill="#94a3b8" font-family="sans-serif" font-size="12">Voices: High quality en-US / en-GB native voices</text>
+    <text x="30" y="122" fill="#94a3b8" font-family="sans-serif" font-size="12">Triggers: .audio-btn clicks, story narrators, vocab</text>
+    <text x="30" y="146" fill="#94a3b8" font-family="sans-serif" font-size="12">Rate &amp; Pitch: Calibrated for optimal student clarity</text>
+    <rect x="30" y="158" width="160" height="20" rx="10" fill="#00f3ff" fill-opacity="0.15"/>
+    <text x="110" y="172" fill="#00f3ff" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">NATIVE SPEECH SYNTHESIS</text>
+
+    <!-- Branch 2: Web Audio SFX -->
+    <rect x="450" y="0" width="390" height="190" rx="10" fill="#131b2e" stroke="#00ff9d" stroke-width="1.2"/>
+    <text x="645" y="32" fill="#00ff9d" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle">2. Web Audio Sound FX Synthesizer</text>
+    <line x1="470" y1="46" x2="820" y2="46" stroke="#1c2a47" stroke-width="1"/>
+    <text x="480" y="74" fill="#e2e8f0" font-family="sans-serif" font-size="12">API: AudioContext &amp; OscillatorNode</text>
+    <text x="480" y="98" fill="#94a3b8" font-family="sans-serif" font-size="12">Correct Answer: 587Hz -&gt; 880Hz chime</text>
+    <text x="480" y="122" fill="#94a3b8" font-family="sans-serif" font-size="12">Wrong Answer: 150Hz soft buzzer</text>
+    <text x="480" y="146" fill="#94a3b8" font-family="sans-serif" font-size="12">Zero external mp3 files required (100% synthetic)</text>
+    <rect x="480" y="158" width="160" height="20" rx="10" fill="#00ff9d" fill-opacity="0.15"/>
+    <text x="560" y="172" fill="#00ff9d" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">ZERO EXTERNAL ASSETS</text>
+  </g>
+</svg>

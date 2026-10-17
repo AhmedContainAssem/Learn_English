@@ -1,0 +1,184 @@
+/**
+ * Teacher Grade Inspector Styles (teacher-inspector.css)
+ * Single Responsibility: Styling for the active Grade Inspector panel,
+ * unit filter tabs, inspector header actions, and empty states.
+ */
+
+/* Teacher Grade Inspector Panel (Smooth Drill-down) */
+.teacher-grade-inspector {
+    background: linear-gradient(135deg, rgba(8, 14, 28, 0.95), rgba(12, 20, 38, 0.98));
+    border: 1.5px solid rgba(0, 243, 255, 0.35);
+    border-radius: 18px;
+    padding: 20px;
+    margin-top: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 24px rgba(0, 243, 255, 0.1);
+    animation: inspectorFadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes inspectorFadeIn {
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.inspector-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.inspector-title-cluster {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.inspector-icon {
+    font-size: 1.6rem;
+}
+
+.inspector-title {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+.inspector-sub {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+}
+
+.inspector-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-inspector-preview {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #e2e8f0;
+    padding: 6px 14px;
+    border-radius: 10px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.btn-inspector-preview:hover {
+    background: rgba(255, 255, 255, 0.16);
+    color: #fff;
+}
+
+.btn-inspector-create {
+    background: linear-gradient(135deg, rgba(0, 243, 255, 0.2), rgba(0, 243, 255, 0.4));
+    border: 1px solid var(--accent-primary);
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 10px;
+    font-size: 0.82rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-inspector-create:hover {
+    box-shadow: 0 0 14px rgba(0, 243, 255, 0.4);
+    transform: translateY(-1px);
+}
+
+/* Inspector Unit Tabs Strip */
+.inspector-unit-tabs {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 16px 0;
+    overflow-x: auto;
+    padding-bottom: 4px;
+}
+
+.unit-tab-pill {
+    background: rgba(16, 24, 45, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    padding: 6px 14px;
+    color: #94a3b8;
+    font-size: 0.82rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+}
+
+.unit-tab-pill:hover {
+    border-color: rgba(0, 243, 255, 0.35);
+    color: #fff;
+}
+
+.unit-tab-pill.active {
+    background: rgba(0, 243, 255, 0.18);
+    border-color: var(--accent-primary);
+    color: var(--accent-primary);
+    font-weight: 800;
+    box-shadow: 0 0 12px rgba(0, 243, 255, 0.15);
+}
+
+.tab-count-bubble {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 0.72rem;
+    padding: 2px 7px;
+    border-radius: 10px;
+}
+
+.unit-tab-pill.active .tab-count-bubble {
+    background: var(--accent-primary);
+    color: #040814;
+    font-weight: 900;
+}
+
+/* Empty State */
+.inspector-empty-state {
+    text-align: center;
+    padding: 30px 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    border: 1px dashed rgba(255, 255, 255, 0.12);
+}
+
+.empty-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.empty-text {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin: 0 0 12px;
+}
+
+.btn-empty-add {
+    background: rgba(0, 243, 255, 0.15);
+    border: 1px solid var(--accent-primary);
+    color: var(--accent-primary);
+    padding: 6px 14px;
+    border-radius: 10px;
+    font-size: 0.82rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-empty-add:hover {
+    background: var(--accent-primary);
+    color: #040814;
+}

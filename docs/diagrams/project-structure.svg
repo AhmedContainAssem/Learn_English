@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 340" width="100%" height="100%">
+  <rect width="960" height="340" rx="14" fill="#0b0f19" stroke="#1e293b" stroke-width="2"/>
+  <text x="480" y="38" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" text-anchor="middle">PROJECT TREE STRUCTURE</text>
+  
+  <g transform="translate(60, 65)">
+    <rect width="840" height="245" rx="10" fill="#131b2e" stroke="#1c2a47" stroke-width="1.5"/>
+    
+    <!-- Column 1 -->
+    <g transform="translate(30, 25)">
+      <text x="0" y="18" fill="#00f3ff" font-family="monospace" font-size="13" font-weight="bold">Learn_English/</text>
+      <text x="15" y="42" fill="#94a3b8" font-family="monospace" font-size="12">├── Sec_3/ (Units 1-6)</text>
+      <text x="15" y="66" fill="#94a3b8" font-family="monospace" font-size="12">├── Sec_2/ (Units 1-6)</text>
+      <text x="15" y="90" fill="#94a3b8" font-family="monospace" font-size="12">├── Sec_1/ (Golden Ref)</text>
+      <text x="15" y="114" fill="#94a3b8" font-family="monospace" font-size="12">├── Prep_3/ (Units 1-6)</text>
+      <text x="15" y="138" fill="#94a3b8" font-family="monospace" font-size="12">├── Grade_2/ &amp; Course/</text>
+      <text x="15" y="162" fill="#94a3b8" font-family="monospace" font-size="12">└── admin/ (Studio)</text>
+      <text x="30" y="186" fill="#ffb703" font-family="monospace" font-size="12">└── index.html</text>
+    </g>
+
+    <!-- Column 2 -->
+    <g transform="translate(320, 25)">
+      <text x="0" y="18" fill="#00ff9d" font-family="monospace" font-size="13" font-weight="bold">assets/</text>
+      <text x="15" y="42" fill="#94a3b8" font-family="monospace" font-size="12">├── css/</text>
+      <text x="30" y="66" fill="#38bdf8" font-family="monospace" font-size="11.5">style.css, curriculum.css</text>
+      <text x="30" y="88" fill="#38bdf8" font-family="monospace" font-size="11.5">storybook.css, quiz.css</text>
+      <text x="15" y="114" fill="#94a3b8" font-family="monospace" font-size="12">├── js/ (8 Core Engines)</text>
+      <text x="30" y="138" fill="#00ff9d" font-family="monospace" font-size="11.5">audio.js, quiz-engine.js</text>
+      <text x="30" y="160" fill="#00ff9d" font-family="monospace" font-size="11.5">story-engine.js, tabs.js...</text>
+      <text x="15" y="186" fill="#94a3b8" font-family="monospace" font-size="12">└── images/ (Optimized WebP)</text>
+    </g>
+
+    <!-- Column 3 -->
+    <g transform="translate(600, 25)">
+      <text x="0" y="18" fill="#ffb703" font-family="monospace" font-size="13" font-weight="bold">docs/ &amp; documentations/</text>
+      <text x="15" y="42" fill="#94a3b8" font-family="monospace" font-size="12">├── diagrams/</text>
+      <text x="30" y="66" fill="#38bdf8" font-family="monospace" font-size="11.5">16 Clean SVG Diagrams</text>
+      <text x="15" y="94" fill="#94a3b8" font-family="monospace" font-size="12">├── templates/</text>
+      <text x="30" y="118" fill="#ffb703" font-family="monospace" font-size="11.5">Curriculum &amp; Quiz templates</text>
+      <text x="15" y="146" fill="#94a3b8" font-family="monospace" font-size="12">└── documentations/</text>
+      <text x="30" y="170" fill="#94a3b8" font-family="monospace" font-size="11.5">SYSTEMIC_PEDAGOGICAL...</text>
+      <text x="30" y="192" fill="#94a3b8" font-family="monospace" font-size="11.5">LESSONS_LEARNED.md</text>
+    </g>
+  </g>
+</svg>
