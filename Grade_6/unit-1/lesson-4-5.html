@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade 6 - Unit 1 - Lessons 4 & 5: A Day in My School | Mr. Ahmed Assem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css?v=6">
+    <link rel="stylesheet" href="../../assets/css/curriculum.css">
+    <link rel="stylesheet" href="../../assets/css/storybook.css">
+    <link rel="stylesheet" href="../../assets/css/quiz.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb">
+            <a href="../index.html">Grade 6</a> / <a href="./index.html">Unit 1</a> / <span>Lessons 4 & 5 (A Day in My School • Think and Create)</span>
+        </div>
+
+        <!-- Teacher Profile Header -->
+        <div class="teacher-profile-header">
+            <div class="avatar-wrapper">
+                <img src="../../my-photo-profile.webp" alt="Mr. Ahmed Assem" class="teacher-avatar" onerror="this.onerror=null; this.src='../../my-photo-profile.webp';">
+            </div>
+            <h1 class="teacher-title">Mr. Ahmed Assem</h1>
+            <div class="slogan">✨ Easy Peasy Ya Englezeey ✨</div>
+            <div class="badges-row">
+                <span class="badge badge-active">Grade 6 • Unit 1 • Lessons 4 & 5</span>
+                <span class="badge badge-gold">📖 SB pages 45 : 52</span>
+            </div>
+            <h2 id="title" class="lesson-header-title">Lessons 4 & 5: A Day in My School • Think and Create</h2>
+            <p id="description" class="lesson-desc-display">المفردات، طابور الصباح وتحية العلم، إيميل فادي التفاعلي، دليل كتابة البريد غير الرسمي، ملصق محافظة بني سويف، واختبار شامل 🎯</p>
+        </div>
+
+        <!-- Tabs Navigation Bar -->
+        <div class="tabs-container">
+            <button type="button" class="tab-btn active" onclick="switchTab('vocab', this)">📖 المفردات (Vocabulary)</button>
+            <button type="button" class="tab-btn" onclick="switchTab('verbs', this)">⚡ تصريف الأفعال والتعبيرات</button>
+            <button type="button" class="tab-btn" onclick="switchTab('reading', this)">✉️ إيميل يومي المدرسي (Fady's Email)</button>
+            <button type="button" class="tab-btn" onclick="switchTab('writing', this)">✍️ مهارة كتابة الإيميل (Writing Skill)</button>
+            <button type="button" class="tab-btn" onclick="switchTab('poster', this)">🎨 فكر وأبدع (Beni Suef Poster)</button>
+            <button type="button" class="tab-btn" onclick="switchTab('quiz', this)">🎯 اختبار الدرس الشامل (Quiz)</button>
+        </div>
+
+        <!-- Tab 1: Key & Lesson Vocabulary -->
+        <div id="vocab" class="tab-content active"></div>
+
+        <!-- Tab 2: Verbs & Expressions -->
+        <div id="verbs" class="tab-content">
+            <div id="expressions-container" style="margin-top: 30px;"></div>
+        </div>
+
+        <!-- Tab 3: Interactive StoryBook: Fady's Email -->
+        <div id="reading" class="tab-content">
+            <div class="section-title">✉️ قراءة واستماع: بريد فادي الإلكتروني (Fady's School Day Email)</div>
+            <div class="lesson-desc-display">اقرأ واستمع لرسالة فادي الإلكترونية إلى صديقه مارك يصف فيها روتينه في مدرسته المصرية من طابور الصباح وحتى العودة للمنزل:</div>
+
+            <!-- 3D Storybook Container -->
+            <div class="storybook-wrapper">
+                <div class="storybook-book">
+                    <div class="book-spine-divider"></div>
+                    <!-- Artwork Page -->
+                    <div class="story-page-artwork">
+                        <div class="artwork-page-inner">
+                            <div class="page-badge-artwork"><span id="storyPageBadge">🖼️ Page 1 of 5</span></div>
+                            <div class="artwork-container">
+                                <img id="storyArtworkImg" src="../../assets/images/grade_6/unit_1/egyptian_school_life.webp" alt="Egyptian School Morning Assembly" referrerpolicy="no-referrer">
+                            </div>
+                            <div class="artwork-caption" id="storyCaption">Egyptian primary students saluting the flag during morning assembly.</div>
+                        </div>
+                        <div class="story-page-meta">
+                            <span>Connect 6 • Unit 1</span>
+                            <span id="storyPageCounter">Page 1 / 5</span>
+                        </div>
+                    </div>
+
+                    <!-- Content Page -->
+                    <div class="story-page-content">
+                        <div>
+                            <div class="story-header">
+                                <h3 class="story-page-title" id="storyTitle">Daily School Life in Egypt</h3>
+                                <button type="button" class="audio-btn" onclick="speakCurrentStoryPage()" title="استمع للفقرة">🔊</button>
+                            </div>
+                            <div class="story-paragraph" id="storyText">Loading email text...</div>
+                        </div>
+                        <div>
+                            <div class="story-translation-box" id="storyTranslation"></div>
+                            <div class="story-vocab-chips" id="storyVocab"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Story Controls Bar -->
+                <div class="story-controls-bar">
+                    <button type="button" id="storyPrevBtn" onclick="changeStoryPage(-1)" class="action-btn secondary">⬅️ الفقرة السابقة</button>
+                    <button type="button" id="storytellerBtn" onclick="toggleStoryteller()" class="storyteller-btn">▶️ القارئ التلقائي (Auto Storyteller)</button>
+                    <button type="button" id="storyNextBtn" onclick="changeStoryPage(1)" class="action-btn">الفقرة التالية ➡️</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 4: Writing Skill (Informal Email) -->
+        <div id="writing" class="tab-content">
+            <div class="section-title">✍️ مهارة الكتابة: كيف تكتب بريدًا إلكترونيًا غير رسمي (Informal Email)</div>
+            <div class="lesson-desc-display">البريد الإلكتروني غير الرسمي هو رسالة تكتبها لصديق أو لشخص تعرفه جيدًا. تعرف على خصائصه ومكوناته الأساسية:</div>
+
+            <div id="writing-features-grid" class="cards-grid grid-cards" style="margin-top: 20px;"></div>
+
+            <h3 class="section-subtitle" style="margin-top: 35px; color: var(--accent-secondary);">⚖️ جدول مقارنة: التعبيرات الرسمية مقابل الودية (Formal vs Informal)</h3>
+            <div class="table-responsive" style="margin-top: 15px;">
+                <table class="curriculum-table">
+                    <thead>
+                        <tr>
+                            <th>المعنى بالعربية</th>
+                            <th>تعبير رسمي (Formal)</th>
+                            <th>تعبير ودي / غير رسمي (Informal)</th>
+                            <th>نطق واستماع</th>
+                        </tr>
+                    </thead>
+                    <tbody id="formal-informal-rows"></tbody>
+                </table>
+            </div>
+
+            <h3 class="section-subtitle" style="margin-top: 35px; color: var(--accent-primary);">📬 نموذج استرشادي: إيميل علي إلى صديقه عمرو (Model Informal Email)</h3>
+            <div class="card" style="margin-top: 15px; border-right: 4px solid var(--accent-primary); padding: 20px; direction: ltr; text-align: left;">
+                <div style="font-family: monospace; font-size: 0.95rem; margin-bottom: 12px; color: var(--accent-primary); border-bottom: 1px dashed rgba(255,255,255,0.2); padding-bottom: 8px;">
+                    <div><strong>To:</strong> amr@gmail.com</div>
+                    <div><strong>From:</strong> ali@gmail.com</div>
+                    <div><strong>Subject:</strong> A Typical Day at My School</div>
+                </div>
+                <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text-primary); white-space: pre-line;" id="model-email-body"></div>
+                <div style="margin-top: 15px; direction: rtl; text-align: right;">
+                    <button type="button" class="audio-btn" onclick="speakModelEmail()" title="استمع لنموذج الإيميل">🔊 استمع لقراءة الإيميل كاملاً</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 5: Think & Create (Beni Suef Poster) -->
+        <div id="poster" class="tab-content">
+            <div class="section-title">🎨 فكر وأبدع: ملصق عن الحياة اليومية في محافظة بني سويف (Beni Suef Poster)</div>
+            <div class="lesson-desc-display">تعلم كيفية تصميم ملصق إرشادي باللغة الإنجليزية يصف ملامح الحياة اليومية في محافظة مصرية عريقة (عنوان جذاب، رسوم معبرة، وجمل وصفية دقيقة):</div>
+
+            <div class="badges-row" style="margin: 20px 0;">
+                <span class="badge badge-gold">1. Clear Header: Explore the Daily Life in Beni Suef</span>
+                <span class="badge badge-active">2. Expressive Visuals</span>
+                <span class="badge">3. Present Simple Descriptions</span>
+            </div>
+
+            <div id="poster-aspects-grid" class="cards-grid grid-cards" style="margin-top: 20px;"></div>
+        </div>
+
+        <!-- Tab 6: Comprehensive Quiz -->
+        <div id="quiz" class="tab-content">
+            <div class="section-title">🎯 اختبار الدرس الشامل (Lessons 4 & 5 Quiz)</div>
+            <div class="lesson-desc-display">اختبر استيعابك للمفردات، وقواعد الإيميل غير الرسمي، وحقائق اليوم الدراسي ونصوص القراءة:</div>
+
+            <div class="quiz-container">
+                <div class="quiz-header-status">
+                    <span id="quiz-progress-text">السؤال 1 من 10</span>
+                    <span id="quiz-score-badge" class="badge badge-gold">الدرجة: 0 / 10</span>
+                </div>
+                <div class="quiz-progress-bar">
+                    <div id="quiz-progress-fill" class="quiz-progress-fill" style="width: 10%;"></div>
+                </div>
+
+                <div class="quiz-card">
+                    <div id="quiz-question-text" class="quiz-question-title">تحميل السؤال...</div>
+                    <div id="quiz-options-container" class="quiz-options-list"></div>
+                    <div id="quiz-feedback-box" class="quiz-feedback-alert" style="display: none;"></div>
+                </div>
+
+                <div class="quiz-nav-row">
+                    <button type="button" id="quiz-next-btn" class="action-btn" style="display: none;" onclick="nextLessonQuestion()">السؤال التالي ➡️</button>
+                    <button type="button" id="quiz-restart-btn" class="action-btn secondary" style="display: none;" onclick="restartLessonQuiz()">🔄 إعادة الاختبار</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Core Scripts -->
+    <script src="../../assets/js/tabs.js"></script>
+    <script src="../../assets/js/quiz-engine.js"></script>
+    <script src="../../assets/js/story-engine.js"></script>
+    <script src="../../assets/js/ui.js?v=6"></script>
+
+    <!-- Sub-renderers -->
+    <script src="../../assets/js/renderers/ui-primitives.js"></script>
+    <script src="../../assets/js/renderers/vocab-renderer.js"></script>
+    <script src="../../assets/js/renderers/lexicon-renderer.js"></script>
+    <script src="../../assets/js/renderers/dialogue-player.js"></script>
+
+    <!-- Decoupled Lesson Data Payload -->
+    <script src="./lesson-4-5.data.js"></script>
+
+    <!-- Universal Orchestrator Facade -->
+    <script src="../../assets/js/curriculum-renderer.js"></script>
+    <script src="../../assets/js/main.js"></script>
+
+    <script>
+        let currentQuizIndex = 0;
+        let quizScore = 0;
+        let quizAnswered = false;
+
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.CurriculumRenderer && typeof window.CurriculumRenderer.init === 'function') {
+                window.CurriculumRenderer.init();
+            }
+
+            // Render Expressions in Verbs Tab
+            const expContainer = document.getElementById('expressions-container');
+            if (expContainer && window.lessonData && window.lessonData.expressions) {
+                expContainer.innerHTML = `
+                    <h3 class="section-subtitle" style="color: var(--accent-secondary); margin-bottom: 15px;">💬 تعبيرات وحروف جر هامة (Important Expressions):</h3>
+                    <div class="cards-grid grid-cards">
+                        ${window.lessonData.expressions.map(e => `
+                            <div class="card" onclick="if(typeof playSound==='function') playSound('click')">
+                                <div class="card-header">
+                                    <div class="word-en font-bold" style="font-size: 1.2rem;">${e.phrase}</div>
+                                    <button type="button" class="audio-btn" onclick="event.stopPropagation(); if(typeof speakText==='function') speakText('${e.phrase}', this);" title="استمع للتعبير">🔊</button>
+                                </div>
+                                <div class="card-body">
+                                    <div><strong>المعنى:</strong> ${e.meaning}</div>
+                                    <div class="details-box" style="margin-top: 8px; font-size: 0.88rem;">📌 ${e.note}</div>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+            }
+
+            // Render Writing Features
+            const wfGrid = document.getElementById('writing-features-grid');
+            if (wfGrid && window.lessonData && window.lessonData.writingSkill) {
+                wfGrid.innerHTML = window.lessonData.writingSkill.features.map(f => `
+                    <div class="card" onclick="if(typeof playSound==='function') playSound('click')">
+                        <div class="card-header">
+                            <span class="tag-badge" style="background: rgba(0, 243, 255, 0.15); color: var(--accent-primary);">عنصر أساسي</span>
+                            <div class="word-en font-bold" style="font-size: 1.15rem;">${f.name}</div>
+                        </div>
+                        <div class="card-body">
+                            <p style="margin-bottom: 10px; line-height: 1.6;">${f.description}</p>
+                            <div class="details-box" style="direction: ltr; text-align: left; font-size: 0.9rem;">
+                                ${f.examples.map(ex => `<div>• ${ex}</div>`).join('')}
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            // Render Formal vs Informal Table
+            const fiRows = document.getElementById('formal-informal-rows');
+            if (fiRows && window.lessonData && window.lessonData.writingSkill) {
+                fiRows.innerHTML = window.lessonData.writingSkill.formalVsInformal.map(item => `
+                    <tr>
+                        <td><strong>${item.meaning}</strong></td>
+                        <td style="direction: ltr; text-align: left;"><span class="badge" style="background: rgba(255,255,255,0.08);">${item.formal}</span></td>
+                        <td style="direction: ltr; text-align: left;"><span class="badge badge-gold font-bold">${item.informal}</span></td>
+                        <td>
+                            <button type="button" class="audio-btn" onclick="if(typeof speakText==='function') speakText('${item.informal}, formal: ${item.formal}', this);" title="استمع للكلمتين">🔊</button>
+                        </td>
+                    </tr>
+                `).join('');
+            }
+
+            // Render Model Email Body
+            const modelBodyEl = document.getElementById('model-email-body');
+            if (modelBodyEl && window.lessonData && window.lessonData.writingSkill && window.lessonData.writingSkill.modelEmail) {
+                modelBodyEl.textContent = window.lessonData.writingSkill.modelEmail.body;
+            }
+
+            // Render Beni Suef Poster Aspects
+            const posterGrid = document.getElementById('poster-aspects-grid');
+            if (posterGrid && window.lessonData && window.lessonData.posterProject) {
+                posterGrid.innerHTML = window.lessonData.posterProject.aspects.map(a => `
+                    <div class="card" onclick="if(typeof playSound==='function') playSound('click')">
+                        <div class="card-header">
+                            <div style="font-size: 1.8rem;">${a.icon}</div>
+                            <div class="word-en font-bold" style="font-size: 1.15rem; color: var(--accent-secondary);">${a.title}</div>
+                            <button type="button" class="audio-btn" onclick="event.stopPropagation(); if(typeof speakText==='function') speakText('${a.english}', this);" title="استمع للجملة">🔊</button>
+                        </div>
+                        <div class="card-body">
+                            <div style="direction: ltr; text-align: left; font-size: 1.05rem; font-weight: 600; margin-bottom: 8px; color: var(--accent-primary);">
+                                "${a.english}"
+                            </div>
+                            <div style="color: var(--text-secondary); font-size: 0.95rem;">
+                                ${a.arabic}
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            // Init Storybook
+            if (window.storyEngine && window.lessonData && window.lessonData.storyPages) {
+                window.storyEngine.loadPages(window.lessonData.storyPages);
+            }
+
+            // Init Quiz
+            initLessonQuiz();
+        });
+
+        function speakModelEmail() {
+            if (typeof speakText === 'function' && window.lessonData && window.lessonData.writingSkill && window.lessonData.writingSkill.modelEmail) {
+                speakText(window.lessonData.writingSkill.modelEmail.body);
+            }
+        }
+
+        // Dedicated Gamified Quiz Engine
+        function initLessonQuiz() {
+            currentQuizIndex = 0;
+            quizScore = 0;
+            renderQuizCard();
+        }
+
+        function renderQuizCard() {
+            quizAnswered = false;
+            const qList = window.lessonData ? window.lessonData.quiz : [];
+            if (!qList || qList.length === 0) return;
+
+            const q = qList[currentQuizIndex];
+            document.getElementById('quiz-progress-text').textContent = `السؤال ${currentQuizIndex + 1} من ${qList.length}`;
+            document.getElementById('quiz-score-badge').textContent = `الدرجة: ${quizScore} / ${qList.length}`;
+            document.getElementById('quiz-progress-fill').style.width = `${((currentQuizIndex + 1) / qList.length) * 100}%`;
+
+            document.getElementById('quiz-question-text').textContent = q.question;
+            const fbBox = document.getElementById('quiz-feedback-box');
+            fbBox.style.display = 'none';
+            fbBox.className = 'quiz-feedback-alert';
+
+            const optContainer = document.getElementById('quiz-options-container');
+            optContainer.innerHTML = q.options.map((opt, idx) => `
+                <button type="button" class="quiz-option-btn" onclick="handleQuizAnswer(${idx})">
+                    <span class="quiz-opt-letter">${String.fromCharCode(65 + idx)}</span>
+                    <span class="quiz-opt-text">${opt}</span>
+                </button>
+            `).join('');
+
+            document.getElementById('quiz-next-btn').style.display = 'none';
+            document.getElementById('quiz-restart-btn').style.display = 'none';
+        }
+
+        function handleQuizAnswer(selectedIdx) {
+            if (quizAnswered) return;
+            quizAnswered = true;
+
+            const qList = window.lessonData.quiz;
+            const q = qList[currentQuizIndex];
+            const isCorrect = (selectedIdx === q.correct);
+            const buttons = document.querySelectorAll('.quiz-option-btn');
+
+            buttons.forEach((btn, idx) => {
+                btn.disabled = true;
+                if (idx === q.correct) {
+                    btn.classList.add('correct');
+                } else if (idx === selectedIdx) {
+                    btn.classList.add('incorrect');
+                }
+            });
+
+            const fbBox = document.getElementById('quiz-feedback-box');
+            fbBox.style.display = 'block';
+
+            if (isCorrect) {
+                quizScore++;
+                if (typeof playSound === 'function') playSound('correct');
+                fbBox.classList.add('correct');
+                fbBox.innerHTML = `<strong>إجابة ممتازة! 🎉</strong><br>${q.explanation}`;
+            } else {
+                if (typeof playSound === 'function') playSound('incorrect');
+                fbBox.classList.add('incorrect');
+                fbBox.innerHTML = `<strong>إجابة غير صحيحة! 💡</strong><br>الإجابة الصحيحة هي: <strong>${q.options[q.correct]}</strong><br>${q.explanation}`;
+            }
+
+            document.getElementById('quiz-score-badge').textContent = `الدرجة: ${quizScore} / ${qList.length}`;
+
+            if (currentQuizIndex < qList.length - 1) {
+                document.getElementById('quiz-next-btn').style.display = 'inline-block';
+            } else {
+                document.getElementById('quiz-restart-btn').style.display = 'inline-block';
+                showQuizCompletionAlert();
+            }
+        }
+
+        function nextLessonQuestion() {
+            if (currentQuizIndex < window.lessonData.quiz.length - 1) {
+                currentQuizIndex++;
+                renderQuizCard();
+            }
+        }
+
+        function restartLessonQuiz() {
+            initLessonQuiz();
+        }
+
+        function showQuizCompletionAlert() {
+            const total = window.lessonData.quiz.length;
+            const percentage = Math.round((quizScore / total) * 100);
+            const fbBox = document.getElementById('quiz-feedback-box');
+            fbBox.style.display = 'block';
+            fbBox.innerHTML = `
+                <div style="font-size: 1.25rem; font-weight: 800; color: var(--accent-gold); margin-bottom: 8px;">
+                    🏆 أحسنت إتمام الاختبار! النتيجة النهائية: ${quizScore} من ${total} (${percentage}%)
+                </div>
+                <div>${percentage >= 80 ? 'مستوى عبقري! بارك الله فيك يا بطل! 🌟' : 'عمل رائع! راجع المفردات ثم أعد المحاولة للوصول إلى 100%! 💪'}</div>
+            `;
+        }
+    </script>
+</body>
+</html>

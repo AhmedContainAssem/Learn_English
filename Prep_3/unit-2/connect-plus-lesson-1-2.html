@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prep 3 (Connect Plus - G9) - Unit 2 - Lessons 1 & 2: Changes | Mr. Ahmed Assem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/curriculum.css">
+    <link rel="stylesheet" href="../../assets/css/storybook.css">
+    <link rel="stylesheet" href="../../assets/css/quiz.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb">
+            <a href="../index.html" style="color: var(--accent-primary); text-decoration: none;">Prep_3</a> / 
+            <a href="./index.html" style="color: var(--accent-primary); text-decoration: none;">Unit 2</a> / 
+            <span>Connect Plus (G9) - Lessons 1 & 2</span>
+        </div>
+
+        <!-- Teacher Profile Header -->
+        <div class="teacher-profile-header">
+            <div class="avatar-wrapper">
+                <img src="../../my-photo-profile.webp" alt="Mr. Ahmed Assem" class="teacher-avatar" onerror="this.onerror=null; this.src='../../my-photo-profile.webp';">
+            </div>
+            <h1 class="teacher-title">Mr. Ahmed Assem</h1>
+            <div class="slogan">✨ Easy Peasy Ya Englezeey ✨</div>
+            <div class="badges-group" style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 10px;">
+                <span class="badge badge-active">Prep 3 • Connect Plus (G9 - لغات)</span>
+                <span class="badge badge-gold">📖 SB pages 18 : 21 • WB pages 12 & 13</span>
+            </div>
+            <h2 id="title" class="lesson-header-title">Connect Plus (G9) - Unit 2 - Lessons 1 & 2: Changes</h2>
+            <p id="description" class="lesson-desc-display">المفردات الكاملة (51 كلمة)، استوديو القراءة والقصص التفاعلية (3 كتب عبر StoryEngine)، محرك المحادثات التفاعلية الناطقة، زمن المستقبل المستمر، تصريف الأفعال، التعريفات والمترادفات، واختبار شامل 35 سؤالاً 🎯</p>
+        </div>
+
+        <!-- Signature Cyane Center-Node Divider -->
+        <div class="cyane-divider" aria-hidden="true"></div>
+
+        <!-- Tabs Navigation Bar -->
+        <div class="tabs-container">
+            <button class="tab-btn active" onclick="switchTab('vocab', this)">📖 المفردات (51 كلمة)</button>
+            <button class="tab-btn" onclick="switchTab('storybook', this)">📚 استوديو القراءة (3 كتب تفاعلية)</button>
+            <button class="tab-btn" onclick="switchTab('dialogue', this)">🗣️ المحادثات التفاعلية (Dialogues)</button>
+            <button class="tab-btn" onclick="switchTab('grammar', this)">⚡ المستقبل المستمر (Grammar)</button>
+            <button class="tab-btn" onclick="switchTab('verbs', this)">🔄 تصريف الأفعال (Verbs)</button>
+            <button class="tab-btn" onclick="switchTab('definitions', this)">🧠 التعريفات (Definitions)</button>
+            <button class="tab-btn" onclick="switchTab('synonyms', this)">⚖️ المرادفات والمتضادات</button>
+            <button class="tab-btn" onclick="switchTab('affixes', this)">🔤 اللواحق والمقاطع (Affixes)</button>
+            <button class="tab-btn" onclick="switchTab('collocations', this)">🔗 التعبيرات وحروف الجر والملاحظات</button>
+            <button class="tab-btn" onclick="switchTab('quiz', this)">🎯 اختبار الدرس الشامل (Quiz)</button>
+        </div>
+
+        <!-- Dynamic Curriculum Containers (Hydrated by curriculum-renderer.js) -->
+        <div id="vocab" class="tab-content active"></div>
+        <div id="verbs" class="tab-content"></div>
+        <div id="definitions" class="tab-content"></div>
+        <div id="synonyms" class="tab-content"></div>
+        <div id="affixes" class="tab-content"></div>
+        <div id="collocations" class="tab-content"></div>
+
+        <!-- ========================================== -->
+        <!-- Tab 2: Interactive Storybook (3 Decks)     -->
+        <!-- ========================================== -->
+        <div id="storybook" class="tab-content">
+            <div style="text-align: center; margin-bottom: 24px;">
+                <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(0, 243, 255, 0.1); border: 1px solid var(--accent-primary); color: var(--accent-primary); padding: 4px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 800; margin-bottom: 10px;">
+                    <span>📚 Connect Plus (G9) • Unit 2 Interactive Storybooks</span>
+                </div>
+                <h2 style="font-size: clamp(1.2rem, 3.5vw, 1.6rem); font-weight: 900; color: #ffffff; margin: 0 0 8px 0; line-height: 1.3;">
+                    استوديو القراءة والقصص التفاعلية (3 Interactive Readings)
+                </h2>
+                <div style="color: var(--text-muted); font-size: clamp(0.85rem, 2.5vw, 0.95rem); line-height: 1.5;">
+                    اختر كتاب القراءة المطلوب لتصفحه داخل محرك الكتاب التفاعلي ثلاثي الأبعاد مع الصور المعبرة، القارئ الصوتي التلقائي، والترجمة والكلمات المفتاحية 🎧
+                </div>
+
+                <!-- Storybook Deck Selector Switcher -->
+                <div class="story-tabs-switcher" style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 18px;">
+                    <button type="button" id="storyTabBtn-0" class="badge badge-active story-select-btn" onclick="selectStoryDeck(0)" style="padding: 10px 18px; font-size: 0.95rem; cursor: pointer; border-radius: 25px;">
+                        🌐 قراءة 1: منتدى الآمال والطموحات (What do you hope to be doing? - SB p. 19)
+                    </button>
+                    <button type="button" id="storyTabBtn-1" class="badge badge-gold story-select-btn" onclick="selectStoryDeck(1)" style="padding: 10px 18px; font-size: 0.95rem; cursor: pointer; border-radius: 25px; opacity: 0.85;">
+                        🌟 قراءة 2: أحلام المستقبل والمسار المهني (Future Dreams & Careers - WB p. 11)
+                    </button>
+                    <button type="button" id="storyTabBtn-2" class="badge badge-gold story-select-btn" onclick="selectStoryDeck(2)" style="padding: 10px 18px; font-size: 0.95rem; cursor: pointer; border-radius: 25px; opacity: 0.85;">
+                        🎧 قراءة 3: محاضرة مستقبل السوشيال ميديا والواقع الافتراضي (Social Media Lecture - SB p. 21)
+                    </button>
+                </div>
+            </div>
+
+            <!-- Standard 3D Storybook Wrapper (Teacher Studio Engine Parity) -->
+            <div class="storybook-wrapper">
+                <div class="storybook-book">
+                    <!-- Center Spine Divider -->
+                    <div class="book-spine-divider"></div>
+
+                    <!-- Right Page: Expressive Scene Artwork -->
+                    <div class="story-page-artwork">
+                        <div class="artwork-page-inner">
+                            <div class="page-badge-artwork">
+                                <span id="storyPageBadge">🖼️ Scene 1 of 4</span>
+                            </div>
+                            <div class="artwork-container">
+                                <img id="storyArtworkImg" src="../../assets/images/prep3_u2_influencer_jewelry.webp" alt="Scene Artwork" onerror="this.classList.add('hidden');" referrerpolicy="no-referrer">
+                            </div>
+                            <div class="artwork-caption" id="storyCaption">
+                                Teenager managing digital content and followers on social media alongside handcrafted online business
+                            </div>
+                        </div>
+
+                        <div class="story-page-meta">
+                            <span>📖 Book Reader</span>
+                            <span id="storyPageCounter">Page 1 / 4</span>
+                        </div>
+                    </div>
+
+                    <!-- Left Page: Story Reading Passage -->
+                    <div class="story-page-content">
+                        <div>
+                            <div class="story-header">
+                                <h3 class="story-page-title" id="storyTitle">Harry & Injy: Influencers & Online Business</h3>
+                                <button type="button" class="audio-btn" onclick="speakCurrentStoryPage()" title="استمع للنطق">🔊</button>
+                            </div>
+                            <div class="story-paragraph" id="storyText">
+                                "When I was younger, I thought I was going to become a famous footballer. Now I know that won't happen, but I'm hoping to become an influencer – I have 20,000 followers on Instagram now!" — Harry
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="story-translation-box" id="storyTranslation">
+                                <span class="translation-tag">💡 الترجمة:</span>
+                                "عندما كنت أصغر سناً، كنت أعتقد أنني سأصبح لاعب كرة قدم مشهوراً. والآن أعلم أن ذلك لن يحدث، لكنني آمل أن أصبح مؤثراً على وسائل التواصل – لدي الآن 20,000 متابع على إنستغرام!" — هاري
+                            </div>
+
+                            <div class="story-vocab-chips" id="storyVocab">
+                                <span class="vocab-chip">famous footballer (لاعب مشهور)</span>
+                                <span class="vocab-chip">influencer (مؤثر)</span>
+                                <span class="vocab-chip">followers (متابعين)</span>
+                                <span class="vocab-chip">own business (مشروع خاص)</span>
+                                <span class="vocab-chip">jewelry online (مجوهرات عبر الإنترنت)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Story Navigation & Auto-Storyteller Bar -->
+                <div class="story-controls-bar">
+                    <button type="button" id="storyPrevBtn" onclick="changeStoryPage(-1)" class="action-btn secondary" disabled>
+                        ⬅️ المشهد السابق
+                    </button>
+
+                    <button type="button" id="storytellerBtn" onclick="toggleStoryteller()" class="storyteller-btn">
+                        ▶️ القارئ التلقائي (Auto Storyteller)
+                    </button>
+
+                    <div class="story-page-progress">
+                        <span id="storyPageProgressText">Scene 1 of 4</span>
+                        <div class="progress-dots" id="storyProgressDots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+
+                    <button type="button" id="storyNextBtn" onclick="changeStoryPage(1)" class="action-btn secondary">
+                        المشهد التالي ➔
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- Tab 3: Interactive Dialogues Engine        -->
+        <!-- ========================================== -->
+        <div id="dialogue" class="tab-content">
+            <div class="section-header-bar" style="margin-bottom: 20px;">
+                <div class="section-header-left">
+                    <span class="section-icon-badge">🗣️</span>
+                    <div>
+                        <h3 class="section-title">المحادثات التفاعلية المنهجية (Interactive Dialogues Engine)</h3>
+                        <span class="section-en-title">Predicting the Future & Speaking About Dreams and Ambitions (SB p. 20)</span>
+                    </div>
+                </div>
+                <span class="section-hint-pill">تدريب استماع ومحادثة ناطق بصوت واضح لكل جملة مع التشغيل التلقائي</span>
+            </div>
+
+            <!-- Dialogue Switcher Tabs -->
+            <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px;">
+                <button type="button" id="diagTabBtn-0" class="badge badge-active story-select-btn" onclick="selectDialogueDeck(0)" style="padding: 10px 18px; font-size: 0.95rem; cursor: pointer; border-radius: 25px;">
+                    🔮 محادثة 1: التنبؤ بالمستقبل (Predicting the Future - SB p. 20)
+                </button>
+                <button type="button" id="diagTabBtn-1" class="badge badge-gold story-select-btn" onclick="selectDialogueDeck(1)" style="padding: 10px 18px; font-size: 0.95rem; cursor: pointer; border-radius: 25px; opacity: 0.85;">
+                    🌟 محادثة 2: الأحلام والطموحات ومسار الحياة (Dreams & Ambitions - SB p. 20)
+                </button>
+            </div>
+
+            <!-- Expressive Dialogue Scene Banner -->
+            <div id="dialogue-banner-container" style="margin-bottom: 20px; border-radius: 16px; overflow: hidden; border: 1px solid rgba(0, 243, 255, 0.2); box-shadow: 0 10px 30px rgba(0,0,0,0.5); background: #0c1424;">
+                <div style="position: relative; width: 100%; max-height: 280px; overflow: hidden;">
+                    <img id="dialogue-scene-img" src="../../assets/images/karim_rowan_dialogue_1790534415072.webp" alt="Dialogue Scene" style="width: 100%; height: 260px; object-fit: cover; display: block;" referrerpolicy="no-referrer">
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 12px 18px; background: linear-gradient(to top, rgba(11, 15, 25, 0.95), transparent); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+                        <span id="dialogue-scene-caption" style="color: #ffffff; font-weight: 700; font-size: 0.95rem; text-shadow: 0 2px 4px rgba(0,0,0,0.8);">
+                            🔮 Omar & Youssef discussing predictions, careers, and fitness in ten years' time (SB p. 20)
+                        </span>
+                        <span class="badge badge-active" style="font-size: 0.78rem;">Realistic Scene 📸</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dialogue Controls & Context -->
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 12px; background: rgba(19, 27, 46, 0.6); padding: 14px 18px; border-radius: 14px; border: 1px solid rgba(0, 243, 255, 0.15);">
+                <div id="dialogue-context-text" style="color: var(--text-muted); font-size: 0.95rem;">
+                    حوار تفاعلي بين <strong>عمر (Omar)</strong> و<strong>يوسف (Youssef)</strong> حول التنبؤ بالمستقبل وما يأملون في تحقيقه خلال 10 سنوات:
+                </div>
+                <button type="button" id="play-all-dialogue-btn" class="action-btn" onclick="playAllDialogue()" style="display: inline-flex; align-items: center; gap: 8px;">
+                    <span>▶️</span> تشغيل المحادثة بالكامل تلقائياً
+                </button>
+            </div>
+
+            <!-- Dialogue Container List -->
+            <div id="dialogue-list-container" class="dialogue-list"></div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- Tab 4: Grammar (The Future Progressive)   -->
+        <!-- ========================================== -->
+        <div id="grammar" class="tab-content">
+            <div class="details-box" style="margin-bottom: 24px; border-right: 4px solid var(--accent-primary);">
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                    <div>
+                        <span class="badge badge-active">Grammar Focus • Connect Plus G9</span>
+                        <h3 class="section-subtitle" style="margin: 6px 0 0 0; color: var(--accent-primary);">⚡ The Future Progressive Tense (زمن المستقبل المستمر)</h3>
+                    </div>
+                    <div style="background: rgba(0, 243, 255, 0.1); border: 1px solid var(--accent-primary); border-radius: 8px; padding: 6px 14px; font-weight: 800; color: var(--accent-primary); font-size: 1.1rem;">
+                        will + be + (v + ing)
+                    </div>
+                </div>
+                <p style="color: var(--text-secondary); margin-top: 10px; margin-bottom: 0;">يُستخدم للتعبير عن حدث سيكون مستمراً في وقت محدد في المستقبل، أو للتنبؤ بوضع سيكون سائداً ومعتاداً.</p>
+            </div>
+
+            <!-- Form Grid -->
+            <div class="grid-cards" style="margin-bottom: 24px;">
+                <!-- 1. Affirmation & Negation -->
+                <div class="card" style="padding: 18px;">
+                    <span class="tag-badge" style="background: rgba(0, 255, 157, 0.15); color: var(--accent-green); border-color: var(--accent-green);">1. الإثبات والنفي (Affirmation & Negation)</span>
+                    <div style="background: rgba(11, 15, 25, 0.7); padding: 10px 14px; border-radius: 8px; margin: 10px 0; font-family: monospace; font-size: 1.05rem; color: var(--accent-primary);">
+                        Subj. + will / won't + be + v-ing
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <div class="en-example">Reem <span class="highlight">will be doing</span> the housework all morning tomorrow.</div>
+                        <div style="color: var(--text-muted); font-size: 0.9rem;">ستكون ريم تؤدي الأعمال المنزلية طوال صباح الغد.</div>
+                    </div>
+                    <div style="margin-top: 8px;">
+                        <div class="en-example">At five o'clock next Friday, I <span class="highlight">will be visiting</span> one of my old friends.</div>
+                        <div style="color: var(--text-muted); font-size: 0.9rem;">في تمام الخامسة الجمعة القادمة، سأكون أزور أحد أصدقائي القدامى.</div>
+                    </div>
+                </div>
+
+                <!-- 2. Yes / No Questions -->
+                <div class="card" style="padding: 18px;">
+                    <span class="tag-badge" style="background: rgba(56, 189, 248, 0.15); color: var(--accent-secondary); border-color: var(--accent-secondary);">2. السؤال بهل (Yes / No Question)</span>
+                    <div style="background: rgba(11, 15, 25, 0.7); padding: 10px 14px; border-radius: 8px; margin: 10px 0; font-family: monospace; font-size: 1.05rem; color: var(--accent-secondary);">
+                        Will + Subj. + be + v-ing ...?
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <div class="en-example"><span class="highlight">Will</span> Reem <span class="highlight">be doing</span> the housework all morning tomorrow?</div>
+                        <div style="color: var(--text-muted); font-size: 0.9rem;">هل ستكون ريم تؤدي الأعمال المنزلية طوال صباح الغد؟</div>
+                        <div style="color: var(--accent-green); font-weight: 700; margin-top: 4px;">➔ Yes, she will. / No, she won't.</div>
+                    </div>
+                </div>
+
+                <!-- 3. Wh- Questions -->
+                <div class="card" style="padding: 18px;">
+                    <span class="tag-badge" style="background: rgba(255, 183, 3, 0.15); color: var(--accent-orange); border-color: var(--accent-orange);">3. السؤال بأداة استفهام (Wh- Question)</span>
+                    <div style="background: rgba(11, 15, 25, 0.7); padding: 10px 14px; border-radius: 8px; margin: 10px 0; font-family: monospace; font-size: 1.05rem; color: var(--accent-orange);">
+                        Q.W. + will + Subj. + be + v-ing ...?
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <div class="en-example">What <span class="highlight">will</span> Reem <span class="highlight">be doing</span> all morning tomorrow?</div>
+                        <div style="color: var(--text-muted); font-size: 0.9rem;">ماذا ستكون ريم تفعل طوال صباح الغد؟</div>
+                        <div style="color: var(--accent-primary); font-weight: 600; margin-top: 4px;">➔ She will be visiting her grandparents.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Special Note: Uncertainty with may -->
+            <div class="details-box" style="background: rgba(255, 183, 3, 0.08); border: 1px solid rgba(255, 183, 3, 0.35); margin-bottom: 24px;">
+                <h4 style="color: var(--accent-orange); margin-top: 0; font-size: 1.15rem;">⚠️ ملاحظة ذهبية: التنبؤ في حالة عدم التأكد (Uncertainty) باستخدام (may):</h4>
+                <p style="color: #fff; margin-bottom: 8px; font-size: 1rem;">
+                    نستخدم <strong>(may)</strong> بدلاً من <strong>(will)</strong> للتنبؤ بأحداث قد تكون مستمرة في المستقبل في حالة عدم التأكد:
+                </p>
+                <div style="background: rgba(11, 15, 25, 0.8); padding: 10px 14px; border-radius: 8px; font-family: monospace; color: var(--accent-orange); font-size: 1.05rem; margin-bottom: 8px;">
+                    Subj. + may be + inf. + ing ....
+                </div>
+                <div class="en-example">When Rodayna is 20, she <span class="highlight">may be studying</span> medicine at university.</div>
+                <div style="color: var(--text-muted); font-size: 0.9rem;">عندما تبلغ ردينا 20 عاماً، قد تكون تدرس الطب في الجامعة (توقع غير مؤكد بنسبة 100%).</div>
+            </div>
+
+            <!-- Uses of Future Progressive -->
+            <div class="card" style="padding: 20px; margin-bottom: 24px;">
+                <h3 style="color: var(--accent-primary); margin-top: 0; font-size: 1.3rem;">🎯 استخدامات زمن المستقبل المستمر (Uses of Future Progressive):</h3>
+
+                <div style="display: flex; flex-direction: column; gap: 14px; margin-top: 14px;">
+                    <div class="details-box" style="background: rgba(11, 15, 25, 0.7); border-right: 4px solid var(--accent-primary);">
+                        <strong style="color: var(--accent-primary); font-size: 1.05rem;">1️⃣ التنبؤ بحدث سيكون مستمراً في وقت معين ومحدد في المستقبل:</strong>
+                        <div class="en-example" style="margin-top: 6px;">Omar <span class="highlight">will be watching</span> a football match <strong>at nine tomorrow</strong>.</div>
+                        <div class="en-example" style="margin-top: 4px;"><strong>This time tomorrow</strong>, Sama <span class="highlight">will be traveling</span> to Cairo with her family.</div>
+                    </div>
+
+                    <div class="details-box" style="background: rgba(11, 15, 25, 0.7); border-right: 4px solid var(--accent-green);">
+                        <strong style="color: var(--accent-green); font-size: 1.05rem;">2️⃣ التنبؤ بشيء سيكون شائعاً وسائداً ومعترفاً به في المستقبل:</strong>
+                        <div class="en-example" style="margin-top: 6px;"><strong>In 10 years' time</strong>, more people <span class="highlight">will be living</span> in new smart cities.</div>
+                    </div>
+
+                    <div class="details-box" style="background: rgba(11, 15, 25, 0.7); border-right: 4px solid var(--accent-orange);">
+                        <strong style="color: var(--accent-orange); font-size: 1.05rem;">3️⃣ التنبؤ بحدث قد يكون مستمراً عندما يقع حدث آخر في المستقبل (مضارع بسيط بعد الرابط الزمني):</strong>
+                        <div class="en-example" style="margin-top: 6px;">When you <strong>return</strong> home, I <span class="highlight">may be preparing</span> lunch.</div>
+                    </div>
+
+                    <div class="details-box" style="background: rgba(11, 15, 25, 0.7); border-right: 4px solid var(--accent-secondary);">
+                        <strong style="color: var(--accent-secondary); font-size: 1.05rem;">4️⃣ يُستخدم مع روابط السبب والنتيجة لتبرير شيء ما في المستقبل:</strong>
+                        <div class="en-example" style="margin-top: 6px;">I can't go to the club next Friday because I <span class="highlight">will be planting</span> some trees in my garden.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Time Markers -->
+            <div class="details-box" style="background: rgba(0, 243, 255, 0.05); border: 1px dashed rgba(0, 243, 255, 0.35);">
+                <h4 style="color: var(--accent-primary); margin-top: 0; font-size: 1.15rem;">⏱️ الكلمات الدالة الشائعة مع المستقبل المستمر (Key Phrases):</h4>
+                <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
+                    <span class="badge badge-active" style="font-size: 0.95rem; padding: 6px 12px;">In (five / ten) years' time</span>
+                    <span class="badge badge-active" style="font-size: 0.95rem; padding: 6px 12px;">This time tomorrow</span>
+                    <span class="badge badge-active" style="font-size: 0.95rem; padding: 6px 12px;">This time next week</span>
+                    <span class="badge badge-active" style="font-size: 0.95rem; padding: 6px 12px;">At (nine o'clock) tomorrow</span>
+                    <span class="badge badge-active" style="font-size: 0.95rem; padding: 6px 12px;">Tomorrow (afternoon / morning)</span>
+                    <span class="badge badge-active" style="font-size: 0.95rem; padding: 6px 12px;">Next year, ...</span>
+                    <span class="badge badge-active" style="font-size: 0.95rem; padding: 6px 12px;">all morning tomorrow</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- Tab: Quiz Container                        -->
+        <!-- ========================================== -->
+        <div id="quiz" class="tab-content">
+            <div class="score-board">
+                <span>السؤال: <span id="current-q">1</span> / <span id="total-q">35</span></span>
+                <span>النقاط: <span id="score">0</span> 🌟</span>
+            </div>
+
+            <div class="question-card">
+                <span class="emoji-display" id="emoji">🎯</span>
+                <div class="question-text" id="question">جاري تحميل السؤال...</div>
+                <div class="options-grid" id="options"></div>
+                <div class="feedback" id="feedback"></div>
+            </div>
+
+            <div class="center-row">
+                <button class="action-btn next-btn" id="next-btn" onclick="nextQuestion()" style="display: none;">السؤال التالي ➔</button>
+            </div>
+        </div>
+
+        <!-- Navigation Controls -->
+        <div class="nav-controls" style="margin-top: 40px;">
+            <a href="./index.html" class="back-btn" data-sound-click="click">⬅️ العودة لقائمة دروس الوحدة الثانية</a>
+            <a href="../index.html" class="back-btn" data-sound-click="click">🏫 العودة لجميع وحدات Prep 3</a>
+        </div>
+    </div>
+
+    <!-- Interactive Storybook & Dialogue Controllers -->
+    <script>
+        // Storybook Multi-Deck Switcher
+        window.activeDeckIndex = 0;
+        window.selectStoryDeck = function(deckIdx) {
+            window.activeDeckIndex = deckIdx;
+            const deck = window.readingDecks ? window.readingDecks[deckIdx] : null;
+            if (!deck) return;
+
+            for (let i = 0; i < (window.readingDecks ? window.readingDecks.length : 0); i++) {
+                const btn = document.getElementById('storyTabBtn-' + i);
+                if (btn) {
+                    if (i === deckIdx) {
+                        btn.className = 'badge badge-active story-select-btn';
+                        btn.style.opacity = '1';
+                    } else {
+                        btn.className = 'badge badge-gold story-select-btn';
+                        btn.style.opacity = '0.7';
+                    }
+                }
+            }
+
+            if (window.storyEngine) {
+                window.storyEngine.loadPages(deck.pages);
+            }
+            if (typeof window.playSound === 'function') window.playSound('click');
+        };
+
+        // Dialogue Engine Controller
+        window.activeDialogueDeckIndex = 0;
+        window.isDialoguePlaying = false;
+        window.dialogueTimer = null;
+        window.dialogueIndex = 0;
+
+        window.selectDialogueDeck = function(deckIdx) {
+            window.stopDialogue();
+            window.activeDialogueDeckIndex = deckIdx;
+            const deck = window.dialogueDecks ? window.dialogueDecks[deckIdx] : null;
+            if (!deck) return;
+
+            for (let i = 0; i < (window.dialogueDecks ? window.dialogueDecks.length : 0); i++) {
+                const btn = document.getElementById('diagTabBtn-' + i);
+                if (btn) {
+                    if (i === deckIdx) {
+                        btn.className = 'badge badge-active story-select-btn';
+                        btn.style.opacity = '1';
+                    } else {
+                        btn.className = 'badge badge-gold story-select-btn';
+                        btn.style.opacity = '0.7';
+                    }
+                }
+            }
+
+            const imgElem = document.getElementById('dialogue-scene-img');
+            const captionElem = document.getElementById('dialogue-scene-caption');
+            if (imgElem && deck.bannerImage) {
+                imgElem.src = deck.bannerImage;
+                imgElem.alt = deck.title;
+            }
+            if (captionElem && deck.bannerCaption) {
+                captionElem.textContent = deck.bannerCaption;
+            }
+
+            const contextElem = document.getElementById('dialogue-context-text');
+            if (contextElem) {
+                contextElem.innerHTML = deck.context;
+            }
+
+            const container = document.getElementById('dialogue-list-container');
+            if (container) {
+                container.innerHTML = deck.lines.map((line, idx) => {
+                    return `
+                        <div class="dialogue-box dialogue-line" id="diag-line-${idx}" onclick="speakDialogueLine(${idx})" style="border-right: 4px solid ${line.speakerColor}; cursor: pointer; transition: all 0.25s ease; margin-bottom: 14px; background: rgba(11, 15, 25, 0.75); padding: 14px 18px; border-radius: 12px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <span class="speaker-name" style="color: ${line.speakerColor}; font-weight: 700; font-size: 1.05rem;">${line.speakerName}:</span>
+                                <button type="button" class="audio-btn" onclick="event.stopPropagation(); speakDialogueLine(${idx});" title="استمع لهذه الجملة">🔊</button>
+                            </div>
+                            <div class="dialogue-content" style="margin-top: 6px;">
+                                <div class="en-text" style="font-size: 1.05rem; font-weight: 600; color: #ffffff; direction: ltr; text-align: left;">
+                                    "${line.text}"
+                                </div>
+                                <div class="ar-text" style="margin-top: 6px; color: var(--accent-secondary); font-size: 0.92rem;">
+                                    (${line.translation})
+                                </div>
+                                ${line.notes ? `<div style="margin-top: 6px; font-size: 0.82rem; color: var(--accent-orange); opacity: 0.9;">💡 ${line.notes}</div>` : ''}
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+            }
+
+            if (typeof window.playSound === 'function') window.playSound('click');
+        };
+
+        window.speakDialogueLine = function(idx) {
+            const deck = window.dialogueDecks ? window.dialogueDecks[window.activeDialogueDeckIndex] : null;
+            if (!deck || !deck.lines[idx]) return;
+
+            document.querySelectorAll('.dialogue-line').forEach(el => el.style.borderLeft = 'none');
+            const target = document.getElementById('diag-line-' + idx);
+            if (target) {
+                target.style.borderLeft = '4px solid var(--accent-primary)';
+                target.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+
+            if (typeof window.speakText === 'function') {
+                window.speakText(deck.lines[idx].text);
+            }
+        };
+
+        window.playAllDialogue = function() {
+            const deck = window.dialogueDecks ? window.dialogueDecks[window.activeDialogueDeckIndex] : null;
+            if (!deck || !deck.lines || deck.lines.length === 0) return;
+
+            const btn = document.getElementById('play-all-dialogue-btn');
+            if (window.isDialoguePlaying) {
+                window.stopDialogue();
+                return;
+            }
+
+            window.isDialoguePlaying = true;
+            window.dialogueIndex = 0;
+            if (btn) btn.innerHTML = '<span>⏹️</span> إيقاف التشغيل التلقائي';
+
+            function playStep(idx) {
+                if (!window.isDialoguePlaying || idx >= deck.lines.length) {
+                    window.stopDialogue();
+                    return;
+                }
+
+                window.dialogueIndex = idx;
+                window.speakDialogueLine(idx);
+
+                const line = deck.lines[idx];
+                const words = line.text.split(' ').length;
+                const duration = Math.max(3500, (words * 320) + 1400);
+
+                window.dialogueTimer = setTimeout(() => {
+                    playStep(idx + 1);
+                }, duration);
+            }
+
+            playStep(0);
+        };
+
+        window.stopDialogue = function() {
+            window.isDialoguePlaying = false;
+            if (window.dialogueTimer) {
+                clearTimeout(window.dialogueTimer);
+                window.dialogueTimer = null;
+            }
+            if (window.speechSynthesis) {
+                window.speechSynthesis.cancel();
+            }
+            const btn = document.getElementById('play-all-dialogue-btn');
+            if (btn) btn.innerHTML = '<span>▶️</span> تشغيل المحادثة بالكامل تلقائياً';
+        };
+    </script>
+
+    <!-- Universal Framework Scripts -->
+    <script src="../../assets/js/bidi.js"></script>
+    <script src="../../assets/js/audio.js"></script>
+    <script src="../../assets/js/tabs.js"></script>
+    <script src="../../assets/js/quiz-engine.js"></script>
+    <script src="../../assets/js/story-engine.js"></script>
+    <script src="../../assets/js/ui.js"></script>
+    <script src="../../assets/js/practice-hub.js"></script>
+    <script src="../../assets/js/main.js"></script>
+
+    <!-- Pure Decoupled Lesson Data Payload -->
+    <script src="./connect-plus-lesson-1-2.data.js"></script>
+
+    <!-- Universal Curriculum Dynamic Renderer -->
+    <script src="../../assets/js/curriculum-renderer.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.CurriculumRenderer && typeof window.CurriculumRenderer.init === 'function') {
+                window.CurriculumRenderer.init();
+            }
+            if (typeof window.selectStoryDeck === 'function') {
+                window.selectStoryDeck(0);
+            }
+            if (typeof window.selectDialogueDeck === 'function') {
+                window.selectDialogueDeck(0);
+            }
+        });
+    </script>
+
+    <script id="studio-payload" type="application/json">
+    {
+      "archetype": "curriculum_tabs",
+      "stage": "Prep_3",
+      "unit": "unit-2",
+      "fileName": "connect-plus-lesson-1-2.html",
+      "title": "Connect Plus (G9) - Unit 2 - Lessons 1 & 2: Changes",
+      "description": "المفردات الكاملة (51 كلمة)، استوديو القراءة والقصص التفاعلية (3 كتب عبر StoryEngine)، محرك المحادثات التفاعلية الناطقة، زمن المستقبل المستمر، تصريف الأفعال، التعريفات والمترادفات، واختبار شامل 35 سؤالاً 🎯",
+      "keyVocabularyCount": 20,
+      "extraVocabularyCount": 31,
+      "definitionsCount": 2,
+      "verbsCount": 4,
+      "synonymsAntonymsCount": 5,
+      "affixesCount": 6,
+      "storyDecksCount": 3,
+      "dialogueDecksCount": 2,
+      "quizQuestionsCount": 35
+    }
+    </script>
+</body>
+</html>

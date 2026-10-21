@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prep 3 - Unit 1 - Lessons 5 & 6 | Mr. Ahmed Assem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb">
+            <span>Prep_3</span> / <span>Unit 1</span> / <span>Lessons 5 & 6 (Let's Talk • This is Me)</span>
+        </div>
+
+        <!-- Teacher Profile Header -->
+        <div class="teacher-profile-header">
+            <div class="avatar-wrapper">
+                <img src="../../my-photo-profile.webp" alt="Mr. Ahmed Assem" class="teacher-avatar" onerror="this.onerror=null; this.src='../../my-photo-profile.webp';">
+            </div>
+            <h1 class="teacher-title">Mr. Ahmed Assem</h1>
+            <div class="slogan">✨ Easy Peasy Ya Englezeey ✨</div>
+            <div class="badges-group">
+                <span class="badge badge-active">Prep 3 • Unit 1 • Lessons 5 & 6</span>
+                <span class="badge badge-gold">📖 SB Pages 22 : 24</span>
+            </div>
+            <h2 id="title" class="lesson-title-display">Lessons 5 & 6: Let's Talk • This is Me</h2>
+            <p id="description" class="lesson-desc-display">المفردات الأساسية والتكميلية، الأفعال الشاذة، المتلازمات اللفظية، المرادفات والمتضادات، المقاطع البادئة والناهية، والتعبيرات وحروف الجر مع اختبار تفاعلي شامل 🎯</p>
+        </div>
+
+        <!-- Tabs Navigation Bar -->
+        <div class="tabs-container">
+            <button class="tab-btn active" onclick="switchTab('vocab', this)">📖 المفردات (Vocabulary)</button>
+            <button class="tab-btn" onclick="switchTab('storybook', this)">📚 قصة وحوار تفاعلي (Story Book)</button>
+            <button class="tab-btn" onclick="switchTab('verbs', this)">⚡ الأفعال وتصريفاتها</button>
+            <button class="tab-btn" onclick="switchTab('collocations', this)">🔗 المتلازمات اللفظية</button>
+            <button class="tab-btn" onclick="switchTab('synonyms', this)">⚖️ المرادفات والمتضادات</button>
+            <button class="tab-btn" onclick="switchTab('affixes', this)">🔤 البوادئ واللواحق والتعبيرات</button>
+            <button class="tab-btn" onclick="switchTab('quiz', this)">🎯 اختبار الدرس الشامل (Quiz)</button>
+        </div>
+
+
+        <!-- Tab 1: Key & Lesson Vocabulary -->
+        <div id="vocab" class="tab-content active"></div>
+
+        <div id="storybook" class="tab-content">
+            <!-- Main Story & Reading Header -->
+            <div class="video-lesson-card">
+                <div class="dialogue-chat-header">
+                    <div>
+                        <span class="badge badge-active">Skills • Reading & Listening</span>
+                        <h3 class="section-subtitle">📖 Interactive Story Book & Dialogues</h3>
+                        <p class="lesson-desc-display">نصوص القراءة والحوار المنهجي (SB Pages 22 & 23) مع قارئ صوتي تفاعلي جملة بجملة وترجمة المفردات المستهدفة</p>
+                    </div>
+                    <div class="badges-group">
+                        <button class="storyteller-btn" onclick="playAllStory()" id="play-all-btn">
+                            <span>▶️</span> تشغيل القراءة كاملة
+                        </button>
+                        <button class="action-btn secondary" onclick="stopStorySpeech()">
+                            ⏹️ إيقاف
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dialogue 1: Respecting Personal Identity (SB Page 22) -->
+            <div class="card" style="margin-bottom: 24px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 14px; margin-bottom: 18px; flex-wrap: wrap; gap: 10px;">
+                    <div>
+                        <span class="badge" style="background: rgba(255, 184, 0, 0.15); color: #ffb800; border: 1px solid #ffb800;">on Lesson 5 SB page 22</span>
+                        <h4 style="color: var(--accent-primary); font-size: 1.25rem; margin: 6px 0 2px;">Respecting Personal Identity</h4>
+                        <small style="color: var(--text-muted);">حوار تفاعلي بين هالة وعمر حول احترام الهوية الشخصية وتقدير الذات</small>
+                    </div>
+                    <button class="audio-btn" onclick="speakText('Respecting Personal Identity'); playSound('click');" title="استمع للعنوان">🔊</button>
+                </div>
+
+                <!-- Story Chat Stream -->
+                <div class="story-dialogue-container" id="dialogue-stream-1">
+                    
+                    <!-- Line 1: Hala -->
+                    <div class="story-line-bubble" id="story-line-1">
+                        <div class="speaker-avatar">👩‍🎓</div>
+                        <div class="speaker-body">
+                            <div class="speaker-header">
+                                <strong class="speaker-title">Hala (هالة):</strong>
+                                <button class="audio-btn" onclick="speakStoryLine('Hi Omar! Have you ever learned about personal identity?', 1); playSound('click');">🔊</button>
+                            </div>
+                            <div class="story-en-sentence">
+                                "Hi Omar! Have you ever learned about <span class="highlight-vocab" title="الهوية الشخصية (1)">personal identity<sup>(1)</sup></span>?"
+                            </div>
+                            <div class="story-ar-translation">
+                                💬 <em>مرحباً يا عمر! هل تعلمت من قبل عن الهوية الشخصية؟</em>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Line 2: Omar -->
+                    <div class="story-line-bubble speaker-alt" id="story-line-2">
+                        <div class="speaker-avatar alt-avatar">👨‍🎓</div>
+                        <div class="speaker-body">
+                            <div class="speaker-header">
+                                <strong class="speaker-title alt-title">Omar (عمر):</strong>
+                                <button class="audio-btn" onclick="speakStoryLine('Yes, I have. I\'ve learned that everyone is different and special in their own way.', 2); playSound('click');">🔊</button>
+                            </div>
+                            <div class="story-en-sentence">
+                                "Yes, I have. I've learned that everyone is different and <span class="highlight-vocab green-tag">special</span> in <span class="highlight-vocab orange-tag">their own way</span>."
+                            </div>
+                            <div class="story-ar-translation">
+                                💬 <em>نعم، لقد تعلمت. تعلمت أن كل شخص مختلف ومميز بطريقته الخاصة.</em>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Line 3: Hala -->
+                    <div class="story-line-bubble" id="story-line-3">
+                        <div class="speaker-avatar">👩‍🎓</div>
+                        <div class="speaker-body">
+                            <div class="speaker-header">
+                                <strong class="speaker-title">Hala (هالة):</strong>
+                                <button class="audio-btn" onclick="speakStoryLine('That\'s right! I\'ve gone through a lot of self-discovery this year. It has helped me feel more confident.', 3); playSound('click');">🔊</button>
+                            </div>
+                            <div class="story-en-sentence">
+                                "That's right! I've gone through a lot of <span class="highlight-vocab" title="اكتشاف الذات (2)">self-discovery<sup>(2)</sup></span> this year. It has helped me feel more <span class="highlight-vocab" title="واثق من نفسه (3)">confident<sup>(3)</sup></span>."
+                            </div>
+                            <div class="story-ar-translation">
+                                💬 <em>هذا صحيح! لقد مررت بالكثير من اكتشاف الذات هذا العام، وقد ساعدني ذلك على الشعور بمزيد من الثقة بالنفس.</em>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Line 4: Omar -->
+                    <div class="story-line-bubble speaker-alt" id="story-line-4">
+                        <div class="speaker-avatar alt-avatar">👨‍🎓</div>
+                        <div class="speaker-body">
+                            <div class="speaker-header">
+                                <strong class="speaker-title alt-title">Omar (عمر):</strong>
+                                <button class="audio-btn" onclick="speakStoryLine('That\'s great! I\'ve also started to feel more confident. I think my self-respect has improved because I\'ve learned to accept myself.', 4); playSound('click');">🔊</button>
+                            </div>
+                            <div class="story-en-sentence">
+                                "That's great! I've also started to feel more confident. I think my <span class="highlight-vocab" title="تقدير الذات (4)">self-respect<sup>(4)</sup></span> has improved because I've learned to <span class="highlight-vocab" title="يقبل (5)">accept<sup>(5)</sup></span> myself."
+                            </div>
+                            <div class="story-ar-translation">
+                                💬 <em>هذا رائع! لقد بدأت أنا أيضاً في الشعور بمزيد من الثقة. أعتقد أن احترامي لذاتي قد تحسن لأنني تعلمت أن أتقبل نفسي.</em>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Line 5: Hala -->
+                    <div class="story-line-bubble" id="story-line-5">
+                        <div class="speaker-avatar">👩‍🎓</div>
+                        <div class="speaker-body">
+                            <div class="speaker-header">
+                                <strong class="speaker-title">Hala (هالة):</strong>
+                                <button class="audio-btn" onclick="speakStoryLine('Me too. And I\'ve noticed that people who have faced challenges in a positive way have shown a lot of strength!', 5); playSound('click');">🔊</button>
+                            </div>
+                            <div class="story-en-sentence">
+                                "Me too. And I've noticed that people who have faced challenges in a <span class="highlight-vocab" title="إيجابي (6)">positive<sup>(6)</sup></span> way have shown a lot of <span class="highlight-vocab" title="قوة (7)">strength<sup>(7)</sup></span>!"
+                            </div>
+                            <div class="story-ar-translation">
+                                💬 <em>وأنا كذلك. ولاحظت أن الأشخاص الذين واجهوا التحديات بطريقة إيجابية أظهروا الكثير من القوة!</em>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Line 6: Omar -->
+                    <div class="story-line-bubble speaker-alt" id="story-line-6">
+                        <div class="speaker-avatar alt-avatar">👨‍🎓</div>
+                        <div class="speaker-body">
+                            <div class="speaker-header">
+                                <strong class="speaker-title alt-title">Omar (عمر):</strong>
+                                <button class="audio-btn" onclick="speakStoryLine('Yes, and many students have been helped by teachers who support them. A lot of good changes have been made in our school.', 6); playSound('click');">🔊</button>
+                            </div>
+                            <div class="story-en-sentence">
+                                "Yes, and many students have been helped by teachers who <span class="highlight-vocab green-tag">support</span> them. A lot of good <span class="highlight-vocab orange-tag">changes have been made</span> in our school."
+                            </div>
+                            <div class="story-ar-translation">
+                                💬 <em>نعم، وقد تمت مساعدة العديد من الطلاب من قِبل المعلمين الذين يدعمونهم. لقد حدثت العديد من التغييرات الجيدة في مدرستنا.</em>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Line 7: Hala -->
+                    <div class="story-line-bubble" id="story-line-7">
+                        <div class="speaker-avatar">👩‍🎓</div>
+                        <div class="speaker-body">
+                            <div class="speaker-header">
+                                <strong class="speaker-title">Hala (هالة):</strong>
+                                <button class="audio-btn" onclick="speakStoryLine('I agree. I\'ve also seen how important it is to act with honesty. When someone has stayed true to who they are, people respect them.', 7); playSound('click');">🔊</button>
+                            </div>
+                            <div class="story-en-sentence">
+                                "I agree. I've also seen how important it is to <span class="highlight-vocab" title="أمانة / نزاهة (8)">act with honesty<sup>(8)</sup></span>. When someone has stayed true to who they are, people respect them."
+                            </div>
+                            <div class="story-ar-translation">
+                                💬 <em>أوافقك الرأي. لقد رأيت أيضاً كم هو مهم التصرف بأمانة ونزاهة. عندما يظل الشخص مخلصاً لطبيعته الحقيقية، يحترمه الناس.</em>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Line 8: Omar -->
+                    <div class="story-line-bubble speaker-alt" id="story-line-8">
+                        <div class="speaker-avatar alt-avatar">👨‍🎓</div>
+                        <div class="speaker-body">
+                            <div class="speaker-header">
+                                <strong class="speaker-title alt-title">Omar (عمر):</strong>
+                                <button class="audio-btn" onclick="speakStoryLine('That\'s true. Respecting personal identity means understanding that we all have different experiences!', 8); playSound('click');">🔊</button>
+                            </div>
+                            <div class="story-en-sentence">
+                                "That's true. Respecting personal identity means understanding that we all have different <span class="highlight-vocab" title="خبرات / تجارب (9)">experiences<sup>(9)</sup></span>!"
+                            </div>
+                            <div class="story-ar-translation">
+                                💬 <em>هذا حقيقي. احترام الهوية الشخصية يعني أن نفهم أن لدينا جميعاً تجارب وخبرات مختلفة!</em>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Line 9: Hala -->
+                    <div class="story-line-bubble" id="story-line-9">
+                        <div class="speaker-avatar">👩‍🎓</div>
+                        <div class="speaker-body">
+                            <div class="speaker-header">
+                                <strong class="speaker-title">Hala (هالة):</strong>
+                                <button class="audio-btn" onclick="speakStoryLine('Exactly! When people feel accepted, their confidence grows. That\'s why it\'s important to always be kind and supportive.', 9); playSound('click');">🔊</button>
+                            </div>
+                            <div class="story-en-sentence">
+                                "Exactly! When people feel accepted, their <span class="highlight-vocab" title="ثقة (10)">confidence<sup>(10)</sup></span> grows. That's why it's important to always be kind and <span class="highlight-vocab" title="مؤيد / مساند / داعم (11)">supportive<sup>(11)</sup></span>."
+                            </div>
+                            <div class="story-ar-translation">
+                                💬 <em>بالضبط! عندما يشعر الناس بالقبول، تنمو ثقتهم. لهذا السبب من المهم أن نكون دائماً لطفاء وداعمين لبعضنا البعض.</em>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Vocabulary Footnotes -->
+                <div class="story-glossary-box">
+                    <div class="glossary-title">📌 مسرد المصطلحات المرقمة في الحوار (Vocabulary Footnotes):</div>
+                    <div class="glossary-grid">
+                        <div class="glossary-item"><strong>(1)</strong> personal identity: الهوية الشخصية</div>
+                        <div class="glossary-item"><strong>(2)</strong> self-discovery: اكتشاف الذات</div>
+                        <div class="glossary-item"><strong>(3)</strong> confident: واثق من نفسه</div>
+                        <div class="glossary-item"><strong>(4)</strong> self-respect: تقدير الذات</div>
+                        <div class="glossary-item"><strong>(5)</strong> accept: يقبل / يتقبل</div>
+                        <div class="glossary-item"><strong>(6)</strong> positive: إيجابي</div>
+                        <div class="glossary-item"><strong>(7)</strong> strength: قوة</div>
+                        <div class="glossary-item"><strong>(8)</strong> honesty: أمانة / نزاهة</div>
+                        <div class="glossary-item"><strong>(9)</strong> experiences: خبرات / تجارب</div>
+                        <div class="glossary-item"><strong>(10)</strong> confidence: ثقة</div>
+                        <div class="glossary-item"><strong>(11)</strong> supportive: مؤيد / مساند / داعم</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dialogue 2: Mini Conversation (SB Page 23) -->
+            <div class="dialogue-chat-card">
+                <div class="dialogue-chat-header">
+                    <div>
+                        <span class="badge badge-active">on Lesson 5 SB page 23</span>
+                        <h4 class="section-subtitle">Mini Dialogue: Learning Something New</h4>
+                        <small class="lesson-desc-display">حوار قصير بين Student A و Student B حول التعرف على القوة الذاتية</small>
+                    </div>
+                    <button class="audio-btn" onclick="speakText('on Lesson 5 SB page 23. Student A and Student B dialogue'); playSound('click');">🔊</button>
+                </div>
+
+                <div class="dialogue-lines-list">
+                    <!-- A1 -->
+                    <div class="dialogue-chat-line">
+                        <strong class="speaker-tag">Student A:</strong>
+                        <span class="line-text" dir="ltr">Hi! You look happy today.</span>
+                        <button class="audio-btn" onclick="speakText('Hi! You look happy today.'); playSound('click');">🔊</button>
+                    </div>
+                    <!-- B1 -->
+                    <div class="dialogue-chat-line speaker-b">
+                        <strong class="speaker-tag">Student B:</strong>
+                        <span class="line-text" dir="ltr">Yes! I've learned something new about myself.</span>
+                        <button class="audio-btn" onclick="speakText('Yes! I\'ve learned something new about myself.'); playSound('click');">🔊</button>
+                    </div>
+                    <!-- A2 -->
+                    <div class="dialogue-chat-line">
+                        <strong class="speaker-tag">Student A:</strong>
+                        <span class="line-text" dir="ltr">That's cool! What did you learn?</span>
+                        <button class="audio-btn" onclick="speakText('That\'s cool! What did you learn?'); playSound('click');">🔊</button>
+                    </div>
+                    <!-- B2 -->
+                    <div class="dialogue-chat-line speaker-b">
+                        <strong class="speaker-tag">Student B:</strong>
+                        <span class="line-text" dir="ltr">I've learned that I know how to be different and strong.</span>
+                        <button class="audio-btn" onclick="speakText('I\'ve learned that I know how to be different and strong.'); playSound('click');">🔊</button>
+                    </div>
+                    <!-- A3 -->
+                    <div class="dialogue-chat-line">
+                        <strong class="speaker-tag">Student A:</strong>
+                        <span class="line-text" dir="ltr">That's great. You've shown a lot of strength.</span>
+                        <button class="audio-btn" onclick="speakText('That\'s great. You\'ve shown a lot of strength.'); playSound('click');">🔊</button>
+                    </div>
+                    <!-- B3 -->
+                    <div class="dialogue-chat-line speaker-b">
+                        <strong class="speaker-tag">Student B:</strong>
+                        <span class="line-text" dir="ltr">Thank you! I feel more confident now.</span>
+                        <button class="audio-btn" onclick="speakText('Thank you! I feel more confident now.'); playSound('click');">🔊</button>
+                    </div>
+                    <!-- A4 -->
+                    <div class="dialogue-chat-line">
+                        <strong class="speaker-tag">Student A:</strong>
+                        <span class="line-text" dir="ltr">I can see that. You always have good self-respect.</span>
+                        <button class="audio-btn" onclick="speakText('I can see that. You always have good self-respect.'); playSound('click');">🔊</button>
+                    </div>
+                    <!-- B4 -->
+                    <div class="dialogue-chat-line speaker-b">
+                        <strong class="speaker-tag">Student B:</strong>
+                        <span class="line-text" dir="ltr">And I always try to act with honesty.</span>
+                        <button class="audio-btn" onclick="speakText('And I always try to act with honesty.'); playSound('click');">🔊</button>
+                    </div>
+                    <!-- A5 -->
+                    <div class="dialogue-chat-line">
+                        <strong class="speaker-tag">Student A:</strong>
+                        <span class="line-text" dir="ltr">That's really important. I'm super happy for you!</span>
+                        <button class="audio-btn" onclick="speakText('That\'s really important. I\'m super happy for you!'); playSound('click');">🔊</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reading Comprehension Interactive Check (3 Quick Questions) -->
+            <div class="card">
+                <h4 class="section-subtitle">⚡ فحص سريع لفهم القراءة (Quick Story Comprehension):</h4>
+                <div class="dialogue-lines-list">
+                    <div class="story-check-card">
+                        <div class="check-title" dir="ltr">1. What has helped Hala feel more confident this year?</div>
+                        <div class="check-options options-grid">
+                            <button class="check-btn" onclick="checkStoryAnswer(this, true, 'ممتاز! Going through self-discovery.')">A lot of self-discovery</button>
+                            <button class="check-btn" onclick="checkStoryAnswer(this, false, 'حاول ثانية!')">Copying others</button>
+                            <button class="check-btn" onclick="checkStoryAnswer(this, false, 'حاول ثانية!')">Watching movies</button>
+                        </div>
+                    </div>
+
+                    <div class="story-check-card">
+                        <div class="check-title" dir="ltr">2. Respecting personal identity means understanding that we all have ________.</div>
+                        <div class="check-options options-grid">
+                            <button class="check-btn" onclick="checkStoryAnswer(this, true, 'أحسنت! different experiences.')">different experiences</button>
+                            <button class="check-btn" onclick="checkStoryAnswer(this, false, 'حاول ثانية!')">the exact same opinions</button>
+                            <button class="check-btn" onclick="checkStoryAnswer(this, false, 'حاول ثانية!')">no self-respect</button>
+                        </div>
+                    </div>
+
+                    <div class="story-check-card">
+                        <div class="check-title" dir="ltr">3. When people feel accepted, what happens to their confidence?</div>
+                        <div class="check-options options-grid">
+                            <button class="check-btn" onclick="checkStoryAnswer(this, true, 'رائع! Their confidence grows.')">It grows</button>
+                            <button class="check-btn" onclick="checkStoryAnswer(this, false, 'حاول ثانية!')">It disappears</button>
+                            <button class="check-btn" onclick="checkStoryAnswer(this, false, 'حاول ثانية!')">It damages</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tab 3: Irregular Verbs -->
+        <div id="verbs" class="tab-content"></div>
+
+        <!-- Tab 4: Collocations -->
+        <div id="collocations" class="tab-content"></div>
+
+        <!-- Tab 5: Synonyms & Antonyms -->
+        <div id="synonyms" class="tab-content"></div>
+
+        <!-- Tab 6: Affixes, Expressions & Prepositions -->
+        <div id="affixes" class="tab-content"></div>
+
+        <div id="quiz" class="tab-content">
+            <div class="score-board">
+                <span>السؤال: <span id="current-q">1</span> / <span id="total-q">65</span></span>
+                <span>النقاط: <span id="score">0</span> 🌟</span>
+            </div>
+
+            <div class="question-card">
+                <span class="emoji-display" id="emoji">🎯</span>
+                <div class="question-text" id="question">جاري تحميل السؤال...</div>
+                <div class="options-grid" id="options"></div>
+                <div class="feedback" id="feedback"></div>
+            </div>
+
+            <div class="center-row">
+                <button class="action-btn next-btn" id="next-btn" onclick="nextQuestion()" style="display: none;">السؤال التالي ➔</button>
+            </div>
+        </div>
+
+        <!-- Bottom Return Controls -->
+        <div class="nav-controls">
+            <a href="./index.html" class="action-btn secondary" data-sound-click="click">⬅ العودة لقائمة دروس الوحدة</a>
+        </div>
+    </div>
+
+
+    <!-- Universal Framework Scripts -->
+    <script src="../../assets/js/bidi.js"></script>
+    <script src="../../assets/js/audio.js"></script>
+    <script src="../../assets/js/tabs.js"></script>
+    <script src="../../assets/js/quiz-engine.js"></script>
+    <script src="../../assets/js/story-engine.js"></script>
+    <script src="../../assets/js/ui.js"></script>
+    <script src="../../assets/js/main.js"></script>
+
+    <!-- Pure Decoupled Lesson Data Payload -->
+    <script src="./lesson-5-6.data.js"></script>
+
+    <!-- Universal Curriculum Dynamic Renderer -->
+    <script src="../../assets/js/curriculum-renderer.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.CurriculumRenderer && typeof window.CurriculumRenderer.init === 'function') {
+                window.CurriculumRenderer.init();
+            }
+            if (window.StoryEngine && window.lessonData && window.lessonData.storyLines) {
+                window.storyEngine = new StoryEngine(window.lessonData.storyLines);
+            }
+        });
+    </script>
+</body>
+</html>

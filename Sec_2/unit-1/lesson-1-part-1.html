@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sec 2 - Unit 1 - Lesson 1.1 Part 1 | Mr. Ahmed Assem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/curriculum.css">
+    <link rel="stylesheet" href="../../assets/css/grammar-slides.css">
+    <link rel="stylesheet" href="../../assets/css/quiz.css">
+</head>
+<body class="lesson-page">
+
+    <div class="container">
+        <!-- Breadcrumbs Navigation -->
+        <nav class="breadcrumb-bar" aria-label="مسار التنقل">
+            <a href="../../index.html">الرئيسية</a>
+            <span class="breadcrumb-sep">/</span>
+            <a href="../index.html">الصف الثاني الثانوي</a>
+            <span class="breadcrumb-sep">/</span>
+            <a href="./index.html">Unit 1</a>
+            <span class="breadcrumb-sep">/</span>
+            <span class="breadcrumb-current">Lesson 1.1 (Part 1)</span>
+        </nav>
+
+        <!-- Lesson Header -->
+        <div class="teacher-profile-header">
+            <div class="avatar-wrapper">
+                <img src="../../my-photo-profile.webp" alt="Mr. Ahmed Assem" class="teacher-avatar" onerror="this.onerror=null; this.src='../../my-photo-profile.webp';">
+            </div>
+            <h1 class="teacher-title">Mr. Ahmed Assem</h1>
+            <div class="slogan">✨ Easy Peasy Ya Englezeey ✨</div>
+            <div class="badges-row">
+                <span class="badge badge-active">Sec 2 • Unit 1 • Lesson 1.1 (Part 1)</span>
+            </div>
+            <h2 id="title" class="lesson-header-title">Lesson 1.1 (Part 1): Media, Language &amp; Self-Image</h2>
+            <p id="description" class="lesson-desc-display">المفردات الأساسية والهامة، التعريفات، المرادفات والمتضادات، شرح ضمائر وظروف الوصل بالفيديو (Relative Clauses)، والمساعد الذكي وخريطة المهندس الذهنية، واختبار شامل 🎯</p>
+        </div>
+
+        <!-- Signature Cyane Center-Node Divider -->
+        <div class="cyane-divider" aria-hidden="true"></div>
+
+        <!-- Navigation Tabs -->
+        <div class="tabs-container">
+            <button class="tab-btn active" onclick="switchTab('key-vocab', this)">📖 المفردات الرئيسية (Key Vocab)</button>
+            <button class="tab-btn" onclick="switchTab('important-vocab', this)">📝 مفردات هامة (Important Vocab)</button>
+            <button class="tab-btn" onclick="switchTab('definitions', this)">📚 التعريفات (Definitions)</button>
+            <button class="tab-btn" onclick="switchTab('synonyms', this)">⚖️ المرادفات (Synonyms)</button>
+            <button class="tab-btn" onclick="switchTab('antonyms', this)">🔄 المتضادات (Antonyms)</button>
+            <button class="tab-btn" onclick="switchTab('grammar-video', this)">🎥 شرح القواعد بالفيديو (Relative Clauses)</button>
+            <button class="tab-btn" onclick="switchTab('quiz', this)">🎯 اختبار الدرس الشامل (Quiz)</button>
+        </div>
+
+        <!-- Dynamic Tabs Content (Rendered by curriculum-renderer.js) -->
+        <div id="key-vocab" class="tab-content active"></div>
+        <div id="important-vocab" class="tab-content" style="display: none;"></div>
+        <div id="definitions" class="tab-content" style="display: none;"></div>
+        <div id="synonyms" class="tab-content" style="display: none;"></div>
+        <div id="antonyms" class="tab-content" style="display: none;"></div>
+
+        <!-- Tab 6: Grammar & Video (Relative Clauses) -->
+        <div id="grammar-video" class="tab-content">
+            <!-- Video Embed Card -->
+            <div class="video-lesson-card" style="margin-bottom: 30px;">
+                <div class="video-header-bar">
+                    <div>
+                        <div class="video-lesson-title">🎥 المحاضرة المرئية: فك شفرة ضمائر وظروف الوصل (Relative Pronouns & Adverbs)</div>
+                        <div style="color: var(--text-muted); font-size: 0.9rem; margin-top: 4px;">✨ شرح مبسط وممتع بطريقة "السهل الممتنع" مع مستر أحمد عاصم | Easy Peasy Ya Englezeey</div>
+                    </div>
+                    <a href="https://youtu.be/Xs-pKy9sgpY" target="_blank" rel="noopener noreferrer" class="badge badge-active video-external-link" data-sound-click="click">▶️ مشاهدة على YouTube</a>
+                </div>
+                <div class="video-responsive-wrapper">
+                    <iframe src="https://www.youtube-nocookie.com/embed/Xs-pKy9sgpY" title="Relative Pronouns & Adverbs - Mr. Ahmed Assem" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Slide Controller Toolbar -->
+            <div class="slide-control-toolbar">
+                <div class="slide-nav-group" id="slide-nav-controls">
+                    <button class="slide-nav-btn" id="prev-slide-btn" onclick="prevSlide()" title="الشريحة السابقة (السهم الأيمن)">
+                        <span>❮</span> السابق
+                    </button>
+                    <span class="slide-counter-badge" id="slide-indicator">الشريحة 1 من 15</span>
+                    <button class="slide-nav-btn" id="next-slide-btn" onclick="nextSlide()" title="الشريحة التالية (السهم الأيسر)">
+                        التالي <span>❯</span>
+                    </button>
+                </div>
+
+                <div class="view-mode-toggle">
+                    <button class="view-mode-btn active" id="btn-mode-presentation" onclick="setSlideMode('presentation')">🖥️ نمط العرض</button>
+                    <button class="view-mode-btn" id="btn-mode-mindmap" onclick="setSlideMode('mindmap')">🧭 المساعد الذكي والمطبات</button>
+                    <button class="view-mode-btn" id="btn-mode-all" onclick="setSlideMode('all')">📜 عرض الكل</button>
+                </div>
+            </div>
+
+            <!-- Slide Jump Pills -->
+            <div class="slide-quick-pills" id="slide-pills-bar">
+                <button class="slide-pill-item active" onclick="goToSlide(0)">1. الغلاف</button>
+                <button class="slide-pill-item" onclick="goToSlide(1)">2. The Matchmakers</button>
+                <button class="slide-pill-item" onclick="goToSlide(2)">3. العيلة الأساسية</button>
+                <button class="slide-pill-item" onclick="goToSlide(3)">4. Who vs Whom</button>
+                <button class="slide-pill-item" onclick="goToSlide(4)">5. لعبة حروف الجر</button>
+                <button class="slide-pill-item" onclick="goToSlide(5)">6. بتاع مين؟ (Whose)</button>
+                <button class="slide-pill-item" onclick="goToSlide(6)">7. مطب أفعال وأسماء</button>
+                <button class="slide-pill-item" onclick="goToSlide(7)">8. الزمان والمكان</button>
+                <button class="slide-pill-item" onclick="goToSlide(8)">9. فكّة When و Where</button>
+                <button class="slide-pill-item" onclick="goToSlide(9)">10. المطب الكبير</button>
+                <button class="slide-pill-item" onclick="goToSlide(10)">11. حوار الفواصل</button>
+                <button class="slide-pill-item" onclick="goToSlide(11)">12. فن الحذف 1</button>
+                <button class="slide-pill-item" onclick="goToSlide(12)">13. الحذف مع الأفعال</button>
+                <button class="slide-pill-item" onclick="goToSlide(13)">14. تريكة Which</button>
+                <button class="slide-pill-item" onclick="goToSlide(14)">15. خريطة المهندس</button>
+            </div>
+
+            <!-- Mind Map & Helpers Section (Visible in Mind Map Mode) -->
+            <div class="mindmap-section-wrapper" id="grammar-mindmap-view" style="display: none;">
+                <!-- 2. Interactive Decision Tree / Smart Solver -->
+                <div class="decision-solver-card">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                        <h3 style="margin: 0; color: #ffb800; font-size: 1.3rem; font-weight: 900;">
+                            🧭 المساعد الذكي لاختيار ضمير الوصل المناسب (Decision Tree)
+                        </h3>
+                        <span class="badge" style="background: rgba(255, 184, 0, 0.2); color: #ffb800;">3 خطوات سريعة</span>
+                    </div>
+                    <p style="color: #94a3b8; font-size: 0.95rem; margin-bottom: 20px;">
+                        اختر مواصفات الجملة التي أمامك في الامتحان لتحديد الضمير الصحيح فوراً مع التفسير العلمي:
+                    </p>
+
+                    <!-- Step 1 -->
+                    <div class="decision-step-box">
+                        <div class="decision-step-title">1️⃣ الكلمة اللي قبل النقط نوعها إيه؟</div>
+                        <div class="decision-options-row" id="dt-step-antecedent">
+                            <button class="decision-opt-btn active" onclick="setDecisionOption('antecedent', 'person')">👤 شخص عاقل</button>
+                            <button class="decision-opt-btn" onclick="setDecisionOption('antecedent', 'thing')">📦 شيء / حيوان</button>
+                            <button class="decision-opt-btn" onclick="setDecisionOption('antecedent', 'place')">🏨 مكان</button>
+                            <button class="decision-opt-btn" onclick="setDecisionOption('antecedent', 'time')">📅 زمان</button>
+                            <button class="decision-opt-btn" onclick="setDecisionOption('antecedent', 'owner')">🔑 مالك ومملوك (ملكية)</button>
+                            <button class="decision-opt-btn" onclick="setDecisionOption('antecedent', 'clause')">📝 جملة كاملة سابقة</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="decision-step-box">
+                        <div class="decision-step-title">2️⃣ هل يوجد حرف جر قبل النقط مباشرة؟ (Preposition)</div>
+                        <div class="decision-options-row" id="dt-step-prep">
+                            <button class="decision-opt-btn active" onclick="setDecisionOption('prep', 'no')">❌ لا يوجد حرف جر</button>
+                            <button class="decision-opt-btn" onclick="setDecisionOption('prep', 'yes')">✅ نعم (to / with / in / on...)</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="decision-step-box">
+                        <div class="decision-step-title">3️⃣ هل توجد فواصل (Commas) حول عبارة الوصل؟</div>
+                        <div class="decision-options-row" id="dt-step-commas">
+                            <button class="decision-opt-btn active" onclick="setDecisionOption('commas', 'no')">❌ لا توجد فواصل (Defining)</button>
+                            <button class="decision-opt-btn" onclick="setDecisionOption('commas', 'yes')">✅ توجد فواصل (Non-Defining ,)</button>
+                        </div>
+                    </div>
+
+                    <!-- Result Box -->
+                    <div class="decision-result-panel" id="dt-result-box">
+                        <div class="decision-result-pronoun" id="dt-result-pronoun">Who / That</div>
+                        <div class="decision-result-explanation" id="dt-result-exp">
+                            تستخدم <strong>Who</strong> أو <strong>That</strong> لأن الكلمة عاقل، ولا يوجد حرف جر ولا فواصل. لو عاقل مفعول به يمكنك استخدام <strong>Whom</strong> أو الحذف تماماً.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Exam Trap Detectors Hub -->
+                <div class="trap-hub-card">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                        <h3 style="margin: 0; color: #ff007f; font-size: 1.3rem; font-weight: 900;">
+                            🚨 كاشف مطبات الامتحان الـ 5 (The 5 Golden Traps)
+                        </h3>
+                        <span class="badge" style="background: rgba(255, 0, 127, 0.2); color: #ff007f;">احذر الوقوع هنا</span>
+                    </div>
+
+                    <div class="trap-grid">
+                        <div class="trap-mini-card">
+                            <div class="trap-badge-title">⚠️ مطب 1: الزمان والمكان مع Which</div>
+                            <div class="trap-wrong-ex"><span style="color: #fca5a5;">❌</span> <span dir="ltr">The week when I spent in Alexandria.</span></div>
+                            <div class="trap-correct-ex"><span style="color: #6ee7b7;">✅</span> <span dir="ltr">The week which I spent in Alexandria.</span></div>
+                            <div class="trap-hint">الفعل spend لا يأخذ حرف جر زمان (نحن نقضي الأسبوع كمفعول به)، لذا نستخدم Which وليس When!</div>
+                        </div>
+
+                        <div class="trap-mini-card">
+                            <div class="trap-badge-title">⚠️ مطب 2: أفعال ولا أسماء مع Whose؟</div>
+                            <div class="trap-wrong-ex"><span style="color: #fca5a5;">❌</span> <span dir="ltr">Sama whose visits her grandma... (visits = تزور)</span></div>
+                            <div class="trap-correct-ex"><span style="color: #6ee7b7;">✅</span> <span dir="ltr">Sama who visits / Sama whose visits are regular...</span></div>
+                            <div class="trap-hint">بعد Whose يجب أن يأتي اسم مملوك حتماً. لو كانت الكلمة فعلاً اختر Who!</div>
+                        </div>
+
+                        <div class="trap-mini-card">
+                            <div class="trap-badge-title">⚠️ مطب 3: حروف الجر مع Who و That</div>
+                            <div class="trap-wrong-ex"><span style="color: #fca5a5;">❌</span> <span dir="ltr">The doctor to who / to that I spoke.</span></div>
+                            <div class="trap-correct-ex"><span style="color: #6ee7b7;">✅</span> <span dir="ltr">The doctor to whom I spoke / who I spoke to.</span></div>
+                            <div class="trap-hint">ممنوع منعاً باتاً وضع حرف جر قبل Who أو That مباشرة! حرف الجر يسبق Whom فقط أو يوضع في النهاية.</div>
+                        </div>
+
+                        <div class="trap-mini-card">
+                            <div class="trap-badge-title">⚠️ مطب 4: الجوكر That مع الفواصل</div>
+                            <div class="trap-wrong-ex"><span style="color: #fca5a5;">❌</span> <span dir="ltr">Cairo, that is the capital, is crowded.</span></div>
+                            <div class="trap-correct-ex"><span style="color: #6ee7b7;">✅</span> <span dir="ltr">Cairo, which is the capital, is crowded.</span></div>
+                            <div class="trap-hint">الجوكر That لا يدخل الجمل التي بها فواصل (, ... ,) على الإطلاق!</div>
+                        </div>
+
+                        <div class="trap-mini-card">
+                            <div class="trap-badge-title">⚠️ مطب 5: الحذف مع المبني للمجهول</div>
+                            <div class="trap-wrong-ex"><span style="color: #fca5a5;">❌</span> <span dir="ltr">The baby was examined yesterday is ill.</span></div>
+                            <div class="trap-correct-ex"><span style="color: #6ee7b7;">✅</span> <span dir="ltr">The baby examined yesterday is ill.</span></div>
+                            <div class="trap-hint">عند حذف ضمير الوصل في المجهول، نحذف (Who was) معاً ونبقي على التصريف الثالث (P.P) منفرداً.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="slide-presentation-container" id="presentation-deck">
+                <!-- Slide 1: Cover Header -->
+                <div class="slide-frame">
+                    <div style="text-align: center; margin-bottom: 8px;">
+                        <span class="chain-label-pill">🌟 GRAMMAR FOCUS</span>
+                    </div>
+                    <h2 class="slide-title-main">
+                        حلقة الوصل: <span class="cyan-glow">فك شفرة ضمائر وظروف الوصل</span><br>
+                        <span style="font-size: clamp(1.1rem, 2.5vw, 1.5rem); font-weight: 700; color: #94a3b8;">(Relative Pronouns & Adverbs)</span>
+                    </h2>
+                    <p class="slide-subtitle" style="font-size: 1.1rem; color: var(--accent-primary); font-weight: 700;">
+                        بالعامية المصرية وبطريقة "السهل الممتنع" — الدليل البصري التفاعلي الكامل
+                    </p>
+                    <div class="slide-footer-bar">
+                        <span class="slide-footer-author">Mr. Ahmed Assem | <span class="slide-footer-brand">Easy Peasy Ya Englezeey</span></span>
+                        <span style="color: #64748b;">Slide 01 • Introduction</span>
+                    </div>
+                </div>
+
+                <!-- Slide 2: The Matchmakers -->
+                <div class="slide-frame">
+                    <h3 class="slide-title-main">يعني إيه أصلاً <span class="cyan-glow">ضمائر الوصل؟ (The Matchmakers)</span></h3>
+                    <p class="slide-subtitle">
+                        بدل ما نتكلم بجمل مقطعة زي الروبوت، ضمائر الوصل بتلحم الجملتين في بعض عشان تديلك تفاصيل أكثر عن (شخص، شيء، مكان، أو زمان).
+                    </p>
+
+                    <div class="matchmaker-bracket-card">
+                        <!-- Before Column -->
+                        <div class="matchmaker-column">
+                            <span class="column-header-tag" style="color: #ff5252;">Before</span>
+                            <div class="before-ribbon">I know the man.</div>
+                            <div class="before-ribbon">The man looks after the garden.</div>
+                            <div style="color: #ff758f; font-size: 0.9rem; font-weight: 700;">(جملتين شكلهم ركيك ومكرر)</div>
+                        </div>
+
+                        <!-- Chain Connector -->
+                        <div class="chain-connector-box">
+                            <div class="chain-icon-badge">🔗</div>
+                            <span class="chain-label-pill">+ who</span>
+                        </div>
+
+                        <!-- After Column -->
+                        <div class="matchmaker-column">
+                            <span class="column-header-tag cyan">After</span>
+                            <div class="after-glow-box">
+                                <div>I know the man <span class="highlight">who</span> looks after the garden. ✨</div>
+                                <div style="display: flex; justify-content: center; margin-top: 8px;">
+                                    <button class="audio-btn" onclick="speakText('I know the man who looks after the garden.'); playSound('click');" title="نطق الجملة">🔊</button>
+                                </div>
+                            </div>
+                            <div style="color: #00ff9d; font-size: 0.92rem; font-weight: 800;">(جملة واحدة متماسكة واحترافية)</div>
+                        </div>
+                    </div>
+
+                    <div class="slide-footer-bar">
+                        <span class="slide-footer-author">Mr. Ahmed Assem | <span class="slide-footer-brand">Easy Peasy Ya Englezeey</span></span>
+                        <span style="color: #64748b;">Slide 02 • The Matchmakers</span>
+                    </div>
+                </div>
+
+                <!-- Slide 3: Core Relative Pronouns -->
+                <div class="slide-frame">
+                    <h3 class="slide-title-main">التعارف السريع: <span class="cyan-glow">العيلة الأساسية</span></h3>
+                    <p class="slide-subtitle">الضمائر الثلاثة الأهم التي تبنى عليها كل قواعد الوصل:</p>
+
+                    <div class="core-pronouns-grid">
+                        <!-- Who Card -->
+                        <div class="tech-pronoun-card">
+                            <div class="card-top-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#00f3ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                            </div>
+                            <div class="pronoun-title">Who</div>
+                            <div class="pronoun-usage-tag">(للعاقل - فاعل أو مفعول)</div>
+                            <div class="pronoun-example-bubble">
+                                The little girl <span style="color: #00f3ff; font-weight: 800; text-decoration: underline;">who</span> is playing is my daughter.
+                                <div style="margin-top: 10px; display: flex; justify-content: center;">
+                                    <button class="audio-btn" onclick="speakText('The little girl who is playing is my daughter.'); playSound('click');" title="نطق الجملة">🔊</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Which Card -->
+                        <div class="tech-pronoun-card">
+                            <div class="card-top-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#00f3ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                            </div>
+                            <div class="pronoun-title">Which</div>
+                            <div class="pronoun-usage-tag">(لغير العاقل - حيوان أو شيء)</div>
+                            <div class="pronoun-example-bubble">
+                                A lion is an animal <span style="color: #00f3ff; font-weight: 800; text-decoration: underline;">which</span> is endangered.
+                                <div style="margin-top: 10px; display: flex; justify-content: center;">
+                                    <button class="audio-btn" onclick="speakText('A lion is an animal which is endangered.'); playSound('click');" title="نطق الجملة">🔊</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- That Card -->
+                        <div class="tech-pronoun-card">
+                            <div class="card-top-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#00f3ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><circle cx="15.5" cy="15.5" r="1.5"></circle><path d="M9 15l6-6"></path></svg>
+                            </div>
+                            <div class="pronoun-title">That</div>
+                            <div class="pronoun-usage-tag" style="color: #ffb703;">(الجوكر 🃏)</div>
+                            <div class="pronoun-example-bubble">
+                                بيشتغل مكان <span style="color: #00f3ff; font-weight: 800;">Who</span> و <span style="color: #00f3ff; font-weight: 800;">Which</span> في أغلب الحالات (عاقل وغير عاقل).
+                                <div style="margin-top: 8px; color: #ffb703; font-size: 0.85rem; font-weight: 700;">(بشرط عدم وجود فواصل أو حروف جر قبله!)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide-footer-bar">
+                        <span class="slide-footer-author">Mr. Ahmed Assem | <span class="slide-footer-brand">Easy Peasy Ya Englezeey</span></span>
+                        <span style="color: #64748b;">Slide 03 • Core Pronouns</span>
+                    </div>
+                </div>
+
+                <!-- Slide 4: Who vs Whom -->
+                <div class="slide-frame">
+                    <h3 class="slide-title-main">حيرة العاقل: <span class="cyan-glow">إيه الفرق بين Who و Whom؟</span></h3>
+                    
+                    <div class="split-table-card">
+                        <div class="split-table-header">
+                            <div class="header-who">Who</div>
+                            <div class="header-whom">Whom</div>
+                        </div>
+                        <div class="split-table-body">
+                            <div>
+                                <div style="font-size: 1.15rem; font-weight: 800; color: #ffffff; margin-bottom: 8px;">بتيجي مع (الفاعل والمفعول العاقل)</div>
+                                <div style="color: #94a3b8; font-size: 0.95rem;">عادية، مرنة، وبتاعة كله وشائعة في الحديث.</div>
+                            </div>
+                            <div>
+                                <div style="font-size: 1.15rem; font-weight: 800; color: #ffffff; margin-bottom: 8px;">مخصصة للمفعول به العاقل فقط</div>
+                                <div style="color: #94a3b8; font-size: 0.95rem;">أكثر رسمية (Formal).</div>
+                                <div><span class="whom-badge-gold">Whom = مفعول به بس</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 20px; border: 2px solid #00f3ff; border-radius: 16px; padding: 20px; background: rgba(0, 243, 255, 0.05); text-align: center;">
+                        <div style="font-weight: 800; font-size: 1.15rem; color: #00f3ff; margin-bottom: 12px;">تطبيق عملي: الطفل اللي (أنا كشفت عليه):</div>
+                        <div style="display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; font-family: 'Georgia', serif; font-size: 1.15rem;">
+                            <div style="background: rgba(11, 19, 38, 0.9); padding: 10px 20px; border-radius: 12px; border: 1px solid rgba(0, 243, 255, 0.3);">
+                                The baby <span style="color: #00f3ff; font-weight: 800;">who</span> I examined yesterday. ✅
+                            </div>
+                            <div style="background: rgba(11, 19, 38, 0.9); padding: 10px 20px; border-radius: 12px; border: 1px solid rgba(0, 255, 157, 0.3);">
+                                The baby <span style="color: #00ff9d; font-weight: 800;">whom</span> I examined yesterday. ✅
+                            </div>
+                        </div>
+                        <div style="color: #00ff9d; font-size: 0.95rem; font-weight: 700; margin-top: 10px;">(الاتنين صح، لأن الطفل هنا مفعول به)</div>
+                    </div>
+
+                    <div class="slide-footer-bar">
+                        <span class="slide-footer-author">Mr. Ahmed Assem | <span class="slide-footer-brand">Easy Peasy Ya Englezeey</span></span>
+                        <span style="color: #64748b;">Slide 04 • Who vs Whom</span>
+                    </div>
+                </div>
+
+                <!-- Slide 5: The Preposition Game -->
+                <div class="slide-frame">
+                    <h3 class="slide-title-main">لعبة حروف الجر <span class="cyan-glow">(The Preposition Game)</span></h3>
+                    <p class="slide-subtitle">مع (Whom) و (Which)، حرف الجر ممكن يتحرك في مكانين:</p>
+
+                    <div class="preposition-branches-grid">
+                        <!-- Formal Branch -->
+                        <div class="branch-card">
+                            <div class="branch-icon">👔</div>
+                            <span class="branch-pill-title">رسمي وشيك (Formal)</span>
+                            <div style="color: #ffffff; font-weight: 700;">حرف الجر بييجي قبل الضمير مباشرة.</div>
+                            <div style="font-family: 'Georgia', serif; font-size: 1.05rem; color: #00f3ff; line-height: 1.6; margin-top: 8px;">
+                                "The doctor <span style="text-decoration: underline; font-weight: 900;">to whom</span> I spoke..."<br>
+                                "This is the tool <span style="text-decoration: underline; font-weight: 900;">with which</span> I do a lot of jobs."
+                            </div>
+                        </div>
+
+                        <!-- Informal Branch -->
+                        <div class="branch-card">
+                            <div class="branch-icon">🧢</div>
+                            <span class="branch-pill-title" style="color: #00ff9d; background: rgba(0, 255, 157, 0.15);">كاجوال (Informal)</span>
+                            <div style="color: #ffffff; font-weight: 700;">حرف الجر بيترمي في آخر العبارة.</div>
+                            <div style="font-family: 'Georgia', serif; font-size: 1.05rem; color: #00ff9d; line-height: 1.6; margin-top: 8px;">
+                                "The doctor <span style="font-weight: 900;">who/whom</span> I spoke <span style="text-decoration: underline; font-weight: 900;">to</span>..."<br>
+                                "This is the tool <span style="font-weight: 900;">which</span> I do a lot of jobs <span style="text-decoration: underline; font-weight: 900;">with</span>."
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Golden Rule Banner -->
+                    <div class="golden-rule-strip">
+                        <span class="ban-sign">🚫</span>
+                        <div>
+                            <span style="color: #ffb703; font-size: 1.2rem;">قاعدة من دهب:</span>
+                            ممنوع منعاً باتاً نستخدم أي حرف جر قبل <span style="color: #ff4d4d; text-decoration: underline;">(That)</span> أو <span style="color: #ff4d4d; text-decoration: underline;">(Who)</span>!
+                        </div>
+                    </div>
+
+                    <div class="slide-footer-bar">
+                        <span class="slide-footer-author">Mr. Ahmed Assem | <span class="slide-footer-brand">Easy Peasy Ya Englezeey</span></span>
+                        <span style="color: #64748b;">Slide 05 • The Preposition Game</span>
+                    </div>
+                </div>
+
+                <!-- Slide 6: Whose -->
+                <div class="slide-frame">
+                    <h3 class="slide-title-main">بتاع مين؟ <span class="cyan-glow">(Whose للملكية)</span></h3>
+                    <p class="slide-subtitle">
+                        بتيجي للعاقل وغير العاقل عشان تثبت إن الحاجة دي تخص الشخص أو الشيء ده، ولازم بييجي بعدها "اسم" دايماً.
+                    </p>
+
+                    <div class="whose-equation-container">
+                        <div class="equation-bracket-box">[اسم المالك Owner]</div>
+                        <span style="font-size: 1.8rem; color: #00f3ff; font-weight: 900;">+</span>
+                        <div class="whose-center-badge">
+                            <span>whose</span>
+                            <span style="font-size: 1.2rem;">🔒</span>
+                        </div>
+                        <span style="font-size: 1.8rem; color: #00f3ff; font-weight: 900;">+</span>
+                        <div class="equation-bracket-box">[الاسم المملوك Owned]</div>
+                    </div>
+
+                    <div class="preposition-branches-grid" style="margin-top: 16px;">
+                        <div class="branch-card" style="align-items: flex-start; text-align: right;">
+                            <span class="branch-pill-title">عاقل:</span>
+                            <div style="font-family: 'Georgia', serif; font-size: 1.1rem; color: #ffffff; direction: ltr; margin: 6px 0;">
+                                "Students <span style="color: #00f3ff; font-weight: 800;">whose sleep routines</span> are regular concentrate better."
+                            </div>
+                            <div style="color: #94a3b8; font-size: 0.9rem;">(الطلاب اللي "نومهم" منتظم...)</div>
+                        </div>
+
+                        <div class="branch-card" style="align-items: flex-start; text-align: right;">
+                            <span class="branch-pill-title" style="color: #00ff9d; background: rgba(0, 255, 157, 0.15);">غير عاقل:</span>
+                            <div style="font-family: 'Georgia', serif; font-size: 1.1rem; color: #ffffff; direction: ltr; margin: 6px 0;">
+                                "The charity <span style="color: #00ff9d; font-weight: 800;">whose manager</span> is my mother..."
+                            </div>
+                            <div style="color: #94a3b8; font-size: 0.9rem;">(الجمعية اللي "مديرها" والدتي...)</div>
+                        </div>
+                    </div>
+
+                    <div class="slide-footer-bar">
+                        <span class="slide-footer-author">Mr. Ahmed Assem | <span class="slide-footer-brand">Easy Peasy Ya Englezeey</span></span>
+                        <span style="color: #64748b;">Slide 06 • Whose</span>
+                    </div>
+                </div>
+
+                <!-- Slide 7: Speedbump #1 -->
+                <div class="slide-frame">
+                    <div style="text-align: center;">
+                        <div class="speedbump-header-badge">
+                            <span>⚠️</span> مطب صناعي #1: أفعال ولا أسماء؟ 🔍
+                        </div>
+                    </div>
+                    <p class="slide-subtitle">
+                        في كلمات خادعة في الإنجليزي بتنفع فعل واسم في نفس الوقت (زي: <code>visit, answer, play, help, stay</code>). عشان تختار <b>whose</b> لازم الكلمة اللي بعدها تكون اسم.
+                    </p>
+
+                    <div class="matchmaker-bracket-card" style="grid-template-columns: 1fr 1fr; border-color: #ffb703;">
+                        <!-- Verb Trap -->
+                        <div class="branch-card" style="border-color: #0072ff; width: 100%;">
+                            <span class="verb-trap-pill">The Verb Trap</span>
+                            <div style="font-family: 'Georgia', serif; font-size: 1.15rem; color: #ffffff; direction: ltr;">
+                                Sama <span style="color: #00f3ff; font-weight: 900; text-decoration: underline;">who visits</span> her grandmother...
+                            </div>
+                            <div style="color: #94a3b8; font-size: 0.95rem; font-weight: 700; margin-top: 8px;">
+                                (هنا visits معناها "تزور" = فعل 🏃‍♂️ ➔ يبقى نختار <b>who</b>)
+                            </div>
+                        </div>
+
+                        <!-- Noun Fix -->
+                        <div class="branch-card" style="border-color: #ffb703; width: 100%;">
+                            <span class="noun-fix-pill">The Noun Fix</span>
+                            <div style="font-family: 'Georgia', serif; font-size: 1.15rem; color: #ffffff; direction: ltr;">
+                                Sama <span style="color: #ffb703; font-weight: 900; text-decoration: underline;">whose visits</span> to her grandmother...
+                            </div>
+                            <div style="color: #ffb703; font-size: 0.95rem; font-weight: 700; margin-top: 8px;">
+                                (هنا visits معناها "زيارات" = اسم 📝 ➔ يبقى نختار <b>whose</b> للملكية)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide-footer-bar">
+                        <span class="slide-footer-author">Mr. Ahmed Assem | <span class="slide-footer-brand">Easy Peasy Ya Englezeey</span></span>
+                        <span style="color: #64748b;">Slide 07 • Trap 1: Verbs vs Nouns</span>
+                    </div>
+                </div>
+
+                <!-- Slide 8: Where & When -->
+                <div class="slide-frame">
+                    <h3 class="slide-title-main">ظروف الوصل: <span class="cyan-glow">الزمان والمكان (When & Where)</span></h3>
+                    
+                    <div class="preposition-branches-grid">
+                        <div class="tech-pronoun-card">
+                            <div class="card-top-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#00f3ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            </div>
+                            <div class="pronoun-title">Where</div>
+                            <div class="pronoun-usage-tag">(حيث / للمكان)</div>
+                            <div style="color: #cbd5e1; font-size: 0.95rem; margin-bottom: 12px;">للإشارة للمكان اللي بيحصل فيه "أكشن" معين.</div>
+                            <div class="pronoun-example-bubble">
+                                There is a nearby hotel <span style="color: #00f3ff; font-weight: 800;">where</span> you can stay for the night.
+                                <div style="color: #94a3b8; font-size: 0.85rem; margin-top: 4px;">(الفندق اللي هنبات فيه)</div>
+                            </div>
+                        </div>
+
+                        <div class="tech-pronoun-card">
+                            <div class="card-top-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="#00f3ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                            </div>
+                            <div class="pronoun-title">When</div>
+                            <div class="pronoun-usage-tag">(حينما / للزمان)</div>
+                            <div style="color: #cbd5e1; font-size: 0.95rem; margin-bottom: 12px;">للإشارة إلى توقيت، يوم، سنة، أو فترة.</div>
+                            <div class="pronoun-example-bubble">
+                                Friday is the day <span style="color: #00f3ff; font-weight: 800;">when</span> most of us have a holiday.
+                                <div style="color: #94a3b8; font-size: 0.85rem; margin-top: 4px;">(الجمعة هو اليوم اللي بنأجز فيه)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide-footer-bar">
+                        <span class="slide-footer-author">Mr. Ahmed Assem | <span class="slide-footer-brand">Easy Peasy Ya Englezeey</span></span>
+                        <span style="color: #64748b;">Slide 08 • When & Where</span>
+                    </div>
+                </div>
+
+                <!-- Slide 9: Speedbump #2 -->
+                <div class="slide-frame">
+                    <div style="text-align: center;">
+                        <div class="speedbump-header-badge">
+                            <span>💡</span> مطب صناعي #2: فكّة الـ When والـ Where
+                        </div>
+                    </div>
+                    <p class="slide-subtitle">
+                        نقدر نستغنى عن When أو Where ونحط مكانهم <b>(حرف جر + Which)</b>.<br>
+                        افتكر دايماً إن <b>(When/Where) بيكرهوا حروف الجر</b>، لكن <b>(Which) بتعشقهم!</b>
+                    </p>
+
+                    <div class="whose-equation-container" style="direction: ltr;">
+                        <div class="equation-bracket-box" style="background: rgba(0, 243, 255, 0.2); font-size: 1.3rem;">When / Where</div>
+                        <span style="font-size: 2rem; color: #ffb703; font-weight: 900;">=</span>
+                        <div class="equation-bracket-box" style="background: rgba(255, 183, 3, 0.15); border-color: #ffb703; font-size: 1.3rem; color: #ffb703;">
+                            (In / On / At) + Which
+                        </div>
+                    </div>
+
+                    <div style="border: 2px solid #00f3ff; border-radius: 16px; padding: 20px; background: rgba(0, 243, 255, 0.05); text-align: center; max-width: 600px; margin: 0 auto;">
+                        <div style="color: #94a3b8; font-size: 0.95rem; margin-bottom: 4px;">الجملة الأصلية:</div>
+                        <div style="font-family: 'Georgia', serif; font-size: 1.15rem; color: #ffffff;">"The day <span style="color: #00f3ff; font-weight: 800;">when</span> I receive guests."</div>
+                        <div style="color: #00ff9d; font-size: 1.3rem; margin: 6px 0;">⬇️ الفكّة:</div>
+                        <div style="font-family: 'Georgia', serif; font-size: 1.15rem; color: #00ff9d; font-weight: 800;">"The day <span style="text-decoration: underline;">on which</span> I receive guests."</div>
+                        <div style="color: #ffb703; font-size: 0.88rem; font-weight: 700; margin-top: 8px;">(استخدمنا on عشان كلمة day بتاخد حرف الجر on)</div>
+                    </div>
+
+                    <div class="slide-footer-bar">
+                        <span class="slide-footer-author">Mr. Ahmed Assem | <span class="slide-footer-brand">Easy Peasy Ya Englezeey</span></span>
+                        <span style="color: #64748b;">Slide 09 • Preposition Conversion</span>
+                    </div>
+                </div>
+
+                <!-- Slide 10: Big Exam Trap Flowchart -->
+                <div class="slide-frame">
+                    <div style="text-align: center;">
+                        <div class="speedbump-header-badge" style="border-color: #ff4d4d; color: #ff4d4d; background: rgba(255, 77, 77, 0.1);">
+                            <span>🚨</span> المطب الكبير: أختار When ولا Which مع الزمان؟
+                        </div>
+                    </div>
+                    <p class="slide-subtitle">
+                        أحياناً بنشوف اسم زمان (زي <code>week</code>)، بس منقدرش نستخدم When! ليه؟ لأن الزمان هنا بيكون <b>"مفعول به"</b> للفعل.
+                    </p>
+
+                    <div class="flowchart-test-box">
+                        ✨ السؤال السحري في الامتحان: جرب تستبدل النقط بـ <code>.(in which / on which)</code>
+                    </div>
+
+                    <div class="flowchart-branches">
+                        <div class="flowchart-choice success">
+                            <div style="font-size: 1.15rem; font-weight: 800;">لو المعنى سليم (ينفع نحط حرف جر):</div>
+                            <div style="font-size: 1.6rem; font-weight: 900; margin-top: 8px;">➔ اختار When ✅</div>
+                        </div>
+
+                        <div class="flowchart-choice danger">
+                            <div style="font-size: 1.15rem; font-weight: 800;">لو المعنى باظ (الفعل مش محتاج حرف جر):</div>
+                            <div style="font-size: 1.6rem; font-weight: 900; margin-top: 8px;">➔ اختار Which / That ❌</div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 20px; border: 2px solid #ffb703; border-radius: 16px; padding: 18px; background: rgba(255, 183, 3, 0.08);">
+                        <div style="font-weight: 800; color: #ffb703; margin-bottom: 6px;">🎯 Test Case:</div>
+                        <div style="font-family: 'Georgia', serif; font-size: 1.15rem; color: #ffffff; direction: ltr;">
+                            "I will never forget the wonderful week <span style="color: #00ff9d; font-weight: 900;">which</span> I spent with you."
+                        </div>
+                        <div style="color: #cbd5e1; font-size: 0.9rem; margin-top: 8px;">
+                            1. نجرب: spent in which؟ (غلط، لأن فعل يقضي spend مش بياخد حرف جر للوقت).<br>
+                            2. الصح: <b>The wonderful week which I spent with you. ✅</b>
+                        </div>
+                    </div>
+
+                    <div class="slide-footer-bar">
+                        <span class="slide-footer-author">Mr. Ahmed Assem | <span class="slide-footer-brand">Easy Peasy Ya Englezeey</span></span>
+                        <span style="color: #64748b;">Slide 10 • Big Exam Trap</span>
+                    </div>
+                </div>
+
+                <!-- Slide 11: Commas (Defining vs Non-Defining) -->
+                <div class="slide-frame">
+                    <h3 class="slide-title-main">حوار الفواصل (Commas): <span class="cyan-glow">أساسي ولا زيادة؟ ⚖️</span></h3>
+
+                    <div class="preposition-branches-grid">
+                        <div class="branch-card" style="border-style: solid;">
+                            <span class="branch-pill-title">💖 معلومة حيوية (Defining) - مفيش فواصل</span>
+                            <div style="color: #cbd5e1; font-size: 0.95rem;">المعلومة دي بتحدد إحنا بنتكلم عن مين بالظبط. لو شلناها، المعنى يبوظ:</div>
+                            <div style="font-family: 'Georgia', serif; font-size: 1.1rem; color: #00f3ff; margin-top: 10px;">
+                                "The bird <span style="font-weight: 900; text-decoration: underline;">which is on the branch</span> is an eagle."
+                            </div>
+                        </div>
+
+                        <div class="branch-card" style="border-style: dashed; border-color: #00ff9d;">
+                            <span class="branch-pill-title" style="color: #00ff9d; background: rgba(0, 255, 157, 0.15);">➕ معلومة زيادة (Non-Defining) - حط فواصل ؛</span>
+                            <div style="color: #cbd5e1; font-size: 0.95rem;">معلومة إضافية، لو شلناها الجملة تفضل مفهومة. بنحطها بين فاصلتين:</div>
+                            <div style="font-family: 'Georgia', serif; font-size: 1.1rem; color: #00ff9d; margin-top: 10px;">
+                                "Egypt<span style="font-weight: 900;">, which has a rich history,</span> attracts tourists."
+                            </div>
+                            <div style="color: #94a3b8; font-size: 0.85rem;">(إحنا عارفين مصر، دي مجرد إضافة)</div>
+                        </div>
+                    </div>
+
+                    <div class="golden-rule-strip">
+                        <span class="ban-sign">🚫</span>
+                        <div>
+                            <span style="color: #ff4d4d; font-size: 1.2rem;">الجوكر (That):</span>
+                            مبيدخلش الجمل اللي فيها فواصل خالص!
+                        </div>
+                    </div>
+
+                    <div class="slide-footer-bar">
+                        <span class="slide-footer-author">Mr. Ahmed Assem | <span class="slide-footer-brand">Easy Peasy Ya Englezeey</span></span>
+                        <span style="color: #64748b;">Slide 11 • Commas</span>
+                    </div>
+                </div>
+
+                <!-- Slide 12 & 13: Omission -->
+                <div class="slide-frame">
+                    <h3 class="slide-title-main">فن الحذف <span class="cyan-glow">(Omission of Pronouns) ✨</span></h3>
+                    <p class="slide-subtitle">
+                        <b>الجزء الأول: إمتى نريّح دماغنا؟</b><br>
+                        لو ضمير الوصل <code>(who, whom, which, that, when)</code> جاي وراه فاعل مباشر (يعني الضمير شغال مفعول به)، <b>يجوز حذفه تماماً!</b>
+                    </p>
+
+                    <div class="matchmaker-bracket-card" style="grid-template-columns: 1fr auto 1fr;">
+                        <div class="matchmaker-column">
+                            <span class="column-header-tag">Before:</span>
+                            <div class="before-ribbon" style="border-color: #00f3ff; background: rgba(0, 243, 255, 0.08); color: #fff;">
+                                The baby <span style="color: #00f3ff; font-weight: 800;">who/that</span> I examined is ill.
+                            </div>
+                        </div>
+
+                        <div class="chain-connector-box">
+                            <span class="magic-badge">Magic Trick 🪄</span>
+                            <div class="dissolving-text">who/that 💨</div>
+                        </div>
+
+                        <div class="matchmaker-column">
+                            <span class="column-header-tag cyan">After:</span>
+                            <div class="after-glow-box">
+                                The baby <span style="color: #00ff9d; font-weight: 900;">I examined</span> is ill. ✅
+                            </div>
+                            <div style="color: #00ff9d; font-size: 0.88rem; font-weight: 700;">(صح جداً ومستخدمة كتير)</div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 26px; border-top: 1px solid rgba(0, 243, 255, 0.2); padding-top: 20px;">
+                        <h4 style="text-align: center; color: #00f3ff; font-size: 1.3rem; margin-bottom: 14px;">⚙️ الجزء الثاني: فن الحذف المتقدم (اللعب مع الأفعال)</h4>
+                        
+                        <div class="preposition-branches-grid">
+                            <div class="branch-card">
+                                <span class="branch-pill-title">🏃‍♂️ المبني للمعلوم (Active)</span>
+                                <div style="color: #cbd5e1; font-size: 0.95rem;">بنحذف <code>(Who/Which/That)</code> ونحط للفعل <code>(ing)</code>:</div>
+                                <div style="font-family: 'Georgia', serif; font-size: 1.05rem; margin-top: 8px;">
+                                    <div style="color: #94a3b8;">Full: "The nutritionist <span style="text-decoration: line-through;">who works</span> at the clinic..."</div>
+                                    <div style="color: #00f3ff; font-weight: 800; margin-top: 4px;">Reduced: "The nutritionist <span style="text-decoration: underline;">working</span> at the clinic..." ✅</div>
+                                </div>
+                            </div>
+
+                            <div class="branch-card">
+                                <span class="branch-pill-title" style="color: #00ff9d; background: rgba(0, 255, 157, 0.15);">🛠️ المبني للمجهول (Passive)</span>
+                                <div style="color: #cbd5e1; font-size: 0.95rem;">بنحذف <code>(Who/Which/That + Verb to Be)</code> ونسيب التصريف التالت <code>(P.P)</code> بس:</div>
+                                <div style="font-family: 'Georgia', serif; font-size: 1.05rem; margin-top: 8px;">
+                                    <div style="color: #94a3b8;">Full: "The baby <span style="text-decoration: line-through;">who was</span> examined yesterday..."</div>
+                                    <div style="color: #00ff9d; font-weight: 800; margin-top: 4px;">Reduced: "The baby <span style="text-decoration: underline;">examined</span> yesterday..." ✅</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide-footer-bar">
+                        <span class="slide-footer-author">Mr. Ahmed Assem | <span class="slide-footer-brand">Easy Peasy Ya Englezeey</span></span>
+                        <span style="color: #64748b;">Slide 12-13 • Omission</span>
+                    </div>
+                </div>
+
+                <!-- Slide 14: Sentential Which -->
+                <div class="slide-frame">
+                    <h3 class="slide-title-main">تريكة للمحترفين: <span class="cyan-glow">Which اللي بتشيل جملة بحالها!</span></h3>
+                    <p class="slide-subtitle">
+                        عادةً ضمير الوصل بيعود على الكلمة اللي قبله على طول، لكن <b>(Which)</b> فيها ميزة جبارة: ممكن تعود على <b>معنى الجملة اللي قبلها بالكامل</b> (Sentential Relative Clause).
+                    </p>
+
+                    <div class="sentential-bracket-box">
+                        Students often use screens late at night, <span style="color: #00f3ff; font-weight: 900; text-decoration: underline;">which</span> can affect their sleep.
+                    </div>
+
+                    <div style="margin-top: 16px; border: 1.5px solid #00f3ff; border-radius: 14px; padding: 16px 20px; background: rgba(0, 243, 255, 0.06);">
+                        <div style="font-weight: 800; color: #00f3ff; font-size: 1.1rem; margin-bottom: 6px;">💡 Explanation:</div>
+                        <div style="color: #f1f5f9; font-size: 1rem; line-height: 1.7;">
+                            كلمة <b>which</b> هنا مش بتعود على الليل (night)، دي بتعود على <b>"حقيقة إنهم بيستخدموا الشاشات بالليل"</b> كلها على بعضها!
+                        </div>
+                    </div>
+
+                    <div class="slide-footer-bar">
+                        <span class="slide-footer-author">Mr. Ahmed Assem | <span class="slide-footer-brand">Easy Peasy Ya Englezeey</span></span>
+                        <span style="color: #64748b;">Slide 14 • Sentential Which</span>
+                    </div>
+                </div>
+
+                <!-- Slide 15: Engineer's Master Map -->
+                <div class="slide-frame" style="border-color: #00ff9d; box-shadow: 0 0 35px rgba(0, 255, 157, 0.15);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 10px;">
+                        <h3 class="slide-title-main" style="margin: 0;">🗺️ خريطة المهندس <span style="color: #00ff9d;">(الخلاصة المجمّعة)</span></h3>
+                        <span style="background: rgba(255, 183, 3, 0.2); color: #ffb703; border: 1px solid #ffb703; padding: 4px 14px; border-radius: 20px; font-weight: 800; font-size: 0.85rem;">📸 Take a Screenshot!</span>
+                    </div>
+
+                    <div class="cyber-summary-table-wrapper">
+                        <table class="cyber-table">
+                            <thead>
+                                <tr>
+                                    <th>الضمير</th>
+                                    <th>الاستخدام الأساسي</th>
+                                    <th>بيقبل حرف جر قبله؟</th>
+                                    <th>ينفع ييجي مع فواصل؟</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span style="color: #00f3ff; font-size: 1.2rem;">Who</span></td>
+                                    <td>عاقل (فاعل / مفعول)</td>
+                                    <td style="color: #ff4d4d; font-size: 1.2rem;">❌ لا</td>
+                                    <td style="color: #00ff9d; font-size: 1.2rem;">✅ آه</td>
+                                </tr>
+                                <tr>
+                                    <td><span style="color: #00f3ff; font-size: 1.2rem;">Whom</span></td>
+                                    <td>عاقل (مفعول بس)</td>
+                                    <td style="color: #00ff9d; font-size: 1.2rem;">✅ آه</td>
+                                    <td style="color: #00ff9d; font-size: 1.2rem;">✅ آه</td>
+                                </tr>
+                                <tr>
+                                    <td><span style="color: #00f3ff; font-size: 1.2rem;">Which</span></td>
+                                    <td>غير عاقل (شيء/حيوان)</td>
+                                    <td style="color: #00ff9d; font-size: 1.2rem;">✅ آه</td>
+                                    <td style="color: #00ff9d; font-size: 1.2rem;">✅ آه</td>
+                                </tr>
+                                <tr>
+                                    <td><span style="color: #ffb703; font-size: 1.2rem;">That 🃏</span></td>
+                                    <td>الجوكر (عاقل وغير عاقل)</td>
+                                    <td style="color: #ff4d4d; font-size: 1.2rem;">❌ لا</td>
+                                    <td style="color: #ff4d4d; font-size: 1.2rem;">❌ لا</td>
+                                </tr>
+                                <tr>
+                                    <td><span style="color: #00f3ff; font-size: 1.2rem;">Whose 🔑</span></td>
+                                    <td>ملكية (لازم يجي بعدها اسم)</td>
+                                    <td style="color: #00ff9d; font-size: 1.2rem;">✅ آه</td>
+                                    <td style="color: #00ff9d; font-size: 1.2rem;">✅ آه</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 24px;">
+                        <div style="font-size: clamp(1.2rem, 3vw, 1.6rem); font-weight: 900; color: #ffffff;">
+                            الإنجليزي ملوش كبير... بس معانا بقى <span style="color: #00f3ff;">Easy Peasy</span> بالتوفيق يا شباب 🚀✨
+                        </div>
+                    </div>
+
+                    <div class="slide-footer-bar">
+                        <span class="slide-footer-author">Mr. Ahmed Assem | <span class="slide-footer-brand">Easy Peasy Ya Englezeey</span></span>
+                        <span style="color: #64748b;">Slide 15 • Master Map</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide Controller Engine -->
+            <script>
+                let currentSlideIdx = 0;
+                let currentSlideMode = 'presentation';
+                const totalSlidesCount = 15;
+
+                const decisionState = {
+                    antecedent: 'person',
+                    prep: 'no',
+                    commas: 'no'
+                };
+
+                function setDecisionOption(category, value) {
+                    decisionState[category] = value;
+                    if (typeof playSound === 'function') playSound('click');
+
+                    // Update UI buttons
+                    const container = document.getElementById(`dt-step-${category === 'antecedent' ? 'antecedent' : category === 'prep' ? 'prep' : 'commas'}`);
+                    if (container) {
+                        const btns = container.querySelectorAll('.decision-opt-btn');
+                        btns.forEach(btn => {
+                            if (btn.getAttribute('onclick').includes(`'${value}'`)) {
+                                btn.classList.add('active');
+                            } else {
+                                btn.classList.remove('active');
+                            }
+                        });
+                    }
+
+                    // Calculate Result
+                    calculateDecisionResult();
+                }
+
+                function calculateDecisionResult() {
+                    const resultTitle = document.getElementById('dt-result-pronoun');
+                    const resultExp = document.getElementById('dt-result-exp');
+                    if (!resultTitle || !resultExp) return;
+
+                    const { antecedent, prep, commas } = decisionState;
+
+                    if (antecedent === 'owner') {
+                        resultTitle.textContent = 'Whose + [اسم مملوك] 🔑';
+                        resultExp.innerHTML = 'نستخدم <strong>Whose</strong> لإثبات الملكية للعاقل أو غير العاقل. ⚠️ <em>تأكد أن الكلمة بعد النقط اسم مملوك وليست فعلاً خادعاً (مثل visits بمعنى زيارات وليست تزور)!</em>';
+                        return;
+                    }
+
+                    if (antecedent === 'clause') {
+                        resultTitle.textContent = ', which ... 🎯';
+                        resultExp.innerHTML = 'نستخدم <strong>Which</strong> مسبوقة بفاصلة لتعود على مضمون ومعنى الجملة السابقة بالكامل (Sentential Clause)، مثل: <em>...late at night, which affects their sleep.</em>';
+                        return;
+                    }
+
+                    if (antecedent === 'person') {
+                        if (prep === 'yes') {
+                            resultTitle.textContent = 'Whom (رسمي) / Whose (للملكية) 🛡️';
+                            resultExp.innerHTML = 'بما أنه يوجد حرف جر قبل النقط، <strong>يجب استخدام Whom للمفعول العاقل</strong> (مثل: to whom I spoke). <span style="color:#f87171;">ممنوع منعاً باتاً استخدام Who أو That قبلها حرف جر مباشرة!</span>';
+                        } else if (commas === 'yes') {
+                            resultTitle.textContent = 'Who (فاعل/مفعول) / Whom (مفعول) 🔲';
+                            resultExp.innerHTML = 'الجملة بين فاصلتين (Non-defining)، نستخدم <strong>Who</strong> أو <strong>Whom</strong>. <span style="color:#f87171;">الجوكر That ممنوع نهائياً في وجود الفواصل!</span>';
+                        } else {
+                            resultTitle.textContent = 'Who / That (أو Whom للمفعول / أو الحذف) ✨';
+                            resultExp.innerHTML = 'عاقل في جملة أساسية بدون فواصل ولا حروف جر. يمكنك استخدام <strong>Who</strong> أو <strong>That</strong>. ولو كان مفعول به يتبعه فاعل يجوز استخدام <strong>Whom</strong> أو <strong>حذف الضمير تماماً</strong>!';
+                        }
+                        return;
+                    }
+
+                    if (antecedent === 'thing') {
+                        if (prep === 'yes') {
+                            resultTitle.textContent = 'Which 📦';
+                            resultExp.innerHTML = 'لغير العاقل مع وجود حرف جر قبل النقط (مثل in which / with which)، نستخدم <strong>Which</strong> فقط. <span style="color:#f87171;">ممنوع استخدام That بعد حروف الجر!</span>';
+                        } else if (commas === 'yes') {
+                            resultTitle.textContent = 'Which 🔲';
+                            resultExp.innerHTML = 'لغير العاقل في جملة إضافية بين فاصلتين (Non-defining)، نستخدم <strong>Which</strong>. <span style="color:#f87171;">ممنوع استخدام That بين الفواصل!</span>';
+                        } else {
+                            resultTitle.textContent = 'Which / That (أو الحذف) ✨';
+                            resultExp.innerHTML = 'لغير العاقل في جملة عادية بدون فواصل، يمكنك استخدام <strong>Which</strong> أو <strong>That</strong> بحرية، أو حذف الضمير لو كان مفعول به.';
+                        }
+                        return;
+                    }
+
+                    if (antecedent === 'place') {
+                        if (prep === 'yes') {
+                            resultTitle.textContent = 'Which (مكان + حرف جر) 🏨';
+                            resultExp.innerHTML = 'ظرف المكان Where يكره حروف الجر! في وجود حرف جر قبل النقط نستخدم <strong>Which</strong> (مثل: the hotel in which we stayed).';
+                        } else {
+                            resultTitle.textContent = 'Where (لو فيه حدث) / Which (لو مفعول به) 🏨';
+                            resultExp.innerHTML = 'إذا كان المكان مسرحاً لحدث أو إقامة نستخدم <strong>Where</strong>. أما إذا كان المكان مفعولاً به لفعل متعدٍ (مثل: visited / photographed / bought) نستخدم <strong>Which / That</strong>!';
+                        }
+                        return;
+                    }
+
+                    if (antecedent === 'time') {
+                        if (prep === 'yes') {
+                            resultTitle.textContent = 'Which (زمان + حرف جر) 📅';
+                            resultExp.innerHTML = 'ظرف الزمان When يكره حروف الجر! في وجود حرف جر قبل النقط نستخدم <strong>Which</strong> (مثل: the day on which we met).';
+                        } else {
+                            resultTitle.textContent = 'When (لو توقيت) / Which (لو مفعول به) 📅';
+                            resultExp.innerHTML = 'إذا كانت الجملة تعبر عن توقيت حدوث فعل نستخدم <strong>When</strong>. أما إذا كان الوقت مفعولاً به لفعل مثل (spent / enjoyed) نستخدم <strong>Which / That</strong>!';
+                        }
+                        return;
+                    }
+                }
+
+                function updateSlideView() {
+                    const deck = document.getElementById('presentation-deck');
+                    const mindmapView = document.getElementById('grammar-mindmap-view');
+                    const navControls = document.getElementById('slide-nav-controls');
+                    const pillsBar = document.getElementById('slide-pills-bar');
+                    if (!deck) return;
+                    const slides = deck.querySelectorAll('.slide-frame');
+                    const indicator = document.getElementById('slide-indicator');
+                    const prevBtn = document.getElementById('prev-slide-btn');
+                    const nextBtn = document.getElementById('next-slide-btn');
+                    const pills = document.querySelectorAll('.slide-pill-item');
+
+                    if (currentSlideMode === 'mindmap') {
+                        if (deck) deck.style.display = 'none';
+                        if (mindmapView) mindmapView.style.display = 'flex';
+                        if (navControls) navControls.style.display = 'none';
+                        if (pillsBar) pillsBar.style.display = 'none';
+                        return;
+                    }
+
+                    if (mindmapView) mindmapView.style.display = 'none';
+                    if (deck) deck.style.display = 'block';
+                    if (navControls) navControls.style.display = 'flex';
+                    if (pillsBar) pillsBar.style.display = 'flex';
+
+                    if (currentSlideMode === 'presentation') {
+                        slides.forEach((slide, idx) => {
+                            if (idx === currentSlideIdx) {
+                                slide.classList.remove('hide-in-slide-mode');
+                            } else {
+                                slide.classList.add('hide-in-slide-mode');
+                            }
+                        });
+                        if (prevBtn) prevBtn.disabled = (currentSlideIdx === 0);
+                        if (nextBtn) nextBtn.disabled = (currentSlideIdx >= slides.length - 1);
+                    } else {
+                        slides.forEach(slide => slide.classList.remove('hide-in-slide-mode'));
+                        if (prevBtn) prevBtn.disabled = true;
+                        if (nextBtn) nextBtn.disabled = true;
+                    }
+
+                    if (indicator) {
+                        indicator.textContent = currentSlideMode === 'presentation' 
+                            ? `الشريحة ${currentSlideIdx + 1} من ${slides.length}`
+                            : `عرض جميع الشرائح (${slides.length})`;
+                    }
+
+                    pills.forEach((pill, idx) => {
+                        if (idx === currentSlideIdx && currentSlideMode === 'presentation') {
+                            pill.classList.add('active');
+                            pill.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+                        } else {
+                            pill.classList.remove('active');
+                        }
+                    });
+                }
+
+                function nextSlide() {
+                    const deck = document.getElementById('presentation-deck');
+                    const slides = deck ? deck.querySelectorAll('.slide-frame') : [];
+                    if (currentSlideIdx < slides.length - 1) {
+                        currentSlideIdx++;
+                        if (typeof playSound === 'function') playSound('click');
+                        updateSlideView();
+                    }
+                }
+
+                function prevSlide() {
+                    if (currentSlideIdx > 0) {
+                        currentSlideIdx--;
+                        if (typeof playSound === 'function') playSound('click');
+                        updateSlideView();
+                    }
+                }
+
+                function goToSlide(idx) {
+                    currentSlideIdx = idx;
+                    if (currentSlideMode !== 'presentation') {
+                        setSlideMode('presentation');
+                    } else {
+                        if (typeof playSound === 'function') playSound('click');
+                        updateSlideView();
+                    }
+                }
+
+                function setSlideMode(mode) {
+                    currentSlideMode = mode;
+                    const btnPres = document.getElementById('btn-mode-presentation');
+                    const btnMind = document.getElementById('btn-mode-mindmap');
+                    const btnAll = document.getElementById('btn-mode-all');
+                    
+                    if (btnPres) btnPres.classList.toggle('active', mode === 'presentation');
+                    if (btnMind) btnMind.classList.toggle('active', mode === 'mindmap');
+                    if (btnAll) btnAll.classList.toggle('active', mode === 'all');
+                    
+                    if (typeof playSound === 'function') playSound('click');
+                    updateSlideView();
+                }
+
+                document.addEventListener('keydown', (e) => {
+                    const grammarTab = document.getElementById('grammar-video');
+                    if (grammarTab && grammarTab.classList.contains('active') && currentSlideMode === 'presentation') {
+                        if (e.key === 'ArrowRight' || e.key === 'ArrowUp') {
+                            prevSlide();
+                        } else if (e.key === 'ArrowLeft' || e.key === 'ArrowDown') {
+                            nextSlide();
+                        }
+                    }
+                });
+
+                // Initialize on load or tab switch
+                window.addEventListener('load', () => {
+                    updateSlideView();
+                });
+                document.addEventListener('DOMContentLoaded', () => {
+                    updateSlideView();
+                });
+            </script>
+        </div>
+
+        <!-- Tab 7: Interactive Quiz Shell -->
+        <div id="quiz" class="tab-content">
+            <div class="score-board">
+                <span>السؤال: <span id="current-q">1</span> / <span id="total-q">93</span></span>
+                <span>النقاط: <span id="score">0</span> 🌟</span>
+            </div>
+
+            <div class="question-card">
+                <span class="emoji-display" id="emoji">🎯</span>
+                <div class="question-text" id="question">جاري تحميل السؤال...</div>
+                <div class="options-grid" id="options"></div>
+                <div class="feedback" id="feedback"></div>
+            </div>
+
+            <div class="center-row">
+                <button class="action-btn next-btn" id="next-btn" onclick="nextQuestion()" style="display: none;">السؤال التالي ➔</button>
+            </div>
+        </div>
+
+        <!-- Bottom Return Controls -->
+        <div class="nav-controls">
+            <a href="./index.html" class="action-btn secondary" data-sound-click="click">⬅ العودة لقائمة دروس الوحدة</a>
+        </div>
+    </div>
+
+    <!-- Data Layer (Decoupled Pure Model) -->
+    <script src="./lesson-1-part-1.data.js"></script>
+
+    <!-- Architecture & Shared Framework Engines -->
+    <script src="../../assets/js/bidi.js"></script>
+    <script src="../../assets/js/audio.js"></script>
+    <script src="../../assets/js/vocab-mastery.js"></script>
+    <script src="../../assets/js/slides-engine.js"></script>
+    <script src="../../assets/js/quiz-engine.js"></script>
+    <script src="../../assets/js/tabs.js"></script>
+    <script src="../../assets/js/ui.js"></script>
+    <script src="../../assets/js/main.js"></script>
+
+    <!-- Dynamic Curriculum Renderer (Single Responsibility View Hydration) -->
+    <script src="../../assets/js/curriculum-renderer.js"></script>
+</body>
+</html>

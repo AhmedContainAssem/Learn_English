@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prep 3 - Unit 3 - Lessons 1 & 2: Artificial Intelligence & AI Technology | Mr. Ahmed Assem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/curriculum.css">
+    <link rel="stylesheet" href="../../assets/css/storybook.css">
+    <link rel="stylesheet" href="../../assets/css/quiz.css">
+    <style>
+        .study-table-card {
+            background: rgba(19, 27, 46, 0.95);
+            border: 1px solid rgba(0, 243, 255, 0.2);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+        .study-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 14px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+            flex-wrap: wrap;
+            gap: 8px;
+            direction: ltr !important;
+        }
+        .study-item:last-child {
+            border-bottom: none;
+        }
+        .study-item-en {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--accent-primary);
+            direction: ltr !important;
+            text-align: left !important;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            unicode-bidi: isolate;
+        }
+        .study-item-ar {
+            font-size: 0.95rem;
+            color: #cbd5e1;
+            font-weight: 600;
+            direction: rtl !important;
+            text-align: right !important;
+            unicode-bidi: isolate;
+        }
+        .syn-ant-card {
+            background: rgba(19, 27, 46, 0.95);
+            border: 1px solid rgba(0, 243, 255, 0.2);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+        .syn-ant-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 8px;
+            direction: ltr !important;
+        }
+        .syn-box {
+            background: rgba(0, 243, 255, 0.05);
+            border-right: 3px solid var(--accent-primary);
+            padding: 8px 12px;
+            border-radius: 6px;
+            margin-bottom: 8px;
+            direction: ltr !important;
+            text-align: left !important;
+        }
+        .ant-box {
+            background: rgba(255, 183, 3, 0.05);
+            border-right: 3px solid var(--accent-orange);
+            padding: 8px 12px;
+            border-radius: 6px;
+            direction: ltr !important;
+            text-align: left !important;
+        }
+        .note-card {
+            background: linear-gradient(145deg, rgba(19, 27, 46, 0.95), rgba(15, 23, 42, 0.95));
+            border: 1px solid rgba(0, 243, 255, 0.25);
+            border-radius: 14px;
+            padding: 20px;
+            margin-bottom: 22px;
+        }
+        .note-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid rgba(0, 243, 255, 0.2);
+            padding-bottom: 10px;
+            margin-bottom: 14px;
+            flex-wrap: wrap;
+            gap: 10px;
+            direction: ltr !important;
+        }
+        .note-title-en {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--accent-primary);
+            direction: ltr !important;
+            text-align: left !important;
+            unicode-bidi: isolate;
+        }
+        .note-title-ar {
+            font-size: 1.05rem;
+            color: #e2e8f0;
+            font-weight: 700;
+            direction: rtl;
+        }
+        .dont-mix-box {
+            background: rgba(255, 71, 126, 0.08);
+            border-right: 4px solid var(--accent-red);
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin-top: 14px;
+        }
+        .goes-with-box {
+            background: rgba(0, 255, 157, 0.08);
+            border-right: 4px solid var(--accent-green);
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin-bottom: 12px;
+        }
+        .grammar-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            background: rgba(15, 23, 42, 0.8);
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid rgba(0, 243, 255, 0.2);
+        }
+        .grammar-table th, .grammar-table td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .grammar-table th {
+            background: rgba(0, 243, 255, 0.12);
+            color: var(--accent-primary);
+            font-weight: 800;
+        }
+        .dialogue-turn-box {
+            background: rgba(19, 27, 46, 0.85);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 14px;
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+        .dialogue-avatar {
+            font-size: 2rem;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(0, 243, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .speaking-card {
+            background: rgba(19, 27, 46, 0.9);
+            border: 1px solid rgba(0, 243, 255, 0.18);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 14px;
+        }
+    </style>
+</head>
+<body class="lesson-page">
+    <div class="container">
+        <!-- Back Navigation -->
+        <div class="page-actions">
+            <a href="./index.html" class="back-btn back-home" data-sound-click="click">⬅ العودة لوحدة الذكاء الاصطناعي (Unit 3)</a>
+        </div>
+
+        <!-- Teacher Header -->
+        <div class="teacher-profile-header">
+            <div class="avatar-wrapper">
+                <img src="../../my-photo-profile.webp" alt="Mr. Ahmed Assem" class="teacher-avatar" onerror="this.onerror=null; this.src='../../my-photo-profile.webp';">
+            </div>
+            <h1 class="teacher-title">Mr. Ahmed Assem</h1>
+            <div class="slogan">✨ Easy Peasy Ya Englezeey ✨</div>
+            <div class="badges-group" style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 10px;">
+                <span class="badge badge-active">الصف الثالث الإعدادي (Prep 3)</span>
+                <span class="badge badge-gold">📖 SB pages 41 : 45 • Unit 3: Lessons 1 & 2</span>
+                <span class="badge" style="background: rgba(0, 255, 157, 0.15); color: var(--accent-green); border: 1px solid var(--accent-green);">🤖 Artificial Intelligence & AI Technology</span>
+            </div>
+            <h2 id="title" class="lesson-title-display">Lessons 1 & 2: Artificial Intelligence & AI Technology (Active & Passive)</h2>
+        </div>
+
+        <!-- Navigation Tabs -->
+        <div class="tabs-container">
+            <div class="tabs-scroll-wrapper">
+                <button class="tab-btn active" onclick="switchTab('vocab')">📖 المفردات (29 كلمة)</button>
+                <button class="tab-btn" onclick="switchTab('verbs')">⚡ تصريف الأفعال (14 فعلاً)</button>
+                <button class="tab-btn" onclick="switchTab('collocations-affixes')">🔗 المتلازمات واللواحق</button>
+                <button class="tab-btn" onclick="switchTab('synonyms-antonyms')">⚖️ المرادفات والمتضادات</button>
+                <button class="tab-btn" onclick="switchTab('general-notes')">💡 الملاحظات والتعبيرات</button>
+                <button class="tab-btn" onclick="switchTab('storybook')">📚 القصة المصورة (Storybook)</button>
+                <button class="tab-btn" onclick="switchTab('dialogue-speaking')">🗣️ المحادثة والتحدث</button>
+                <button class="tab-btn" onclick="switchTab('grammar')">⚡ القواعد: Future Passive</button>
+                <button class="tab-btn" onclick="switchTab('quiz')">🎯 اختبار الدرس الشامل (35 سؤالاً)</button>
+            </div>
+        </div>
+
+                <!-- ========================================== -->
+        <!-- Tab 1: Comprehensive Vocabulary            -->
+        <!-- ========================================== -->
+        <div id="vocab" class="tab-content active"></div>
+
+        <!-- ========================================== -->
+        <!-- Tab 2: Verbs Conjugation                   -->
+        <!-- ========================================== -->
+        <div id="verbs" class="tab-content" style="display: none;"></div>
+
+        <!-- ========================================== -->
+        <!-- Tab 3: Collocations & Affixes              -->
+        <!-- ========================================== -->
+        <div id="collocations-affixes" class="tab-content" style="display: none;">
+            <div id="collocations"></div>
+            <div id="affixes" style="margin-top: 36px;"></div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- Tab 4: Synonyms & Antonyms                 -->
+        <!-- ========================================== -->
+        <div id="synonyms-antonyms" class="tab-content" style="display: none;">
+            <div id="synonyms"></div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- Tab 5: General Notes & Expressions         -->
+        <!-- ========================================== -->
+        <div id="general-notes" class="tab-content" style="display: none;">
+            <div id="notes"></div>
+            <div id="expressions" style="margin-top: 36px;"></div>
+        </div>
+
+<!-- ========================================== -->
+        <!-- Tab 6: Interactive Storybook (StoryEngine) -->
+        <!-- ========================================== -->
+        <div id="storybook" class="tab-content" style="display: none;">
+            <div class="section-title">📚 القراءة التفاعلية المصورة (Storybook Engine • SB pages 41 : 45)</div>
+            <div class="lesson-desc-display" style="text-align: right; margin-bottom: 20px;">
+                💡 <strong>استوديو القراءة والقصة التفاعلية:</strong> استمتع بقراءة ومتابعة نصوص كتاب الطالب الرسمية في 4 مشاهد واقعية مصورة مع الترجمة الفورية والكلمات المفتاحية، مع إمكانية تشغيل <strong>القارئ الصوتي التلقائي (Auto Storyteller)</strong> 🔊.
+            </div>
+
+            <div class="storybook-wrapper">
+                <div class="storybook-book">
+                    <div class="book-spine-divider"></div>
+                    <div class="story-page-artwork">
+                        <div class="artwork-frame">
+                            <img id="storyArtworkImg" src="../../assets/images/prep3_u3_robots_ai_1790859032488.webp" alt="Scene Artwork" class="story-artwork">
+                        </div>
+                        <div id="storyCaption" class="artwork-caption">
+                            Understanding the difference: Robots are machines that move, while AI is the thinking brain inside them.
+                        </div>
+                    </div>
+
+                    <div class="story-page-content">
+                        <div class="story-header">
+                            <span id="storyPageBadge" class="story-badge">🖼️ Scene 1 of 4</span>
+                            <span id="storyPageCounter" class="story-counter">Page 1 / 4</span>
+                        </div>
+                        <h3 id="storyTitle" class="story-page-title">Scene 1: Robots and Artificial Intelligence</h3>
+
+                        <div class="story-text-container">
+                            <div class="story-audio-action">
+                                <button type="button" class="audio-btn" onclick="speakCurrentStoryPage()" title="استمع للنطق">🔊</button>
+                            </div>
+                            <div class="story-paragraph" id="storyText">
+                                Many people think robots and Artificial Intelligence (AI) are the same, but they are different. A robot is a machine that can move and do tasks. Some robots are very simple, like a machine in a factory that puts bottles in a box. Other robots are more advanced, like robot dogs that can walk, run, and even play with people.
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="story-translation-box" id="storyTranslation">
+                                <span class="translation-tag">💡 الترجمة:</span>
+                                يعتقد كثير من الناس أن الروبوتات والذكاء الاصطناعي شيء واحد، لكنهما مختلفان تماماً. فالروبوت آلة قادرة على الحركة وأداء المهام؛ وبعضها بسيط للغاية مثل آلات المصانع التي تضع الزجاجات في الصناديق، بينما الروبوتات الأخرى متطورة مثل الكلاب الآلية.
+                            </div>
+
+                            <div class="story-vocab-chips" id="storyVocab">
+                                <span class="vocab-chip">robots (روبوتات)</span>
+                                <span class="vocab-chip">Artificial Intelligence (ذكاء اصطناعي)</span>
+                                <span class="vocab-chip">advanced (متطور)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Story Controls Bar -->
+                <div class="story-controls-bar">
+                    <button type="button" id="storyPrevBtn" onclick="changeStoryPage(-1)" class="action-btn secondary" disabled>
+                        ⬅️ الصفحة السابقة
+                    </button>
+
+                    <button type="button" id="storytellerBtn" onclick="toggleStoryteller()" class="storyteller-btn">
+                        ▶️ القارئ التلقائي (Auto Storyteller)
+                    </button>
+
+                    <div class="story-page-progress">
+                        <span id="storyPageProgressText">Page 1 of 4</span>
+                        <div class="progress-dots" id="storyProgressDots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+
+                    <button type="button" id="storyNextBtn" onclick="changeStoryPage(1)" class="action-btn secondary">
+                        الصفحة التالية ➔
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- ========================================== -->
+        <!-- Tab 7: Dialogue & Speaking Practice        -->
+        <!-- ========================================== -->
+        <div id="dialogue-speaking" class="tab-content" style="display: none;">
+            <div class="section-title">🗣️ المحادثة وممارسة التحدث (Listening & Speaking Practice)</div>
+
+            <h3 class="section-subtitle">1. Listening Dialogue (حوار لينا وأدهم حول الذكاء الاصطناعي والإبداع • SB page 44)</h3>
+            <div style="margin-bottom: 20px;">
+    
+                <div class="dialogue-turn-box">
+                    <div class="dialogue-avatar">👩‍🎓</div>
+                    <div style="flex: 1;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                            <strong style="color: var(--accent-secondary); font-size: 1.05rem;">Lina (لينا)</strong>
+                            <button type="button" class="audio-btn" onclick="speakText('Hey Adham, I read something interesting today. It said that AI can make art and music. Isn\'t that something only humans can do?'); playSound('click');" title="استمع للكلام">🔊</button>
+                        </div>
+                        <div class="en-text" dir="ltr" style="font-size: 1.05rem; color: #f8fafc; font-weight: 600; line-height: 1.6; margin-bottom: 6px;">
+                            Hey Adham, I read something interesting today. It said that AI can make art and music. Isn't that something only humans can do?
+                        </div>
+                        <div style="color: #94a3b8; font-size: 0.95rem; direction: rtl; text-align: right;">
+                            (مرحباً يا أدهم، قرأت شيئاً مثيراً للاهتمام اليوم؛ قيل إن الذكاء الاصطناعي يستطيع صنع الفن والموسيقى، أليس هذا عملاً يقتصر على البشر فقط؟)
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="dialogue-turn-box">
+                    <div class="dialogue-avatar">👨‍🎓</div>
+                    <div style="flex: 1;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                            <strong style="color: var(--accent-secondary); font-size: 1.05rem;">Adham (أدهم)</strong>
+                            <button type="button" class="audio-btn" onclick="speakText('Yeah, a lot of people think that. But with all the new innovation in technology, AI can actually create pictures, songs, and even stories!'); playSound('click');" title="استمع للكلام">🔊</button>
+                        </div>
+                        <div class="en-text" dir="ltr" style="font-size: 1.05rem; color: #f8fafc; font-weight: 600; line-height: 1.6; margin-bottom: 6px;">
+                            Yeah, a lot of people think that. But with all the new innovation in technology, AI can actually create pictures, songs, and even stories!
+                        </div>
+                        <div style="color: #94a3b8; font-size: 0.95rem; direction: rtl; text-align: right;">
+                            (نعم، كثير من الناس يظنون ذلك، لكن مع الابتكارات الجديدة في التكنولوجيا، يستطيع الذكاء الاصطناعي صنع الصور وتأليف الأغاني بل وحتى القصص!)
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="dialogue-turn-box">
+                    <div class="dialogue-avatar">👩‍🎓</div>
+                    <div style="flex: 1;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                            <strong style="color: var(--accent-secondary); font-size: 1.05rem;">Lina (لينا)</strong>
+                            <button type="button" class="audio-btn" onclick="speakText('Really? How does that work?'); playSound('click');" title="استمع للكلام">🔊</button>
+                        </div>
+                        <div class="en-text" dir="ltr" style="font-size: 1.05rem; color: #f8fafc; font-weight: 600; line-height: 1.6; margin-bottom: 6px;">
+                            Really? How does that work?
+                        </div>
+                        <div style="color: #94a3b8; font-size: 0.95rem; direction: rtl; text-align: right;">
+                            (حقاً؟ وكيف يعمل ذلك؟)
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="dialogue-turn-box">
+                    <div class="dialogue-avatar">👨‍🎓</div>
+                    <div style="flex: 1;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                            <strong style="color: var(--accent-secondary); font-size: 1.05rem;">Adham (أدهم)</strong>
+                            <button type="button" class="audio-btn" onclick="speakText('Well, there are AI programs. For example, you type something like \'a cat flying in space\', and it makes a picture! It uses a special algorithm to turn words into images.'); playSound('click');" title="استمع للكلام">🔊</button>
+                        </div>
+                        <div class="en-text" dir="ltr" style="font-size: 1.05rem; color: #f8fafc; font-weight: 600; line-height: 1.6; margin-bottom: 6px;">
+                            Well, there are AI programs. For example, you type something like 'a cat flying in space', and it makes a picture! It uses a special algorithm to turn words into images.
+                        </div>
+                        <div style="color: #94a3b8; font-size: 0.95rem; direction: rtl; text-align: right;">
+                            (حسناً، هناك برامج ذكاء اصطناعي. مثلاً تكتبين عبارة مثل 'قط يطير في الفضاء'، فيقوم برسم صورة لها! إنه يستخدم خوارزمية خاصة لتحويل الكلمات إلى صور.)
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="dialogue-turn-box">
+                    <div class="dialogue-avatar">👩‍🎓</div>
+                    <div style="flex: 1;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                            <strong style="color: var(--accent-secondary); font-size: 1.05rem;">Lina (لينا)</strong>
+                            <button type="button" class="audio-btn" onclick="speakText('Wow! That sounds fun, Can it make music too?'); playSound('click');" title="استمع للكلام">🔊</button>
+                        </div>
+                        <div class="en-text" dir="ltr" style="font-size: 1.05rem; color: #f8fafc; font-weight: 600; line-height: 1.6; margin-bottom: 6px;">
+                            Wow! That sounds fun, Can it make music too?
+                        </div>
+                        <div style="color: #94a3b8; font-size: 0.95rem; direction: rtl; text-align: right;">
+                            (رائع! يبدو ذلك ممتعاً، هل يمكنه تأليف الموسيقى أيضاً؟)
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="dialogue-turn-box">
+                    <div class="dialogue-avatar">👨‍🎓</div>
+                    <div style="flex: 1;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                            <strong style="color: var(--accent-secondary); font-size: 1.05rem;">Adham (أدهم)</strong>
+                            <button type="button" class="audio-btn" onclick="speakText('Yes! Some AI can compose music or even write poems. Some writers use AI to get ideas or write the first draft of a story.'); playSound('click');" title="استمع للكلام">🔊</button>
+                        </div>
+                        <div class="en-text" dir="ltr" style="font-size: 1.05rem; color: #f8fafc; font-weight: 600; line-height: 1.6; margin-bottom: 6px;">
+                            Yes! Some AI can compose music or even write poems. Some writers use AI to get ideas or write the first draft of a story.
+                        </div>
+                        <div style="color: #94a3b8; font-size: 0.95rem; direction: rtl; text-align: right;">
+                            (نعم! بعض برامج الذكاء الاصطناعي تؤلف الموسيقى وتكتب قصائد شعرية، وبعض الكتاب يستعينون بها لتوليد الأفكار وصياغة المسودة الأولى للقصة.)
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="dialogue-turn-box">
+                    <div class="dialogue-avatar">👩‍🎓</div>
+                    <div style="flex: 1;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                            <strong style="color: var(--accent-secondary); font-size: 1.05rem;">Lina (لينا)</strong>
+                            <button type="button" class="audio-btn" onclick="speakText('But can AI really be creative? Doesn\'t it just copy things?'); playSound('click');" title="استمع للكلام">🔊</button>
+                        </div>
+                        <div class="en-text" dir="ltr" style="font-size: 1.05rem; color: #f8fafc; font-weight: 600; line-height: 1.6; margin-bottom: 6px;">
+                            But can AI really be creative? Doesn't it just copy things?
+                        </div>
+                        <div style="color: #94a3b8; font-size: 0.95rem; direction: rtl; text-align: right;">
+                            (ولكن هل يمكن للذكاء الاصطناعي أن يكون مبدعاً حقاً؟ ألا يقوم فقط بنسخ الأشياء؟)
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="dialogue-turn-box">
+                    <div class="dialogue-avatar">👨‍🎓</div>
+                    <div style="flex: 1;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                            <strong style="color: var(--accent-secondary); font-size: 1.05rem;">Adham (أدهم)</strong>
+                            <button type="button" class="audio-btn" onclick="speakText('Good question. AI learns by studying thousands of human-made songs, books, and art. Then it finds patterns and makes something new. It\'s like a virtual artist.'); playSound('click');" title="استمع للكلام">🔊</button>
+                        </div>
+                        <div class="en-text" dir="ltr" style="font-size: 1.05rem; color: #f8fafc; font-weight: 600; line-height: 1.6; margin-bottom: 6px;">
+                            Good question. AI learns by studying thousands of human-made songs, books, and art. Then it finds patterns and makes something new. It's like a virtual artist.
+                        </div>
+                        <div style="color: #94a3b8; font-size: 0.95rem; direction: rtl; text-align: right;">
+                            (سؤال وجيه. يتعلم الذكاء الاصطناعي من دراسة آلاف الأعمال الإنسانية من كتب وأغانٍ وفنون، ثم يكتشف الأنماط ويصنع شيئاً جديداً تماماً كفنان افتراضي.)
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="dialogue-turn-box">
+                    <div class="dialogue-avatar">👩‍🎓</div>
+                    <div style="flex: 1;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                            <strong style="color: var(--accent-secondary); font-size: 1.05rem;">Lina (لينا)</strong>
+                            <button type="button" class="audio-btn" onclick="speakText('Can AI feel emotions like a human artist?'); playSound('click');" title="استمع للكلام">🔊</button>
+                        </div>
+                        <div class="en-text" dir="ltr" style="font-size: 1.05rem; color: #f8fafc; font-weight: 600; line-height: 1.6; margin-bottom: 6px;">
+                            Can AI feel emotions like a human artist?
+                        </div>
+                        <div style="color: #94a3b8; font-size: 0.95rem; direction: rtl; text-align: right;">
+                            (وهل يمكن للذكاء الاصطناعي أن يشعر بالعواطف كالفنان البشري؟)
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="dialogue-turn-box">
+                    <div class="dialogue-avatar">👨‍🎓</div>
+                    <div style="flex: 1;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                            <strong style="color: var(--accent-secondary); font-size: 1.05rem;">Adham (أدهم)</strong>
+                            <button type="button" class="audio-btn" onclick="speakText('No. AI is just a tool, not a replacement! But it\'s an exciting way to help humans be even more creative.'); playSound('click');" title="استمع للكلام">🔊</button>
+                        </div>
+                        <div class="en-text" dir="ltr" style="font-size: 1.05rem; color: #f8fafc; font-weight: 600; line-height: 1.6; margin-bottom: 6px;">
+                            No. AI is just a tool, not a replacement! But it's an exciting way to help humans be even more creative.
+                        </div>
+                        <div style="color: #94a3b8; font-size: 0.95rem; direction: rtl; text-align: right;">
+                            (كلا، فالذكاء الاصطناعي مجرد أداة مساعدة وليس بديلاً عن الإنسان، ولكنه وسيلة رائعة تمكن البشر من مضاعفة إبداعهم.)
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+
+            <h3 class="section-subtitle" style="margin-top: 36px;">2. Speaking Skills (أسئلة وأجوبة مهارة التحدث موضع الامتحان • Page 113)</h3>
+            <div class="cards-grid grid-cards">
+    
+                <div class="speaking-card">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                        <span class="tag-badge">Speaking Q&A</span>
+                        <button type="button" class="audio-btn" onclick="speakText('Question: What is a robot?. Answer: It is a machine that can move and do tasks..'); playSound('click');" title="استمع للسؤال والإجابة">🔊</button>
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                        <div style="font-weight: 700; color: var(--accent-primary); direction: ltr; text-align: left;">Q: What is a robot?</div>
+                        <div style="color: #94a3b8; font-size: 0.88rem; direction: rtl; text-align: right; margin-top: 2px;">(ما هو الإنسان الآلي؟)</div>
+                    </div>
+                    <div style="background: rgba(0, 255, 157, 0.06); padding: 8px 12px; border-radius: 6px; border-left: 3px solid var(--accent-green);">
+                        <div style="font-weight: 600; color: #f8fafc; direction: ltr; text-align: left;">A: It is a machine that can move and do tasks.</div>
+                        <div style="color: #cbd5e1; font-size: 0.88rem; direction: rtl; text-align: right; margin-top: 2px;">(هو آلة يمكنها الحركة وأداء مهام محددة.)</div>
+                    </div>
+                </div>
+        
+                <div class="speaking-card">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                        <span class="tag-badge">Speaking Q&A</span>
+                        <button type="button" class="audio-btn" onclick="speakText('Question: Do you think robots can do all human work?. Answer: No, I do not think so. They need humans to program them..'); playSound('click');" title="استمع للسؤال والإجابة">🔊</button>
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                        <div style="font-weight: 700; color: var(--accent-primary); direction: ltr; text-align: left;">Q: Do you think robots can do all human work?</div>
+                        <div style="color: #94a3b8; font-size: 0.88rem; direction: rtl; text-align: right; margin-top: 2px;">(هل تعتقد أن الروبوت يمكنه أداء كافة أعمال البشر؟)</div>
+                    </div>
+                    <div style="background: rgba(0, 255, 157, 0.06); padding: 8px 12px; border-radius: 6px; border-left: 3px solid var(--accent-green);">
+                        <div style="font-weight: 600; color: #f8fafc; direction: ltr; text-align: left;">A: No, I do not think so. They need humans to program them.</div>
+                        <div style="color: #cbd5e1; font-size: 0.88rem; direction: rtl; text-align: right; margin-top: 2px;">(لا، لا أعتقد ذلك لأنها تحتاج دائماً للبشر لبرمجتها.)</div>
+                    </div>
+                </div>
+        
+                <div class="speaking-card">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                        <span class="tag-badge">Speaking Q&A</span>
+                        <button type="button" class="audio-btn" onclick="speakText('Question: How can robots help in hospitals?. Answer: They can bring medicine to patients and help during surgery..'); playSound('click');" title="استمع للسؤال والإجابة">🔊</button>
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                        <div style="font-weight: 700; color: var(--accent-primary); direction: ltr; text-align: left;">Q: How can robots help in hospitals?</div>
+                        <div style="color: #94a3b8; font-size: 0.88rem; direction: rtl; text-align: right; margin-top: 2px;">(كيف تساعد الروبوتات في المستشفيات؟)</div>
+                    </div>
+                    <div style="background: rgba(0, 255, 157, 0.06); padding: 8px 12px; border-radius: 6px; border-left: 3px solid var(--accent-green);">
+                        <div style="font-weight: 600; color: #f8fafc; direction: ltr; text-align: left;">A: They can bring medicine to patients and help during surgery.</div>
+                        <div style="color: #cbd5e1; font-size: 0.88rem; direction: rtl; text-align: right; margin-top: 2px;">(يمكنها نقل الدواء للمرضى وتقديم المساعدة في العمليات الجراحية.)</div>
+                    </div>
+                </div>
+        
+                <div class="speaking-card">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                        <span class="tag-badge">Speaking Q&A</span>
+                        <button type="button" class="audio-btn" onclick="speakText('Question: Do you think robots and AI can make our life better? Why?. Answer: Yes, because they offer incredible benefits across many fields..'); playSound('click');" title="استمع للسؤال والإجابة">🔊</button>
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                        <div style="font-weight: 700; color: var(--accent-primary); direction: ltr; text-align: left;">Q: Do you think robots and AI can make our life better? Why?</div>
+                        <div style="color: #94a3b8; font-size: 0.88rem; direction: rtl; text-align: right; margin-top: 2px;">(هل تعتقد أن الروبوتات والذكاء الاصطناعي يجعلان حياتنا أفضل؟ ولماذا؟)</div>
+                    </div>
+                    <div style="background: rgba(0, 255, 157, 0.06); padding: 8px 12px; border-radius: 6px; border-left: 3px solid var(--accent-green);">
+                        <div style="font-weight: 600; color: #f8fafc; direction: ltr; text-align: left;">A: Yes, because they offer incredible benefits across many fields.</div>
+                        <div style="color: #cbd5e1; font-size: 0.88rem; direction: rtl; text-align: right; margin-top: 2px;">(نعم، لأنها تقدم فوائد ومزايا هائلة في مجالات متعددة.)</div>
+                    </div>
+                </div>
+        
+                <div class="speaking-card">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                        <span class="tag-badge">Speaking Q&A</span>
+                        <button type="button" class="audio-btn" onclick="speakText('Question: What do you know about Artificial Intelligence (AI)?. Answer: It is technology that helps computers and machines do tasks..'); playSound('click');" title="استمع للسؤال والإجابة">🔊</button>
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                        <div style="font-weight: 700; color: var(--accent-primary); direction: ltr; text-align: left;">Q: What do you know about Artificial Intelligence (AI)?</div>
+                        <div style="color: #94a3b8; font-size: 0.88rem; direction: rtl; text-align: right; margin-top: 2px;">(ماذا تعرف عن الذكاء الاصطناعي؟)</div>
+                    </div>
+                    <div style="background: rgba(0, 255, 157, 0.06); padding: 8px 12px; border-radius: 6px; border-left: 3px solid var(--accent-green);">
+                        <div style="font-weight: 600; color: #f8fafc; direction: ltr; text-align: left;">A: It is technology that helps computers and machines do tasks.</div>
+                        <div style="color: #cbd5e1; font-size: 0.88rem; direction: rtl; text-align: right; margin-top: 2px;">(هو تكنولوجيا متقدمة تمكن الحواسيب والآلات من أداء المهام بذكاء.)</div>
+                    </div>
+                </div>
+        
+                <div class="speaking-card">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                        <span class="tag-badge">Speaking Q&A</span>
+                        <button type="button" class="audio-btn" onclick="speakText('Question: What fields does AI help in?. Answer: It helps in many fields, like medicine, education, and transportation..'); playSound('click');" title="استمع للسؤال والإجابة">🔊</button>
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                        <div style="font-weight: 700; color: var(--accent-primary); direction: ltr; text-align: left;">Q: What fields does AI help in?</div>
+                        <div style="color: #94a3b8; font-size: 0.88rem; direction: rtl; text-align: right; margin-top: 2px;">(ما هي المجالات التي يفيد فيها الذكاء الاصطناعي؟)</div>
+                    </div>
+                    <div style="background: rgba(0, 255, 157, 0.06); padding: 8px 12px; border-radius: 6px; border-left: 3px solid var(--accent-green);">
+                        <div style="font-weight: 600; color: #f8fafc; direction: ltr; text-align: left;">A: It helps in many fields, like medicine, education, and transportation.</div>
+                        <div style="color: #cbd5e1; font-size: 0.88rem; direction: rtl; text-align: right; margin-top: 2px;">(يفيد في قطاعات واسعة كالطب والتعليم ووسائل النقل.)</div>
+                    </div>
+                </div>
+        
+                <div class="speaking-card">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                        <span class="tag-badge">Speaking Q&A</span>
+                        <button type="button" class="audio-btn" onclick="speakText('Question: How do you think AI helps in education?. Answer: It helps students learn new languages and solve math problems..'); playSound('click');" title="استمع للسؤال والإجابة">🔊</button>
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                        <div style="font-weight: 700; color: var(--accent-primary); direction: ltr; text-align: left;">Q: How do you think AI helps in education?</div>
+                        <div style="color: #94a3b8; font-size: 0.88rem; direction: rtl; text-align: right; margin-top: 2px;">(كيف يسهم الذكاء الاصطناعي في التعليم برأيك؟)</div>
+                    </div>
+                    <div style="background: rgba(0, 255, 157, 0.06); padding: 8px 12px; border-radius: 6px; border-left: 3px solid var(--accent-green);">
+                        <div style="font-weight: 600; color: #f8fafc; direction: ltr; text-align: left;">A: It helps students learn new languages and solve math problems.</div>
+                        <div style="color: #cbd5e1; font-size: 0.88rem; direction: rtl; text-align: right; margin-top: 2px;">(يساعد الطلاب على إتقان لغات جديدة وحل المسائل الحسابية المعقدة.)</div>
+                    </div>
+                </div>
+        
+                <div class="speaking-card">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                        <span class="tag-badge">Speaking Q&A</span>
+                        <button type="button" class="audio-btn" onclick="speakText('Question: Do you think AI will become smarter than humans one day?. Answer: No, I think humans will always be more creative..'); playSound('click');" title="استمع للسؤال والإجابة">🔊</button>
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                        <div style="font-weight: 700; color: var(--accent-primary); direction: ltr; text-align: left;">Q: Do you think AI will become smarter than humans one day?</div>
+                        <div style="color: #94a3b8; font-size: 0.88rem; direction: rtl; text-align: right; margin-top: 2px;">(هل تظن أن الذكاء الاصطناعي سيصبح أذكى من البشر يوماً ما؟)</div>
+                    </div>
+                    <div style="background: rgba(0, 255, 157, 0.06); padding: 8px 12px; border-radius: 6px; border-left: 3px solid var(--accent-green);">
+                        <div style="font-weight: 600; color: #f8fafc; direction: ltr; text-align: left;">A: No, I think humans will always be more creative.</div>
+                        <div style="color: #cbd5e1; font-size: 0.88rem; direction: rtl; text-align: right; margin-top: 2px;">(كلا، أعتقد أن البشر سيظلون دائماً أكثر إبداعاً ووجداناً.)</div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    
+        <!-- ========================================== -->
+        <!-- Tab 8: Grammar (The Future Simple Passive)  -->
+        <!-- ========================================== -->
+        <div id="grammar" class="tab-content" style="display: none;">
+            <div class="section-title">⚡ قواعد الوحدة: زمن المستقبل البسيط مبني للمعلوم والمجهول (Future Simple: Active & Passive)</div>
+            <div class="lesson-desc-display" style="text-align: right; margin-bottom: 24px;">
+                💡 <strong>مفهوم المبني للمجهول في المستقبل (Future Simple Passive):</strong> يُستخدم لوصف أحداث سوف تقع في المستقبل مع التركيز على الحدث نفسه أو الشيء المتأثر (المفعول به) بدلاً من الفاعل <em>(will be + p.p.)</em>.
+            </div>
+
+            <div class="note-card" style="border-color: var(--accent-primary);">
+                <div class="note-header">
+                    <div class="note-title-en" dir="ltr">Basic Principle of Passive Voice</div>
+                    <div class="note-title-ar">القاعدة الذهبية لتحويل المستقبل للمجهول</div>
+                </div>
+                <div class="goes-with-box" style="direction: ltr; text-align: left;">
+                    <strong style="color: var(--accent-green);">Rule:</strong> In Future Simple Passive, we start with the <strong>Object</strong>, followed by <strong>will be / won't be</strong>, and the <strong>Past Participle (p.p.)</strong> of the main verb:
+                    <div style="margin-top: 8px; font-size: 1.15rem; font-weight: 800; color: var(--accent-primary);">
+                        Object + will be + p.p.... (by + Subject)
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="section-subtitle">جدول المقارنة والتطبيق الشامل لكافة الصيغ (Grammar Reference Table):</h3>
+            <div style="overflow-x: auto;">
+                <table class="grammar-table" dir="ltr">
+                    <thead>
+                        <tr>
+                            <th>Form (الصيغة)</th>
+                            <th>Active Voice (المبني للمعلوم)</th>
+                            <th>Passive Voice (المبني للمجهول)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+    
+                        <tr>
+                            <td style="font-weight: 800; color: var(--accent-orange);">Affirmative (الإثبات)</td>
+                            <td>
+                                <strong style="color: var(--accent-secondary);">Subject + will + inf....</strong><br>
+                                <span style="color: #cbd5e1;">ex. He will plant trees tomorrow.</span>
+                            </td>
+                            <td>
+                                <strong style="color: var(--accent-green);">Object + will + be + p.p.... (by + agent)</strong><br>
+                                <span style="color: #f8fafc; font-weight: 700;">ex. Trees will be planted (by him) tomorrow.</span>
+                            </td>
+                        </tr>
+        
+                        <tr>
+                            <td style="font-weight: 800; color: var(--accent-orange);">Negative (النفي)</td>
+                            <td>
+                                <strong style="color: var(--accent-secondary);">Subject + won't + inf....</strong><br>
+                                <span style="color: #cbd5e1;">ex. They won't use AI to fix cars.</span>
+                            </td>
+                            <td>
+                                <strong style="color: var(--accent-green);">Object + won't + be + p.p.... (by + agent)</strong><br>
+                                <span style="color: #f8fafc; font-weight: 700;">ex. AI won't be used to fix cars by them.</span>
+                            </td>
+                        </tr>
+        
+                        <tr>
+                            <td style="font-weight: 800; color: var(--accent-orange);">Yes / No Question (السؤال بـ هل)</td>
+                            <td>
+                                <strong style="color: var(--accent-secondary);">Will + subject + inf....?</strong><br>
+                                <span style="color: #cbd5e1;">ex. Will people use self-driving cars in the future?</span>
+                            </td>
+                            <td>
+                                <strong style="color: var(--accent-green);">Will + Object + be + p.p....?</strong><br>
+                                <span style="color: #f8fafc; font-weight: 700;">ex. Will self-driving cars be used in the future (by people)?</span>
+                            </td>
+                        </tr>
+        
+                        <tr>
+                            <td style="font-weight: 800; color: var(--accent-orange);">Wh- Question (السؤال بأداة الاستفهام)</td>
+                            <td>
+                                <strong style="color: var(--accent-secondary);">Q.W. + will + subject + inf....?</strong><br>
+                                <span style="color: #cbd5e1;">ex. When will the doctor do the surgery?</span>
+                            </td>
+                            <td>
+                                <strong style="color: var(--accent-green);">Q.W. + will + Object + be + p.p....?</strong><br>
+                                <span style="color: #f8fafc; font-weight: 700;">ex. When will the surgery be done (by the doctor)?</span>
+                            </td>
+                        </tr>
+        
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="section-subtitle" style="margin-top: 36px;">ملاحظات ونماذج إضافية موضع الامتحان:</h3>
+            <div class="cards-grid grid-cards">
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <span class="tag-badge">Example 1</span>
+                        <div class="word-en" dir="ltr">Hospitals & AI</div>
+                    </div>
+                    <div class="card-body">
+                        <div style="direction: ltr; text-align: left; margin-bottom: 6px;">
+                            <strong>Active:</strong> Doctors will perform surgery with smart robots.
+                        </div>
+                        <div style="direction: ltr; text-align: left; color: var(--accent-green); font-weight: 700;">
+                            <strong>Passive:</strong> Surgery will be performed with smart robots (by doctors).
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <span class="tag-badge">Example 2</span>
+                        <div class="word-en" dir="ltr">Schools & Language</div>
+                    </div>
+                    <div class="card-body">
+                        <div style="direction: ltr; text-align: left; margin-bottom: 6px;">
+                            <strong>Active:</strong> Students will learn new languages using AI apps.
+                        </div>
+                        <div style="direction: ltr; text-align: left; color: var(--accent-green); font-weight: 700;">
+                            <strong>Passive:</strong> New languages will be learned using AI apps.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <span class="tag-badge">Example 3</span>
+                        <div class="word-en" dir="ltr">Business & Automation</div>
+                    </div>
+                    <div class="card-body">
+                        <div style="direction: ltr; text-align: left; margin-bottom: 6px;">
+                            <strong>Active:</strong> Smart systems will automate repetitive tasks.
+                        </div>
+                        <div style="direction: ltr; text-align: left; color: var(--accent-green); font-weight: 700;">
+                            <strong>Passive:</strong> Repetitive tasks will be automated by smart systems.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <span class="tag-badge">Example 4</span>
+                        <div class="word-en" dir="ltr">Environment & Climate</div>
+                    </div>
+                    <div class="card-body">
+                        <div style="direction: ltr; text-align: left; margin-bottom: 6px;">
+                            <strong>Active:</strong> Scientists will solve global energy problems.
+                        </div>
+                        <div style="direction: ltr; text-align: left; color: var(--accent-green); font-weight: 700;">
+                            <strong>Passive:</strong> Global energy problems will be solved with AI.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- ========================================== -->
+        <!-- Tab 9: Comprehensive Quiz (QuizEngine)     -->
+        <!-- ========================================== -->
+        <div id="quiz" class="tab-content" style="display: none;">
+            <div class="section-title">🎯 اختبار تقييم الفهم الشامل (Comprehensive Quiz - 35 سؤالاً)</div>
+            <div class="lesson-desc-display" style="text-align: right; margin-bottom: 24px;">
+                💡 <strong>تعليمات الاختبار:</strong> 35 سؤالاً شاملاً للمفردات وتصريف الأفعال والمترادفات والمتضادات واللواحق والبوادئ وقواعد المبني للمجهول. يمنحك كل سؤال صحيح 10 نقاط فورية مع مؤثرات صوتية وتوضيح تعليمي فوري 🌟.
+            </div>
+
+            <div class="quiz-container-card">
+                <div id="quiz-header" class="quiz-header-bar">
+                    <div class="score-badge">
+                        <span>النتيجة: </span>
+                        <span id="score-display" class="score-value">0</span>
+                    </div>
+                    <div class="progress-badge">
+                        <span>السؤال: </span>
+                        <span id="current-question-num">1</span> / <span id="total-questions-num">35</span>
+                    </div>
+                </div>
+
+                <div id="question-box" class="quiz-question-box">
+                    <!-- Injected dynamically by Quiz Engine -->
+                </div>
+
+                <div id="options-box" class="quiz-options-grid">
+                    <!-- Options injected dynamically -->
+                </div>
+
+                <div id="feedback-box" class="quiz-feedback-box hidden">
+                    <!-- Feedback injected dynamically -->
+                </div>
+
+                <div class="quiz-actions-bar">
+                    <button id="next-btn" class="action-btn next-btn hidden" onclick="nextQuestion()">السؤال التالي ➔</button>
+                    <button id="retry-btn" class="action-btn secondary hidden" onclick="restartQuiz()">🔄 إعادة المحاولة</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Controls -->
+        <div class="nav-controls" style="margin-top: 30px;">
+            <a href="./index.html" class="back-btn" data-sound-click="click">⬅️ العودة لقائمة دروس الوحدة الثالثة</a>
+        </div>
+    </div>
+
+        <!-- Universal Framework Scripts -->
+    <script src="../../assets/js/bidi.js"></script>
+    <script src="../../assets/js/audio.js"></script>
+    <script src="../../assets/js/tabs.js"></script>
+    <script src="../../assets/js/quiz-engine.js"></script>
+    <script src="../../assets/js/story-engine.js"></script>
+    <script src="../../assets/js/ui.js"></script>
+    <script src="../../assets/js/practice-hub.js"></script>
+    <script src="../../assets/js/main.js"></script>
+
+    <!-- Pure Decoupled Lesson Data Payload -->
+    <script src="./lesson-1.data.js"></script>
+
+    <!-- Universal Curriculum Dynamic Renderer -->
+    <script src="../../assets/js/curriculum-renderer.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.CurriculumRenderer && typeof window.CurriculumRenderer.init === 'function') {
+                window.CurriculumRenderer.init();
+            }
+        });
+    </script>
+</body>
+</html>

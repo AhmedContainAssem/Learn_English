@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade 6 - Unit 1 - Lesson 2: Ras Mohamed & Grammar | Mr. Ahmed Assem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css?v=6">
+    <link rel="stylesheet" href="../../assets/css/curriculum.css">
+    <link rel="stylesheet" href="../../assets/css/grammar-slides.css">
+    <link rel="stylesheet" href="../../assets/css/storybook.css">
+    <link rel="stylesheet" href="../../assets/css/quiz.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb">
+            <a href="../index.html">Grade 6</a> / <a href="./index.html">Unit 1</a> / <span>Lesson 2 (Ras Mohamed &
+                Grammar)</span>
+        </div>
+
+        <!-- Teacher Profile Header -->
+        <div class="teacher-profile-header">
+            <div class="avatar-wrapper">
+                <img src="../../my-photo-profile.webp" alt="Mr. Ahmed Assem" class="teacher-avatar"
+                    onerror="this.onerror=null; this.src='../../my-photo-profile.webp';">
+            </div>
+            <h1 class="teacher-title">Mr. Ahmed Assem</h1>
+            <div class="slogan">✨ Easy Peasy Ya Englezeey ✨</div>
+            <div class="badges-row">
+                <span class="badge badge-active">Grade 6 • Unit 1 • Lesson 2</span>
+                <span class="badge badge-gold">📖 SB pages 30 : 34</span>
+            </div>
+            <h2 id="title" class="lesson-header-title">Lesson 2: The Beauty of Ras Mohamed & Language in Use</h2>
+            <p id="description" class="lesson-desc-display">المفردات، الأفعال، شرائح المضارع البسيط وظروف التكرار
+                التفاعلية بالنمط المتوهج، القصة المصورة برأس محمد، واختبار شامل 🎯</p>
+        </div>
+
+        <!-- Tabs Navigation Bar -->
+        <div class="tabs-container">
+            <button type="button" class="tab-btn active" onclick="switchTab('vocab', this)">📖 المفردات
+                (Vocabulary)</button>
+            <button type="button" class="tab-btn" onclick="switchTab('verbs', this)">⚡ الأفعال وتصريفاتها</button>
+            <button type="button" class="tab-btn" onclick="switchTab('grammar-tab', this)">🧠 شرائح القواعد التفاعلية
+                (Grammar Slides)</button>
+            <button type="button" class="tab-btn" onclick="switchTab('reading', this)">📚 القصة المصورة التفاعلية
+                (StoryBook)</button>
+            <button type="button" class="tab-btn" onclick="switchTab('quiz', this)">🎯 اختبار الدرس الشامل
+                (Quiz)</button>
+        </div>
+
+        <!-- Tab 1: Key & Lesson Vocabulary -->
+        <div id="vocab" class="tab-content active"></div>
+
+        <!-- Tab 2: Verbs -->
+        <div id="verbs" class="tab-content"></div>
+
+        <!-- Tab 3: Interactive Grammar Slides -->
+        <div id="grammar-tab" class="tab-content">
+            <div class="section-title">⚡ شرح المضارع البسيط وظروف التكرار (Present Simple & Adverbs)</div>
+            <div class="lesson-desc-display" style="text-align: right; margin-bottom: 20px;">
+                💡 <strong>شرائح مستر أحمد عاصم التفاعلية:</strong>، وتنقّل بسهولة بين القواعد والأمثلة مع التكبير
+                السلس.
+            </div>
+
+            <!-- Slide Control Toolbar -->
+            <div class="slide-control-toolbar">
+                <div class="slide-nav-buttons">
+                    <button type="button" class="action-btn next-btn" id="grammarPrevSlideBtn"
+                        onclick="changeGrammarSlide(-1)">➔ الشريحة السابقة</button>
+                    <span class="slide-counter-badge" id="grammarSlideCounter">شريحة 1 من 5</span>
+                    <button type="button" class="action-btn next-btn" id="grammarNextSlideBtn"
+                        onclick="changeGrammarSlide(1)">الشريحة التالية ⬅</button>
+                </div>
+                <div class="view-mode-toggle">
+                    <button type="button" class="view-mode-btn active" id="viewModeSlideBtn"
+                        onclick="setGrammarViewMode('slide')">📱 عرض الشرائح</button>
+                    <button type="button" class="view-mode-btn" id="viewModeListBtn"
+                        onclick="setGrammarViewMode('list')">📜 عرض القائمة الكاملة</button>
+                </div>
+            </div>
+
+            <!-- Quick Slide Pills -->
+            <div class="slide-quick-pills" id="grammarSlidePills">
+                <button type="button" class="slide-pill-item active" onclick="jumpToGrammarSlide(1)">1. الاستخدام
+                    والحقائق</button>
+                <button type="button" class="slide-pill-item" onclick="jumpToGrammarSlide(2)">2. التكوين والإثبات
+                    (-s/-es)</button>
+                <button type="button" class="slide-pill-item" onclick="jumpToGrammarSlide(3)">3. النفي والسؤال
+                    (Don't/Doesn't)</button>
+                <button type="button" class="slide-pill-item" onclick="jumpToGrammarSlide(4)">4. ظروف التكرار (0% -
+                    100%)</button>
+                <button type="button" class="slide-pill-item" onclick="jumpToGrammarSlide(5)">5. مكان ظرف التكرار في
+                    الجملة</button>
+            </div>
+
+            <!-- Slides Deck Container -->
+            <div class="grammar-slides-deck" id="grammarSlidesDeck">
+                <!-- Slide 1 -->
+                <div class="grammar-slide-card" id="grammar-slide-1">
+                    <div class="slide-header"
+                        style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(0,243,255,0.25); padding-bottom: 10px;">
+                        <span class="badge badge-active">🧠 المفهوم الأساسي</span>
+                        <h3 style="color: #00f3ff; margin: 0; font-size: 1.15rem;">1. The Present Simple: Facts & Daily
+                            Habits</h3>
+                        <span style="color: #94a3b8; font-size: 0.85rem;">شريحة 1 من 5</span>
+                    </div>
+                    <div class="grammar-slide-body" style="padding-top: 12px;">
+                        <h4 style="color: #38bdf8; margin-bottom: 8px;">متى نستخدم زمن المضارع البسيط (The Present
+                            Simple Tense)؟</h4>
+                        <p style="color: #cbd5e1; font-size: 0.95rem;">نستخدم زمن المضارع البسيط للتعبير عن أمرين
+                            رئيسيين:</p>
+                        <div
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; margin-top: 14px;">
+                            <div
+                                style="background: rgba(0, 243, 255, 0.08); border: 1.5px solid rgba(0, 243, 255, 0.35); border-radius: 12px; padding: 14px;">
+                                <strong style="color: #00f3ff; display: block; margin-bottom: 6px;">🌍 1. الحقائق العامة
+                                    والعلمية (Facts):</strong>
+                                <p style="color: #f1f5f9; margin: 0; font-size: 0.9rem;">أشياء حقيقية دائماً وثابتة في
+                                    الكون والطبيعة:</p>
+                                <div
+                                    style="direction: ltr; text-align: left; margin-top: 8px; color: #38bdf8; font-weight: 700; line-height: 1.8;">
+                                    • The sun rises in the east.<br>
+                                    • Sea turtles live in warm seas.<br>
+                                    • Mangroves grow in salty water.
+                                </div>
+                            </div>
+                            <div
+                                style="background: rgba(56, 189, 248, 0.08); border: 1.5px solid rgba(56, 189, 248, 0.35); border-radius: 12px; padding: 14px;">
+                                <strong style="color: #38bdf8; display: block; margin-bottom: 6px;">⏰ 2. العادات
+                                    والروتين اليومي (Habits & Routines):</strong>
+                                <p style="color: #f1f5f9; margin: 0; font-size: 0.9rem;">أفعال نكررها بانتظام كل يوم أو
+                                    أسبوع:</p>
+                                <div
+                                    style="direction: ltr; text-align: left; margin-top: 8px; color: #00f3ff; font-weight: 700; line-height: 1.8;">
+                                    • I usually wake up at 7:00 AM.<br>
+                                    • Tourists visit Sinai every year.<br>
+                                    • Maged plays football on Fridays.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="grammar-slide-card hide-in-slide-mode" id="grammar-slide-2">
+                    <div class="slide-header"
+                        style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(0,243,255,0.25); padding-bottom: 10px;">
+                        <span class="badge badge-gold">⚡ التكوين والإثبات</span>
+                        <h3 style="color: #ffd166; margin: 0; font-size: 1.15rem;">2. Affirmative Form: The Magic of -s
+                            / -es / -ies</h3>
+                        <span style="color: #94a3b8; font-size: 0.85rem;">شريحة 2 من 5</span>
+                    </div>
+                    <div class="grammar-slide-body" style="padding-top: 12px;">
+                        <h4 style="color: #00f3ff; margin-bottom: 8px;">تكوين الجملة المثبتة في المضارع البسيط:</h4>
+
+                        <div
+                            style="background: rgba(11, 19, 43, 0.75); border: 1.5px solid rgba(0, 243, 255, 0.35); border-radius: 14px; padding: 14px; margin-bottom: 12px;">
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; margin-bottom: 8px;">
+                                <span style="color: #38bdf8; font-weight: 800;">1. مع الجمع والضمير (I / We / You /
+                                    They):</span>
+                                <span class="badge badge-active" style="direction: ltr;">Subject + Verb
+                                    (Infinitive)</span>
+                            </div>
+                            <p style="color: #e2e8f0; margin: 0; direction: ltr; text-align: left; font-size: 0.95rem;">
+                                • We <strong>swim</strong> in the sea. | They <strong>protect</strong> the reefs. | I
+                                <strong>live</strong> in Cairo.</p>
+                        </div>
+
+                        <div
+                            style="background: rgba(11, 19, 43, 0.75); border: 1.5px solid rgba(255, 183, 3, 0.4); border-radius: 14px; padding: 14px;">
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; margin-bottom: 8px;">
+                                <span style="color: #ffd166; font-weight: 800;">2. مع المفرد الغائب (He / She /
+                                    It):</span>
+                                <span class="badge badge-gold" style="direction: ltr;">Subject + Verb + (s / es /
+                                    ies)</span>
+                            </div>
+                            <div style="color: #f8fafc; font-size: 0.9rem; line-height: 1.8;">
+                                • نضيف <strong style="color: #ffd166;">-es</strong> إذا انتهى الفعل بـ:
+                                <code>(ch, sh, ss, x, o, z)</code> ➔ <em>watches, washes, goes, passes</em><br>
+                                • إذا انتهى بـ <strong>consonant + y</strong> نحذف الـ y ونضيف <strong
+                                    style="color: #ffd166;">-ies</strong> ➔ <em>fly ➔ flies, study ➔ studies</em><br>
+                                • إذا انتهى بـ <strong>vowel + y</strong> نضيف <strong
+                                    style="color: #ffd166;">-s</strong> فقط ➔ <em>play ➔ plays, stay ➔ stays</em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="grammar-slide-card hide-in-slide-mode" id="grammar-slide-3">
+                    <div class="slide-header"
+                        style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(0,243,255,0.25); padding-bottom: 10px;">
+                        <span class="badge"
+                            style="background: rgba(255, 71, 126, 0.2); border: 1px solid #ff477e; color: #ff477e;">🚫
+                            النفي وتكوين السؤال</span>
+                        <h3 style="color: #ff477e; margin: 0; font-size: 1.15rem;">3. Negative & Question Rules: Don't /
+                            Doesn't</h3>
+                        <span style="color: #94a3b8; font-size: 0.85rem;">شريحة 3 من 5</span>
+                    </div>
+                    <div class="grammar-slide-body" style="padding-top: 12px;">
+                        <div
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px;">
+                            <div
+                                style="background: rgba(255, 71, 126, 0.08); border: 1.5px solid rgba(255, 71, 126, 0.35); border-radius: 12px; padding: 14px;">
+                                <strong style="color: #ff477e; display: block; margin-bottom: 6px;">🚫 1. صيغة النفي
+                                    (Negative):</strong>
+                                <div
+                                    style="direction: ltr; text-align: left; font-size: 0.9rem; color: #f8fafc; line-height: 1.8;">
+                                    • <strong>I / We / You / They + don't + Inf</strong><br>
+                                    <span style="color: #cbd5e1;">They <em>don't destroy</em> the
+                                        environment.</span><br>
+                                    • <strong>He / She / It + doesn't + Inf</strong><br>
+                                    <span style="color: #cbd5e1;">A turtle <em>doesn't fly</em> in the air.</span>
+                                </div>
+                                <div
+                                    style="margin-top: 10px; padding: 8px; background: rgba(0,0,0,0.3); border-radius: 8px; font-size: 0.82rem; color: #ffd166;">
+                                    ⚠️ <strong>قاعدة مستر أحمد:</strong> بعد don't و doesn't يعود الفعل لأصله مجرداً من
+                                    أي إضافات!
+                                </div>
+                            </div>
+
+                            <div
+                                style="background: rgba(0, 243, 255, 0.08); border: 1.5px solid rgba(0, 243, 255, 0.35); border-radius: 12px; padding: 14px;">
+                                <strong style="color: #00f3ff; display: block; margin-bottom: 6px;">❓ 2. صيغة السؤال
+                                    (Yes/No & Wh-):</strong>
+                                <div
+                                    style="direction: ltr; text-align: left; font-size: 0.9rem; color: #f8fafc; line-height: 1.8;">
+                                    • <strong>Do + (I/you/we/they) + Inf...?</strong><br>
+                                    <span style="color: #cbd5e1;">➔ Do you like snorkeling? - Yes, I do.</span><br>
+                                    • <strong>Does + (he/she/it) + Inf...?</strong><br>
+                                    <span style="color: #cbd5e1;">➔ Does it live in saltwater? - Yes, it
+                                        does.</span><br>
+                                    • <strong>Wh-word + do / does + Subj + Inf...?</strong><br>
+                                    <span style="color: #cbd5e1;">➔ Where does the ranger work?</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="grammar-slide-card hide-in-slide-mode" id="grammar-slide-4">
+                    <div class="slide-header"
+                        style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(0,243,255,0.25); padding-bottom: 10px;">
+                        <span class="badge badge-active">📊 ظروف التكرار</span>
+                        <h3 style="color: #00f3ff; margin: 0; font-size: 1.15rem;">4. Adverbs of Frequency: The 0% to
+                            100% Scale</h3>
+                        <span style="color: #94a3b8; font-size: 0.85rem;">شريحة 4 من 5</span>
+                    </div>
+                    <div class="grammar-slide-body" style="padding-top: 12px;">
+                        <p style="color: #cbd5e1; font-size: 0.92rem;">تبين عدد مرات تكرار الفعل وتجيب على سؤال
+                            <code>How often...?</code>:</p>
+                        <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 12px;">
+                            <div
+                                style="display: flex; align-items: center; justify-content: space-between; background: rgba(0, 243, 255, 0.18); border: 1.5px solid #00f3ff; border-radius: 10px; padding: 8px 16px;">
+                                <span style="font-weight: 800; color: #00f3ff; font-size: 1.05rem;">always
+                                    (دائماً)</span>
+                                <span style="font-weight: 900; color: #ffffff;">100%</span>
+                            </div>
+                            <div
+                                style="display: flex; align-items: center; justify-content: space-between; background: rgba(56, 189, 248, 0.15); border: 1.5px solid #38bdf8; border-radius: 10px; padding: 8px 16px;">
+                                <span style="font-weight: 800; color: #38bdf8; font-size: 1.05rem;">usually
+                                    (عادةً)</span>
+                                <span style="font-weight: 900; color: #ffffff;">80%</span>
+                            </div>
+                            <div
+                                style="display: flex; align-items: center; justify-content: space-between; background: rgba(72, 149, 239, 0.15); border: 1.5px solid #4895ef; border-radius: 10px; padding: 8px 16px;">
+                                <span style="font-weight: 800; color: #4895ef; font-size: 1.05rem;">often (غالباً) 💡
+                                    <small style="color: #cbd5e1;">حرف t صامت!</small></span>
+                                <span style="font-weight: 900; color: #ffffff;">70%</span>
+                            </div>
+                            <div
+                                style="display: flex; align-items: center; justify-content: space-between; background: rgba(255, 183, 3, 0.15); border: 1.5px solid #ffb703; border-radius: 10px; padding: 8px 16px;">
+                                <span style="font-weight: 800; color: #ffb703; font-size: 1.05rem;">sometimes
+                                    (أحياناً)</span>
+                                <span style="font-weight: 900; color: #ffffff;">50%</span>
+                            </div>
+                            <div
+                                style="display: flex; align-items: center; justify-content: space-between; background: rgba(247, 127, 0, 0.15); border: 1.5px solid #f77f00; border-radius: 10px; padding: 8px 16px;">
+                                <span style="font-weight: 800; color: #f77f00; font-size: 1.05rem;">rarely / hardly ever
+                                    (نادراً)</span>
+                                <span style="font-weight: 900; color: #ffffff;">10%</span>
+                            </div>
+                            <div
+                                style="display: flex; align-items: center; justify-content: space-between; background: rgba(239, 71, 111, 0.15); border: 1.5px solid #ef476f; border-radius: 10px; padding: 8px 16px;">
+                                <span style="font-weight: 800; color: #ef476f; font-size: 1.05rem;">never (أبداً /
+                                    إطلاقاً)</span>
+                                <span style="font-weight: 900; color: #ffffff;">0%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="grammar-slide-card hide-in-slide-mode" id="grammar-slide-5">
+                    <div class="slide-header"
+                        style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(0,243,255,0.25); padding-bottom: 10px;">
+                        <span class="badge badge-gold">🎯 أين نضع ظرف التكرار؟</span>
+                        <h3 style="color: #ffd166; margin: 0; font-size: 1.15rem;">5. Position: Before Main Verbs vs
+                            After 'Be'</h3>
+                        <span style="color: #94a3b8; font-size: 0.85rem;">شريحة 5 من 5</span>
+                    </div>
+                    <div class="grammar-slide-body" style="padding-top: 12px;">
+                        <div
+                            style="background: rgba(11, 19, 43, 0.85); border: 1.5px solid rgba(0, 243, 255, 0.4); border-radius: 14px; padding: 16px; margin-bottom: 14px;">
+                            <strong style="color: #00f3ff; font-size: 1.05rem; display: block; margin-bottom: 8px;">1.
+                                قبل الفعل الأساسي (Before the Main Verb):</strong>
+                            <div style="color: #e2e8f0; font-size: 0.95rem; line-height: 1.8;">
+                                الفاعل ➔ <span style="color: #ffd166; font-weight: 800;">ظرف التكرار</span> ➔ الفعل
+                                الأساسي<br>
+                                <span style="direction: ltr; display: inline-block; text-align: left; color: #38bdf8;">•
+                                    We <strong style="color: #ffd166;">always</strong> <em>protect</em> our
+                                    nature.</span><br>
+                                <span style="direction: ltr; display: inline-block; text-align: left; color: #38bdf8;">•
+                                    Mona <strong style="color: #ffd166;">usually</strong> <em>helps</em> her
+                                    mother.</span><br>
+                                <span style="direction: ltr; display: inline-block; text-align: left; color: #38bdf8;">•
+                                    He <strong style="color: #ffd166;">never</strong> <em>tells</em> lies.</span>
+                            </div>
+                        </div>
+
+                        <div
+                            style="background: rgba(11, 19, 43, 0.85); border: 1.5px solid rgba(56, 189, 248, 0.4); border-radius: 14px; padding: 16px;">
+                            <strong style="color: #38bdf8; font-size: 1.05rem; display: block; margin-bottom: 8px;">2.
+                                بعد فعل يكون (After Verb to BE: am / is / are):</strong>
+                            <div style="color: #e2e8f0; font-size: 0.95rem; line-height: 1.8;">
+                                الفاعل ➔ فعل Be (am / is / are) ➔ <span style="color: #ffd166; font-weight: 800;">ظرف
+                                    التكرار</span><br>
+                                <span style="direction: ltr; display: inline-block; text-align: left; color: #00f3ff;">•
+                                    The sea water <em>is</em> <strong style="color: #ffd166;">always</strong> warm in
+                                    Sharm.</span><br>
+                                <span style="direction: ltr; display: inline-block; text-align: left; color: #00f3ff;">•
+                                    They <em>are</em> <strong style="color: #ffd166;">often</strong> excited to
+                                    dive.</span><br>
+                                <span style="direction: ltr; display: inline-block; text-align: left; color: #00f3ff;">•
+                                    Ahmed <em>is</em> <strong style="color: #ffd166;">never</strong> late for
+                                    school.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 4: Interactive 3D Storybook (Ras Mohamed) -->
+        <div id="reading" class="tab-content">
+            <div class="section-title">🌊 جمال رأس محمد (The Beauty of Ras Mohamed)</div>
+            <div class="lesson-desc-display">استكشف المحمية الطبيعية والشعاب المرجانية والسلاحف البحرية وأشجار المانجروف
+                بالرسومات التفاعلية!</div>
+
+            <!-- 3D Storybook Container -->
+            <div class="storybook-wrapper">
+                <div class="storybook-book">
+                    <div class="book-spine-divider"></div>
+                    <!-- Artwork Page -->
+                    <div class="story-page-artwork">
+                        <div class="artwork-page-inner">
+                            <div class="page-badge-artwork"><span id="storyPageBadge">🖼️ Scene 1 of 3</span></div>
+                            <div class="artwork-container">
+                                <img id="storyArtworkImg" src="../../assets/images/grade_6/unit_1/ras_mohamed.webp"
+                                    alt="Ras Mohamed Scene" referrerpolicy="no-referrer">
+                            </div>
+                            <div class="artwork-caption" id="storyCaption">Ras Mohamed National Park where Sinai desert
+                                meets turquoise sea.</div>
+                        </div>
+                        <div class="story-page-meta">
+                            <span>Connect 6 • Unit 1</span>
+                            <span id="storyPageCounter">Page 1 / 3</span>
+                        </div>
+                    </div>
+
+                    <!-- Content Page -->
+                    <div class="story-page-content">
+                        <div>
+                            <div class="story-header">
+                                <h3 class="story-page-title" id="storyTitle">Scene 1: Entering the Protected Sanctuary
+                                </h3>
+                                <button type="button" class="audio-btn" onclick="speakCurrentStoryPage()"
+                                    title="استمع للصفحة الحالية">🔊</button>
+                            </div>
+                            <div class="story-paragraph" id="storyText">After an unforgettable day in Cairo, Maged and
+                                his family travel south...</div>
+                        </div>
+                        <div>
+                            <div class="story-translation-box" id="storyTranslation"></div>
+                            <div class="story-vocab-chips" id="storyVocab"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Story Controls Bar -->
+                <div class="story-controls-bar">
+                    <button type="button" id="storyPrevBtn" onclick="changeStoryPage(-1)"
+                        class="action-btn secondary">⬅️ الصفحة السابقة</button>
+                    <button type="button" id="storytellerBtn" onclick="toggleStoryteller()" class="storyteller-btn">▶️
+                        القارئ التلقائي (Auto Storyteller)</button>
+                    <div class="story-page-progress">
+                        <span id="storyPageProgressText">الصفحة 1 من 3</span>
+                        <div class="progress-dots" id="storyProgressDots"></div>
+                    </div>
+                    <button type="button" id="storyNextBtn" onclick="changeStoryPage(1)"
+                        class="action-btn secondary">الصفحة التالية ➔</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 5: QuizEngine Contract -->
+        <div id="quiz" class="tab-content">
+            <div class="score-board">
+                <span>السؤال: <span id="current-q">1</span> / <span id="total-q">20</span></span>
+                <span>النقاط: <span id="score">0</span> 🌟</span>
+            </div>
+
+            <div class="question-card">
+                <span class="emoji-display" id="emoji">🎯</span>
+                <div class="question-text" id="question">جاري تحميل السؤال...</div>
+                <div class="options-grid" id="options"></div>
+                <div class="feedback" id="feedback"></div>
+            </div>
+
+            <div class="center-row" style="margin-top: 20px;">
+                <button type="button" class="action-btn next-btn" id="next-btn" onclick="nextQuestion()"
+                    style="display: none;">السؤال التالي ➔</button>
+            </div>
+        </div>
+
+        <!-- Bottom Return Controls -->
+        <div class="nav-controls" style="margin-top: 36px;">
+            <a href="./index.html" class="action-btn secondary" data-sound-click="click">⬅ العودة لقائمة دروس الوحدة
+                الأولى</a>
+            <a href="../index.html" class="action-btn secondary" data-sound-click="click">🏠 قائمة وحدات الصف السادس</a>
+        </div>
+    </div>
+
+    <!-- Story & Slides Helpers -->
+    <script>
+        let currentGrammarSlide = 1;
+        const totalGrammarSlides = 5;
+        let grammarViewMode = 'slide';
+
+        function updateGrammarSlideUI() {
+            const counter = document.getElementById('grammarSlideCounter');
+            const prevBtn = document.getElementById('grammarPrevSlideBtn');
+            const nextBtn = document.getElementById('grammarNextSlideBtn');
+            const pills = document.querySelectorAll('#grammarSlidePills .slide-pill-item');
+
+            if (counter) counter.innerText = `شريحة ${currentGrammarSlide} من ${totalGrammarSlides}`;
+            if (prevBtn) prevBtn.disabled = (currentGrammarSlide === 1);
+            if (nextBtn) nextBtn.disabled = (currentGrammarSlide === totalGrammarSlides);
+
+            pills.forEach((p, idx) => {
+                p.classList.toggle('active', idx + 1 === currentGrammarSlide);
+            });
+
+            for (let i = 1; i <= totalGrammarSlides; i++) {
+                const s = document.getElementById(`grammar-slide-${i}`);
+                if (!s) continue;
+                if (grammarViewMode === 'list') {
+                    s.classList.remove('hide-in-slide-mode');
+                } else {
+                    if (i === currentGrammarSlide) {
+                        s.classList.remove('hide-in-slide-mode');
+                    } else {
+                        s.classList.add('hide-in-slide-mode');
+                    }
+                }
+            }
+        }
+
+        function changeGrammarSlide(delta) {
+            const next = currentGrammarSlide + delta;
+            if (next >= 1 && next <= totalGrammarSlides) {
+                currentGrammarSlide = next;
+                updateGrammarSlideUI();
+                if (typeof playSound === 'function') playSound('click');
+            }
+        }
+
+        function jumpToGrammarSlide(idx) {
+            if (idx >= 1 && idx <= totalGrammarSlides) {
+                currentGrammarSlide = idx;
+                updateGrammarSlideUI();
+                if (typeof playSound === 'function') playSound('click');
+            }
+        }
+
+        function setGrammarViewMode(mode) {
+            grammarViewMode = mode;
+            const btnSlide = document.getElementById('viewModeSlideBtn');
+            const btnList = document.getElementById('viewModeListBtn');
+            if (btnSlide) btnSlide.classList.toggle('active', mode === 'slide');
+            if (btnList) btnList.classList.toggle('active', mode === 'list');
+            updateGrammarSlideUI();
+            if (typeof playSound === 'function') playSound('click');
+        }
+
+        function changeStoryPage(direction) {
+            if (window.storyEngine && typeof window.storyEngine.changePage === 'function') {
+                window.storyEngine.changePage(direction);
+            }
+        }
+
+        function toggleStoryteller() {
+            if (window.storyEngine && typeof window.storyEngine.toggleStoryteller === 'function') {
+                window.storyEngine.toggleStoryteller();
+            }
+        }
+
+        function speakCurrentStoryPage() {
+            if (window.storyEngine && window.storyEngine.storyPages) {
+                const cur = window.storyEngine.storyPages[window.storyEngine.currentPage];
+                if (cur && cur.textEn && typeof speakText === 'function') {
+                    speakText(cur.textEn);
+                }
+            }
+        }
+    </script>
+
+    <!-- Universal Framework Scripts -->
+    <script src="../../assets/js/bidi.js"></script>
+    <script src="../../assets/js/audio.js"></script>
+    <script src="../../assets/js/tabs.js"></script>
+    <script src="../../assets/js/quiz-engine.js"></script>
+    <script src="../../assets/js/story-engine.js"></script>
+    <script src="../../assets/js/slides-engine.js"></script>
+    <script src="../../assets/js/ui.js?v=6"></script>
+
+    <!-- Pure Decoupled Lesson Data Payload -->
+    <script src="./lesson-2.data.js"></script>
+
+    <!-- Universal Dynamic Curriculum Renderer -->
+    <script src="../../assets/js/curriculum-renderer.js"></script>
+
+    <script src="../../assets/js/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.CurriculumRenderer && typeof window.CurriculumRenderer.init === 'function') {
+                window.CurriculumRenderer.init();
+            }
+            if (typeof loadQuestion === 'function' && document.getElementById('question')) {
+                loadQuestion();
+            }
+            if (window.storyEngine && window.lessonData && window.lessonData.storyPages) {
+                window.storyEngine.loadPages(window.lessonData.storyPages);
+            }
+            updateGrammarSlideUI();
+        });
+    </script>
+</body>
+
+</html>

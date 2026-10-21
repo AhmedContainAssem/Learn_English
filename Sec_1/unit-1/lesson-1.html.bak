@@ -1,0 +1,2351 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sec 1 - Unit 1: Taking Pride in Our Beloved Egypt - Mr. Ahmed Assem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/curriculum.css">
+    <link rel="stylesheet" href="../../assets/css/storybook.css">
+    <link rel="stylesheet" href="../../assets/css/quiz.css">
+    <style>
+        .study-table-card {
+            background: rgba(19, 27, 46, 0.95);
+            border: 1px solid rgba(0, 243, 255, 0.2);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+        .study-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 14px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .study-item:last-child {
+            border-bottom: none;
+        }
+        .study-item-en {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--accent-primary);
+            direction: ltr;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .study-item-ar {
+            font-size: 0.95rem;
+            color: #cbd5e1;
+            font-weight: 600;
+        }
+        .syn-ant-card {
+            background: rgba(19, 27, 46, 0.95);
+            border: 1px solid rgba(0, 243, 255, 0.2);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+        .syn-ant-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 8px;
+        }
+        .syn-box {
+            background: rgba(0, 243, 255, 0.05);
+            border-right: 3px solid var(--accent-primary);
+            padding: 8px 12px;
+            border-radius: 6px;
+            margin-bottom: 8px;
+        }
+        .ant-box {
+            background: rgba(255, 183, 3, 0.05);
+            border-right: 3px solid var(--accent-orange);
+            padding: 8px 12px;
+            border-radius: 6px;
+        }
+        .note-card {
+            background: linear-gradient(145deg, rgba(19, 27, 46, 0.95), rgba(15, 23, 42, 0.95));
+            border: 1px solid rgba(0, 243, 255, 0.25);
+            border-radius: 14px;
+            padding: 20px;
+            margin-bottom: 22px;
+        }
+        .note-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid rgba(0, 243, 255, 0.2);
+            padding-bottom: 10px;
+            margin-bottom: 14px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .note-title-en {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--accent-primary);
+            direction: ltr;
+        }
+        .note-title-ar {
+            font-size: 1.05rem;
+            color: #e2e8f0;
+            font-weight: 700;
+        }
+        .dont-mix-box {
+            background: rgba(255, 71, 126, 0.08);
+            border-right: 4px solid var(--accent-red);
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin-top: 14px;
+        }
+        .goes-with-box {
+            background: rgba(0, 255, 157, 0.08);
+            border-right: 4px solid var(--accent-green);
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Navigation Back -->
+        <div class="page-actions">
+            <a href="./index.html" class="back-btn back-home" data-sound-click="click">⬅ العودة لوحدة Egypt's Heritage (Sec 1)</a>
+        </div>
+
+        <!-- Teacher Profile & Header -->
+        <div class="teacher-profile-header">
+            <div class="avatar-wrapper">
+                <img src="../../my-photo-profile.webp" alt="Mr. Ahmed Assem" class="teacher-avatar">
+            </div>
+            <h1 class="teacher-title">Mr. Ahmed Assem</h1>
+            <div class="slogan">✨ Easy Peasy Ya Englezeey ✨</div>
+            <div class="badges-group" style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 10px;">
+                <span class="badge badge-active">Sec 1 (الصف الأول الثانوي)</span>
+                <span class="badge badge-gold">📖 SB pages 12 : 16 • Unit 1: Egypt's Heritage</span>
+            </div>
+            <h2 id="title" class="lesson-title-display">Lessons 1 & 2: Taking Pride in Our Beloved Egypt</h2>
+            <p id="description" class="lesson-desc-display">المفردات الأساسية والتراكمية (59 كلمة)، التعريفات والمترادفات والمتضادات، المتلازمات والتعبيرات وحروف الجر، المشتقات ولاحظ الفرق، القراءة التفاعلية المصورة (Storybook)، حوار الدكتورة منى حسن (Dialogue Engine)، واختبار شامل مع محرك الكويز 🎯</p>
+        </div>
+
+        <!-- Signature Cyane Center-Node Divider -->
+        <div class="cyane-divider" aria-hidden="true"></div>
+
+        <!-- Tabs Navigation Bar -->
+        <div class="tabs-container">
+            <button class="tab-btn active" onclick="switchTab('vocab', this)">📖 المفردات (59 كلمة)</button>
+            <button class="tab-btn" onclick="switchTab('definitions-syn-ant', this)">📚 التعريفات والمترادفات والمتضادات</button>
+            <button class="tab-btn" onclick="switchTab('collocations-study', this)">🔗 المتلازمات والتعبيرات وحروف الجر</button>
+            <button class="tab-btn" onclick="switchTab('language-notes', this)">💡 المشتقات ودراسة الفروق (لاحظ الفرق)</button>
+            <button class="tab-btn" onclick="switchTab('storybook', this)">📚 القراءة التفاعلية (Story Book)</button>
+            <button class="tab-btn" onclick="switchTab('dialogue', this)">🗣️ المحادثة التفاعلية (Dialogue Engine)</button>
+            <button class="tab-btn" onclick="switchTab('quiz', this)">🎯 اختبار الدرس الشامل (Quiz)</button>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- Tab 1: Key & Accumulative Vocabulary       -->
+        <!-- ========================================== -->
+        <div id="vocab" class="tab-content active">
+            <!-- Part 1: Key Vocabulary (13 items) -->
+            <h3 class="section-subtitle">🌟 المفردات اللغوية الأساسية موضع الامتحان (Key Vocabulary) - 13 كلمة:</h3>
+            <div class="grid-cards">
+                <!-- 1. civilization -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun</span>
+                            <div class="word-en">civilization</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('civilization'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> حَضَارَة
+                        <div class="simple-explain-box">
+                            💡 <strong>التوضيح:</strong> مجتمع بشري متقدم في العلوم والفنون وتنظيم الحكم مثل الحضارة المصرية القديمة.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. crossroads -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun</span>
+                            <div class="word-en">crossroads</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('crossroads'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> مُلْتَقَى طُرُق / نُقْطَة تَقَاطُع
+                        <div class="simple-explain-box">
+                            💡 <strong>التوضيح:</strong> المكان الذي تلتقي فيه الطرق المختلفة، ومصر ملتقى قارات العالم.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. crossroads for trade -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Phrase / Noun</span>
+                            <div class="word-en">crossroads for trade</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('crossroads for trade'); playSound('click');" title="نطق العبارة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> مُلْتَقَى طُرُقِ التِّجَارَة
+                        <div class="simple-explain-box">
+                            💡 <strong>التوضيح:</strong> مركز تجاري تلتقي فيه قوافل وسفن التجارة من مختلف البلدان.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. heritage -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun</span>
+                            <div class="word-en">heritage</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('heritage'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> تُرَاث
+                        <div class="simple-explain-box">
+                            💡 <strong>التوضيح:</strong> الآثار والتقاليد والثقافة المتوارثة عبر الأجيال من الأجداد.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. identity -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun</span>
+                            <div class="word-en">identity</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('identity'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> هُوِيَّة
+                        <div class="simple-explain-box">
+                            💡 <strong>التوضيح:</strong> الخصائص والصفات التي تميز الشخص أو الشعب عن غيره (الهوية الوطنية).
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. merchant -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun</span>
+                            <div class="word-en">merchant</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('merchant'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> تَاجِر
+                        <div class="simple-explain-box">
+                            💡 <strong>التوضيح:</strong> شخص يشتري ويبيع البضائع بكميات كبيرة في الأسواق.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. monument -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun</span>
+                            <div class="word-en">monument</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('monument'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> أَثَر (مفرد آثار) / نَصْب تِذْكَارِي
+                        <div class="simple-explain-box">
+                            💡 <strong>التوضيح:</strong> مبنى أو تمثال تاريخي مهم يُبنى لتخليد ذكرى شخص أو حدث عظيم.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. neighborhood -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun</span>
+                            <div class="word-en">neighborhood</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('neighborhood'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> حَيّ سَكَنِي / مُجَاوَرَة
+                        <div class="simple-explain-box">
+                            💡 <strong>التوضيح:</strong> المنطقة أو الحي الذي يعيش فيه الناس ويشتركون في مرافقه.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. preserve -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Verb (regular)</span>
+                            <div class="word-en">preserve (preserved)</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('preserve'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> يَحْفَظ / يَصُون
+                        <div class="simple-explain-box">
+                            💡 <strong>التوضيح:</strong> يحمي الشيء ويحافظ عليه في حالته الجيدة دون تلف أو ضرر.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10. pride -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun</span>
+                            <div class="word-en">pride</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('pride'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> كِبْرِيَاء / فَخْر
+                        <div class="simple-explain-box">
+                            💡 <strong>التوضيح:</strong> شعور عميق بالرضا والاعتزاز بالنفس أو الوطن أو الإنجازات (take pride in).
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11. proud -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Adjective</span>
+                            <div class="word-en">proud</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('proud'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> فَخُور
+                        <div class="simple-explain-box">
+                            💡 <strong>التوضيح:</strong> تشعر بالفخر تجاه إنجاز أو بلد (proud of / proud to call it our home).
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 12. restore -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Verb (regular)</span>
+                            <div class="word-en">restore (restored)</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('restore'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> يُرَمِّم / يُعِيد إلى حالته الأصلية
+                        <div class="simple-explain-box">
+                            💡 <strong>التوضيح:</strong> يصلح المباني أو الآثار القديمة لتعود كما كانت قديماً.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 13. trade -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun</span>
+                            <div class="word-en">trade</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('trade'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> تِجَارَة / حِرْفَة
+                        <div class="simple-explain-box">
+                            💡 <strong>التوضيح:</strong> نشاط بيع وشراء السلع والبضائع والخدمات بين الأفراد أو الدول.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 2: Accumulative Vocabulary (46 items) -->
+            <h3 class="section-subtitle" style="margin-top: 35px;">📚 المفردات اللغوية المساعدة والامتحانية (Accumulative Vocabulary) - 46 كلمة:</h3>
+            <div class="grid-cards">
+                <!-- 1. ancestor -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun</span><div class="word-en">ancestor</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('ancestor'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> جَدّ / سَلَف (الأسلاف من الماضي)</div>
+                </div>
+
+                <!-- 2. archaeologist -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun</span><div class="word-en">archaeologist</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('archaeologist'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> عَالِم آثَار (يدرس بقايا الحضارات القديمة)</div>
+                </div>
+
+                <!-- 3. attraction -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun</span><div class="word-en">attraction</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('attraction'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> مَعْلَم جَذْب / مَزَار سِيَاحِي</div>
+                </div>
+
+                <!-- 4. awareness -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun</span><div class="word-en">awareness</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('awareness'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> وَعْي / إِدْرَاك وفهم للأمور</div>
+                </div>
+
+                <!-- 5. beat -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Verb</span><div class="word-en">beat - beat - beaten</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('beat'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> يَنْبِض (للقلب) / يَهْزِم</div>
+                </div>
+
+                <!-- 6. bridge -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun</span><div class="word-en">bridge</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('bridge'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> جِسْر / كوبري / وَسِيلَة رَبْط وتواصل</div>
+                </div>
+
+                <!-- 7. capable -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Adjective</span><div class="word-en">capable (of)</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('capable'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> قَادِر على الإنجاز</div>
+                </div>
+
+                <!-- 8. carve -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Verb</span><div class="word-en">carve (carved)</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('carve'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> يَنْحَت على الحجر أو الخشب</div>
+                </div>
+
+                <!-- 9. challenge -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun / Verb</span><div class="word-en">challenge</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('challenge'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> تَحَدٍّ / يَتَحَدَّى</div>
+                </div>
+
+                <!-- 10. citizen -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun</span><div class="word-en">citizen</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('citizen'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> مُوَاطِن ينتمي للوطن وله حقوق وواجبات</div>
+                </div>
+
+                <!-- 11. contribute -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Verb</span><div class="word-en">contribute (contributed)</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('contribute'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> يُسَاهِم / يُشَارِك (contribute to)</div>
+                </div>
+
+                <!-- 12. core -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun</span><div class="word-en">core</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('core'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> جَوْهَر / لُبّ / أَسَاس الشيء</div>
+                </div>
+
+                <!-- 13. culture -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun</span><div class="word-en">culture</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('culture'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> ثَقَافَة وعادات وقيم الشعب</div>
+                </div>
+
+                <!-- 14. determination -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun</span><div class="word-en">determination</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('determination'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> عَزِيمَة / إِصْرَار قوي على النجاح</div>
+                </div>
+
+                <!-- 15. development -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun</span><div class="word-en">development</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('development'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> تَنْمِيَة / تَطْوِير ونمو مستمر</div>
+                </div>
+
+                <!-- 16. economy -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun</span><div class="word-en">economy</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('economy'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> اقْتِصَاد ونظام الموارد والإنتاج</div>
+                </div>
+
+                <!-- 17. encourage -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Verb</span><div class="word-en">encourage (encouraged)</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('encourage'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> يُشَجِّع / يُحَفِّز على الفعل</div>
+                </div>
+
+                <!-- 18. gather -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Verb</span><div class="word-en">gather (gathered)</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('gather'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> يَجْمَع / يَتَجَمَّع</div>
+                </div>
+
+                <!-- 19. generation -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun</span><div class="word-en">generation</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('generation'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> جِيل (مجموعة أفراد في مرحلة عمرية متقاربة)</div>
+                </div>
+
+                <!-- 20. grain -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun</span><div class="word-en">grain</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('grain'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> حُبُوب (غِلَال مثل القمح والذرة)</div>
+                </div>
+
+                <!-- 21. honor -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Verb / Noun</span><div class="word-en">honor (honored)</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('honor'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> يُكَرِّم / يَحْتَرِم / الشَّرَف</div>
+                </div>
+
+                <!-- 22. greatness -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun</span><div class="word-en">greatness</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('greatness'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> عَظَمَة ومكانة رفيعة</div>
+                </div>
+
+                <!-- 23. harmony -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun</span><div class="word-en">harmony</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('harmony'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> تَنَاغُم / انْسِجَام وتوافق</div>
+                </div>
+
+                <!-- 24. host -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun</span><div class="word-en">host</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('host'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> مُقَدِّم البَرْنَامَج / المُضِيف</div>
+                </div>
+
+                <!-- 25. immense -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Adjective</span><div class="word-en">immense</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('immense'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> هَائِل / عَظِيم جداً</div>
+                </div>
+
+                <!-- 26. inspiration -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun</span><div class="word-en">inspiration</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('inspiration'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> إِلْهَام ودافع للإبداع</div>
+                </div>
+
+                <!-- 27. inspire -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Verb</span><div class="word-en">inspire (inspired)</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('inspire'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> يَلْهَم ويشعل الحماس في الآخرين</div>
+                </div>
+
+                <!-- 28. knowledge -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun</span><div class="word-en">knowledge</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('knowledge'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> مَعْرِفَة وعلم ومعلومات</div>
+                </div>
+
+                <!-- 29. lack -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun / Verb</span><div class="word-en">lack</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('lack'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> نَقْص / عَدَم وُجُود كافٍ</div>
+                </div>
+
+                <!-- 30. lead -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Verb</span><div class="word-en">lead - led - led</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('lead'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> يَقُود / يَتَوَلَّى قِيَادَة الفريق</div>
+                </div>
+
+                <!-- 31. legacy -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun</span><div class="word-en">legacy</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('legacy'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> إِرْث / تُرَاث عريق تركه الأسلاف</div>
+                </div>
+
+                <!-- 32. papyrus -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun</span><div class="word-en">papyrus</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('papyrus'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> وَرَق البَرْدِيّ المصري القديم</div>
+                </div>
+
+                <!-- 33. privilege -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun</span><div class="word-en">privilege</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('privilege'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> شَرَف / امْتِيَاز خاص</div>
+                </div>
+
+                <!-- 34. progress -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Verb / Noun</span><div class="word-en">progress</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('progress'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> يَتَقَدَّم / التَّقَدُّم والتطور</div>
+                </div>
+
+                <!-- 35. protector -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun</span><div class="word-en">protector</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('protector'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> حَامٍ / مُدَافِع عن التراث والوطن</div>
+                </div>
+
+                <!-- 36. reconnect -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Verb</span><div class="word-en">reconnect (reconnected)</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('reconnect'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> يُعِيد الرَّبْط والتَّوَاصُل مع الماضي</div>
+                </div>
+
+                <!-- 37. record -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Verb / Noun</span><div class="word-en">record (recorded)</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('record'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> يُسَجِّل / يُدَوِّن التاريخ</div>
+                </div>
+
+                <!-- 38. remind -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Verb</span><div class="word-en">remind (reminded)</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('remind'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> يُذَكِّر شخصاً بأمر ما (remind of)</div>
+                </div>
+
+                <!-- 39. sacrifice -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun / Verb</span><div class="word-en">sacrifice</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('sacrifice'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> تَضْحِيَة / يُضَحِّي من أجل الوطن</div>
+                </div>
+
+                <!-- 40. shape -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Verb / Noun</span><div class="word-en">shape (shaped)</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('shape'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> يُشَكِّل المستقبل / شَكْل</div>
+                </div>
+
+                <!-- 41. source -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun</span><div class="word-en">source</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('source'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> مَصْدَر (source of inspiration)</div>
+                </div>
+
+                <!-- 42. spice -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun</span><div class="word-en">spice</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('spice'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> تَابِل / بَهَار (مثل الفلفل والكمون)</div>
+                </div>
+
+                <!-- 43. Upper Egypt -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Proper Noun</span><div class="word-en">Upper Egypt</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('Upper Egypt'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> صَعِيد مِصْر (الجنوب)</div>
+                </div>
+
+                <!-- 44. urban -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Adjective</span><div class="word-en">urban</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('urban'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> حَضَرِيّ / مُتَعَلِّق بِالمُدُن والتطور العمراني</div>
+                </div>
+
+                <!-- 45. value -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun / Verb</span><div class="word-en">value</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('value'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> قِيمَة / يُقَدِّر القيمة العالية للآثار</div>
+                </div>
+
+                <!-- 46. youth -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun</span><div class="word-en">youth</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('youth'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> الشَّبَاب / مَرْحَلَة الشَّبَاب</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ======================================================== -->
+        <!-- Tab 2: Definitions, Synonyms & Antonyms                  -->
+        <!-- ======================================================== -->
+        <div id="definitions-syn-ant" class="tab-content" style="display: none;">
+            <div class="section-title">📚 II. DEFINITIONS, SYNONYMS &amp; ANTONYMS (التعريفات والمترادفات والمتضادات)</div>
+            <div class="lesson-desc-display" style="text-align: right; margin-bottom: 24px;">
+                💡 <strong>القسم المنهجي الثاني:</strong> التعريفات المنهجية المعتمدة موضع الامتحان، وقوائم المترادفات والمتضادات الشاملة لدرسي 1 و 2 مع النطق الصوتي التفاعلي 🔊.
+            </div>
+
+            <!-- 1. Definitions -->
+            <h3 class="section-subtitle">1. Definitions (التعريفات المنهجية موضع الامتحان)</h3>
+            <div class="cards-grid grid-cards" style="margin-bottom: 32px;">
+                <!-- crossroads -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun (n)</span>
+                            <div class="word-en">crossroads</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('crossroads. a place where two or more roads meet; it can also mean an important meeting point for people or ideas.'); playSound('click');" title="نطق الكلمة والتعريف">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <div><strong>المعنى بالعربية:</strong> مُلْتَقَى طُرُق / نُقْطَة تَقَاطُع</div>
+                        <div class="simple-explain-box" style="margin-top: 10px;">
+                            <strong style="color: var(--accent-primary);">📖 Definition (المفهوم المنهجي):</strong><br>
+                            a place where two or more roads meet; it can also mean an important meeting point for people or ideas
+                        </div>
+                    </div>
+                </div>
+
+                <!-- identity -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun (n)</span>
+                            <div class="word-en">identity</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('identity. the qualities, beliefs, history, and culture that make a person, group, or country different from others.'); playSound('click');" title="نطق الكلمة والتعريف">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <div><strong>المعنى بالعربية:</strong> هُوِيَّة</div>
+                        <div class="simple-explain-box" style="margin-top: 10px;">
+                            <strong style="color: var(--accent-primary);">📖 Definition (المفهوم المنهجي):</strong><br>
+                            the qualities, beliefs, history, and culture that make a person, group, or country different from others
+                        </div>
+                    </div>
+                </div>
+
+                <!-- merchant -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun (n)</span>
+                            <div class="word-en">merchant</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('merchant. a person who buys and sells goods, especially as a job.'); playSound('click');" title="نطق الكلمة والتعريف">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <div><strong>المعنى بالعربية:</strong> تَاجِر</div>
+                        <div class="simple-explain-box" style="margin-top: 10px;">
+                            <strong style="color: var(--accent-primary);">📖 Definition (المفهوم المنهجي):</strong><br>
+                            a person who buys and sells goods, especially as a job
+                        </div>
+                    </div>
+                </div>
+
+                <!-- neighborhood -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun (n)</span>
+                            <div class="word-en">neighborhood</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('neighborhood. areas of a town or city where people live.'); playSound('click');" title="نطق الكلمة والتعريف">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <div><strong>المعنى بالعربية:</strong> حَيّ سَكَنِي / مُجَاوَرَة</div>
+                        <div class="simple-explain-box" style="margin-top: 10px;">
+                            <strong style="color: var(--accent-primary);">📖 Definition (المفهوم المنهجي):</strong><br>
+                            areas of a town or city where people live
+                        </div>
+                    </div>
+                </div>
+
+                <!-- preserve -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Verb (v)</span>
+                            <div class="word-en">preserve</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('preserve. to keep something safe and protect it from damage or loss.'); playSound('click');" title="نطق الكلمة والتعريف">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <div><strong>المعنى بالعربية:</strong> يَحْفَظ / يَصُون</div>
+                        <div class="simple-explain-box" style="margin-top: 10px;">
+                            <strong style="color: var(--accent-primary);">📖 Definition (المفهوم المنهجي):</strong><br>
+                            to keep something safe and protect it from damage or loss
+                        </div>
+                    </div>
+                </div>
+
+                <!-- pride -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun (n)</span>
+                            <div class="word-en">pride</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('pride. a feeling of happiness and respect because of something good or important.'); playSound('click');" title="نطق الكلمة والتعريف">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <div><strong>المعنى بالعربية:</strong> كِبْرِيَاء / فَخْر</div>
+                        <div class="simple-explain-box" style="margin-top: 10px;">
+                            <strong style="color: var(--accent-primary);">📖 Definition (المفهوم المنهجي):</strong><br>
+                            a feeling of happiness and respect because of something good or important
+                        </div>
+                    </div>
+                </div>
+
+                <!-- proud -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Adjective (adj)</span>
+                            <div class="word-en">proud</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('proud. feeling pleased and satisfied because of something good that you, your country, or someone else has done.'); playSound('click');" title="نطق الكلمة والتعريف">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <div><strong>المعنى بالعربية:</strong> فَخُور</div>
+                        <div class="simple-explain-box" style="margin-top: 10px;">
+                            <strong style="color: var(--accent-primary);">📖 Definition (المفهوم المنهجي):</strong><br>
+                            feeling pleased and satisfied because of something good that you, your country, or someone else has done
+                        </div>
+                    </div>
+                </div>
+
+                <!-- restore -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Verb (v)</span>
+                            <div class="word-en">restore</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('restore. to repair an old building, object, or place and make it look as it did before.'); playSound('click');" title="نطق الكلمة والتعريف">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <div><strong>المعنى بالعربية:</strong> يَرْمُم</div>
+                        <div class="simple-explain-box" style="margin-top: 10px;">
+                            <strong style="color: var(--accent-primary);">📖 Definition (المفهوم المنهجي):</strong><br>
+                            to repair an old building, object, or place and make it look as it did before
+                        </div>
+                    </div>
+                </div>
+
+                <!-- trade -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun (n)</span>
+                            <div class="word-en">trade</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('trade. the activity of buying, selling, or exchanging goods.'); playSound('click');" title="نطق الكلمة والتعريف">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <div><strong>المعنى بالعربية:</strong> تِجَارَة</div>
+                        <div class="simple-explain-box" style="margin-top: 10px;">
+                            <strong style="color: var(--accent-primary);">📖 Definition (المفهوم المنهجي):</strong><br>
+                            the activity of buying, selling, or exchanging goods
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Synonyms -->
+            <h3 class="section-subtitle">2. Synonyms (المترادفات المنهجية)</h3>
+            <div class="cards-grid grid-cards" style="margin-bottom: 32px;">
+                <!-- alive -->
+                <div class="syn-ant-card">
+                    <div class="syn-ant-header">
+                        <div>
+                            <div class="study-item-en">alive (adj)</div>
+                            <div class="study-item-ar">حَيّ</div>
+                        </div>
+                        <button type="button" class="audio-btn" onclick="speakText('alive. synonyms: living, breathing.'); playSound('click');" title="استمع للمترادفات">🔊</button>
+                    </div>
+                    <div class="syn-box">
+                        <strong style="color: var(--accent-primary);">✨ Synonym (= Meaning):</strong>
+                        <div style="direction: ltr; text-align: left; margin-top: 4px; font-weight: 700; color: #f8fafc;">living, breathing</div>
+                    </div>
+                </div>
+
+                <!-- carved -->
+                <div class="syn-ant-card">
+                    <div class="syn-ant-header">
+                        <div>
+                            <div class="study-item-en">carved (adj)</div>
+                            <div class="study-item-ar">مَنْحُوت</div>
+                        </div>
+                        <button type="button" class="audio-btn" onclick="speakText('carved. synonyms: shaped, cut, engraved, sculpted.'); playSound('click');" title="استمع للمترادفات">🔊</button>
+                    </div>
+                    <div class="syn-box">
+                        <strong style="color: var(--accent-primary);">✨ Synonym (= Meaning):</strong>
+                        <div style="direction: ltr; text-align: left; margin-top: 4px; font-weight: 700; color: #f8fafc;">shaped, cut, engraved, sculpted</div>
+                    </div>
+                </div>
+
+                <!-- crossroads -->
+                <div class="syn-ant-card">
+                    <div class="syn-ant-header">
+                        <div>
+                            <div class="study-item-en">crossroads (n)</div>
+                            <div class="study-item-ar">مُلْتَقَى طُرُق - نُقْطَة تَقَاطُع</div>
+                        </div>
+                        <button type="button" class="audio-btn" onclick="speakText('crossroads. synonyms: intersection, junction.'); playSound('click');" title="استمع للمترادفات">🔊</button>
+                    </div>
+                    <div class="syn-box">
+                        <strong style="color: var(--accent-primary);">✨ Synonym (= Meaning):</strong>
+                        <div style="direction: ltr; text-align: left; margin-top: 4px; font-weight: 700; color: #f8fafc;">intersection, junction</div>
+                    </div>
+                </div>
+
+                <!-- harmony -->
+                <div class="syn-ant-card">
+                    <div class="syn-ant-header">
+                        <div>
+                            <div class="study-item-en">harmony (n)</div>
+                            <div class="study-item-ar">تَنَاغُم - انْسِجَام</div>
+                        </div>
+                        <button type="button" class="audio-btn" onclick="speakText('harmony. synonyms: coordination, agreement.'); playSound('click');" title="استمع للمترادفات">🔊</button>
+                    </div>
+                    <div class="syn-box">
+                        <strong style="color: var(--accent-primary);">✨ Synonym (= Meaning):</strong>
+                        <div style="direction: ltr; text-align: left; margin-top: 4px; font-weight: 700; color: #f8fafc;">coordination, agreement</div>
+                    </div>
+                </div>
+
+                <!-- heritage -->
+                <div class="syn-ant-card">
+                    <div class="syn-ant-header">
+                        <div>
+                            <div class="study-item-en">heritage (n)</div>
+                            <div class="study-item-ar">تُرَاث</div>
+                        </div>
+                        <button type="button" class="audio-btn" onclick="speakText('heritage. synonyms: legacy, inheritance.'); playSound('click');" title="استمع للمترادفات">🔊</button>
+                    </div>
+                    <div class="syn-box">
+                        <strong style="color: var(--accent-primary);">✨ Synonym (= Meaning):</strong>
+                        <div style="direction: ltr; text-align: left; margin-top: 4px; font-weight: 700; color: #f8fafc;">legacy, inheritance</div>
+                    </div>
+                </div>
+
+                <!-- identity -->
+                <div class="syn-ant-card">
+                    <div class="syn-ant-header">
+                        <div>
+                            <div class="study-item-en">identity (n)</div>
+                            <div class="study-item-ar">هُوِيَّة</div>
+                        </div>
+                        <button type="button" class="audio-btn" onclick="speakText('identity. synonyms: character, individuality.'); playSound('click');" title="استمع للمترادفات">🔊</button>
+                    </div>
+                    <div class="syn-box">
+                        <strong style="color: var(--accent-primary);">✨ Synonym (= Meaning):</strong>
+                        <div style="direction: ltr; text-align: left; margin-top: 4px; font-weight: 700; color: #f8fafc;">character, individuality</div>
+                    </div>
+                </div>
+
+                <!-- inspire -->
+                <div class="syn-ant-card">
+                    <div class="syn-ant-header">
+                        <div>
+                            <div class="study-item-en">inspire (v)</div>
+                            <div class="study-item-ar">يُلْهِم</div>
+                        </div>
+                        <button type="button" class="audio-btn" onclick="speakText('inspire. synonyms: motivate, encourage, stimulate.'); playSound('click');" title="استمع للمترادفات">🔊</button>
+                    </div>
+                    <div class="syn-box">
+                        <strong style="color: var(--accent-primary);">✨ Synonym (= Meaning):</strong>
+                        <div style="direction: ltr; text-align: left; margin-top: 4px; font-weight: 700; color: #f8fafc;">motivate, encourage, stimulate</div>
+                    </div>
+                </div>
+
+                <!-- monument -->
+                <div class="syn-ant-card">
+                    <div class="syn-ant-header">
+                        <div>
+                            <div class="study-item-en">monument (n)</div>
+                            <div class="study-item-ar">أَثَر (مفرد آثار) / نُصْب تِذْكَارِي</div>
+                        </div>
+                        <button type="button" class="audio-btn" onclick="speakText('monument. synonyms: memorial, statue.'); playSound('click');" title="استمع للمترادفات">🔊</button>
+                    </div>
+                    <div class="syn-box">
+                        <strong style="color: var(--accent-primary);">✨ Synonym (= Meaning):</strong>
+                        <div style="direction: ltr; text-align: left; margin-top: 4px; font-weight: 700; color: #f8fafc;">memorial, statue</div>
+                    </div>
+                </div>
+
+                <!-- neighborhood -->
+                <div class="syn-ant-card">
+                    <div class="syn-ant-header">
+                        <div>
+                            <div class="study-item-en">neighborhood (n)</div>
+                            <div class="study-item-ar">حَيّ سَكَنِي - مُجَاوَرَة</div>
+                        </div>
+                        <button type="button" class="audio-btn" onclick="speakText('neighborhood. synonyms: area, district.'); playSound('click');" title="استمع للمترادفات">🔊</button>
+                    </div>
+                    <div class="syn-box">
+                        <strong style="color: var(--accent-primary);">✨ Synonym (= Meaning):</strong>
+                        <div style="direction: ltr; text-align: left; margin-top: 4px; font-weight: 700; color: #f8fafc;">area, district</div>
+                    </div>
+                </div>
+
+                <!-- preserve -->
+                <div class="syn-ant-card">
+                    <div class="syn-ant-header">
+                        <div>
+                            <div class="study-item-en">preserve (d) (v)</div>
+                            <div class="study-item-ar">يَحْفَظ - يَصُون</div>
+                        </div>
+                        <button type="button" class="audio-btn" onclick="speakText('preserve. synonyms: protect, conserve, keep.'); playSound('click');" title="استمع للمترادفات">🔊</button>
+                    </div>
+                    <div class="syn-box">
+                        <strong style="color: var(--accent-primary);">✨ Synonym (= Meaning):</strong>
+                        <div style="direction: ltr; text-align: left; margin-top: 4px; font-weight: 700; color: #f8fafc;">protect, conserve, keep</div>
+                    </div>
+                </div>
+
+                <!-- pride -->
+                <div class="syn-ant-card">
+                    <div class="syn-ant-header">
+                        <div>
+                            <div class="study-item-en">pride (n)</div>
+                            <div class="study-item-ar">كِبْرِيَاء - فَخْر</div>
+                        </div>
+                        <button type="button" class="audio-btn" onclick="speakText('pride. synonyms: satisfaction, dignity.'); playSound('click');" title="استمع للمترادفات">🔊</button>
+                    </div>
+                    <div class="syn-box">
+                        <strong style="color: var(--accent-primary);">✨ Synonym (= Meaning):</strong>
+                        <div style="direction: ltr; text-align: left; margin-top: 4px; font-weight: 700; color: #f8fafc;">satisfaction, dignity</div>
+                    </div>
+                </div>
+
+                <!-- restore -->
+                <div class="syn-ant-card">
+                    <div class="syn-ant-header">
+                        <div>
+                            <div class="study-item-en">restore (d) (v)</div>
+                            <div class="study-item-ar">يَرْمُم</div>
+                        </div>
+                        <button type="button" class="audio-btn" onclick="speakText('restore. synonyms: repair, renovate.'); playSound('click');" title="استمع للمترادفات">🔊</button>
+                    </div>
+                    <div class="syn-box">
+                        <strong style="color: var(--accent-primary);">✨ Synonym (= Meaning):</strong>
+                        <div style="direction: ltr; text-align: left; margin-top: 4px; font-weight: 700; color: #f8fafc;">repair, renovate</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Antonyms -->
+            <h3 class="section-subtitle">3. Antonyms (المتضادات المنهجية)</h3>
+            <div class="cards-grid grid-cards">
+                <!-- awareness -->
+                <div class="syn-ant-card">
+                    <div class="syn-ant-header">
+                        <div>
+                            <div class="study-item-en">awareness (n)</div>
+                            <div class="study-item-ar">الوَعْي</div>
+                        </div>
+                        <button type="button" class="audio-btn" onclick="speakText('awareness. antonyms: ignorance, unawareness.'); playSound('click');" title="استمع للمتضادات">🔊</button>
+                    </div>
+                    <div class="ant-box">
+                        <strong style="color: var(--accent-orange);">⚡ Antonym (= Opposite):</strong>
+                        <div style="direction: ltr; text-align: left; margin-top: 4px; font-weight: 700; color: #f8fafc;">ignorance, unawareness</div>
+                        <div style="font-size: 0.85rem; color: #cbd5e1; margin-top: 2px;">(جَهْل - عَدَم الوَعْي)</div>
+                    </div>
+                </div>
+
+                <!-- determination -->
+                <div class="syn-ant-card">
+                    <div class="syn-ant-header">
+                        <div>
+                            <div class="study-item-en">determination (n)</div>
+                            <div class="study-item-ar">عَزْم - إِصْرَار</div>
+                        </div>
+                        <button type="button" class="audio-btn" onclick="speakText('determination. antonyms: indecision, hesitation.'); playSound('click');" title="استمع للمتضادات">🔊</button>
+                    </div>
+                    <div class="ant-box">
+                        <strong style="color: var(--accent-orange);">⚡ Antonym (= Opposite):</strong>
+                        <div style="direction: ltr; text-align: left; margin-top: 4px; font-weight: 700; color: #f8fafc;">indecision, hesitation</div>
+                        <div style="font-size: 0.85rem; color: #cbd5e1; margin-top: 2px;">(تَرَدُّد - تَخَيُّر)</div>
+                    </div>
+                </div>
+
+                <!-- harmony -->
+                <div class="syn-ant-card">
+                    <div class="syn-ant-header">
+                        <div>
+                            <div class="study-item-en">harmony (n)</div>
+                            <div class="study-item-ar">تَنَاغُم - انْسِجَام</div>
+                        </div>
+                        <button type="button" class="audio-btn" onclick="speakText('harmony. antonyms: conflict, disagreement, confusion, disharmony.'); playSound('click');" title="استمع للمتضادات">🔊</button>
+                    </div>
+                    <div class="ant-box">
+                        <strong style="color: var(--accent-orange);">⚡ Antonym (= Opposite):</strong>
+                        <div style="direction: ltr; text-align: left; margin-top: 4px; font-weight: 700; color: #f8fafc;">conflict, disagreement, confusion, disharmony</div>
+                        <div style="font-size: 0.85rem; color: #cbd5e1; margin-top: 2px;">(نِزَاع - اخْتِلَاف - ارْتِبَاك - عَدَم انْسِجَام)</div>
+                    </div>
+                </div>
+
+                <!-- inspire -->
+                <div class="syn-ant-card">
+                    <div class="syn-ant-header">
+                        <div>
+                            <div class="study-item-en">inspire (v)</div>
+                            <div class="study-item-ar">يُلْهِم</div>
+                        </div>
+                        <button type="button" class="audio-btn" onclick="speakText('inspire. antonyms: discourage, deter.'); playSound('click');" title="استمع للمتضادات">🔊</button>
+                    </div>
+                    <div class="ant-box">
+                        <strong style="color: var(--accent-orange);">⚡ Antonym (= Opposite):</strong>
+                        <div style="direction: ltr; text-align: left; margin-top: 4px; font-weight: 700; color: #f8fafc;">discourage, deter</div>
+                        <div style="font-size: 0.85rem; color: #cbd5e1; margin-top: 2px;">(يُحْبِط - يَثْنِي)</div>
+                    </div>
+                </div>
+
+                <!-- knowledge -->
+                <div class="syn-ant-card">
+                    <div class="syn-ant-header">
+                        <div>
+                            <div class="study-item-en">knowledge (n)</div>
+                            <div class="study-item-ar">مَعْرِفَة</div>
+                        </div>
+                        <button type="button" class="audio-btn" onclick="speakText('knowledge. antonyms: ignorance, illiteracy, misunderstanding, unawareness.'); playSound('click');" title="استمع للمتضادات">🔊</button>
+                    </div>
+                    <div class="ant-box">
+                        <strong style="color: var(--accent-orange);">⚡ Antonym (= Opposite):</strong>
+                        <div style="direction: ltr; text-align: left; margin-top: 4px; font-weight: 700; color: #f8fafc;">ignorance, illiteracy, misunderstanding, unawareness</div>
+                        <div style="font-size: 0.85rem; color: #cbd5e1; margin-top: 2px;">(جَهْل - أُمِّيَّة - سُوء فَهْم - عَدَم وَعْي)</div>
+                    </div>
+                </div>
+
+                <!-- preserve -->
+                <div class="syn-ant-card">
+                    <div class="syn-ant-header">
+                        <div>
+                            <div class="study-item-en">preserve (d) (v)</div>
+                            <div class="study-item-ar">يَحْفَظ - يَصُون</div>
+                        </div>
+                        <button type="button" class="audio-btn" onclick="speakText('preserve. antonyms: destroy, damage, harm, neglect.'); playSound('click');" title="استمع للمتضادات">🔊</button>
+                    </div>
+                    <div class="ant-box">
+                        <strong style="color: var(--accent-orange);">⚡ Antonym (= Opposite):</strong>
+                        <div style="direction: ltr; text-align: left; margin-top: 4px; font-weight: 700; color: #f8fafc;">destroy, damage, harm, neglect</div>
+                        <div style="font-size: 0.85rem; color: #cbd5e1; margin-top: 2px;">(يُدَمِّر - يُتْلِف - يَضُرّ - يُهْمِل)</div>
+                    </div>
+                </div>
+
+                <!-- pride -->
+                <div class="syn-ant-card">
+                    <div class="syn-ant-header">
+                        <div>
+                            <div class="study-item-en">pride (n)</div>
+                            <div class="study-item-ar">كِبْرِيَاء - فَخْر</div>
+                        </div>
+                        <button type="button" class="audio-btn" onclick="speakText('pride. antonyms: shame, humility, dishonor.'); playSound('click');" title="استمع للمتضادات">🔊</button>
+                    </div>
+                    <div class="ant-box">
+                        <strong style="color: var(--accent-orange);">⚡ Antonym (= Opposite):</strong>
+                        <div style="direction: ltr; text-align: left; margin-top: 4px; font-weight: 700; color: #f8fafc;">shame, humility, dishonor</div>
+                        <div style="font-size: 0.85rem; color: #cbd5e1; margin-top: 2px;">(عَار - تَوَاضُع - خِزْي)</div>
+                    </div>
+                </div>
+
+                <!-- restore -->
+                <div class="syn-ant-card">
+                    <div class="syn-ant-header">
+                        <div>
+                            <div class="study-item-en">restore (d) (v)</div>
+                            <div class="study-item-ar">يَرْمُم</div>
+                        </div>
+                        <button type="button" class="audio-btn" onclick="speakText('restore. antonyms: damage, ruin, spoil.'); playSound('click');" title="استمع للمتضادات">🔊</button>
+                    </div>
+                    <div class="ant-box">
+                        <strong style="color: var(--accent-orange);">⚡ Antonym (= Opposite):</strong>
+                        <div style="direction: ltr; text-align: left; margin-top: 4px; font-weight: 700; color: #f8fafc;">damage, ruin, spoil</div>
+                        <div style="font-size: 0.85rem; color: #cbd5e1; margin-top: 2px;">(يُتْلِف - يُخَرِّب)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ======================================================== -->
+        <!-- Tab 3: Collocations, Expressions & Prepositions          -->
+        <!-- ======================================================== -->
+        <div id="collocations-study" class="tab-content" style="display: none;">
+            <div class="section-title">🔗 III. COLLOCATIONS, EXPRESSIONS &amp; PREPOSITIONS (المتلازمات والتعبيرات وحروف الجر)</div>
+            <div class="lesson-desc-display" style="text-align: right; margin-bottom: 24px;">
+                💡 <strong>المتلازمات والتعبيرات اللفظية:</strong> المتلازمات المقررة موضع الامتحان، وأهم التعبيرات وحروف الجر المصاحبة للأفعال مع النطق الصوتي التفاعلي 🔊.
+            </div>
+
+            <!-- 1. Collocations -->
+            <h3 class="section-subtitle">1. Verbal Collocations (المتلازمات اللفظية)</h3>
+            <div class="study-table-card">
+                <div class="study-item">
+                    <div class="study-item-en">
+                        <button type="button" class="audio-btn" onclick="speakText('face challenges'); playSound('click');">🔊</button>
+                        face challenges
+                    </div>
+                    <div class="study-item-ar">يُوَاجِهُ تَحَدِّيَات</div>
+                </div>
+
+                <div class="study-item">
+                    <div class="study-item-en">
+                        <button type="button" class="audio-btn" onclick="speakText('fall asleep'); playSound('click');">🔊</button>
+                        fall asleep
+                    </div>
+                    <div class="study-item-ar">يَغْفُو</div>
+                </div>
+
+                <div class="study-item">
+                    <div class="study-item-en">
+                        <button type="button" class="audio-btn" onclick="speakText('feel the connection'); playSound('click');">🔊</button>
+                        feel the connection
+                    </div>
+                    <div class="study-item-ar">يَشْعُرُ بِالصِّلَة - يَشْعُرُ بِالارْتِبَاط</div>
+                </div>
+
+                <div class="study-item">
+                    <div class="study-item-en">
+                        <button type="button" class="audio-btn" onclick="speakText('feel pride, feel proud'); playSound('click');">🔊</button>
+                        feel pride / proud
+                    </div>
+                    <div class="study-item-ar">يَشْعُرُ بِالفَخْر</div>
+                </div>
+
+                <div class="study-item">
+                    <div class="study-item-en">
+                        <button type="button" class="audio-btn" onclick="speakText('honor history'); playSound('click');">🔊</button>
+                        honor history
+                    </div>
+                    <div class="study-item-ar">يُعْطِي التَّارِيخَ حَقَّه</div>
+                </div>
+
+                <div class="study-item">
+                    <div class="study-item-en">
+                        <button type="button" class="audio-btn" onclick="speakText('leave a legacy'); playSound('click');">🔊</button>
+                        leave a legacy
+                    </div>
+                    <div class="study-item-ar">يَتْرُكُ إِرْثاً</div>
+                </div>
+
+                <div class="study-item">
+                    <div class="study-item-en">
+                        <button type="button" class="audio-btn" onclick="speakText('play a role in'); playSound('click');">🔊</button>
+                        play a role (in)
+                    </div>
+                    <div class="study-item-ar">يَلْعَبُ دَوْراً (فِي)</div>
+                </div>
+
+                <div class="study-item">
+                    <div class="study-item-en">
+                        <button type="button" class="audio-btn" onclick="speakText('preserve heritage'); playSound('click');">🔊</button>
+                        preserve heritage
+                    </div>
+                    <div class="study-item-ar">يَصُونُ التُّرَاث</div>
+                </div>
+
+                <div class="study-item">
+                    <div class="study-item-en">
+                        <button type="button" class="audio-btn" onclick="speakText('take pride in'); playSound('click');">🔊</button>
+                        take pride (in)
+                    </div>
+                    <div class="study-item-ar">يَفْتَخِرُ (بِـ)</div>
+                </div>
+            </div>
+
+            <!-- 2. Expressions -->
+            <h3 class="section-subtitle" style="margin-top: 28px;">2. Expressions &amp; Idioms (التعبيرات والمصطلحات)</h3>
+            <div class="study-table-card">
+                <div class="study-item">
+                    <div class="study-item-en">
+                        <button type="button" class="audio-btn" onclick="speakText('beat for thousands of years'); playSound('click');">🔊</button>
+                        beat for thousands of years
+                    </div>
+                    <div class="study-item-ar">يَنْبِضُ بِالحَيَاةِ مُنْذُ آلَافِ السِّنِين</div>
+                </div>
+
+                <div class="study-item">
+                    <div class="study-item-en">
+                        <button type="button" class="audio-btn" onclick="speakText('carry its past with it'); playSound('click');">🔊</button>
+                        carry its past with it
+                    </div>
+                    <div class="study-item-ar">يَحْمِلُ مَاضِيهِ مَعَهُ</div>
+                </div>
+
+                <div class="study-item">
+                    <div class="study-item-en">
+                        <button type="button" class="audio-btn" onclick="speakText('for generations to come'); playSound('click');">🔊</button>
+                        for generations to come
+                    </div>
+                    <div class="study-item-ar">لِلْأَجْيَالِ القَادِمَة</div>
+                </div>
+
+                <div class="study-item">
+                    <div class="study-item-en">
+                        <button type="button" class="audio-btn" onclick="speakText('honor our history while shaping our future'); playSound('click');">🔊</button>
+                        honor our history while shaping our future
+                    </div>
+                    <div class="study-item-ar">نُكَرِّمُ تَارِيخَنَا وَنَحْنُ نُشَكِّلُ مُسْتَقْبَلَنَا</div>
+                </div>
+
+                <div class="study-item">
+                    <div class="study-item-en">
+                        <button type="button" class="audio-btn" onclick="speakText('lack of awareness'); playSound('click');">🔊</button>
+                        lack of awareness
+                    </div>
+                    <div class="study-item-ar">نَقْصُ الوَعْي</div>
+                </div>
+
+                <div class="study-item">
+                    <div class="study-item-en">
+                        <button type="button" class="audio-btn" onclick="speakText('meet in harmony'); playSound('click');">🔊</button>
+                        meet in harmony
+                    </div>
+                    <div class="study-item-ar">يَلْتَقِيَانِ فِي تَنَاغُم</div>
+                </div>
+
+                <div class="study-item">
+                    <div class="study-item-en">
+                        <button type="button" class="audio-btn" onclick="speakText('stand with pride'); playSound('click');">🔊</button>
+                        stand with pride
+                    </div>
+                    <div class="study-item-ar">يَقِفُ شَامِخاً</div>
+                </div>
+
+                <div class="study-item">
+                    <div class="study-item-en">
+                        <button type="button" class="audio-btn" onclick="speakText('That is a great point'); playSound('click');">🔊</button>
+                        That's a great point.
+                    </div>
+                    <div class="study-item-ar">هَذِهِ نُقْطَةٌ مُهِمَّةٌ جِدّاً.</div>
+                </div>
+            </div>
+
+            <!-- 3. Verb + Preposition -->
+            <h3 class="section-subtitle" style="margin-top: 28px;">3. Verb + Preposition (أفعال مع حروف جر)</h3>
+            <div class="study-table-card">
+                <div class="study-item">
+                    <div class="study-item-en">
+                        <button type="button" class="audio-btn" onclick="speakText('carve into'); playSound('click');">🔊</button>
+                        carve into
+                    </div>
+                    <div class="study-item-ar">يَنْقُشُ عَلَى</div>
+                </div>
+
+                <div class="study-item">
+                    <div class="study-item-en">
+                        <button type="button" class="audio-btn" onclick="speakText('contribute to'); playSound('click');">🔊</button>
+                        contribute to + n / -ing
+                    </div>
+                    <div class="study-item-ar">يُسَاهِمُ فِي</div>
+                </div>
+
+                <div class="study-item">
+                    <div class="study-item-en">
+                        <button type="button" class="audio-btn" onclick="speakText('encourage to'); playSound('click');">🔊</button>
+                        encourage ... to
+                    </div>
+                    <div class="study-item-ar">يُشَجِّعُ ... عَلَى</div>
+                </div>
+
+                <div class="study-item">
+                    <div class="study-item-en">
+                        <button type="button" class="audio-btn" onclick="speakText('reconnect with'); playSound('click');">🔊</button>
+                        reconnect with
+                    </div>
+                    <div class="study-item-ar">يَتَوَاصَلُ مِنْ جَدِيدٍ مَعَ</div>
+                </div>
+
+                <div class="study-item">
+                    <div class="study-item-en">
+                        <button type="button" class="audio-btn" onclick="speakText('share with'); playSound('click');">🔊</button>
+                        share ... with
+                    </div>
+                    <div class="study-item-ar">يُشَارِكُ ... مَعَ</div>
+                </div>
+
+                <div class="study-item">
+                    <div class="study-item-en">
+                        <button type="button" class="audio-btn" onclick="speakText('welcome back to'); playSound('click');">🔊</button>
+                        welcome ... back (to)
+                    </div>
+                    <div class="study-item-ar">يُرَحِّبُ بِعَوْدَةِ ... إِلَى</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ======================================================== -->
+        <!-- Tab 4: Derivatives & Clear the Confusion                 -->
+        <!-- ======================================================== -->
+        <div id="language-notes" class="tab-content" style="display: none;">
+            <div class="section-title">💡 IV. DERIVATIVES &amp; CLEAR THE CONFUSION (المشتقات ودراسة الفروق)</div>
+            <div class="lesson-desc-display" style="text-align: right; margin-bottom: 24px;">
+                💡 <strong>دراسة المشتقات والفروق الدقيقة:</strong> عائلات الكلمات (Derivatives) مع أمثلة الجمل من كتاب الطالب، وقسم (لاحظ الفرق - Clear the confusion) لحل أدق أسئلة الامتحانات 🎯.
+            </div>
+
+            <!-- 1. Derivatives -->
+            <h3 class="section-subtitle">1. Derivatives (المشتقات وسياقاتها في جمل منهجية)</h3>
+            
+            <!-- Root 1: heritage -->
+            <div class="note-card">
+                <div class="note-header">
+                    <div class="note-title-en">1. heritage (Root Word)</div>
+                    <div class="note-title-ar">تُرَاث</div>
+                </div>
+                <div class="cards-grid grid-cards" style="margin-top: 10px;">
+                    <div class="card" style="padding: 12px;">
+                        <div style="font-weight: 700; color: var(--accent-primary);">heritage (n) - تُرَاث</div>
+                        <div style="color: #cbd5e1; font-size: 0.95rem; margin-top: 4px;">• We should protect our <strong>heritage</strong> for the future.</div>
+                    </div>
+                    <div class="card" style="padding: 12px;">
+                        <div style="font-weight: 700; color: var(--accent-primary);">inherit (v) - يَرِث</div>
+                        <div style="color: #cbd5e1; font-size: 0.95rem; margin-top: 4px;">• We <strong>inherit</strong> our culture from past generations.</div>
+                    </div>
+                    <div class="card" style="padding: 12px;">
+                        <div style="font-weight: 700; color: var(--accent-primary);">inheritance (n) - مِيرَاث / إِرْث</div>
+                        <div style="color: #cbd5e1; font-size: 0.95rem; margin-top: 4px;">• Our culture is a valuable <strong>inheritance</strong> from the past.</div>
+                    </div>
+                    <div class="card" style="padding: 12px;">
+                        <div style="font-weight: 700; color: var(--accent-primary);">inherited (adj) - مَوْرُوث</div>
+                        <div style="color: #cbd5e1; font-size: 0.95rem; margin-top: 4px;">• Our <strong>inherited</strong> culture connects us with our ancestors.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Root 2: identity -->
+            <div class="note-card">
+                <div class="note-header">
+                    <div class="note-title-en">2. identity (Root Word)</div>
+                    <div class="note-title-ar">هُوِيَّة</div>
+                </div>
+                <div class="cards-grid grid-cards" style="margin-top: 10px;">
+                    <div class="card" style="padding: 12px;">
+                        <div style="font-weight: 700; color: var(--accent-primary);">identify (v) - يُحَدِّد / يَتَعَرَّف عَلَى</div>
+                        <div style="color: #cbd5e1; font-size: 0.95rem; margin-top: 4px;">• People can <strong>identify</strong> Egypt through its history.</div>
+                    </div>
+                    <div class="card" style="padding: 12px;">
+                        <div style="font-weight: 700; color: var(--accent-primary);">identity (n) - هُوِيَّة</div>
+                        <div style="color: #cbd5e1; font-size: 0.95rem; margin-top: 4px;">• History is part of our national <strong>identity</strong>.</div>
+                    </div>
+                    <div class="card" style="padding: 12px;">
+                        <div style="font-weight: 700; color: var(--accent-primary);">identification (n) - تَحْدِيد / تَعَرُّف</div>
+                        <div style="color: #cbd5e1; font-size: 0.95rem; margin-top: 4px;">• The <strong>identification</strong> of our history helps us understand ourselves.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Root 3: merchant -->
+            <div class="note-card">
+                <div class="note-header">
+                    <div class="note-title-en">3. merchant (Root Word)</div>
+                    <div class="note-title-ar">تَاجِر</div>
+                </div>
+                <div class="cards-grid grid-cards" style="margin-top: 10px;">
+                    <div class="card" style="padding: 12px;">
+                        <div style="font-weight: 700; color: var(--accent-primary);">merchant (n) - تَاجِر</div>
+                        <div style="color: #cbd5e1; font-size: 0.95rem; margin-top: 4px;">• The <strong>merchant</strong> sells traditional products in the market.</div>
+                    </div>
+                    <div class="card" style="padding: 12px;">
+                        <div style="font-weight: 700; color: var(--accent-primary);">merchandise (n) - بَضَائِع / سِلَع</div>
+                        <div style="color: #cbd5e1; font-size: 0.95rem; margin-top: 4px;">• He sells imported <strong>merchandise</strong> in the market.</div>
+                    </div>
+                    <div class="card" style="padding: 12px;">
+                        <div style="font-weight: 700; color: var(--accent-primary);">merchandise (v) - يُسَوِّق / يَعْرِض لِلْبَيْع</div>
+                        <div style="color: #cbd5e1; font-size: 0.95rem; margin-top: 4px;">• Shops <strong>merchandise</strong> their products in an attractive way.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Root 4: monument -->
+            <div class="note-card">
+                <div class="note-header">
+                    <div class="note-title-en">4. monument (Root Word)</div>
+                    <div class="note-title-ar">أَثَر - نُصْب تِذْكَارِي</div>
+                </div>
+                <div class="cards-grid grid-cards" style="margin-top: 10px;">
+                    <div class="card" style="padding: 12px;">
+                        <div style="font-weight: 700; color: var(--accent-primary);">monument (n) - أَثَر / نُصْب تِذْكَارِي</div>
+                        <div style="color: #cbd5e1; font-size: 0.95rem; margin-top: 4px;">• The <strong>monument</strong> attracts many visitors.</div>
+                    </div>
+                    <div class="card" style="padding: 12px;">
+                        <div style="font-weight: 700; color: var(--accent-primary);">monumental (adj) - ضَخْم / عَظِيم / تَارِيخِي</div>
+                        <div style="color: #cbd5e1; font-size: 0.95rem; margin-top: 4px;">• This is a <strong>monumental</strong> building.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Root 5: neighbor -->
+            <div class="note-card">
+                <div class="note-header">
+                    <div class="note-title-en">5. neighbor (Root Word)</div>
+                    <div class="note-title-ar">جَار - حَيّ سَكَنِي</div>
+                </div>
+                <div class="cards-grid grid-cards" style="margin-top: 10px;">
+                    <div class="card" style="padding: 12px;">
+                        <div style="font-weight: 700; color: var(--accent-primary);">neighbor (n) - جَار</div>
+                        <div style="color: #cbd5e1; font-size: 0.95rem; margin-top: 4px;">• My <strong>neighbor</strong> keeps the neighborhood clean.</div>
+                    </div>
+                    <div class="card" style="padding: 12px;">
+                        <div style="font-weight: 700; color: var(--accent-primary);">neighborhood (n) - حَيّ سَكَنِي / مُجَاوَرَة</div>
+                        <div style="color: #cbd5e1; font-size: 0.95rem; margin-top: 4px;">• My <strong>neighborhood</strong> is clean and quiet.</div>
+                    </div>
+                    <div class="card" style="padding: 12px;">
+                        <div style="font-weight: 700; color: var(--accent-primary);">neighboring (adj) - مُجَاوِر</div>
+                        <div style="color: #cbd5e1; font-size: 0.95rem; margin-top: 4px;">• People from <strong>neighboring</strong> streets helped clean the area.</div>
+                    </div>
+                    <div class="card" style="padding: 12px;">
+                        <div style="font-weight: 700; color: var(--accent-primary);">neighborly (adj) - وِدِّيّ / حَسَن الجِوَار</div>
+                        <div style="color: #cbd5e1; font-size: 0.95rem; margin-top: 4px;">• A <strong>neighborly</strong> person helps others in the area.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Root 6: preserve -->
+            <div class="note-card">
+                <div class="note-header">
+                    <div class="note-title-en">6. preserve (Root Word)</div>
+                    <div class="note-title-ar">يَحْفَظ - يَصُون</div>
+                </div>
+                <div class="cards-grid grid-cards" style="margin-top: 10px;">
+                    <div class="card" style="padding: 12px;">
+                        <div style="font-weight: 700; color: var(--accent-primary);">preserve (v) - يَحْفَظ / يَصُون</div>
+                        <div style="color: #cbd5e1; font-size: 0.95rem; margin-top: 4px;">• We should <strong>preserve</strong> old buildings.</div>
+                    </div>
+                    <div class="card" style="padding: 12px;">
+                        <div style="font-weight: 700; color: var(--accent-primary);">preservation (n) - حِفْظ / صِيَانَة</div>
+                        <div style="color: #cbd5e1; font-size: 0.95rem; margin-top: 4px;">• The <strong>preservation</strong> of old buildings is important.</div>
+                    </div>
+                    <div class="card" style="padding: 12px;">
+                        <div style="font-weight: 700; color: var(--accent-primary);">preserved (adj) - مَحْفُوظ / مُصَان</div>
+                        <div style="color: #cbd5e1; font-size: 0.95rem; margin-top: 4px;">• The <strong>preserved</strong> building looks beautiful.</div>
+                    </div>
+                    <div class="card" style="padding: 12px;">
+                        <div style="font-weight: 700; color: var(--accent-primary);">preserving (n) - حِفْظ / صِيَانَة</div>
+                        <div style="color: #cbd5e1; font-size: 0.95rem; margin-top: 4px;">• <strong>Preserving</strong> old buildings is important for our heritage.</div>
+                    </div>
+                    <div class="card" style="padding: 12px;">
+                        <div style="font-weight: 700; color: var(--accent-primary);">preservative (n) - مَادَّة حَافِظَة</div>
+                        <div style="color: #cbd5e1; font-size: 0.95rem; margin-top: 4px;">• A <strong>preservative</strong> keeps food safe for a longer time.</div>
+                    </div>
+                    <div class="card" style="padding: 12px;">
+                        <div style="font-weight: 700; color: var(--accent-primary);">preservative (adj) - حَافِظ</div>
+                        <div style="color: #cbd5e1; font-size: 0.95rem; margin-top: 4px;">• A <strong>preservative</strong> material can protect food from damage.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Root 7: pride -->
+            <div class="note-card">
+                <div class="note-header">
+                    <div class="note-title-en">7. pride (Root Word)</div>
+                    <div class="note-title-ar">فَخْر - كِبْرِيَاء</div>
+                </div>
+                <div class="cards-grid grid-cards" style="margin-top: 10px;">
+                    <div class="card" style="padding: 12px;">
+                        <div style="font-weight: 700; color: var(--accent-primary);">pride (n) - فَخْر / كِبْرِيَاء</div>
+                        <div style="color: #cbd5e1; font-size: 0.95rem; margin-top: 4px;">• We feel <strong>pride</strong> in our country's history.</div>
+                    </div>
+                    <div class="card" style="padding: 12px;">
+                        <div style="font-weight: 700; color: var(--accent-primary);">proud (adj) - فَخُور</div>
+                        <div style="color: #cbd5e1; font-size: 0.95rem; margin-top: 4px;">• We are <strong>proud</strong> of our country's history.</div>
+                    </div>
+                    <div class="card" style="padding: 12px;">
+                        <div style="font-weight: 700; color: var(--accent-primary);">proudly (adv) - بِفَخْر</div>
+                        <div style="color: #cbd5e1; font-size: 0.95rem; margin-top: 4px;">• We speak <strong>proudly</strong> about our country's history.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Root 8: restore -->
+            <div class="note-card">
+                <div class="note-header">
+                    <div class="note-title-en">8. restore (Root Word)</div>
+                    <div class="note-title-ar">يَرْمُم</div>
+                </div>
+                <div class="cards-grid grid-cards" style="margin-top: 10px;">
+                    <div class="card" style="padding: 12px;">
+                        <div style="font-weight: 700; color: var(--accent-primary);">restore (v) - يَرْمُم</div>
+                        <div style="color: #cbd5e1; font-size: 0.95rem; margin-top: 4px;">• We <strong>restore</strong> old buildings carefully.</div>
+                    </div>
+                    <div class="card" style="padding: 12px;">
+                        <div style="font-weight: 700; color: var(--accent-primary);">restoration (n) - تَرْمِيم</div>
+                        <div style="color: #cbd5e1; font-size: 0.95rem; margin-top: 4px;">• The <strong>restoration</strong> of old buildings takes time.</div>
+                    </div>
+                    <div class="card" style="padding: 12px;">
+                        <div style="font-weight: 700; color: var(--accent-primary);">restored (adj) - مُرَمَّم</div>
+                        <div style="color: #cbd5e1; font-size: 0.95rem; margin-top: 4px;">• The <strong>restored</strong> building looks beautiful.</div>
+                    </div>
+                    <div class="card" style="padding: 12px;">
+                        <div style="font-weight: 700; color: var(--accent-primary);">restorative (adj) - تَرْمِيمِيّ / إِصْلَاحِيّ</div>
+                        <div style="color: #cbd5e1; font-size: 0.95rem; margin-top: 4px;">• <strong>Restorative</strong> work helps protect old buildings.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Clear the Confusion -->
+            <h3 class="section-subtitle" style="margin-top: 36px;">2. Clear the Confusion (لاحظ الفرق موضع أسئلة الامتحان)</h3>
+            
+            <!-- Confusion 1 -->
+            <div class="note-card">
+                <div class="note-header">
+                    <div class="note-title-en">1. able to vs capable of</div>
+                    <div class="note-title-ar">قَادِرٌ عَلَى</div>
+                </div>
+                <div class="goes-with-box">
+                    <strong style="color: var(--accent-green);">💡 القاعدة والاستخدام:</strong>
+                    <ul style="margin: 6px 20px 0 0; color: #f1f5f9; line-height: 1.8;">
+                        <li><strong>(be) able to + inf. (المصدر):</strong> قادر على فعل شيء<br>
+                            <em>• She is <strong>able to solve</strong> the problem.</em>
+                        </li>
+                        <li><strong>(be) capable of + n / gerund (اسم أو v-ing):</strong> ذو قدرة أو كفاءة على<br>
+                            <em>• He is <strong>capable of leading</strong> the team.</em>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Confusion 2 -->
+            <div class="note-card">
+                <div class="note-header">
+                    <div class="note-title-en">2. agree on / about vs agree to vs agree with</div>
+                    <div class="note-title-ar">صِيَغ الفِعْل Agree</div>
+                </div>
+                <div class="goes-with-box">
+                    <strong style="color: var(--accent-green);">💡 القاعدة والاستخدام:</strong>
+                    <ul style="margin: 6px 20px 0 0; color: #f1f5f9; line-height: 1.8;">
+                        <li><strong>agree on / about + noun:</strong> يَتَّفِقُ عَلَى موضوع أو خطة أو سعر<br>
+                            <em>• They <strong>agreed on</strong> the price.</em>
+                        </li>
+                        <li><strong>agree to + inf. (المصدر):</strong> يُوَافِقُ عَلَى القيام بعمل أو مقترح<br>
+                            <em>• She <strong>agreed to help</strong> me.</em>
+                        </li>
+                        <li><strong>agree with (someone):</strong> يَتَّفِقُ مَعَ شخص أو مع رأيه<br>
+                            <em>• I <strong>agree with</strong> you.</em>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Confusion 3 -->
+            <div class="note-card">
+                <div class="note-header">
+                    <div class="note-title-en">3. along vs across vs through</div>
+                    <div class="note-title-ar">حروف الجر المكانية</div>
+                </div>
+                <div class="goes-with-box">
+                    <strong style="color: var(--accent-green);">💡 القاعدة والاستخدام:</strong>
+                    <ul style="margin: 6px 20px 0 0; color: #f1f5f9; line-height: 1.8;">
+                        <li><strong>along (prep/adv):</strong> عَلَى طُول / بِمُحَاذَاة (بجانب خط طولي كنهر أو طريق)<br>
+                            <em>• We walked <strong>along</strong> the river.</em>
+                        </li>
+                        <li><strong>across (prep/adv):</strong> عَبْرَ / مِنْ جَانِبٍ لِآخَر (قطع طريق أو نهر)<br>
+                            <em>• She ran <strong>across</strong> the street.</em>
+                        </li>
+                        <li><strong>through (prep):</strong> خِلَالَ / عَبْرَ مساحة ثلاثية الأبعاد أو مجسم مغلق كغابة أو نفق<br>
+                            <em>• She ran <strong>through</strong> the forest / tunnel.</em>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Confusion 4 -->
+            <div class="note-card">
+                <div class="note-header">
+                    <div class="note-title-en">4. be proud to vs be proud of vs take pride in</div>
+                    <div class="note-title-ar">صِيَغ التعبير عن الفخر</div>
+                </div>
+                <div class="goes-with-box">
+                    <strong style="color: var(--accent-green);">💡 القاعدة والاستخدام:</strong>
+                    <ul style="margin: 6px 20px 0 0; color: #f1f5f9; line-height: 1.8;">
+                        <li><strong>be proud to + inf.:</strong> يَفْتَخِرُ أَنْ يفعل كذا<br>
+                            <em>• I am <strong>proud to represent</strong> my school.</em>
+                        </li>
+                        <li><strong>be proud of + noun / v-ing:</strong> فَخُورٌ بِـ شخص أو شيء<br>
+                            <em>• She is <strong>proud of</strong> her son.</em>
+                        </li>
+                        <li><strong>take pride in + noun / v-ing:</strong> يَفْتَخِرُ بِـ / يَعْتَزُّ بِـ (pride اسم بعد take)<br>
+                            <em>• He <strong>takes pride in</strong> his work.</em>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Confusion 5 -->
+            <div class="note-card">
+                <div class="note-header">
+                    <div class="note-title-en">5. go shopping vs do the shopping</div>
+                    <div class="note-title-ar">التسوق الترفيهي مقابل شراء المستلزمات</div>
+                </div>
+                <div class="goes-with-box">
+                    <strong style="color: var(--accent-green);">💡 القاعدة والاستخدام:</strong>
+                    <ul style="margin: 6px 20px 0 0; color: #f1f5f9; line-height: 1.8;">
+                        <li><strong>go shopping:</strong> يَذْهَبُ لِلتَّسَوُّقِ كنشاط عام لشراء ملابس أو تجول ترفيهي<br>
+                            <em>• We <strong>went shopping</strong> for clothes.</em>
+                        </li>
+                        <li><strong>do the shopping:</strong> يَقُومُ بِالتَّسَوُّقِ الروتيني لشراء طعام ومستلزمات البيت الدورية<br>
+                            <em>• I will <strong>do the shopping</strong> this afternoon.</em>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Confusion 6 -->
+            <div class="note-card">
+                <div class="note-header">
+                    <div class="note-title-en">6. mission vs job vs work</div>
+                    <div class="note-title-ar">المهام والوظائف والعمل</div>
+                </div>
+                <div class="goes-with-box">
+                    <strong style="color: var(--accent-green);">💡 القاعدة والاستخدام:</strong>
+                    <ul style="margin: 6px 20px 0 0; color: #f1f5f9; line-height: 1.8;">
+                        <li><strong>mission (n):</strong> مُهِمَّة رَسْمِيَّة (تشمل السفر والذهاب لإنجاز هدف إنساني أو عسكري أو استكشافي)<br>
+                            <em>• The rescue <strong>mission</strong> was dangerous.</em>
+                        </li>
+                        <li><strong>job (n):</strong> وَظِيفَة / عَمَل مُحَدَّد (اسم يُعَدّ Countable وجمعه jobs)<br>
+                            <em>• My <strong>job</strong> is teaching English. / I have several <strong>jobs</strong> to do.</em>
+                        </li>
+                        <li><strong>work (n):</strong> عَمَل / مَكَانُ العَمَلِ (اسم لَا يُعَدّ Uncountable)<br>
+                            <em>• I have too much <strong>work</strong> to do. / I go to <strong>work</strong> by bus.</em>
+                        </li>
+                        <li><strong>works (n):</strong> أَعْمَال فَنِّيَّة أَوْ أَدَبِيَّة أَوْ هَنْدَسِيَّة (تُعَدّ: a work / works)<br>
+                            <em>• Egypt has great <strong>works</strong> of engineering.</em>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Confusion 7 -->
+            <div class="note-card">
+                <div class="note-header">
+                    <div class="note-title-en">7. remember vs remind</div>
+                    <div class="note-title-ar">يتذكر ذاتياً مقابل يُذَكِّر غيره</div>
+                </div>
+                <div class="goes-with-box">
+                    <strong style="color: var(--accent-green);">💡 القاعدة والاستخدام:</strong>
+                    <ul style="margin: 6px 20px 0 0; color: #f1f5f9; line-height: 1.8;">
+                        <li><strong>remember (v):</strong> يَتَذَكَّر مِنْ تِلْقَاءِ نَفْسِهِ دون تنبيه من أحد<br>
+                            <em>• I always <strong>remember</strong> my wife's birthday.</em>
+                        </li>
+                        <li><strong>remind (v):</strong> يُذَكِّر (شخص آخر يجعله يتذكر - remind someone to / of)<br>
+                            <em>• Please, <strong>remind</strong> me to call my mother.</em>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- Tab 5: Interactive Storybook (Reading)     -->
+        <!-- ========================================== -->
+        <div id="storybook" class="tab-content">
+            <div class="section-title">📚 القراءة التفاعلية المصورة (SB Page 12 - Reading Text)</div>
+            <div class="lesson-desc-display" style="text-align: right; margin-bottom: 20px;">
+                💡 <strong>تعليمات القراءة:</strong> استمتع بقراءة نص الوحدة من خلال الكتاب التفاعلي. يمكنك تشغيل <strong>القارئ الصوتي التلقائي (Auto Storyteller)</strong> للاستماع إلى النص ومتابعة الترجمة والمفردات اللغوية لكل مشهد.
+            </div>
+
+            <!-- Interactive 3D Book Container from Teacher Studio Engine -->
+            <div class="storybook-wrapper">
+                <div class="storybook-book">
+                    <!-- Center Book Spine -->
+                    <div class="book-spine-divider"></div>
+
+                    <!-- Right Page: Scene Artwork (First in DOM so in RTL it displays on the right side) -->
+                    <div class="story-page-artwork">
+                        <div class="artwork-page-inner">
+                            <div class="page-badge-artwork">
+                                <span id="storyPageBadge">🖼️ Scene 1 of 5</span>
+                            </div>
+                            <div class="artwork-container">
+                                <img id="storyArtworkImg" src="../../assets/images/egypt_beating_heart_1789597912200.webp" alt="Scene 1 Artwork" onerror="this.classList.add('hidden');" referrerpolicy="no-referrer">
+                            </div>
+                            <div class="artwork-caption" id="storyCaption">
+                                A land where the historic past and vibrant present meet in timeless harmony
+                            </div>
+                        </div>
+
+                        <div class="story-page-meta">
+                            <span>📖 Egypt's Heritage Reader</span>
+                            <span id="storyPageCounter">Page 1 / 5</span>
+                        </div>
+                    </div>
+
+                    <!-- Left Page: Story Reading Passage (Second in DOM so in RTL it displays on the left side) -->
+                    <div class="story-page-content">
+                        <div>
+                            <div class="story-header">
+                                <h3 class="story-page-title" id="storyTitle">Chapter 1: The Beating Heart of History</h3>
+                                <button type="button" class="audio-btn" onclick="speakCurrentStoryPage()" title="استمع للنطق">🔊</button>
+                            </div>
+                            <div class="story-paragraph" id="storyText">
+                                Egypt is a land with a heart that has been beating for thousands of years. We are proud to call it our home. It is a place where the past and the present meet in harmony.
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="story-translation-box" id="storyTranslation">
+                                <span class="translation-tag">💡 الترجمة:</span>
+                                مصر أرض ذات قلب ينبض منذ آلاف السنين. نحن فخورون بأن نطلق عليها وطننا وبيتنا. إنها المكان الذي يلتقي فيه الماضي والحاضر في تناغم وانسجام تام.
+                            </div>
+
+                            <div class="story-vocab-chips" id="storyVocab">
+                                <span class="vocab-chip">beating (ينبض)</span>
+                                <span class="vocab-chip">proud (فخور)</span>
+                                <span class="vocab-chip">home (وطن)</span>
+                                <span class="vocab-chip">harmony (تناغم / انسجام)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Story Navigation & Auto-Storyteller Bar -->
+                <div class="story-controls-bar">
+                    <button type="button" id="storyPrevBtn" onclick="changeStoryPage(-1)" class="action-btn secondary" disabled>
+                        ⬅️ الصفحة السابقة
+                    </button>
+
+                    <button type="button" id="storytellerBtn" onclick="toggleStoryteller()" class="storyteller-btn">
+                        ▶️ القارئ التلقائي (Auto Storyteller)
+                    </button>
+
+                    <div class="story-page-progress">
+                        <span id="storyPageProgressText">Page 1 of 5</span>
+                        <div class="progress-dots" id="storyProgressDots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+
+                    <button type="button" id="storyNextBtn" onclick="changeStoryPage(1)" class="action-btn secondary">
+                        الصفحة التالية ➔
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- Tab 3: Interactive Dialogue Engine         -->
+        <!-- ========================================== -->
+        <div id="dialogue" class="tab-content">
+            <div class="section-title">🗣️ حوار الاستماع التفاعلي (Listening Dialogue - SB Page 15)</div>
+            <p class="section-hint" style="color: #94a3b8; font-size: 0.95rem; margin-bottom: 20px;">
+                💡 حوار بين مقدم برنامج <strong>"Our Story"</strong> وعالمة الآثار <strong>د. منى حسن (Dr. Mona Hassan)</strong> حول مشروع ترميم معبد فيلة وأهمية حماية تراثنا القومي وإلهام الشباب.
+            </p>
+
+            <!-- Dialogue Controls Bar -->
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 12px; background: rgba(19, 27, 46, 0.8); padding: 14px 20px; border-radius: 14px; border: 1px solid var(--border-color);">
+                <div style="font-weight: 700; color: var(--accent-primary);">
+                    📻 محرك الاستماع الصوتي للمحادثة
+                </div>
+                <div style="display: flex; gap: 10px;">
+                    <button id="dialoguePlayAllBtn" class="action-btn next-btn" onclick="toggleDialoguePlayAll()" style="font-size: 0.95rem; padding: 8px 18px;">
+                        ▶️ تشغيل المحادثة كاملة بالتتابع
+                    </button>
+                </div>
+            </div>
+
+            <!-- Dialogue List of Speech Boxes -->
+            <div class="dialogue-list" id="dialogueList">
+                <!-- Turn 1: Host -->
+                <div class="dialogue-box" id="diag-turn-0">
+                    <div class="dialogue-content">
+                        <div class="speaker-name" style="color: var(--accent-secondary);">🎙️ Host (المذيع):</div>
+                        <div class="en-text" style="font-size: 1.1rem; color: #f8fafc; font-weight: 600; line-height: 1.6; margin-bottom: 6px;">
+                            Welcome back to "Our Story". Today, we're talking to Dr. Mona Hassan, an archaeologist who recently led a team to restore parts of the Philae Temple. Dr. Mona, thank you for joining us.
+                        </div>
+                        <div class="arabic-text" style="color: #94a3b8; font-size: 0.95rem;">
+                            (أهلاً بكم مجدداً في برنامج "قصتنا". نتحدث اليوم مع الدكتورة منى حسن، وهي عالمة آثار قادت مؤخراً فريقاً لترميم أجزاء من معبد فيلة. دكتورة منى، شكراً لانضمامكِ إلينا.)
+                        </div>
+                    </div>
+                    <button type="button" class="audio-btn" onclick="speakText('Welcome back to Our Story. Today, we are talking to Dr. Mona Hassan, an archaeologist who recently led a team to restore parts of the Philae Temple. Dr. Mona, thank you for joining us.')" title="استمع للنطق">🔊</button>
+                </div>
+
+                <!-- Turn 2: Dr. Mona -->
+                <div class="dialogue-box" id="diag-turn-1" style="border-right-color: var(--accent-orange);">
+                    <div class="dialogue-content">
+                        <div class="speaker-name" style="color: var(--accent-orange);">🏛️ Dr. Mona Hassan (د. منى حسن):</div>
+                        <div class="en-text" style="font-size: 1.1rem; color: #f8fafc; font-weight: 600; line-height: 1.6; margin-bottom: 6px;">
+                            Thank you. It's a privilege to be here.
+                        </div>
+                        <div class="arabic-text" style="color: #94a3b8; font-size: 0.95rem;">
+                            (شكراً لك. إنه لشرف عظيم وامتياز أن أكون هنا معكم.)
+                        </div>
+                    </div>
+                    <button type="button" class="audio-btn" onclick="speakText('Thank you. It is a privilege to be here.')" title="استمع للنطق">🔊</button>
+                </div>
+
+                <!-- Turn 3: Host -->
+                <div class="dialogue-box" id="diag-turn-2">
+                    <div class="dialogue-content">
+                        <div class="speaker-name" style="color: var(--accent-secondary);">🎙️ Host (المذيع):</div>
+                        <div class="en-text" style="font-size: 1.1rem; color: #f8fafc; font-weight: 600; line-height: 1.6; margin-bottom: 6px;">
+                            Your work on Philae is a powerful symbol. Can you tell us why preserving our heritage is so important?
+                        </div>
+                        <div class="arabic-text" style="color: #94a3b8; font-size: 0.95rem;">
+                            (عملكم في معبد فيلة يمثل رمزاً قوياً. هل يمكنكِ إخبارنا لماذا يعد الحفاظ على تراثنا أمراً بالغ الأهمية؟)
+                        </div>
+                    </div>
+                    <button type="button" class="audio-btn" onclick="speakText('Your work on Philae is a powerful symbol. Can you tell us why preserving our heritage is so important?')" title="استمع للنطق">🔊</button>
+                </div>
+
+                <!-- Turn 4: Dr. Mona -->
+                <div class="dialogue-box" id="diag-turn-3" style="border-right-color: var(--accent-orange);">
+                    <div class="dialogue-content">
+                        <div class="speaker-name" style="color: var(--accent-orange);">🏛️ Dr. Mona Hassan (د. منى حسن):</div>
+                        <div class="en-text" style="font-size: 1.1rem; color: #f8fafc; font-weight: 600; line-height: 1.6; margin-bottom: 6px;">
+                            Of course. When we restore a historical site, we're not just fixing old stones. We're reconnecting with our past. Our ancestors left us a rich legacy—from the pyramids to the temples of Upper Egypt. This heritage is the core of our national identity. It reminds us of who we are, where we came from, and the greatness we are capable of. It's a source of immense pride for every Egyptian.
+                        </div>
+                        <div class="arabic-text" style="color: #94a3b8; font-size: 0.95rem;">
+                            (بالتأكيد. عندما نقوم بترميم موقع تاريخي، فنحن لا نصلح مجرد أحجار قديمة، بل نعيد الاتصال والتواصل مع ماضينا. لقد ترك لنا أجدادنا إرثاً وتراثاً غنياً—من الأهرامات إلى معابد صعيد مصر. هذا التراث هو جوهر هويتنا الوطنية؛ فهو يذكرنا بمن نكون، ومن أين أتينا، والعظمة التي نحن قادرون على تحقيقها. إنه مصدر فخر هائل لكل مصري.)
+                        </div>
+                    </div>
+                    <button type="button" class="audio-btn" onclick="speakText('Of course. When we restore a historical site, we are not just fixing old stones. We are reconnecting with our past. Our ancestors left us a rich legacy, from the pyramids to the temples of Upper Egypt. This heritage is the core of our national identity. It reminds us of who we are, where we came from, and the greatness we are capable of. It is a source of immense pride for every Egyptian.')" title="استمع للنطق">🔊</button>
+                </div>
+
+                <!-- Turn 5: Host -->
+                <div class="dialogue-box" id="diag-turn-4">
+                    <div class="dialogue-content">
+                        <div class="speaker-name" style="color: var(--accent-secondary);">🎙️ Host (المذيع):</div>
+                        <div class="en-text" style="font-size: 1.1rem; color: #f8fafc; font-weight: 600; line-height: 1.6; margin-bottom: 6px;">
+                            It sounds like more than a job; it's a mission. What do you think is the biggest challenge to preserving our heritage today?
+                        </div>
+                        <div class="arabic-text" style="color: #94a3b8; font-size: 0.95rem;">
+                            (يبدو الأمر أكبر من مجرد وظيفة عادية؛ إنها رسالة ومهمة وطنية. ما هو في رأيكِ التحدي الأكبر للحفاظ على تراثنا في وقتنا الحاضر؟)
+                        </div>
+                    </div>
+                    <button type="button" class="audio-btn" onclick="speakText('It sounds like more than a job, it is a mission. What do you think is the biggest challenge to preserving our heritage today?')" title="استمع للنطق">🔊</button>
+                </div>
+
+                <!-- Turn 6: Dr. Mona -->
+                <div class="dialogue-box" id="diag-turn-5" style="border-right-color: var(--accent-orange);">
+                    <div class="dialogue-content">
+                        <div class="speaker-name" style="color: var(--accent-orange);">🏛️ Dr. Mona Hassan (د. منى حسن):</div>
+                        <div class="en-text" style="font-size: 1.1rem; color: #f8fafc; font-weight: 600; line-height: 1.6; margin-bottom: 6px;">
+                            The challenges are many, from urban development to climate change. But perhaps the biggest is a lack of awareness among our youth. Many young people don't realize the value of these treasures. Our job is to inspire them, to make them see that a thousand-year-old temple is not just a tourist attraction—it's a living part of our story. We need to encourage them to visit these sites, to learn the stories, and to feel the connection.
+                        </div>
+                        <div class="arabic-text" style="color: #94a3b8; font-size: 0.95rem;">
+                            (التحديات كثيرة، من التطور العمراني إلى التغير المناخي. ولكن ربما التحدي الأكبر هو نقص الوعي بين شبابنا. فالعديد من الشباب لا يدركون قيمة هذه الكنوز العظيمة. ومهمتنا هي إلهامهم، ليدركوا أن المعبد الذي يبلغ عمره آلاف السنين ليس مجرد مزار سياحي—بل هو جزء حي من حكايتنا. نحن بحاجة إلى تشجيعهم على زيارة هذه المواقع، وتعلم قصصها، والشعور بالانتماء إليها.)
+                        </div>
+                    </div>
+                    <button type="button" class="audio-btn" onclick="speakText('The challenges are many, from urban development to climate change. But perhaps the biggest is a lack of awareness among our youth. Many young people do not realize the value of these treasures. Our job is to inspire them, to make them see that a thousand-year-old temple is not just a tourist attraction, it is a living part of our story. We need to encourage them to visit these sites, to learn the stories, and to feel the connection.')" title="استمع للنطق">🔊</button>
+                </div>
+
+                <!-- Turn 7: Host -->
+                <div class="dialogue-box" id="diag-turn-6">
+                    <div class="dialogue-content">
+                        <div class="speaker-name" style="color: var(--accent-secondary);">🎙️ Host (المذيع):</div>
+                        <div class="en-text" style="font-size: 1.1rem; color: #f8fafc; font-weight: 600; line-height: 1.6; margin-bottom: 6px;">
+                            That's a great point. You're inspiring them to become the next generation of protectors. Thank you, for your valuable work, Dr. Mona.
+                        </div>
+                        <div class="arabic-text" style="color: #94a3b8; font-size: 0.95rem;">
+                            (هذه نقطة ممتازة ورائعة. أنتم تلهمونهم ليصبحوا الجيل القادم من حماة التراث. شكراً جزيلاً لكِ على عملكِ القيّم، دكتورة منى.)
+                        </div>
+                    </div>
+                    <button type="button" class="audio-btn" onclick="speakText('That is a great point. You are inspiring them to become the next generation of protectors. Thank you, for your valuable work, Dr. Mona.')" title="استمع للنطق">🔊</button>
+                </div>
+            </div>
+
+            <!-- Pedagogical Highlights from Dialogue -->
+            <div class="spotlight-box" style="margin-top: 25px;">
+                <div class="spotlight-title">🧠 أهم نقاط الفهم واللغويات من نص الاستماع (Key Takeaways):</div>
+                <div class="spotlight-content">
+                    <ul style="margin: 0; padding-right: 20px; line-height: 1.9; color: #e2e8f0;">
+                        <li><strong>Philae Temple:</strong> معبد فيلة بأسوان (Upper Egypt)، قادت د. منى فريقاً لترميمه (restore).</li>
+                        <li><strong>Core of National Identity:</strong> التراث ليس مجرد أحجار قديمة (old stones)، بل هو جوهر الهوية الوطنية ومصدر فخر هائل (source of immense pride).</li>
+                        <li><strong>Biggest Challenge:</strong> التحدي الأكبر لحماية التراث هو نقص الوعي (lack of awareness) بين الشباب (youth).</li>
+                        <li><strong>The Protectors:</strong> الهدف هو إلهام الجيل القادم ليصبحوا حماة لتراثهم (the next generation of protectors).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- Tab 4: Interactive Comprehensive Quiz      -->
+        <!-- ========================================== -->
+        <div id="quiz" class="tab-content">
+            <h3 class="section-subtitle">🎯 اختبار تقييم الفهم الشامل (Comprehensive Quiz):</h3>
+            <p class="section-hint">اختر الإجابة الصحيحة من بين الخيارات. يمنحك كل سؤال صحيح 10 نقاط فورية مع المؤثرات الصوتية والتعليل التعليمي 🌟</p>
+
+            <div class="quiz-container-card">
+                <div id="quiz-header" class="quiz-header-bar">
+                    <div class="score-badge">
+                        <span>النتيجة: </span>
+                        <span id="score-display" class="score-value">0</span>
+                    </div>
+                    <div class="progress-badge">
+                        <span>السؤال: </span>
+                        <span id="current-question-num">1</span> / <span id="total-questions-num">40</span>
+                    </div>
+                </div>
+
+                <div id="question-box" class="quiz-question-box">
+                    <!-- Injected dynamically by Quiz Engine -->
+                </div>
+
+                <div id="options-box" class="quiz-options-grid">
+                    <!-- Options injected dynamically -->
+                </div>
+
+                <div id="feedback-box" class="quiz-feedback-box hidden">
+                    <!-- Feedback injected dynamically -->
+                </div>
+
+                <div class="quiz-actions-bar">
+                    <button id="next-btn" class="action-btn next-btn hidden" onclick="nextQuestion()">السؤال التالي ➔</button>
+                    <button id="retry-btn" class="action-btn secondary hidden" onclick="restartQuiz()">🔄 إعادة المحاولة</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Controls -->
+        <div class="nav-controls" style="margin-top: 30px;">
+            <a href="./index.html" class="back-btn" data-sound-click="click">⬅️ العودة لدروس الوحدة الأولى</a>
+        </div>
+    </div>
+
+    <!-- Data Engine for Storybook, Dialogue and Universal Quiz -->
+    <script>
+        window.lessonData = {
+            id: "sec1_unit1_lesson1",
+            title: "Sec 1 - Unit 1: Taking Pride in Our Beloved Egypt",
+            // 5 balanced division scenes of Reading Text (SB Page 12)
+            storyPages: [
+                {
+                    title: "Chapter 1: The Beating Heart of History",
+                    imageUrl: "../../assets/images/egypt_beating_heart_1789597912200.webp",
+                    caption: "A land where the historic past and vibrant present meet in timeless harmony",
+                    textEn: "Egypt is a land with a heart that has been beating for thousands of years. We are proud to call it our home. It is a place where the past and the present meet in harmony.",
+                    textAr: "مصر أرض ذات قلب ينبض منذ آلاف السنين. نحن فخورون بأن نطلق عليها وطننا وبيتنا. إنها المكان الذي يلتقي فيه الماضي والحاضر في تناغم وانسجام تام.",
+                    vocabNotes: "beating (ينبض) • proud (فخور) • home (وطن) • harmony (تناغم / انسجام)"
+                },
+                {
+                    title: "Chapter 2: The Cradle of Knowledge & Civilization",
+                    imageUrl: "../../assets/images/egypt_hieroglyphs_knowledge_1789597926244.webp",
+                    caption: "Ancient temple walls recording timeless knowledge in mathematics, medicine, and learning",
+                    textEn: "Egypt has always played an important role in the world. Our ancestors built one of the greatest civilizations in history. They gave the world knowledge in writing, mathematics, and medicine. The hieroglyphs carved into temple walls were not just beautiful art; they were a way to record history. The Library of Alexandria once gathered knowledge from all over the world, making Egypt a center of learning.",
+                    textAr: "لطالما لعبت مصر دوراً محورياً في العالم. لقد بنى أجدادنا واحدة من أعظم الحضارات في التاريخ، وقدموا للعالم المعرفة في الكتابة والرياضيات والطب. ولم تكن الرموز الهيروغليفية المنحوتة على جدران المعابد مجرد فن جميل، بل كانت وسيلة لتدوين التاريخ وتسجيله. وكانت مكتبة الإسكندرية تجمع المعرفة من كافة أنحاء العالم، مما جعل مصر مركزاً للعلم والتعلم.",
+                    vocabNotes: "ancestors (أجداد) • civilizations (حضارات) • knowledge (معرفة) • hieroglyphs (رموز هيروغليفية) • carved (نُحتت) • record (يسجل) • gathered (جمعت)"
+                },
+                {
+                    title: "Chapter 3: A Crossroads for Trade & Inspiration",
+                    imageUrl: "../../assets/images/egypt_nile_trade_1789597940219.webp",
+                    caption: "Merchants traveling along the Nile and deserts, making Egypt a bridge between civilizations",
+                    textEn: "Egypt was also a crossroads for trade. Merchants traveled along the Nile and across the deserts, carrying goods such as gold, spices, papyrus, and grain. Our land was a bridge where people met and exchanged ideas, making Egypt a source of inspiration for many civilizations.",
+                    textAr: "كانت مصر أيضاً ملتقى طرق للتجارة العالمية. كان التجار يسافرون على طول نهر النيل وعبر الصحاري، حاملين بضائع مثل الذهب، والتوابل، وورق البردي، والحبوب. وكانت أرضنا جسراً التقى فيه الناس وتبادلوا الأفكار، مما جعل مصر مصدراً للإلهام للعديد من الحضارات.",
+                    vocabNotes: "crossroads (ملتقى طرق) • trade (تجارة) • merchants (تجار) • spices (توابل) • papyrus (بردي) • grain (حبوب / غلال) • inspiration (إلهام)"
+                },
+                {
+                    title: "Chapter 4: Modern Progress & Grand Egyptian Museum",
+                    imageUrl: "../../assets/images/egypt_heritage_future_1789597952593.webp",
+                    caption: "From the Pyramids of Giza to the Grand Egyptian Museum, honoring history while shaping our future",
+                    textEn: "Today, Egypt continues to grow. Our cities rise with modern buildings, while our historical monuments still stand with pride. We are building new roads, bridges, and neighborhoods that show the world our determination to progress. From the Pyramids of Giza to the Grand Egyptian Museum, we continue to honor our history while shaping our future.",
+                    textAr: "واليوم، تواصل مصر نموها ونهضتها؛ ترتفع مدننا بالمباني والمنشآت الحديثة، بينما لا تزال آثارنا التاريخية تقف بشموخ وفخر. نحن نبني طرقاً وجسوراً وأحياء سكنية جديدة تبرهن للعالم على عزيمتنا وإصرارنا على التقدم. ومن أهرامات الجيزة إلى المتحف المصري الكبير، نواصل تكريم تاريخنا بينما نصنع مستقبلنا.",
+                    vocabNotes: "monuments (معالم وآثار) • neighborhoods (أحياء سكنية) • determination (عزيمة) • progress (تقدم) • Grand Egyptian Museum (المتحف المصري الكبير)"
+                },
+                {
+                    title: "Chapter 5: Taking Pride in Our Heritage & Future",
+                    imageUrl: "../../assets/images/egypt_citizens_heritage_1789599015280.webp",
+                    caption: "Proud citizens protecting our cultural heritage and building a prosperous nation for coming generations",
+                    textEn: "We take pride in our country, not only for its beauty, but also because we understand the sacrifices of our ancestors. We work hard to make it greater for generations to come. Every citizen has a role to play – protecting our heritage, contributing to our economy, and sharing our culture with the world.",
+                    textAr: "نحن نفتخر ببلدنا الحبيب، ليس فقط لجماله الأخاذ، بل أيضاً لأننا ندرك ونقدر تضحيات أجدادنا العظام. ونعمل بجد لجعل مصر أعظم وأرقى للأجيال القادمة. فلكل مواطن دور حيوي يلعبه - حماية تراثنا وصونه، والمساهمة في دعم اقتصادنا، ومشاركة ثقافتنا العريقة مع العالم أجمع.",
+                    vocabNotes: "pride (فخر / اعتزاز) • sacrifices (تضحيات) • generations (أجيال) • citizen (مواطن) • heritage (تراث) • contributing (المساهمة في)"
+                }
+            ],
+            // 40 Comprehensive Assessment Questions
+            quiz: [
+                // Key Vocabulary Questions
+                { emoji: "🏛️", question: "1. Our ancestors built one of the greatest ________ in human history.", options: [{ text: "civilizations", isCorrect: true }, { text: "conversations", isCorrect: false }, { text: "competitions", isCorrect: false }, { text: "calculations", isCorrect: false }], correctMsg: "أحسنت! civilizations = حضارات عظيمة (+10)", wrongMsg: "حاول مجدداً! الإجابة الصحيحة هي civilizations." },
+                { emoji: "🌍", question: "2. Egypt has always been a ________ for trade between East and West.", options: [{ text: "crossroads", isCorrect: true }, { text: "barrier", isCorrect: false }, { text: "distance", isCorrect: false }, { text: "shadow", isCorrect: false }], correctMsg: "ممتاز! crossroads = ملتقى طرق التجارة (+10)", wrongMsg: "ركز! crossroads تعني ملتقى طرق." },
+                { emoji: "🏺", question: "3. The Pyramids and ancient temples are part of our invaluable national ________.", options: [{ text: "heritage", isCorrect: true }, { text: "weather", isCorrect: false }, { text: "climate", isCorrect: false }, { text: "traffic", isCorrect: false }], correctMsg: "بطل! heritage = تراث (+10)", wrongMsg: "حاول مجدداً! التراث هو heritage." },
+                { emoji: "🪪", question: "4. Protecting our cultural heritage is the core of our Egyptian ________.", options: [{ text: "identity", isCorrect: true }, { text: "accident", isCorrect: false }, { text: "ignorance", isCorrect: false }, { text: "weakness", isCorrect: false }], correctMsg: "رائع! identity = الهوية (+10)", wrongMsg: "خطأ، الهوية هي identity." },
+                { emoji: "🚢", question: "5. In ancient times, ________ traveled along the Nile carrying gold and spices.", options: [{ text: "merchants", isCorrect: true }, { text: "astronomers", isCorrect: false }, { text: "mechanics", isCorrect: false }, { text: "engineers", isCorrect: false }], correctMsg: "أحسنت! merchants = تجار (+10)", wrongMsg: "التجار هم merchants." },
+                { emoji: "🗿", question: "6. Historical ________ in Luxor still stand tall with great pride.", options: [{ text: "monuments", isCorrect: true }, { text: "monents", isCorrect: false }, { text: "movements", isCorrect: false }, { text: "memories", isCorrect: false }], correctMsg: "ممتاز! monuments = معالم وآثار تاريخية (+10)", wrongMsg: "الآثار هي monuments." },
+                { emoji: "🏘️", question: "7. Egypt is constructing modern roads and new residential ________ for its citizens.", options: [{ text: "neighborhoods", isCorrect: true }, { text: "jungles", isCorrect: false }, { text: "deserts", isCorrect: false }, { text: "islands", isCorrect: false }], correctMsg: "بطل! neighborhoods = أحياء ومجاورات سكنية (+10)", wrongMsg: "الأحياء السكنية هي neighborhoods." },
+                { emoji: "🛡️", question: "8. It is the national duty of every citizen to ________ our historical treasures.", options: [{ text: "preserve", isCorrect: true }, { text: "destroy", isCorrect: false }, { text: "damage", isCorrect: false }, { text: "pollute", isCorrect: false }], correctMsg: "رائع! preserve = يحفظ ويصون (+10)", wrongMsg: "يحفظ ويصون تعني preserve." },
+                { emoji: "🇪🇬", question: "9. We feel deeply ________ of calling beloved Egypt our home.", options: [{ text: "proud", isCorrect: true }, { text: "pride", isCorrect: false }, { text: "prouder", isCorrect: false }, { text: "proudly", isCorrect: false }], correctMsg: "أحسنت! proud of = فخور بـ (+10)", wrongMsg: "proud هي الصفة (فخور)." },
+                { emoji: "🏆", question: "10. Egyptians take immense ________ in the great achievements of their ancestors.", options: [{ text: "pride", isCorrect: true }, { text: "proud", isCorrect: false }, { text: "priding", isCorrect: false }, { text: "proudness", isCorrect: false }], correctMsg: "ممتاز! take pride in = يفتخر بـ (pride اسم) (+10)", wrongMsg: "take pride in تعني يفتخر." },
+                { emoji: "🔨", question: "11. Dr. Mona Hassan led a specialist team to ________ parts of the Philae Temple.", options: [{ text: "restore", isCorrect: true }, { text: "demolish", isCorrect: false }, { text: "waste", isCorrect: false }, { text: "forget", isCorrect: false }], correctMsg: "بطل! restore = يرمم ويعيد لحالته الأصلية (+10)", wrongMsg: "يرمم هي restore." },
+                { emoji: "📜", question: "12. Hieroglyphs ________ into temple walls were not just art; they recorded history.", options: [{ text: "carved", isCorrect: true }, { text: "cooked", isCorrect: false }, { text: "flown", isCorrect: false }, { text: "sailed", isCorrect: false }], correctMsg: "رائع! carved = نُحتت على الجدران (+10)", wrongMsg: "carved تعني منحوتة." },
+
+                // Accumulative Vocabulary Questions
+                { emoji: "📜", question: "13. Ancient Egyptians wrote their sacred records on ________ scrolls.", options: [{ text: "papyrus", isCorrect: true }, { text: "plastic", isCorrect: false }, { text: "rubber", isCorrect: false }, { text: "metal", isCorrect: false }], correctMsg: "أحسنت! papyrus = ورق البردي (+10)", wrongMsg: "ورق البردي هو papyrus." },
+                { emoji: "🌾", question: "14. Ships transported sacks of spices and ________ like wheat across Egypt.", options: [{ text: "grain", isCorrect: true }, { text: "petrol", isCorrect: false }, { text: "engines", isCorrect: false }, { text: "factories", isCorrect: false }], correctMsg: "ممتاز! grain = غلال وحبوب (+10)", wrongMsg: "الحبوب والغلال هي grain." },
+                { emoji: "🔍", question: "15. An ________ is a specialist who studies ancient human history and monuments.", options: [{ text: "archaeologist", isCorrect: true }, { text: "architect", isCorrect: false }, { text: "astronomer", isCorrect: false }, { text: "accountant", isCorrect: false }], correctMsg: "بطل! archaeologist = عالم آثار (+10)", wrongMsg: "عالم الآثار هو archaeologist." },
+                { emoji: "💪", question: "16. Egyptians have a strong ________ to overcome challenges and progress.", options: [{ text: "determination", isCorrect: true }, { text: "hesitation", isCorrect: false }, { text: "carelessness", isCorrect: false }, { text: "laziness", isCorrect: false }], correctMsg: "رائع! determination = عزيمة وإصرار (+10)", wrongMsg: "العزيمة والإصرار هي determination." },
+                { emoji: "💡", question: "17. Dr. Mona pointed out that the biggest challenge is a lack of ________ among some youth.", options: [{ text: "awareness", isCorrect: true }, { text: "sunlight", isCorrect: false }, { text: "stones", isCorrect: false }, { text: "temples", isCorrect: false }], correctMsg: "أحسنت! lack of awareness = نقص الوعي (+10)", wrongMsg: "الوعي هو awareness." },
+                { emoji: "🌇", question: "18. Rapid ________ development refers to the growth and expansion of modern cities.", options: [{ text: "urban", isCorrect: true }, { text: "rural", isCorrect: false }, { text: "wild", isCorrect: false }, { text: "oceanic", isCorrect: false }], correctMsg: "ممتاز! urban development = تطور وتوسع حضري متعلق بالمدن (+10)", wrongMsg: "حضري متعلق بالمدن هي urban." },
+                { emoji: "🤝", question: "19. Every citizen has a role in ________ to the national economy.", options: [{ text: "contributing", isCorrect: true }, { text: "stealing", isCorrect: false }, { text: "ignoring", isCorrect: false }, { text: "preventing", isCorrect: false }], correctMsg: "بطل! contributing to = يساهم في (+10)", wrongMsg: "يساهم في تعني contributing to." },
+                { emoji: "🌿", question: "20. Egypt is a unique land where the past and present meet in perfect ________.", options: [{ text: "harmony", isCorrect: true }, { text: "conflict", isCorrect: false }, { text: "argument", isCorrect: false }, { text: "disaster", isCorrect: false }], correctMsg: "رائع! in harmony = في تناغم وانسجام (+10)", wrongMsg: "تناغم وانسجام يعني harmony." },
+
+                // Reading & Dialogue Comprehension Questions
+                { emoji: "📚", question: "21. According to the reading text, which famous place once gathered knowledge from all over the world?", options: [{ text: "The Library of Alexandria", isCorrect: true }, { text: "The Suez Canal", isCorrect: false }, { text: "The High Dam", isCorrect: false }, { text: "Karnak Airport", isCorrect: false }], correctMsg: "أحسنت! The Library of Alexandria = مكتبة الإسكندرية (+10)", wrongMsg: "مكتبة الإسكندرية هي التي جمعت المعرفة." },
+                { emoji: "🏛️", question: "22. Which landmark was recently built to honor Egyptian history while shaping the future?", options: [{ text: "The Grand Egyptian Museum", isCorrect: true }, { text: "Eiffel Tower", isCorrect: false }, { text: "Big Ben", isCorrect: false }, { text: "Colosseum", isCorrect: false }], correctMsg: "ممتاز! The Grand Egyptian Museum = المتحف المصري الكبير (+10)", wrongMsg: "المتحف المصري الكبير هو The Grand Egyptian Museum." },
+                { emoji: "🎙️", question: "23. In the interview, what historical site did Dr. Mona Hassan recently lead a team to restore?", options: [{ text: "Parts of the Philae Temple", isCorrect: true }, { text: "The Pyramids of Dahshur", isCorrect: false }, { text: "The Roman Amphitheatre", isCorrect: false }, { text: "The Citadel of Qaitbay", isCorrect: false }], correctMsg: "بطل! Philae Temple = معبد فيلة (+10)", wrongMsg: "معبد فيلة هو Philae Temple." },
+                { emoji: "👥", question: "24. Dr. Mona emphasized that restoring ancient monuments is not just fixing stones, but:", options: [{ text: "reconnecting with our past and heritage", isCorrect: true }, { text: "making quick money from visitors", isCorrect: false }, { text: "painting the walls new colors", isCorrect: false }, { text: "closing the sites permanently", isCorrect: false }], correctMsg: "رائع! reconnecting with our past = إعادة التواصل والارتباط بماضينا (+10)", wrongMsg: "الهدف هو إعادة الاتصال مع ماضينا." },
+                { emoji: "🛡️", question: "25. By inspiring our youth to value their heritage, we help them become the next generation of ________.", options: [{ text: "protectors", isCorrect: true }, { text: "passengers", isCorrect: false }, { text: "merchants", isCorrect: false }, { text: "strangers", isCorrect: false }], correctMsg: "ممتاز! protectors = حماة ومدافعين عن التراث (+10)", wrongMsg: "حماة التراث هم protectors." },
+
+                // Curriculum Additions (Definitions, Synonyms, Antonyms, Collocations, Derivatives, Confusion Notes)
+                { emoji: "🛣️", question: "26. A place where two or more roads meet, or an important meeting point for people and ideas, is a ________.", options: [{ text: "crossroads", isCorrect: true }, { text: "neighborhood", isCorrect: false }, { text: "monument", isCorrect: false }, { text: "merchant", isCorrect: false }], correctMsg: "أحسنت! تعريف ملتقى الطرق هو crossroads (+10)", wrongMsg: "crossroads هو ملتقى الطرق والأفكار." },
+                { emoji: "🪪", question: "27. The qualities, beliefs, history, and culture that make a country different from others define its ________.", options: [{ text: "identity", isCorrect: true }, { text: "trade", isCorrect: false }, { text: "pride", isCorrect: false }, { text: "neighborhood", isCorrect: false }], correctMsg: "ممتاز! الهوية الوطنية هي identity (+10)", wrongMsg: "الهوية تعني identity." },
+                { emoji: "✨", question: "28. What is the synonym of the adjective 'carved'?", options: [{ text: "engraved", isCorrect: true }, { text: "damaged", isCorrect: false }, { text: "ruined", isCorrect: false }, { text: "forgotten", isCorrect: false }], correctMsg: "بطل! مرادف carved هو engraved أو sculpted (+10)", wrongMsg: "مرادف منحوت (carved) هو engraved." },
+                { emoji: "⚡", question: "29. What is the antonym (opposite) of the noun 'harmony'?", options: [{ text: "conflict", isCorrect: true }, { text: "agreement", isCorrect: false }, { text: "coordination", isCorrect: false }, { text: "peace", isCorrect: false }], correctMsg: "رائع! مضاد harmony (تناغم) هو conflict (نزاع وخلاف) (+10)", wrongMsg: "مضاد الانسجام هو conflict." },
+                { emoji: "⚡", question: "30. What is the opposite of the noun 'determination'?", options: [{ text: "hesitation", isCorrect: true }, { text: "willpower", isCorrect: false }, { text: "courage", isCorrect: false }, { text: "strength", isCorrect: false }], correctMsg: "أحسنت! مضاد الإصرار والعزيمة هو التردد (hesitation) (+10)", wrongMsg: "مضاد determination هو hesitation أو indecision." },
+                { emoji: "🔨", question: "31. The government launched a major project to ________ and renovate ancient temples.", options: [{ text: "restore", isCorrect: true }, { text: "destroy", isCorrect: false }, { text: "damage", isCorrect: false }, { text: "spoil", isCorrect: false }], correctMsg: "ممتاز! restore تعني يرمم ومرادفها renovate (+10)", wrongMsg: "يرمم هي restore." },
+                { emoji: "🤝", question: "32. Our glorious ancestors worked hard to leave a valuable ________ for generations to come.", options: [{ text: "legacy", isCorrect: true }, { text: "damage", isCorrect: false }, { text: "shame", isCorrect: false }, { text: "ignorance", isCorrect: false }], correctMsg: "بطل! المتلازمة: leave a legacy = يترك إرثاً (+10)", wrongMsg: "leave a legacy تعني يترك إرثاً." },
+                { emoji: "💓", question: "33. Egypt is a great land with a heart that has been ________ for thousands of years.", options: [{ text: "beating", isCorrect: true }, { text: "stopping", isCorrect: false }, { text: "falling", isCorrect: false }, { text: "carving", isCorrect: false }], correctMsg: "رائع! التعبير المنهجي: beat for thousands of years (+10)", wrongMsg: "beat for thousands of years ينبض منذ آلاف السنين." },
+                { emoji: "🏆", question: "34. Every Egyptian has reason to ________ with pride when seeing the ancient pyramids.", options: [{ text: "stand", isCorrect: true }, { text: "sleep", isCorrect: false }, { text: "lack", isCorrect: false }, { text: "fall", isCorrect: false }], correctMsg: "أحسنت! stand with pride = يقف شامخاً وفخوراً (+10)", wrongMsg: "التعبير هو stand with pride." },
+                { emoji: "✍️", question: "35. Ancient stories and religious texts were carefully carved ________ temple walls.", options: [{ text: "into", isCorrect: true }, { text: "off", isCorrect: false }, { text: "away", isCorrect: false }, { text: "against", isCorrect: false }], correctMsg: "ممتاز! حرف الجر المصاحب: carve into (+10)", wrongMsg: "carve into ينقش على." },
+                { emoji: "🏛️", question: "36. We ________ our cultural heritage from past generations.", options: [{ text: "inherit", isCorrect: true }, { text: "inheritance", isCorrect: false }, { text: "inherited", isCorrect: false }, { text: "inheriting", isCorrect: false }], correctMsg: "بطل! الفعل بعد الفاعل we هو inherit (يرث) (+10)", wrongMsg: "الفعل هو inherit." },
+                { emoji: "🎯", question: "37. She is fully ________ of leading the archaeological expedition.", options: [{ text: "capable", isCorrect: true }, { text: "able", isCorrect: false }, { text: "ability", isCorrect: false }, { text: "capable to", isCorrect: false }], correctMsg: "رائع! capable يأتي بعدها of + gerund، بينما able يأتي بعدها to + inf (+10)", wrongMsg: "نستخدم capable of + v-ing." },
+                { emoji: "🤝", question: "38. After hours of calm discussion, the committee agreed ________ the new budget.", options: [{ text: "on", isCorrect: true }, { text: "to", isCorrect: false }, { text: "with", isCorrect: false }, { text: "in", isCorrect: false }], correctMsg: "أحسنت! agree on + noun تعني يتفق على موضوع (+10)", wrongMsg: "agree on the price / budget." },
+                { emoji: "🏫", question: "39. I am very proud ________ represent my school in the national competition.", options: [{ text: "to", isCorrect: true }, { text: "of", isCorrect: false }, { text: "in", isCorrect: false }, { text: "for", isCorrect: false }], correctMsg: "ممتاز! be proud to + infinitive المصدر (+10)", wrongMsg: "proud to + inf." },
+                { emoji: "⏰", question: "40. Please, ________ me to call Dr. Mona before she leaves the excavation site.", options: [{ text: "remind", isCorrect: true }, { text: "remember", isCorrect: false }, { text: "reminded", isCorrect: false }, { text: "remembering", isCorrect: false }], correctMsg: "بطل! remind someone to do something = يُذكّر شخصاً بعمل شيء (+10)", wrongMsg: "remind me تعني ذكّرني." }
+            ]
+        };
+
+        // Sequential Dialogue Playback Engine
+        let dialogueUtterance = null;
+        let isDiagPlaying = false;
+        let currentDiagIndex = 0;
+
+        const dialogueTurns = [
+            { id: 'diag-turn-0', text: "Welcome back to Our Story. Today, we are talking to Dr. Mona Hassan, an archaeologist who recently led a team to restore parts of the Philae Temple. Dr. Mona, thank you for joining us." },
+            { id: 'diag-turn-1', text: "Thank you. It is a privilege to be here." },
+            { id: 'diag-turn-2', text: "Your work on Philae is a powerful symbol. Can you tell us why preserving our heritage is so important?" },
+            { id: 'diag-turn-3', text: "Of course. When we restore a historical site, we are not just fixing old stones. We are reconnecting with our past. Our ancestors left us a rich legacy, from the pyramids to the temples of Upper Egypt. This heritage is the core of our national identity. It reminds us of who we are, where we came from, and the greatness we are capable of. It is a source of immense pride for every Egyptian." },
+            { id: 'diag-turn-4', text: "It sounds like more than a job, it is a mission. What do you think is the biggest challenge to preserving our heritage today?" },
+            { id: 'diag-turn-5', text: "The challenges are many, from urban development to climate change. But perhaps the biggest is a lack of awareness among our youth. Many young people do not realize the value of these treasures. Our job is to inspire them, to make them see that a thousand-year-old temple is not just a tourist attraction, it is a living part of our story. We need to encourage them to visit these sites, to learn the stories, and to feel the connection." },
+            { id: 'diag-turn-6', text: "That is a great point. You are inspiring them to become the next generation of protectors. Thank you, for your valuable work, Dr. Mona." }
+        ];
+
+        function toggleDialoguePlayAll() {
+            if (isDiagPlaying) {
+                stopDialoguePlayAll();
+            } else {
+                startDialoguePlayAll();
+            }
+        }
+
+        function startDialoguePlayAll() {
+            if (!('speechSynthesis' in window)) {
+                alert('Audio speech is not supported in this browser.');
+                return;
+            }
+            window.speechSynthesis.cancel();
+            isDiagPlaying = true;
+            currentDiagIndex = 0;
+            const btn = document.getElementById('dialoguePlayAllBtn');
+            if (btn) {
+                btn.innerHTML = '⏸️ إيقاف القراءة المتتابعة (Stop)';
+                btn.classList.add('playing');
+            }
+            playDiagStep(0);
+        }
+
+        function stopDialoguePlayAll() {
+            isDiagPlaying = false;
+            if (window.speechSynthesis) window.speechSynthesis.cancel();
+            const btn = document.getElementById('dialoguePlayAllBtn');
+            if (btn) {
+                btn.innerHTML = '▶️ تشغيل المحادثة كاملة بالتتابع';
+                btn.classList.remove('playing');
+            }
+            document.querySelectorAll('.dialogue-box').forEach(b => b.style.boxShadow = 'none');
+        }
+
+        function playDiagStep(idx) {
+            if (!isDiagPlaying || idx >= dialogueTurns.length) {
+                stopDialoguePlayAll();
+                return;
+            }
+            currentDiagIndex = idx;
+            document.querySelectorAll('.dialogue-box').forEach(b => b.style.boxShadow = 'none');
+            const turn = dialogueTurns[idx];
+            const box = document.getElementById(turn.id);
+            if (box) {
+                box.style.boxShadow = '0 0 15px rgba(0, 243, 255, 0.4)';
+                box.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+
+            dialogueUtterance = new SpeechSynthesisUtterance(turn.text);
+            dialogueUtterance.lang = 'en-US';
+            dialogueUtterance.rate = 0.92;
+
+            dialogueUtterance.onend = () => {
+                if (!isDiagPlaying) return;
+                setTimeout(() => {
+                    playDiagStep(idx + 1);
+                }, 700);
+            };
+
+            dialogueUtterance.onerror = () => {
+                stopDialoguePlayAll();
+            };
+
+            window.speechSynthesis.speak(dialogueUtterance);
+        }
+    </script>
+
+    <!-- Lossless Studio Payload -->
+    <script id="studio-payload" type="application/json">
+{
+  "archetype": "curriculum_tabs",
+  "stage": "Sec_1",
+  "unit": "unit-1",
+  "fileName": "lesson-1.html",
+  "title": "Sec 1 - Unit 1: Taking Pride in Our Beloved Egypt",
+  "description": "المفردات الأساسية والتراكمية (59 كلمة)، التعريفات والمترادفات والمتضادات، المتلازمات والتعبيرات وحروف الجر، المشتقات ولاحظ الفرق، القراءة التفاعلية المصورة (Storybook)، حوار الدكتورة منى حسن (Dialogue Engine)، واختبار شامل مع محرك الكويز 🎯",
+  "keyVocabularyCount": 13,
+  "accumulativeVocabularyCount": 46,
+  "definitionsCount": 9,
+  "synonymsCount": 12,
+  "antonymsCount": 8,
+  "collocationsCount": 9,
+  "expressionsCount": 8,
+  "verbPrepositionsCount": 6,
+  "derivativesCount": 8,
+  "confusionNotesCount": 7,
+  "storyPagesCount": 5,
+  "dialogueTurnsCount": 7,
+  "quizQuestionsCount": 40
+}
+    </script>
+
+    <!-- Framework & Shared Scripts (Strict Architecture Inheritance) -->
+    <script src="../../assets/js/bidi.js"></script>
+    <script src="../../assets/js/audio.js"></script>
+    <script src="../../assets/js/vocab-mastery.js"></script>
+    <script src="../../assets/js/quiz-engine.js"></script>
+    <script src="../../assets/js/story-engine.js"></script>
+    <script src="../../assets/js/tabs.js"></script>
+    <script src="../../assets/js/ui.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade 6 - Unit 1 - Lesson 3: Around Egypt & Phonetics | Mr. Ahmed Assem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css?v=6">
+    <link rel="stylesheet" href="../../assets/css/curriculum.css">
+    <link rel="stylesheet" href="../../assets/css/storybook.css">
+    <link rel="stylesheet" href="../../assets/css/quiz.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb">
+            <a href="../index.html">Grade 6</a> / <a href="./index.html">Unit 1</a> / <span>Lesson 3 (Around Egypt & Phonetics)</span>
+        </div>
+
+        <!-- Teacher Profile Header -->
+        <div class="teacher-profile-header">
+            <div class="avatar-wrapper">
+                <img src="../../my-photo-profile.webp" alt="Mr. Ahmed Assem" class="teacher-avatar" onerror="this.onerror=null; this.src='../../my-photo-profile.webp';">
+            </div>
+            <h1 class="teacher-title">Mr. Ahmed Assem</h1>
+            <div class="slogan">✨ Easy Peasy Ya Englezeey ✨</div>
+            <div class="badges-row">
+                <span class="badge badge-active">Grade 6 • Unit 1 • Lesson 3</span>
+                <span class="badge badge-gold">📖 SB pages 39 : 44</span>
+            </div>
+            <h2 id="title" class="lesson-header-title">Lesson 3: Around Egypt • Phonetics & Life in Egyptian Villages</h2>
+            <p id="description" class="lesson-desc-display">المفردات، أجهزة النسيج والأنوال، نصوص الاستماع لمشروع اعرف مصر، معمل نطق صوت /er/ التفاعلي، واختبار شامل 🎯</p>
+        </div>
+
+        <!-- Tabs Navigation Bar -->
+        <div class="tabs-container">
+            <button type="button" class="tab-btn active" onclick="switchTab('vocab', this)">📖 المفردات (Vocabulary)</button>
+            <button type="button" class="tab-btn" onclick="switchTab('verbs', this)">⚡ تصريف الأفعال</button>
+            <button type="button" class="tab-btn" onclick="switchTab('definitions', this)">🧭 الأماكن والتعريفات</button>
+            <button type="button" class="tab-btn" onclick="switchTab('reading', this)">🎙️ تسجيلات القرى (Voice Recordings)</button>
+            <button type="button" class="tab-btn" onclick="switchTab('pronunciation', this)">🗣️ صوتيات /er/ التفاعلية</button>
+            <button type="button" class="tab-btn" onclick="switchTab('quiz', this)">🎯 اختبار الدرس الشامل (Quiz)</button>
+        </div>
+
+        <!-- Tab 1: Key & Lesson Vocabulary -->
+        <div id="vocab" class="tab-content active"></div>
+
+        <!-- Tab 2: Verbs -->
+        <div id="verbs" class="tab-content"></div>
+
+        <!-- Tab 3: Places & Definitions -->
+        <div id="definitions" class="tab-content">
+            <!-- Injected by LexiconRenderer + Places in Egypt below -->
+        </div>
+
+        <!-- Tab 4: Interactive Voice Recordings (StoryEngine) -->
+        <div id="reading" class="tab-content">
+            <div class="section-title">🎙️ مشروع "اعرف مصر" (The "Know Egypt" Project)</div>
+            <div class="lesson-desc-display">استمع للتسجيلات الصوتية الحصرية لأربعة طلاب (أمينة، عمر، سلمى، وحسن) يصفون حياتهم ومسؤولياتهم اليومية في قراهم المصرية:</div>
+
+            <!-- 3D Storybook Container -->
+            <div class="storybook-wrapper">
+                <div class="storybook-book">
+                    <div class="book-spine-divider"></div>
+                    <!-- Artwork Page -->
+                    <div class="story-page-artwork">
+                        <div class="artwork-page-inner">
+                            <div class="page-badge-artwork"><span id="storyPageBadge">🖼️ Recording 1 of 6</span></div>
+                            <div class="artwork-container">
+                                <img id="storyArtworkImg" src="../../assets/images/grade_6/unit_1/egyptian_village_crafts.webp" alt="Egyptian Village Crafts Scene" referrerpolicy="no-referrer">
+                            </div>
+                            <div class="artwork-caption" id="storyCaption">Mr. Nader introducing the 'Know Egypt' voice recordings project.</div>
+                        </div>
+                        <div class="story-page-meta">
+                            <span>Connect 6 • Unit 1</span>
+                            <span id="storyPageCounter">Recording 1 / 6</span>
+                        </div>
+                    </div>
+
+                    <!-- Content Page -->
+                    <div class="story-page-content">
+                        <div>
+                            <div class="story-header">
+                                <h3 class="story-page-title" id="storyTitle">The 'Know Egypt' Project</h3>
+                                <button type="button" class="audio-btn" onclick="speakCurrentStoryPage()" title="استمع للتسجيل">🔊</button>
+                            </div>
+                            <div class="story-paragraph" id="storyText">Loading voice recording...</div>
+                        </div>
+                        <div>
+                            <div class="story-translation-box" id="storyTranslation"></div>
+                            <div class="story-vocab-chips" id="storyVocab"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Story Controls Bar -->
+                <div class="story-controls-bar">
+                    <button type="button" id="storyPrevBtn" onclick="changeStoryPage(-1)" class="action-btn secondary">⬅️ التسجيل السابق</button>
+                    <button type="button" id="storytellerBtn" onclick="toggleStoryteller()" class="storyteller-btn">▶️ القارئ التلقائي (Auto Storyteller)</button>
+                    <div class="story-page-progress">
+                        <span id="storyPageProgressText">التسجيل 1 من 6</span>
+                        <div class="progress-dots" id="storyProgressDots"></div>
+                    </div>
+                    <button type="button" id="storyNextBtn" onclick="changeStoryPage(1)" class="action-btn secondary">التسجيل التالي ➔</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 5: Pronunciation Lab (/er/ sound) -->
+        <div id="pronunciation" class="tab-content">
+            <div class="section-title">🗣️ معمل الصوتيات الممتع: صوت /er/ التفاعلي</div>
+            <p class="section-hint">انقر على أي كلمة أو جملة للاستماع إلى النطق الأمريكي/البريطاني الدقيق لصوت /er/ وكيف يتكرر بنهايات وأشكال هجائية متنوعة:</p>
+
+            <div class="learning-outcomes-box" style="margin-bottom: 25px;">
+                <div style="font-weight: 800; font-size: 1.15rem; color: var(--accent-primary); margin-bottom: 8px;">
+                    🎯 كيف يظهر صوت /er/ في الكلمات؟
+                </div>
+                <div style="color: #cbd5e1; line-height: 1.6;">
+                    يظهر الصوت /er/ في أنماط هجائية متعددة مثل: 
+                    <span class="word-token">-ear (bear, pear, wear)</span> • 
+                    <span class="word-token">-are (stare, square, nightmare, hare)</span> • 
+                    <span class="word-token">-ere (where, there)</span> • 
+                    <span class="word-token">-air (airport)</span>
+                </div>
+            </div>
+
+            <div class="cards-grid grid-cards" id="pronunciation-grid" style="margin-bottom: 30px;">
+                <!-- Populated via script from lessonData.pronunciation -->
+            </div>
+
+            <h3 class="section-subtitle" style="margin-top: 25px;">💬 جمل تطبيقية للتدرّب على صوت /er/:</h3>
+            <div class="cards-grid grid-cards" id="pronunciation-sentences">
+                <!-- Populated via script -->
+            </div>
+        </div>
+
+        <!-- Tab 6: QuizEngine Contract -->
+        <div id="quiz" class="tab-content">
+            <div class="score-board">
+                <span>السؤال: <span id="current-q">1</span> / <span id="total-q">10</span></span>
+                <span>النقاط: <span id="score">0</span> 🌟</span>
+            </div>
+
+            <div class="question-card">
+                <span class="emoji-display" id="emoji">🎯</span>
+                <div class="question-text" id="question">جاري تحميل السؤال...</div>
+                <div class="options-grid" id="options"></div>
+                <div class="feedback" id="feedback"></div>
+            </div>
+
+            <div class="center-row" style="margin-top: 20px;">
+                <button type="button" class="action-btn next-btn" id="next-btn" onclick="nextQuestion()" style="display: none;">السؤال التالي ➔</button>
+            </div>
+        </div>
+
+        <!-- Bottom Return Controls -->
+        <div class="nav-controls" style="margin-top: 36px;">
+            <a href="./index.html" class="action-btn secondary" data-sound-click="click">⬅ العودة لقائمة دروس الوحدة الأولى</a>
+            <a href="../index.html" class="action-btn secondary" data-sound-click="click">🏠 قائمة وحدات الصف السادس</a>
+        </div>
+    </div>
+
+    <!-- Story Engine Helpers -->
+    <script>
+        function changeStoryPage(direction) {
+            if (window.storyEngine && typeof window.storyEngine.changePage === 'function') {
+                window.storyEngine.changePage(direction);
+            }
+        }
+
+        function toggleStoryteller() {
+            if (window.storyEngine && typeof window.storyEngine.toggleStoryteller === 'function') {
+                window.storyEngine.toggleStoryteller();
+            }
+        }
+
+        function speakCurrentStoryPage() {
+            if (window.storyEngine && window.storyEngine.storyPages) {
+                const cur = window.storyEngine.storyPages[window.storyEngine.currentPage];
+                if (cur && cur.textEn && typeof speakText === 'function') {
+                    speakText(cur.textEn);
+                }
+            }
+        }
+    </script>
+
+    <!-- Universal Framework Scripts -->
+    <script src="../../assets/js/bidi.js"></script>
+    <script src="../../assets/js/audio.js"></script>
+    <script src="../../assets/js/tabs.js"></script>
+    <script src="../../assets/js/quiz-engine.js"></script>
+    <script src="../../assets/js/story-engine.js"></script>
+    <script src="../../assets/js/ui.js?v=6"></script>
+
+    <!-- Pure Decoupled Lesson Data Payload -->
+    <script src="./lesson-3.data.js"></script>
+
+    <!-- Universal Dynamic Curriculum Renderer & Submodules -->
+    <script src="../../assets/js/renderers/ui-primitives.js"></script>
+    <script src="../../assets/js/renderers/vocab-renderer.js"></script>
+    <script src="../../assets/js/renderers/lexicon-renderer.js"></script>
+    <script src="../../assets/js/renderers/dialogue-player.js"></script>
+    <script src="../../assets/js/curriculum-renderer.js"></script>
+
+    <script src="../../assets/js/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.CurriculumRenderer && typeof window.CurriculumRenderer.init === 'function') {
+                window.CurriculumRenderer.init();
+            }
+
+            // Render Places in Egypt Cultural Cards in definitions tab
+            const defContainer = document.getElementById('definitions');
+            if (defContainer && window.lessonData && window.lessonData.placesInEgypt) {
+                const placesHtml = `
+                <h3 class="section-subtitle" style="margin-top: 30px; color: var(--accent-secondary);">📍 أماكن ومحافظات مصر الحرفية (Places in Egypt):</h3>
+                <div class="cards-grid grid-cards" style="margin-bottom: 30px;">
+                    ${window.lessonData.placesInEgypt.map(p => `
+                        <div class="card" onclick="if(typeof playSound==='function') playSound('click')">
+                            <div class="card-header">
+                                <div>
+                                    <span class="tag-badge">${p.governorate}</span>
+                                    <div class="word-en font-bold">${p.name}</div>
+                                </div>
+                                <button type="button" class="audio-btn" onclick="event.stopPropagation(); if(typeof speakText==='function') speakText('${p.name}. ${p.governorate}');" title="استمع للنطق">🔊</button>
+                            </div>
+                            <div class="card-body">
+                                <div><strong>المكان:</strong> ${p.arabic}</div>
+                                <div class="details-box" style="margin-top: 8px;"><strong>الميزة:</strong> ${p.specialty}</div>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>`;
+                defContainer.insertAdjacentHTML('beforeend', placesHtml);
+            }
+
+            // Render Pronunciation Cards
+            const pGrid = document.getElementById('pronunciation-grid');
+            if (pGrid && window.lessonData && window.lessonData.pronunciation) {
+                pGrid.innerHTML = window.lessonData.pronunciation.words.map(w => `
+                    <div class="card" onclick="if(typeof playSound==='function') playSound('click')">
+                        <div class="card-header">
+                            <div>
+                                <span class="tag-badge" style="background: rgba(0, 243, 255, 0.15); color: var(--accent-primary);">${w.phonetic}</span>
+                                <div class="word-en font-bold" style="font-size: 1.25rem;">${w.word}</div>
+                            </div>
+                            <button type="button" class="audio-btn" onclick="event.stopPropagation(); if(typeof speakText==='function') speakText('${w.word}', this);" title="نطق الكلمة">🔊</button>
+                        </div>
+                        <div class="card-body">
+                            <div><strong>المعنى:</strong> ${w.arabic}</div>
+                            <div class="en-example" style="margin-top: 6px; font-size: 0.9rem; direction: ltr; text-align: left;">
+                                e.g. ${w.example}
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+
+                const sContainer = document.getElementById('pronunciation-sentences');
+                if (sContainer && window.lessonData.pronunciation.practiceSentences) {
+                    sContainer.innerHTML = window.lessonData.pronunciation.practiceSentences.map(s => `
+                        <div class="card" onclick="if(typeof playSound==='function') playSound('click')">
+                            <div class="card-header">
+                                <div class="en-text font-bold" style="direction: ltr; text-align: left; font-size: 1.05rem;">"${s.text}"</div>
+                                <button type="button" class="audio-btn" onclick="event.stopPropagation(); if(typeof speakText==='function') speakText('${s.text}', this);">🔊</button>
+                            </div>
+                            <div class="card-body" style="font-size: 0.88rem; color: var(--accent-primary);">
+                                ✨ التركيز على صوت /er/ في: <strong>${s.highlight}</strong>
+                            </div>
+                        </div>
+                    `).join('');
+                }
+            }
+
+            if (typeof loadQuestion === 'function' && document.getElementById('question')) {
+                loadQuestion();
+            }
+            if (window.storyEngine && window.lessonData && window.lessonData.storyPages) {
+                window.storyEngine.loadPages(window.lessonData.storyPages);
+            }
+        });
+    </script>
+</body>
+</html>

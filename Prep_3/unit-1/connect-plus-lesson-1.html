@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prep 3 (Connect Plus - G9) - Unit 1 - Lessons 1 & 2 | Mr. Ahmed Assem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/curriculum.css">
+    <link rel="stylesheet" href="../../assets/css/storybook.css">
+    <link rel="stylesheet" href="../../assets/css/quiz.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb">
+            <a href="../index.html" style="color: var(--accent-primary); text-decoration: none;">Prep_3</a> / 
+            <a href="./index.html" style="color: var(--accent-primary); text-decoration: none;">Unit 1</a> / 
+            <span>Connect Plus (G9) - Lessons 1 & 2</span>
+        </div>
+
+        <!-- Teacher Profile Header -->
+        <div class="teacher-profile-header">
+            <div class="avatar-wrapper">
+                <img src="../../my-photo-profile.webp" alt="Mr. Ahmed Assem" class="teacher-avatar" onerror="this.onerror=null; this.src='../../my-photo-profile.webp';">
+            </div>
+            <h1 class="teacher-title">Mr. Ahmed Assem</h1>
+            <div class="slogan">✨ Easy Peasy Ya Englezeey ✨</div>
+            <div class="badges-group" style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 10px;">
+                <span class="badge badge-active">Prep 3 • Connect Plus (G9 - لغات)</span>
+                <span class="badge badge-gold">📖 SB pages 8 : 11 • WB pages 4 & 5</span>
+            </div>
+            <h2 id="title" class="lesson-title-display">Unit 1 - Lessons 1 & 2: Family, Community & Neighborhood</h2>
+            <p id="description" class="lesson-desc-display">المفردات الأساسية والتكميلية (37 كلمة)، قصة وقراءة تفاعلية، المحاضرة المرئية لمقارنة المضارع التام والمستمر (Present Perfect vs Progressive)، تصريف الأفعال، التعريفات (11 تعريفاً)، المرادفات والمتضادات، المقاطع واللواحق، والملاحظات اللغوية مع كويز شامل 🎯</p>
+        </div>
+
+        <!-- Tabs Navigation Bar -->
+        <div class="tabs-container">
+            <button class="tab-btn active" onclick="switchTab('vocab', this)">📖 المفردات (37 كلمة)</button>
+            <button class="tab-btn" onclick="switchTab('storybook', this)">📚 قراءة وقصة تفاعلية (Story Book)</button>
+            <button class="tab-btn" onclick="switchTab('grammar-video', this)">🎥 القواعد المرئية (Present Perfect vs Progressive)</button>
+            <button class="tab-btn" onclick="switchTab('verbs', this)">⚡ تصريف الأفعال (Verbs)</button>
+            <button class="tab-btn" onclick="switchTab('definitions', this)">🧠 التعريفات (11 تعريفاً)</button>
+            <button class="tab-btn" onclick="switchTab('synonyms', this)">⚖️ المرادفات والمتضادات</button>
+            <button class="tab-btn" onclick="switchTab('affixes', this)">🔤 اللواحق والملاحظات</button>
+            <button class="tab-btn" onclick="switchTab('quiz', this)">🎯 اختبار الدرس الشامل (Quiz)</button>
+        </div>
+
+
+        <!-- Tab 1: Key & Extra Vocabulary (37 words) -->
+        <div id="vocab" class="tab-content active"></div>
+
+        <div id="storybook" class="tab-content">
+            <!-- Header matching Teacher Studio -->
+            <div style="text-align: center; margin-bottom: 24px;">
+                <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(0, 243, 255, 0.1); border: 1px solid var(--accent-primary); color: var(--accent-primary); padding: 4px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 800; margin-bottom: 10px;">
+                    <span>📖 Connect Plus (G9) • Unit 1 (SB pages 8-11)</span>
+                </div>
+                <h2 style="font-size: clamp(1.2rem, 3.5vw, 1.6rem); font-weight: 900; color: #ffffff; margin: 0 0 6px 0; line-height: 1.3;">
+                    Our Traditional Neighborhood & Heritage
+                </h2>
+                <div style="color: var(--text-muted); font-size: clamp(0.85rem, 2.5vw, 0.95rem); line-height: 1.5;">
+                    قصة القراءة التفاعلية: اكتشف الحياة في الحي التراثي وتواصل الأجيال مع القارئ الصوتي التلقائي (Auto Storyteller)
+                </div>
+            </div>
+
+            <!-- Interactive 3D Book Container from Teacher Studio Engine -->
+            <div class="storybook-wrapper">
+                <div class="storybook-book">
+                    <!-- Center Book Spine -->
+                    <div class="book-spine-divider"></div>
+
+                    <!-- Right Page: Scene Artwork (First in DOM so in RTL it displays on the right side) -->
+                    <div class="story-page-artwork">
+                        <div class="artwork-page-inner">
+                            <div class="page-badge-artwork">
+                                <span id="storyPageBadge">🖼️ Scene 1 of 4</span>
+                            </div>
+                            <div class="artwork-container">
+                                <img id="storyArtworkImg" src="../../assets/images/courtyard_portrait_1789590031900.webp" alt="Scene 1 Artwork" onerror="this.classList.add('hidden');" referrerpolicy="no-referrer">
+                            </div>
+                            <div class="artwork-caption" id="storyCaption">
+                                A traditional family home with a serene courtyard and balconies
+                            </div>
+                        </div>
+
+                        <div class="story-page-meta">
+                            <span>📖 Book Reader</span>
+                            <span id="storyPageCounter">Page 1 / 4</span>
+                        </div>
+                    </div>
+
+                    <!-- Left Page: Story Reading Passage (Second in DOM so in RTL it displays on the left side) -->
+                    <div class="story-page-content">
+                        <div>
+                            <div class="story-header">
+                                <h3 class="story-page-title" id="storyTitle">Chapter 1: Our Traditional Home & The Courtyard</h3>
+                                <button type="button" class="audio-btn" onclick="speakCurrentStoryPage()" title="استمع للنطق">🔊</button>
+                            </div>
+                            <div class="story-paragraph" id="storyText">
+                                I live with my family in a traditional building. It has a pretty courtyard in the center where our family gathers every weekend. The building has small balconies that look over the street, and the ceiling of our living room is painted white with bright lights.
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="story-translation-box" id="storyTranslation">
+                                <span class="translation-tag">💡 الترجمة:</span>
+                                أعيش مع عائلتي في مبنى تراثي تقليدي. يحتوي على فناء داخلي (حوش) جميل في المنتصف حيث تتجمع عائلتنا كل نهاية أسبوع. يحتوي المبنى على شرفات صغيرة تطل على الشارع، وسقف غرفة معيشتنا مدهون باللون الأبيض مع إضاءات ساطعة.
+                            </div>
+
+                            <div class="story-vocab-chips" id="storyVocab">
+                                <span class="vocab-chip">traditional building (مبنى تراثي)</span>
+                                <span class="vocab-chip">courtyard (فناء داخلي / حوش)</span>
+                                <span class="vocab-chip">gather (يجتمع)</span>
+                                <span class="vocab-chip">balconies (شرفات)</span>
+                                <span class="vocab-chip">ceiling (سقف داخلي)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Story Navigation & Auto-Storyteller Bar (Matching Teacher Studio) -->
+                <div class="story-controls-bar">
+                    <button type="button" id="storyPrevBtn" onclick="changeStoryPage(-1)" class="action-btn secondary" disabled>
+                        ⬅️ Previous Page
+                    </button>
+
+                    <button type="button" id="storytellerBtn" onclick="toggleStoryteller()" class="storyteller-btn">
+                        ▶️ Auto Storyteller
+                    </button>
+
+                    <div class="story-page-progress">
+                        <span id="storyPageProgressText">Page 1 of 4</span>
+                        <div class="progress-dots" id="storyProgressDots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+
+                    <button type="button" id="storyNextBtn" onclick="changeStoryPage(1)" class="action-btn secondary">
+                        Next Page ➔
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- Tab: Grammar Video (Present Perfect vs Progressive) -->
+        <!-- ========================================== -->
+        <div id="grammar-video" class="tab-content">
+            <div class="video-lesson-card">
+                <div class="video-header-bar">
+                    <div>
+                        <div class="video-lesson-title" style="font-size: 1.25rem; font-weight: 800; color: var(--accent-primary);">🎥 المحاضرة المرئية: مقارنة المضارع التام والمضارع التام المستمر (Present Perfect vs Present Progressive)</div>
+                        <div style="color: var(--text-muted); font-size: 0.95rem; margin-top: 4px;">✨ شرح عبقري وتطبيقي للفرق الدقيق بين الزمنين مع مستر أحمد عاصم | Easy Peasy Ya Englezeey</div>
+                    </div>
+                    <a href="https://youtu.be/cG8sPnp1jjo" target="_blank" rel="noopener noreferrer" class="badge badge-active video-external-link" data-sound-click="click" style="display: inline-flex; align-items: center; gap: 6px; text-decoration: none; padding: 8px 16px;">▶️ مشاهدة على YouTube</a>
+                </div>
+                <div class="video-responsive-wrapper">
+                    <iframe src="https://www.youtube-nocookie.com/embed/cG8sPnp1jjo" title="Present Perfect vs Present Progressive - Mr. Ahmed Assem" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div style="margin-top: 14px; padding: 12px 16px; background: rgba(0, 243, 255, 0.08); border: 1px solid rgba(0, 243, 255, 0.2); border-radius: 12px; font-size: 0.9rem; color: #cbd5e1; line-height: 1.6;">
+                    💡 <strong>كبسولة الفرق الذهبية:</strong> المضارع التام البسيط (Present Perfect Simple) يركز على <strong>النتيجة واكتمال الحدث أو عدد المرات (Result / How many)</strong>، بينما المضارع التام المستمر (Present Perfect Progressive) يركز على <strong>طول المدة واستمرارية النشاط ذاته (Duration / How long / Ongoing process)</strong>.
+                </div>
+            </div>
+
+            <!-- Grammar Comparison Cards Grid -->
+            <h3 class="section-subtitle" style="margin-top: 28px;">⚡ القواعد الذهبية للفرق بين الزمنين (Grammar Comparison):</h3>
+            <div class="cards-grid grid-cards" style="grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));">
+                <!-- Card 1: Present Perfect Simple -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Simple Tense</span>
+                            <div class="word-en">Present Perfect Simple (have/has + P.P.)</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('Present Perfect Simple: subject plus have or has plus past participle. Focuses on result and completion.'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <div class="details-box">
+                            <strong style="color: var(--accent-primary);">📐 التكوين والتركيز:</strong>
+                            <p style="margin: 4px 0 0 0; line-height: 1.6;">
+                                • <strong>Form:</strong> <code>have / has + Past Participle (P.P.)</code><br>
+                                • <strong>Focus:</strong> يركز على النتيجة، أو اكتمال الحدث، أو عدد مرات حدوث الفعل.
+                            </p>
+                        </div>
+                        <div class="details-box" style="margin-top: 10px;">
+                            <strong style="color: var(--accent-green);">💬 مثال تطبيقي:</strong>
+                            <p style="margin: 4px 0 0 0; line-height: 1.6;">
+                                "She <strong>has written</strong> three emails this morning."<br>
+                                (كتبت 3 رسائل وانتهت منها - تركيز على العدد والنتيجة).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Present Perfect Progressive -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Progressive Tense</span>
+                            <div class="word-en">Present Perfect Progressive (have/has been + V-ing)</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('Present Perfect Progressive: subject plus have or has been plus verb ing. Focuses on duration and ongoing activity.'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <div class="details-box">
+                            <strong style="color: var(--accent-orange);">📐 التكوين والتركيز:</strong>
+                            <p style="margin: 4px 0 0 0; line-height: 1.6;">
+                                • <strong>Form:</strong> <code>have / has + been + verb-ing</code><br>
+                                • <strong>Focus:</strong> يركز على استغراق الوقت، وطول المدة، واستمرار الحدث دون توقف حتى لحظة الكلام.
+                            </p>
+                        </div>
+                        <div class="details-box" style="margin-top: 10px;">
+                            <strong style="color: var(--accent-green);">💬 مثال تطبيقي:</strong>
+                            <p style="margin: 4px 0 0 0; line-height: 1.6;">
+                                "She <strong>has been writing</strong> emails all morning."<br>
+                                (قضت الصباح كله تكتب وما زالت مستمرة في الكتابة).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Key Signal Words & Contrast -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Keywords</span>
+                            <div class="word-en">Signal Words & Questions (مفاتيح الحل)</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('How many times for simple, how long for progressive'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <div class="details-box">
+                            <strong style="color: var(--accent-primary);">⚡ مع التام البسيط (Simple):</strong>
+                            <p style="margin: 4px 0 0 0; line-height: 1.6;">
+                                • <code>already, just, never, ever, yet, so far</code><br>
+                                • السؤال عن الكمية والمرات: <code>How many / How much?</code>
+                            </p>
+                        </div>
+                        <div class="details-box" style="margin-top: 10px;">
+                            <strong style="color: var(--accent-orange);">⚡ مع التام المستمر (Progressive):</strong>
+                            <p style="margin: 4px 0 0 0; line-height: 1.6;">
+                                • <code>all day, all morning, for, since, lately, recently</code><br>
+                                • السؤال عن طول المدة: <code>How long?</code>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Stative Verbs Rule -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Crucial Rule</span>
+                            <div class="word-en">Stative Verbs (أفعال الحالة والشعور)</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('Stative verbs cannot be used in continuous forms. Use present perfect simple.'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <div class="details-box">
+                            <strong style="color: var(--accent-red);">🚫 قاعدة الاستثناء الهامة:</strong>
+                            <p style="margin: 4px 0 0 0; line-height: 1.6;">
+                                أفعال الحواس والشعور والإدراك والملكية <strong>لا تُستخدم في الأزمنة المستمرة مطلقاً</strong>، حتى لو وُجدت كلمات استمرار كـ (for / since / how long).
+                            </p>
+                        </div>
+                        <div class="details-box" style="margin-top: 10px;">
+                            <strong style="color: var(--accent-green);">📝 الأفعال والأمثلة:</strong>
+                            <p style="margin: 4px 0 0 0; line-height: 1.6;">
+                                <code>know, understand, believe, like, love, hate, own, belong to</code><br>
+                                ✅ "I <strong>have known</strong> Omar for ten years."<br>
+                                ❌ "I have been knowing..." (خطأ جسيم!).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5: Verbs with Both Forms -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Special Case</span>
+                            <div class="word-en">Living & Working Verbs (أفعال المعيشة والعمل)</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('Verbs like live and work can be used in either simple or progressive with little difference in meaning'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <div class="details-box">
+                            <strong style="color: var(--accent-primary);">💡 أفعال تقبل الصياغتين بنفس المعنى:</strong>
+                            <p style="margin: 4px 0 0 0; line-height: 1.6;">
+                                الأفعال التي تعبر عن نشاط حياة طبيعي طويل مثل <code>live, work, study, teach</code> يمكن استخدامها في التام البسيط أو المستمر دون اختلاف يُذكر:
+                            </p>
+                        </div>
+                        <div class="details-box" style="margin-top: 10px;">
+                            <strong style="color: var(--accent-green);">💬 مثالان صحيحان 100%:</strong>
+                            <p style="margin: 4px 0 0 0; line-height: 1.6;">
+                                • "We <strong>have lived</strong> in Cairo for 10 years."<br>
+                                • "We <strong>have been living</strong> in Cairo for 10 years."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6: Present Evidence of Recent Action -->
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Exam Trick</span>
+                            <div class="word-en">Present Evidence (الأثر الحالي الواضح)</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('His clothes are dirty because he has been painting the wall'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <div class="details-box">
+                            <strong style="color: var(--accent-orange);">🔍 الأثر المادي المباشر:</strong>
+                            <p style="margin: 4px 0 0 0; line-height: 1.6;">
+                                إذا كان هناك دليل أو أثر محسوس الآن ناتج عن استغراق الشخص في نشاط بدني مستمر للتو، نفضل دائماً <strong>المضارع التام المستمر</strong>:
+                            </p>
+                        </div>
+                        <div class="details-box" style="margin-top: 10px;">
+                            <strong style="color: var(--accent-green);">💬 أمثلة الامتحان:</strong>
+                            <p style="margin: 4px 0 0 0; line-height: 1.6;">
+                                • "He is out of breath because he <strong>has been running</strong>."<br>
+                                • "Her hands are covered in paint because she <strong>has been painting</strong> the room."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- Tab 3: Conjugation of Irregular Verbs     -->
+        <!-- ========================================== -->
+
+        <!-- Tab 4: Irregular Verbs -->
+        <div id="verbs" class="tab-content"></div>
+
+        <!-- Tab 5: Definitions -->
+        <div id="definitions" class="tab-content"></div>
+
+        <!-- Tab 6: Synonyms & Antonyms -->
+        <div id="synonyms" class="tab-content"></div>
+
+        <!-- Tab 7: Affixes, Expressions, Prepositions & Language Notes -->
+        <div id="affixes" class="tab-content"></div>
+
+        <div id="quiz" class="tab-content">
+            <div class="score-board">
+                <span>السؤال: <span id="current-q">1</span> / <span id="total-q">30</span></span>
+                <span>النقاط: <span id="score">0</span> 🌟</span>
+            </div>
+
+            <div class="question-card">
+                <span class="emoji-display" id="emoji">🎯</span>
+                <div class="question-text" id="question">جاري تحميل السؤال...</div>
+                <div class="options-grid" id="options"></div>
+                <div class="feedback" id="feedback"></div>
+            </div>
+
+            <div class="quiz-footer-actions">
+                <button class="action-btn next-btn" id="next-btn" onclick="nextQuestion()" style="display: none;">السؤال التالي ➔</button>
+            </div>
+        </div>
+
+
+        <!-- Bottom Return Controls -->
+        <div class="nav-controls" style="margin-top: 30px;">
+            <a href="./index.html" class="action-btn secondary" data-sound-click="click">⬅ العودة لقائمة دروس الوحدة</a>
+        </div>
+    </div>
+
+
+    <!-- Universal Framework Scripts -->
+    <script src="../../assets/js/bidi.js"></script>
+    <script src="../../assets/js/audio.js"></script>
+    <script src="../../assets/js/tabs.js"></script>
+    <script src="../../assets/js/quiz-engine.js"></script>
+    <script src="../../assets/js/story-engine.js"></script>
+    <script src="../../assets/js/ui.js"></script>
+    <script src="../../assets/js/main.js"></script>
+
+    <!-- Pure Decoupled Lesson Data Payload -->
+    <script src="./connect-plus-lesson-1.data.js"></script>
+
+    <!-- Universal Curriculum Dynamic Renderer -->
+    <script src="../../assets/js/curriculum-renderer.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.CurriculumRenderer && typeof window.CurriculumRenderer.init === 'function') {
+                window.CurriculumRenderer.init();
+            }
+            if (window.storyEngine && window.lessonData && window.lessonData.storyPages) {
+                window.storyEngine.loadPages(window.lessonData.storyPages);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" width="100%" height="100%">
+  <rect width="960" height="360" rx="14" fill="#0b0f19" stroke="#1e293b" stroke-width="2"/>
+  <text x="480" y="38" fill="#00f3ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" text-anchor="middle">SYSTEM ARCHITECTURE &amp; DATA FLOW</text>
+  
+  <!-- Flow Columns -->
+  <!-- Col 1: Authoring -->
+  <g transform="translate(40, 70)">
+    <rect width="250" height="250" rx="10" fill="#131b2e" stroke="#ffb703" stroke-width="1.2"/>
+    <text x="125" y="32" fill="#ffb703" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle">Teacher Authoring Layer</text>
+    <line x1="20" y1="46" x2="230" y2="46" stroke="#1c2a47" stroke-width="1"/>
+    <rect x="25" y="60" width="200" height="40" rx="6" fill="#1c2a47"/>
+    <text x="125" y="85" fill="#ffffff" font-family="sans-serif" font-size="12" text-anchor="middle">Admin Studio UI (admin/)</text>
+    <rect x="25" y="115" width="200" height="40" rx="6" fill="#1c2a47"/>
+    <text x="125" y="140" fill="#ffffff" font-family="sans-serif" font-size="12" text-anchor="middle">In-Page PIN Modal Guard</text>
+    <rect x="25" y="170" width="200" height="55" rx="6" fill="#1c2a47"/>
+    <text x="125" y="193" fill="#ffb703" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">window.lessonData</text>
+    <text x="125" y="212" fill="#94a3b8" font-family="sans-serif" font-size="10" text-anchor="middle">Self-Contained JSON Contract</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <path d="M 300 195 L 345 195" stroke="#38bdf8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <polygon points="345,190 355,195 345,200" fill="#38bdf8"/>
+
+  <!-- Col 2: Central Engines -->
+  <g transform="translate(355, 70)">
+    <rect width="250" height="250" rx="10" fill="#131b2e" stroke="#00f3ff" stroke-width="1.2"/>
+    <text x="125" y="32" fill="#00f3ff" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle">8 Core Central Engines</text>
+    <line x1="20" y1="46" x2="230" y2="46" stroke="#1c2a47" stroke-width="1"/>
+    <text x="35" y="74" fill="#38bdf8" font-family="monospace" font-size="11.5">✓ audio.js (TTS &amp; SFX)</text>
+    <text x="35" y="98" fill="#38bdf8" font-family="monospace" font-size="11.5">✓ quiz-engine.js</text>
+    <text x="35" y="122" fill="#38bdf8" font-family="monospace" font-size="11.5">✓ story-engine.js</text>
+    <text x="35" y="146" fill="#38bdf8" font-family="monospace" font-size="11.5">✓ vocab-mastery.js</text>
+    <text x="35" y="170" fill="#38bdf8" font-family="monospace" font-size="11.5">✓ tabs.js (Navigation)</text>
+    <text x="35" y="194" fill="#38bdf8" font-family="monospace" font-size="11.5">✓ bidi.js (Arabic/English)</text>
+    <text x="35" y="218" fill="#38bdf8" font-family="monospace" font-size="11.5">✓ ui.js &amp; main.js</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <path d="M 615 195 L 660 195" stroke="#00ff9d" stroke-width="3" fill="none"/>
+  <polygon points="660,190 670,195 660,200" fill="#00ff9d"/>
+
+  <!-- Col 3: Student Experience -->
+  <g transform="translate(670, 70)">
+    <rect width="250" height="250" rx="10" fill="#131b2e" stroke="#00ff9d" stroke-width="1.2"/>
+    <text x="125" y="32" fill="#00ff9d" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle">Client Runtime Experience</text>
+    <line x1="20" y1="46" x2="230" y2="46" stroke="#1c2a47" stroke-width="1"/>
+    <rect x="25" y="60" width="200" height="40" rx="6" fill="#1c2a47"/>
+    <text x="125" y="85" fill="#ffffff" font-family="sans-serif" font-size="12" text-anchor="middle">Direct &lt;head&gt; CSS Pipeline</text>
+    <rect x="25" y="115" width="200" height="40" rx="6" fill="#1c2a47"/>
+    <text x="125" y="140" fill="#ffffff" font-family="sans-serif" font-size="12" text-anchor="middle">Responsive Zero-Scroll Grid</text>
+    <rect x="25" y="170" width="200" height="55" rx="6" fill="#1c2a47"/>
+    <text x="125" y="193" fill="#00ff9d" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">100% Jamstack Speed</text>
+    <text x="125" y="212" fill="#94a3b8" font-family="sans-serif" font-size="10" text-anchor="middle">Zero Latency • Zero Cloud Bill</text>
+  </g>
+</svg>

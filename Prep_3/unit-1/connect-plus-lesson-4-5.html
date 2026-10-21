@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prep 3 (Connect Plus - G9) - Unit 1 - Lessons 4 & 5: Unusual Communities & Heritage | Mr. Ahmed Assem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/curriculum.css">
+    <link rel="stylesheet" href="../../assets/css/storybook.css">
+    <link rel="stylesheet" href="../../assets/css/quiz.css">
+</head>
+<body class="lesson-page">
+
+    <div class="container">
+        <!-- Breadcrumb Navigation -->
+        <div class="page-actions">
+            <a href="./index.html" class="back-btn back-home" data-sound-click="click">⬅ العودة لوحدة Unit 1 (Connect Plus - G9)</a>
+        </div>
+
+        <!-- Teacher Profile Header -->
+        <div class="teacher-profile-header">
+            <div class="avatar-wrapper">
+                <img src="../../my-photo-profile.webp" alt="Mr. Ahmed Assem" class="teacher-avatar" onerror="this.onerror=null; this.src='../../my-photo-profile.webp';">
+            </div>
+            <h1 class="teacher-title">Mr. Ahmed Assem</h1>
+            <div class="slogan">✨ Easy Peasy Ya Englezeey ✨</div>
+            <div class="badges-group" style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 10px;">
+                <span class="badge badge-active">Prep 3 • Connect Plus (G9 - لغات)</span>
+                <span class="badge badge-gold">📖 SB pages 14 : 17 • WB pages 8 : 10</span>
+                <span class="badge" style="background: rgba(0, 243, 255, 0.15); color: #00f3ff; border: 1px solid rgba(0, 243, 255, 0.3);">CLIL: Geography • Culture • Writing</span>
+            </div>
+            <h2 id="title" class="lesson-title-display">Unit 1 - Lessons 4 & 5: Unusual Communities & Family Heritage</h2>
+            <p id="description" class="lesson-desc-display">المفردات الكاملة (الرئيسية والتكميلية)، الأفعال الشاذة والتعريفات، المرادفات والمتضادات واللواحق، 3 نصوص قراءة تفاعلية مع القارئ الصوتي (Auto Storyteller)، محادثة تدريبية ناطقة، واختبار شامل 🎯</p>
+        </div>
+
+        <!-- Signature Cyane Center-Node Divider -->
+        <div class="cyane-divider" aria-hidden="true"></div>
+
+        <!-- Tabs Navigation Bar -->
+        <div class="tabs-container">
+
+            <button class="tab-btn active" onclick="switchTab('vocab', this)">📖 المفردات الكاملة (Vocabulary)</button>
+            <button class="tab-btn" onclick="switchTab('storyteller-reading', this)">📚 القراءة التفاعلية (3 قصص - Storyteller)</button>
+            <button class="tab-btn" onclick="switchTab('dialogue', this)">🗣️ المحادثة الناطقة (Interactive Dialogue)</button>
+            <button class="tab-btn" onclick="switchTab('verbs', this)">⚡ تصريف الأفعال (Verbs)</button>
+            <button class="tab-btn" onclick="switchTab('definitions', this)">🧠 التعريفات (Definitions)</button>
+            <button class="tab-btn" onclick="switchTab('synonyms', this)">⚖️ المرادفات والمتضادات (Synonyms)</button>
+            <button class="tab-btn" onclick="switchTab('affixes', this)">🔤 اللواحق والمقاطع (Affixes)</button>
+            <button class="tab-btn" onclick="switchTab('collocations', this)">🔗 التعبيرات وحروف الجر والملاحظات (Notes)</button>
+            <button class="tab-btn" onclick="switchTab('quiz', this)">🎯 اختبار الدرس الشامل (Quiz)</button>
+        </div>
+
+
+        <!-- Dynamic Curriculum Containers (Hydrated by curriculum-renderer.js) -->
+        <div id="vocab" class="tab-content active"></div>
+        <div id="verbs" class="tab-content"></div>
+        <div id="definitions" class="tab-content"></div>
+        <div id="synonyms" class="tab-content"></div>
+        <div id="affixes" class="tab-content"></div>
+        <div id="collocations" class="tab-content"></div>
+
+<div id="storyteller-reading" class="tab-content">
+            <!-- Story Selector Buttons -->
+            <div style="text-align: center; margin-bottom: 24px;">
+                <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(0, 243, 255, 0.1); border: 1px solid var(--accent-primary); color: var(--accent-primary); padding: 4px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 800; margin-bottom: 10px;">
+                    <span>📚 Connect Plus (G9) • Lessons 4 & 5 Readings</span>
+                </div>
+                <h2 style="font-size: clamp(1.2rem, 3.5vw, 1.6rem); font-weight: 900; color: #ffffff; margin: 0 0 8px 0; line-height: 1.3;">
+                    استوديو القراءة والقصص التفاعلية (3 Interactive Readings)
+                </h2>
+                <div style="color: var(--text-muted); font-size: clamp(0.85rem, 2.5vw, 0.95rem); line-height: 1.5;">
+                    اختر نص القراءة المطلوب لتصفحه في الكتاب التفاعلي ثلاثي الأبعاد مع المشاهد المصورة والقارئ الصوتي التلقائي 🎧
+                </div>
+
+                <!-- Story Selector Pills -->
+                <div class="story-tabs-switcher" style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 18px;">
+                    <button type="button" id="storyTabBtn-0" class="badge badge-active story-select-btn" onclick="selectStoryDeck(0)" style="padding: 10px 18px; font-size: 0.95rem; cursor: pointer; border-radius: 25px;">
+                        🌍 قراءة 1: مجتمعات غير عادية (Unusual Communities)
+                    </button>
+                    <button type="button" id="storyTabBtn-1" class="badge badge-gold story-select-btn" onclick="selectStoryDeck(1)" style="padding: 10px 18px; font-size: 0.95rem; cursor: pointer; border-radius: 25px; opacity: 0.85;">
+                        🗺️ قراءة 2: جذور عائلية عالمية (My Family History)
+                    </button>
+                    <button type="button" id="storyTabBtn-2" class="badge badge-gold story-select-btn" onclick="selectStoryDeck(2)" style="padding: 10px 18px; font-size: 0.95rem; cursor: pointer; border-radius: 25px; opacity: 0.85;">
+                        🌳 قراءة 3: شجرة العائلة وقصة كيتلين (Caitlin's Inspiring Story)
+                    </button>
+                </div>
+            </div>
+
+            <!-- Interactive 3D Book Container from Teacher Studio Engine -->
+            <div class="storybook-wrapper">
+                <div class="storybook-book">
+                    <!-- Center Book Spine -->
+                    <div class="book-spine-divider"></div>
+
+                    <!-- Right Page: Scene Artwork (First in DOM so in RTL it displays on the right side) -->
+                    <div class="story-page-artwork">
+                        <div class="artwork-page-inner">
+                            <div class="page-badge-artwork">
+                                <span id="storyPageBadge">🖼️ Scene 1 of 3</span>
+                            </div>
+                            <div class="artwork-container">
+                                <img id="storyArtworkImg" src="../../assets/images/ittoqqortoormiit_greenland_1790121375254.webp" alt="Scene Artwork" onerror="this.classList.add('hidden');" referrerpolicy="no-referrer">
+                            </div>
+                            <div class="artwork-caption" id="storyCaption">
+                                Brightly colored wooden houses of Ittoqqortoormiit, Greenland by the frozen sea ice
+                            </div>
+                        </div>
+
+                        <div class="story-page-meta">
+                            <span>📖 Book Reader</span>
+                            <span id="storyPageCounter">Page 1 / 3</span>
+                        </div>
+                    </div>
+
+                    <!-- Left Page: Story Reading Passage (Second in DOM so in RTL it displays on the left side) -->
+                    <div class="story-page-content">
+                        <div>
+                            <div class="story-header">
+                                <h3 class="story-page-title" id="storyTitle">Ittoqqortoormiit, Greenland</h3>
+                                <button type="button" class="audio-btn" onclick="speakCurrentStoryPage()" title="استمع للنطق">🔊</button>
+                            </div>
+                            <div class="story-paragraph" id="storyText">
+                                In 1925, a group of Inuit people arrived in a part of Greenland, now called Ittoqqortoormiit. It is far away from other places in Greenland. Since that time, people have been living here in the traditional way, hunting animals for food on land and in the sea. The town's brightly colored wooden houses have been homes for generations of families. Nowadays, around 400 people live here and it's a very close and friendly community. There is just one small supermarket, one restaurant, a school, and a museum. For nine months of the year, the sea around Ittoqqortoormiit freezes, so boats cannot travel here. The sea ice is very important for hunting.
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="story-translation-box" id="storyTranslation">
+                                <span class="translation-tag">💡 الترجمة:</span>
+                                في عام 1925، وصلت مجموعة من شعب الإنويت (الإسكيمو) إلى جزء من غرينلاند يُدعى الآن إيتوكورتورميت. وهي بعيدة تماماً عن الأماكن الأخرى في غرينلاند. ومنذ ذلك الوقت، يعيش الناس هنا بالطريقة التقليدية، حيث يصطادون الحيوانات للحصول على الطعام في البر والبحر. كانت المنازل الخشبية ذات الألوان الزاهية في المدينة موطناً لأجيال من العائلات. يعيش هنا اليوم حوالي 400 شخص وهو مجتمع مترابط وودود للغاية. يوجد به متجر صغير واحد فقط، ومطعم واحد، ومدرسة، ومتحف. ولمدة تسعة أشهر في السنة، يتجمد البحر حول إيتوكورتورميت فلا تستطيع القوارب السفر إليها، ويعد جليد البحر مهماً جداً للصيد.
+                            </div>
+
+                            <div class="story-vocab-chips" id="storyVocab">
+                                <span class="vocab-chip">Inuit people (شعب الإنويت)</span>
+                                <span class="vocab-chip">traditional way (طريقة تقليدية)</span>
+                                <span class="vocab-chip">hunting animals (صيد الحيوانات)</span>
+                                <span class="vocab-chip">wooden houses (منازل خشبية)</span>
+                                <span class="vocab-chip">sea ice (جليد البحر)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Story Navigation & Auto-Storyteller Bar -->
+                <div class="story-controls-bar">
+                    <button type="button" id="storyPrevBtn" onclick="changeStoryPage(-1)" class="action-btn secondary" disabled>
+                        ⬅️ المشهد السابق
+                    </button>
+
+                    <button type="button" id="storytellerBtn" onclick="toggleStoryteller()" class="storyteller-btn">
+                        ▶️ القارئ التلقائي (Auto Storyteller)
+                    </button>
+
+                    <div class="story-page-progress">
+                        <span id="storyPageProgressText">Scene 1 of 3</span>
+                        <div class="progress-dots" id="storyProgressDots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+
+                    <button type="button" id="storyNextBtn" onclick="changeStoryPage(1)" class="action-btn secondary">
+                        المشهد التالي ➔
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- Tab 4: Interactive Dialogue                -->
+        <!-- ========================================== -->
+        
+<div id="dialogue" class="tab-content">
+            <div class="section-header-bar" style="margin-bottom: 20px;">
+                <div class="section-header-left">
+                    <span class="section-icon-badge">🗣️</span>
+                    <div>
+                        <h3 class="section-title">محادثة الدرس التفاعلية (Interactive Dialogue)</h3>
+                        <span class="section-en-title">Exploring Remote Communities & Ancestral Roots</span>
+                    </div>
+                </div>
+                <span class="section-hint-pill">تدريب محادثة تفاعلي ناطق بصوت واضح لكل جملة</span>
+            </div>
+
+            <!-- Dialogue Controls -->
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 12px;">
+                <div style="color: var(--text-muted); font-size: 0.95rem;">
+                    حوار تعليمي شيق بين <strong>مستر أحمد (Mr. Ahmed)</strong> والطالب <strong>عمر (Omar)</strong> حول المجتمعات المنعزلة وتاريخ العائلات:
+                </div>
+                <button type="button" id="play-all-dialogue-btn" class="action-btn" onclick="playAllDialogue()" style="display: inline-flex; align-items: center; gap: 8px;">
+                    <span>▶️</span> تشغيل المحادثة بالكامل تلقائياً
+                </button>
+            </div>
+
+            <div class="dialogue-list">
+                <!-- Line 1: Mr. Ahmed -->
+                <div class="dialogue-box dialogue-line" id="diag-line-0" onclick="speakDialogueLine(0)">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span class="speaker-name" style="color: var(--accent-primary);">👨‍🏫 Mr. Ahmed Assem:</span>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('Welcome back Omar! Have you ever wondered what life is like in communities that are a long way from anywhere?'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="dialogue-content" style="margin-top: 6px;">
+                        <div class="en-text" style="font-size: 1.05rem; font-weight: 600; color: #ffffff; direction: ltr; text-align: left;">
+                            "Welcome back, Omar! Have you ever wondered what life is like in communities that are a long way from anywhere?"
+                        </div>
+                        <div class="ar-text" style="margin-top: 6px; color: var(--accent-secondary); font-size: 0.92rem;">
+                            (أهلاً بك يا عمر! هل تساءلت يوماً كيف تبدو الحياة في مجتمعات بعيدة جداً عن أي مكان آخر؟)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Line 2: Omar -->
+                <div class="dialogue-box dialogue-line" id="diag-line-1" onclick="speakDialogueLine(1)" style="border-right-color: var(--accent-green);">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span class="speaker-name" style="color: var(--accent-green);">👦 Omar:</span>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('Yes, Mr. Ahmed! I was fascinated by Palmerston Island in the Pacific Ocean. It takes nine days to reach by boat, and only 62 people live there!'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="dialogue-content" style="margin-top: 6px;">
+                        <div class="en-text" style="font-size: 1.05rem; font-weight: 600; color: #ffffff; direction: ltr; text-align: left;">
+                            "Yes, Mr. Ahmed! I was fascinated by Palmerston Island in the Pacific Ocean. It takes nine days to reach by boat, and only 62 people live there!"
+                        </div>
+                        <div class="ar-text" style="margin-top: 6px; color: var(--accent-secondary); font-size: 0.92rem;">
+                            (نعم يا مستر أحمد! لقد أدهشتني جزيرة بالمرستون في المحيط الهادئ؛ فالرحلة إليها تستغرق تسعة أيام بالقارب، ولا يعيش هناك سوى 62 شخصاً فقط!)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Line 3: Mr. Ahmed -->
+                <div class="dialogue-box dialogue-line" id="diag-line-2" onclick="speakDialogueLine(2)">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span class="speaker-name" style="color: var(--accent-primary);">👨‍🏫 Mr. Ahmed Assem:</span>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('Incredible! And did you find out how they manage without shops or money?'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="dialogue-content" style="margin-top: 6px;">
+                        <div class="en-text" style="font-size: 1.05rem; font-weight: 600; color: #ffffff; direction: ltr; text-align: left;">
+                            "Incredible! And did you find out how they manage without shops or money?"
+                        </div>
+                        <div class="ar-text" style="margin-top: 6px; color: var(--accent-secondary); font-size: 0.92rem;">
+                            (مدهش حقاً! وهل اكتشفت كيف يتدبرون أمورهم دون وجود متاجر أو نقود؟)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Line 4: Omar -->
+                <div class="dialogue-box dialogue-line" id="diag-line-3" onclick="speakDialogueLine(3)" style="border-right-color: var(--accent-green);">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span class="speaker-name" style="color: var(--accent-green);">👦 Omar:</span>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('They do not use money at all; they just share what they have. And in Supai village in the Grand Canyon, there are no roads suitable for cars, so the post arrives every day on a donkey!'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="dialogue-content" style="margin-top: 6px;">
+                        <div class="en-text" style="font-size: 1.05rem; font-weight: 600; color: #ffffff; direction: ltr; text-align: left;">
+                            "They don't use money at all; they just share what they have. And in Supai village in the Grand Canyon, there are no roads suitable for cars, so the post arrives every day on a donkey!"
+                        </div>
+                        <div class="ar-text" style="margin-top: 6px; color: var(--accent-secondary); font-size: 0.92rem;">
+                            (إنهم لا يستخدمون النقود أبداً، بل يشاركون كل ما يملكون! وفي قرية سوباي بالأخدود العظيم، لا توجد طرق مناسبة للسيارات، ولذلك يصل البريد يومياً على ظهور الحمير!)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Line 5: Mr. Ahmed -->
+                <div class="dialogue-box dialogue-line" id="diag-line-4" onclick="speakDialogueLine(4)">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span class="speaker-name" style="color: var(--accent-primary);">👨‍🏫 Mr. Ahmed Assem:</span>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('That is why geography is so exciting! What about our ancestral heritage, Omar? Did you research your own family tree?'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="dialogue-content" style="margin-top: 6px;">
+                        <div class="en-text" style="font-size: 1.05rem; font-weight: 600; color: #ffffff; direction: ltr; text-align: left;">
+                            "That's why geography is so exciting! What about our ancestral heritage, Omar? Did you research your own family tree?"
+                        </div>
+                        <div class="ar-text" style="margin-top: 6px; color: var(--accent-secondary); font-size: 0.92rem;">
+                            (ولهذا السبب فإن مادة الجغرافيا مثيرة ومشوقة جداً! وماذا عن تراث أجدادنا يا عمر؟ هل قمت بالبحث في شجرة عائلتك؟)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Line 6: Omar -->
+                <div class="dialogue-box dialogue-line" id="diag-line-5" onclick="speakDialogueLine(5)" style="border-right-color: var(--accent-green);">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span class="speaker-name" style="color: var(--accent-green);">👦 Omar:</span>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('Yes! Like Farez and Cameron, I found out that my great-grandfather was from Alexandria, but I also have relatives in Canada and Kuwait. We always keep in touch through social media!'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="dialogue-content" style="margin-top: 6px;">
+                        <div class="en-text" style="font-size: 1.05rem; font-weight: 600; color: #ffffff; direction: ltr; text-align: left;">
+                            "Yes! Like Farez and Cameron, I found out that my great-grandfather was from Alexandria, but I also have relatives in Canada and Kuwait. We always keep in touch through social media!"
+                        </div>
+                        <div class="ar-text" style="margin-top: 6px; color: var(--accent-secondary); font-size: 0.92rem;">
+                            (نعم! تماماً مثل فارس وكاميرون، اكتشفت أن جدي الأكبر كان من الإسكندرية، ولدي أقارب أيضاً في كندا والكويت، ونحن دائماً نبقى على تواصل دائم عبر وسائل التواصل الاجتماعي!)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Line 7: Mr. Ahmed -->
+                <div class="dialogue-box dialogue-line" id="diag-line-6" onclick="speakDialogueLine(6)">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span class="speaker-name" style="color: var(--accent-primary);">👨‍🏫 Mr. Ahmed Assem:</span>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('Brilliant, Omar! Strong family ties and understanding other communities help us become true global citizens. Easy Peasy Ya Englezeey!'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="dialogue-content" style="margin-top: 6px;">
+                        <div class="en-text" style="font-size: 1.05rem; font-weight: 600; color: #ffffff; direction: ltr; text-align: left;">
+                            "Brilliant, Omar! Strong family ties and understanding other communities help us become true global citizens. Easy Peasy Ya Englezeey!"
+                        </div>
+                        <div class="ar-text" style="margin-top: 6px; color: var(--accent-secondary); font-size: 0.92rem;">
+                            (رائع يا عمر! فالروابط العائلية القوية وفهم المجتمعات الأخرى يساعدنا على أن نكون مواطنين عالميين حقيقيين. إيزي بيزي يا إنجليزي!)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- Tab 5: Comprehensive Interactive Quiz      -->
+        <!-- ========================================== -->
+        
+<div id="quiz" class="tab-content">
+            <h3 class="section-subtitle">🎯 اختبار تقييم الفهم الشامل (Interactive Quiz):</h3>
+            <p class="section-hint">اختر الإجابة الصحيحة من بين الخيارات. يمنحك كل سؤال صحيح 10 نقاط فورية مع المؤثرات الصوتية والتعليل التعليمي 🌟</p>
+
+            <div class="quiz-container-card">
+                <div id="quiz-header" class="quiz-header-bar">
+                    <div class="score-badge">
+                        <span>النتيجة: </span>
+                        <span id="score-display" class="score-value">0</span>
+                    </div>
+                    <div class="progress-badge">
+                        <span>السؤال: </span>
+                        <span id="current-question-num">1</span> / <span id="total-questions-num">25</span>
+                    </div>
+                </div>
+
+                <div id="question-box" class="quiz-question-box">
+                    <!-- Injected dynamically by Universal Quiz Engine -->
+                </div>
+
+                <div id="options-box" class="quiz-options-grid">
+                    <!-- Options injected dynamically -->
+                </div>
+
+                <div id="feedback-box" class="quiz-feedback-box hidden">
+                    <!-- Feedback injected dynamically -->
+                </div>
+
+                <div class="quiz-actions-bar">
+                    <button id="next-btn" class="action-btn next-btn hidden" onclick="nextQuestion()">السؤال التالي ➔</button>
+                    <button id="retry-btn" class="action-btn secondary hidden" onclick="restartQuiz()">🔄 إعادة المحاولة</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Controls Bottom -->
+        <div class="nav-controls" style="margin-top: 30px;">
+            <a href="./index.html" class="back-btn" data-sound-click="click">⬅️ العودة لقائمة دروس الوحدة الأولى (Unit 1)</a>
+        </div>
+
+        <!-- Navigation Controls Bottom -->
+        <div class="nav-controls" style="margin-top: 30px;">
+            <a href="./index.html" class="back-btn" data-sound-click="click">⬅️ العودة لقائمة دروس الوحدة الأولى (Unit 1)</a>
+        </div>
+    </div>
+
+    <!-- Data Engine & Payload -->
+    <script src="connect-plus-lesson-4-5.data.js"></script>
+
+    <!-- Interactive Controllers -->
+    <script>
+
+        // Function to select active Storybook Deck
+        window.activeDeckIndex = 0;
+        window.selectStoryDeck = function(deckIdx) {
+            window.activeDeckIndex = deckIdx;
+            const deck = window.readingDecks[deckIdx];
+            if (!deck) return;
+
+            for (let i = 0; i < 3; i++) {
+                const btn = document.getElementById('storyTabBtn-' + i);
+                if (btn) {
+                    if (i === deckIdx) {
+                        btn.className = 'badge badge-active story-select-btn';
+                        btn.style.opacity = '1';
+                    } else {
+                        btn.className = 'badge badge-gold story-select-btn';
+                        btn.style.opacity = '0.7';
+                    }
+                }
+            }
+
+            if (window.storyEngine) {
+                window.storyEngine.loadPages(deck.pages);
+            }
+            if (typeof window.playSound === 'function') window.playSound('click');
+        };
+
+        // Dialogue Sequential Playback
+        window.dialogueUtterance = null;
+        window.isDialoguePlaying = false;
+        window.dialogueIndex = 0;
+
+        window.speakDialogueLine = function(idx) {
+            window.stopDialogue();
+            const line = window.dialogueLines[idx];
+            if (!line) return;
+
+            document.querySelectorAll('.dialogue-line').forEach(el => el.style.borderLeft = '1px solid rgba(0, 243, 255, 0.15)');
+            const target = document.getElementById('diag-line-' + idx);
+            if (target) {
+                target.style.borderLeft = '4px solid var(--accent-orange)';
+                target.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+
+            if (typeof window.speakText === 'function') {
+                window.speakText(line.text);
+            }
+        };
+
+        window.playAllDialogue = function() {
+            if (window.isDialoguePlaying) {
+                window.stopDialogue();
+                return;
+            }
+
+            window.isDialoguePlaying = true;
+            window.dialogueIndex = 0;
+            const btn = document.getElementById('play-all-dialogue-btn');
+            if (btn) {
+                btn.classList.add('playing');
+                btn.innerHTML = '<span>⏸️</span> إيقاف المحادثة';
+            }
+
+            function playStep(idx) {
+                if (!window.isDialoguePlaying || idx >= window.dialogueLines.length) {
+                    window.stopDialogue();
+                    return;
+                }
+
+                window.dialogueIndex = idx;
+                window.speakDialogueLine(idx);
+
+                const line = window.dialogueLines[idx];
+                const words = line.text.split(' ').length;
+                const duration = Math.max(3500, (words * 330) + 1400);
+
+                window.dialogueTimer = setTimeout(() => {
+                    playStep(idx + 1);
+                }, duration);
+            }
+
+            playStep(0);
+        };
+
+        window.stopDialogue = function() {
+            window.isDialoguePlaying = false;
+            if (window.dialogueTimer) {
+                clearTimeout(window.dialogueTimer);
+                window.dialogueTimer = null;
+            }
+            if (window.speechSynthesis) {
+                window.speechSynthesis.cancel();
+            }
+            const btn = document.getElementById('play-all-dialogue-btn');
+            if (btn) {
+                btn.classList.remove('playing');
+                btn.innerHTML = '<span>▶️</span> تشغيل المحادثة بالكامل تلقائياً';
+            }
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.CurriculumRenderer && typeof window.CurriculumRenderer.init === 'function') {
+                window.CurriculumRenderer.init();
+            }
+            if (typeof window.selectStoryDeck === 'function') {
+                window.selectStoryDeck(0);
+            }
+        });
+
+    </script>
+
+    <!-- Framework & Shared Scripts -->
+    <script src="../../assets/js/bidi.js"></script>
+    <script src="../../assets/js/audio.js"></script>
+    <script src="../../assets/js/curriculum-renderer.js"></script>
+    <script src="../../assets/js/vocab-mastery.js"></script>
+    <script src="../../assets/js/tabs.js"></script>
+    <script src="../../assets/js/quiz-engine.js"></script>
+    <script src="../../assets/js/story-engine.js"></script>
+    <script src="../../assets/js/ui.js"></script>
+    <script src="../../assets/js/main.js"></script>
+
+    <script id="studio-payload" type="application/json">
+    {
+      "archetype": "curriculum_tabs",
+      "stage": "Prep_3",
+      "unit": "unit-1",
+      "fileName": "connect-plus-lesson-4-5.html",
+      "title": "Unit 1 - Lessons 4 & 5: Unusual Communities & Family Heritage",
+      "description": "المفردات الكاملة (الرئيسية والتكميلية)، الأفعال الشاذة والتعريفات، المرادفات والمتضادات واللواحق، 3 نصوص قراءة تفاعلية مع القارئ الصوتي (Auto Storyteller)، محادثة تدريبية ناطقة، واختبار شامل 🎯",
+      "keyVocabularyCount": 12,
+      "extraVocabularyCount": 27,
+      "definitionsCount": 1,
+      "verbsCount": 4,
+      "synonymsAntonymsCount": 6,
+      "affixesCount": 3,
+      "storyDecksCount": 3,
+      "quizQuestionsCount": 25
+    }
+    </script>
+</body>
+</html>

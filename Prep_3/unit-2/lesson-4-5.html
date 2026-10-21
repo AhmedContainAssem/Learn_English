@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prep 3 - Unit 2 - Lessons 4 & 5 (5 & 6) | Mr. Ahmed Assem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/curriculum.css">
+    <link rel="stylesheet" href="../../assets/css/storybook.css">
+    <link rel="stylesheet" href="../../assets/css/quiz.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb">
+            <a href="../index.html" style="color: var(--accent-primary); text-decoration: none;">Prep_3</a> / 
+            <a href="./index.html" style="color: var(--accent-primary); text-decoration: none;">Unit 2</a> / 
+            <span>Lessons 4 & 5 (5 & 6)</span>
+        </div>
+
+        <!-- Teacher Profile Header -->
+        <div class="teacher-profile-header">
+            <div class="avatar-wrapper">
+                <img src="../../my-photo-profile.webp" alt="Mr. Ahmed Assem" class="teacher-avatar" onerror="this.onerror=null; this.src='../../my-photo-profile.webp';">
+            </div>
+            <h1 class="teacher-title">Mr. Ahmed Assem</h1>
+            <div class="slogan">✨ Easy Peasy Ya Englezeey ✨</div>
+            <div class="badges-row" style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 10px;">
+                <span class="badge badge-active">Prep 3 • Unit 2</span>
+                <span class="badge badge-gold">📖 SB pages 36 : 38</span>
+            </div>
+            <h2 id="title" class="lesson-header-title">Lessons 4 & 5 (5 & 6): Let's Talk • Staying Close</h2>
+            <p id="description" class="lesson-desc-display">المفردات الأساسية والتكميلية كاملة، تدريب Pop Quiz التفاعلي، تصريف الأفعال غير المنتظمة، دراسة المرادفات والمتضادات، المقاطع البادئة والناهية، الملاحظات اللغوية (such vs so & cause vs reason)، التعبيرات وحروف الجر الهامة، محرك القراءة والاستماع (StoryEngine)، واختبار شامل 🎯</p>
+        </div>
+
+        <!-- Tabs Navigation Bar -->
+        <div class="tabs-container">
+            <button class="tab-btn active" onclick="switchTab('vocab', this)">📖 المفردات (Vocabulary)</button>
+            <button class="tab-btn" onclick="switchTab('verbs', this)">⚡ تصريف الأفعال (Verbs)</button>
+            <button class="tab-btn" onclick="switchTab('synonyms', this)">⚖️ المرادفات والمتضادات</button>
+            <button class="tab-btn" onclick="switchTab('affixes', this)">🔤 اللواحق والبوادئ (Prefixes & Suffixes)</button>
+            <button class="tab-btn" onclick="switchTab('notes', this)">💡 ملاحظات لغوية (Language Notes)</button>
+            <button class="tab-btn" onclick="switchTab('expressions', this)">🗣️ تعبيرات وحروف جر</button>
+            <button class="tab-btn" onclick="switchTab('reading', this)">📚 القراءة والاستماع (StoryEngine)</button>
+            <button class="tab-btn" onclick="switchTab('quiz', this)">🎯 اختبار الدرس الشامل (Quiz)</button>
+        </div>
+
+        <!-- Dynamic Curriculum Containers (Hydrated by curriculum-renderer.js) -->
+        <div id="vocab" class="tab-content active"></div>
+        <div id="verbs" class="tab-content"></div>
+        <div id="synonyms" class="tab-content"></div>
+        <div id="affixes" class="tab-content"></div>
+        <div id="notes" class="tab-content"></div>
+        <div id="expressions" class="tab-content"></div>
+
+        <!-- Tab 7: Interactive Storybook (StoryEngine) -->
+        <div id="reading" class="tab-content">
+            <div class="section-title">📚 القراءة والاستماع التفاعلي (Lessons 4 & 5 - SB Pages 36 : 38)</div>
+            <div class="lesson-desc-display" style="text-align: right; margin-bottom: 20px;">
+                💡 <strong>تعليمات القراءة:</strong> استمتع بمشاهدة الفيديو التفاعلي أو قراءة نصوص واستماع الدروس من خلال محرك القصص التفاعلي. يمكنك تشغيل <strong>القارئ الصوتي التلقائي (Auto Storyteller)</strong> للاستماع إلى المحادثة والنصوص ومتابعة الترجمة والمفردات اللغوية لكل مشهد، مع إمكانية النقر على أي كلمة لعرض ترجمتها وسماع نطقها فوراً.
+            </div>
+
+            <!-- Video Story Presentation Card -->
+            <div class="video-lesson-card" style="margin: 0 0 28px 0;">
+                <div class="video-header-bar">
+                    <div>
+                        <div class="video-lesson-title" style="color: var(--accent-primary); font-size: 1.2rem; font-weight: 800;">🎥 فيديو القراءة والاستماع التفاعلي: Let's Talk • Staying Close</div>
+                        <div style="color: var(--text-muted); font-size: 0.88rem; margin-top: 4px;">✨ شاهد واستمع لنصوص ومحادثات الدروس مع مستر أحمد عاصم</div>
+                    </div>
+                    <a href="https://youtu.be/A7VLUhbZPWY" target="_blank" rel="noopener noreferrer" class="badge badge-active video-external-link" data-sound-click="click">▶️ مشاهدة على YouTube</a>
+                </div>
+                <div class="video-responsive-wrapper">
+                    <iframe src="https://www.youtube-nocookie.com/embed/A7VLUhbZPWY" title="Prep 3 Unit 2 Lessons 4 & 5 - Let's Talk • Staying Close - Mr. Ahmed Assem" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Interactive 3D Book Container from StoryEngine -->
+            <div class="storybook-wrapper">
+                <div class="storybook-book">
+                    <!-- Center Book Spine -->
+                    <div class="book-spine-divider"></div>
+
+                    <!-- Right Page: Scene Artwork (First in DOM so in RTL it displays on the right side) -->
+                    <div class="story-page-artwork">
+                        <div class="artwork-page-inner">
+                            <div class="page-badge-artwork">
+                                <span id="storyPageBadge">🖼️ Scene 1 of 2</span>
+                            </div>
+                            <div class="artwork-container">
+                                <img id="storyArtworkImg" src="../../assets/images/two_girls_talking_1790200743332.webp" alt="Let's Talk Dialogue Artwork" onerror="this.classList.add('hidden');" referrerpolicy="no-referrer">
+                            </div>
+                            <div class="artwork-caption" id="storyCaption">
+                                Mona and Naglaa having an open conversation about communication and resolving misunderstandings
+                            </div>
+                        </div>
+
+                        <div class="story-page-meta">
+                            <span>📖 Prep 3 Reader • SB pages 36 : 38</span>
+                            <span id="storyPageCounter">Page 1 / 2</span>
+                        </div>
+                    </div>
+
+                    <!-- Left Page: Story Reading Passage (Second in DOM so in RTL it displays on the left side) -->
+                    <div class="story-page-content">
+                        <div>
+                            <div class="story-header">
+                                <h3 class="story-page-title" id="storyTitle">Lesson 5: Let's Talk • Face-to-Face Conversation</h3>
+                                <button type="button" class="audio-btn" onclick="speakCurrentStoryPage()" title="استمع للنطق">🔊</button>
+                            </div>
+                            <div class="story-paragraph" id="storyText">
+                                Mona: Have you ever had a misunderstanding with a friend? Naglaa: Yes, totally. Texting causes a lot of misunderstandings because you can't hear tone or see body language. Mona: I totally agree! When something feels wrong, a real face-to-face conversation makes such a big difference. Naglaa: So true. It takes courage to talk openly, but it's the best way to fix things and keep our bond strong.
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="story-translation-box" id="storyTranslation">
+                                <span class="translation-tag">💡 الترجمة:</span>
+                                منى: هل سبق لك أن واجهت سوء تفاهم مع صديقة؟
+                                نجلاء: نعم، تماماً. المراسلة النصية تسبب الكثير من سوء التفاهم لأنك لا تستطيعين سماع نبرة الصوت أو رؤية لغة الجسد.
+                                منى: أوافقك تماماً! عندما تشعرين بأن هناك شيئاً خاطئاً، فإن المحادثة الحقيقية وجهاً لوجه تحدث فرقاً كبيراً جداً.
+                                نجلاء: هذا صحيح جداً. يتطلب الأمر شجاعة للتحدث بصراحة، لكنها أفضل وسيلة لإصلاح الأمور والحفاظ على قوة علاقتنا.
+                            </div>
+
+                            <div class="story-vocab-chips" id="storyVocab">
+                                <span class="vocab-chip">misunderstanding (سوء تفاهم)</span>
+                                <span class="vocab-chip">face-to-face (وجهاً لوجه)</span>
+                                <span class="vocab-chip">courage (شجاعة)</span>
+                                <span class="vocab-chip">talk openly (يتحدث بصراحة)</span>
+                                <span class="vocab-chip">bond (رابط / علاقة)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Story Navigation & Auto-Storyteller Bar (Matching Golden Reference) -->
+                <div class="story-controls-bar">
+                    <button type="button" id="storyPrevBtn" onclick="changeStoryPage(-1)" class="action-btn secondary" disabled>
+                        ⬅️ الصفحة السابقة
+                    </button>
+
+                    <button type="button" id="storytellerBtn" onclick="toggleStoryteller()" class="storyteller-btn">
+                        ▶️ القارئ التلقائي (Auto Storyteller)
+                    </button>
+
+                    <div class="story-page-progress">
+                        <span id="storyPageProgressText">Page 1 of 2</span>
+                        <div class="progress-dots" id="storyProgressDots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+
+                    <button type="button" id="storyNextBtn" onclick="changeStoryPage(1)" class="action-btn secondary">
+                        الصفحة التالية ➔
+                    </button>
+                </div>
+            </div>
+
+            <!-- Extracting Information (Comprehension Questions) -->
+            <div class="pop-quiz-box" style="margin-top: 32px;">
+                <div class="pop-quiz-header">
+                    <div class="pop-quiz-title">
+                        <span>📝 Answer the following questions (Extracting information - استخراج المعلومات):</span>
+                    </div>
+                </div>
+
+                <div class="details-box" style="margin-bottom: 16px;">
+                    <div style="font-weight: 800; color: var(--accent-primary); margin-bottom: 8px;">
+                        <span class="badge badge-active" style="margin-left: 8px;">Learn</span> 1. Why does texting cause misunderstandings according to Naglaa?
+                    </div>
+                    <div style="background: rgba(0, 255, 157, 0.08); padding: 12px; border-radius: 8px; border-right: 4px solid var(--accent-green); color: #00ff9d;">
+                        <strong>الإجابة النموذجية:</strong> Because people cannot hear tone of voice or see body language when texting.
+                    </div>
+                </div>
+
+                <div class="details-box">
+                    <div style="font-weight: 800; color: var(--accent-orange); margin-bottom: 8px;">
+                        <span class="badge badge-gold" style="margin-left: 8px;">Practice</span> 2. What makes it easier to rebuild bonds between friends and family?
+                    </div>
+                    <div style="background: rgba(255, 183, 3, 0.08); padding: 12px; border-radius: 8px; border-right: 4px solid var(--accent-orange); color: #ffd166;">
+                        <strong>الإجابة النموذجية:</strong> Talking openly, having honest face-to-face conversations, and showing determination to resolve misunderstandings.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Tab 8: Comprehensive Interactive Quiz (Hydrated by quiz-engine.js) -->
+        <div id="quiz" class="tab-content">
+            <div class="score-board">
+                <span>السؤال: <span id="current-q">1</span> / <span id="total-q">25</span></span>
+                <span>النقاط: <span id="score">0</span> 🌟</span>
+            </div>
+
+            <div class="question-card">
+                <span class="emoji-display" id="emoji">🎯</span>
+                <div class="question-text" id="question">جاري تحميل السؤال...</div>
+                <div class="options-grid" id="options"></div>
+                <div class="feedback" id="feedback"></div>
+            </div>
+
+            <div class="center-row">
+                <button class="action-btn next-btn" id="next-btn" onclick="nextQuestion()" style="display: none;">السؤال التالي ➔</button>
+            </div>
+        </div>
+
+        <!-- Navigation Controls -->
+        <div class="nav-controls" style="margin-top: 40px;">
+            <a href="./index.html" class="back-btn" data-sound-click="click">⬅️ العودة لقائمة دروس الوحدة الثانية</a>
+            <a href="../index.html" class="back-btn" data-sound-click="click">🏫 العودة لجميع وحدات Prep 3</a>
+        </div>
+    </div>
+
+    <!-- Framework & Shared Scripts -->
+    <script src="../../assets/js/bidi.js"></script>
+    <script src="../../assets/js/audio.js"></script>
+    <script src="../../assets/js/tabs.js"></script>
+    <script src="../../assets/js/quiz-engine.js"></script>
+    <script src="../../assets/js/story-engine.js"></script>
+    <script src="../../assets/js/ui.js"></script>
+    <script src="../../assets/js/main.js"></script>
+
+    <!-- Pure Decoupled Lesson Data Payload -->
+    <script src="./lesson-4-5.data.js"></script>
+
+    <!-- Universal Curriculum Dynamic Renderer -->
+    <script src="../../assets/js/curriculum-renderer.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.CurriculumRenderer && typeof window.CurriculumRenderer.init === 'function') {
+                window.CurriculumRenderer.init();
+            }
+        });
+    </script>
+</body>
+</html>

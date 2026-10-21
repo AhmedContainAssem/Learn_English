@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade 6 - Unit 2 - Lessons 4 & 5: Wadi El Rayan & Writing Skills | Mr. Ahmed Assem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css?v=6">
+    <link rel="stylesheet" href="../../assets/css/curriculum.css">
+    <link rel="stylesheet" href="../../assets/css/storybook.css">
+    <link rel="stylesheet" href="../../assets/css/quiz.css">
+    <style>
+        .writing-step-card {
+            background: rgba(19, 27, 46, 0.85);
+            border: 1px solid rgba(0, 243, 255, 0.25);
+            border-radius: 12px;
+            padding: 16px;
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+        }
+        .writing-step-icon {
+            font-size: 1.8rem;
+            background: rgba(0, 243, 255, 0.1);
+            padding: 10px;
+            border-radius: 12px;
+            border: 1px solid rgba(0, 243, 255, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb">
+            <a href="../index.html">Grade 6</a> / <a href="./index.html">Unit 2</a> / <span>Lessons 4 & 5 (Wadi El Rayan & Writing)</span>
+        </div>
+
+        <!-- Teacher Profile Header -->
+        <div class="teacher-profile-header">
+            <div class="avatar-wrapper">
+                <img src="../../my-photo-profile.webp" alt="Mr. Ahmed Assem" class="teacher-avatar"
+                    onerror="this.onerror=null; this.src='../../my-photo-profile.webp';">
+            </div>
+            <h1 class="teacher-title">Mr. Ahmed Assem</h1>
+            <div class="slogan">✨ Easy Peasy Ya Englezeey ✨</div>
+            <div class="badges-row">
+                <span class="badge badge-active">Grade 6 • Unit 2: Our Nature</span>
+                <span class="badge badge-gold">📖 SB pages 89 : 95</span>
+            </div>
+            <h2 id="title" class="lesson-header-title">Lessons 4 & 5: Unforgettable Trip to Wadi El Rayan & Writing Skills</h2>
+            <p id="description" class="lesson-desc-display">مفردات المحميات الطبيعية ووادي الحيتان، تصريف الأفعال، التعبيرات، قصة وادي الريان المصورة (StoryBook)، مهارات كتابة القصة وتصفح النصوص، واختبار شامل 🎯</p>
+        </div>
+
+        <!-- Tabs Navigation Bar -->
+        <div class="tabs-container">
+            <button type="button" class="tab-btn active" onclick="switchTab('vocab', this)">📖 المفردات (Vocabulary)</button>
+            <button type="button" class="tab-btn" onclick="switchTab('verbs', this)">⚡ تصريف الأفعال (Verbs)</button>
+            <button type="button" class="tab-btn" onclick="switchTab('collocations', this)">🔗 التعبيرات وحروف الجر</button>
+            <button type="button" class="tab-btn" onclick="switchTab('reading', this)">📚 القصة المصورة (StoryBook)</button>
+            <button type="button" class="tab-btn" onclick="switchTab('writing', this)">✍️ مهارات الكتابة والمشروع</button>
+            <button type="button" class="tab-btn" onclick="switchTab('quiz', this)">🎯 اختبار الإتقان (Quiz)</button>
+        </div>
+
+        <!-- Tab 1: Key & Lesson Vocabulary -->
+        <div id="vocab" class="tab-content active"></div>
+
+        <!-- Tab 2: Verbs -->
+        <div id="verbs" class="tab-content"></div>
+
+        <!-- Tab 3: Collocations & Expressions -->
+        <div id="collocations" class="tab-content"></div>
+
+        <!-- Tab 4: Interactive 3D Storybook -->
+        <div id="reading" class="tab-content">
+            <div class="section-title">📖 رحلة لا تُنسى إلى وادي الريان (Trip to Wadi El Rayan • StoryBook)</div>
+            <div class="lesson-desc-display">استمع لقصة المغامرة المدرسية التفاعلية مع القارئ الذكي، وشاهد الشلالات ووادي الحيتان بالترجمة الفورية!</div>
+
+            <!-- 3D Storybook Container -->
+            <div class="storybook-wrapper">
+                <div class="storybook-book">
+                    <div class="book-spine-divider"></div>
+                    <!-- Artwork Page -->
+                    <div class="story-page-artwork">
+                        <div class="artwork-page-inner">
+                            <div class="page-badge-artwork"><span id="storyPageBadge">🖼️ Scene 1 of 4</span></div>
+                            <div class="artwork-container">
+                                <img id="storyArtworkImg" src="../../assets/images/grade_6/unit_2/wadi_el_rayan.webp"
+                                    alt="Wadi El Rayan Scene" referrerpolicy="no-referrer">
+                            </div>
+                            <div class="artwork-caption" id="storyCaption">The students embarking on their desert adventure through golden sand dunes.</div>
+                        </div>
+                        <div class="story-page-meta">
+                            <span>Connect 6 • Unit 2</span>
+                            <span id="storyPageCounter">Page 1 / 4</span>
+                        </div>
+                    </div>
+
+                    <!-- Content Page -->
+                    <div class="story-page-content">
+                        <div>
+                            <div class="story-header">
+                                <h3 class="story-page-title" id="storyTitle">Scene 1: Bus Ride through Dunes to Fayoum</h3>
+                                <button type="button" class="audio-btn" onclick="speakCurrentStoryPage()"
+                                    title="استمع للصفحة الحالية">🔊</button>
+                            </div>
+                            <div class="story-paragraph" id="storyText">Last Thursday, our school organized an exciting trip...</div>
+                        </div>
+                        <div>
+                            <div class="story-translation-box" id="storyTranslation"></div>
+                            <div class="story-vocab-chips" id="storyVocab"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Story Controls Bar -->
+                <div class="story-controls-bar">
+                    <button type="button" id="storyPrevBtn" onclick="changeStoryPage(-1)"
+                        class="action-btn secondary">⬅️ الصفحة السابقة</button>
+                    <button type="button" id="storytellerBtn" onclick="toggleStoryteller()" class="storyteller-btn">▶️ القارئ التلقائي (Auto Storyteller)</button>
+                    <div class="story-page-progress">
+                        <span id="storyPageProgressText">الصفحة 1 من 4</span>
+                        <div class="progress-dots" id="storyProgressDots"></div>
+                    </div>
+                    <button type="button" id="storyNextBtn" onclick="changeStoryPage(1)"
+                        class="action-btn secondary">الصفحة التالية ➔</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 5: Writing Skills & Project -->
+        <div id="writing" class="tab-content">
+            <div class="section-title">✍️ معمل مهارات القراءة والكتابة والمشروع الإبداعي</div>
+            <div class="lesson-desc-display">تعلّم خطوات كتابة القصة بأسلوب شيّق، ومهارة التصفح السريع، وخطوات بطاقة الحياة البرية:</div>
+
+            <div id="writing-content"></div>
+        </div>
+
+        <!-- Tab 6: QuizEngine Contract -->
+        <div id="quiz" class="tab-content">
+            <div class="score-board">
+                <span>السؤال: <span id="current-q">1</span> / <span id="total-q">14</span></span>
+                <span>النقاط: <span id="score">0</span> 🌟</span>
+            </div>
+
+            <div class="question-card">
+                <span class="emoji-display" id="emoji">🎯</span>
+                <div class="question-text" id="question">جاري تحميل السؤال...</div>
+                <div class="options-grid" id="options"></div>
+                <div class="feedback" id="feedback"></div>
+            </div>
+
+            <div class="center-row" style="margin-top: 20px;">
+                <button type="button" class="action-btn next-btn" id="next-btn" onclick="nextQuestion()"
+                    style="display: none;">السؤال التالي ➔</button>
+            </div>
+        </div>
+
+        <!-- Bottom Return Controls -->
+        <div class="nav-controls" style="margin-top: 36px;">
+            <a href="./index.html" class="action-btn secondary" data-sound-click="click">⬅ العودة لقائمة دروس الوحدة الثانية</a>
+            <a href="../index.html" class="action-btn secondary" data-sound-click="click">🏠 قائمة وحدات الصف السادس</a>
+        </div>
+    </div>
+
+    <!-- Story Engine Helpers -->
+    <script>
+        function changeStoryPage(direction) {
+            if (window.storyEngine && typeof window.storyEngine.changePage === 'function') {
+                window.storyEngine.changePage(direction);
+            }
+        }
+
+        function toggleStoryteller() {
+            if (window.storyEngine && typeof window.storyEngine.toggleStoryteller === 'function') {
+                window.storyEngine.toggleStoryteller();
+            }
+        }
+
+        function speakCurrentStoryPage() {
+            if (window.storyEngine && window.storyEngine.storyPages) {
+                const cur = window.storyEngine.storyPages[window.storyEngine.currentPage];
+                if (cur && cur.textEn && typeof speakText === 'function') {
+                    speakText(cur.textEn);
+                }
+            }
+        }
+    </script>
+
+    <!-- Universal Framework Scripts -->
+    <script src="../../assets/js/bidi.js"></script>
+    <script src="../../assets/js/audio.js"></script>
+    <script src="../../assets/js/tabs.js"></script>
+    <script src="../../assets/js/quiz-engine.js"></script>
+    <script src="../../assets/js/story-engine.js"></script>
+    <script src="../../assets/js/ui.js?v=6"></script>
+
+    <!-- Modular Curriculum Sub-Renderers -->
+    <script src="../../assets/js/renderers/ui-primitives.js"></script>
+    <script src="../../assets/js/renderers/vocab-renderer.js"></script>
+    <script src="../../assets/js/renderers/lexicon-renderer.js"></script>
+
+    <!-- Pure Decoupled Lesson Data Payload -->
+    <script src="./lesson-4-5.data.js"></script>
+
+    <!-- Universal Dynamic Curriculum Renderer -->
+    <script src="../../assets/js/curriculum-renderer.js"></script>
+
+    <script src="../../assets/js/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.CurriculumRenderer && typeof window.CurriculumRenderer.init === 'function') {
+                window.CurriculumRenderer.init();
+            }
+            if (typeof loadQuestion === 'function' && document.getElementById('question')) {
+                loadQuestion();
+            }
+            if (window.storyEngine && window.lessonData && window.lessonData.storyPages) {
+                window.storyEngine.loadPages(window.lessonData.storyPages);
+            }
+
+            // Render Writing Skills
+            const wBox = document.getElementById('writing-content');
+            const wData = window.lessonData && window.lessonData.writingSkills;
+            if (wBox && wData) {
+                let html = `
+                    <!-- Skimming Box -->
+                    <div style="background: rgba(0, 243, 255, 0.08); border: 1.5px solid rgba(0, 243, 255, 0.35); border-radius: 12px; padding: 18px; margin-top: 14px;">
+                        <h3 style="color: #00f3ff; margin-top: 0; font-size: 1.15rem;">${wData.skimming.title}</h3>
+                        <p style="color: #e2e8f0; font-weight: 600; direction: ltr; text-align: left; margin: 8px 0;">"${wData.skimming.definition}"</p>
+                        <p style="color: #94a3b8; font-size: 0.92rem; margin-bottom: 0;">${wData.skimming.arabicDefinition}</p>
+                    </div>
+
+                    <!-- Story Writing Steps -->
+                    <div style="margin-top: 25px;">
+                        <h3 class="section-subtitle">📝 خطوات كتابة قصة متميزة (Some steps for writing a story):</h3>
+                        <div style="display: grid; gap: 12px; margin-top: 14px;">
+                            ${wData.storyWritingSteps.map(s => `
+                                <div class="writing-step-card">
+                                    <div class="writing-step-icon">${s.icon}</div>
+                                    <div>
+                                        <strong style="color: var(--accent-primary); font-size: 1.05rem; display: block; margin-bottom: 4px;">${s.step}</strong>
+                                        <div style="color: #cbd5e1; font-size: 0.92rem;">${s.rule}</div>
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+
+                    <!-- Wildlife Snapshot Project -->
+                    <div style="margin-top: 25px; background: rgba(16, 185, 129, 0.1); border: 1.5px solid rgba(16, 185, 129, 0.4); border-radius: 12px; padding: 18px;">
+                        <h3 style="color: #34d399; margin-top: 0; font-size: 1.15rem;">${wData.wildlifeSnapshotProject.title}</h3>
+                        <div style="display: grid; gap: 8px; margin-top: 10px;">
+                            ${wData.wildlifeSnapshotProject.steps.map(step => `
+                                <div style="color: #e2e8f0; font-size: 0.95rem;">• ${step}</div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+                wBox.innerHTML = html;
+            }
+        });
+    </script>
+</body>
+
+</html>
