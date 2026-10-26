@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade 6 - Unit 3 - Lessons 4 & 5: Dr. Mostafa El-Sayed & Biography Writing | Mr. Ahmed Assem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css?v=6">
+    <link rel="stylesheet" href="../../assets/css/curriculum.css">
+    <link rel="stylesheet" href="../../assets/css/storybook.css">
+    <link rel="stylesheet" href="../../assets/css/quiz.css">
+    <style>
+        .writing-card {
+            background: rgba(19, 27, 46, 0.9);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 14px;
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+        .writing-icon-badge {
+            font-size: 1.8rem;
+            background: rgba(56, 189, 248, 0.1);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            border-radius: 12px;
+            padding: 10px;
+            min-width: 52px;
+            text-align: center;
+        }
+        .writing-example-box {
+            background: rgba(15, 23, 42, 0.6);
+            border-right: 3px solid var(--accent-primary);
+            padding: 8px 12px;
+            border-radius: 6px;
+            margin-top: 8px;
+            font-size: 0.92rem;
+            color: #cbd5e1;
+            direction: ltr;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb">
+            <a href="../index.html">Grade 6</a> / <a href="./index.html">Unit 3</a> / <span>Lessons 4 & 5 (Dr. Mostafa El-Sayed & Biography)</span>
+        </div>
+
+        <!-- Teacher Profile Header -->
+        <div class="teacher-profile-header">
+            <div class="avatar-wrapper">
+                <img src="../../my-photo-profile.webp" alt="Mr. Ahmed Assem" class="teacher-avatar"
+                    onerror="this.onerror=null; this.src='../../my-photo-profile.webp';">
+            </div>
+            <h1 class="teacher-title">Mr. Ahmed Assem</h1>
+            <div class="slogan">✨ Easy Peasy Ya Englezeey ✨</div>
+            <div class="badges-row">
+                <span class="badge badge-active">Grade 6 • Unit 3: Community Builders</span>
+                <span class="badge badge-gold">📖 SB pages 133 : 142</span>
+            </div>
+            <h2 id="title" class="lesson-header-title">Lessons 4 & 5: Biography of Dr. Mostafa El-Sayed & Writing Skills</h2>
+            <p id="description" class="lesson-desc-display">سيرة العالم المصري د. مصطفى السيد وعلاج السرطان بجزيئات الذهب، القصة المصورة (StoryBook)، مهارات كتابة السيرة الذاتية، واختبار شامل 🎯</p>
+        </div>
+
+        <!-- Tabs Navigation Bar -->
+        <div class="tabs-container">
+            <button type="button" class="tab-btn active" onclick="switchTab('vocab', this)">📖 المفردات (Vocabulary)</button>
+            <button type="button" class="tab-btn" onclick="switchTab('verbs', this)">⚡ تصريف الأفعال (Verbs)</button>
+            <button type="button" class="tab-btn" onclick="switchTab('collocations', this)">🔗 التعبيرات وحروف الجر</button>
+            <button type="button" class="tab-btn" onclick="switchTab('reading', this)">📚 القصة المصورة (StoryBook)</button>
+            <button type="button" class="tab-btn" onclick="switchTab('writing', this)">✍️ مهارات كتابة السيرة الذاتية</button>
+            <button type="button" class="tab-btn" onclick="switchTab('quiz', this)">🎯 اختبار الإتقان (Quiz)</button>
+        </div>
+
+        <!-- Tab 1: Key & Lesson Vocabulary -->
+        <div id="vocab" class="tab-content active"></div>
+
+        <!-- Tab 2: Verbs -->
+        <div id="verbs" class="tab-content"></div>
+
+        <!-- Tab 3: Collocations & Expressions -->
+        <div id="collocations" class="tab-content"></div>
+
+        <!-- Tab 4: Interactive 3D Storybook -->
+        <div id="reading" class="tab-content">
+            <div class="section-title">📖 سيرة البطل المصري د. مصطفى السيد (An Egyptian Hero • StoryBook)</div>
+            <div class="lesson-desc-display">استمع لقصة العالم د. مصطفى السيد مع القارئ الذكي، وتعرف على إنجازه في تكنولوجيا النانو بالترجمة الفورية!</div>
+
+            <!-- 3D Storybook Container -->
+            <div class="storybook-wrapper">
+                <div class="storybook-book">
+                    <div class="book-spine-divider"></div>
+                    <!-- Artwork Page -->
+                    <div class="story-page-artwork">
+                        <div class="artwork-page-inner">
+                            <div class="page-badge-artwork"><span id="storyPageBadge">🖼️ Scene 1 of 3</span></div>
+                            <div class="artwork-container">
+                                <img id="storyArtworkImg" src="../../assets/images/grade_6/unit_3/mostafa_elsayed.webp"
+                                    alt="Dr Mostafa El-Sayed Scene" referrerpolicy="no-referrer">
+                            </div>
+                            <div class="artwork-caption" id="storyCaption">Dr. Mostafa El-Sayed, pioneer of nanotechnology cancer treatments.</div>
+                        </div>
+                        <div class="story-page-meta">
+                            <span>Connect 6 • Unit 3</span>
+                            <span id="storyPageCounter">Page 1 / 3</span>
+                        </div>
+                    </div>
+
+                    <!-- Content Page -->
+                    <div class="story-page-content">
+                        <div>
+                            <div class="story-header">
+                                <h3 class="story-page-title" id="storyTitle">Scene 1: From Gharbia to Ain Shams</h3>
+                                <button type="button" class="audio-btn" onclick="speakCurrentStoryPage()"
+                                    title="استمع للصفحة الحالية">🔊</button>
+                            </div>
+                            <div class="story-paragraph" id="storyText">Dr. Mostafa El-Sayed was born in Zifta...</div>
+                        </div>
+                        <div>
+                            <div class="story-translation-box" id="storyTranslation"></div>
+                            <div class="story-vocab-chips" id="storyVocab"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Story Controls Bar -->
+                <div class="story-controls-bar">
+                    <button type="button" id="storyPrevBtn" onclick="changeStoryPage(-1)"
+                        class="action-btn secondary">⬅️ الصفحة السابقة</button>
+                    <button type="button" id="storytellerBtn" onclick="toggleStoryteller()" class="storyteller-btn">▶️ القارئ التلقائي (Auto Storyteller)</button>
+                    <div class="story-page-progress">
+                        <span id="storyPageProgressText">الصفحة 1 من 3</span>
+                        <div class="progress-dots" id="storyProgressDots"></div>
+                    </div>
+                    <button type="button" id="storyNextBtn" onclick="changeStoryPage(1)"
+                        class="action-btn secondary">الصفحة التالية ➔</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 5: Writing Skills (How to Write a Biography) -->
+        <div id="writing" class="tab-content">
+            <div class="section-title">✍️ معمل مهارات كتابة السيرة الذاتية (Writing a Biography)</div>
+            <div class="lesson-desc-display">تعلّم كيفية كتابة سيرة ذاتية متكاملة واحترافية لشخصية ملهمة باتباع الخطوات الأربع لكتاب المعاصر:</div>
+            <div id="writing-content" style="margin-top: 20px;"></div>
+        </div>
+
+        <!-- Tab 6: QuizEngine Contract -->
+        <div id="quiz" class="tab-content">
+            <div class="score-board">
+                <span>السؤال: <span id="current-q">1</span> / <span id="total-q">12</span></span>
+                <span>النقاط: <span id="score">0</span> 🌟</span>
+            </div>
+
+            <div class="question-card">
+                <span class="emoji-display" id="emoji">🎯</span>
+                <div class="question-text" id="question">جاري تحميل السؤال...</div>
+                <div class="options-grid" id="options"></div>
+                <div class="feedback" id="feedback"></div>
+            </div>
+
+            <div class="center-row" style="margin-top: 20px;">
+                <button type="button" class="action-btn next-btn" id="next-btn" onclick="nextQuestion()"
+                    style="display: none;">السؤال التالي ➔</button>
+            </div>
+        </div>
+
+        <!-- Bottom Return Controls -->
+        <div class="nav-controls" style="margin-top: 36px;">
+            <a href="./index.html" class="action-btn secondary" data-sound-click="click">⬅ العودة لقائمة دروس الوحدة الثالثة</a>
+            <a href="../index.html" class="action-btn secondary" data-sound-click="click">🏠 قائمة وحدات الصف السادس</a>
+        </div>
+    </div>
+
+    <!-- Story Engine Helpers -->
+    <script>
+        function changeStoryPage(direction) {
+            if (window.storyEngine && typeof window.storyEngine.changePage === 'function') {
+                window.storyEngine.changePage(direction);
+            }
+        }
+
+        function toggleStoryteller() {
+            if (window.storyEngine && typeof window.storyEngine.toggleStoryteller === 'function') {
+                window.storyEngine.toggleStoryteller();
+            }
+        }
+
+        function speakCurrentStoryPage() {
+            if (window.storyEngine && window.storyEngine.storyPages) {
+                const cur = window.storyEngine.storyPages[window.storyEngine.currentPage];
+                if (cur && cur.textEn && typeof speakText === 'function') {
+                    speakText(cur.textEn);
+                }
+            }
+        }
+    </script>
+
+    <!-- Universal Framework Scripts -->
+    <script src="../../assets/js/bidi.js"></script>
+    <script src="../../assets/js/audio.js"></script>
+    <script src="../../assets/js/tabs.js"></script>
+    <script src="../../assets/js/quiz-engine.js"></script>
+    <script src="../../assets/js/story-engine.js"></script>
+    <script src="../../assets/js/ui.js?v=6"></script>
+
+    <!-- Modular Curriculum Sub-Renderers -->
+
+    <!-- Pure Decoupled Lesson Data Payload -->
+    <script src="./lesson-4-5.data.js"></script>
+
+    <!-- Universal Dynamic Curriculum Renderer -->
+    <!-- Modular Sub-Renderers & Quiz Normalizer -->
+    <script src="../../assets/js/quiz-normalizer.js"></script>
+    <script src="../../assets/js/renderers/ui-primitives.js"></script>
+    <script src="../../assets/js/renderers/vocab-renderer.js"></script>
+    <script src="../../assets/js/renderers/lexicon-renderer.js"></script>
+    <script src="../../assets/js/renderers/dialogue-player.js"></script>
+    <script src="../../assets/js/renderers/writing-renderer.js"></script>
+    <script src="../../assets/js/curriculum-renderer.js"></script>
+
+    <script src="../../assets/js/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.CurriculumRenderer && typeof window.CurriculumRenderer.init === 'function') {
+                window.CurriculumRenderer.init();
+            }
+            if (typeof loadQuestion === 'function' && document.getElementById('question')) {
+                loadQuestion();
+            }
+            if (window.storyEngine && window.lessonData && window.lessonData.storyPages) {
+                window.storyEngine.loadPages(window.lessonData.storyPages);
+            }
+        });
+    </script>
+</body>
+
+</html>

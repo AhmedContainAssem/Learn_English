@@ -1,0 +1,170 @@
+/* ==========================================
+   Mr. Ahmed Assem - Educational Platform
+   Global Reset, Baseline & Animations (base.css)
+   ========================================== */
+
+/* Universal Box-Sizing & Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--bg-color, #030712);
+    background-image: 
+        /* Ambient bioluminescent cyan flare (top-center/left) */
+        radial-gradient(ellipse at 50% -5%, rgba(0, 243, 255, 0.14) 0%, transparent 65%),
+        /* Deep oceanic ambient glow (right side) */
+        radial-gradient(circle at 90% 20%, rgba(56, 189, 248, 0.06) 0%, transparent 50%),
+        /* Calm organic accent (bottom) */
+        radial-gradient(circle at 15% 85%, rgba(0, 255, 157, 0.04) 0%, transparent 50%),
+        /* Subtle celestial / oceanic particle grid */
+        radial-gradient(rgba(56, 189, 248, 0.07) 1px, transparent 1px),
+        /* Deep midnight obsidian gradient */
+        linear-gradient(180deg, #020611 0%, #030712 25%, #050b18 75%, #020611 100%);
+    background-size: 100% 100%, 100% 100%, 100% 100%, 36px 36px, 100% 100%;
+    background-position: center top, center top, center bottom, 0 0, center center;
+    background-attachment: fixed;
+    color: var(--text-main);
+    font-family: 'Cairo', system-ui, -apple-system, sans-serif;
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: clamp(12px, 3vw, 32px);
+    padding-bottom: max(24px, env(safe-area-inset-bottom, 24px));
+    direction: rtl;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* Custom Scrollbars: Desktop Pointer Devices Only */
+@media (hover: hover) and (pointer: fine) {
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #070a12;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: rgba(0, 243, 255, 0.3);
+        border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--accent-primary);
+    }
+}
+
+/* Mobile & Touch Devices: Completely disable custom scrollbar gutters to preserve screen width */
+@media (hover: none), (pointer: coarse), (max-width: 768px) {
+    ::-webkit-scrollbar {
+        display: none !important;
+        width: 0px !important;
+        height: 0px !important;
+    }
+
+    html, body {
+        scrollbar-width: none !important;
+        -ms-overflow-style: none !important;
+    }
+}
+
+/* Global Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Utility Helpers */
+.hidden {
+    display: none !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.rtl {
+    direction: rtl;
+    text-align: right;
+}
+
+.ltr {
+    direction: ltr;
+    text-align: left;
+}
+
+/* BiDi Isolation System - Solves Mixed Arabic/English Punctuation & Layout Distortion */
+bdi,
+.bidi-isolate {
+    unicode-bidi: isolate;
+}
+
+.bidi-isolate-en,
+.en-term,
+.en-text {
+    direction: ltr;
+    unicode-bidi: isolate;
+    display: inline-block;
+    color: var(--accent-secondary);
+    font-weight: 700;
+}
+
+.bidi-isolate-ar,
+.ar-term {
+    direction: rtl;
+    unicode-bidi: isolate;
+    display: inline-block;
+}
+
+.question-text,
+.q-main-text {
+    direction: rtl;
+    text-align: right;
+    unicode-bidi: isolate;
+}
+
+.quiz-option-btn,
+.quiz-option-text {
+    unicode-bidi: isolate;
+}
+
+.highlight-vocab {
+    background: rgba(0, 243, 255, 0.18);
+    color: var(--accent-primary);
+    font-weight: 800;
+    padding: 2px 6px;
+    border-radius: 6px;
+    border-bottom: 2px solid var(--accent-primary);
+    unicode-bidi: isolate;
+
+    &.green-tag {
+        background: rgba(0, 255, 157, 0.15);
+        color: var(--accent-green);
+        border-color: var(--accent-green);
+    }
+
+    &.orange-tag {
+        background: rgba(255, 183, 3, 0.15);
+        color: var(--accent-orange);
+        border-color: var(--accent-orange);
+    }
+}

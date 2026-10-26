@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade 6 - Unit 2 - Lesson 3: The Wonderful Nile River & Phonics | Mr. Ahmed Assem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css?v=6">
+    <link rel="stylesheet" href="../../assets/css/curriculum.css">
+    <link rel="stylesheet" href="../../assets/css/storybook.css">
+    <link rel="stylesheet" href="../../assets/css/quiz.css">
+    <style>
+        .phonics-card {
+            background: rgba(19, 27, 46, 0.85);
+            border: 1px solid rgba(0, 243, 255, 0.25);
+            border-radius: 12px;
+            padding: 16px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .phonics-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(0, 243, 255, 0.15);
+        }
+        .phonics-badge-e {
+            background: rgba(239, 68, 68, 0.2);
+            color: #f87171;
+            border: 1px solid #f87171;
+            padding: 4px 10px;
+            border-radius: 8px;
+            font-weight: 700;
+        }
+        .phonics-badge-i {
+            background: rgba(56, 189, 248, 0.2);
+            color: #38bdf8;
+            border: 1px solid #38bdf8;
+            padding: 4px 10px;
+            border-radius: 8px;
+            font-weight: 700;
+        }
+        .minimal-pairs-table th, .minimal-pairs-table td {
+            padding: 12px;
+            border: 1px solid var(--border-color);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb">
+            <a href="../index.html">Grade 6</a> / <a href="./index.html">Unit 2</a> / <span>Lesson 3 (The Nile River & Phonics)</span>
+        </div>
+
+        <!-- Teacher Profile Header -->
+        <div class="teacher-profile-header">
+            <div class="avatar-wrapper">
+                <img src="../../my-photo-profile.webp" alt="Mr. Ahmed Assem" class="teacher-avatar"
+                    onerror="this.onerror=null; this.src='../../my-photo-profile.webp';">
+            </div>
+            <h1 class="teacher-title">Mr. Ahmed Assem</h1>
+            <div class="slogan">✨ Easy Peasy Ya Englezeey ✨</div>
+            <div class="badges-row">
+                <span class="badge badge-active">Grade 6 • Unit 2: Our Nature</span>
+                <span class="badge badge-gold">📖 SB pages 83 : 88</span>
+            </div>
+            <h2 id="title" class="lesson-header-title">Lesson 3: The Wonderful Nile River & Pronunciation</h2>
+            <p id="description" class="lesson-desc-display">مفردات نهر النيل والكائنات الحية، تصريف الأفعال، التعبيرات وحروف الجر، قصة نهر النيل المصورة (StoryBook)، مختبر صوتيات /e/ و /ɪ/، واختبار شامل 🎯</p>
+        </div>
+
+        <!-- Tabs Navigation Bar -->
+        <div class="tabs-container">
+            <button type="button" class="tab-btn active" onclick="switchTab('vocab', this)">📖 المفردات (Vocabulary)</button>
+            <button type="button" class="tab-btn" onclick="switchTab('verbs', this)">⚡ تصريف الأفعال (Verbs)</button>
+            <button type="button" class="tab-btn" onclick="switchTab('collocations', this)">🔗 التعبيرات وحروف الجر</button>
+            <button type="button" class="tab-btn" onclick="switchTab('reading', this)">📚 القصة المصورة (StoryBook)</button>
+            <button type="button" class="tab-btn" onclick="switchTab('phonics', this)">🗣️ مختبر الصوتيات (/e/ vs /ɪ/)</button>
+            <button type="button" class="tab-btn" onclick="switchTab('quiz', this)">🎯 اختبار الإتقان (Quiz)</button>
+        </div>
+
+        <!-- Tab 1: Key & Lesson Vocabulary -->
+        <div id="vocab" class="tab-content active"></div>
+
+        <!-- Tab 2: Verbs -->
+        <div id="verbs" class="tab-content"></div>
+
+        <!-- Tab 3: Collocations & Expressions -->
+        <div id="collocations" class="tab-content"></div>
+
+        <!-- Tab 4: Interactive 3D Storybook -->
+        <div id="reading" class="tab-content">
+            <div class="section-title">📖 قصة نهر النيل الرائع (The Wonderful Nile River • StoryBook)</div>
+            <div class="lesson-desc-display">استمع لقصة نهر النيل التفاعلية مع القارئ الذكي، وتعرف على تاريخه وكائناته وأهميته بالترجمة الفورية!</div>
+
+            <!-- 3D Storybook Container -->
+            <div class="storybook-wrapper">
+                <div class="storybook-book">
+                    <div class="book-spine-divider"></div>
+                    <!-- Artwork Page -->
+                    <div class="story-page-artwork">
+                        <div class="artwork-page-inner">
+                            <div class="page-badge-artwork"><span id="storyPageBadge">🖼️ Scene 1 of 4</span></div>
+                            <div class="artwork-container">
+                                <img id="storyArtworkImg" src="../../assets/images/grade_6/unit_2/nile_river.webp"
+                                    alt="Nile River Scene" referrerpolicy="no-referrer">
+                            </div>
+                            <div class="artwork-caption" id="storyCaption">The magnificent Nile River flowing through Egypt with feluccas and palm trees.</div>
+                        </div>
+                        <div class="story-page-meta">
+                            <span>Connect 6 • Unit 2</span>
+                            <span id="storyPageCounter">Page 1 / 4</span>
+                        </div>
+                    </div>
+
+                    <!-- Content Page -->
+                    <div class="story-page-content">
+                        <div>
+                            <div class="story-header">
+                                <h3 class="story-page-title" id="storyTitle">Scene 1: The Longest River Brings Life</h3>
+                                <button type="button" class="audio-btn" onclick="speakCurrentStoryPage()"
+                                    title="استمع للصفحة الحالية">🔊</button>
+                            </div>
+                            <div class="story-paragraph" id="storyText">The Nile is the longest river in the world...</div>
+                        </div>
+                        <div>
+                            <div class="story-translation-box" id="storyTranslation"></div>
+                            <div class="story-vocab-chips" id="storyVocab"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Story Controls Bar -->
+                <div class="story-controls-bar">
+                    <button type="button" id="storyPrevBtn" onclick="changeStoryPage(-1)"
+                        class="action-btn secondary">⬅️ الصفحة السابقة</button>
+                    <button type="button" id="storytellerBtn" onclick="toggleStoryteller()" class="storyteller-btn">▶️ القارئ التلقائي (Auto Storyteller)</button>
+                    <div class="story-page-progress">
+                        <span id="storyPageProgressText">الصفحة 1 من 4</span>
+                        <div class="progress-dots" id="storyProgressDots"></div>
+                    </div>
+                    <button type="button" id="storyNextBtn" onclick="changeStoryPage(1)"
+                        class="action-btn secondary">الصفحة التالية ➔</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 5: Phonics Laboratory (/e/ vs /ɪ/) -->
+        <div id="phonics" class="tab-content">
+            <div class="section-title">🗣️ مختبر الصوتيات والتلفظ الذكي (/e/ مقابل /ɪ/)</div>
+            <div class="lesson-desc-display" id="phonics-desc">تعلّم التمييز الصوتي الدقيق بين صوت الفتح الخفيف /e/ وصوت الكسر الرقيق /ɪ/ مع أمثلة كتاب المعاصر.</div>
+
+            <!-- Phonics Cards Grids -->
+            <div id="phonics-content"></div>
+        </div>
+
+        <!-- Tab 6: QuizEngine Contract -->
+        <div id="quiz" class="tab-content">
+            <div class="score-board">
+                <span>السؤال: <span id="current-q">1</span> / <span id="total-q">14</span></span>
+                <span>النقاط: <span id="score">0</span> 🌟</span>
+            </div>
+
+            <div class="question-card">
+                <span class="emoji-display" id="emoji">🎯</span>
+                <div class="question-text" id="question">جاري تحميل السؤال...</div>
+                <div class="options-grid" id="options"></div>
+                <div class="feedback" id="feedback"></div>
+            </div>
+
+            <div class="center-row" style="margin-top: 20px;">
+                <button type="button" class="action-btn next-btn" id="next-btn" onclick="nextQuestion()"
+                    style="display: none;">السؤال التالي ➔</button>
+            </div>
+        </div>
+
+        <!-- Bottom Return Controls -->
+        <div class="nav-controls" style="margin-top: 36px;">
+            <a href="./index.html" class="action-btn secondary" data-sound-click="click">⬅ العودة لقائمة دروس الوحدة الثانية</a>
+            <a href="../index.html" class="action-btn secondary" data-sound-click="click">🏠 قائمة وحدات الصف السادس</a>
+        </div>
+    </div>
+
+    <!-- Story Engine Helpers -->
+    <script>
+        function changeStoryPage(direction) {
+            if (window.storyEngine && typeof window.storyEngine.changePage === 'function') {
+                window.storyEngine.changePage(direction);
+            }
+        }
+
+        function toggleStoryteller() {
+            if (window.storyEngine && typeof window.storyEngine.toggleStoryteller === 'function') {
+                window.storyEngine.toggleStoryteller();
+            }
+        }
+
+        function speakCurrentStoryPage() {
+            if (window.storyEngine && window.storyEngine.storyPages) {
+                const cur = window.storyEngine.storyPages[window.storyEngine.currentPage];
+                if (cur && cur.textEn && typeof speakText === 'function') {
+                    speakText(cur.textEn);
+                }
+            }
+        }
+    </script>
+
+    <!-- Universal Framework Scripts -->
+    <script src="../../assets/js/bidi.js"></script>
+    <script src="../../assets/js/audio.js"></script>
+    <script src="../../assets/js/tabs.js"></script>
+    <script src="../../assets/js/quiz-engine.js"></script>
+    <script src="../../assets/js/story-engine.js"></script>
+    <script src="../../assets/js/ui.js?v=6"></script>
+
+    <!-- Modular Curriculum Sub-Renderers -->
+
+    <!-- Pure Decoupled Lesson Data Payload -->
+    <script src="./lesson-3.data.js"></script>
+
+    <!-- Universal Dynamic Curriculum Renderer -->
+    <!-- Modular Sub-Renderers & Quiz Normalizer -->
+    <script src="../../assets/js/quiz-normalizer.js"></script>
+    <script src="../../assets/js/renderers/ui-primitives.js"></script>
+    <script src="../../assets/js/renderers/vocab-renderer.js"></script>
+    <script src="../../assets/js/renderers/lexicon-renderer.js"></script>
+    <script src="../../assets/js/renderers/dialogue-player.js"></script>
+    <script src="../../assets/js/renderers/writing-renderer.js"></script>
+    <script src="../../assets/js/curriculum-renderer.js"></script>
+
+    <script src="../../assets/js/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.CurriculumRenderer && typeof window.CurriculumRenderer.init === 'function') {
+                window.CurriculumRenderer.init();
+            }
+            if (typeof loadQuestion === 'function' && document.getElementById('question')) {
+                loadQuestion();
+            }
+            if (window.storyEngine && window.lessonData && window.lessonData.storyPages) {
+                window.storyEngine.loadPages(window.lessonData.storyPages);
+            }
+        });
+    </script>
+</body>
+
+</html>

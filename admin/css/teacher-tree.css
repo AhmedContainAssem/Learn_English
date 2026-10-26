@@ -1,0 +1,269 @@
+/**
+ * Teacher Hierarchical Curriculum Tree Styles (teacher-tree.css)
+ * Single Responsibility: Teacher-specific extensions inheriting the student platform's
+ * core design system (.stage-group, .grid-cards, .grade-card, .stages-filter-nav).
+ */
+
+/* Profile Primary Action Button */
+.btn-create-lesson-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, rgba(0, 243, 255, 0.22) 0%, rgba(0, 243, 255, 0.5) 100%);
+    border: 1px solid var(--accent-primary, #00f3ff);
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 0.88rem;
+    font-weight: 800;
+    cursor: pointer;
+    box-shadow: 0 0 16px rgba(0, 243, 255, 0.28);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    white-space: nowrap;
+}
+
+.btn-create-lesson-primary:hover {
+    box-shadow: 0 0 22px rgba(0, 243, 255, 0.55);
+    background: linear-gradient(135deg, rgba(0, 243, 255, 0.35) 0%, rgba(0, 243, 255, 0.7) 100%);
+    transform: translateY(-1px);
+}
+
+/* Tools & Discovery Row */
+.dashboard-tools-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.dashboard-tools-row .search-input-wrapper {
+    flex: 1;
+    min-width: 280px;
+}
+
+/* View Mode Pills */
+.view-mode-pills {
+    display: flex;
+    gap: 6px;
+    background: rgba(9, 16, 31, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 4px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color, rgba(56, 189, 248, 0.12));
+    flex-shrink: 0;
+}
+
+.view-mode-pill {
+    padding: 7px 14px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    background: transparent;
+    color: #94a3b8;
+    font-size: 0.84rem;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.view-mode-pill:hover {
+    color: #f1f5f9;
+}
+
+.view-mode-pill.active {
+    background: rgba(0, 243, 255, 0.18);
+    color: var(--accent-primary, #00f3ff);
+    border-color: rgba(0, 243, 255, 0.4);
+    box-shadow: 0 0 10px rgba(0, 243, 255, 0.15);
+}
+
+/* Grade Card Teacher Action Extensions */
+.grade-meta-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-inline-start: auto;
+}
+
+.grade-btn-cluster {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.btn-tree-toggle {
+    background: rgba(0, 243, 255, 0.12);
+    border: 1px solid rgba(0, 243, 255, 0.35);
+    color: var(--accent-primary, #00f3ff);
+    border-radius: 8px;
+    padding: 4px 10px;
+    font-size: 0.78rem;
+    font-weight: 800;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.btn-tree-toggle:hover, .btn-tree-toggle.active {
+    background: var(--accent-primary, #00f3ff);
+    color: #040814;
+    box-shadow: 0 0 10px rgba(0, 243, 255, 0.3);
+}
+
+.btn-tree-add {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #e2e8f0;
+    border-radius: 8px;
+    padding: 4px 10px;
+    font-size: 0.78rem;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.btn-tree-add:hover {
+    border-color: var(--accent-green, #00ff9d);
+    color: var(--accent-green, #00ff9d);
+    background: rgba(0, 255, 157, 0.08);
+}
+
+/* Selected Grade Card Active Halo */
+.grade-card.is-selected-card {
+    border-color: var(--accent-primary, #00f3ff) !important;
+    background: linear-gradient(135deg, rgba(14, 28, 54, 0.95), rgba(9, 19, 38, 0.98)) !important;
+    box-shadow: 0 0 20px rgba(0, 243, 255, 0.25), 0 8px 24px rgba(0, 0, 0, 0.45) !important;
+}
+
+.grade-card {
+    cursor: pointer;
+}
+
+/* Studio Global App Nav Bar */
+.studio-top-nav {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.studio-nav-pills {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(14, 22, 40, 0.9);
+    padding: 4px;
+    border-radius: 50px;
+    border: 1px solid var(--border-color, rgba(56, 189, 248, 0.15));
+}
+
+.studio-nav-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 16px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    background: transparent;
+    color: var(--text-muted, #94a3b8);
+    font-size: 0.82rem;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.2s ease;
+}
+
+.studio-nav-pill:hover {
+    color: #ffffff;
+}
+
+.studio-nav-pill.active {
+    background: rgba(0, 243, 255, 0.18);
+    border-color: rgba(0, 243, 255, 0.4);
+    color: var(--accent-primary, #00f3ff);
+    box-shadow: 0 0 12px rgba(0, 243, 255, 0.2);
+}
+
+/* Studio Header Actions & Utility Circles */
+.studio-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-tool-circle {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(14, 22, 40, 0.85);
+    border: 1px solid var(--border-color, rgba(56, 189, 248, 0.18));
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-tool-circle:hover {
+    border-color: var(--accent-primary, #00f3ff);
+    transform: translateY(-1px);
+    box-shadow: 0 0 10px rgba(0, 243, 255, 0.3);
+}
+
+.btn-tool-circle.danger:hover {
+    border-color: #ef4444;
+    box-shadow: 0 0 10px rgba(239, 68, 68, 0.4);
+}
+
+/* Teacher Editor Sticky Toolbar */
+.teacher-editor-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 20px;
+    background: linear-gradient(180deg, rgba(9, 16, 31, 0.92) 0%, rgba(5, 10, 20, 0.98) 100%);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--border-color, rgba(56, 189, 248, 0.16));
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    flex-wrap: wrap;
+    position: sticky;
+    top: 70px;
+    z-index: 90;
+}
+
+.editor-toolbar-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.editor-status-indicator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--accent-primary, #00f3ff);
+    font-size: 0.84rem;
+    font-weight: 700;
+}
+
+.editor-toolbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+

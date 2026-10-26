@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 320" width="100%" height="100%">
+  <rect width="960" height="320" rx="14" fill="#0b0f19" stroke="#1e293b" stroke-width="2"/>
+  <text x="480" y="38" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" text-anchor="middle">RUNTIME ARCHITECTURE SNAPSHOT</text>
+  
+  <!-- Table Header -->
+  <g transform="translate(40, 60)">
+    <rect width="880" height="36" rx="6" fill="#131b2e" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.5"/>
+    <text x="80" y="23" fill="#00f3ff" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">Curriculum Tier</text>
+    <text x="260" y="23" fill="#00f3ff" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">Engine Contracts</text>
+    <text x="480" y="23" fill="#00f3ff" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">Audio &amp; Speech Pipeline</text>
+    <text x="700" y="23" fill="#00f3ff" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">Storage &amp; State</text>
+    <text x="830" y="23" fill="#00f3ff" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">Palette</text>
+  </g>
+
+  <!-- Row 1: Sec 3 -->
+  <g transform="translate(40, 106)">
+    <rect width="880" height="42" rx="6" fill="#111827"/>
+    <text x="80" y="26" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">Sec 3 (Thanaweya)</text>
+    <text x="260" y="26" fill="#94a3b8" font-family="sans-serif" font-size="12" text-anchor="middle">Tabs + 3D Storybook + Expressions</text>
+    <text x="480" y="26" fill="#00ff9d" font-family="sans-serif" font-size="12" text-anchor="middle">Web Speech TTS + SFX Synthesis</text>
+    <text x="700" y="26" fill="#38bdf8" font-family="sans-serif" font-size="12" text-anchor="middle">localStorage (Zero Server)</text>
+    <text x="830" y="26" fill="#00ff9d" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">✓ ZERO-PURPLE</text>
+  </g>
+
+  <!-- Row 2: Sec 2 -->
+  <g transform="translate(40, 156)">
+    <rect width="880" height="42" rx="6" fill="#131b2e"/>
+    <text x="80" y="26" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">Sec 2</text>
+    <text x="260" y="26" fill="#94a3b8" font-family="sans-serif" font-size="12" text-anchor="middle">Curriculum Tabs + QuizEngine</text>
+    <text x="480" y="26" fill="#00ff9d" font-family="sans-serif" font-size="12" text-anchor="middle">Web Speech TTS + Sound FX</text>
+    <text x="700" y="26" fill="#38bdf8" font-family="sans-serif" font-size="12" text-anchor="middle">localStorage (Zero Server)</text>
+    <text x="830" y="26" fill="#00ff9d" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">✓ ZERO-PURPLE</text>
+  </g>
+
+  <!-- Row 3: Sec 1 -->
+  <g transform="translate(40, 206)">
+    <rect width="880" height="42" rx="6" fill="#111827"/>
+    <text x="80" y="26" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">Sec 1 (Golden Ref)</text>
+    <text x="260" y="26" fill="#94a3b8" font-family="sans-serif" font-size="12" text-anchor="middle">Direct CSS + 8 Central Engines</text>
+    <text x="480" y="26" fill="#00ff9d" font-family="sans-serif" font-size="12" text-anchor="middle">Web Speech TTS + Sound FX</text>
+    <text x="700" y="26" fill="#38bdf8" font-family="sans-serif" font-size="12" text-anchor="middle">localStorage (Zero Server)</text>
+    <text x="830" y="26" fill="#00ff9d" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">✓ ZERO-PURPLE</text>
+  </g>
+
+  <!-- Row 4: Prep 3 -->
+  <g transform="translate(40, 256)">
+    <rect width="880" height="42" rx="6" fill="#131b2e"/>
+    <text x="80" y="26" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">Prep 3 &amp; Primary</text>
+    <text x="260" y="26" fill="#94a3b8" font-family="sans-serif" font-size="12" text-anchor="middle">Visual Cards + Direct Quiz</text>
+    <text x="480" y="26" fill="#00ff9d" font-family="sans-serif" font-size="12" text-anchor="middle">Web Speech TTS + Sound FX</text>
+    <text x="700" y="26" fill="#38bdf8" font-family="sans-serif" font-size="12" text-anchor="middle">localStorage (Zero Server)</text>
+    <text x="830" y="26" fill="#00ff9d" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">✓ ZERO-PURPLE</text>
+  </g>
+</svg>

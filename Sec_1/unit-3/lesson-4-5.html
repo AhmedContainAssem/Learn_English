@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sec 1 - Unit 3 - Lessons 4 & 5: The Truth Trap & Essay Writing Plan | Mr. Ahmed Assem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css?v=6">
+    <link rel="stylesheet" href="../../assets/css/curriculum.css">
+    <link rel="stylesheet" href="../../assets/css/storybook.css">
+    <link rel="stylesheet" href="../../assets/css/quiz.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb">
+            <a href="../index.html">Sec 1</a> / <a href="./index.html">Unit 3</a> / <span>Lessons 4 & 5</span>
+        </div>
+
+        <!-- Teacher Profile Header -->
+        <div class="teacher-profile-header">
+            <div class="avatar-wrapper">
+                <img src="../../my-photo-profile.webp" alt="Mr. Ahmed Assem" class="teacher-avatar" onerror="this.onerror=null; this.src='../../my-photo-profile.webp';">
+            </div>
+            <h1 class="teacher-title">Mr. Ahmed Assem</h1>
+            <div class="slogan">✨ Easy Peasy Ya Englezeey ✨</div>
+            <div class="badges-row">
+                <span class="badge badge-active">Sec 1 • Unit 3</span>
+                <span class="badge badge-gold">🛡 The Truth Trap & Essay Plan</span>
+            </div>
+            <h2 id="title" class="lesson-header-title">Lessons 4 & 5: The Truth Trap & Essay Writing Plan</h2>
+            <p id="description" class="lesson-desc-display">المفردات الأساسية والتراكمية، التعريفات، المترادفات والمتضادات، المتلازمات والمشتقات، الفروق اللغوية، مخطط كتابة المقال، القصة التفاعلية 3D، المحادثة الناطقة، واختبار شامل 30 سؤالاً 🎯 (Zero Grammar)</p>
+        </div>
+
+        <!-- Tabs Navigation Bar (Zero Grammar) -->
+        <div class="tabs-container">
+            <button class="tab-btn active" onclick="switchTab('vocab', this)">📖 المفردات (Vocabulary)</button>
+            <button class="tab-btn" onclick="switchTab('definitions', this)">💡 التعريفات (Definitions)</button>
+            <button class="tab-btn" onclick="switchTab('collocations', this)">🔗 المتلازمات والتعبيرات</button>
+            <button class="tab-btn" onclick="switchTab('synonyms', this)">🔄 المرادفات والمتضادات</button>
+            <button class="tab-btn" onclick="switchTab('language-notes', this)">🧬 المشتقات والفروق (Notes)</button>
+            <button class="tab-btn" onclick="switchTab('writing-skill', this)">✍️ مهارة كتابة المقال (Writing)</button>
+            <button class="tab-btn" onclick="switchTab('storybook', this)">📚 القراءة التفاعلية (StoryBook)</button>
+            <button class="tab-btn" onclick="switchTab('dialogue', this)">💬 المحادثة الناطقة (Dialogue)</button>
+            <button class="tab-btn" onclick="switchTab('quiz', this)">🎯 اختبار الدرس الشامل (Quiz)</button>
+        </div>
+
+        <!-- Dynamic Content Containers (Hydrated by CurriculumRenderer) -->
+        <div id="vocab" class="tab-content active"></div>
+        <div id="definitions" class="tab-content"></div>
+        <div id="collocations" class="tab-content"></div>
+        <div id="synonyms" class="tab-content"></div>
+        <div id="language-notes" class="tab-content"></div>
+
+        <!-- Tab: Writing Skill (Essay Writing Plan) -->
+        <div id="writing-skill" class="tab-content">
+            <div class="lexicon-section">
+                <h2 class="section-title">✍️ مخطط ومصطلحات كتابة المقال (Essay Writing Plan)</h2>
+                <div class="writing-plan-container" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px; padding: 24px; margin-bottom: 24px;">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+                        <div style="background: rgba(14, 165, 233, 0.08); border: 1px solid rgba(14, 165, 233, 0.2); border-radius: 12px; padding: 18px;">
+                            <h3 style="color: #38bdf8; font-size: 1.15rem; margin-bottom: 12px;">1️⃣ Introduction (المقدمة)</h3>
+                            <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8; font-size: 0.95rem;">
+                                <li>🎣 <strong>Hook:</strong> جملة الجذب الافتتاحية (سؤال أو حقيقة صادمة) لجذب اهتمام القارئ.</li>
+                                <li>📜 <strong>Background:</strong> معلومات تمهيدية تشرح سياق الموضوع بإيجاز.</li>
+                                <li>🎯 <strong>Thesis Statement:</strong> جملة الأطروحة في نهاية المقدمة توضح الفكرة والحجة الرئيسية للمقال.</li>
+                            </ul>
+                        </div>
+                        <div style="background: rgba(168, 85, 247, 0.08); border: 1px solid rgba(168, 85, 247, 0.2); border-radius: 12px; padding: 18px;">
+                            <h3 style="color: #c084fc; font-size: 1.15rem; margin-bottom: 12px;">2️⃣ Body Paragraphs (فقرات المتن)</h3>
+                            <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8; font-size: 0.95rem;">
+                                <li>📌 <strong>Topic Sentence:</strong> الجملة الأولى في كل فقرة تقدم الفكرة الأساسية لتلك الفقرة.</li>
+                                <li>📊 <strong>Supporting Details:</strong> حقائق وأمثلة وأسباب تدعم وتوضح فكرة الفقرة.</li>
+                                <li>🔗 <strong>Transitions:</strong> كلمات وعبارات ربط (مثل Furthermore, However) لربط الأفكار بسلاسة.</li>
+                            </ul>
+                        </div>
+                        <div style="background: rgba(34, 197, 94, 0.08); border: 1px solid rgba(34, 197, 94, 0.2); border-radius: 12px; padding: 18px;">
+                            <h3 style="color: #4ade80; font-size: 1.15rem; margin-bottom: 12px;">3️⃣ Conclusion (الخاتمة)</h3>
+                            <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8; font-size: 0.95rem;">
+                                <li>🔄 <strong>Restate Thesis:</strong> تلخيص وإعادة صياغة الأطروحة الأساسية بكلمات مختلفة.</li>
+                                <li>💡 <strong>Final Thought:</strong> اختتام المقال بخاطرة ملهمة، تأمل، أو دعوة صريحة للعمل (Call to Action).</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 24px; padding: 20px; background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.25); border-radius: 12px;">
+                        <h3 style="color: #fbbf24; font-size: 1.2rem; margin-bottom: 12px;">📝 مقال نموذجي (Model Essay)</h3>
+                        <h4 style="color: #fff; font-size: 1.05rem; margin-bottom: 10px;">"Words can be more dangerous than weapons"</h4>
+                        <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.9; color: #cbd5e1; font-size: 0.98rem; text-align: left; direction: ltr;">
+                            <p><strong>Introduction:</strong> Words are powerful tools that can build or destroy. Many people believe that weapons are the most dangerous things in the world, but words can sometimes cause even more harm. Words do not leave physical wounds, but they can hurt people deeply and affect entire societies.</p>
+                            <p style="margin-top: 10px;"><strong>Body Paragraph 1:</strong> Firstly, words can ruin a person's life. Bullying, rumors, or harsh criticism can destroy someone's confidence or reputation. A single lie or a comment can make a person feel alone or hopeless, which sometimes leads to serious problems.</p>
+                            <p style="margin-top: 10px;"><strong>Body Paragraph 2:</strong> Secondly, words can divide families, friends, or whole countries. Fake news and misinformation spread quickly, especially on social media. When people believe lies, they become angry or afraid. This can lead to conflict, violence, or even war.</p>
+                            <p style="margin-top: 10px;"><strong>Conclusion:</strong> In conclusion, words have the power to heal or to harm. We should always think before we speak or write. Using our words responsibly is as important as using any weapon safely.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab: Interactive StoryBook 3D -->
+        <div id="storybook" class="tab-content">
+            <div class="storybook-wrapper">
+                <div class="storybook-book">
+                    <div class="book-spine-divider"></div>
+                    <div class="story-page-artwork">
+                        <div class="artwork-page-inner">
+                            <div class="page-badge-artwork"><span id="storyPageBadge">🖼️ Scene 1</span></div>
+                            <div class="artwork-container">
+                                <img id="storyArtworkImg" src="../../assets/images/gem_museum.webp" alt="Scene Artwork" onerror="this.classList.add('hidden');" referrerpolicy="no-referrer">
+                            </div>
+                            <div class="artwork-caption" id="storyCaption">The Dangerous Spread of Unchecked Rumors</div>
+                        </div>
+                        <div class="story-page-meta">
+                            <span>📖 Truth Vs. Lies</span>
+                            <span id="storyPageCounter">Page 1</span>
+                        </div>
+                    </div>
+                    <div class="story-page-content">
+                        <div>
+                            <div class="story-header">
+                                <h3 class="story-page-title" id="storyTitle">The Invisible Missile</h3>
+                                <button type="button" class="audio-btn" onclick="speakCurrentStoryPage(this)" title="استمع للنطق">🔊</button>
+                            </div>
+                            <div class="story-paragraph" id="storyText">Loading reading passage...</div>
+                        </div>
+                        <div>
+                            <div class="story-translation-box" id="storyTranslation"></div>
+                            <div class="story-vocab-chips" id="storyVocab"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-controls-bar">
+                    <button type="button" id="storyPrevBtn" onclick="changeStoryPage(-1)" class="action-btn secondary">⬅️ الصفحة السابقة</button>
+                    <button type="button" id="storytellerBtn" onclick="toggleStoryteller()" class="storyteller-btn">▶️ القارئ التلقائي (Auto Storyteller)</button>
+                    <button type="button" id="storyNextBtn" onclick="changeStoryPage(1)" class="action-btn secondary">الصفحة التالية ➔</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab: Interactive Speaking Dialogue -->
+        <div id="dialogue" class="tab-content">
+            <div class="dialogue-container">
+                <div class="dialogue-header">
+                    <h2>💬 المحادثة الناطقة (Interactive Dialogue)</h2>
+                    <p class="dialogue-subtitle">حوار توعوي تفاعلي بين زياد وهاني حول مواجهة الشائعات الإلكترونية والتحقق من الأخبار والتفكير الناقد</p>
+                </div>
+                <div class="dialogue-flow" id="dialogueList"></div>
+            </div>
+        </div>
+
+        <!-- Tab: Comprehensive Quiz (Zero Grammar) -->
+        <div id="quiz" class="tab-content">
+            <div class="quiz-card">
+                <div class="quiz-progress-bar">
+                    <div class="quiz-progress-fill" id="quizProgressFill"></div>
+                </div>
+                <div class="quiz-meta-row">
+                    <span class="quiz-step-badge" id="questionStep">السؤال 1 من 30</span>
+                    <span class="quiz-score-badge" id="quizScoreBadge">الدرجة: 0 / 30</span>
+                </div>
+                <h3 class="quiz-question-title" id="question">جاري تحميل السؤال...</h3>
+                <div class="quiz-options-list" id="options"></div>
+                <div class="quiz-feedback-box" id="feedback"></div>
+                <div class="quiz-actions-row">
+                    <button class="quiz-nav-btn" id="prevBtn" onclick="prevQuestion()" disabled>السابق</button>
+                    <button class="quiz-nav-btn primary" id="nextBtn" onclick="nextQuestion()" disabled>التالي</button>
+                </div>
+                <div class="quiz-results-card" id="quizResultsCard" style="display: none;">
+                    <div class="quiz-score-circle">
+                        <span class="quiz-final-score" id="finalScoreVal">0</span>
+                        <span class="quiz-max-score">/ 30</span>
+                    </div>
+                    <h3 class="quiz-results-title" id="quizFeedbackTitle">أحسنت!</h3>
+                    <p class="quiz-results-desc" id="quizFeedbackDesc">لقد أتممت الاختبار الشامل بنجاح.</p>
+                    <button class="quiz-nav-btn primary" onclick="restartQuiz()">إعادة الاختبار 🔄</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Return Controls -->
+        <div class="nav-controls" style="margin-top: 36px;">
+            <a href="./index.html" class="action-btn secondary" data-sound-click="click">⬅ العودة لقائمة دروس الوحدة الثالثة</a>
+            <a href="../index.html" class="action-btn secondary" data-sound-click="click">🏠 قائمة وحدات الصف الأول الثانوي</a>
+        </div>
+    </div>
+
+    <!-- Framework & Data Scripts -->
+    <script src="../../assets/js/bidi.js"></script>
+    <script src="../../assets/js/audio.js"></script>
+    <script src="../../assets/js/tabs.js"></script>
+    <script src="../../assets/js/quiz-engine.js"></script>
+    <script src="../../assets/js/story-engine.js"></script>
+    <script src="../../assets/js/ui.js?v=6"></script>
+
+    <!-- Modular Curriculum Sub-Renderers -->
+
+    <!-- Pure Decoupled Lesson Data Payload -->
+    <script src="./lesson-4-5.data.js"></script>
+
+    <!-- Universal Dynamic Curriculum Renderer -->
+    <!-- Modular Sub-Renderers & Quiz Normalizer -->
+    <script src="../../assets/js/quiz-normalizer.js"></script>
+    <script src="../../assets/js/renderers/ui-primitives.js"></script>
+    <script src="../../assets/js/renderers/vocab-renderer.js"></script>
+    <script src="../../assets/js/renderers/lexicon-renderer.js"></script>
+    <script src="../../assets/js/renderers/dialogue-player.js"></script>
+    <script src="../../assets/js/renderers/writing-renderer.js"></script>
+    <script src="../../assets/js/curriculum-renderer.js"></script>
+    <script src="../../assets/js/main.js"></script>
+
+    <script>
+        function changeStoryPage(dir) {
+            if (window.storyEngine && typeof window.storyEngine.changePage === 'function') {
+                window.storyEngine.changePage(dir);
+            }
+        }
+        function toggleStoryteller() {
+            if (window.storyEngine && typeof window.storyEngine.toggleStoryteller === 'function') {
+                window.storyEngine.toggleStoryteller();
+            }
+        }
+        function speakCurrentStoryPage(btn) {
+            if (window.storyEngine && window.storyEngine.storyPages) {
+                const cur = window.storyEngine.storyPages[window.storyEngine.currentPage];
+                const text = cur ? (cur.textEn || cur.text || '') : '';
+                if (text && typeof speakText === 'function') speakText(text, btn);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.CurriculumRenderer && typeof window.CurriculumRenderer.init === 'function') {
+                window.CurriculumRenderer.init();
+            }
+            if (typeof loadQuestion === 'function' && document.getElementById('question')) {
+                loadQuestion();
+            }
+            if (window.storyEngine && window.lessonData && window.lessonData.storyPages) {
+                window.storyEngine.loadPages(window.lessonData.storyPages);
+            }
+        });
+    </script>
+</body>
+</html>

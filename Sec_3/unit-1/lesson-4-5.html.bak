@@ -1,0 +1,2259 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sec 3 - Unit 1: Inside the World of Care (Lessons 4 &amp; 5) - Mr. Ahmed Assem</title>
+    <meta name="description" content="Sec 3 Unit 1 Lessons 4 & 5: Beyond the White Coat & My Blog Post. Interactive vocabulary, definitions, idioms, collocations, storybook, writing skills, and quiz.">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/curriculum.css">
+    <link rel="stylesheet" href="../../assets/css/storybook.css">
+    <link rel="stylesheet" href="../../assets/css/grammar-slides.css">
+    <link rel="stylesheet" href="../../assets/css/quiz.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Back -->
+        <div class="page-actions">
+            <a href="./index.html" class="back-btn back-home" data-sound-click="click">⬅ العودة لوحدة Inside the World of Care (Sec 3)</a>
+        </div>
+
+        <!-- Teacher Profile & Header -->
+        <div class="teacher-profile-header">
+            <div class="avatar-wrapper">
+                <img src="../../my-photo-profile.webp" alt="Mr. Ahmed Assem" class="teacher-avatar">
+            </div>
+            <h1 class="teacher-title">Mr. Ahmed Assem</h1>
+            <div class="slogan">✨ Easy Peasy Ya Englezeey ✨</div>
+            <div class="badges-group" style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 10px;">
+                <span class="badge badge-active">Sec 3 (الصف الثالث الثانوي)</span>
+                <span class="badge badge-gold">📖 SB pages 20 : 23 • Unit 1: Inside the World of Care</span>
+                <span class="badge" style="background: rgba(0, 243, 255, 0.15); color: var(--accent-primary); border: 1px solid var(--accent-primary);">Part Three: Lessons 4 &amp; 5</span>
+            </div>
+            <h2 id="title" class="lesson-title-display">Lessons 4 &amp; 5: Beyond the White Coat &amp; My Blog Post</h2>
+            <p id="description" class="lesson-desc-display">المفردات الأساسية (8 كلمات)، المصطلحات والتعبيرات الاصطلاحية (Key Idioms)، المفردات التراكمية (25 كلمة)، التعريفات والمترادفات والمتضادات، المتلازمات وتعبيرات حروف الجر والمشتقات، دليل مهارة كتابة المدونة (Writing a Blog Post) والنماذج المقالية ونقاط الامتحان، القراءة التفاعلية المصورة (Storybook)، واختبار شامل مع محرك الكويز 🎯</p>
+        </div>
+
+        <!-- Signature Cyan Center-Node Divider -->
+        <div class="cyane-divider" aria-hidden="true"></div>
+
+        <!-- Tabs Navigation Bar -->
+        <div class="tabs-container">
+            <button class="tab-btn active" onclick="switchTab('vocab', this)">📖 المفردات (33 كلمة + 3 مصطلحات)</button>
+            <button class="tab-btn" onclick="switchTab('definitions-syn-ant', this)">📚 التعريفات والمترادفات والمتضادات</button>
+            <button class="tab-btn" onclick="switchTab('collocations-study', this)">🔗 المتلازمات والتعبيرات وحروف الجر</button>
+            <button class="tab-btn" onclick="switchTab('writing-skills', this)">✍️ مهارة كتابة المدونة (Writing a Blog Post)</button>
+            <button class="tab-btn" onclick="switchTab('storybook', this)">📚 القراءة التفاعلية (Story Book - 7 مشاهد)</button>
+            <button class="tab-btn" onclick="switchTab('quiz', this)">🎯 اختبار الدرس الشامل (Quiz)</button>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- TAB 1: VOCABULARY -->
+        <!-- ========================================== -->
+        <div id="vocab" class="tab-content active">
+            <!-- Learning Outcomes Banner -->
+            <div class="learning-outcomes-box" style="background: rgba(19, 27, 46, 0.85); border: 1px solid var(--accent-primary); border-radius: 16px; padding: 22px; margin-bottom: 30px; box-shadow: 0 4px 20px rgba(0, 243, 255, 0.1);">
+                <div style="font-size: 1.2rem; font-weight: 800; color: var(--accent-primary); margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+                    🎯 مخرجات التعلم الوزارية (Learning Outcomes - Lessons 4 &amp; 5: Beyond the White Coat &amp; My Blog Post):
+                </div>
+                <div class="cards-grid grid-cards" style="margin-top: 10px;">
+                    <div class="card" style="padding: 14px; background: rgba(11, 15, 25, 0.6); border: 1px solid rgba(56, 189, 248, 0.3);">
+                        <strong style="color: var(--accent-secondary);">📖 Reading (Beyond the White Coat):</strong> Read a dramatic narrative about emergency room teamwork, car crash rescue, toddler foreign object removal, and compassionate patient care.
+                    </div>
+                    <div class="card" style="padding: 14px; background: rgba(11, 15, 25, 0.6); border: 1px solid rgba(0, 255, 157, 0.3);">
+                        <strong style="color: var(--accent-green);">💬 Key Idioms:</strong> Understand and apply expressive medical &amp; weather idioms: <em>pale as a ghost</em>, <em>rain cats and dogs</em>, and <em>soaked to the skin</em>.
+                    </div>
+                    <div class="card" style="padding: 14px; background: rgba(11, 15, 25, 0.6); border: 1px solid rgba(255, 183, 3, 0.3);">
+                        <strong style="color: var(--accent-orange);">✍️ Writing Mastery (Blog Post):</strong> Master the 4-part structure of a blog post (Catchy Title, Hook Intro, Body with Subheadings, Conclusion with CTA), tone, and style.
+                    </div>
+                    <div class="card" style="padding: 14px; background: rgba(11, 15, 25, 0.6); border: 1px solid rgba(0, 243, 255, 0.3);">
+                        <strong style="color: var(--accent-primary);">🩺 Vocabulary Precision:</strong> Use acute emergency and clinical vocabulary (clutch, forehead, groan, moan, scope, stitch, swallow, urgency).
+                    </div>
+                </div>
+            </div>
+
+            <!-- 1. Key Vocabulary -->
+            <div class="section-title">🌟 1. المفردات اللغوية الأساسية موضع الامتحان (Key Vocabulary) - 8 كلمات</div>
+            <p class="section-hint">المفردات الأساسية المعتمدة كما وردت في كتاب الطالب (SB pages 20 : 23) مع النطق الصوتي التفاعلي والشرح الدقيق:</p>
+            <div class="cards-grid grid-cards" style="margin-bottom: 35px;">
+    
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Verb (v)</span>
+                            <div class="word-en">clutch(ed)</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('clutch'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> يمسك بقوة - يقبض بإحكام
+                        <div class="simple-explain-box">
+                            💡 <strong>التوضيح:</strong> الإمساك بشيء أو بجزء من الجسم فجأة وبقوة شديدة بدافع الألم أو الخوف (مثل إمساك العامل بيده النازفة).
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun (n)</span>
+                            <div class="word-en">forehead</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('forehead'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> جبهة / جبين
+                        <div class="simple-explain-box">
+                            💡 <strong>التوضيح:</strong> الجزء العلوي من الوجه الواقع فوق العينين وأسفل منبت الشعر.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun / Verb (n - v)</span>
+                            <div class="word-en">groan(ed)</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('groan'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> يتأوه - تأوه
+                        <div class="simple-explain-box">
+                            💡 <strong>التوضيح:</strong> إصدار صوت عميق وممتد يعبر عن الألم الشديد، التعاسة، أو الانزعاج (أو تذمر الجماهير عند ضياع الهدف).
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun / Verb (n - v)</span>
+                            <div class="word-en">moan(ed)</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('moan'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> يئن - أنين
+                        <div class="simple-explain-box">
+                            💡 <strong>التوضيح:</strong> إصدار صوت خافت منخفض للتعبير عن الألم الجسدي أو الحزن العميق (مثل أنين المريض طوال الليل).
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun (n)</span>
+                            <div class="word-en">scope</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('scope'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> منظار طبي - مجهر
+                        <div class="simple-explain-box">
+                            💡 <strong>التوضيح:</strong> أداة أو جهاز طبي مزود بكاميرا وأنبوب مرن يُستخدم لفحص واستخراج الأجسام من داخل تجاويف الجسم.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun / Verb (n - v)</span>
+                            <div class="word-en">stitch(ed)</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('stitch'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> غرزة / وخزة - يخيط الجرح / يغرز
+                        <div class="simple-explain-box">
+                            💡 <strong>التوضيح:</strong> خياطة حواف الجرح معاً بإبرة وخيط طبي، أو وخزة وألم مفاجئ حاد في العضلات.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Verb (v)</span>
+                            <div class="word-en">swallow (ed)</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('swallow'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> يبتلع
+                        <div class="simple-explain-box">
+                            💡 <strong>التوضيح:</strong> جعل الطعام أو الشراب (أو جسم غريب كعملة معدنية) يتحرك من الفم إلى المريء فالمعدة.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Noun (n)</span>
+                            <div class="word-en">urgency</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('urgency'); playSound('click');" title="نطق الكلمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> إلحاح - ضرورة - حالة طارئة
+                        <div class="simple-explain-box">
+                            💡 <strong>التوضيح:</strong> الأهمية القصوى التي تتطلب التعامل والتدخل الفوري دون أي تأخير في بيئات الرعاية الطارئة.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Key Idioms -->
+            <div class="section-title">💎 2. التعبيرات والمصطلحات الاصطلاحية (Key Idioms) - 3 مصطلحات رئيسية</div>
+            <p class="section-hint">المصطلحات التعبيرية المقررة في كتاب الطالب مع المعنى الإنجليزي المعياري وأمثلة الامتحانات الوزارية:</p>
+            <div class="cards-grid grid-cards" style="margin-bottom: 35px;">
+
+                <div class="card" style="border-top: 4px solid var(--accent-secondary);" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Key Idiom</span>
+                            <div class="word-en" style="color: var(--accent-secondary);">pale as a ghost</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('pale as a ghost'); playSound('click');" title="نطق التعبير">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى العربي:</strong> شديد الشحوب / باهت الوجه (من الخوف، الصدمة، أو المرض)
+                        <div class="simple-explain-box">
+                            📖 <strong>التعريف الإنجليزي:</strong> Extremely pale, usually because of fear, shock, or illness.
+                        </div>
+                        <div class="practical-example-box" style="margin-top: 8px; background: rgba(56, 189, 248, 0.08); border-right: 3px solid var(--accent-secondary); padding: 8px 12px; border-radius: 8px;">
+                            💬 <strong>مثال الكتاب:</strong> <em>“A construction worker, <strong style="color: var(--accent-secondary);">pale as a ghost</strong>, clutched his bleeding hand, trying not to cry out.”</em>
+                            <br>💬 <strong>مثال آخر:</strong> <em>“When my team received a goal in the last minute, I turned <strong style="color: var(--accent-secondary);">pale as a ghost</strong>.”</em>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style="border-top: 4px solid var(--accent-primary);" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Key Idiom</span>
+                            <div class="word-en" style="color: var(--accent-primary);">rain cats and dogs</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('rain cats and dogs'); playSound('click');" title="نطق التعبير">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى العربي:</strong> تمطر بغزارة شديدة / كأفواه القِرَب
+                        <div class="simple-explain-box">
+                            📖 <strong>التعريف الإنجليزي:</strong> To rain very heavily.
+                        </div>
+                        <div class="practical-example-box" style="margin-top: 8px; background: rgba(0, 243, 255, 0.08); border-right: 3px solid var(--accent-primary); padding: 8px 12px; border-radius: 8px;">
+                            💬 <strong>مثال الكتاب:</strong> <em>“Outside, it was <strong style="color: var(--accent-primary);">raining cats and dogs</strong> as Dr. Basem ran into the hospital.”</em>
+                            <br>💬 <strong>مثال آخر:</strong> <em>“It was <strong style="color: var(--accent-primary);">raining cats and dogs</strong>, so the exam was postponed.”</em>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style="border-top: 4px solid var(--accent-green);" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Key Idiom</span>
+                            <div class="word-en" style="color: var(--accent-green);">soaked to the skin</div>
+                        </div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('soaked to the skin'); playSound('click');" title="نطق التعبير">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى العربي:</strong> مبتل تماماً من الرأس إلى أخمص القدمين
+                        <div class="simple-explain-box">
+                            📖 <strong>التعريف الإنجليزي:</strong> Completely wet from head to toe.
+                        </div>
+                        <div class="practical-example-box" style="margin-top: 8px; background: rgba(0, 255, 157, 0.08); border-right: 3px solid var(--accent-green); padding: 8px 12px; border-radius: 8px;">
+                            💬 <strong>مثال الكتاب:</strong> <em>“Dr. Basem ran into the hospital, <strong style="color: var(--accent-green);">soaked to the skin</strong>.”</em>
+                            <br>💬 <strong>مثال آخر:</strong> <em>“I arrived home <strong style="color: var(--accent-green);">soaked to the skin</strong> after walking in the heavy rain.”</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Accumulative Vocabulary -->
+            <div class="section-title">📝 3. المفردات اللغوية المساعدة والتراكمية (Accumulative Vocabulary) - 25 كلمة</div>
+            <p class="section-hint">المفردات الواردة في النصوص والتدريبات للتعامل الأمثل مع أسئلة الورقة الامتحانية (صفحة 57):</p>
+            <div class="cards-grid grid-cards">
+                
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun (n)</span><div class="word-en">appointment</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('appointment'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> موعد (مع طبيب أو في عيادة)</div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun / Adj (n/adj)</span><div class="word-en">beeping</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('beeping'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> صوت صفير متكرر / تنبيه إلكتروني مستمر</div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Verb (v)</span><div class="word-en">bleed - bled - bled</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('bleed'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> ينزف (نزف - منزوف)</div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Adjective (adj)</span><div class="word-en">catchy</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('catchy'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> جذاب / لافت للانتباه (كعنوان رئيسي)</div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun (n)</span><div class="word-en">ceremony</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('ceremony'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> مراسم - احتفال (مثل tea ceremony)</div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun (n)</span><div class="word-en">condition</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('condition'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> حالة - وضع - ظرف - شرط</div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Adjective (adj)</span><div class="word-en">engaging</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('engaging'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> مثير للاهتمام - مشوق - جذاب للجمهور</div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Adjective (adj)</span><div class="word-en">flexible</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('flexible'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> مرن - قابل للانثناء (مثل flexible scope)</div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun (n)</span><div class="word-en">gratitude</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('gratitude'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> امتنان - عرفان بالجميل</div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun (n)</span><div class="word-en">hesitation</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('hesitation'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> تردد (without hesitation = دون تردد)</div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Adjective (adj)</span><div class="word-en">miserable</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('miserable'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> بائس - تعيس - شديد المعاناة</div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun (n)</span><div class="word-en">prescription</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('prescription'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> وصفة طبية (روشتة دواء)</div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun (n)</span><div class="word-en">purpose</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('purpose'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> غرض - هدف</div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun (n)</span><div class="word-en">relief</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('relief'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> راحة - طمأنينة - زوال الضيق والهم</div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun (n)</span><div class="word-en">reminder</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('reminder'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> تذكير - منبه</div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Verb (v)</span><div class="word-en">remove(d)</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('remove'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> يزيل - يستخرج (جسم غريب)</div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Adjective (adj)</span><div class="word-en">soaked</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('soaked'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> مبتل بالكامل - مغمور بالماء</div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Verb / Noun (v/n)</span><div class="word-en">state(d)</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('state'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> يصرح / يذكر بوضوح - حالة / دولة</div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Adjective (adj)</span><div class="word-en">sterile</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('sterile'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> معقم - خالٍ من الجراثيم والميكروبات</div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun (n)</span><div class="word-en">stethoscope</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('stethoscope'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> سماعة طبية (لفحص الصدر والقلب)</div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun (n)</span><div class="word-en">symptom</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('symptom'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> عرض مرضي (مثل الحمى أو السعال)</div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun (n)</span><div class="word-en">tear</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('tear'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> دمعة (wept tears of relief = بكى دموع الفرح)</div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun (n)</span><div class="word-en">teenager</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('teenager'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> مراهق (من سن 13 حتى 19 عاماً)</div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Noun (n)</span><div class="word-en">temperature</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('temperature'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> درجة الحرارة (قياس حرارة المريض)</div>
+                </div>
+
+                <div class="card" onclick="playSound('click')">
+                    <div class="card-header">
+                        <div><span class="tag-badge">Adjective (adj)</span><div class="word-en">viral</div></div>
+                        <button class="audio-btn" onclick="event.stopPropagation(); speakText('viral'); playSound('click');">🔊</button>
+                    </div>
+                    <div class="card-body"><strong>المعنى:</strong> فيروسي (ناتج عن فيروس مثل viral cold)</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- TAB 2: DEFINITIONS, SYNONYMS & ANTONYMS -->
+        <!-- ========================================== -->
+        <div id="definitions-syn-ant" class="tab-content" style="display: none;">
+            
+            <div class="section-title">📚 1. التعريفات المعتمدة (Definitions - SB pages 59)</div>
+            <p class="section-hint">التعريفات الإنجليزية الدقيقة كما وردت في كتاب الطالب موضع أسئلة الامتحانات:</p>
+            <div class="cards-grid grid-cards" style="margin-bottom: 35px;">
+                
+                <div class="card">
+                    <div class="card-header">
+                        <div class="word-en" style="color: var(--accent-primary);">clutch(ed) (v)</div>
+                        <span class="tag-badge">يمسك بقوة</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="simple-explain-box">
+                            📖 <strong>Definition:</strong> to hold something tightly and suddenly, especially because you are afraid, hurt, or in pain.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="word-en" style="color: var(--accent-primary);">forehead (n)</div>
+                        <span class="tag-badge">جبهة / جبين</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="simple-explain-box">
+                            📖 <strong>Definition:</strong> the part of your face above your eyes and below your hair.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="word-en" style="color: var(--accent-primary);">groan(ed) (v)</div>
+                        <span class="tag-badge">يتأوه</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="simple-explain-box">
+                            📖 <strong>Definition:</strong> to make a deep long sound showing pain, unhappiness, or annoyance.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="word-en" style="color: var(--accent-primary);">moan(ed) (v)</div>
+                        <span class="tag-badge">يئن</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="simple-explain-box">
+                            📖 <strong>Definition:</strong> to make a low sound expressing pain or sadness.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="word-en" style="color: var(--accent-primary);">scope (n)</div>
+                        <span class="tag-badge">منظار طبي</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="simple-explain-box">
+                            📖 <strong>Definition:</strong> a medical instrument used to look inside part of the body.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="word-en" style="color: var(--accent-primary);">stitch(ed) (v)</div>
+                        <span class="tag-badge">يخيط (يغرز)</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="simple-explain-box">
+                            📖 <strong>Definition:</strong> to sew the edges of a wound together with a needle and thread.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="word-en" style="color: var(--accent-primary);">swallow(ed) (v)</div>
+                        <span class="tag-badge">يبتلع</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="simple-explain-box">
+                            📖 <strong>Definition:</strong> to cause food or drink to move from your mouth down into your stomach.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Synonyms -->
+            <div class="section-title">🔄 2. المترادفات (Synonyms = Meaning)</div>
+            <p class="section-hint">الكلمات المتطابقة في المعنى وفق جدول كتاب المعاصر (صفحة 59):</p>
+            <div class="cards-grid grid-cards" style="margin-bottom: 35px;">
+                
+                <div class="card">
+                    <div class="card-header">
+                        <div class="word-en">clutch (v)</div>
+                        <span class="tag-badge">يمسك بقوة - يقبض بإحكام</span>
+                    </div>
+                    <div class="card-body">
+                        <strong style="color: var(--accent-green);">المترادفات:</strong>
+                        <div style="font-size: 1.1rem; color: #f8fafc; margin-top: 4px;">grasp, grip, seize</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="word-en">groan (v)</div>
+                        <span class="tag-badge">يئن - يتأوه</span>
+                    </div>
+                    <div class="card-body">
+                        <strong style="color: var(--accent-green);">المترادفات:</strong>
+                        <div style="font-size: 1.1rem; color: #f8fafc; margin-top: 4px;">moan, sigh, grumble</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="word-en">stitch (v)</div>
+                        <span class="tag-badge">يخيط - يرفو</span>
+                    </div>
+                    <div class="card-body">
+                        <strong style="color: var(--accent-green);">المترادفات:</strong>
+                        <div style="font-size: 1.1rem; color: #f8fafc; margin-top: 4px;">sew, mend, fasten</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="word-en">stitch (n)</div>
+                        <span class="tag-badge">وخزة / ألم مفاجئ</span>
+                    </div>
+                    <div class="card-body">
+                        <strong style="color: var(--accent-green);">المترادفات:</strong>
+                        <div style="font-size: 1.1rem; color: #f8fafc; margin-top: 4px;">sudden pain</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="word-en">urgency (n)</div>
+                        <span class="tag-badge">إلحاح - ضرورة قصوى</span>
+                    </div>
+                    <div class="card-body">
+                        <strong style="color: var(--accent-green);">المترادفات:</strong>
+                        <div style="font-size: 1.1rem; color: #f8fafc; margin-top: 4px;">importance, necessity, pressure, immediacy</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Antonyms -->
+            <div class="section-title">⚡ 3. المتضادات (Antonyms = Opposite)</div>
+            <p class="section-hint">الكلمات المضادة والمعاكسة في المعنى:</p>
+            <div class="cards-grid grid-cards">
+                
+                <div class="card">
+                    <div class="card-header">
+                        <div class="word-en">clutch (v)</div>
+                        <span class="tag-badge">يمسك بقوة</span>
+                    </div>
+                    <div class="card-body">
+                        <strong style="color: var(--accent-red);">المتضادات (يفلت - يترك):</strong>
+                        <div style="font-size: 1.1rem; color: #f8fafc; margin-top: 4px;">release, let go, drop, free</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="word-en">groan / moan (v)</div>
+                        <span class="tag-badge">يئن - يتأوه</span>
+                    </div>
+                    <div class="card-body">
+                        <strong style="color: var(--accent-red);">المتضادات (يهتف - يضحك - يفرح):</strong>
+                        <div style="font-size: 1.1rem; color: #f8fafc; margin-top: 4px;">cheer, laugh, rejoice</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="word-en">urgency (n)</div>
+                        <span class="tag-badge">إلحاح - ضرورة</span>
+                    </div>
+                    <div class="card-body">
+                        <strong style="color: var(--accent-red);">المتضادات (تأجيل - هدوء - لامبالاة):</strong>
+                        <div style="font-size: 1.1rem; color: #f8fafc; margin-top: 4px;">delay, calm, indifference, postponement</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- TAB 3: COLLOCATIONS, EXPRESSIONS & PREPOSITIONS -->
+        <!-- ========================================== -->
+        <div id="collocations-study" class="tab-content" style="display: none;">
+            
+            <div class="section-title">🔗 1. المتلازمات اللفظية (Collocations - صفحة 61)</div>
+            <div class="cards-grid grid-cards" style="margin-bottom: 35px;">
+                <div class="card">
+                    <div class="word-en" style="color: var(--accent-primary);">catch / grab attention</div>
+                    <div style="margin-top: 6px; font-weight: 700;">يجذب الانتباه / يلفت النظر</div>
+                </div>
+                <div class="card">
+                    <div class="word-en" style="color: var(--accent-primary);">feel miserable</div>
+                    <div style="margin-top: 6px; font-weight: 700;">يبدو تعيساً - يشعر بالبؤس</div>
+                </div>
+                <div class="card">
+                    <div class="word-en" style="color: var(--accent-primary);">give a prescription</div>
+                    <div style="margin-top: 6px; font-weight: 700;">يعطي وصفة طبية (روشتة)</div>
+                </div>
+                <div class="card">
+                    <div class="word-en" style="color: var(--accent-primary);">give instructions</div>
+                    <div style="margin-top: 6px; font-weight: 700;">يعطي تعليمات وإرشادات واضحة</div>
+                </div>
+                <div class="card">
+                    <div class="word-en" style="color: var(--accent-primary);">save lives</div>
+                    <div style="margin-top: 6px; font-weight: 700;">ينقذ الأرواح</div>
+                </div>
+                <div class="card">
+                    <div class="word-en" style="color: var(--accent-primary);">share experience / story</div>
+                    <div style="margin-top: 6px; font-weight: 700;">يشارك تجربته الشخصية / قصته</div>
+                </div>
+                <div class="card">
+                    <div class="word-en" style="color: var(--accent-primary);">take X-rays</div>
+                    <div style="margin-top: 6px; font-weight: 700;">يأخذ / يجري أشعة سينية</div>
+                </div>
+            </div>
+
+            <!-- Expressions & Prepositions -->
+            <div class="section-title">📌 2. التعبيرات وحروف الجر (Expressions &amp; Prepositions)</div>
+            <div class="cards-grid grid-cards" style="margin-bottom: 35px;">
+                <div class="card">
+                    <div class="word-en" style="color: var(--accent-secondary);">come to an end</div>
+                    <div style="margin-top: 4px;">ينتهي / يصل إلى نهايته</div>
+                </div>
+                <div class="card">
+                    <div class="word-en" style="color: var(--accent-secondary);">be covered in</div>
+                    <div style="margin-top: 4px;">مغطى بـ (مثل face was covered in blood)</div>
+                </div>
+                <div class="card">
+                    <div class="word-en" style="color: var(--accent-secondary);">be filled with</div>
+                    <div style="margin-top: 4px;">مملوء بـ (مثل night filled with fear)</div>
+                </div>
+                <div class="card">
+                    <div class="word-en" style="color: var(--accent-secondary);">life-saving</div>
+                    <div style="margin-top: 4px;">منقذ للحياة (مثل life-saving teamwork)</div>
+                </div>
+                <div class="card">
+                    <div class="word-en" style="color: var(--accent-secondary);">under pressure</div>
+                    <div style="margin-top: 4px;">تحت الضغط (مثل calm under pressure)</div>
+                </div>
+                <div class="card">
+                    <div class="word-en" style="color: var(--accent-secondary);">without hesitation</div>
+                    <div style="margin-top: 4px;">دون تردد / على الفور وبحسم</div>
+                </div>
+                <div class="card">
+                    <div class="word-en" style="color: var(--accent-green);">check up (on)</div>
+                    <div style="margin-top: 4px;">يتفقد / يفحص صحة شخص أو حالته</div>
+                </div>
+                <div class="card">
+                    <div class="word-en" style="color: var(--accent-green);">clutch at</div>
+                    <div style="margin-top: 4px;">يمسك بقوة بـ (مثل clutch at the rope)</div>
+                </div>
+                <div class="card">
+                    <div class="word-en" style="color: var(--accent-green);">cry out</div>
+                    <div style="margin-top: 4px;">يصرخ بألم / يستغيث</div>
+                </div>
+                <div class="card">
+                    <div class="word-en" style="color: var(--accent-green);">deal with</div>
+                    <div style="margin-top: 4px;">يتعامل مع (مواقف طارئة أو أشخاص)</div>
+                </div>
+                <div class="card">
+                    <div class="word-en" style="color: var(--accent-green);">fill ... with</div>
+                    <div style="margin-top: 4px;">يملأ ... بـ</div>
+                </div>
+                <div class="card">
+                    <div class="word-en" style="color: var(--accent-green);">run into</div>
+                    <div style="margin-top: 4px;">يدخل مسرعاً / يقابل بالصدفة</div>
+                </div>
+                <div class="card">
+                    <div class="word-en" style="color: var(--accent-green);">rush in</div>
+                    <div style="margin-top: 4px;">يدخل مسرعاً مستعجلاً</div>
+                </div>
+                <div class="card">
+                    <div class="word-en" style="color: var(--accent-green);">stitch up</div>
+                    <div style="margin-top: 4px;">يخيط الجرح ويغلقه بالغرز الطبية</div>
+                </div>
+                <div class="card">
+                    <div class="word-en" style="color: var(--accent-green);">thank ... for</div>
+                    <div style="margin-top: 4px;">يشكر ... على</div>
+                </div>
+            </div>
+
+            <!-- Derivatives -->
+            <div class="section-title">🧬 3. المشتقات (Derivatives - صفحة 62)</div>
+            <p class="section-hint">الفرق الدقيق بين الفعل والاسم مع الجمل التطبيقية موضع الامتحان:</p>
+            <div class="cards-grid grid-cards" style="margin-bottom: 35px;">
+                
+                <div class="card">
+                    <div class="card-header">
+                        <div class="word-en">clutch</div>
+                        <span class="tag-badge">عائلة المشتق</span>
+                    </div>
+                    <div class="card-body">
+                        <div style="margin-bottom: 8px;">
+                            <strong style="color: var(--accent-primary);">clutch (v) [يمسك بقوة]:</strong><br>
+                            <em>“He <strong style="color: var(--accent-primary);">clutched</strong> the rope tightly, so he did not fall.”</em>
+                        </div>
+                        <div>
+                            <strong style="color: var(--accent-green);">clutch (n) [قبضة]:</strong><br>
+                            <em>“His strong <strong style="color: var(--accent-green);">clutch</strong> at the rope stopped him from falling.”</em>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="word-en">groan</div>
+                        <span class="tag-badge">عائلة المشتق</span>
+                    </div>
+                    <div class="card-body">
+                        <div style="margin-bottom: 8px;">
+                            <strong style="color: var(--accent-primary);">groan (v) [يتأوه دهشة/ألماً]:</strong><br>
+                            <em>“The fans <strong style="color: var(--accent-primary);">groaned</strong> when the ball missed the goal.”</em>
+                        </div>
+                        <div>
+                            <strong style="color: var(--accent-green);">groan (n) [تأوه / صوت انزعاج]:</strong><br>
+                            <em>“There was a <strong style="color: var(--accent-green);">groan</strong> from the fans when the ball missed the goal.”</em>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="word-en">moan</div>
+                        <span class="tag-badge">عائلة المشتق</span>
+                    </div>
+                    <div class="card-body">
+                        <div style="margin-bottom: 8px;">
+                            <strong style="color: var(--accent-primary);">moan (v) [يئن حزناً/ألماً]:</strong><br>
+                            <em>“The patient <strong style="color: var(--accent-primary);">moaned</strong> all night because of the pain in her chest.”</em>
+                        </div>
+                        <div>
+                            <strong style="color: var(--accent-green);">moan (n) [أنين]:</strong><br>
+                            <em>“The <strong style="color: var(--accent-green);">moan</strong> of the patient made us feel sorry for him.”</em>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="word-en">stitch</div>
+                        <span class="tag-badge">عائلة المشتق</span>
+                    </div>
+                    <div class="card-body">
+                        <div style="margin-bottom: 8px;">
+                            <strong style="color: var(--accent-primary);">stitch (v) [يخيط جرحاً]:</strong><br>
+                            <em>“The surgeon <strong style="color: var(--accent-primary);">stitched</strong> the wound.”</em>
+                        </div>
+                        <div>
+                            <strong style="color: var(--accent-green);">stitch (n) [غرزة خياطة طبية]:</strong><br>
+                            <em>“The wound needed three <strong style="color: var(--accent-green);">stitches</strong>.”</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Linked Expression Photos Gallery (Sec 3 Engine) -->
+            <div class="section-title">📸 4. معرض التعبيرات والمصطلحات المصورة التفاعلي (Idioms &amp; Expressions Gallery) - 6 تعبيرات</div>
+            <p class="section-hint" style="margin-bottom: 16px;">تعبيرات ومصطلحات الدروس 4 و 5 المعتمدة في امتحانات الثانوية العامة مع معرض صور توضيحية ونطق صوتي وشرح وسياق امتحاني:</p>
+
+            <!-- Interactive Linked Expression Photos Showcase (Sec 3 Engine) -->
+            <div class="expression-showcase-container" id="expressionShowcaseCard">
+                <!-- Expression Quick Filter Pills -->
+                <div class="expression-pills-bar" id="expressionPills">
+                    <button type="button" class="expression-pill-item active" onclick="jumpToExpression(1)">👻 1. pale as a ghost</button>
+                    <button type="button" class="expression-pill-item" onclick="jumpToExpression(2)">🌧️ 2. rain cats and dogs</button>
+                    <button type="button" class="expression-pill-item" onclick="jumpToExpression(3)">👕 3. soaked to the skin</button>
+                    <button type="button" class="expression-pill-item" onclick="jumpToExpression(4)">⏱️ 4. under pressure</button>
+                    <button type="button" class="expression-pill-item" onclick="jumpToExpression(5)">⚡ 5. without hesitation</button>
+                    <button type="button" class="expression-pill-item" onclick="jumpToExpression(6)">🌅 6. come to an end</button>
+                </div>
+
+                <!-- Main View: Linked Photo + Details Panel -->
+                <div class="expression-main-view">
+                    <div class="expression-photo-wrapper" onclick="openActiveExpressionLightbox()" title="انقر لعرض الصورة مكبرة">
+                        <img id="expressionMainImg" class="expression-photo-img" src="../../assets/images/pale_as_a_ghost.webp" alt="Expression 1 Photo" loading="lazy">
+                        <div class="expression-photo-zoom-badge">🔍 انقر للتكبير والشاشة الكاملة</div>
+                    </div>
+                    <div class="expression-info-panel">
+                        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+                            <span class="tag-badge" id="expressionTagBadge">📸 تعبير مصور 1 من 6</span>
+                            <button type="button" class="audio-btn" id="expressionAudioBtn" onclick="speakActiveExpression()" title="استمع للتعبير">🔊</button>
+                        </div>
+                        <div class="word-en" id="expressionEnTitle" style="font-size: 1.4rem; color: var(--accent-primary);">pale as a ghost</div>
+                        <div style="font-size: 1.1rem; font-weight: 700; color: #f8fafc;" id="expressionArMeaning">شديد الشحوب / باهت (من الخوف أو المرض)</div>
+                        
+                        <div class="simple-explain-box" id="expressionExplainBox">
+                            <span class="box-title">💡 التوضيح ببساطة:</span>
+                            <div id="expressionExplainText">شحوب الوجه الشديد والمفاجئ نتيجة الخوف الشديد، الصدمة العصبية، أو النزيف والألم.</div>
+                        </div>
+
+                        <div class="practical-example-box" id="expressionExampleBox">
+                            <span class="box-title" style="color: var(--accent-orange);">💬 مثال من واقع امتحانات الثانوية العامة:</span>
+                            <div id="expressionExampleText" dir="ltr" style="direction: ltr; text-align: left; font-weight: 600; color: #e2e8f0; margin-top: 4px;">
+                                A construction worker, <strong style="color: var(--accent-primary);">pale as a ghost</strong>, clutched his bleeding hand, trying not to cry out.
+                            </div>
+                            <div id="expressionExampleTrans" style="font-size: 0.88rem; color: #94a3b8; margin-top: 4px;">
+                                عامل بناء، شاحب كالشبح، أمسك بيده النازفة محاولاً ألا يصرخ من الألم.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Controls Linking Photos Together -->
+                <div class="expression-nav-bar">
+                    <button type="button" id="exprPrevBtn" class="action-btn secondary" onclick="changeExpression(-1)" disabled>
+                        ⬅️ التعبير السابق
+                    </button>
+                    <div class="expression-counter-badge" id="exprCounterBadge">
+                        1 / 6
+                    </div>
+                    <button type="button" id="exprNextBtn" class="action-btn secondary" onclick="changeExpression(1)">
+                        التعبير التالي ➔
+                    </button>
+                </div>
+            </div>
+
+            <!-- Responsive Cards Grid for All 6 Expressions -->
+            <div class="cards-grid grid-cards" style="margin-bottom: 35px;">
+                <!-- Card 1 -->
+                <div class="card" onclick="jumpToExpression(1); playSound('click');">
+                    <img src="../../assets/images/pale_as_a_ghost.webp" alt="pale as a ghost" class="expression-card-thumb" onclick="event.stopPropagation(); openSlideLightbox('../../assets/images/pale_as_a_ghost.webp', '1. pale as a ghost (شديد الشحوب / باهت كالشبح)');">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Expression 1</span>
+                            <div class="word-en">pale as a ghost</div>
+                        </div>
+                        <button type="button" class="audio-btn" onclick="event.stopPropagation(); speakText('pale as a ghost'); playSound('click');" title="استمع">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> شديد الشحوب (من الخوف أو الألم)
+                        <div class="simple-explain-box" style="margin-top: 8px;">
+                            <span class="box-title">💡 سياق النص:</span>
+                            عامل البناء المصاب في يده شاحب الوجه كالشبح في غرفة الطوارئ.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card" onclick="jumpToExpression(2); playSound('click');">
+                    <img src="../../assets/images/rain_cats_and_dogs.webp" alt="rain cats and dogs" class="expression-card-thumb" onclick="event.stopPropagation(); openSlideLightbox('../../assets/images/rain_cats_and_dogs.webp', '2. rain cats and dogs (تمطر بغزارة شديدة)');">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Expression 2</span>
+                            <div class="word-en">rain cats and dogs</div>
+                        </div>
+                        <button type="button" class="audio-btn" onclick="event.stopPropagation(); speakText('rain cats and dogs'); playSound('click');" title="استمع">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> تمطر بغزارة طوفانية شديدة
+                        <div class="simple-explain-box" style="margin-top: 8px;">
+                            <span class="box-title">💡 سياق النص:</span>
+                            العاصفة المطرية الشديدة خارج المستشفى أثناء وصول مصابي الحوادث.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card" onclick="jumpToExpression(3); playSound('click');">
+                    <img src="../../assets/images/soaked_to_the_skin.webp" alt="soaked to the skin" class="expression-card-thumb" onclick="event.stopPropagation(); openSlideLightbox('../../assets/images/soaked_to_the_skin.webp', '3. soaked to the skin (مبتل تماماً حتى النخاع)');">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Expression 3</span>
+                            <div class="word-en">soaked to the skin</div>
+                        </div>
+                        <button type="button" class="audio-btn" onclick="event.stopPropagation(); speakText('soaked to the skin'); playSound('click');" title="استمع">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> غارق في مياه المطر ومبتل تماماً
+                        <div class="simple-explain-box" style="margin-top: 8px;">
+                            <span class="box-title">💡 سياق النص:</span>
+                            دخول د. باسم راكضاً للمستشفى وسط المطر وهو مبتل تماماً من رأسه لقدمه.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="card" onclick="jumpToExpression(4); playSound('click');">
+                    <img src="../../assets/images/under_pressure.webp" alt="under pressure" class="expression-card-thumb" onclick="event.stopPropagation(); openSlideLightbox('../../assets/images/under_pressure.webp', '4. under pressure (تحت وطأة الضغط)');">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Expression 4</span>
+                            <div class="word-en">under pressure</div>
+                        </div>
+                        <button type="button" class="audio-btn" onclick="event.stopPropagation(); speakText('under pressure'); playSound('click');" title="استمع">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> تحت الضغط الشديد وتراكم المهام
+                        <div class="simple-explain-box" style="margin-top: 8px;">
+                            <span class="box-title">💡 سياق النص:</span>
+                            هدوء الممرضة نورا وتركيزها المهني في توجيه الفريق وسط فوضى الطوارئ.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="card" onclick="jumpToExpression(5); playSound('click');">
+                    <img src="../../assets/images/without_hesitation.webp" alt="without hesitation" class="expression-card-thumb" onclick="event.stopPropagation(); openSlideLightbox('../../assets/images/without_hesitation.webp', '5. without hesitation (دون تردد)');">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Expression 5</span>
+                            <div class="word-en">without hesitation</div>
+                        </div>
+                        <button type="button" class="audio-btn" onclick="event.stopPropagation(); speakText('without hesitation'); playSound('click');" title="استمع">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> دون تردد / على الفور وبحسم
+                        <div class="simple-explain-box" style="margin-top: 8px;">
+                            <span class="box-title">💡 سياق النص:</span>
+                            انطلاق فريق الطوارئ فوراً لاستخراج العملة وإنقاذ حياة الطفل الصغير.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="card" onclick="jumpToExpression(6); playSound('click');">
+                    <img src="../../assets/images/come_to_an_end.webp" alt="come to an end" class="expression-card-thumb" onclick="event.stopPropagation(); openSlideLightbox('../../assets/images/come_to_an_end.webp', '6. come to an end (يصل لنهايته / ينتهي)');">
+                    <div class="card-header">
+                        <div>
+                            <span class="tag-badge">Expression 6</span>
+                            <div class="word-en">come to an end</div>
+                        </div>
+                        <button type="button" class="audio-btn" onclick="event.stopPropagation(); speakText('come to an end'); playSound('click');" title="استمع">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <strong>المعنى:</strong> يصل لنهايته / ينتهي
+                        <div class="simple-explain-box" style="margin-top: 8px;">
+                            <span class="box-title">💡 سياق النص:</span>
+                            انتهاء ليلة طوارئ شاقة حافلة بالخوف والعمل الجماعي المنقذ للحياة مع شروق الفجر.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- TAB 4: WRITING SKILLS: HOW TO WRITE A BLOG POST -->
+        <!-- ========================================== -->
+        <div id="writing-skills" class="tab-content" style="display: none;">
+            
+            <div class="section-title">✍️ دليل مهارة كتابة المنشور التدويني (How to Write a Blog Post - صفحات 65 : 68)</div>
+            
+            <!-- What is a blog post? -->
+            <div class="card" style="border-right: 4px solid var(--accent-primary); margin-bottom: 25px; padding: 22px;">
+                <h3 style="color: var(--accent-primary); margin-bottom: 12px; font-size: 1.3rem;">❓ ما هي المدونة؟ (What is a Blog Post?)</h3>
+                <p style="font-size: 1.1rem; line-height: 1.8; color: #f8fafc;">
+                    <strong>المدونة (A blog post):</strong> هي مقال أو قطعة كتابية تُنشر على مدونة إلكترونية (موقع أو مجلة على الإنترنت). وتتميز المقالات التدوينية بالمواصفات الأربع الأساسية التالية:
+                </p>
+                <div class="cards-grid grid-cards" style="margin-top: 14px;">
+                    <div class="card" style="background: rgba(11, 15, 25, 0.7); border: 1px solid rgba(0, 243, 255, 0.3);">
+                        <strong style="color: var(--accent-primary);">1. Informal or semi-formal:</strong><br>
+                        أسلوب غير رسمي أو شبه رسمي، كالتحدث مع صديق لكنه أكثر تنظيماً.
+                    </div>
+                    <div class="card" style="background: rgba(11, 15, 25, 0.7); border: 1px solid rgba(0, 255, 157, 0.3);">
+                        <strong style="color: var(--accent-green);">2. Engaging style:</strong><br>
+                        أسلوب جذاب يهدف إلى لفت انتباه القارئ وشده للقراءة.
+                    </div>
+                    <div class="card" style="background: rgba(11, 15, 25, 0.7); border: 1px solid rgba(255, 183, 3, 0.3);">
+                        <strong style="color: var(--accent-orange);">3. About a specific topic:</strong><br>
+                        يركز على موضوع محدد يشارك فيه الكاتب معلومات أو آراء أو تجارب شخصية.
+                    </div>
+                    <div class="card" style="background: rgba(11, 15, 25, 0.7); border: 1px solid rgba(56, 189, 248, 0.3);">
+                        <strong style="color: var(--accent-secondary);">4. Not too long:</strong><br>
+                        غير طويلة ومقسمة لفقرات قصيرة لتكون سهلة القراءة السريعة على الإنترنت.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Steps to write a blog post -->
+            <div class="section-title">🧱 أجزاء ومنظومة هيكل المدونة الناجحة (The 4 Parts of a Good Blog Post)</div>
+            <div class="cards-grid grid-cards" style="margin-bottom: 30px;">
+                
+                <div class="card" style="border-top: 3px solid var(--accent-primary);">
+                    <div class="card-header">
+                        <span class="tag-badge">الجزء 1</span>
+                        <div class="word-en" style="color: var(--accent-primary);">1. Catchy Title (Headline)</div>
+                    </div>
+                    <div class="card-body">
+                        <strong>الغرض (Purpose):</strong> جعل الناس يرغبون في النقر على الرابط وقراءة المقال فوراً (To make people want to click and read!).
+                        <div class="simple-explain-box" style="margin-top: 8px;">
+                            💡 <strong>أمثلة من كتاب الوزارة:</strong>
+                            <div dir="ltr" style="direction: ltr; text-align: left; margin-top: 6px; line-height: 1.7; color: var(--accent-secondary);">
+                                • <em>5 Amazing Places to Visit in Summer</em><br>
+                                • <em>My First Time Trying Sushi (and Why I Loved It!)</em><br>
+                                • <em>Is Learning English Hard? My Opinion.</em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style="border-top: 3px solid var(--accent-green);">
+                    <div class="card-header">
+                        <span class="tag-badge">الجزء 2</span>
+                        <div class="word-en" style="color: var(--accent-green);">2. Introduction (The Hook)</div>
+                    </div>
+                    <div class="card-body">
+                        <strong>الغرض (Purpose):</strong> تقديم الموضوع وخطف اهتمام القارئ وجذبه بالـ (Hook) كسؤال مثير أو اقتباس أو حقيقة مشوقة.
+                        <div class="simple-explain-box" style="margin-top: 8px;">
+                            💡 <strong>مثال المقدمة:</strong>
+                            <div dir="ltr" style="direction: ltr; text-align: left; margin-top: 6px; line-height: 1.7; color: var(--accent-green);">
+                                <em>“Have you ever dreamed of traveling the world? For me, visiting new countries has always been a passion. Today, I want to share my recent trip to Japan...”</em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style="border-top: 3px solid var(--accent-orange);">
+                    <div class="card-header">
+                        <span class="tag-badge">الجزء 3</span>
+                        <div class="word-en" style="color: var(--accent-orange);">3. Main Body (With Subheadings)</div>
+                    </div>
+                    <div class="card-body">
+                        <strong>الغرض (Purpose):</strong> تطوير الأفكار وتقديم التفاصيل وشرح النقاط مع استخدام عناوين فرعية (Subheadings) لتقسيم الموضوع.
+                        <div class="simple-explain-box" style="margin-top: 8px;">
+                            💡 <strong>أمثلة الفقرات:</strong>
+                            <div dir="ltr" style="direction: ltr; text-align: left; margin-top: 6px; line-height: 1.7; color: var(--accent-orange);">
+                                • <em>Paragraph 1 (Food): One of the best parts was food (sushi, ramen)...</em><br>
+                                • <em>Paragraph 2 (Culture): Fascinated by traditional culture and tea ceremony...</em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style="border-top: 3px solid var(--accent-secondary);">
+                    <div class="card-header">
+                        <span class="tag-badge">الجزء 4</span>
+                        <div class="word-en" style="color: var(--accent-secondary);">4. Conclusion (With CTA)</div>
+                    </div>
+                    <div class="card-body">
+                        <strong>الغرض (Purpose):</strong> تلخيص الأفكار الرئيسية، وإعطاء فكرة ختامية، وختم المقال بدعوة لاتخاذ إجراء (Call to Action - CTA) كدعوة القراء للتعليق.
+                        <div class="simple-explain-box" style="margin-top: 8px;">
+                            💡 <strong>مثال الخاتمة:</strong>
+                            <div dir="ltr" style="direction: ltr; text-align: left; margin-top: 6px; line-height: 1.7; color: var(--accent-secondary);">
+                                <em>“Overall, my trip to Japan was an unforgettable experience... Have you ever been to Japan? What was your favorite part? Let me know in the comments!”</em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Language & Style Tips + Terminology Table -->
+            <div class="section-title">💡 إرشادات اللغة والأسلوب والمصطلحات التدوينية (Terminology Glossary - ص 66)</div>
+            <div class="card" style="padding: 20px; margin-bottom: 30px;">
+                <h4 style="color: var(--accent-primary); margin-bottom: 12px;">🌟 إرشادات اللغة والأسلوب (Tips on Language &amp; Style):</h4>
+                <ul style="line-height: 2; color: #f8fafc; padding-right: 20px; list-style-type: square;">
+                    <li><strong>1. استخدم لغة بسيطة وواضحة (Use simple, clear language).</strong></li>
+                    <li><strong>2. اجعل الفقرات قصيرة (Keep paragraphs short - 2 to 5 sentences).</strong></li>
+                    <li><strong>3. اكتب بنبرة ودية وشخصية (Write in a friendly, personal tone).</strong></li>
+                    <li><strong>4. استخدم ضمير المتكلم (Use first person: "I", "we")</strong> إذا كان المنشور يحكي تجربة شخصية أو سردية.</li>
+                    <li><strong>5. أضف لغة تعبيرية وعواطف ومصطلحات اصطلاحية (Add expressive language, idioms or emotions)</strong> عند الاقتضاء.</li>
+                </ul>
+
+                <h4 style="color: var(--accent-green); margin-top: 24px; margin-bottom: 14px;">📖 جدول مصطلحات التدوين المعتمدة (Blog Post Terminology):</h4>
+                <div class="cards-grid grid-cards">
+                    <div class="card" style="background: rgba(11, 15, 25, 0.6);"><strong style="color: var(--accent-primary);">Audience (الجمهور):</strong> The readers the post is intended for (e.g. teenagers, students, general public).</div>
+                    <div class="card" style="background: rgba(11, 15, 25, 0.6);"><strong style="color: var(--accent-primary);">Blog (المدونة):</strong> A regularly updated website or journal that contains individual entries called blog posts.</div>
+                    <div class="card" style="background: rgba(11, 15, 25, 0.6);"><strong style="color: var(--accent-primary);">Blog Post (منشور المدونة):</strong> A single article or entry published on a blog.</div>
+                    <div class="card" style="background: rgba(11, 15, 25, 0.6);"><strong style="color: var(--accent-orange);">Call to Action (CTA):</strong> A sentence encouraging the reader to take an action (e.g., comment, share, subscribe).</div>
+                    <div class="card" style="background: rgba(11, 15, 25, 0.6);"><strong style="color: var(--accent-green);">Catchy Title:</strong> A headline designed to attract clicks and grab the reader's attention.</div>
+                    <div class="card" style="background: rgba(11, 15, 25, 0.6);"><strong style="color: var(--accent-green);">Hook (الخاطف):</strong> An engaging opening that grabs the reader's attention (a question, quote, fact, or anecdote).</div>
+                    <div class="card" style="background: rgba(11, 15, 25, 0.6);"><strong style="color: var(--accent-secondary);">Subheading (عنوان فرعي):</strong> A smaller heading used to divide sections of a blog post for easier reading.</div>
+                    <div class="card" style="background: rgba(11, 15, 25, 0.6);"><strong style="color: var(--accent-secondary);">Tone (نبرة الكاتب):</strong> The style or attitude of the writer, such as formal, informal, humorous, or serious.</div>
+                    <div class="card" style="background: rgba(11, 15, 25, 0.6);"><strong style="color: var(--accent-primary);">Topic (الموضوع):</strong> The subject or theme of the blog post.</div>
+                    <div class="card" style="background: rgba(11, 15, 25, 0.6);"><strong style="color: var(--accent-orange);">Transition Words:</strong> Words like first, next, however, finally that help connect ideas smoothly.</div>
+                </div>
+            </div>
+
+            <!-- Subjective Model Exercises on Aswan in Winter -->
+            <div class="section-title">📝 النماذج المقالية التدريبية (Model Exercises: 5 Reasons to Visit Aswan in Winter - ص 67)</div>
+            <div class="cards-grid grid-cards" style="margin-bottom: 30px;">
+                <div class="card">
+                    <div class="card-header" style="display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <span class="tag-badge">Model 1: Introduction</span>
+                            <div class="word-en" style="color: var(--accent-primary);">المقدمة النموذجية (Intro)</div>
+                        </div>
+                        <button type="button" class="audio-btn" onclick="speakText('Have you ever dreamed of escaping the cold while still enjoying the magic of winter? Aswan, one of Egypts most charming cities, offers the perfect warm-weather getaway during the cooler months.'); playSound('click');" title="استمع للمقدمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <div class="practical-example-box" dir="ltr" style="direction: ltr; text-align: left; unicode-bidi: isolate; font-size: 0.96rem; line-height: 1.85; padding: 16px; border-radius: 12px; background: rgba(8, 14, 26, 0.85); border: 1px solid rgba(0, 243, 255, 0.25);">
+                            “Have you ever dreamed of escaping the cold while still enjoying the magic of winter? Aswan, one of Egypt’s most charming cities, offers the perfect warm-weather getaway during the cooler months. With its golden sunshine, peaceful Nile views, and rich cultural heritage, Aswan becomes a magical destination between November and February. Whether you’re a history lover, an adventure seeker, or simply someone looking to relax, Aswan in winter has something just for you. In this post, I’ll share five great reasons why this southern gem should be at the top of your winter travel list.”
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" style="display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <span class="tag-badge">Model 2: Body Paragraph</span>
+                            <div class="word-en" style="color: var(--accent-green);">فقرة الموضوع النموذجية (Body)</div>
+                        </div>
+                        <button type="button" class="audio-btn" onclick="speakText('Unlike other tourist hotspots, Aswan stays calm and uncrowded during winter. This means you can explore temples like Philae or stroll along the Nile without being rushed.'); playSound('click');" title="استمع لفقرة الموضوع">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <div class="practical-example-box" dir="ltr" style="direction: ltr; text-align: left; unicode-bidi: isolate; font-size: 0.96rem; line-height: 1.85; padding: 16px; border-radius: 12px; background: rgba(8, 14, 26, 0.85); border: 1px solid rgba(0, 255, 157, 0.25);">
+                            “Unlike other tourist hotspots, Aswan stays calm and uncrowded during winter. This means you can explore temples like Philae or stroll along the Nile without being rushed or surrounded by large groups. The peaceful atmosphere allows you to truly connect with the history and beauty around you. Local markets are less busy, so you can chat with friendly vendors and take your time picking souvenirs. Even the felucca rides feel more personal and relaxed. It’s the perfect setting for travelers who enjoy slow, meaningful experiences.”
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" style="display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <span class="tag-badge">Model 3: Conclusion</span>
+                            <div class="word-en" style="color: var(--accent-orange);">الخاتمة النموذجية (Conclusion)</div>
+                        </div>
+                        <button type="button" class="audio-btn" onclick="speakText('To conclude, Aswan in winter offers more than just sunshine, it gives you peace, culture, and unforgettable memories. From its mild weather to peaceful sights, it is the perfect winter escape.'); playSound('click');" title="استمع للخاتمة">🔊</button>
+                    </div>
+                    <div class="card-body">
+                        <div class="practical-example-box" dir="ltr" style="direction: ltr; text-align: left; unicode-bidi: isolate; font-size: 0.96rem; line-height: 1.85; padding: 16px; border-radius: 12px; background: rgba(8, 14, 26, 0.85); border: 1px solid rgba(255, 183, 3, 0.25);">
+                            “To conclude, Aswan in winter offers more than just sunshine—it gives you peace, culture, and unforgettable memories. From its mild weather to peaceful sights, it’s the perfect winter escape. You can enjoy local life, explore history, and relax by the Nile. Whether you’re an adventurer, a culture lover, or just someone who needs a break. To sum up, Aswan welcomes you warmly. So, why wait? Pack your bags and discover the magic of Aswan this winter!”
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 15 Exam Points for Multiple Choice Questions -->
+            <div class="section-title">🎯 نقاط مهارة الكتابة لأسئلة الاختيار من متعدد في الامتحان (Writing in Points - ص 68)</div>
+            <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 30px;">
+                <div class="card" dir="ltr" style="display: flex; align-items: flex-start; gap: 14px; padding: 14px 18px; margin: 0; direction: ltr; text-align: left; unicode-bidi: isolate; background: rgba(13, 21, 39, 0.85); border: 1px solid rgba(0, 243, 255, 0.2);">
+                    <span style="background: rgba(0, 243, 255, 0.15); color: var(--accent-primary); border: 1px solid var(--accent-primary); font-weight: 800; font-size: 0.95rem; min-width: 32px; height: 32px; border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;">1</span>
+                    <div style="flex: 1; direction: ltr; text-align: left; unicode-bidi: isolate; font-size: 1.02rem; line-height: 1.7; color: #f8fafc;">
+                        A <strong style="color: var(--accent-primary);">blog post</strong> is an article or a piece of writing published on a <strong style="color: var(--accent-primary);">blog</strong>.
+                    </div>
+                    <button type="button" class="audio-btn" onclick="speakText('A blog post is an article or a piece of writing published on a blog.'); playSound('click');" title="Listen" style="margin-top: 2px;">🔊</button>
+                </div>
+                <div class="card" dir="ltr" style="display: flex; align-items: flex-start; gap: 14px; padding: 14px 18px; margin: 0; direction: ltr; text-align: left; unicode-bidi: isolate; background: rgba(13, 21, 39, 0.85); border: 1px solid rgba(0, 243, 255, 0.2);">
+                    <span style="background: rgba(0, 243, 255, 0.15); color: var(--accent-primary); border: 1px solid var(--accent-primary); font-weight: 800; font-size: 0.95rem; min-width: 32px; height: 32px; border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;">2</span>
+                    <div style="flex: 1; direction: ltr; text-align: left; unicode-bidi: isolate; font-size: 1.02rem; line-height: 1.7; color: #f8fafc;">
+                        Blog posts are usually written in an <strong style="color: var(--accent-secondary);">informal</strong> or <strong style="color: var(--accent-secondary);">semi-formal style</strong>.
+                    </div>
+                    <button type="button" class="audio-btn" onclick="speakText('Blog posts are usually written in an informal or semi-formal style.'); playSound('click');" title="Listen" style="margin-top: 2px;">🔊</button>
+                </div>
+                <div class="card" dir="ltr" style="display: flex; align-items: flex-start; gap: 14px; padding: 14px 18px; margin: 0; direction: ltr; text-align: left; unicode-bidi: isolate; background: rgba(13, 21, 39, 0.85); border: 1px solid rgba(0, 243, 255, 0.2);">
+                    <span style="background: rgba(0, 243, 255, 0.15); color: var(--accent-primary); border: 1px solid var(--accent-primary); font-weight: 800; font-size: 0.95rem; min-width: 32px; height: 32px; border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;">3</span>
+                    <div style="flex: 1; direction: ltr; text-align: left; unicode-bidi: isolate; font-size: 1.02rem; line-height: 1.7; color: #f8fafc;">
+                        The writer of a blog post uses an <strong style="color: var(--accent-green);">engaging style</strong> to catch the reader’s attention.
+                    </div>
+                    <button type="button" class="audio-btn" onclick="speakText('The writer of a blog post uses an engaging style to catch the readers attention.'); playSound('click');" title="Listen" style="margin-top: 2px;">🔊</button>
+                </div>
+                <div class="card" dir="ltr" style="display: flex; align-items: flex-start; gap: 14px; padding: 14px 18px; margin: 0; direction: ltr; text-align: left; unicode-bidi: isolate; background: rgba(13, 21, 39, 0.85); border: 1px solid rgba(0, 243, 255, 0.2);">
+                    <span style="background: rgba(0, 243, 255, 0.15); color: var(--accent-primary); border: 1px solid var(--accent-primary); font-weight: 800; font-size: 0.95rem; min-width: 32px; height: 32px; border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;">4</span>
+                    <div style="flex: 1; direction: ltr; text-align: left; unicode-bidi: isolate; font-size: 1.02rem; line-height: 1.7; color: #f8fafc;">
+                        A blog post usually focuses on a <strong style="color: var(--accent-orange);">specific topic</strong>.
+                    </div>
+                    <button type="button" class="audio-btn" onclick="speakText('A blog post usually focuses on a specific topic.'); playSound('click');" title="Listen" style="margin-top: 2px;">🔊</button>
+                </div>
+                <div class="card" dir="ltr" style="display: flex; align-items: flex-start; gap: 14px; padding: 14px 18px; margin: 0; direction: ltr; text-align: left; unicode-bidi: isolate; background: rgba(13, 21, 39, 0.85); border: 1px solid rgba(0, 243, 255, 0.2);">
+                    <span style="background: rgba(0, 243, 255, 0.15); color: var(--accent-primary); border: 1px solid var(--accent-primary); font-weight: 800; font-size: 0.95rem; min-width: 32px; height: 32px; border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;">5</span>
+                    <div style="flex: 1; direction: ltr; text-align: left; unicode-bidi: isolate; font-size: 1.02rem; line-height: 1.7; color: #f8fafc;">
+                        A blog post may include <strong style="color: var(--accent-primary);">information</strong>, <strong style="color: var(--accent-primary);">opinions</strong> or <strong style="color: var(--accent-primary);">personal experiences</strong>.
+                    </div>
+                    <button type="button" class="audio-btn" onclick="speakText('A blog post may include information, opinions or personal experiences.'); playSound('click');" title="Listen" style="margin-top: 2px;">🔊</button>
+                </div>
+                <div class="card" dir="ltr" style="display: flex; align-items: flex-start; gap: 14px; padding: 14px 18px; margin: 0; direction: ltr; text-align: left; unicode-bidi: isolate; background: rgba(13, 21, 39, 0.85); border: 1px solid rgba(0, 243, 255, 0.2);">
+                    <span style="background: rgba(0, 243, 255, 0.15); color: var(--accent-primary); border: 1px solid var(--accent-primary); font-weight: 800; font-size: 0.95rem; min-width: 32px; height: 32px; border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;">6</span>
+                    <div style="flex: 1; direction: ltr; text-align: left; unicode-bidi: isolate; font-size: 1.02rem; line-height: 1.7; color: #f8fafc;">
+                        A blog post should not be <strong style="color: var(--accent-red);">too long</strong>, so it is easy to read online.
+                    </div>
+                    <button type="button" class="audio-btn" onclick="speakText('A blog post should not be too long, so it is easy to read online.'); playSound('click');" title="Listen" style="margin-top: 2px;">🔊</button>
+                </div>
+                <div class="card" dir="ltr" style="display: flex; align-items: flex-start; gap: 14px; padding: 14px 18px; margin: 0; direction: ltr; text-align: left; unicode-bidi: isolate; background: rgba(13, 21, 39, 0.85); border: 1px solid rgba(0, 243, 255, 0.2);">
+                    <span style="background: rgba(0, 243, 255, 0.15); color: var(--accent-primary); border: 1px solid var(--accent-primary); font-weight: 800; font-size: 0.95rem; min-width: 32px; height: 32px; border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;">7</span>
+                    <div style="flex: 1; direction: ltr; text-align: left; unicode-bidi: isolate; font-size: 1.02rem; line-height: 1.7; color: #f8fafc;">
+                        The structure of a good blog post consists of four parts: a <strong style="color: var(--accent-primary);">catchy title</strong>, an <strong style="color: var(--accent-green);">introduction</strong>, a <strong style="color: var(--accent-orange);">main body</strong> and a <strong style="color: var(--accent-secondary);">conclusion</strong>.
+                    </div>
+                    <button type="button" class="audio-btn" onclick="speakText('The structure of a good blog post consists of four parts: a catchy title, an introduction, a main body and a conclusion.'); playSound('click');" title="Listen" style="margin-top: 2px;">🔊</button>
+                </div>
+                <div class="card" dir="ltr" style="display: flex; align-items: flex-start; gap: 14px; padding: 14px 18px; margin: 0; direction: ltr; text-align: left; unicode-bidi: isolate; background: rgba(13, 21, 39, 0.85); border: 1px solid rgba(0, 243, 255, 0.2);">
+                    <span style="background: rgba(0, 243, 255, 0.15); color: var(--accent-primary); border: 1px solid var(--accent-primary); font-weight: 800; font-size: 0.95rem; min-width: 32px; height: 32px; border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;">8</span>
+                    <div style="flex: 1; direction: ltr; text-align: left; unicode-bidi: isolate; font-size: 1.02rem; line-height: 1.7; color: #f8fafc;">
+                        The title should be <strong style="color: var(--accent-primary);">catchy and clear</strong> and should summarize the content of the post.
+                    </div>
+                    <button type="button" class="audio-btn" onclick="speakText('The title should be catchy and clear and should summarize the content of the post.'); playSound('click');" title="Listen" style="margin-top: 2px;">🔊</button>
+                </div>
+                <div class="card" dir="ltr" style="display: flex; align-items: flex-start; gap: 14px; padding: 14px 18px; margin: 0; direction: ltr; text-align: left; unicode-bidi: isolate; background: rgba(13, 21, 39, 0.85); border: 1px solid rgba(0, 243, 255, 0.2);">
+                    <span style="background: rgba(0, 243, 255, 0.15); color: var(--accent-primary); border: 1px solid var(--accent-primary); font-weight: 800; font-size: 0.95rem; min-width: 32px; height: 32px; border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;">9</span>
+                    <div style="flex: 1; direction: ltr; text-align: left; unicode-bidi: isolate; font-size: 1.02rem; line-height: 1.7; color: #f8fafc;">
+                        In the introduction, we present the topic and start with a <strong style="color: var(--accent-green);">hook</strong>.
+                    </div>
+                    <button type="button" class="audio-btn" onclick="speakText('In the introduction, we present the topic and start with a hook.'); playSound('click');" title="Listen" style="margin-top: 2px;">🔊</button>
+                </div>
+                <div class="card" dir="ltr" style="display: flex; align-items: flex-start; gap: 14px; padding: 14px 18px; margin: 0; direction: ltr; text-align: left; unicode-bidi: isolate; background: rgba(13, 21, 39, 0.85); border: 1px solid rgba(0, 243, 255, 0.2);">
+                    <span style="background: rgba(0, 243, 255, 0.15); color: var(--accent-primary); border: 1px solid var(--accent-primary); font-weight: 800; font-size: 0.95rem; min-width: 32px; height: 32px; border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;">10</span>
+                    <div style="flex: 1; direction: ltr; text-align: left; unicode-bidi: isolate; font-size: 1.02rem; line-height: 1.7; color: #f8fafc;">
+                        A hook is <strong style="color: var(--accent-green);">an engaging opening</strong> such as a question, a quote, a fact or an anecdote.
+                    </div>
+                    <button type="button" class="audio-btn" onclick="speakText('A hook is an engaging opening such as a question, a quote, a fact or an anecdote.'); playSound('click');" title="Listen" style="margin-top: 2px;">🔊</button>
+                </div>
+                <div class="card" dir="ltr" style="display: flex; align-items: flex-start; gap: 14px; padding: 14px 18px; margin: 0; direction: ltr; text-align: left; unicode-bidi: isolate; background: rgba(13, 21, 39, 0.85); border: 1px solid rgba(0, 243, 255, 0.2);">
+                    <span style="background: rgba(0, 243, 255, 0.15); color: var(--accent-primary); border: 1px solid var(--accent-primary); font-weight: 800; font-size: 0.95rem; min-width: 32px; height: 32px; border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;">11</span>
+                    <div style="flex: 1; direction: ltr; text-align: left; unicode-bidi: isolate; font-size: 1.02rem; line-height: 1.7; color: #f8fafc;">
+                        In the main body, we <strong style="color: var(--accent-orange);">develop our ideas</strong>, <strong style="color: var(--accent-orange);">provide details</strong> and <strong style="color: var(--accent-orange);">explain our points</strong>.
+                    </div>
+                    <button type="button" class="audio-btn" onclick="speakText('In the main body, we develop our ideas, provide details and explain our points.'); playSound('click');" title="Listen" style="margin-top: 2px;">🔊</button>
+                </div>
+                <div class="card" dir="ltr" style="display: flex; align-items: flex-start; gap: 14px; padding: 14px 18px; margin: 0; direction: ltr; text-align: left; unicode-bidi: isolate; background: rgba(13, 21, 39, 0.85); border: 1px solid rgba(0, 243, 255, 0.2);">
+                    <span style="background: rgba(0, 243, 255, 0.15); color: var(--accent-primary); border: 1px solid var(--accent-primary); font-weight: 800; font-size: 0.95rem; min-width: 32px; height: 32px; border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;">12</span>
+                    <div style="flex: 1; direction: ltr; text-align: left; unicode-bidi: isolate; font-size: 1.02rem; line-height: 1.7; color: #f8fafc;">
+                        We can use <strong style="color: var(--accent-secondary);">subheadings</strong> to divide the blog post into sections and make it easier to read.
+                    </div>
+                    <button type="button" class="audio-btn" onclick="speakText('We can use subheadings to divide the blog post into sections and make it easier to read.'); playSound('click');" title="Listen" style="margin-top: 2px;">🔊</button>
+                </div>
+                <div class="card" dir="ltr" style="display: flex; align-items: flex-start; gap: 14px; padding: 14px 18px; margin: 0; direction: ltr; text-align: left; unicode-bidi: isolate; background: rgba(13, 21, 39, 0.85); border: 1px solid rgba(0, 243, 255, 0.2);">
+                    <span style="background: rgba(0, 243, 255, 0.15); color: var(--accent-primary); border: 1px solid var(--accent-primary); font-weight: 800; font-size: 0.95rem; min-width: 32px; height: 32px; border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;">13</span>
+                    <div style="flex: 1; direction: ltr; text-align: left; unicode-bidi: isolate; font-size: 1.02rem; line-height: 1.7; color: #f8fafc;">
+                        We should use <strong style="color: var(--accent-primary);">simple, clear language</strong>, short paragraphs and a friendly, personal tone.
+                    </div>
+                    <button type="button" class="audio-btn" onclick="speakText('We should use simple, clear language, short paragraphs and a friendly, personal tone.'); playSound('click');" title="Listen" style="margin-top: 2px;">🔊</button>
+                </div>
+                <div class="card" dir="ltr" style="display: flex; align-items: flex-start; gap: 14px; padding: 14px 18px; margin: 0; direction: ltr; text-align: left; unicode-bidi: isolate; background: rgba(13, 21, 39, 0.85); border: 1px solid rgba(0, 243, 255, 0.2);">
+                    <span style="background: rgba(0, 243, 255, 0.15); color: var(--accent-primary); border: 1px solid var(--accent-primary); font-weight: 800; font-size: 0.95rem; min-width: 32px; height: 32px; border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;">14</span>
+                    <div style="flex: 1; direction: ltr; text-align: left; unicode-bidi: isolate; font-size: 1.02rem; line-height: 1.7; color: #f8fafc;">
+                        In a personal or narrative blog post, we usually use <strong style="color: var(--accent-green);">the first person</strong>, such as “I” and “we”.
+                    </div>
+                    <button type="button" class="audio-btn" onclick="speakText('In a personal or narrative blog post, we usually use the first person, such as I and we.'); playSound('click');" title="Listen" style="margin-top: 2px;">🔊</button>
+                </div>
+                <div class="card" dir="ltr" style="display: flex; align-items: flex-start; gap: 14px; padding: 14px 18px; margin: 0; direction: ltr; text-align: left; unicode-bidi: isolate; background: rgba(13, 21, 39, 0.85); border: 1px solid rgba(0, 243, 255, 0.2);">
+                    <span style="background: rgba(0, 243, 255, 0.15); color: var(--accent-primary); border: 1px solid var(--accent-primary); font-weight: 800; font-size: 0.95rem; min-width: 32px; height: 32px; border-radius: 8px; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;">15</span>
+                    <div style="flex: 1; direction: ltr; text-align: left; unicode-bidi: isolate; font-size: 1.02rem; line-height: 1.7; color: #f8fafc;">
+                        In the conclusion, we <strong style="color: var(--accent-secondary);">summarize the main points</strong>, give a final thought and may end with a <strong style="color: var(--accent-orange);">call to action (CTA)</strong>. We also use transition words such as first, next, however and finally to connect ideas smoothly.
+                    </div>
+                    <button type="button" class="audio-btn" onclick="speakText('In the conclusion, we summarize the main points, give a final thought and may end with a call to action.'); playSound('click');" title="Listen" style="margin-top: 2px;">🔊</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- TAB 5: INTERACTIVE STORYBOOK -->
+        <!-- ========================================== -->
+        <div id="storybook" class="tab-content" style="display: none;">
+            <div class="section-title">📚 القراءة التفاعلية المصورة (Interactive Storybook - 7 مشاهد كاملة)</div>
+            <div class="lesson-desc-display" style="text-align: right; margin-bottom: 20px;">
+                💡 <strong>Beyond the White Coat &amp; My Blog Post:</strong> استمتع بقراءة نصوص كتاب الطالب المعتمدة (الدرس 4 و 5) عبر محرك الكتاب التفاعلي ثلاثي الأبعاد مع اللوحات التوضيحية البصرية الدقيقة، القارئ الصوتي التلقائي (Auto Storyteller)، الترجمة المعتمدة، وشارات المفردات اللغوية.
+            </div>
+
+            <!-- Reading Decks Switcher Pills -->
+            <div style="display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap;">
+                <button type="button" id="storyTabBtn-0" class="badge badge-active story-select-btn" onclick="selectStoryDeck(0)" style="cursor: pointer; padding: 8px 16px; font-size: 0.95rem;">
+                    📖 النص الأول: ما وراء المعطف الأبيض (Beyond the White Coat - 4 مشاهد)
+                </button>
+                <button type="button" id="storyTabBtn-1" class="badge story-select-btn" onclick="selectStoryDeck(1)" style="cursor: pointer; padding: 8px 16px; font-size: 0.95rem;">
+                    📝 النص الثاني: مدونتي وتجربة نزلة البرد (My Unwelcome Visitor - 3 مشاهد)
+                </button>
+            </div>
+
+            <!-- Interactive 3D Book Container from Teacher Studio Engine -->
+            <div class="storybook-wrapper">
+                <div class="storybook-book">
+                    <!-- Center Book Spine -->
+                    <div class="book-spine-divider"></div>
+
+                    <!-- Right Page: Scene Artwork -->
+                    <div class="story-page-artwork">
+                        <div class="artwork-page-inner">
+                            <div class="page-badge-artwork">
+                                <span id="storyPageBadge">🖼️ Scene 1 of 4</span>
+                            </div>
+                            <div class="artwork-container">
+                                <img id="storyArtworkImg" src="./sec 3 storybook photos/sec3_u1_l45_scene1_ambulance_storm.webp" alt="Scene Artwork" referrerpolicy="no-referrer">
+                            </div>
+                            <div class="artwork-caption" id="storyCaption">
+                                Paramedics rushing car crash victim into hospital during heavy rainstorm
+                            </div>
+                        </div>
+                        <div class="story-page-meta">
+                            <span id="storyDeckMeta">📖 Beyond the White Coat (SB p. 20)</span>
+                            <span id="storyPageCounter">Page 1 / 4</span>
+                        </div>
+                    </div>
+
+                    <!-- Left Page: Story Reading Passage -->
+                    <div class="story-page-content">
+                        <div>
+                            <div class="story-header">
+                                <h3 class="story-page-title" id="storyTitle">Scene 1: Paramedics Rush In &amp; Stormy Arrival</h3>
+                                <button type="button" class="audio-btn" onclick="speakCurrentStoryPage(this)" title="استمع للنطق">🔊</button>
+                            </div>
+                            <div class="story-paragraph" id="storyText">
+                                Last night, paramedics rushed in with a man injured in a car crash. He had broken his leg before arrival, and his face was covered in blood. Nurses quickly took him for X-rays while Dr. Maha prepared to stitch a deep cut on his forehead. “Teamwork saved him,” said the emergency room “ER” director proudly. Outside, it was raining cats and dogs as Dr. Basem ran into the hospital, soaked to the skin.
+                            </div>
+                        </div>
+                        <div>
+                            <div class="story-translation-box" id="storyTranslation">
+                                <span class="translation-tag">💡 الترجمة المعتمدة:</span>
+                                في الليلة الماضية، هرع المسعفون برجل أصيب في حادث سيارة. كان قد كُسرت ساقه قبل وصوله، وكان وجهه مغطى بالدماء. سارعت الممرضات بنقله لإجراء أشعة سينية بينما استعدت الدكتورة مها لخياطة جرح عميق في جبهته. قال مدير غرفة الطوارئ بفخر: "لقد أنقذه العمل الجماعي". وفي الخارج، كانت السماء تمطر بغزارة شديدة عندما ركض الدكتور باسم إلى داخل المستشفى مبتلاً تماماً من رأسه لقدمه.
+                            </div>
+                            <div class="story-vocab-chips" id="storyVocab">
+                                <span class="vocab-chip">paramedics rushed in (هرع المسعفون)</span>
+                                <span class="vocab-chip">car crash (حادث سيارة)</span>
+                                <span class="vocab-chip">stitch (يخيط الجرح)</span>
+                                <span class="vocab-chip">forehead (جبهة / جبين)</span>
+                                <span class="vocab-chip">raining cats and dogs (تمطر بغزارة)</span>
+                                <span class="vocab-chip">soaked to the skin (مبتل تماماً)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Story Controls Bar -->
+                <div class="story-controls-bar">
+                    <button type="button" id="storyPrevBtn" onclick="changeStoryPage(-1)" class="action-btn secondary" disabled>
+                        ⬅️ المشهد السابق
+                    </button>
+                    <button type="button" id="storytellerBtn" onclick="toggleStoryteller()" class="storyteller-btn">
+                        ▶️ القارئ التلقائي (Auto Storyteller)
+                    </button>
+                    <div class="story-page-progress">
+                        <span id="storyPageProgressText">Scene 1 of 4</span>
+                        <div class="progress-dots" id="storyProgressDots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <button type="button" id="storyNextBtn" onclick="changeStoryPage(1)" class="action-btn secondary">
+                        المشهد التالي ➔
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- TAB 6: INTERACTIVE QUIZ -->
+        <!-- ========================================== -->
+        <div id="quiz" class="tab-content" style="display: none;">
+            <div class="section-title">🎯 اختبار الدرس الشامل (Mastery Practice Quiz - Lessons 4 &amp; 5)</div>
+            <p class="section-hint">اختر الإجابة الصحيحة. يمنحك كل سؤال صحيح 10 نقاط فورية مع المؤثرات الصوتية والتعليل التعليمي النموذجي 🌟</p>
+
+            <div class="quiz-container-card">
+                <div id="quiz-header" class="quiz-header-bar">
+                    <div class="score-badge">
+                        <span>النتيجة: </span>
+                        <span id="score-display" class="score-value">0</span>
+                    </div>
+                    <div class="progress-badge">
+                        <span>السؤال: </span>
+                        <span id="current-question-num">1</span> / <span id="total-questions-num">35</span>
+                    </div>
+                </div>
+
+                <div id="question-box" class="quiz-question-box">
+                    <!-- Injected dynamically by Quiz Engine -->
+                </div>
+
+                <div id="options-box" class="quiz-options-grid">
+                    <!-- Options injected dynamically -->
+                </div>
+
+                <div id="feedback-box" class="quiz-feedback-box hidden">
+                    <!-- Feedback injected dynamically -->
+                </div>
+
+                <div class="quiz-actions-bar">
+                    <button id="next-btn" class="action-btn next-btn hidden" onclick="nextQuestion()">السؤال التالي ➔</button>
+                    <button id="retry-btn" class="action-btn secondary hidden" onclick="restartQuiz()">🔄 إعادة المحاولة</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Controls Footer -->
+        <div class="nav-controls" style="margin-top: 35px; text-align: center;">
+            <a href="./index.html" class="back-btn" data-sound-click="click">⬅️ العودة لفهرس الوحدة الأولى (Inside the World of Care)</a>
+        </div>
+    </div>
+
+    <!-- Data Bridge & Engine Integration Scripts -->
+    <script>
+        // ==========================================
+        // 1. Reading Decks for StoryEngine
+        // ==========================================
+        window.readingDecks = [
+            // Deck 1: Beyond the White Coat (SB p. 20)
+            {
+                id: "beyond_the_white_coat",
+                title: "📖 النص الأول: ما وراء المعطف الأبيض (Beyond the White Coat - SB p. 20)",
+                pages: [
+                    {
+                        title: "Scene 1: Paramedics Rush In & Stormy Arrival",
+                        imageUrl: "./sec 3 storybook photos/sec3_u1_l45_scene1_ambulance_storm.webp",
+                        caption: "Paramedics rushing car crash victim into hospital during heavy rainstorm",
+                        textEn: "Last night, paramedics rushed in with a man injured in a car crash. He had broken his leg before arrival, and his face was covered in blood. Nurses quickly took him for X-rays while Dr. Maha prepared to stitch a deep cut on his forehead. “Teamwork saved him,” said the emergency room “ER” director proudly. Outside, it was raining cats and dogs as Dr. Basem ran into the hospital, soaked to the skin.",
+                        textAr: "في الليلة الماضية، هرع المسعفون برجل أصيب في حادث سيارة. كان قد كُسرت ساقه قبل وصوله، وكان وجهه مغطى بالدماء. سارعت الممرضات بنقله لإجراء أشعة سينية بينما استعدت الدكتورة مها لخياطة جرح عميق في جبهته. قال مدير غرفة الطوارئ بفخر: \"لقد أنقذه العمل الجماعي\". وفي الخارج، كانت السماء تمطر بغزارة شديدة عندما ركض الدكتور باسم إلى داخل المستشفى مبتلاً تماماً من رأسه لقدمه.",
+                        vocabNotes: "rushed in (هرع مسرعاً) • car crash (حادث سيارة) • stitch (يخيط الجرح) • forehead (جبين) • raining cats and dogs (تمطر بغزارة) • soaked to the skin (مبتل تماماً)"
+                    },
+                    {
+                        title: "Scene 2: Inside the ER Chaos & Calm Under Pressure",
+                        imageUrl: "./sec 3 storybook photos/sec3_u1_l45_scene2_er_chaos.webp",
+                        caption: "Bustling emergency room with beeping monitors and calm Nurse Noura directing sterile equipment",
+                        textEn: "Inside, the emergency room was in full chaos — patients groaning, nurses hurrying, and machines beeping non-stop. In one corner, a teenager with a broken arm moaned quietly. A construction worker, pale as a ghost, clutched his bleeding hand, trying not to cry out. Nurse Noura, calm under pressure, gave clear and confident instructions. “Prepare the sterile equipment and state its condition before use”, she ordered.",
+                        textAr: "في الداخل، كانت غرفة الطوارئ في حالة فوضى تامة — المرضى يتأوهون، والممرضات يهرعن، والآلات تصدر صفير تنبيه دون توقف. وفي إحدى الزوايا، كان مراهق ذو ذراع مكسورة يئن في هدوء. بينما عامل بناء، شاحب كالطيف من شدة الألم، أمسك بقوة بيده النازفة محاولاً ألا يصرخ. وقامت الممرضة نورا، الهادئة تحت الضغط، بإعطاء تعليمات واضحة وواثقة: \"جهزوا المعدات المعقمة واذكروا حالتها قبل الاستخدام\".",
+                        vocabNotes: "chaos (فوضى) • groaning (يتأوه) • moaned (أنّ) • pale as a ghost (شاحب كالشبح) • clutched (أمسك بقوة) • sterile equipment (معدات معقمة) • under pressure (تحت الضغط)"
+                    },
+                    {
+                        title: "Scene 3: Swallowed Coin & Flexible Scope Rescue",
+                        imageUrl: "./sec 3 storybook photos/sec3_u1_l45_scene3_pediatric_scope.webp",
+                        caption: "Pediatric emergency care: Doctor treating and comforting the toddler with mother present",
+                        textEn: "Suddenly, the ER doors flew open. A panicked mother rushed in, holding her toddler. “He’s not responding!”, she shouted. The child had swallowed a coin. Without hesitation, the team jumped into action. Using a flexible scope, they carefully removed the coin. Moments later, the child opened his eyes. The mother wept with relief and gratitude. Around her, staff members smiled — some hiding their own tears.",
+                        textAr: "وفجأة، فُتحت أبواب غرفة الطوارئ على مصراعيها. دخلت أم مذعورة مسرعة وهي تحمل طفلها الصغير وصرخت: \"إنه لا يستجيب!\". كان الطفل قد ابتلع عملة معدنية. وبدون أدنى تردد، انطلق الفريق في العمل بسرعة؛ وباستخدام منظار طبي مرن، استخرجوا العملة بحذر وعناية. بعد لحظات، فتح الطفل عينيه، وبكت الأم من الفرح والارتياح والعرفان بالجميل، وابتسم أفراد الطاقم حولها وأخفى بعضهم دموعه.",
+                        vocabNotes: "panicked (مذعور) • swallowed a coin (ابتلع عملة) • without hesitation (دون تردد) • flexible scope (منظار مرن) • relief & gratitude (ارتياح وعرفان) • tears (دموع)"
+                    },
+                    {
+                        title: "Scene 4: Sunrise Dawn & Life-Saving Teamwork",
+                        imageUrl: "./sec 3 storybook photos/sec3_u1_l45_scene4_dawn_relief.webp",
+                        caption: "Sunrise glowing through hospital windows as exhausted doctors review medical charts",
+                        textEn: "As the sun began to rise, calm slowly returned. Dr. Basem sat down, exhausted. Around him, the team cleaned up and checked medical charts. Another night filled with fear, urgency, and life-saving teamwork had come to an end.",
+                        textAr: "ومع بدء شروق الشمس، عاد الهدوء ببطء. جلس الدكتور باسم منهكاً من التعب. ومن حوله، قام الفريق بالتنظيف ومراجعة السجلات والملفات الطبية. لقد انتهت ليلة أخرى كانت مفعمة بالخوف، الضرورة الملحة، والعمل الجماعي المنقذ للحياة.",
+                        vocabNotes: "exhausted (منهك) • medical charts (سجلات طبية) • urgency (ضرورة ملحة / طارئة) • life-saving teamwork (عمل جماعي منقذ للحياة) • come to an end (ينتهي)"
+                    }
+                ]
+            },
+
+            // Deck 2: My Blog Post (SB p. 23)
+            {
+                id: "my_blog_post",
+                title: "📝 النص الثاني: مدونتي وتجربة نزلة البرد (My Unwelcome Visitor - SB p. 23)",
+                pages: [
+                    {
+                        title: "Scene 1: An Unwelcome Visitor — Catching a Cold",
+                        imageUrl: "./sec 3 storybook photos/sec3_u1_l45_scene5_cold_recovery.webp",
+                        caption: "Patient resting at home suffering from severe cold symptoms and fatigue",
+                        textEn: "Hello everyone! I want to share something that happened to me recently. About two weeks ago, I started to feel a little tired. I also had a small cough. I didn’t think it was very serious at first. But then, the symptoms got much worse. My throat was very sore, and my nose was running all the time. I also had a bad headache and felt very tired. It was difficult to sleep at night because of the cough. I felt really miserable and uncomfortable. After a few days, I decided I needed to see a doctor.",
+                        textAr: "مرحباً بالجميع! أود أن أشارككم أمراً حدث لي مؤخراً. منذ حوالي أسبوعين، بدأت أشعر ببعض التعب، وكان لدي سعال خفيف. لم أكن أعتقد أن الأمر خطير في البداية. لكن بعد ذلك، ازدادت الأعراض سوءاً بكثير؛ صار حلقي ملتهباً للغاية، وكان أنفي يسيل طوال الوقت، كما أصبت بصداع شديد وشعرت بإرهاق بالغ. كان من الصعب النوم ليلاً بسبب السعال. شعرت بالبؤس الشديد وعدم الراحة، وبعد بضعة أيام، قررت أنني بحاجة لرؤية الطبيب.",
+                        vocabNotes: "unwelcome visitor (زائر غير مرغوب) • cough (سعال) • symptoms (أعراض) • sore throat (حلق ملتهب) • miserable (بائس - تعيس) • appointment (موعد)"
+                    },
+                    {
+                        title: "Scene 2: Clinic Visit, Stethoscope & Medical Advice",
+                        imageUrl: "./sec 3 storybook photos/sec3_u1_l45_scene6_clinic_doctor.webp",
+                        caption: "Doctor examining chest with stethoscope and issuing prescription for recovery",
+                        textEn: "So, I called my clinic and made an appointment. When I arrived, the waiting room was full of other people who also looked sick. After a short wait, the doctor called my name. He asked me many questions about my symptoms and how long I had felt bad. Then, he checked my throat, listened to my chest with a stethoscope, and took my temperature. He said I had a severe viral cold. The doctor gave me a prescription for some medicine to help with the symptoms. He also told me to rest a lot and drink many warm liquids like tea. I went home, took the medicine, and tried to sleep as much as possible. Slowly, after about three or four days, I started to feel much better.",
+                        textAr: "لذا، اتصلت بعيادتي وحجزت موعداً. وعندما وصلت، كانت غرفة الانتظار ممتلئة بأشخاص آخرين بدت عليهم علامات المرض أيضاً. بعد انتظار قصير، نادى الطبيب اسمي؛ وسألني أسئلة كثيرة عن أعراضي وكم من الوقت شعرت بالسوء. ثم فحص حلقي، واستمع إلى صدري بالسماعة الطبية، وقاس درجة حرارتي. وقال إنني مصاب بنزلة برد فيروسية حادة. أعطاني الطبيب وصفة طبية لبعض الأدوية، ونصحني بالراحة التامة وشرب الكثير من السوائل الدافئة كالشاي. ذهبت للمنزل، وتناولت الدواء، ونمت قدر الإمكان. وتدريجياً، بعد 3 أو 4 أيام، بدأت أشعر بتحسن كبير.",
+                        vocabNotes: "appointment (موعد) • stethoscope (سماعة الطبيب) • temperature (درجة الحرارة) • viral cold (نزلة برد فيروسية) • prescription (روشتة دواء) • warm liquids (سوائل دافئة)"
+                    },
+                    {
+                        title: "Scene 3: Health Restored & Interactive Call to Action",
+                        imageUrl: "./sec 3 storybook photos/sec3_u1_l45_scene7_recovered_blogger.webp",
+                        caption: "Healthy blogger happy and recovered, writing reflections on laptop",
+                        textEn: "Now, I am healthy again, and I feel very happy about it! This experience reminded me how important our health is. It’s also good to know that doctors are there to help us when we need them. Have you ever had a very bad cold? How do you usually recover? Let me know in the comments!",
+                        textAr: "والآن، أصبحت بصحة جيدة مرة أخرى، وأشعر بسعادة غامرة حيال ذلك! لقد ذكرتني هذه التجربة بمدى أهمية صحتنا. كما أنه من الرائع معرفة أن الأطباء متواجدون دائماً لمساعدتنا عند الحاجة. هل أصبت من قبل بنزلة برد شديدة؟ وكيف تتعافى منها عادةً؟ شاركوني تجاربكم في التعليقات!",
+                        vocabNotes: "healthy again (معافى وبصحة) • reminded me (ذكرني) • recover (يتعافى) • call to action (دعوة للمشاركة بالتعليقات)"
+                    }
+                ]
+            }
+        ];
+
+        // Active Storybook Controller
+        window.activeDeckIndex = 0;
+        window.currentStoryPageIndex = 0;
+
+        window.selectStoryDeck = function(deckIdx) {
+            window.activeDeckIndex = deckIdx;
+            window.currentStoryPageIndex = 0;
+            const deck = window.readingDecks[deckIdx];
+            if (!deck) return;
+
+            // Update Deck switcher button badges
+            for (let i = 0; i < window.readingDecks.length; i++) {
+                const btn = document.getElementById('storyTabBtn-' + i);
+                if (btn) {
+                    if (i === deckIdx) {
+                        btn.className = 'badge badge-active story-select-btn';
+                        btn.style.opacity = '1';
+                    } else {
+                        btn.className = 'badge badge-gold story-select-btn';
+                        btn.style.opacity = '0.7';
+                    }
+                }
+            }
+
+            const meta = document.getElementById('storyDeckMeta');
+            if (meta) meta.textContent = deck.title;
+
+            if (window.storyEngine) {
+                window.storyEngine.loadPages(deck.pages);
+            } else {
+                renderStoryPageUI();
+            }
+            if (typeof window.playSound === 'function') window.playSound('click');
+        };
+
+        function renderStoryPageUI() {
+            const deck = window.readingDecks[window.activeDeckIndex];
+            if (!deck || !deck.pages) return;
+            const page = deck.pages[window.currentStoryPageIndex];
+            if (!page) return;
+
+            const badge = document.getElementById('storyPageBadge');
+            const img = document.getElementById('storyArtworkImg');
+            const caption = document.getElementById('storyCaption');
+            const meta = document.getElementById('storyDeckMeta');
+            const counter = document.getElementById('storyPageCounter');
+            const title = document.getElementById('storyTitle');
+            const text = document.getElementById('storyText');
+            const trans = document.getElementById('storyTranslation');
+            const vocab = document.getElementById('storyVocab');
+            const prevBtn = document.getElementById('storyPrevBtn');
+            const nextBtn = document.getElementById('storyNextBtn');
+            const progressText = document.getElementById('storyPageProgressText');
+            const dotsContainer = document.getElementById('storyProgressDots');
+
+            if (badge) badge.textContent = `🖼️ Scene ${window.currentStoryPageIndex + 1} of ${deck.pages.length}`;
+            if (img) {
+                img.src = page.imageUrl;
+                img.classList.remove('hidden');
+            }
+            if (caption) caption.textContent = page.caption;
+            if (meta) meta.textContent = deck.title;
+            if (counter) counter.textContent = `Page ${window.currentStoryPageIndex + 1} / ${deck.pages.length}`;
+            if (title) title.textContent = page.title;
+            if (text) text.innerHTML = page.textEn;
+            if (trans) trans.innerHTML = `<span class="translation-tag">💡 الترجمة المعتمدة:</span> ${page.textAr}`;
+            
+            if (vocab) {
+                const notes = page.vocabNotes.split('•');
+                vocab.innerHTML = notes.map(n => `<span class="vocab-chip">${n.trim()}</span>`).join(' ');
+            }
+
+            if (prevBtn) prevBtn.disabled = (window.currentStoryPageIndex === 0);
+            if (nextBtn) nextBtn.disabled = (window.currentStoryPageIndex === deck.pages.length - 1);
+            if (progressText) progressText.textContent = `Scene ${window.currentStoryPageIndex + 1} of ${deck.pages.length}`;
+
+            if (dotsContainer) {
+                dotsContainer.innerHTML = '';
+                for (let i = 0; i < deck.pages.length; i++) {
+                    const dot = document.createElement('span');
+                    dot.className = 'dot' + (i === window.currentStoryPageIndex ? ' active' : '');
+                    dotsContainer.appendChild(dot);
+                }
+            }
+        }
+
+        window.changeStoryPage = function(delta) {
+            const deck = window.readingDecks[window.activeDeckIndex];
+            if (!deck) return;
+            const newIdx = window.currentStoryPageIndex + delta;
+            if (newIdx >= 0 && newIdx < deck.pages.length) {
+                window.currentStoryPageIndex = newIdx;
+                if (window.storyEngine) {
+                    window.storyEngine.changePage(delta);
+                } else {
+                    renderStoryPageUI();
+                }
+                if (typeof window.playSound === 'function') window.playSound('click');
+            }
+        };
+
+        window.speakCurrentStoryPage = function(btn) {
+            const deck = window.readingDecks[window.activeDeckIndex];
+            if (!deck) return;
+            const page = deck.pages[window.currentStoryPageIndex];
+            if (page && typeof window.speakText === 'function') {
+                window.speakText(page.textEn);
+                if (typeof window.playSound === 'function') window.playSound('click');
+            }
+        };
+
+        let isStorytelling = false;
+        let storytellerTimer = null;
+        window.toggleStoryteller = function() {
+            if (window.storyEngine) {
+                window.storyEngine.toggleStoryteller();
+                return;
+            }
+            const btn = document.getElementById('storytellerBtn');
+            const deck = window.readingDecks[window.activeDeckIndex];
+            if (!deck) return;
+
+            if (isStorytelling) {
+                isStorytelling = false;
+                clearTimeout(storytellerTimer);
+                if (window.speechSynthesis) window.speechSynthesis.cancel();
+                if (btn) {
+                    btn.classList.remove('active');
+                    btn.textContent = '▶️ القارئ التلقائي (Auto Storyteller)';
+                }
+            } else {
+                isStorytelling = true;
+                if (btn) {
+                    btn.classList.add('active');
+                    btn.textContent = '⏹️ إيقاف القارئ التلقائي';
+                }
+                playStorytellerStep();
+            }
+        };
+
+        function playStorytellerStep() {
+            if (!isStorytelling) return;
+            const deck = window.readingDecks[window.activeDeckIndex];
+            if (!deck) return;
+            const page = deck.pages[window.currentStoryPageIndex];
+            if (!page) return;
+
+            if ('speechSynthesis' in window) {
+                window.speechSynthesis.cancel();
+                const utter = new SpeechSynthesisUtterance(page.textEn);
+                utter.lang = 'en-US';
+                utter.rate = 0.9;
+                utter.onend = () => {
+                    if (!isStorytelling) return;
+                    if (window.currentStoryPageIndex < deck.pages.length - 1) {
+                        storytellerTimer = setTimeout(() => {
+                            window.changeStoryPage(1);
+                            playStorytellerStep();
+                        }, 2000);
+                    } else {
+                        window.toggleStoryteller();
+                    }
+                };
+                utter.onerror = () => {
+                    if (isStorytelling) window.toggleStoryteller();
+                };
+                window.speechSynthesis.speak(utter);
+            }
+        }
+
+        // ==========================================
+        // 2. Linked Expression Gallery Controller (6 Items)
+        // ==========================================
+        const expressionsData = [
+            {
+                id: 1,
+                en: "pale as a ghost",
+                ar: "شديد الشحوب / باهت (من الخوف أو المرض)",
+                img: "../../assets/images/pale_as_a_ghost.webp",
+                explain: "شحوب الوجه الشديد والمفاجئ نتيجة الخوف الشديد، الصدمة العصبية، أو النزيف والألم.",
+                exampleEn: "A construction worker, <strong style='color: var(--accent-primary);'>pale as a ghost</strong>, clutched his bleeding hand, trying not to cry out.",
+                exampleAr: "عامل بناء، شاحب كالشبح، أمسك بيده النازفة محاولاً ألا يصرخ من الألم."
+            },
+            {
+                id: 2,
+                en: "rain cats and dogs",
+                ar: "تمطر بغزارة شديدة",
+                img: "../../assets/images/rain_cats_and_dogs.webp",
+                explain: "تعبير مجازي شهير يصف هطول الأمطار بغزارة طوفانية شديدة.",
+                exampleEn: "Outside, it was <strong style='color: var(--accent-primary);'>raining cats and dogs</strong> as Dr. Basem ran into the hospital.",
+                exampleAr: "في الخارج، كانت السماء تمطر بغزارة شديدة عندما ركض الدكتور باسم للمستشفى."
+            },
+            {
+                id: 3,
+                en: "soaked to the skin",
+                ar: "مبتل تماماً حتى النخاع / غارق في المطر",
+                img: "../../assets/images/soaked_to_the_skin.webp",
+                explain: "تعبير اصطلاحي يصف الشخص عندما يبتل بالكامل من رأسه لقدمه بماء المطر الغزير.",
+                exampleEn: "Dr. Basem ran into the emergency room, <strong style='color: var(--accent-primary);'>soaked to the skin</strong>, ready to treat patients.",
+                exampleAr: "ركض الدكتور باسم إلى غرفة الطوارئ وهو مبتل تماماً بالماء، ومستعد لعلاج المرضى."
+            },
+            {
+                id: 4,
+                en: "under pressure",
+                ar: "تحت وطأة الضغط الشديد",
+                img: "../../assets/images/under_pressure.webp",
+                explain: "الحفاظ على الهدوء والتركيز المهني أثناء مواجهة المواقف الطارئة والمهام الصعبة.",
+                exampleEn: "Nurse Noura, calm <strong style='color: var(--accent-primary);'>under pressure</strong>, gave clear and confident instructions.",
+                exampleAr: "الممرضة نورا، الهادئة تحت الضغط، أعطت تعليمات واضحة وواثقة للجميع."
+            },
+            {
+                id: 5,
+                en: "without hesitation",
+                ar: "دون تردد / على الفور وبحسم",
+                img: "../../assets/images/without_hesitation.webp",
+                explain: "اتخاذ القرار وتنفيذه فوراً وبحزم في اللحظات الحرجة لإنقاذ حياة المريض دون أي تأخير.",
+                exampleEn: "The child had swallowed a coin. <strong style='color: var(--accent-primary);'>Without hesitation</strong>, the team jumped into action.",
+                exampleAr: "كان الطفل قد ابتلع عملة معدنية؛ وبدون تردد، انطلق الفريق للعمل فوراً."
+            },
+            {
+                id: 6,
+                en: "come to an end",
+                ar: "يصل لنهايته / ينتهي",
+                img: "../../assets/images/come_to_an_end.webp",
+                explain: "انتهاء فترة صعبة أو شاقة وبداية مرحلة الهدوء والراحة (مثل انتهاء ليلة الطوارئ الحافلة).",
+                exampleEn: "Another demanding night filled with urgency and life-saving teamwork had <strong style='color: var(--accent-primary);'>come to an end</strong>.",
+                exampleAr: "لقد وصلت ليلة شاقة أخرى مفعمة بالضرورة الملحة والعمل الجماعي المنقذ للحياة إلى نهايتها."
+            }
+        ];
+
+        window.expressionsData = expressionsData;
+
+        // ==========================================
+        // 3. Comprehensive Mastery Quiz Data (35 Questions)
+        // ==========================================
+        const quizData = [
+            {
+                emoji: "🩺",
+                question: "1. What does the verb 'clutch' mean?",
+                options: [
+                    { text: "To hold something tightly and suddenly", isCorrect: true },
+                    { text: "To release gently", isCorrect: false },
+                    { text: "To sew a wound", isCorrect: false },
+                    { text: "To examine through a lens", isCorrect: false }
+                ],
+                correctMsg: "إجابة صحيحة وممتازة! clutch = يمسك بقوة أو يقبض بإحكام خوفاً أو ألماً (+10)",
+                wrongMsg: "ركز! الفعل clutch يعني الإمساك بقوة وبإحكام."
+            },
+            {
+                emoji: "👤",
+                question: "2. The part of your face above your eyes and below your hair is called your ________.",
+                options: [
+                    { text: "forehead", isCorrect: true },
+                    { text: "chest", isCorrect: false },
+                    { text: "throat", isCorrect: false },
+                    { text: "stomach", isCorrect: false }
+                ],
+                correctMsg: "ممتاز! forehead = الجبهة أو الجبين (+10)",
+                wrongMsg: "ركز! الجزء فوق العينين وتحت الشعر هو الجبهة (forehead)."
+            },
+            {
+                emoji: "👻",
+                question: "3. The construction worker was 'pale as a ghost'. What does this idiom mean?",
+                options: [
+                    { text: "Extremely pale due to shock, pain or fear", isCorrect: true },
+                    { text: "Extremely angry and furious", isCorrect: false },
+                    { text: "Very happy and joyful", isCorrect: false },
+                    { text: "Wearing clean white clothes", isCorrect: false }
+                ],
+                correctMsg: "رائع! pale as a ghost = شديد الشحوب من الصدمة أو الألم أو الخوف (+10)",
+                wrongMsg: "ركز! pale as a ghost تعني شاحب كالشبح من شدة الألم أو الخوف."
+            },
+            {
+                emoji: "🌧️",
+                question: "4. Outside, it was 'raining cats and dogs'. This means it was ________.",
+                options: [
+                    { text: "raining heavily", isCorrect: true },
+                    { text: "raining very lightly", isCorrect: false },
+                    { text: "snowing quietly", isCorrect: false },
+                    { text: "very sunny and hot", isCorrect: false }
+                ],
+                correctMsg: "بطل! raining cats and dogs = تمطر بغزارة طوفانية شديدة (+10)",
+                wrongMsg: "ركز! مصطلح raining cats and dogs يعني هطول أمطار غزيرة جداً."
+            },
+            {
+                emoji: "👕",
+                question: "5. Dr. Basem arrived at the hospital 'soaked to the skin'. This means he was ________.",
+                options: [
+                    { text: "completely wet from head to toe", isCorrect: true },
+                    { text: "completely dry and warm", isCorrect: false },
+                    { text: "wearing a heavy raincoat", isCorrect: false },
+                    { text: "injured in his skin", isCorrect: false }
+                ],
+                correctMsg: "ممتاز! soaked to the skin = مبتل تماماً حتى النخاع ومن رأسه لقدمه (+10)",
+                wrongMsg: "ركز! soaked to the skin تعني مبتل بالكامل بالماء."
+            },
+            {
+                emoji: "🔬",
+                question: "6. A medical instrument used by doctors to look inside part of the body is a ________.",
+                options: [
+                    { text: "scope", isCorrect: true },
+                    { text: "scalpel", isCorrect: false },
+                    { text: "stethoscope", isCorrect: false },
+                    { text: "thermometer", isCorrect: false }
+                ],
+                correctMsg: "أحسنت! scope = منظار طبي لفحص أو استخراج ما بداخل الجسم (+10)",
+                wrongMsg: "ركز! الأداة الطبية للرؤية بداخل الجسم هي المنظار (scope)."
+            },
+            {
+                emoji: "🧵",
+                question: "7. To sew the edges of a wound together with a needle and thread is to ________ it.",
+                options: [
+                    { text: "stitch", isCorrect: true },
+                    { text: "swallow", isCorrect: false },
+                    { text: "groan", isCorrect: false },
+                    { text: "moan", isCorrect: false }
+                ],
+                correctMsg: "رائع! stitch = يخيط أو يغرز حواف الجرح (+10)",
+                wrongMsg: "ركز! خياطة الجرح بالإبرة والخيط الطبي هي stitch."
+            },
+            {
+                emoji: "🪙",
+                question: "8. The toddler ________ a coin, so the emergency team had to jump into action immediately.",
+                options: [
+                    { text: "swallowed", isCorrect: true },
+                    { text: "stitched", isCorrect: false },
+                    { text: "clutched", isCorrect: false },
+                    { text: "groaned", isCorrect: false }
+                ],
+                correctMsg: "بطل! swallowed = ابتلع عملة معدنية (+10)",
+                wrongMsg: "ركز! الطفل ابتلع (swallowed) العملة المعدنية."
+            },
+            {
+                emoji: "🚨",
+                question: "9. The trauma room required fast action because of the extreme ________ of the situation.",
+                options: [
+                    { text: "urgency", isCorrect: true },
+                    { text: "indifference", isCorrect: false },
+                    { text: "delay", isCorrect: false },
+                    { text: "calm", isCorrect: false }
+                ],
+                correctMsg: "ممتاز! urgency = ضرورة ملحة وأهمية طارئة تقتضي سرعة التصرف (+10)",
+                wrongMsg: "ركز! urgency تعني الضرورة الملحة."
+            },
+            {
+                emoji: "🔄",
+                question: "10. What is the synonym of 'clutch'?",
+                options: [
+                    { text: "grasp / seize", isCorrect: true },
+                    { text: "drop", isCorrect: false },
+                    { text: "release", isCorrect: false },
+                    { text: "ignore", isCorrect: false }
+                ],
+                correctMsg: "أحسنت! مرادفات clutch هي grasp و grip و seize (+10)",
+                wrongMsg: "ركز! مرادف clutch هو grasp أو seize."
+            },
+            {
+                emoji: "😄",
+                question: "11. What is the antonym of 'groan' and 'moan'?",
+                options: [
+                    { text: "cheer / rejoice", isCorrect: true },
+                    { text: "sigh", isCorrect: false },
+                    { text: "grumble", isCorrect: false },
+                    { text: "weep", isCorrect: false }
+                ],
+                correctMsg: "رائع! عكس التأوه والأنين هو الهتاف والابتهاج (cheer / rejoice) (+10)",
+                wrongMsg: "ركز! مضاد groan و moan هو cheer أو rejoice."
+            },
+            {
+                emoji: "⏳",
+                question: "12. What is the antonym of 'urgency'?",
+                options: [
+                    { text: "delay / postponement", isCorrect: true },
+                    { text: "necessity", isCorrect: false },
+                    { text: "immediacy", isCorrect: false },
+                    { text: "importance", isCorrect: false }
+                ],
+                correctMsg: "بطل! عكس الضرورة الملحة هو التأجيل والتباطؤ (delay / postponement) (+10)",
+                wrongMsg: "ركز! مضاد urgency هو delay أو postponement."
+            },
+            {
+                emoji: "🧼",
+                question: "13. Nurse Noura ordered the team to prepare the ________ equipment to prevent infection.",
+                options: [
+                    { text: "sterile", isCorrect: true },
+                    { text: "flexible", isCorrect: false },
+                    { text: "miserable", isCorrect: false },
+                    { text: "catchy", isCorrect: false }
+                ],
+                correctMsg: "ممتاز! sterile equipment = معدات طبية معقمة خالية من الجراثيم (+10)",
+                wrongMsg: "ركز! المعدات المعقمة هي sterile."
+            },
+            {
+                emoji: "🩺",
+                question: "14. The doctor checked my chest with a ________ and took my temperature.",
+                options: [
+                    { text: "stethoscope", isCorrect: true },
+                    { text: "microscope", isCorrect: false },
+                    { text: "telescope", isCorrect: false },
+                    { text: "syringe", isCorrect: false }
+                ],
+                correctMsg: "أحسنت! stethoscope = سماعة الطبيب لسماع نبضات القلب والتنفس (+10)",
+                wrongMsg: "ركز! سماعة الطبيب لفحص الصدر هي stethoscope."
+            },
+            {
+                emoji: "💊",
+                question: "15. The doctor gave the patient a ________ for some medicine to relieve his cough.",
+                options: [
+                    { text: "prescription", isCorrect: true },
+                    { text: "ceremony", isCorrect: false },
+                    { text: "condition", isCorrect: false },
+                    { text: "hesitation", isCorrect: false }
+                ],
+                correctMsg: "رائع! prescription = روشتة أو وصفة علاجية مكتوبة من الطبيب (+10)",
+                wrongMsg: "ركز! الوصفة الطبية للأدوية هي prescription."
+            },
+            {
+                emoji: "🔍",
+                question: "16. The child had swallowed a coin. The team used a ________ scope to remove it safely.",
+                options: [
+                    { text: "flexible", isCorrect: true },
+                    { text: "rigid", isCorrect: false },
+                    { text: "broken", isCorrect: false },
+                    { text: "painful", isCorrect: false }
+                ],
+                correctMsg: "بطل! flexible scope = منظار مرن ينثني بسهولة بداخل الجسم (+10)",
+                wrongMsg: "ركز! المنظار الطبي المرن هو flexible scope."
+            },
+            {
+                emoji: "🙏",
+                question: "17. The mother wept with ________ when she saw her child open his eyes and recover.",
+                options: [
+                    { text: "relief and gratitude", isCorrect: true },
+                    { text: "urgency", isCorrect: false },
+                    { text: "anger", isCorrect: false },
+                    { text: "hesitation", isCorrect: false }
+                ],
+                correctMsg: "ممتاز! relief and gratitude = ارتياح وزوال الخوف مع الامتنان والشكر (+10)",
+                wrongMsg: "ركز! بكت الأم من شدة الارتياح والامتنان (relief and gratitude)."
+            },
+            {
+                emoji: "🩻",
+                question: "18. Choose the correct collocation: 'The doctor advised the patient to ________ X-rays.'",
+                options: [
+                    { text: "take", isCorrect: true },
+                    { text: "make", isCorrect: false },
+                    { text: "do", isCorrect: false },
+                    { text: "give", isCorrect: false }
+                ],
+                correctMsg: "أحسنت! المتلازمة الطبية المعتمدة هي take X-rays (يجري أشعة سينية) (+10)",
+                wrongMsg: "ركز! المتلازمة اللفظية هي take X-rays."
+            },
+            {
+                emoji: "🎯",
+                question: "19. Choose the correct collocation: 'A good headline should ________ the reader’s attention.'",
+                options: [
+                    { text: "catch / grab", isCorrect: true },
+                    { text: "lose", isCorrect: false },
+                    { text: "drop", isCorrect: false },
+                    { text: "waste", isCorrect: false }
+                ],
+                correctMsg: "رائع! المتلازمة المنهجية: catch attention أو grab attention (+10)",
+                wrongMsg: "ركز! جذب الانتباه يأخذ الفعل catch أو grab."
+            },
+            {
+                emoji: "⚡",
+                question: "20. Choose the correct preposition: 'The team jumped into action ________ hesitation.'",
+                options: [
+                    { text: "without", isCorrect: true },
+                    { text: "with", isCorrect: false },
+                    { text: "for", isCorrect: false },
+                    { text: "against", isCorrect: false }
+                ],
+                correctMsg: "بطل! without hesitation = دون تردد أو تأخير (+10)",
+                wrongMsg: "ركز! التعبير هو without hesitation."
+            },
+            {
+                emoji: "⏱️",
+                question: "21. Choose the correct preposition: 'Nurse Noura remained completely calm ________ pressure.'",
+                options: [
+                    { text: "under", isCorrect: true },
+                    { text: "on", isCorrect: false },
+                    { text: "over", isCorrect: false },
+                    { text: "at", isCorrect: false }
+                ],
+                correctMsg: "ممتاز! under pressure = تحت وطأة الضغط الشديد (+10)",
+                wrongMsg: "ركز! حرف الجر المعتمد هو under pressure."
+            },
+            {
+                emoji: "🌅",
+                question: "22. Choose the correct expression: 'Another night filled with urgency had ________ an end.'",
+                options: [
+                    { text: "come to", isCorrect: true },
+                    { text: "brought with", isCorrect: false },
+                    { text: "gone for", isCorrect: false },
+                    { text: "run into", isCorrect: false }
+                ],
+                correctMsg: "أحسنت! come to an end = يصل لنهايته أو ينتهي (+10)",
+                wrongMsg: "ركز! التعبير الصحيح هو come to an end."
+            },
+            {
+                emoji: "✍️",
+                question: "23. What is a 'blog post'?",
+                options: [
+                    { text: "An article or piece of writing published on an online journal or blog", isCorrect: true },
+                    { text: "A formal legal contract signed by lawyers", isCorrect: false },
+                    { text: "A printed textbook dictionary", isCorrect: false },
+                    { text: "A handwritten telegram sent by post", isCorrect: false }
+                ],
+                correctMsg: "رائع! المدونة الإلكترونية هي مقال يُنشر على موقع أو مجلة بالإنترنت (+10)",
+                wrongMsg: "ركز! المدونة (blog post) مقال منشور إلكترونياً."
+            },
+            {
+                emoji: "💬",
+                question: "24. Blog posts are usually written in an ________ style.",
+                options: [
+                    { text: "informal or semi-formal", isCorrect: true },
+                    { text: "ancient classical", isCorrect: false },
+                    { text: "extremely official legal", isCorrect: false },
+                    { text: "scientific chemical", isCorrect: false }
+                ],
+                correctMsg: "بطل! أسلوب كتابة المدونة يكون غير رسمي أو شبه رسمي جذاب (+10)",
+                wrongMsg: "ركز! أسلوب التدوين يكون informal or semi-formal."
+            },
+            {
+                emoji: "🏗️",
+                question: "25. How many main structural parts does a good blog post consist of?",
+                options: [
+                    { text: "Four parts (Title, Intro, Body, Conclusion)", isCorrect: true },
+                    { text: "Two parts only", isCorrect: false },
+                    { text: "Three parts only", isCorrect: false },
+                    { text: "Ten separate parts", isCorrect: false }
+                ],
+                correctMsg: "ممتاز! تتكون المدونة من 4 أجزاء رئيسية: العنوان، المقدمة، المتن، والخاتمة (+10)",
+                wrongMsg: "ركز! الهيكل الرباعي يتكون من 4 أجزاء."
+            },
+            {
+                emoji: "🏷️",
+                question: "26. What is the primary purpose of a 'Catchy Title' (Headline)?",
+                options: [
+                    { text: "To make people want to click and read", isCorrect: true },
+                    { text: "To hide the topic from readers", isCorrect: false },
+                    { text: "To list all grammar rules in the unit", isCorrect: false },
+                    { text: "To provide a long bibliography of sources", isCorrect: false }
+                ],
+                correctMsg: "أحسنت! الهدف من العنوان الجذاب هو تحفيز القارئ للنقر وقراءة المقال (+10)",
+                wrongMsg: "ركز! وظيفة العنوان الجذاب: make people want to click and read."
+            },
+            {
+                emoji: "🎣",
+                question: "27. In a blog post introduction, what is a 'Hook'?",
+                options: [
+                    { text: "An engaging opening (question, quote, anecdote) that grabs attention", isCorrect: true },
+                    { text: "A fishing tool used in sports", isCorrect: false },
+                    { text: "The final concluding sentence of the post", isCorrect: false },
+                    { text: "The list of comments at the bottom", isCorrect: false }
+                ],
+                correctMsg: "رائع! الـ Hook (الخطاف الافتتاحي) جملة أو سؤال جذاب يشد انتباه القارئ (+10)",
+                wrongMsg: "ركز! الـ Hook في المقدمة هو الجملة الافتتاحية الخاطفة للأنظار."
+            },
+            {
+                emoji: "📑",
+                question: "28. Why do bloggers use 'Subheadings' throughout the main body of a post?",
+                options: [
+                    { text: "To divide sections and make it easier and faster to read", isCorrect: true },
+                    { text: "To confuse the reader", isCorrect: false },
+                    { text: "To increase font sizes randomly", isCorrect: false },
+                    { text: "To replace paragraph sentences", isCorrect: false }
+                ],
+                correctMsg: "بطل! العناوين الفرعية تقسّم الموضوع وتجعل القراءة الإلكترونية سهلة وسلسة (+10)",
+                wrongMsg: "ركز! العناوين الفرعية (subheadings) تسهل القراءة السريعة."
+            },
+            {
+                emoji: "📢",
+                question: "29. What is a 'Call to Action' (CTA) in a blog post conclusion?",
+                options: [
+                    { text: "A sentence encouraging the reader to take action (comment or share)", isCorrect: true },
+                    { text: "A phone number to dial the emergency police", isCorrect: false },
+                    { text: "A grammar correction exercise", isCorrect: false },
+                    { text: "The writer's secret password", isCorrect: false }
+                ],
+                correctMsg: "ممتاز! الـ CTA هو دعوة القارئ للمشاركة والتفاعل بالتعليقات (+10)",
+                wrongMsg: "ركز! الـ CTA في الخاتمة يحث القارئ على التفاعل والتعليق."
+            },
+            {
+                emoji: "👤",
+                question: "30. In personal experience or narrative blog posts, which grammatical person is usually used?",
+                options: [
+                    { text: "First person ('I', 'we')", isCorrect: true },
+                    { text: "Third person only (He, She, They)", isCorrect: false },
+                    { text: "Passive voice exclusively", isCorrect: false },
+                    { text: "Imperative commands only", isCorrect: false }
+                ],
+                correctMsg: "أحسنت! مدونات التجارب الشخصية تُكتب بضمائر المتكلم First person ('I', 'we') (+10)",
+                wrongMsg: "ركز! التجربة الشخصية تُكتب بضمير المتكلم (I, we)."
+            },
+            {
+                emoji: "📏",
+                question: "31. How long should paragraphs in a blog post ideally be for smooth online reading?",
+                options: [
+                    { text: "2 to 5 sentences", isCorrect: true },
+                    { text: "10 to 15 sentences", isCorrect: false },
+                    { text: "A whole full page without any breaks", isCorrect: false },
+                    { text: "Only one single word each", isCorrect: false }
+                ],
+                correctMsg: "رائع! فقرات المدونة الإلكترونية تكون قصيرة (من 2 إلى 5 جمل) لسهولة القراءة (+10)",
+                wrongMsg: "ركز! الطول المثالي لفقرة المدونة هو 2 إلى 5 جمل."
+            },
+            {
+                emoji: "🎭",
+                question: "32. The style or attitude conveyed by the writer towards the topic is known as the ________.",
+                options: [
+                    { text: "Tone", isCorrect: true },
+                    { text: "Audience", isCorrect: false },
+                    { text: "Topic", isCorrect: false },
+                    { text: "Transition", isCorrect: false }
+                ],
+                correctMsg: "بطل! الـ Tone هي النبرة أو الأسلوب الذي يعبر به الكاتب عن مشاعره وموقفه (+10)",
+                wrongMsg: "ركز! نبرة الكاتب وأسلوبه تسمى Tone."
+            },
+            {
+                emoji: "🔗",
+                question: "33. Words such as 'first', 'next', 'however', and 'finally' are called ________.",
+                options: [
+                    { text: "Transition words", isCorrect: true },
+                    { text: "Nouns", isCorrect: false },
+                    { text: "Hooks", isCorrect: false },
+                    { text: "Headlines", isCorrect: false }
+                ],
+                correctMsg: "ممتاز! كلمات الربط والانتقال السلس بين الأفكار هي Transition words (+10)",
+                wrongMsg: "ركز! كلمات مثل however و finally هي Transition words."
+            },
+            {
+                emoji: "🤒",
+                question: "34. In the blog post 'My Unwelcome Visitor', what was the visitor?",
+                options: [
+                    { text: "A severe viral cold", isCorrect: true },
+                    { text: "A strange neighbor", isCorrect: false },
+                    { text: "A lost cat", isCorrect: false },
+                    { text: "A noisy tourist", isCorrect: false }
+                ],
+                correctMsg: "أحسنت! أطلق الكاتب مجازاً على نزلة البرد الفيروسية الشديدة اسم 'الزائر غير المرغوب' (+10)",
+                wrongMsg: "ركز! الزائر غير المرغوب فيه كان نزلة البرد (severe viral cold)."
+            },
+            {
+                emoji: "🩺",
+                question: "35. In 'Beyond the White Coat', who said 'Teamwork saved him'?",
+                options: [
+                    { text: "The emergency room (ER) director", isCorrect: true },
+                    { text: "The patient's wife", isCorrect: false },
+                    { text: "The paramedic", isCorrect: false },
+                    { text: "The construction worker", isCorrect: false }
+                ],
+                correctMsg: "رائع! قال مدير غرفة الطوارئ 'ER' director بفخر: Teamwork saved him (+10)",
+                wrongMsg: "ركز! العبارة قالها مدير غرفة الطوارئ (ER director)."
+            }
+        ];
+
+        // ==========================================
+        // 4. Data Bridge & Global Initialization
+        // ==========================================
+        window.lessonData = {
+            id: "sec3_unit1_lesson4_5",
+            title: "Sec 3 - Unit 1: Inside the World of Care (Lessons 4 & 5)",
+            storyPages: window.readingDecks[0].pages,
+            quiz: quizData
+        };
+        window.quizData = window.lessonData;
+
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.selectStoryDeck) {
+                window.selectStoryDeck(0);
+            }
+            if (window.quizEngine && window.lessonData && window.lessonData.quiz) {
+                window.quizEngine.loadQuestions(window.lessonData.quiz);
+            }
+        });
+    </script>
+
+    <!-- Lossless Studio Payload -->
+    <script id="studio-payload" type="application/json">{
+  "archetype": "curriculum_tabs",
+  "stage": "Sec_3",
+  "unit": "unit-1",
+  "fileName": "lesson-4-5.html",
+  "title": "Sec 3 - Unit 1: Inside the World of Care (Lessons 4 & 5)",
+  "description": "Beyond the White Coat & My Blog Post: المفردات الأساسية والتراكمية (33 كلمة)، مصطلحات Key Idioms، التعريفات والمترادفات والمتضادات، المتلازمات وتعبيرات حروف الجر والمشتقات، دليل مهارة كتابة المدونة (Writing a Blog Post) والنماذج المقالية الـ 3 ونقاط الامتحان الـ 15، القراءة التفاعلية المصورة (Storybook - 7 مشاهد)، واختبار شامل مع محرك الكويز 🎯",
+  "keyVocabularyCount": 8,
+  "accumulativeVocabularyCount": 25,
+  "keyIdiomsCount": 3,
+  "definitionsCount": 7,
+  "synonymsCount": 5,
+  "antonymsCount": 3,
+  "collocationsCount": 7,
+  "expressionsCount": 6,
+  "verbPrepositionsCount": 9,
+  "derivativesCount": 4,
+  "blogWritingPointsCount": 15,
+  "storyDecksCount": 2,
+  "storyPagesCount": 7,
+  "quizQuestionsCount": 35
+}
+    </script>
+
+    <!-- Framework & Shared Scripts (Strict Architecture Inheritance) -->
+    <script src="../../assets/js/bidi.js"></script>
+    <script src="../../assets/js/audio.js"></script>
+    <script src="../../assets/js/vocab-mastery.js"></script>
+    <script src="../../assets/js/quiz-engine.js"></script>
+    <script src="../../assets/js/story-engine.js"></script>
+    <script src="../../assets/js/slides-engine.js"></script>
+    <script src="../../assets/js/tabs.js"></script>
+    <script src="../../assets/js/ui.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>

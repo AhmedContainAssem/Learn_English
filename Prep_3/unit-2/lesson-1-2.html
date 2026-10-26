@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prep 3 - Unit 2 - Lessons 1 & 2: Stay connected • Communication, Challenges and Solutions | Mr. Ahmed Assem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/curriculum.css">
+    <link rel="stylesheet" href="../../assets/css/quiz.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb">
+            <a href="../index.html" style="color: var(--accent-primary); text-decoration: none;">Prep_3</a> / 
+            <a href="./index.html" style="color: var(--accent-primary); text-decoration: none;">Unit 2</a> / 
+            <span>Lessons 1 & 2</span>
+        </div>
+
+        <!-- Teacher Profile Header -->
+        <div class="teacher-profile-header">
+            <div class="avatar-wrapper">
+                <img src="../../my-photo-profile.webp" alt="Mr. Ahmed Assem" class="teacher-avatar" onerror="this.onerror=null; this.src='../../my-photo-profile.webp';">
+            </div>
+            <h1 class="teacher-title">Mr. Ahmed Assem</h1>
+            <div class="slogan">✨ Easy Peasy Ya Englezeey ✨</div>
+            <div class="badges-group" style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 10px;">
+                <span class="badge badge-active">Prep 3 • Unit 2</span>
+                <span class="badge badge-gold">📖 SB pages 28 : 31</span>
+            </div>
+            <h2 id="title" class="lesson-header-title">Lessons 1 & 2: Stay connected • Communication, Challenges and Solutions</h2>
+            <p id="description" class="lesson-desc-display">المفردات الأساسية والتكميلية كاملة، تدريب Pop Quiz التفاعلي، تصريف الأفعال غير المنتظمة، التعريفات الهامة، المتلازمات اللفظية، المرادفات والمتضادات، المقاطع البادئة والناهية، واختبار شامل 🎯</p>
+        </div>
+
+        <!-- Tabs Navigation Bar -->
+        <div class="tabs-container">
+            <button class="tab-btn active" onclick="switchTab('vocab', this)">📖 المفردات (Vocabulary)</button>
+            <button class="tab-btn" onclick="switchTab('verbs', this)">⚡ تصريف الأفعال (Verbs)</button>
+            <button class="tab-btn" onclick="switchTab('definitions', this)">📚 التعريفات والمتلازمات</button>
+            <button class="tab-btn" onclick="switchTab('synonyms', this)">⚖️ المرادفات والمتضادات</button>
+            <button class="tab-btn" onclick="switchTab('affixes', this)">🔤 البوادئ واللواحق (Affixes)</button>
+            <button class="tab-btn" onclick="switchTab('quiz', this)">🎯 اختبار الدرس الشامل (Quiz)</button>
+        </div>
+
+        <!-- Tab 1: Key & Lesson Vocabulary + Pop Quiz -->
+        <div id="vocab" class="tab-content active"></div>
+
+        <!-- Tab 2: Irregular Verbs Conjugation -->
+        <div id="verbs" class="tab-content"></div>
+
+        <!-- Tab 3: Definitions & Collocations -->
+        <div id="definitions" class="tab-content"></div>
+
+        <!-- Tab 4: Synonyms and Antonyms -->
+        <div id="synonyms" class="tab-content"></div>
+
+        <!-- Tab 5: Prefixes & Suffixes -->
+        <div id="affixes" class="tab-content"></div>
+
+        <!-- Tab 6: Comprehensive Interactive Quiz -->
+        <div id="quiz" class="tab-content">
+            <div class="score-board">
+                <span>السؤال: <span id="current-q">1</span> / <span id="total-q">64</span></span>
+                <span>النقاط: <span id="score">0</span> 🌟</span>
+            </div>
+
+            <div class="question-card">
+                <span class="emoji-display" id="emoji">🎯</span>
+                <div class="question-text" id="question">جاري تحميل السؤال...</div>
+                <div class="options-grid" id="options"></div>
+                <div class="feedback" id="feedback"></div>
+            </div>
+
+            <div class="center-row">
+                <button class="action-btn next-btn" id="next-btn" onclick="nextQuestion()" style="display: none;">السؤال التالي ➔</button>
+            </div>
+        </div>
+
+        <!-- Navigation Controls -->
+        <div class="nav-controls" style="margin-top: 40px;">
+            <a href="./index.html" class="back-btn" data-sound-click="click">⬅️ العودة لقائمة دروس الوحدة الثانية</a>
+            <a href="../index.html" class="back-btn" data-sound-click="click">🏫 العودة لجميع وحدات Prep 3</a>
+        </div>
+    </div>
+
+    <!-- Universal Framework Scripts -->
+    <script src="../../assets/js/bidi.js"></script>
+    <script src="../../assets/js/audio.js"></script>
+    <script src="../../assets/js/tabs.js"></script>
+    <script src="../../assets/js/quiz-engine.js"></script>
+    <script src="../../assets/js/ui.js"></script>
+    <script src="../../assets/js/practice-hub.js"></script>
+    <script src="../../assets/js/main.js"></script>
+
+    <!-- Pure Decoupled Lesson Data Payload -->
+    <script src="./lesson-1-2.data.js"></script>
+
+    <!-- Universal Curriculum Dynamic Renderer -->
+    <!-- Modular Sub-Renderers & Quiz Normalizer -->
+    <script src="../../assets/js/quiz-normalizer.js"></script>
+    <script src="../../assets/js/renderers/ui-primitives.js"></script>
+    <script src="../../assets/js/renderers/vocab-renderer.js"></script>
+    <script src="../../assets/js/renderers/lexicon-renderer.js"></script>
+    <script src="../../assets/js/renderers/dialogue-player.js"></script>
+    <script src="../../assets/js/renderers/writing-renderer.js"></script>
+    <script src="../../assets/js/curriculum-renderer.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.CurriculumRenderer && typeof window.CurriculumRenderer.init === 'function') {
+                window.CurriculumRenderer.init();
+            }
+        });
+    </script>
+</body>
+</html>

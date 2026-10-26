@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sec 1 - Unit 3 - Lesson 3: Fake Appearance | Mr. Ahmed Assem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css?v=6">
+    <link rel="stylesheet" href="../../assets/css/curriculum.css">
+    <link rel="stylesheet" href="../../assets/css/storybook.css">
+    <link rel="stylesheet" href="../../assets/css/quiz.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb">
+            <a href="../index.html">Sec 1</a> / <a href="./index.html">Unit 3</a> / <span>Lesson 3</span>
+        </div>
+
+        <!-- Teacher Profile Header -->
+        <div class="teacher-profile-header">
+            <div class="avatar-wrapper">
+                <img src="../../my-photo-profile.webp" alt="Mr. Ahmed Assem" class="teacher-avatar" onerror="this.onerror=null; this.src='../../my-photo-profile.webp';">
+            </div>
+            <h1 class="teacher-title">Mr. Ahmed Assem</h1>
+            <div class="slogan">✨ Easy Peasy Ya Englezeey ✨</div>
+            <div class="badges-row">
+                <span class="badge badge-active">Sec 1 • Unit 3</span>
+                <span class="badge badge-gold">🎭 Fake Appearance</span>
+            </div>
+            <h2 id="title" class="lesson-header-title">Lesson 3: Fake Appearance (المظاهر الخادعة)</h2>
+            <p id="description" class="lesson-desc-display">المفردات الأساسية والتراكمية، التعريفات، المترادفات والمتضادات، المتلازمات والمشتقات، الفروق اللغوية، القصة التفاعلية 3D، المحادثة الناطقة، واختبار شامل 30 سؤالاً 🎯 (Zero Grammar)</p>
+        </div>
+
+        <!-- Tabs Navigation Bar (Zero Grammar) -->
+        <div class="tabs-container">
+            <button class="tab-btn active" onclick="switchTab('vocab', this)">📖 المفردات (Vocabulary)</button>
+            <button class="tab-btn" onclick="switchTab('definitions', this)">💡 التعريفات (Definitions)</button>
+            <button class="tab-btn" onclick="switchTab('collocations', this)">🔗 المتلازمات والتعبيرات</button>
+            <button class="tab-btn" onclick="switchTab('synonyms', this)">🔄 المرادفات والمتضادات</button>
+            <button class="tab-btn" onclick="switchTab('language-notes', this)">🧬 المشتقات والفروق (Notes)</button>
+            <button class="tab-btn" onclick="switchTab('storybook', this)">📚 القراءة التفاعلية (StoryBook)</button>
+            <button class="tab-btn" onclick="switchTab('dialogue', this)">💬 المحادثة الناطقة (Dialogue)</button>
+            <button class="tab-btn" onclick="switchTab('quiz', this)">🎯 اختبار الدرس الشامل (Quiz)</button>
+        </div>
+
+        <!-- Dynamic Content Containers (Hydrated by CurriculumRenderer) -->
+        <div id="vocab" class="tab-content active"></div>
+        <div id="definitions" class="tab-content"></div>
+        <div id="collocations" class="tab-content"></div>
+        <div id="synonyms" class="tab-content"></div>
+        <div id="language-notes" class="tab-content"></div>
+
+        <!-- Tab: Interactive StoryBook 3D -->
+        <div id="storybook" class="tab-content">
+            <div class="storybook-wrapper">
+                <div class="storybook-book">
+                    <div class="book-spine-divider"></div>
+                    <div class="story-page-artwork">
+                        <div class="artwork-page-inner">
+                            <div class="page-badge-artwork"><span id="storyPageBadge">🖼️ Scene 1</span></div>
+                            <div class="artwork-container">
+                                <img id="storyArtworkImg" src="../../assets/images/gem_museum.webp" alt="Scene Artwork" onerror="this.classList.add('hidden');" referrerpolicy="no-referrer">
+                            </div>
+                            <div class="artwork-caption" id="storyCaption">The Illusion of Digital Perfection</div>
+                        </div>
+                        <div class="story-page-meta">
+                            <span>📖 Truth Vs. Lies</span>
+                            <span id="storyPageCounter">Page 1</span>
+                        </div>
+                    </div>
+                    <div class="story-page-content">
+                        <div>
+                            <div class="story-header">
+                                <h3 class="story-page-title" id="storyTitle">The Staged Reality</h3>
+                                <button type="button" class="audio-btn" onclick="speakCurrentStoryPage(this)" title="استمع للنطق">🔊</button>
+                            </div>
+                            <div class="story-paragraph" id="storyText">Loading reading passage...</div>
+                        </div>
+                        <div>
+                            <div class="story-translation-box" id="storyTranslation"></div>
+                            <div class="story-vocab-chips" id="storyVocab"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-controls-bar">
+                    <button type="button" id="storyPrevBtn" onclick="changeStoryPage(-1)" class="action-btn secondary">⬅️ الصفحة السابقة</button>
+                    <button type="button" id="storytellerBtn" onclick="toggleStoryteller()" class="storyteller-btn">▶️ القارئ التلقائي (Auto Storyteller)</button>
+                    <button type="button" id="storyNextBtn" onclick="changeStoryPage(1)" class="action-btn secondary">الصفحة التالية ➔</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab: Interactive Speaking Dialogue -->
+        <div id="dialogue" class="tab-content">
+            <div class="dialogue-container">
+                <div class="dialogue-header">
+                    <h2>💬 المحادثة الناطقة (Interactive Dialogue)</h2>
+                    <p class="dialogue-subtitle">حوار توعوي تفاعلي بين سلمى ونور حول تأثير منصات التواصل ومظاهر الحياة المصطنعة وأهمية الصدق مع النفس</p>
+                </div>
+                <div class="dialogue-flow" id="dialogueList"></div>
+            </div>
+        </div>
+
+        <!-- Tab: Comprehensive Quiz (Zero Grammar) -->
+        <div id="quiz" class="tab-content">
+            <div class="quiz-card">
+                <div class="quiz-progress-bar">
+                    <div class="quiz-progress-fill" id="quizProgressFill"></div>
+                </div>
+                <div class="quiz-meta-row">
+                    <span class="quiz-step-badge" id="questionStep">السؤال 1 من 30</span>
+                    <span class="quiz-score-badge" id="quizScoreBadge">الدرجة: 0 / 30</span>
+                </div>
+                <h3 class="quiz-question-title" id="question">جاري تحميل السؤال...</h3>
+                <div class="quiz-options-list" id="options"></div>
+                <div class="quiz-feedback-box" id="feedback"></div>
+                <div class="quiz-actions-row">
+                    <button class="quiz-nav-btn" id="prevBtn" onclick="prevQuestion()" disabled>السابق</button>
+                    <button class="quiz-nav-btn primary" id="nextBtn" onclick="nextQuestion()" disabled>التالي</button>
+                </div>
+                <div class="quiz-results-card" id="quizResultsCard" style="display: none;">
+                    <div class="quiz-score-circle">
+                        <span class="quiz-final-score" id="finalScoreVal">0</span>
+                        <span class="quiz-max-score">/ 30</span>
+                    </div>
+                    <h3 class="quiz-results-title" id="quizFeedbackTitle">أحسنت!</h3>
+                    <p class="quiz-results-desc" id="quizFeedbackDesc">لقد أتممت الاختبار الشامل بنجاح.</p>
+                    <button class="quiz-nav-btn primary" onclick="restartQuiz()">إعادة الاختبار 🔄</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Return Controls -->
+        <div class="nav-controls" style="margin-top: 36px;">
+            <a href="./index.html" class="action-btn secondary" data-sound-click="click">⬅ العودة لقائمة دروس الوحدة الثالثة</a>
+            <a href="../index.html" class="action-btn secondary" data-sound-click="click">🏠 قائمة وحدات الصف الأول الثانوي</a>
+        </div>
+    </div>
+
+    <!-- Framework & Data Scripts -->
+    <script src="../../assets/js/bidi.js"></script>
+    <script src="../../assets/js/audio.js"></script>
+    <script src="../../assets/js/tabs.js"></script>
+    <script src="../../assets/js/quiz-engine.js"></script>
+    <script src="../../assets/js/story-engine.js"></script>
+    <script src="../../assets/js/ui.js?v=6"></script>
+
+    <!-- Modular Curriculum Sub-Renderers -->
+
+    <!-- Pure Decoupled Lesson Data Payload -->
+    <script src="./lesson-3.data.js"></script>
+
+    <!-- Universal Dynamic Curriculum Renderer -->
+    <!-- Modular Sub-Renderers & Quiz Normalizer -->
+    <script src="../../assets/js/quiz-normalizer.js"></script>
+    <script src="../../assets/js/renderers/ui-primitives.js"></script>
+    <script src="../../assets/js/renderers/vocab-renderer.js"></script>
+    <script src="../../assets/js/renderers/lexicon-renderer.js"></script>
+    <script src="../../assets/js/renderers/dialogue-player.js"></script>
+    <script src="../../assets/js/renderers/writing-renderer.js"></script>
+    <script src="../../assets/js/curriculum-renderer.js"></script>
+    <script src="../../assets/js/main.js"></script>
+
+    <script>
+        function changeStoryPage(dir) {
+            if (window.storyEngine && typeof window.storyEngine.changePage === 'function') {
+                window.storyEngine.changePage(dir);
+            }
+        }
+        function toggleStoryteller() {
+            if (window.storyEngine && typeof window.storyEngine.toggleStoryteller === 'function') {
+                window.storyEngine.toggleStoryteller();
+            }
+        }
+        function speakCurrentStoryPage(btn) {
+            if (window.storyEngine && window.storyEngine.storyPages) {
+                const cur = window.storyEngine.storyPages[window.storyEngine.currentPage];
+                const text = cur ? (cur.textEn || cur.text || '') : '';
+                if (text && typeof speakText === 'function') speakText(text, btn);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.CurriculumRenderer && typeof window.CurriculumRenderer.init === 'function') {
+                window.CurriculumRenderer.init();
+            }
+            if (typeof loadQuestion === 'function' && document.getElementById('question')) {
+                loadQuestion();
+            }
+            if (window.storyEngine && window.lessonData && window.lessonData.storyPages) {
+                window.storyEngine.loadPages(window.lessonData.storyPages);
+            }
+        });
+    </script>
+</body>
+</html>

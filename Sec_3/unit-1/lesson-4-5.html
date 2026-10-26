@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sec 3 - Unit 1: Inside the World of Care (Lessons 4 &amp; 5) - Mr. Ahmed Assem</title>
+    <meta name="description" content="Sec 3 Unit 1 Lessons 4 & 5: Beyond the White Coat & My Blog Post. Interactive vocabulary, definitions, idioms, collocations, storybook, writing skills, and quiz.">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/curriculum.css">
+    <link rel="stylesheet" href="../../assets/css/storybook.css">
+    <link rel="stylesheet" href="../../assets/css/grammar-slides.css">
+    <link rel="stylesheet" href="../../assets/css/quiz.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Back -->
+        <div class="page-actions">
+            <a href="./index.html" class="back-btn back-home" data-sound-click="click">⬅ العودة لوحدة Inside the World of Care (Sec 3)</a>
+        </div>
+
+        <!-- Teacher Profile & Header -->
+        <div class="teacher-profile-header">
+            <div class="avatar-wrapper">
+                <img src="../../my-photo-profile.webp" alt="Mr. Ahmed Assem" class="teacher-avatar">
+            </div>
+            <h1 class="teacher-title">Mr. Ahmed Assem</h1>
+            <div class="slogan">✨ Easy Peasy Ya Englezeey ✨</div>
+            <div class="badges-group" style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 10px;">
+                <span class="badge badge-active">Sec 3 (الصف الثالث الثانوي)</span>
+                <span class="badge badge-gold">📖 SB pages 20 : 23 • Unit 1: Inside the World of Care</span>
+                <span class="badge" style="background: rgba(0, 243, 255, 0.15); color: var(--accent-primary); border: 1px solid var(--accent-primary);">Part Three: Lessons 4 &amp; 5</span>
+            </div>
+            <h2 id="title" class="lesson-title-display">Lessons 4 &amp; 5: Beyond the White Coat &amp; My Blog Post</h2>
+            <p id="description" class="lesson-desc-display">المفردات الأساسية (8 كلمات)، المصطلحات والتعبيرات الاصطلاحية (Key Idioms)، المفردات التراكمية (25 كلمة)، التعريفات والمترادفات والمتضادات، المتلازمات وتعبيرات حروف الجر والمشتقات، دليل مهارة كتابة المدونة (Writing a Blog Post) والنماذج المقالية ونقاط الامتحان، القراءة التفاعلية المصورة (Storybook)، واختبار شامل مع محرك الكويز 🎯</p>
+        </div>
+
+        <!-- Signature Cyan Center-Node Divider -->
+        <div class="cyane-divider" aria-hidden="true"></div>
+
+        <!-- Tabs Navigation Bar -->
+        <div class="tabs-container">
+            <button class="tab-btn active" onclick="switchTab('vocab', this)">📖 المفردات (33 كلمة + 3 مصطلحات)</button>
+            <button class="tab-btn" onclick="switchTab('definitions-syn-ant', this)">📚 التعريفات والمترادفات والمتضادات</button>
+            <button class="tab-btn" onclick="switchTab('collocations-study', this)">🔗 المتلازمات والتعبيرات وحروف الجر</button>
+            <button class="tab-btn" onclick="switchTab('writing-skills', this)">✍️ مهارة كتابة المدونة (Writing a Blog Post)</button>
+            <button class="tab-btn" onclick="switchTab('storybook', this)">📚 القراءة التفاعلية (Story Book - 7 مشاهد)</button>
+            <button class="tab-btn" onclick="switchTab('quiz', this)">🎯 اختبار الدرس الشامل (Quiz)</button>
+        </div>
+        <!-- Dynamic Tabs Content (Rendered by curriculum-renderer.js) -->
+        <div id="vocab" class="tab-content active"></div>
+        <div id="definitions-syn-ant" class="tab-content" style="display: none;"></div>
+        <div id="collocations-study" class="tab-content" style="display: none;"></div>
+
+        <!-- Tab 4: Writing Skills (Rendered by WritingRenderer) -->
+        <div id="writing-skills" class="tab-content" style="display: none;"></div>
+
+        <!-- Tab 5: Interactive 3D Storybook -->
+        <div id="storybook" class="tab-content" style="display: none;">
+            <div class="section-title">📚 القراءة التفاعلية المصورة (Interactive Storybook - 7 مشاهد كاملة)</div>
+            <div class="lesson-desc-display" style="text-align: right; margin-bottom: 20px;">
+                💡 <strong>Beyond the White Coat &amp; My Blog Post:</strong> استمتع بقراءة نصوص كتاب الطالب المعتمدة (الدرس 4 و 5) عبر محرك الكتاب التفاعلي ثلاثي الأبعاد مع اللوحات التوضيحية البصرية الدقيقة، القارئ الصوتي التلقائي (Auto Storyteller)، الترجمة المعتمدة، وشارات المفردات اللغوية.
+            </div>
+
+            <!-- Reading Decks Switcher Pills -->
+            <div style="display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap;">
+                <button type="button" id="storyTabBtn-0" class="badge badge-active story-select-btn" onclick="selectStoryDeck(0)" style="cursor: pointer; padding: 8px 16px; font-size: 0.95rem;">
+                    📖 النص الأول: ما وراء المعطف الأبيض (Beyond the White Coat - 4 مشاهد)
+                </button>
+                <button type="button" id="storyTabBtn-1" class="badge story-select-btn" onclick="selectStoryDeck(1)" style="cursor: pointer; padding: 8px 16px; font-size: 0.95rem;">
+                    📝 النص الثاني: مدونتي وتجربة نزلة البرد (My Unwelcome Visitor - 3 مشاهد)
+                </button>
+            </div>
+
+            <!-- Interactive 3D Book Container from Teacher Studio Engine -->
+            <div class="storybook-wrapper">
+                <div class="storybook-book">
+                    <!-- Center Book Spine -->
+                    <div class="book-spine-divider"></div>
+
+                    <!-- Right Page: Scene Artwork -->
+                    <div class="story-page-artwork">
+                        <div class="artwork-page-inner">
+                            <div class="page-badge-artwork">
+                                <span id="storyPageBadge">🖼️ Scene 1 of 4</span>
+                            </div>
+                            <div class="artwork-container">
+                                <img id="storyArtworkImg" src="./sec 3 storybook photos/sec3_u1_l45_scene1_ambulance_storm.webp" alt="Scene Artwork" referrerpolicy="no-referrer">
+                            </div>
+                            <div class="artwork-caption" id="storyCaption">
+                                Paramedics rushing car crash victim into hospital during heavy rainstorm
+                            </div>
+                        </div>
+                        <div class="story-page-meta">
+                            <span id="storyDeckMeta">📖 Beyond the White Coat (SB p. 20)</span>
+                            <span id="storyPageCounter">Page 1 / 4</span>
+                        </div>
+                    </div>
+
+                    <!-- Left Page: Story Reading Passage -->
+                    <div class="story-page-content">
+                        <div>
+                            <div class="story-header">
+                                <h3 class="story-page-title" id="storyTitle">Scene 1: Paramedics Rush In &amp; Stormy Arrival</h3>
+                                <button type="button" class="audio-btn" onclick="speakCurrentStoryPage(this)" title="استمع للنطق">🔊</button>
+                            </div>
+                            <div class="story-paragraph" id="storyText">
+                                Last night, paramedics rushed in with a man injured in a car crash. He had broken his leg before arrival, and his face was covered in blood. Nurses quickly took him for X-rays while Dr. Maha prepared to stitch a deep cut on his forehead. “Teamwork saved him,” said the emergency room “ER” director proudly. Outside, it was raining cats and dogs as Dr. Basem ran into the hospital, soaked to the skin.
+                            </div>
+                        </div>
+                        <div>
+                            <div class="story-translation-box" id="storyTranslation">
+                                <span class="translation-tag">💡 الترجمة المعتمدة:</span>
+                                في الليلة الماضية، هرع المسعفون برجل أصيب في حادث سيارة. كان قد كُسرت ساقه قبل وصوله، وكان وجهه مغطى بالدماء. سارعت الممرضات بنقله لإجراء أشعة سينية بينما استعدت الدكتورة مها لخياطة جرح عميق في جبهته. قال مدير غرفة الطوارئ بفخر: "لقد أنقذه العمل الجماعي". وفي الخارج، كانت السماء تمطر بغزارة شديدة عندما ركض الدكتور باسم إلى داخل المستشفى مبتلاً تماماً من رأسه لقدمه.
+                            </div>
+                            <div class="story-vocab-chips" id="storyVocab">
+                                <span class="vocab-chip">paramedics rushed in (هرع المسعفون)</span>
+                                <span class="vocab-chip">car crash (حادث سيارة)</span>
+                                <span class="vocab-chip">stitch (يخيط الجرح)</span>
+                                <span class="vocab-chip">forehead (جبهة / جبين)</span>
+                                <span class="vocab-chip">raining cats and dogs (تمطر بغزارة)</span>
+                                <span class="vocab-chip">soaked to the skin (مبتل تماماً)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Story Controls Bar -->
+                <div class="story-controls-bar">
+                    <button type="button" id="storyPrevBtn" onclick="changeStoryPage(-1)" class="action-btn secondary" disabled>
+                        ⬅️ المشهد السابق
+                    </button>
+                    <button type="button" id="storytellerBtn" onclick="toggleStoryteller()" class="storyteller-btn">
+                        ▶️ القارئ التلقائي (Auto Storyteller)
+                    </button>
+                    <div class="story-page-progress">
+                        <span id="storyPageProgressText">Scene 1 of 4</span>
+                        <div class="progress-dots" id="storyProgressDots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <button type="button" id="storyNextBtn" onclick="changeStoryPage(1)" class="action-btn secondary">
+                        المشهد التالي ➔
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 6: Interactive Quiz -->
+        <div id="quiz" class="tab-content" style="display: none;">
+            <div class="section-title">🎯 اختبار الدرس الشامل (Mastery Practice Quiz - Lessons 4 &amp; 5)</div>
+            <p class="section-hint">اختر الإجابة الصحيحة. يمنحك كل سؤال صحيح 10 نقاط فورية مع المؤثرات الصوتية والتعليل التعليمي النموذجي 🌟</p>
+
+            <div class="quiz-container-card">
+                <div id="quiz-header" class="quiz-header-bar">
+                    <div class="score-badge">
+                        <span>النتيجة: </span>
+                        <span id="score-display" class="score-value">0</span>
+                    </div>
+                    <div class="progress-badge">
+                        <span>السؤال: </span>
+                        <span id="current-question-num">1</span> / <span id="total-questions-num">35</span>
+                    </div>
+                </div>
+
+                <div id="question-box" class="quiz-question-box">
+                    <!-- Injected dynamically by Quiz Engine -->
+                </div>
+
+                <div id="options-box" class="quiz-options-grid">
+                    <!-- Options injected dynamically -->
+                </div>
+
+                <div id="feedback-box" class="quiz-feedback-box hidden">
+                    <!-- Feedback injected dynamically -->
+                </div>
+
+                <div class="quiz-actions-bar">
+                    <button id="next-btn" class="action-btn next-btn" onclick="nextQuestion()" style="display: none;">السؤال التالي ➔</button>
+                    <button id="retry-btn" class="action-btn secondary" onclick="restartQuiz()" style="display: none;">🔄 إعادة المحاولة</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Controls Footer -->
+        <div class="nav-controls" style="margin-top: 35px; text-align: center;">
+            <a href="./index.html" class="back-btn" data-sound-click="click">⬅️ العودة لفهرس الوحدة الأولى (Inside the World of Care)</a>
+        </div>
+    </div>
+
+    <!-- Data Layer (Decoupled Pure Model) -->
+    <script src="./lesson-4-5.data.js"></script>
+
+    <!-- Architecture & Shared Framework Engines -->
+    <script src="../../assets/js/bidi.js"></script>
+    <script src="../../assets/js/audio.js"></script>
+    <script src="../../assets/js/vocab-mastery.js"></script>
+    <script src="../../assets/js/quiz-engine.js"></script>
+    <script src="../../assets/js/story-engine.js"></script>
+    <script src="../../assets/js/slides-engine.js"></script>
+    <script src="../../assets/js/tabs.js"></script>
+    <script src="../../assets/js/ui.js"></script>
+    <script src="../../assets/js/main.js"></script>
+
+    <!-- Dynamic Curriculum Renderer (Single Responsibility View Hydration) -->
+    <!-- Modular Sub-Renderers & Quiz Normalizer -->
+    <script src="../../assets/js/quiz-normalizer.js"></script>
+    <script src="../../assets/js/renderers/ui-primitives.js"></script>
+    <script src="../../assets/js/renderers/vocab-renderer.js"></script>
+    <script src="../../assets/js/renderers/lexicon-renderer.js"></script>
+    <script src="../../assets/js/renderers/dialogue-player.js"></script>
+    <script src="../../assets/js/renderers/writing-renderer.js"></script>
+    <script src="../../assets/js/curriculum-renderer.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade 6 - Unit 1 - Lessons 4 & 5: A Day in My School | Mr. Ahmed Assem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css?v=6">
+    <link rel="stylesheet" href="../../assets/css/curriculum.css">
+    <link rel="stylesheet" href="../../assets/css/storybook.css">
+    <link rel="stylesheet" href="../../assets/css/quiz.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb">
+            <a href="../index.html">Grade 6</a> / <a href="./index.html">Unit 1</a> / <span>Lessons 4 & 5 (A Day in My School • Think and Create)</span>
+        </div>
+
+        <!-- Teacher Profile Header -->
+        <div class="teacher-profile-header">
+            <div class="avatar-wrapper">
+                <img src="../../my-photo-profile.webp" alt="Mr. Ahmed Assem" class="teacher-avatar" onerror="this.onerror=null; this.src='../../my-photo-profile.webp';">
+            </div>
+            <h1 class="teacher-title">Mr. Ahmed Assem</h1>
+            <div class="slogan">✨ Easy Peasy Ya Englezeey ✨</div>
+            <div class="badges-row">
+                <span class="badge badge-active">Grade 6 • Unit 1 • Lessons 4 & 5</span>
+                <span class="badge badge-gold">📖 SB pages 45 : 52</span>
+            </div>
+            <h2 id="title" class="lesson-header-title">Lessons 4 & 5: A Day in My School • Think and Create</h2>
+            <p id="description" class="lesson-desc-display">المفردات، طابور الصباح وتحية العلم، إيميل فادي التفاعلي، دليل كتابة البريد غير الرسمي، ملصق محافظة بني سويف، واختبار شامل 🎯</p>
+        </div>
+
+        <!-- Tabs Navigation Bar -->
+        <div class="tabs-container">
+            <button type="button" class="tab-btn active" onclick="switchTab('vocab', this)">📖 المفردات (Vocabulary)</button>
+            <button type="button" class="tab-btn" onclick="switchTab('verbs', this)">⚡ تصريف الأفعال والتعبيرات</button>
+            <button type="button" class="tab-btn" onclick="switchTab('reading', this)">✉️ إيميل يومي المدرسي (Fady's Email)</button>
+            <button type="button" class="tab-btn" onclick="switchTab('writing', this)">✍️ مهارة كتابة الإيميل (Writing Skill)</button>
+            <button type="button" class="tab-btn" onclick="switchTab('poster', this)">🎨 فكر وأبدع (Beni Suef Poster)</button>
+            <button type="button" class="tab-btn" onclick="switchTab('quiz', this)">🎯 اختبار الدرس الشامل (Quiz)</button>
+        </div>
+
+        <!-- Tab 1: Key & Lesson Vocabulary -->
+        <div id="vocab" class="tab-content active"></div>
+
+        <!-- Tab 2: Verbs & Expressions -->
+        <div id="verbs" class="tab-content"></div>
+
+        <!-- Tab 3: Interactive StoryBook: Fady's Email -->
+        <div id="reading" class="tab-content">
+            <div class="section-title">✉️ قراءة واستماع: بريد فادي الإلكتروني (Fady's School Day Email)</div>
+            <div class="lesson-desc-display">اقرأ واستمع لرسالة فادي الإلكترونية إلى صديقه مارك يصف فيها روتينه في مدرسته المصرية من طابور الصباح وحتى العودة للمنزل:</div>
+
+            <!-- 3D Storybook Container -->
+            <div class="storybook-wrapper">
+                <div class="storybook-book">
+                    <div class="book-spine-divider"></div>
+                    <!-- Artwork Page -->
+                    <div class="story-page-artwork">
+                        <div class="artwork-page-inner">
+                            <div class="page-badge-artwork"><span id="storyPageBadge">🖼️ Page 1 of 5</span></div>
+                            <div class="artwork-container">
+                                <img id="storyArtworkImg" src="../../assets/images/grade_6/unit_1/egyptian_school_life.webp" alt="Egyptian School Morning Assembly" referrerpolicy="no-referrer">
+                            </div>
+                            <div class="artwork-caption" id="storyCaption">Egyptian primary students saluting the flag during morning assembly.</div>
+                        </div>
+                        <div class="story-page-meta">
+                            <span>Connect 6 • Unit 1</span>
+                            <span id="storyPageCounter">Page 1 / 5</span>
+                        </div>
+                    </div>
+
+                    <!-- Content Page -->
+                    <div class="story-page-content">
+                        <div>
+                            <div class="story-header">
+                                <h3 class="story-page-title" id="storyTitle">Daily School Life in Egypt</h3>
+                                <button type="button" class="audio-btn" onclick="speakCurrentStoryPage(this)" title="استمع للفقرة">🔊</button>
+                            </div>
+                            <div class="story-paragraph" id="storyText">Loading email text...</div>
+                        </div>
+                        <div>
+                            <div class="story-translation-box" id="storyTranslation"></div>
+                            <div class="story-vocab-chips" id="storyVocab"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Story Controls Bar -->
+                <div class="story-controls-bar">
+                    <button type="button" id="storyPrevBtn" onclick="changeStoryPage(-1)" class="action-btn secondary">⬅️ الفقرة السابقة</button>
+                    <button type="button" id="storytellerBtn" onclick="toggleStoryteller()" class="storyteller-btn">▶️ القارئ التلقائي (Auto Storyteller)</button>
+                    <button type="button" id="storyNextBtn" onclick="changeStoryPage(1)" class="action-btn">الفقرة التالية ➡️</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab 4: Writing Skill (Informal Email) -->
+        <div id="writing" class="tab-content"></div>
+
+        <!-- Tab 5: Think & Create (Beni Suef Poster) -->
+        <div id="poster" class="tab-content"></div>
+
+        <!-- Tab 6: QuizEngine Contract -->
+        <div id="quiz" class="tab-content">
+            <div class="score-board">
+                <span>السؤال: <span id="current-q">1</span> / <span id="total-q">10</span></span>
+                <span>النقاط: <span id="score">0</span> 🌟</span>
+            </div>
+
+            <div class="question-card">
+                <span class="emoji-display" id="emoji">🎯</span>
+                <div class="question-text" id="question">جاري تحميل السؤال...</div>
+                <div class="options-grid" id="options"></div>
+                <div class="feedback" id="feedback"></div>
+            </div>
+
+            <div class="center-row" style="margin-top: 20px;">
+                <button type="button" class="action-btn next-btn" id="next-btn" onclick="nextQuestion()"
+                    style="display: none;">السؤال التالي ➔</button>
+            </div>
+        </div>
+
+        <!-- Bottom Return Controls -->
+        <div class="nav-controls" style="margin-top: 36px;">
+            <a href="./index.html" class="action-btn secondary" data-sound-click="click">⬅ العودة لقائمة دروس الوحدة الأولى</a>
+            <a href="../index.html" class="action-btn secondary" data-sound-click="click">🏠 قائمة وحدات الصف السادس</a>
+        </div>
+    </div>
+
+    <!-- Universal Framework Scripts -->
+    <script src="../../assets/js/bidi.js"></script>
+    <script src="../../assets/js/audio.js"></script>
+    <script src="../../assets/js/tabs.js"></script>
+    <script src="../../assets/js/quiz-engine.js"></script>
+    <script src="../../assets/js/story-engine.js"></script>
+    <script src="../../assets/js/ui.js?v=6"></script>
+
+    <!-- Sub-renderers -->
+
+    <!-- Decoupled Lesson Data Payload -->
+    <script src="./lesson-4-5.data.js"></script>
+
+    <!-- Universal Orchestrator Facade -->
+    <!-- Modular Sub-Renderers & Quiz Normalizer -->
+    <script src="../../assets/js/quiz-normalizer.js"></script>
+    <script src="../../assets/js/renderers/ui-primitives.js"></script>
+    <script src="../../assets/js/renderers/vocab-renderer.js"></script>
+    <script src="../../assets/js/renderers/lexicon-renderer.js"></script>
+    <script src="../../assets/js/renderers/dialogue-player.js"></script>
+    <script src="../../assets/js/renderers/writing-renderer.js"></script>
+    <script src="../../assets/js/curriculum-renderer.js"></script>
+    <script src="../../assets/js/main.js"></script>
+
+    <!-- Story Engine & TTS Helpers -->
+    <script>
+        function changeStoryPage(direction) {
+            if (window.storyEngine && typeof window.storyEngine.changePage === 'function') {
+                window.storyEngine.changePage(direction);
+            }
+        }
+
+        function toggleStoryteller() {
+            if (window.storyEngine && typeof window.storyEngine.toggleStoryteller === 'function') {
+                window.storyEngine.toggleStoryteller();
+            }
+        }
+
+        function speakCurrentStoryPage(btn) {
+            if (window.storyEngine && typeof window.storyEngine.speakCurrentPage === 'function') {
+                window.storyEngine.speakCurrentPage(btn);
+            } else if (window.storyEngine && window.storyEngine.storyPages) {
+                const cur = window.storyEngine.storyPages[window.storyEngine.currentPage];
+                const textToSpeak = cur ? (cur.textEn || cur.text || '') : '';
+                if (textToSpeak && typeof speakText === 'function') {
+                    speakText(textToSpeak, btn);
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.CurriculumRenderer && typeof window.CurriculumRenderer.init === 'function') {
+                window.CurriculumRenderer.init();
+            }
+            if (typeof loadQuestion === 'function' && document.getElementById('question')) {
+                loadQuestion();
+            }
+            if (window.storyEngine && window.lessonData && window.lessonData.storyPages) {
+                window.storyEngine.loadPages(window.lessonData.storyPages);
+            }
+        });
+    </script>
+</body>
+</html>
