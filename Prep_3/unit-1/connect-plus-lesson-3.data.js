@@ -13,7 +13,7 @@ window.readingDecks = [
                 "title": "Chapter 1: Researching Past Generations",
                 "textEn": "Have you ever wondered about past generations of your family and what their lives were like? Why not research your family tree? Written records have been kept for centuries, and many are now available online. Look them up!",
                 "textAr": "هل تساءلت يوماً عن الأجيال السابقة من عائلتك وكيف كانت حياتهم؟ لمَ لا تبحث في شجرة عائلتك؟ لقد تم حفظ السجلات المكتوبة لقرون طويلة، والعديد منها متاح الآن عبر الإنترنت. ابحث عنها واكتشف تاريخك!",
-                "imageUrl": "../../assets/images/family_tree_records_1790534385385.webp",
+                "imageUrl": "../../assets/images/prep_3/unit_1/family_tree_records_1790534385385.webp",
                 "caption": "Student examining detailed family tree parchment and digital records in an archival library",
                 "vocabNotes": "past generations (أجيال سابقة) • research (يبحث) • family tree (شجرة عائلة) • written records (سجلات مكتوبة) • available online (متاح عبر الإنترنت)"
             },
@@ -21,7 +21,7 @@ window.readingDecks = [
                 "title": "Chapter 2: The Census, Passenger Lists & Patients' Records",
                 "textEn": "The Census: Most countries have been taking a census for hundreds of years in some parts of the world for even longer! A census typically registers the people in every house: their date of birth, where they were born, occupation, etc. Passenger Lists: When people traveled to other countries in the past, usually by ship, records were kept which show the passengers' names and details of their journey. Patients' Records: Hospitals have been keeping patients' records since the 1800s. You might find information about the health of people from past generations of your family in some of these files.",
                 "textAr": "التعداد السكاني (The Census): تُجري معظم الدول تعداداً سكانياً منذ مئات السنين، وفي بعض أجزاء العالم منذ فترة أطول! يسجل التعداد السكاني عادةً الأشخاص في كل منزل: تاريخ ميلادهم، ومكان ولادتهم، ووظيفتهم، وما إلى ذلك. قوائم الركاب (Passenger Lists): عندما كان الناس يسافرون إلى دول أخرى في الماضي عبر السفن، كانت تُحفظ سجلات تُظهر أسماء الركاب وتفاصيل رحلتهم. سجلات المرضى (Patients' Records): تحتفظ المستشفيات بسجلات المرضى منذ القرن التاسع عشر؛ وقد تجد معلومات قيمة حول صحة الأشخاص من الأجيال السابقة لعائلتك في بعض هذه الملفات.",
-                "imageUrl": "../../assets/images/census_passenger_records_1790534394957.webp",
+                "imageUrl": "../../assets/images/prep_3/unit_1/census_passenger_records_1790534394957.webp",
                 "caption": "Authentic historical records: 19th-century census ledgers, ship passenger lists, and medical archives",
                 "vocabNotes": "census (تعداد سكاني) • registers (يسجل) • date of birth (تاريخ الميلاد) • occupation (مهنة / وظيفة) • passenger lists (قوائم الركاب) • patients' records (سجلات المرضى) • files (ملفات)"
             },
@@ -29,7 +29,7 @@ window.readingDecks = [
                 "title": "Chapter 3: Speaking to Relatives & Older Family Members",
                 "textEn": "But websites are not the only way to research your family tree. Speak to as many of your relatives as possible, especially older family members. If you still have great-grandparents or great-great-aunts and uncles, they might remember interesting facts or have cool photographs. Enjoy researching your family tree!",
                 "textAr": "ولكن المواقع الإلكترونية ليست الطريقة الوحيدة للبحث في شجرة عائلتك؛ تحدث إلى أكبر عدد ممكن من أقاربك، وخاصة أفراد الأسرة الأكبر سناً. إذا كان لا يزال لديك أجداد كبار أو أعمام وخالات كبار لأجدادك، فقد يتذكرون حقائق رائعة أو يمتلكون صوراً فوتوغرافية قديمة مميزة. استمتع باكتشاف شجرة عائلتك!",
-                "imageUrl": "../../assets/images/multigen_family_album_1790534563946.webp",
+                "imageUrl": "../../assets/images/prep_3/unit_1/multigen_family_album_1790534563946.webp",
                 "caption": "Multigenerational family gathering: elderly grandparents sharing vintage photo albums and memories with their teenage grandchildren",
                 "vocabNotes": "websites (مواقع إلكترونية) • relatives (أقارب) • older family members (أفراد العائلة الأكبر سناً) • great-grandparents (الأجداد الكبار) • great-great-aunts (خالات وعمات الأجداد) • cool photographs (صور فوتوغرافية رائعة)"
             }
@@ -43,7 +43,7 @@ window.readingDecks = [
                 "title": "Chapter 1: The Mystery of Great-Great-Uncle Karim",
                 "textEn": "I've been researching my family history ... and I've found some amazing information! I became interested in finding out about my great-great-uncle Karim Al Sadat after my grandmother told me about him. He was her favorite uncle. He went to live in Indonesia when he was a young man and he never came back to Egypt. When my grandmother was ten, her family moved to the United States and they lost his address. They never heard from him again.",
                 "textAr": "لقد كنت أبحث في تاريخ عائلتي ... ووجدت بعض المعلومات المذهلة! أصبحت مهتماً باكتشاف معلومات عن شقيق جدي الأكبر كريم السادات بعد أن أخبرتني جدتي عنه؛ لقد كان خالها المفضل. ذهب ليعيش في إندونيسيا عندما كان شاباً ولم يعد إلى مصر قط. وعندما كانت جدتي في العاشرة من عمرها، انتقلت عائلتها إلى الولايات المتحدة وفقدوا عنوانه، ولم يسمعوا عنه أي خبر بعد ذلك أبداً.",
-                "imageUrl": "../../assets/images/uncle_karim_indonesia_1790534405260.webp",
+                "imageUrl": "../../assets/images/prep_3/unit_1/uncle_karim_indonesia_1790534405260.webp",
                 "caption": "Archival portrait of young Egyptian traveler Karim Al Sadat in Indonesia in the early 20th century",
                 "vocabNotes": "researching family history (البحث في تاريخ العائلة) • great-great-uncle (شقيق الجد/الجدة الأكبر) • Indonesia (إندونيسيا) • favorite uncle (الخال المفضل) • moved to the United States (انتقل لأمريكا) • lost his address (فقد عنوانه)"
             },
@@ -51,7 +51,7 @@ window.readingDecks = [
                 "title": "Chapter 2: Free Online Records, Censuses & The Birth Certificate",
                 "textEn": "So, I decided to try and find him. I had so many questions. Did he stay in Indonesia? What did he do there? Did he get married? Did he have a family? I started by looking at a free website that has thousands of written records for Egypt. There was the census, of course, and information about when people were born, died, and got married. I knew my great-great-uncle's name, so the first thing I looked for was a birth certificate. That's a special piece of paper with a person's name and their parents' names, and the date and place they were born on it.",
                 "textAr": "لذلك، قررت أن أحاول البحث عنه والعثور عليه. كان لدي الكثير من الأسئلة: هل بقي في إندونيسيا؟ ماذا كان يعمل هناك؟ هل تزوج؟ هل كان لديه عائلة؟ بدأت بالبحث في موقع إلكتروني مجاني يحتوي على آلاف السجلات المكتوبة لمصر. كان هناك التعداد السكاني بالطبع، ومعلومات عن تواريخ ولادة الناس ووفاتهم وزواجهم. وكنت أعرف اسم شقيق جدي، لذا كان أول ما بحثت عنه هو شهادة الميلاد (birth certificate)؛ وهي وثيقة ورقية خاصة مدون عليها اسم الشخص وأسماء والديه وتاريخ ومكان ولادته.",
-                "imageUrl": "../../assets/images/student_birth_certificate_1790534576495.webp",
+                "imageUrl": "../../assets/images/prep_3/unit_1/student_birth_certificate_1790534576495.webp",
                 "caption": "Student examining online archival family records and holding an authentic vintage birth certificate document",
                 "vocabNotes": "free website (موقع مجاني) • thousands of written records (آلاف السجلات المكتوبة) • census (تعداد سكاني) • got married (تزوج) • birth certificate (شهادة ميلاد) • date and place (تاريخ ومكان)"
             },
@@ -59,7 +59,7 @@ window.readingDecks = [
                 "title": "Chapter 3: Long Journeys by Ship & Passenger Lists",
                 "textEn": "I wanted to know where he was born and what his parents' names were, as my grandmother couldn't remember. Then I wanted to find out when he went to Indonesia. In those days, people traveled on long journeys by ship, so it didn't take long to find his name on a passenger list. Read tomorrow's post to find out what I discovered next!",
                 "textAr": "أردت أن أعرف أين ولد وما هي أسماء والديه، حيث لم تتمكن جدتي من التذكر. ثم أردت معرفة متى سافر إلى إندونيسيا؛ وفي تلك الأيام، كان الناس يسافرون في رحلات طويلة بالسفن، لذلك لم يستغرق الأمر وقتاً طويلاً للعثور على اسمه في قائمة الركاب (passenger list)! اقرأ منشور الغد لتكتشف ما اكتشفته بعد ذلك!",
-                "imageUrl": "../../assets/images/vintage_passenger_ship_1790534588207.webp",
+                "imageUrl": "../../assets/images/prep_3/unit_1/vintage_passenger_ship_1790534588207.webp",
                 "caption": "Authentic historical steam passenger ship sailing on long sea voyages across continents in the early 1900s",
                 "vocabNotes": "parents' names (أسماء الوالدين) • couldn't remember (لم تستطع التذكر) • long journeys (رحلات طويلة) • by ship (بالسفينة) • passenger list (قائمة الركاب) • discovered (اكتشف)"
             }
@@ -71,7 +71,7 @@ window.dialogueDecks = [
     {
         "id": "karim_rowan",
         "title": "⚽ محادثة 1: كريم وروان - الرياضة والجنسيات (SB p. 13)",
-        "bannerImage": "../../assets/images/karim_rowan_dialogue_1790534415072.webp",
+        "bannerImage": "../../assets/images/prep_3/common/karim_rowan_dialogue_1790534415072.webp",
         "bannerCaption": "⚽ Karim & Rowan in an expressive realistic discussion after football practice (SB p. 13)",
         "context": "حوار تفاعلي بعد تمرين كرة القدم بين <strong>كريم (Karim - مصري ووالدته لبنانية)</strong> و<strong>روان (Rowan - أيرلندية)</strong> حول الرياضات المفضلة والجنسيات وتنوع العائلات:",
         "lines": [
@@ -176,7 +176,7 @@ window.dialogueDecks = [
     {
         "id": "mona_magda",
         "title": "👭 محادثة 2: منى وماجدة - مشروع تاريخ العائلة (WB p. 7)",
-        "bannerImage": "../../assets/images/mona_magda_dialogue_1790534425244.webp",
+        "bannerImage": "../../assets/images/prep_3/unit_1/mona_magda_dialogue_1790534425244.webp",
         "bannerCaption": "👭 Mona & Magda in an expressive realistic discussion about their family history project (WB p. 7)",
         "context": "حوار مدرسي شيق عبر الهاتف بين <strong>منى (Mona - مصرية تعيش بأمريكا)</strong> و<strong>ماجدة (Magda - بولندية تعيش بأمريكا)</strong> لمشروع تاريخ العائلة والشجرة العائلية:",
         "lines": [
@@ -706,7 +706,7 @@ window.lessonData = {
                     "title": "Chapter 1: Researching Past Generations",
                     "textEn": "Have you ever wondered about past generations of your family and what their lives were like? Why not research your family tree? Written records have been kept for centuries, and many are now available online. Look them up!",
                     "textAr": "هل تساءلت يوماً عن الأجيال السابقة من عائلتك وكيف كانت حياتهم؟ لمَ لا تبحث في شجرة عائلتك؟ لقد تم حفظ السجلات المكتوبة لقرون طويلة، والعديد منها متاح الآن عبر الإنترنت. ابحث عنها واكتشف تاريخك!",
-                    "imageUrl": "../../assets/images/family_tree_records_1790534385385.webp",
+                    "imageUrl": "../../assets/images/prep_3/unit_1/family_tree_records_1790534385385.webp",
                     "caption": "Student examining detailed family tree parchment and digital records in an archival library",
                     "vocabNotes": "past generations (أجيال سابقة) • research (يبحث) • family tree (شجرة عائلة) • written records (سجلات مكتوبة) • available online (متاح عبر الإنترنت)"
                 },
@@ -714,7 +714,7 @@ window.lessonData = {
                     "title": "Chapter 2: The Census, Passenger Lists & Patients' Records",
                     "textEn": "The Census: Most countries have been taking a census for hundreds of years in some parts of the world for even longer! A census typically registers the people in every house: their date of birth, where they were born, occupation, etc. Passenger Lists: When people traveled to other countries in the past, usually by ship, records were kept which show the passengers' names and details of their journey. Patients' Records: Hospitals have been keeping patients' records since the 1800s. You might find information about the health of people from past generations of your family in some of these files.",
                     "textAr": "التعداد السكاني (The Census): تُجري معظم الدول تعداداً سكانياً منذ مئات السنين، وفي بعض أجزاء العالم منذ فترة أطول! يسجل التعداد السكاني عادةً الأشخاص في كل منزل: تاريخ ميلادهم، ومكان ولادتهم، ووظيفتهم، وما إلى ذلك. قوائم الركاب (Passenger Lists): عندما كان الناس يسافرون إلى دول أخرى في الماضي عبر السفن، كانت تُحفظ سجلات تُظهر أسماء الركاب وتفاصيل رحلتهم. سجلات المرضى (Patients' Records): تحتفظ المستشفيات بسجلات المرضى منذ القرن التاسع عشر؛ وقد تجد معلومات قيمة حول صحة الأشخاص من الأجيال السابقة لعائلتك في بعض هذه الملفات.",
-                    "imageUrl": "../../assets/images/census_passenger_records_1790534394957.webp",
+                    "imageUrl": "../../assets/images/prep_3/unit_1/census_passenger_records_1790534394957.webp",
                     "caption": "Authentic historical records: 19th-century census ledgers, ship passenger lists, and medical archives",
                     "vocabNotes": "census (تعداد سكاني) • registers (يسجل) • date of birth (تاريخ الميلاد) • occupation (مهنة / وظيفة) • passenger lists (قوائم الركاب) • patients' records (سجلات المرضى) • files (ملفات)"
                 },
@@ -722,7 +722,7 @@ window.lessonData = {
                     "title": "Chapter 3: Speaking to Relatives & Older Family Members",
                     "textEn": "But websites are not the only way to research your family tree. Speak to as many of your relatives as possible, especially older family members. If you still have great-grandparents or great-great-aunts and uncles, they might remember interesting facts or have cool photographs. Enjoy researching your family tree!",
                     "textAr": "ولكن المواقع الإلكترونية ليست الطريقة الوحيدة للبحث في شجرة عائلتك؛ تحدث إلى أكبر عدد ممكن من أقاربك، وخاصة أفراد الأسرة الأكبر سناً. إذا كان لا يزال لديك أجداد كبار أو أعمام وخالات كبار لأجدادك، فقد يتذكرون حقائق رائعة أو يمتلكون صوراً فوتوغرافية قديمة مميزة. استمتع باكتشاف شجرة عائلتك!",
-                    "imageUrl": "../../assets/images/multigen_family_album_1790534563946.webp",
+                    "imageUrl": "../../assets/images/prep_3/unit_1/multigen_family_album_1790534563946.webp",
                     "caption": "Multigenerational family gathering: elderly grandparents sharing vintage photo albums and memories with their teenage grandchildren",
                     "vocabNotes": "websites (مواقع إلكترونية) • relatives (أقارب) • older family members (أفراد العائلة الأكبر سناً) • great-grandparents (الأجداد الكبار) • great-great-aunts (خالات وعمات الأجداد) • cool photographs (صور فوتوغرافية رائعة)"
                 }
@@ -736,7 +736,7 @@ window.lessonData = {
                     "title": "Chapter 1: The Mystery of Great-Great-Uncle Karim",
                     "textEn": "I've been researching my family history ... and I've found some amazing information! I became interested in finding out about my great-great-uncle Karim Al Sadat after my grandmother told me about him. He was her favorite uncle. He went to live in Indonesia when he was a young man and he never came back to Egypt. When my grandmother was ten, her family moved to the United States and they lost his address. They never heard from him again.",
                     "textAr": "لقد كنت أبحث في تاريخ عائلتي ... ووجدت بعض المعلومات المذهلة! أصبحت مهتماً باكتشاف معلومات عن شقيق جدي الأكبر كريم السادات بعد أن أخبرتني جدتي عنه؛ لقد كان خالها المفضل. ذهب ليعيش في إندونيسيا عندما كان شاباً ولم يعد إلى مصر قط. وعندما كانت جدتي في العاشرة من عمرها، انتقلت عائلتها إلى الولايات المتحدة وفقدوا عنوانه، ولم يسمعوا عنه أي خبر بعد ذلك أبداً.",
-                    "imageUrl": "../../assets/images/uncle_karim_indonesia_1790534405260.webp",
+                    "imageUrl": "../../assets/images/prep_3/unit_1/uncle_karim_indonesia_1790534405260.webp",
                     "caption": "Archival portrait of young Egyptian traveler Karim Al Sadat in Indonesia in the early 20th century",
                     "vocabNotes": "researching family history (البحث في تاريخ العائلة) • great-great-uncle (شقيق الجد/الجدة الأكبر) • Indonesia (إندونيسيا) • favorite uncle (الخال المفضل) • moved to the United States (انتقل لأمريكا) • lost his address (فقد عنوانه)"
                 },
@@ -744,7 +744,7 @@ window.lessonData = {
                     "title": "Chapter 2: Free Online Records, Censuses & The Birth Certificate",
                     "textEn": "So, I decided to try and find him. I had so many questions. Did he stay in Indonesia? What did he do there? Did he get married? Did he have a family? I started by looking at a free website that has thousands of written records for Egypt. There was the census, of course, and information about when people were born, died, and got married. I knew my great-great-uncle's name, so the first thing I looked for was a birth certificate. That's a special piece of paper with a person's name and their parents' names, and the date and place they were born on it.",
                     "textAr": "لذلك، قررت أن أحاول البحث عنه والعثور عليه. كان لدي الكثير من الأسئلة: هل بقي في إندونيسيا؟ ماذا كان يعمل هناك؟ هل تزوج؟ هل كان لديه عائلة؟ بدأت بالبحث في موقع إلكتروني مجاني يحتوي على آلاف السجلات المكتوبة لمصر. كان هناك التعداد السكاني بالطبع، ومعلومات عن تواريخ ولادة الناس ووفاتهم وزواجهم. وكنت أعرف اسم شقيق جدي، لذا كان أول ما بحثت عنه هو شهادة الميلاد (birth certificate)؛ وهي وثيقة ورقية خاصة مدون عليها اسم الشخص وأسماء والديه وتاريخ ومكان ولادته.",
-                    "imageUrl": "../../assets/images/student_birth_certificate_1790534576495.webp",
+                    "imageUrl": "../../assets/images/prep_3/unit_1/student_birth_certificate_1790534576495.webp",
                     "caption": "Student examining online archival family records and holding an authentic vintage birth certificate document",
                     "vocabNotes": "free website (موقع مجاني) • thousands of written records (آلاف السجلات المكتوبة) • census (تعداد سكاني) • got married (تزوج) • birth certificate (شهادة ميلاد) • date and place (تاريخ ومكان)"
                 },
@@ -752,7 +752,7 @@ window.lessonData = {
                     "title": "Chapter 3: Long Journeys by Ship & Passenger Lists",
                     "textEn": "I wanted to know where he was born and what his parents' names were, as my grandmother couldn't remember. Then I wanted to find out when he went to Indonesia. In those days, people traveled on long journeys by ship, so it didn't take long to find his name on a passenger list. Read tomorrow's post to find out what I discovered next!",
                     "textAr": "أردت أن أعرف أين ولد وما هي أسماء والديه، حيث لم تتمكن جدتي من التذكر. ثم أردت معرفة متى سافر إلى إندونيسيا؛ وفي تلك الأيام، كان الناس يسافرون في رحلات طويلة بالسفن، لذلك لم يستغرق الأمر وقتاً طويلاً للعثور على اسمه في قائمة الركاب (passenger list)! اقرأ منشور الغد لتكتشف ما اكتشفته بعد ذلك!",
-                    "imageUrl": "../../assets/images/vintage_passenger_ship_1790534588207.webp",
+                    "imageUrl": "../../assets/images/prep_3/unit_1/vintage_passenger_ship_1790534588207.webp",
                     "caption": "Authentic historical steam passenger ship sailing on long sea voyages across continents in the early 1900s",
                     "vocabNotes": "parents' names (أسماء الوالدين) • couldn't remember (لم تستطع التذكر) • long journeys (رحلات طويلة) • by ship (بالسفينة) • passenger list (قائمة الركاب) • discovered (اكتشف)"
                 }
@@ -763,7 +763,7 @@ window.lessonData = {
         {
             "id": "karim_rowan",
             "title": "⚽ محادثة 1: كريم وروان - الرياضة والجنسيات (SB p. 13)",
-            "bannerImage": "../../assets/images/karim_rowan_dialogue_1790534415072.webp",
+            "bannerImage": "../../assets/images/prep_3/common/karim_rowan_dialogue_1790534415072.webp",
             "bannerCaption": "⚽ Karim & Rowan in an expressive realistic discussion after football practice (SB p. 13)",
             "context": "حوار تفاعلي بعد تمرين كرة القدم بين <strong>كريم (Karim - مصري ووالدته لبنانية)</strong> و<strong>روان (Rowan - أيرلندية)</strong> حول الرياضات المفضلة والجنسيات وتنوع العائلات:",
             "lines": [
@@ -868,7 +868,7 @@ window.lessonData = {
         {
             "id": "mona_magda",
             "title": "👭 محادثة 2: منى وماجدة - مشروع تاريخ العائلة (WB p. 7)",
-            "bannerImage": "../../assets/images/mona_magda_dialogue_1790534425244.webp",
+            "bannerImage": "../../assets/images/prep_3/unit_1/mona_magda_dialogue_1790534425244.webp",
             "bannerCaption": "👭 Mona & Magda in an expressive realistic discussion about their family history project (WB p. 7)",
             "context": "حوار مدرسي شيق عبر الهاتف بين <strong>منى (Mona - مصرية تعيش بأمريكا)</strong> و<strong>ماجدة (Magda - بولندية تعيش بأمريكا)</strong> لمشروع تاريخ العائلة والشجرة العائلية:",
             "lines": [
@@ -1826,7 +1826,7 @@ window.lessonData = {
             "title": "Chapter 1: Researching Past Generations",
             "textEn": "Have you ever wondered about past generations of your family and what their lives were like? Why not research your family tree? Written records have been kept for centuries, and many are now available online. Look them up!",
             "textAr": "هل تساءلت يوماً عن الأجيال السابقة من عائلتك وكيف كانت حياتهم؟ لمَ لا تبحث في شجرة عائلتك؟ لقد تم حفظ السجلات المكتوبة لقرون طويلة، والعديد منها متاح الآن عبر الإنترنت. ابحث عنها واكتشف تاريخك!",
-            "imageUrl": "../../assets/images/family_tree_records_1790534385385.webp",
+            "imageUrl": "../../assets/images/prep_3/unit_1/family_tree_records_1790534385385.webp",
             "caption": "Student examining detailed family tree parchment and digital records in an archival library",
             "vocabNotes": "past generations (أجيال سابقة) • research (يبحث) • family tree (شجرة عائلة) • written records (سجلات مكتوبة) • available online (متاح عبر الإنترنت)"
         },
@@ -1834,7 +1834,7 @@ window.lessonData = {
             "title": "Chapter 2: The Census, Passenger Lists & Patients' Records",
             "textEn": "The Census: Most countries have been taking a census for hundreds of years in some parts of the world for even longer! A census typically registers the people in every house: their date of birth, where they were born, occupation, etc. Passenger Lists: When people traveled to other countries in the past, usually by ship, records were kept which show the passengers' names and details of their journey. Patients' Records: Hospitals have been keeping patients' records since the 1800s. You might find information about the health of people from past generations of your family in some of these files.",
             "textAr": "التعداد السكاني (The Census): تُجري معظم الدول تعداداً سكانياً منذ مئات السنين، وفي بعض أجزاء العالم منذ فترة أطول! يسجل التعداد السكاني عادةً الأشخاص في كل منزل: تاريخ ميلادهم، ومكان ولادتهم، ووظيفتهم، وما إلى ذلك. قوائم الركاب (Passenger Lists): عندما كان الناس يسافرون إلى دول أخرى في الماضي عبر السفن، كانت تُحفظ سجلات تُظهر أسماء الركاب وتفاصيل رحلتهم. سجلات المرضى (Patients' Records): تحتفظ المستشفيات بسجلات المرضى منذ القرن التاسع عشر؛ وقد تجد معلومات قيمة حول صحة الأشخاص من الأجيال السابقة لعائلتك في بعض هذه الملفات.",
-            "imageUrl": "../../assets/images/census_passenger_records_1790534394957.webp",
+            "imageUrl": "../../assets/images/prep_3/unit_1/census_passenger_records_1790534394957.webp",
             "caption": "Authentic historical records: 19th-century census ledgers, ship passenger lists, and medical archives",
             "vocabNotes": "census (تعداد سكاني) • registers (يسجل) • date of birth (تاريخ الميلاد) • occupation (مهنة / وظيفة) • passenger lists (قوائم الركاب) • patients' records (سجلات المرضى) • files (ملفات)"
         },
@@ -1842,7 +1842,7 @@ window.lessonData = {
             "title": "Chapter 3: Speaking to Relatives & Older Family Members",
             "textEn": "But websites are not the only way to research your family tree. Speak to as many of your relatives as possible, especially older family members. If you still have great-grandparents or great-great-aunts and uncles, they might remember interesting facts or have cool photographs. Enjoy researching your family tree!",
             "textAr": "ولكن المواقع الإلكترونية ليست الطريقة الوحيدة للبحث في شجرة عائلتك؛ تحدث إلى أكبر عدد ممكن من أقاربك، وخاصة أفراد الأسرة الأكبر سناً. إذا كان لا يزال لديك أجداد كبار أو أعمام وخالات كبار لأجدادك، فقد يتذكرون حقائق رائعة أو يمتلكون صوراً فوتوغرافية قديمة مميزة. استمتع باكتشاف شجرة عائلتك!",
-            "imageUrl": "../../assets/images/multigen_family_album_1790534563946.webp",
+            "imageUrl": "../../assets/images/prep_3/unit_1/multigen_family_album_1790534563946.webp",
             "caption": "Multigenerational family gathering: elderly grandparents sharing vintage photo albums and memories with their teenage grandchildren",
             "vocabNotes": "websites (مواقع إلكترونية) • relatives (أقارب) • older family members (أفراد العائلة الأكبر سناً) • great-grandparents (الأجداد الكبار) • great-great-aunts (خالات وعمات الأجداد) • cool photographs (صور فوتوغرافية رائعة)"
         }

@@ -12,7 +12,7 @@ window.lessonData = {
     "storyPages": [
         {
             "title": "Scene 1: Life Long Ago & Harmony with Nature",
-            "imageUrl": "../../assets/images/sec1_u1_l3_scene1.webp",
+            "imageUrl": "../../assets/images/sec_1/unit_1/sec1_u1_l3_scene1.webp",
             "caption": "Early human communities living close to nature, farming crops, and raising animals for survival",
             "textEn": "Long ago, people lived in ways very different from today. They depended mainly on the land, growing crops, and raising animals for survival. Families lived close to nature, often using simple tools and working together to produce what they needed. Communities were small, and traditions were passed down through stories, songs, and daily practices.",
             "textAr": "منذ زمن بعيد، عاش الناس بطرق مختلفة تماماً عن اليوم. كانوا يعتمدون بشكل أساسي على الأرض، وزراعة المحاصيل، وتربية الحيوانات للبقاء على قيد الحياة. عاشت العائلات قريبة من الطبيعة، وغالباً ما استخدمت أدوات بسيطة وعملت معاً لإنتاج ما تحتاج إليه. وكانت المجتمعات صغيرة، وتوارثت الأجيال التقاليد عبر القصص والأغاني والممارسات اليومية.",
@@ -20,7 +20,7 @@ window.lessonData = {
         },
         {
             "title": "Scene 2: Inventions, Writing & Great Civilizations",
-            "imageUrl": "../../assets/images/sec1_u1_l3_scene2.webp",
+            "imageUrl": "../../assets/images/sec_1/unit_1/sec1_u1_l3_scene2.webp",
             "caption": "The breakthrough of writing and metal tools fostering trade routes and magnificent ancient cities",
             "textEn": "As time moved forward, inventions began to change human life. The discovery of writing allowed people to record knowledge and history. The use of metal tools made farming and building easier. Great civilizations rose, building cities, temples, and trade routes that connected distant lands.",
             "textAr": "ومع مرور الوقت، بدأت الاختراعات تغير مجرى حياة البشرية. أتاح اكتشاف الكتابة للناس تسجيل المعرفة وتدوين التاريخ. كما ساهم استخدام الأدوات المعدنية في جعل الزراعة والبناء أسهل بكثير. ونهضت حضارات عظيمة، شيدت مدناً ومعابد وطرق تجارة ربطت بين البلدان والأراضي البعيدة.",
@@ -28,7 +28,7 @@ window.lessonData = {
         },
         {
             "title": "Scene 3: Ancestral Resilience & Continuous Thinking",
-            "imageUrl": "../../assets/images/sec1_u1_l3_scene3.webp",
+            "imageUrl": "../../assets/images/sec_1/unit_1/sec1_u1_l3_scene3.webp",
             "caption": "While our ancestors struggled to survive, their minds never stopped thinking until progress happened step by step",
             "textEn": "While our ancestors were struggling hard to survive, their minds never stopped thinking till progress happened step by step. Every challenge they encountered inspired inventive solutions and perseverance, building enduring monuments and timeless knowledge that we marvel at today.",
             "textAr": "وبينما كان أجدادنا يكافحون بجد من أجل البقاء، لم تتوقف عقولهم يوماً عن التفكير حتى تحقق التقدم خطوة بخطوة. وكان كل تحدٍ واجهوه مصدر إلهام لحلول ابتكارية وعزيمة لا تلين، شيدت معالم خالدة ومعرفة لا تفنى نقف أمامها اليوم بكل إعجاب وانبهار.",
@@ -36,7 +36,7 @@ window.lessonData = {
         },
         {
             "title": "Scene 4: Modern Complexity, Digital World & Ancestral Wisdom",
-            "imageUrl": "../../assets/images/sec1_u1_l3_scene4.webp",
+            "imageUrl": "../../assets/images/sec_1/unit_1/sec1_u1_l3_scene4.webp",
             "caption": "Accessing global information with a single click while honoring ancestral wisdom and history",
             "textEn": "Now, life has become much faster and more complex. Technology allows us to communicate across the world in seconds, travel long distances in hours, and access information with a single click. Yet, the wisdom and lessons from long ago still shape who we are. By remembering the past and learning from it, we can build a future that respects history while embracing progress.",
             "textAr": "والآن، أصبحت الحياة أسرع بكثير وأكثر تعقيداً. تتيح لنا التكنولوجيا التواصل عبر العالم في ثوانٍ معدودة، والسفر لمسافات طويلة في بضع ساعات، والوصول إلى كافة المعلومات بضغطة زر واحدة. ومع ذلك، فإن حكمة ودروس الماضي البعيد لا تزال تشكل هويتنا وحقيقتنا. فمن خلال تذكر الماضي والتعلم منه، يمكننا بناء مستقبل يحترم التاريخ ويحتضن التقدم.",

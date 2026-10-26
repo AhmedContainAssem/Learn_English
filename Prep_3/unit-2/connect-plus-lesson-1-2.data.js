@@ -499,7 +499,7 @@ window.lessonData = {
         {
             "id": "predicting_future",
             "title": "🔮 محادثة 1: التنبؤ بالمستقبل (Predicting the Future - SB p. 20)",
-            "bannerImage": "../../assets/images/karim_rowan_dialogue_1790534415072.webp",
+            "bannerImage": "../../assets/images/prep_3/common/karim_rowan_dialogue_1790534415072.webp",
             "bannerCaption": "🔮 Omar & Youssef in an expressive realistic discussion predicting future careers, living abroad, and sports (SB p. 20)",
             "context": "حوار تفاعلي منهجي بين <strong>عمر (Omar)</strong> و<strong>يوسف (Youssef)</strong> يتدربان فيه على مهارة التحدث والتنبؤ بالمستقبل مستخدمين زمن المستقبل المستمر:",
             "lines": [
@@ -556,7 +556,7 @@ window.lessonData = {
         {
             "id": "dreams_and_ambitions",
             "title": "🌟 محادثة 2: الأحلام والطموحات ومسار الحياة (Dreams & Ambitions - SB p. 20)",
-            "bannerImage": "../../assets/images/two_girls_talking_1790200743332.webp",
+            "bannerImage": "../../assets/images/prep_3/unit_2/two_girls_talking_1790200743332.webp",
             "bannerCaption": "👭 Layla & Farida in an expressive dialogue practicing core phrases for future dreams and study goals (SB p. 20)",
             "context": "حوار منهجي ممتع بين <strong>ليلى (Layla)</strong> و<strong>فريدة (Farida)</strong> حول الطموحات الشخصية والجامعة والأحلام المستقبلية:",
             "lines": [
@@ -614,7 +614,7 @@ window.lessonData = {
     "dialogue": {
         "id": "predicting_future",
         "title": "🔮 محادثة 1: التنبؤ بالمستقبل (Predicting the Future - SB p. 20)",
-        "bannerImage": "../../assets/images/karim_rowan_dialogue_1790534415072.webp",
+        "bannerImage": "../../assets/images/prep_3/common/karim_rowan_dialogue_1790534415072.webp",
         "bannerCaption": "🔮 Omar & Youssef in an expressive realistic discussion predicting future careers, living abroad, and sports (SB p. 20)",
         "context": "حوار تفاعلي منهجي بين <strong>عمر (Omar)</strong> و<strong>يوسف (Youssef)</strong> يتدربان فيه على مهارة التحدث والتنبؤ بالمستقبل مستخدمين زمن المستقبل المستمر:",
         "lines": [

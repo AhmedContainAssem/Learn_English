@@ -636,7 +636,7 @@ window.lessonData = {
     "storyPages": [
         {
             "title": "Scene 1: Screen Time & Developing Minds",
-            "imageUrl": "../../assets/images/sec2_u2_screentime_teenagers_1790821286511.webp",
+            "imageUrl": "../../assets/images/sec_2/unit_2/sec2_u2_screentime_teenagers_1790821286511.webp",
             "caption": "Screen Time and Developing Minds: Exploring digital impact on daily teenage life.",
             "textEn": "This research report explores how screen time affects teenagers' mental health, self-image, and daily life. It also examines the benefits of taking breaks from screens and finding a healthy balance between online and offline activities. Teenagers today spend an average of seven hours a day looking at screens - and that does not include time spent on screens for school. Researchers and parents alike are increasingly concerned about what all this screen time is doing to developing minds.",
             "textAr": "يستكشف هذا التقرير البحثي كيف يؤثر وقت استخدام الشاشات على الصحة النفسية للمراهقين وصورتهم الذاتية وحياتهم اليومية. كما يدرس فوائد أخذ فترات استراحة من الشاشات وإيجاد توازن صحي بين الأنشطة المتصلة بالإنترنت وغير المتصلة به. يقضي المراهقون اليوم في المتوسط سبع ساعات يومياً أمام الشاشات - وذلك لا يشمل الوقت المقضي على الشاشات للدراسة. ويتزايد قلق الباحثين وأولياء الأمور على حد سواء بشأن ما يفعله كل هذا الوقت الموجه للشاشات بالعقول النامية.",
@@ -644,7 +644,7 @@ window.lessonData = {
         },
         {
             "title": "Scene 2: Social Media, Comparison & Self-Esteem",
-            "imageUrl": "../../assets/images/sec2_u2_socialmedia_selfesteem_1790821299531.webp",
+            "imageUrl": "../../assets/images/sec_2/unit_2/sec2_u2_socialmedia_selfesteem_1790821299531.webp",
             "caption": "The Comparison Trap: How curated social feeds trigger anxiety and undermine self-worth.",
             "textEn": "One of the biggest concerns is the effect of social media on teenagers' self-esteem. Platforms like Instagram and TikTok present carefully chosen images of people's lives, making it easy for young users to compare themselves negatively to others. Studies suggest that heavy social media use is linked to increased feelings of anxiety, loneliness, and depression, particularly among teenagers. This constant comparison can lead young people to develop a wrong sense of their own worth and appearance. Experts note that the pressure to gain 'likes' and followers can make teenagers feel they are never good enough, which may cause them to withdraw from real-world social activities.",
             "textAr": "من أكبر المخاوف تأثير وسائل التواصل الاجتماعي على تقدير المراهقين لذواتهم. تعرض منصات مثل إنستجرام وتيك توك صوراً منتقاة بعناية لحياة الآخرين، مما يسهل على المستخدمين الصغار مقارنة أنفسهم سلباً بغيرهم. وتشير الدراسات إلى أن الاستخدام المفرط لوسائل التواصل يرتبط بزيادة مشاعر القلق والوحدة والاكتئاب، لا سيما بين المراهقين. ويمكن لهذه المقارنة المستمرة أن تقود الشباب إلى تكوين شعور خاطئ بقيمتهم ومظهرهم. ويشير الخبراء إلى أن الضغط للحصول على الإعجابات والمتابعين قد يجعل المراهقين يشعرون بأنهم ليسوا جيدين بما يكفي، مما قد يدفعهم للانسحاب من الأنشطة الاجتماعية الواقعية.",
@@ -652,7 +652,7 @@ window.lessonData = {
         },
         {
             "title": "Scene 3: Gaming: Passion or Addiction?",
-            "imageUrl": "../../assets/images/sec2_u2_gaming_debate_1790821309712.webp",
+            "imageUrl": "../../assets/images/sec_2/unit_2/sec2_u2_gaming_debate_1790821309712.webp",
             "caption": "Gaming Debate: Cognitive skills versus the risk of addictive gaming disorder.",
             "textEn": "Video gaming is another form of screen time that sparks debate. Many experts point out that gaming can develop problem-solving skills, hand-eye coordination, and teamwork. However, when gaming becomes addictive when a person cannot stop even when they want to, it can interfere with sleep, schoolwork, and real-world relationships. The World Health Organization officially recognized 'gaming disorder' as a mental health condition in 2019.",
             "textAr": "تعد ألعاب الفيديو شكلاً آخر من أشكال وقت الشاشات الذي يثير الجدل والنقاش. يشير العديد من الخبراء إلى أن الألعاب يمكن أن تنمي مهارات حل المشكلات والتآزر البصري الحركي والعمل الجماعي. ومع ذلك، عندما تصبح الألعاب إدمانية - بحيث يعجز الشخص عن التوقف حتى لو أراد ذلك - يمكن أن تعيق النوم والواجبات المدرسية والعلاقات الواقعية. وقد اعترفت منظمة الصحة العالمية رسمياً بـ 'اضطراب الألعاب' كحالة صحية نفسية في عام 2019.",
@@ -660,7 +660,7 @@ window.lessonData = {
         },
         {
             "title": "Scene 4: Stepping Away & Finding Balance",
-            "imageUrl": "../../assets/images/sec2_u2_stepping_away_balance_1790821319339.webp",
+            "imageUrl": "../../assets/images/sec_2/unit_2/sec2_u2_stepping_away_balance_1790821319339.webp",
             "caption": "Mindful Digital Balance: Outdoor exercise and real-world connections for a fulfilling life.",
             "textEn": "Research consistently shows that taking regular breaks from screens can improve mood, concentration, and sleep quality. Outdoor activities, face-to-face socializing, and creative hobbies all provide benefits that screens simply cannot replicate. Studies have found that even short periods of time spent in nature or taking part in physical activity can significantly reduce feelings of stress and restore mental focus. The key message from researchers is not that screens are entirely harmful - as they are an essential part of modern life - but that balance matters. Mindful screen use, combined with regular physical activity and offline social connections, gives young people the best chance of a healthy, fulfilling leisure life.",
             "textAr": "تظهر الأبحاث باستمرار أن أخذ فترات راحة منتظمة من الشاشات يمكن أن يحسن المزاج والتركيز وجودة النوم. وتوفر الأنشطة الخارجية والتواصل الاجتماعي وجهاً لوجه والهوايات الإبداعية فوائد تعجز الشاشات ببساطة عن محاكاتها. وقد وجدت الدراسات أنه حتى الفترات القصيرة التي نقضيها في الطبيعة أو المشاركة في نشاط بدني يمكن أن تقلل بشكل كبير من مشاعر التوتر وتستعيد التركيز الذهني. والرسالة الأساسية من الباحثين ليست أن الشاشات ضارة تماماً - فهي جزء أساسي من الحياة الحديثة - بل أن التوازن هو الأهم. فالاستخدام الواعي للشاشات، إلى جانب النشاط البدني المنتظم والروابط الاجتماعية الواقعية، يمنح الشباب أفضل فرصة لحياة ترفيهية صحية ومشبعة.",

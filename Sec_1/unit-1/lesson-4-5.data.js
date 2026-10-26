@@ -643,7 +643,7 @@ window.lessonData = {
     "storyPages": [
         {
             "title": "Scene 1: Roots of Pride & Timeless Civilization",
-            "imageUrl": "../../assets/images/sec1_pride_pyramids_1790819538234.webp",
+            "imageUrl": "../../assets/images/sec_1/unit_1/sec1_pride_pyramids_1790819538234.webp",
             "caption": "Where Pride Begins: Roots that run deep in ancient history, culture, and timeless civilization.",
             "textEn": "Pride is not something that appears in a single day. It grows slowly, like a tree, from strong roots of history, culture, and shared values. For Egyptians, these roots run deep and continue to give us strength. Our country is one of the oldest and greatest civilizations in the world, and its story continues to inspire not only Egyptians, but people everywhere. True pride is built through connection to the past and responsibility for the future.",
             "textAr": "الفخر ليس شيئاً ينشأ ويظهر في يوم واحد؛ بل ينمو رويداً رويداً كالشجرة الباسقة من جذور ضاربة في التاريخ والثقافة والقيم المشتركة. ولدى المصريين، تمتد هذه الجذور عميقاً في وجداننا لتمدنا بالقوة والعزيمة. وطننا من أعرق وأعظم حضارات العالم، ولا تزال ملحمته تلهم الإنسانية جمعاء. إن الفخر الحقيقي يتشكل من وثيق الصلة بماضينا العريق وتحمل أمانة المسؤولية تجاه مستقبلنا.",
@@ -651,7 +651,7 @@ window.lessonData = {
         },
         {
             "title": "Scene 2: Ancient Achievements & Gifts to the World",
-            "imageUrl": "../../assets/images/sec1_egypt_knowledge_1790819550267.webp",
+            "imageUrl": "../../assets/images/sec_1/unit_1/sec1_egypt_knowledge_1790819550267.webp",
             "caption": "Pioneering Knowledge: Hieroglyphic writing, mathematics, medicine, and architectural marvels.",
             "textEn": "In ancient times, Egypt was a leader in human progress and knowledge. Our ancestors built the mighty pyramids and the magnificent temples along the Nile - monuments that still amaze the world today. They developed writing systems, advanced mathematics, and important medical knowledge. These achievements were not only for Egypt; they became gifts to the entire world, proving the greatness and creativity of our people.",
             "textAr": "في العصور القديمة، كانت مصر رائدة التقدم البشري ونبراس المعرفة. لقد شيّد أجدادنا الأهرامات العظيمة والمعابد الرائعة على ضفاف النيل - وهي صروح لا تزال تبهر العالم حتى يومنا هذا. وقد طوّروا نظم الكتابة، والرياضيات المتقدمة، والمعارف الطبية الهامة. ولم تكن هذه الإنجازات لمصر وحدها، بل غدت هدايا للعالم بأسره، لتبرهن على عظمة شعبنا وإبداعه المتجدد.",
@@ -659,7 +659,7 @@ window.lessonData = {
         },
         {
             "title": "Scene 3: Preserving Culture & Building Tomorrow",
-            "imageUrl": "../../assets/images/sec1_pride_generations_1790819562155.webp",
+            "imageUrl": "../../assets/images/sec_1/unit_1/sec1_pride_generations_1790819562155.webp",
             "caption": "United for Tomorrow: Great thinkers, literature, and living heritage connecting generations.",
             "textEn": "Their heritage shows that Egyptians have always worked with vision and determination. Egypt was also a center for culture and learning. Great authors, poets, and thinkers shared their ideas and recorded their knowledge in writing. Their works reflected the values, traditions, and beliefs of the Egyptian society and influenced people for generations. True pride begins when we understand our history, protect our culture, and work hard for the future. When we honor our past, stay united, and build our tomorrow with determination, we stand exactly where pride begins.",
             "textAr": "إن تراثهم يُثبت أن المصريين عملوا دوماً برؤية ثاقبة وعزيمة صادقة. كما كانت مصر مركزاً للإشعاع الثقافي والتعليم. شارك كبار المؤلفين والشعراء والمفكرين أفكارهم ودوّنوا معارفهم كتابةً. لقد عكست أعمالهم قيم المجتمع المصري وتقاليده ومعتقداته وألهمت أجيالاً متعاقبة. يبدأ الفخر الحقيقي حين نفهم تاريخنا، ونحمي ثقافتنا، ونعمل بجد لمستقبلنا. وعندما نجلّ ماضينا، ونبقى متحدين، ونبني غدنا بعزيمة، نقف حقاً حيث يبدأ الفخر.",
@@ -667,7 +667,7 @@ window.lessonData = {
         },
         {
             "title": "Scene 4: Reading: A Valuable Habit & Thinking Tool",
-            "imageUrl": "../../assets/images/sec1_reading_habit_1790819571920.webp",
+            "imageUrl": "../../assets/images/sec_1/unit_1/sec1_reading_habit_1790819571920.webp",
             "caption": "Expanding Minds: Reading unlocks creativity, relaxes the mind, and opens new doors.",
             "textEn": "Reading is one of the most valuable habits a person can develop. It gives us knowledge, helps us relax, and even improves our communication skills. First, reading improves our vocabulary and grammar. When we read books, magazines, or articles online, we see new words in context. Another important benefit is that reading develops our thinking skills. Stories make us imagine and visualize scenes in our minds, while non-fiction books teach us facts. Whether for study or pleasure, picking up a book can open new doors.",
             "textAr": "تعد القراءة واحدة من أكثر العادات قيمة ونفعاً التي يمكن للإنسان اكتسابها. فهي تمنحنا المعرفة، وتساعدنا على الاسترخاء، وتطور مهارات التواصل لدينا. أولاً، تحسن القراءة ثروتنا اللغوية وقواعدنا؛ فعند قراءة الكتب والمجلات أو المقالات عبر الإنترنت، نرى الكلمات الجديدة في سياقها الصحيح. وفضلاً عن ذلك، تنمي القراءة مهارات التفكير لدينا؛ فالقصص تحفزنا على التخيل وتصور المشاهد في أذهاننا، بينما تعلمنا الكتب الواقعية الحقائق. وسواء كان ذلك للدراسة أو المتعة، فإن تناول كتاب وقراءته يفتح آفاقاً جديدة لا حدود لها.",

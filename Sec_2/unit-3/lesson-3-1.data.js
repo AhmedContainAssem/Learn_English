@@ -737,7 +737,7 @@ window.lessonData = {
     "storyPages": [
         {
             "badge": "🖼️ Scene 1: Arrival & Stillness",
-            "image": "../../assets/images/karnak_entrance.webp",
+            "image": "../../assets/images/sec_2/unit_3/karnak_entrance.webp",
             "caption": "Avenue of Ram-Headed Sphinxes at Sunrise",
             "titleEn": "The Stones That Remember: The Entrance of Silence",
             "textEn": "When I stood at the entrance to Karnak Temple Complex in Luxor for the first time, I was not struck by its size although it is truly enormous, but by its silence. In the early morning, before the tour groups arrive, the avenue of ram-headed sphinxes stretches southward in near-perfect stillness, each one carved from sandstone that was already ancient when Cleopatra walked beside it. In the space between the columns, with the first light falling at a low angle across the hieroglyphics, it feels as if time has not moved at all.",
@@ -754,7 +754,7 @@ window.lessonData = {
         },
         {
             "badge": "🏛️ Scene 2: The Great Hypostyle Hall",
-            "image": "../../assets/images/karnak_hypostyle.webp",
+            "image": "../../assets/images/sec_2/unit_3/karnak_hypostyle.webp",
             "caption": "134 Massive Columns Standing Tall Through Millennia",
             "titleEn": "A Landscape of Accumulated Memory & Devotion",
             "textEn": "Karnak is not a single building but a landscape of accumulated memory. Built over more than two thousand years from the reign of Senusret in the Middle Kingdom to the Ptolemaic era - the complex represents the longest continuous building project in human history. Each pharaoh added, changed, or inscribed something, leaving layers of devotion and ambition encoded in stone. The Hypostyle Hall alone contains 134 massive columns, decorated from floor to ceiling. This space was designed not simply to impress but to communicate: it belonged to the gods, and the pharaoh was their representative on earth.",
@@ -771,7 +771,7 @@ window.lessonData = {
         },
         {
             "badge": "✨ Scene 3: Interpreting Our Living Heritage",
-            "image": "../../assets/images/karnak_heritage.webp",
+            "image": "../../assets/images/sec_2/unit_3/karnak_heritage.webp",
             "caption": "Carrying Forward the Torch of Egyptian Identity",
             "titleEn": "Questions for Modern Egypt: Beyond Mere Observation",
             "textEn": "What I find most significant, however, is not what has survived, but the question the site invites us to ask as Egyptians today. Karnak was not built for tourists; it was built for a civilization. Yet as we walk through its vast spaces, we are reminded that history is not only something we observe, but something we interpret and carry forward. If a site of memory belongs to everyone, how should it be understood, and whose voices should shape the way it is told? These are not abstract questions, they are the questions that every Egyptian student standing between those columns should feel encouraged to explore.",

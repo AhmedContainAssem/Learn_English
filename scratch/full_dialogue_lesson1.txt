@@ -1,0 +1,137 @@
+id="dialogue" class="tab-content">
+            <div class="section-title">🗣️ حوار الاستماع التفاعلي (Listening Dialogue - SB Page 15)</div>
+            <p class="section-hint" style="color: #94a3b8; font-size: 0.95rem; margin-bottom: 20px;">
+                💡 حوار بين مقدم برنامج <strong>"Our Story"</strong> وعالمة الآثار <strong>د. منى حسن (Dr. Mona Hassan)</strong> حول مشروع ترميم معبد فيلة وأهمية حماية تراثنا القومي وإلهام الشباب.
+            </p>
+
+            <!-- Dialogue Controls Bar -->
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 12px; background: rgba(19, 27, 46, 0.8); padding: 14px 20px; border-radius: 14px; border: 1px solid var(--border-color);">
+                <div style="font-weight: 700; color: var(--accent-primary);">
+                    📻 محرك الاستماع الصوتي للمحادثة
+                </div>
+                <div style="display: flex; gap: 10px;">
+                    <button id="dialoguePlayAllBtn" class="action-btn next-btn" onclick="toggleDialoguePlayAll()" style="font-size: 0.95rem; padding: 8px 18px;">
+                        ▶️ تشغيل المحادثة كاملة بالتتابع
+                    </button>
+                </div>
+            </div>
+
+            <!-- Dialogue List of Speech Boxes -->
+            <div class="dialogue-list" id="dialogueList">
+                <!-- Turn 1: Host -->
+                <div class="dialogue-box" id="diag-turn-0">
+                    <div class="dialogue-content">
+                        <div class="speaker-name" style="color: var(--accent-secondary);">🎙️ Host (المذيع):</div>
+                        <div class="en-text" style="font-size: 1.1rem; color: #f8fafc; font-weight: 600; line-height: 1.6; margin-bottom: 6px;">
+                            Welcome back to "Our Story". Today, we're talking to Dr. Mona Hassan, an archaeologist who recently led a team to restore parts of the Philae Temple. Dr. Mona, thank you for joining us.
+                        </div>
+                        <div class="arabic-text" style="color: #94a3b8; font-size: 0.95rem;">
+                            (أهلاً بكم مجدداً في برنامج "قصتنا". نتحدث اليوم مع الدكتورة منى حسن، وهي عالمة آثار قادت مؤخراً فريقاً لترميم أجزاء من معبد فيلة. دكتورة منى، شكراً لانضمامكِ إلينا.)
+                        </div>
+                    </div>
+                    <button type="button" class="audio-btn" onclick="speakText('Welcome back to Our Story. Today, we are talking to Dr. Mona Hassan, an archaeologist who recently led a team to restore parts of the Philae Temple. Dr. Mona, thank you for joining us.')" title="استمع للنطق">🔊</button>
+                </div>
+
+                <!-- Turn 2: Dr. Mona -->
+                <div class="dialogue-box" id="diag-turn-1" style="border-right-color: var(--accent-orange);">
+                    <div class="dialogue-content">
+                        <div class="speaker-name" style="color: var(--accent-orange);">🏛️ Dr. Mona Hassan (د. منى حسن):</div>
+                        <div class="en-text" style="font-size: 1.1rem; color: #f8fafc; font-weight: 600; line-height: 1.6; margin-bottom: 6px;">
+                            Thank you. It's a privilege to be here.
+                        </div>
+                        <div class="arabic-text" style="color: #94a3b8; font-size: 0.95rem;">
+                            (شكراً لك. إنه لشرف عظيم وامتياز أن أكون هنا معكم.)
+                        </div>
+                    </div>
+                    <button type="button" class="audio-btn" onclick="speakText('Thank you. It is a privilege to be here.')" title="استمع للنطق">🔊</button>
+                </div>
+
+                <!-- Turn 3: Host -->
+                <div class="dialogue-box" id="diag-turn-2">
+                    <div class="dialogue-content">
+                        <div class="speaker-name" style="color: var(--accent-secondary);">🎙️ Host (المذيع):</div>
+                        <div class="en-text" style="font-size: 1.1rem; color: #f8fafc; font-weight: 600; line-height: 1.6; margin-bottom: 6px;">
+                            Your work on Philae is a powerful symbol. Can you tell us why preserving our heritage is so important?
+                        </div>
+                        <div class="arabic-text" style="color: #94a3b8; font-size: 0.95rem;">
+                            (عملكم في معبد فيلة يمثل رمزاً قوياً. هل يمكنكِ إخبارنا لماذا يعد الحفاظ على تراثنا أمراً بالغ الأهمية؟)
+                        </div>
+                    </div>
+                    <button type="button" class="audio-btn" onclick="speakText('Your work on Philae is a powerful symbol. Can you tell us why preserving our heritage is so important?')" title="استمع للنطق">🔊</button>
+                </div>
+
+                <!-- Turn 4: Dr. Mona -->
+                <div class="dialogue-box" id="diag-turn-3" style="border-right-color: var(--accent-orange);">
+                    <div class="dialogue-content">
+                        <div class="speaker-name" style="color: var(--accent-orange);">🏛️ Dr. Mona Hassan (د. منى حسن):</div>
+                        <div class="en-text" style="font-size: 1.1rem; color: #f8fafc; font-weight: 600; line-height: 1.6; margin-bottom: 6px;">
+                            Of course. When we restore a historical site, we're not just fixing old stones. We're reconnecting with our past. Our ancestors left us a rich legacy—from the pyramids to the temples of Upper Egypt. This heritage is the core of our national identity. It reminds us of who we are, where we came from, and the greatness we are capable of. It's a source of immense pride for every Egyptian.
+                        </div>
+                        <div class="arabic-text" style="color: #94a3b8; font-size: 0.95rem;">
+                            (بالتأكيد. عندما نقوم بترميم موقع تاريخي، فنحن لا نصلح مجرد أحجار قديمة، بل نعيد الاتصال والتواصل مع ماضينا. لقد ترك لنا أجدادنا إرثاً وتراثاً غنياً—من الأهرامات إلى معابد صعيد مصر. هذا التراث هو جوهر هويتنا الوطنية؛ فهو يذكرنا بمن نكون، ومن أين أتينا، والعظمة التي نحن قادرون على تحقيقها. إنه مصدر فخر هائل لكل مصري.)
+                        </div>
+                    </div>
+                    <button type="button" class="audio-btn" onclick="speakText('Of course. When we restore a historical site, we are not just fixing old stones. We are reconnecting with our past. Our ancestors left us a rich legacy, from the pyramids to the temples of Upper Egypt. This heritage is the core of our national identity. It reminds us of who we are, where we came from, and the greatness we are capable of. It is a source of immense pride for every Egyptian.')" title="استمع للنطق">🔊</button>
+                </div>
+
+                <!-- Turn 5: Host -->
+                <div class="dialogue-box" id="diag-turn-4">
+                    <div class="dialogue-content">
+                        <div class="speaker-name" style="color: var(--accent-secondary);">🎙️ Host (المذيع):</div>
+                        <div class="en-text" style="font-size: 1.1rem; color: #f8fafc; font-weight: 600; line-height: 1.6; margin-bottom: 6px;">
+                            It sounds like more than a job; it's a mission. What do you think is the biggest challenge to preserving our heritage today?
+                        </div>
+                        <div class="arabic-text" style="color: #94a3b8; font-size: 0.95rem;">
+                            (يبدو الأمر أكبر من مجرد وظيفة عادية؛ إنها رسالة ومهمة وطنية. ما هو في رأيكِ التحدي الأكبر للحفاظ على تراثنا في وقتنا الحاضر؟)
+                        </div>
+                    </div>
+                    <button type="button" class="audio-btn" onclick="speakText('It sounds like more than a job, it is a mission. What do you think is the biggest challenge to preserving our heritage today?')" title="استمع للنطق">🔊</button>
+                </div>
+
+                <!-- Turn 6: Dr. Mona -->
+                <div class="dialogue-box" id="diag-turn-5" style="border-right-color: var(--accent-orange);">
+                    <div class="dialogue-content">
+                        <div class="speaker-name" style="color: var(--accent-orange);">🏛️ Dr. Mona Hassan (د. منى حسن):</div>
+                        <div class="en-text" style="font-size: 1.1rem; color: #f8fafc; font-weight: 600; line-height: 1.6; margin-bottom: 6px;">
+                            The challenges are many, from urban development to climate change. But perhaps the biggest is a lack of awareness among our youth. Many young people don't realize the value of these treasures. Our job is to inspire them, to make them see that a thousand-year-old temple is not just a tourist attraction—it's a living part of our story. We need to encourage them to visit these sites, to learn the stories, and to feel the connection.
+                        </div>
+                        <div class="arabic-text" style="color: #94a3b8; font-size: 0.95rem;">
+                            (التحديات كثيرة، من التطور العمراني إلى التغير المناخي. ولكن ربما التحدي الأكبر هو نقص الوعي بين شبابنا. فالعديد من الشباب لا يدركون قيمة هذه الكنوز العظيمة. ومهمتنا هي إلهامهم، ليدركوا أن المعبد الذي يبلغ عمره آلاف السنين ليس مجرد مزار سياحي—بل هو جزء حي من حكايتنا. نحن بحاجة إلى تشجيعهم على زيارة هذه المواقع، وتعلم قصصها، والشعور بالانتماء إليها.)
+                        </div>
+                    </div>
+                    <button type="button" class="audio-btn" onclick="speakText('The challenges are many, from urban development to climate change. But perhaps the biggest is a lack of awareness among our youth. Many young people do not realize the value of these treasures. Our job is to inspire them, to make them see that a thousand-year-old temple is not just a tourist attraction, it is a living part of our story. We need to encourage them to visit these sites, to learn the stories, and to feel the connection.')" title="استمع للنطق">🔊</button>
+                </div>
+
+                <!-- Turn 7: Host -->
+                <div class="dialogue-box" id="diag-turn-6">
+                    <div class="dialogue-content">
+                        <div class="speaker-name" style="color: var(--accent-secondary);">🎙️ Host (المذيع):</div>
+                        <div class="en-text" style="font-size: 1.1rem; color: #f8fafc; font-weight: 600; line-height: 1.6; margin-bottom: 6px;">
+                            That's a great point. You're inspiring them to become the next generation of protectors. Thank you, for your valuable work, Dr. Mona.
+                        </div>
+                        <div class="arabic-text" style="color: #94a3b8; font-size: 0.95rem;">
+                            (هذه نقطة ممتازة ورائعة. أنتم تلهمونهم ليصبحوا الجيل القادم من حماة التراث. شكراً جزيلاً لكِ على عملكِ القيّم، دكتورة منى.)
+                        </div>
+                    </div>
+                    <button type="button" class="audio-btn" onclick="speakText('That is a great point. You are inspiring them to become the next generation of protectors. Thank you, for your valuable work, Dr. Mona.')" title="استمع للنطق">🔊</button>
+                </div>
+            </div>
+
+            <!-- Pedagogical Highlights from Dialogue -->
+            <div class="spotlight-box" style="margin-top: 25px;">
+                <div class="spotlight-title">🧠 أهم نقاط الفهم واللغويات من نص الاستماع (Key Takeaways):</div>
+                <div class="spotlight-content">
+                    <ul style="margin: 0; padding-right: 20px; line-height: 1.9; color: #e2e8f0;">
+                        <li><strong>Philae Temple:</strong> معبد فيلة بأسوان (Upper Egypt)، قادت د. منى فريقاً لترميمه (restore).</li>
+                        <li><strong>Core of National Identity:</strong> التراث ليس مجرد أحجار قديمة (old stones)، بل هو جوهر الهوية الوطنية ومصدر فخر هائل (source of immense pride).</li>
+                        <li><strong>Biggest Challenge:</strong> التحدي الأكبر لحماية التراث هو نقص الوعي (lack of awareness) بين الشباب (youth).</li>
+                        <li><strong>The Protectors:</strong> الهدف هو إلهام الجيل القادم ليصبحوا حماة لتراثهم (the next generation of protectors).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- Tab 4: Interactive Comprehensive Quiz      -->
+        <!-- ========================================== -->
+        <div 

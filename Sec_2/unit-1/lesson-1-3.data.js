@@ -610,7 +610,7 @@ window.lessonData = {
         {
             "title": "Introduction: Whose Responsibility Is It?",
             "caption": "Exploring who is responsible for our health, lifestyle, and well-being",
-            "imageUrl": "../../assets/images/sec2_u1_l3_scene1_1790205888914.webp",
+            "imageUrl": "../../assets/images/sec_2/unit_1/sec2_u1_l3_scene1_1790205888914.webp",
             "textEn": "People have different opinions about who is responsible for a person's lifestyle and well-being. Some believe that individuals should make their own healthy choices and take control of their habits. Others argue that family, society, money, and social media strongly influence people's decisions. The article explores different perspectives on responsibility, well-being, and the factors that shape human behavior and identity.",
             "textAr": "يختلف الناس في آرائهم حول من يتحمل مسؤولية نمط حياة الفرد ورفاهيته. يرى البعض أن الأفراد يجب أن يتخذوا خياراتهم الصحية بأنفسهم ويتحكموا في عاداتهم. بينما يجادل آخرون بأن الأسرة والمجتمع والمال ووسائل التواصل الاجتماعي تؤثر بشدة على قرارات الناس. يستكشف المقال وجهات نظر مختلفة حول المسؤولية والرفاهية والعوامل التي تشكل السلوك البشري والهوية.",
             "vocabNotes": [
@@ -639,7 +639,7 @@ window.lessonData = {
         {
             "title": "1. The Case for Personal Responsibility",
             "caption": "Exercising agency and building resilience through personal ownership",
-            "imageUrl": "../../assets/images/sec2_u1_l3_scene2_1790205901553.webp",
+            "imageUrl": "../../assets/images/sec_2/unit_1/sec2_u1_l3_scene2_1790205901553.webp",
             "textEn": "Many health professionals and philosophers argue that personal responsibility lies at the heart of a well-lived life. From this perspective, every individual possesses the agency — the capacity to choose and act, and it is through the exercise of this agency that identity is formed. Choosing to exercise, to eat nutritiously, to sleep well, and to manage stress are not simply habits; they are expressions of who we are and what we value. Psychologists refer to this as having an \"internal locus of control\" — a belief that one's own actions, rather than external forces, determine outcomes. Research shows that individuals with high self-efficacy maintain healthy behaviors over time, building confidence, resilience, and a positive identity.",
             "textAr": "يجادل العديد من المتخصصين في الصحة والفلاسفة بأن المسؤولية الفردية تقع في صميم الحياة الجيدة. من هذا المنظور، يمتلك كل فرد القدرة على الاختيار والتصرف (agency)، ومن خلال ممارسة هذه القدرة تتشكل الهوية. فاختيار ممارسة الرياضة وتناول طعام مغذٍ وإدارة التوتر ليست مجرد عادات، بل تعبير عمن نكون. يسمي علماء النفس ذلك بـ \"موضع التحكم الداخلي\" — الإيمان بأن أفعال المرء هي التي تحدد النتائج، مما يبني الثقة والمرونة والشعور بالهدف.",
             "vocabNotes": [
@@ -668,7 +668,7 @@ window.lessonData = {
         {
             "title": "2. Social and Environmental Influences",
             "caption": "Recognizing structural barriers and advertising pressures on choices",
-            "imageUrl": "../../assets/images/sec2_u1_l3_scene3_1790205916394.webp",
+            "imageUrl": "../../assets/images/sec_2/unit_1/sec2_u1_l3_scene3_1790205916394.webp",
             "textEn": "However, the idea that individuals are entirely responsible for their own health is increasingly challenged by social scientists and public health experts. Research in sociology demonstrates that where we grow up, how much money our family has, and the cultural rules we are raised with profoundly shape the choices available to us. A teenager growing up in a neighborhood with no safe parks or affordable sports facilities cannot simply choose to exercise easily. These are structural barriers built into the environment that restrict genuine choice. Moreover, advertising and social media exert enormous pressure on young people, targeting teenagers with billion-dollar campaigns.",
             "textAr": "ومع ذلك، فإن فكرة أن الأفراد مسؤولون تماماً عن صحتهم يواجهها علماء الاجتماع وخبراء الصحة العامة بتحديات متزايدة. فالأبحاث تثبت أن البيئة ومستوى دخل الأسرة والعادات الثقافية تشكل الخيارات المتاحة لنا. فالشاب الذي ينشأ في حي يفتقر إلى حدائق آمنة أو مرافق رياضية ميسورة التكلفة يواجه عوائق هيكلية (structural barriers) تقيد خياره الحقيقي، فضلاً عن الضغوط الهائلة لإعلانات الوجبات السريعة ووسائل التواصل الاجتماعي.",
             "vocabNotes": [
@@ -697,7 +697,7 @@ window.lessonData = {
         {
             "title": "3. The Role of Government and Shared Responsibility",
             "caption": "Nudge policies and community structures making healthy living accessible",
-            "imageUrl": "../../assets/images/sec2_u1_l3_scene4_1790205932108.webp",
+            "imageUrl": "../../assets/images/sec_2/unit_1/sec2_u1_l3_scene4_1790205932108.webp",
             "textEn": "A third perspective argues that responsibility is not an either-or choice; it does not belong entirely to the individual or entirely to society, but is shared. Governments, schools, families, and communities all have a role in creating the conditions that make healthy living possible and accessible. Public health policies, such as taxes on sugary drinks and restrictions on junk food advertising near schools, guide better choices. Economist Richard Thaler's concept of the \"nudge\" captures this idea: small, well-designed changes to the environment can shift behavior without removing individual freedom.",
             "textAr": "تجادل وجهة نظر ثالثة بأن المسؤولية ليست خياراً إما-أو، بل هي مسؤولية مشتركة بين الأفراد والحكومات والمدارس والأسر والمجتمعات لخلق ظروف تجعل الحياة الصحية ممكنة ومتاحة. فسياسات الصحة العامة تهدف لتوجيه القرارات نحو الأفضل. ومفهوم \"التوجيه غير المباشر\" (nudge) للاقتصادي ريتشارد ثالر يوضح كيف يمكن لتغييرات بيئية بسيطة ومدروسة أن تعدل السلوك للأفضل دون مصادرة حرية الاختيار الفردية.",
             "vocabNotes": [

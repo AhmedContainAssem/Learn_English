@@ -550,7 +550,7 @@ window.lessonData = {
             "title": "Chapter 1: Our Traditional Home & The Courtyard",
             "textEn": "I live with my family in a traditional building. It has a pretty courtyard in the center where our family gathers every weekend. The building has small balconies that look over the street, and the ceiling of our living room is painted white with bright lights.",
             "textAr": "أعيش مع عائلتي في مبنى تراثي تقليدي. يحتوي على فناء داخلي (حوش) جميل في المنتصف حيث تتجمع عائلتنا كل نهاية أسبوع. يحتوي المبنى على شرفات صغيرة تطل على الشارع، وسقف غرفة معيشتنا مدهون باللون الأبيض مع إضاءات ساطعة.",
-            "imageUrl": "../../assets/images/courtyard_portrait_1789590031900.webp",
+            "imageUrl": "../../assets/images/prep_3/common/courtyard_portrait_1789590031900.webp",
             "caption": "A traditional family home with a serene courtyard and balconies",
             "vocabNotes": "traditional building (مبنى تراثي) • courtyard (فناء داخلي / حوش) • gather (يجتمع) • balconies (شرفات) • ceiling (سقف داخلي)"
         },
@@ -558,7 +558,7 @@ window.lessonData = {
             "title": "Chapter 2: Researching Our Family Tree",
             "textEn": "My great-grandmother and I are planning to research our family history and create a family tree. She tells me wonderful stories about my great-grandfather and my great-great-aunt. It is exciting to discover where our ancestors lived!",
             "textAr": "أنا وجدتي الكبرى نخطط للبحث في تاريخ عائلتنا وإنشاء شجرة العائلة. إنها تحكي لي قصصاً رائعة عن والدي جدي وعن عمة الجدة الكبرى. من المثير والمشوق حقاً أن نكتشف أين عاش أجدادنا!",
-            "imageUrl": "../../assets/images/family_tree_portrait_1789590044093.webp",
+            "imageUrl": "../../assets/images/prep_3/unit_1/family_tree_portrait_1789590044093.webp",
             "caption": "Researching family history and discovering ancestral roots",
             "vocabNotes": "great-grandmother (الجدة الكبرى) • research (يبحث / يجري بحثاً) • family tree (شجرة العائلة) • great-grandfather (والد الجد) • discover (يكتشف)"
         },
@@ -566,7 +566,7 @@ window.lessonData = {
             "title": "Chapter 3: A Sociable Community & Neighbors",
             "textEn": "I live in a very sociable community. People in our neighborhood are friendly and supportive; they often talk and help each other. Whenever we arrive home, our lovely dog waits for us on the doorstep of our house.",
             "textAr": "أنا أعيش في مجتمع ودود واجتماعي للغاية. الناس في حيّنا طيبون وداعمون لبعضهم، وغالباً ما يتحدثون ويساعدون بعضهم البعض. وكلما نصل للمنزل، ينتظرنا كلبنا اللطيف على عتبة الباب.",
-            "imageUrl": "../../assets/images/neighborhood_portrait_1789590055673.webp",
+            "imageUrl": "../../assets/images/prep_3/unit_1/neighborhood_portrait_1789590055673.webp",
             "caption": "Friendly neighbors sharing cheerful moments in a supportive community",
             "vocabNotes": "sociable community (مجتمع ودود) • neighborhood (الحي) • supportive (داعم) • doorstep (عتبة الباب)"
         },
@@ -574,7 +574,7 @@ window.lessonData = {
             "title": "Chapter 4: Connecting Generations Together",
             "textEn": "Different generations often have difficulty communicating, but our family get-togethers build strong relationships. On my father's side of the family, I have two uncles and one aunt. We share positive attitudes and support each other.",
             "textAr": "الأجيال المختلفة غالباً ما تجد صعوبة في التواصل، لكن لمّات واجتماعات العائلة تبني علاقات وروابط قوية. ومن جهة عائلة والدي، لدي عمّان وعمة واحدة. نحن جميعاً نتشارك نظرة وسلوكاً إيجابياً ويساند كل منا الآخر.",
-            "imageUrl": "../../assets/images/generations_portrait_1789590067331.webp",
+            "imageUrl": "../../assets/images/prep_3/unit_1/generations_portrait_1789590067331.webp",
             "caption": "Multiple generations connecting with positive attitudes and strong bonds",
             "vocabNotes": "generations (أجيال) • get-togethers (اجتماعات عائلية) • relationships (علاقات) • positive attitude (نظرة إيجابية)"
         }

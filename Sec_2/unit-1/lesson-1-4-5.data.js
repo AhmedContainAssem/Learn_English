@@ -499,7 +499,7 @@ window.lessonData = {
         {
             "title": "1. Nationwide School Health Survey",
             "caption": "A comprehensive health survey across five Egyptian governorates",
-            "imageUrl": "../../assets/images/sec2_u1_l45_scene1_1790206456025.webp",
+            "imageUrl": "../../assets/images/sec_2/unit_1/sec2_u1_l45_scene1_1790206456025.webp",
             "textEn": "A nationwide school health survey done in Egypt in 2023 gathered data from 450 teenagers aged between 14 and 17, drawn from both urban and rural schools across five governorates. The study aimed to identify the primary sources of stress among teenagers and to examine the coping strategies they most commonly adopted. Its findings show a complex picture of modern teenage life, in which academic pressure, digital habits, and social expectations interact in ways that are often difficult to separate.",
             "textAr": "أجرى مسح صحي مدرسي شامل على مستوى الجمهورية في مصر عام 2023 لجمع بيانات من 450 مراهقاً تتراوح أعمارهم بين 14 و 17 عاماً من مدارس حضرية وريفية عبر خمس محافظات. هدفت الدراسة إلى تحديد المصادر الرئيسية للتوتر والضغط النفسي بين المراهقين ودراسة استراتيجيات التكيف الأكثر شيوعاً التي تبنوها. تظهر النتائج صورة معقدة لحياة المراهقين المعاصرة حيث يتفاعل الضغط الدراسي والعادات الرقمية والتوقعات الاجتماعية بطرق يصعب فصلها.",
             "vocabNotes": [
@@ -528,7 +528,7 @@ window.lessonData = {
         {
             "title": "2. Exam Stress & Digital Habits",
             "caption": "Academic pressure and social media comparison as key stress drivers",
-            "imageUrl": "../../assets/images/sec2_u1_l45_scene2_1790206471845.webp",
+            "imageUrl": "../../assets/images/sec_2/unit_1/sec2_u1_l45_scene2_1790206471845.webp",
             "textEn": "The most significant finding was that 68% of participants reported experiencing moderate to high levels of stress during examination periods. When asked to identify the main causes, students ranked academic pressure first (cited by 82% of respondents), followed by social media comparison (61%), insufficient sleep (57%), and family expectations (49%).",
             "textAr": "أظهرت النتيجة الأبرز أن 68% من المشاركين أبلغوا عن معاناتهم من مستويات توتر متوسطة إلى عالية خلال فترات الامتحانات. وعند سؤالهم عن الأسباب الرئيسية، وضع الطلاب الضغط الدراسي في المرتبة الأولى (بنسبة 82% من المستجيبين)، يليه المقارنة على وسائل التواصل الاجتماعي (61%)، والنوم غير الكافي (57%)، وتوقعات الأسرة (49%).",
             "vocabNotes": [
@@ -557,7 +557,7 @@ window.lessonData = {
         {
             "title": "3. Physical Activity & Cultural Coping",
             "caption": "Exercise benefits alongside collectivist vs individualistic coping styles",
-            "imageUrl": "../../assets/images/sec2_u1_l45_scene3_1790206483781.webp",
+            "imageUrl": "../../assets/images/sec_2/unit_1/sec2_u1_l45_scene3_1790206483781.webp",
             "textEn": "Clearly, the study found that teenagers who did regular physical activity — defined as at least 30 minutes of exercise four or more times per week — reported stress levels that were, on average, 34% lower than those of their sedentary peers, even after controlling for academic performance variables. Cultural background also was a significant factor. Students from families with strong collectivist values were considerably more likely to seek emotional support from parents or siblings. In contrast, students from individualistic environments tended to rely on individual coping strategies. The availability of support networks was decisive.",
             "textAr": "وجدت الدراسة بوضوح أن المراهقين الممارسين لنشاط بدني منتظم (30 دقيقة على الأقل 4 مرات أسبوعياً) سجلوا مستويات توتر أقل بنسبة 34% مقارنة بأقرانهم الخاملين. وكانت الخلفية الثقافية عاملاً حاسماً أيضاً: فالطلاب المنتمون لأسر ذات قيم جماعية (collectivist) كانوا أكثر طلباً للدعم العاطفي الأسري، بينما اعتمد المنتمون لبيئات فردية (individualistic) على استراتيجيات شخصية، وكانت شبكات الدعم هي المتغير الحاسم.",
             "vocabNotes": [
@@ -586,7 +586,7 @@ window.lessonData = {
         {
             "title": "4. Counseling Gap & Targeted Support",
             "caption": "Bridging the gap between urban and rural school counseling services",
-            "imageUrl": "../../assets/images/sec2_u1_l45_scene4_1790206495778.webp",
+            "imageUrl": "../../assets/images/sec_2/unit_1/sec2_u1_l45_scene4_1790206495778.webp",
             "textEn": "The researchers also noted a significant gap in access to school counseling services between urban and rural institutions. While 74% of urban schools in the sample offered some form of counseling, the figure dropped to 31% in rural schools. The study concluded that targeted mental health support programs in schools could meaningfully reduce stress levels among teenagers.",
             "textAr": "لاحظ الباحثون وجود فجوة كبيرة في إمكانية الوصول إلى خدمات الإرشاد والتوجيه النفسي المدرسي بين المؤسسات الحضرية والريفية. فبينما قدمت 74% من المدارس الحضرية شكلاً من أشكال الإرشاد النفسي، انخفضت النسبة إلى 31% في المدارس الريفية. وخلصت الدراسة إلى أن برامج دعم الصحة النفسية الموجهة والمستهدفة (targeted) في المدارس قادرة على تقليل مستويات التوتر بشكل ملموس لدى المراهقين.",
             "vocabNotes": [

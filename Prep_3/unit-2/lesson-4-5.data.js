@@ -396,7 +396,7 @@ window.lessonData = {
     "storyPages": [
         {
             "title": "Lesson 5: Let's Talk • Face-to-Face Conversation",
-            "imageUrl": "../../assets/images/two_girls_talking_1790200743332.webp",
+            "imageUrl": "../../assets/images/prep_3/unit_2/two_girls_talking_1790200743332.webp",
             "caption": "Mona and Naglaa having an open conversation about communication and resolving misunderstandings",
             "textEn": "Mona: Have you ever had a misunderstanding with a friend?\n\nNaglaa: Yes, totally. Texting causes a lot of misunderstandings because you can't hear tone or see body language.\n\nMona: I totally agree! When something feels wrong, a real face-to-face conversation makes such a big difference.\n\nNaglaa: So true. It takes courage to talk openly, but it's the best way to fix things and keep our bond strong.",
             "textAr": "منى: هل سبق لك أن واجهت سوء تفاهم مع صديقة؟\nنجلاء: نعم، تماماً. المراسلة النصية تسبب الكثير من سوء التفاهم لأنك لا تستطيعين سماع نبرة الصوت أو رؤية لغة الجسد.\nمنى: أوافقك تماماً! عندما تشعرين بأن هناك شيئاً خاطئاً، فإن المحادثة الحقيقية وجهاً لوجه تحدث فرقاً كبيراً جداً.\nنجلاء: هذا صحيح جداً. يتطلب الأمر شجاعة للتحدث بصراحة، لكنها أفضل وسيلة لإصلاح الأمور والحفاظ على قوة علاقتنا.",
@@ -404,7 +404,7 @@ window.lessonData = {
         },
         {
             "title": "Lesson 6: Staying Close (البقاء على مقربة)",
-            "imageUrl": "../../assets/images/family_friends_bond_1790200755420.webp",
+            "imageUrl": "../../assets/images/prep_3/unit_2/family_friends_bond_1790200755420.webp",
             "caption": "Rebuilding bonds with family and friends through honest communication",
             "textEn": "Staying close to family and friends is essential for happiness. When tough situations or misunderstandings happen, staying silent makes things worse.\n\nIt takes determination and honesty to communicate your true feelings. Apologizing and forgiving rebuild the bond between people and create meaningful, lifelong relationships.",
             "textAr": "البقاء على مقربة من العائلة والأصدقاء أمر أساسي لتحقيق السعادة. عندما تقع مواقف صعبة أو سوء تفاهم، فإن البقاء صامتاً يجعل الأمور أسوأ.\n\nيتطلب الأمر عزيمة وصدقاً للتعبير عن مشاعرك الحقيقية. الاعتذار والمسامحة يعيدان بناء الرابطة بين الناس ويخلقان علاقات هادفة وذات مغزى تدوم مدى الحياة.",

@@ -1,0 +1,53 @@
+id="dialogue" class="tab-content">
+            <div class="section-title">🗣️ حوار الاستماع التفاعلي (Listening Dialogue - SB Page 15)</div>
+            <p class="section-hint" style="color: #94a3b8; font-size: 0.95rem; margin-bottom: 20px;">
+                💡 حوار بين مقدم برنامج <strong>"Our Story"</strong> وعالمة الآثار <strong>د. منى حسن (Dr. Mona Hassan)</strong> حول مشروع ترميم معبد فيلة وأهمية حماية تراثنا القومي وإلهام الشباب.
+            </p>
+
+            <!-- Dialogue Controls Bar -->
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 12px; background: rgba(19, 27, 46, 0.8); padding: 14px 20px; border-radius: 14px; border: 1px solid var(--border-color);">
+                <div style="font-weight: 700; color: var(--accent-primary);">
+                    📻 محرك الاستماع الصوتي للمحادثة
+                </div>
+                <div style="display: flex; gap: 10px;">
+                    <button id="dialoguePlayAllBtn" class="action-btn next-btn" onclick="toggleDialoguePlayAll()" style="font-size: 0.95rem; padding: 8px 18px;">
+                        ▶️ تشغيل المحادثة كاملة بالتتابع
+                    </button>
+                </div>
+            </div>
+
+            <!-- Dialogue List of Speech Boxes -->
+            <div class="dialogue-list" id="dialogueList">
+                <!-- Turn 1: Host -->
+                <div class="dialogue-box" id="diag-turn-0">
+                    <div class="dialogue-content">
+                        <div class="speaker-name" style="color: var(--accent-secondary);">🎙️ Host (المذيع):</div>
+                        <div class="en-text" style="font-size: 1.1rem; color: #f8fafc; font-weight: 600; line-height: 1.6; margin-bottom: 6px;">
+                            Welcome back to "Our Story". Today, we're talking to Dr. Mona Hassan, an archaeologist who recently led a team to restore parts of the Philae Temple. Dr. Mona, thank you for joining us.
+                        </div>
+                        <div class="arabic-text" style="color: #94a3b8; font-size: 0.95rem;">
+                            (أهلاً بكم مجدداً في برنامج "قصتنا". نتحدث اليوم مع الدكتورة منى حسن، وهي عالمة آثار قادت مؤخراً فريقاً لترميم أجزاء من معبد فيلة. دكتورة منى، شكراً لانضمامكِ إلينا.)
+                        </div>
+                    </div>
+                    <button type="button" class="audio-btn" onclick="speakText('Welcome back to Our Story. Today, we are talking to Dr. Mona Hassan, an archaeologist who recently led a team to restore parts of the Philae Temple. Dr. Mona, thank you for joining us.')" title="استمع للنطق">🔊</button>
+                </div>
+
+                <!-- Turn 2: Dr. Mona -->
+                <div class="dialogue-box" id="diag-turn-1" style="border-right-color: var(--accent-orange);">
+                    <div class="dialogue-content">
+                        <div class="speaker-name" style="color: var(--accent-orange);">🏛️ Dr. Mona Hassan (د. منى حسن):</div>
+                        <div class="en-text" style="font-size: 1.1rem; color: #f8fafc; font-weight: 600; line-height: 1.6; margin-bottom: 6px;">
+                            Thank you. It's a privilege to be here.
+                        </div>
+                        <div class="arabic-text" style="color: #94a3b8; font-size: 0.95rem;">
+                            (شكراً لك. إنه لشرف عظيم وامتياز أن أكون هنا معكم.)
+                        </div>
+                    </div>
+                    <button type="button" class="audio-btn" onclick="speakText('Thank you. It is a privilege to be here.')" title="استمع للنطق">🔊</button>
+                </div>
+
+                <!-- Turn 3: Host -->
+                <div class="dialogue-box" id="diag-turn-2">
+                    <div class="dialogue-content">
+                        <div class="speaker-name" style="color: var(--accent-secondary);">🎙️ Host (المذيع):</div>
+                        <div class="en-text" style="font-size: 

@@ -1,0 +1,328 @@
+import re
+import json
+
+def parse_derivatives_and_notes(html):
+    pos_ln = html.find('id="language-notes"')
+    pos_ln_end = html.find('id="storybook"')
+    if pos_ln == -1 or pos_ln_end == -1:
+        return [], []
+    
+    ln_html = html[pos_ln:pos_ln_end]
+
+    # Derivatives
+    derivatives = []
+    # note-card blocks before Clear the Confusion
+    pos_cc = ln_html.find('Clear the Confusion')
+    der_html = ln_html[:pos_cc] if pos_cc != -1 else ln_html
+    cards = der_html.split('<div class="note-card">')[1:]
+    for c in cards:
+        m_en = re.search(r'<div class="note-title-en">([^<]+)</div>', c)
+        m_ar = re.search(r'<div class="note-title-ar">([^<]+)</div>', c)
+        
+        items = []
+        inner_cards = c.split('<div class="card"')[1:]
+        for ic in inner_cards:
+            m_term = re.search(r'<div style="font-weight: 700; color: var\(--accent-primary\);">([^<]+)</div>', ic)
+            m_ex = re.search(r'<div style="color: #cbd5e1;[^>]*>\s*•\s*(.*?)</div>', ic, re.DOTALL)
+            if m_term:
+                term_raw = m_term.group(1).strip()
+                term_part = term_raw.split('-')[0].strip()
+                meaning_part = term_raw.split('-')[1].strip() if '-' in term_raw else ""
+                ex_text = re.sub(r'<[^>]+>', ' ', m_ex.group(1)).strip() if m_ex else ""
+                ex_text = ' '.join(ex_text.split())
+                items.append({
+                    "term": term_part,
+                    "meaning": meaning_part,
+                    "example": ex_text
+                })
+        
+        if m_en:
+            derivatives.append({
+                "rootWord": m_en.group(1).strip(),
+                "rootWordAr": m_ar.group(1).strip() if m_ar else "",
+                "items": items
+            })
+    
+    # Clear the Confusion
+    confusion = []
+    if pos_cc != -1:
+        cc_html = ln_html[pos_cc:]
+        cc_cards = cc_html.split('<div class="note-card"')[1:]
+        for c in cc_cards:
+            m_en = re.search(r'<div class="note-title-en">([^<]+)</div>', c)
+            m_ar = re.search(r'<div class="note-title-ar">([^<]+)</div>', c)
+            items = []
+            inner_cards = c.split('<div class="card"')[1:]
+            for ic in inner_cards:
+                m_term = re.search(r'<div style="font-weight: 700; color: var\(--accent-primary\);">([^<]+)</div>', ic)
+                m_ex = re.search(r'<div style="color: #cbd5e1;[^>]*>\s*•\s*(.*?)</div>', ic, re.DOTALL)
+                if m_term:
+                    term_raw = m_term.group(1).strip()
+                    term_part = term_raw.split('-')[0].strip()
+                    meaning_part = term_raw.split('-')[1].strip() if '-' in term_raw else ""
+                    ex_text = re.sub(r'<[^>]+>', ' ', m_ex.group(1)).strip() if m_ex else ""
+                    ex_text = ' '.join(ex_text.split())
+                    items.append({
+                        "term": term_part,
+                        "meaning": meaning_part,
+                        "example": ex_text
+                    })
+            if m_en:
+                confusion.append({
+                    "titleEn": m_en.group(1).strip(),
+                    "titleAr": m_ar.group(1).strip() if m_ar else "",
+                    "items": items
+                })
+
+    return derivatives, confusion
+
+def parse_dialogue(html):
+    pos_d = html.find('id="dialogue"')
+    pos_d_end = html.find('id="quiz"')
+    if pos_d == -1 or pos_d_end == -1:
+        return None
+    d_html = html[pos_d:pos_d_end]
+    boxes = d_html.split('<div class="dialogue-turn-box">')[1:]
+    turns = []
+    for b in boxes:
+        m_av = re.search(r'<div class="dialogue-avatar">([^<]+)</div>', b)
+        m_sp = re.search(r'<strong[^>]*>([^<]+)</strong>', b)
+        m_en = re.search(r'<div class="en-text"[^>]*>(.*?)</div>', b, re.DOTALL)
+        m_ar = re.search(r'<div[^>]*dir="rtl"[^>]*>\s*\((.*?)\)\s*</div>', b, re.DOTALL)
+
+        av = m_av.group(1).strip() if m_av else '🗣️'
+        sp_full = m_sp.group(1).strip() if m_sp else 'Speaker'
+        sp_en = sp_full.split('(')[0].strip()
+        sp_ar = sp_full.split('(')[1].replace(')', '').strip() if '(' in sp_full else sp_full
+        en = re.sub(r'<[^>]+>', ' ', m_en.group(1)).strip() if m_en else ''
+        en = ' '.join(en.split())
+        ar = re.sub(r'<[^>]+>', ' ', m_ar.group(1)).strip() if m_ar else ''
+        ar = ' '.join(ar.split())
+
+        turns.append({
+            "speaker": sp_en,
+            "speakerAr": sp_ar,
+            "avatar": av,
+            "textEn": en,
+            "textAr": ar
+        })
+    if turns:
+        return {
+            "title": "Interactive Speaking Dialogue",
+            "turns": turns
+        }
+    return None
+
+# Migrate Sec_1/unit-1/lesson-1
+with open('Sec_1/unit-1/lesson-1.html', 'r', encoding='utf-8') as f:
+    h1 = f.read()
+
+der1, conf1 = parse_derivatives_and_notes(h1)
+diag1 = parse_dialogue(h1)
+print(f"Sec 1 Lesson 1: {len(der1)} derivatives, {len(conf1)} confusion notes, dialogue={diag1 is not None}")
+
+with open('Sec_1/unit-1/lesson-1.data.js', 'r', encoding='utf-8') as f:
+    d1_js = f.read()
+
+pos_end = d1_js.rfind('};')
+extra_fields = ""
+if 'derivatives' not in d1_js and der1:
+    extra_fields += ',\n    "derivatives": ' + json.dumps(der1, ensure_ascii=False, indent=8)
+if 'confusionNotes' not in d1_js and conf1:
+    extra_fields += ',\n    "confusionNotes": ' + json.dumps(conf1, ensure_ascii=False, indent=8)
+if 'dialogue' not in d1_js and diag1:
+    extra_fields += ',\n    "dialogue": ' + json.dumps(diag1, ensure_ascii=False, indent=8)
+
+if extra_fields:
+    d1_js = d1_js[:pos_end] + extra_fields + '\n' + d1_js[pos_end:]
+    with open('Sec_1/unit-1/lesson-1.data.js', 'w', encoding='utf-8') as f:
+        f.write(d1_js)
+    print("Updated Sec_1/unit-1/lesson-1.data.js!")
+
+# Rebuild clean Sec_1/unit-1/lesson-1.html
+clean_h1 = '''<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sec 1 - Unit 1 - Lessons 1 & 2: Getting Away | Mr. Ahmed Assem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css?v=6">
+    <link rel="stylesheet" href="../../assets/css/curriculum.css">
+    <link rel="stylesheet" href="../../assets/css/storybook.css">
+    <link rel="stylesheet" href="../../assets/css/quiz.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb">
+            <a href="../index.html">Sec 1</a> / <a href="./index.html">Unit 1</a> / <span>Lessons 1 & 2 (Getting Away)</span>
+        </div>
+
+        <!-- Teacher Profile Header -->
+        <div class="teacher-profile-header">
+            <div class="avatar-wrapper">
+                <img src="../../my-photo-profile.webp" alt="Mr. Ahmed Assem" class="teacher-avatar" onerror="this.onerror=null; this.src='../../my-photo-profile.webp';">
+            </div>
+            <h1 class="teacher-title">Mr. Ahmed Assem</h1>
+            <div class="slogan">✨ Easy Peasy Ya Englezeey ✨</div>
+            <div class="badges-row">
+                <span class="badge badge-active">Sec 1 • Unit 1</span>
+                <span class="badge badge-gold">🌴 Getting Away (Ecotourism)</span>
+            </div>
+            <h2 id="title" class="lesson-header-title">Lessons 1 & 2: Getting Away</h2>
+            <p id="description" class="lesson-desc-display">المفردات التراكمية، التعريفات، المتلازمات، المشتقات ودراسة الفروق الدقيقة (Clear the Confusion)، قصة القراءة التفاعلية 3D، المحادثة الناطقة، واختبار شامل 🎯</p>
+        </div>
+
+        <!-- Tabs Navigation Bar -->
+        <div class="tabs-container">
+            <button class="tab-btn active" onclick="switchTab('vocab', this)">📖 المفردات (Vocabulary)</button>
+            <button class="tab-btn" onclick="switchTab('definitions', this)">💡 التعريفات (Definitions)</button>
+            <button class="tab-btn" onclick="switchTab('collocations', this)">🔗 المتلازمات والتعبيرات</button>
+            <button class="tab-btn" onclick="switchTab('synonyms', this)">🔄 المرادفات والمتضادات</button>
+            <button class="tab-btn" onclick="switchTab('language-notes', this)">🧬 المشتقات والفروق (Notes)</button>
+            <button class="tab-btn" onclick="switchTab('storybook', this)">📚 القراءة التفاعلية (StoryBook)</button>
+            <button class="tab-btn" onclick="switchTab('dialogue', this)">💬 المحادثة الناطقة (Dialogue)</button>
+            <button class="tab-btn" onclick="switchTab('quiz', this)">🎯 اختبار الدرس الشامل (Quiz)</button>
+        </div>
+
+        <!-- Dynamic Content Containers (Hydrated by CurriculumRenderer) -->
+        <div id="vocab" class="tab-content active"></div>
+        <div id="definitions" class="tab-content"></div>
+        <div id="collocations" class="tab-content"></div>
+        <div id="synonyms" class="tab-content"></div>
+        <div id="language-notes" class="tab-content"></div>
+
+        <!-- Tab: Interactive StoryBook 3D -->
+        <div id="storybook" class="tab-content">
+            <div class="storybook-wrapper">
+                <div class="storybook-book">
+                    <div class="book-spine-divider"></div>
+                    <div class="story-page-artwork">
+                        <div class="artwork-page-inner">
+                            <div class="page-badge-artwork"><span id="storyPageBadge">🖼️ Scene 1</span></div>
+                            <div class="artwork-container">
+                                <img id="storyArtworkImg" src="../../assets/images/madagascar_lemurs_1790099434032.webp" alt="Scene Artwork" onerror="this.classList.add('hidden');" referrerpolicy="no-referrer">
+                            </div>
+                            <div class="artwork-caption" id="storyCaption">Reading Scene</div>
+                        </div>
+                        <div class="story-page-meta">
+                            <span>📖 Getting Away</span>
+                            <span id="storyPageCounter">Page 1</span>
+                        </div>
+                    </div>
+                    <div class="story-page-content">
+                        <div>
+                            <div class="story-header">
+                                <h3 class="story-page-title" id="storyTitle">Interactive Reading Passage</h3>
+                                <button type="button" class="audio-btn" onclick="speakCurrentStoryPage(this)" title="استمع للنطق">🔊</button>
+                            </div>
+                            <div class="story-paragraph" id="storyText">Loading reading passage...</div>
+                        </div>
+                        <div>
+                            <div class="story-translation-box" id="storyTranslation"></div>
+                            <div class="story-vocab-chips" id="storyVocab"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-controls-bar">
+                    <button type="button" id="storyPrevBtn" onclick="changeStoryPage(-1)" class="action-btn secondary">⬅️ الصفحة السابقة</button>
+                    <button type="button" id="storytellerBtn" onclick="toggleStoryteller()" class="storyteller-btn">▶️ القارئ التلقائي (Auto Storyteller)</button>
+                    <button type="button" id="storyNextBtn" onclick="changeStoryPage(1)" class="action-btn secondary">الصفحة التالية ➔</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab: Interactive Speaking Dialogue -->
+        <div id="dialogue" class="tab-content">
+            <div id="dialogue-banner-container" style="margin-bottom: 20px;"></div>
+            <div id="dialogue-list-container" class="dialogue-list"></div>
+        </div>
+
+        <!-- Tab: QuizEngine Contract -->
+        <div id="quiz" class="tab-content">
+            <div class="score-board">
+                <span>السؤال: <span id="current-q">1</span> / <span id="total-q">30</span></span>
+                <span>النقاط: <span id="score">0</span> 🌟</span>
+            </div>
+
+            <div class="question-card">
+                <span class="emoji-display" id="emoji">🎯</span>
+                <div class="question-text" id="question">جاري تحميل السؤال...</div>
+                <div class="options-grid" id="options"></div>
+                <div class="feedback" id="feedback"></div>
+            </div>
+
+            <div class="center-row" style="margin-top: 20px;">
+                <button type="button" class="action-btn next-btn" id="next-btn" onclick="nextQuestion()" style="display: none;">السؤال التالي ➔</button>
+            </div>
+        </div>
+
+        <!-- Bottom Return Controls -->
+        <div class="nav-controls" style="margin-top: 36px;">
+            <a href="./index.html" class="action-btn secondary" data-sound-click="click">⬅ العودة لقائمة دروس الوحدة الأولى</a>
+            <a href="../index.html" class="action-btn secondary" data-sound-click="click">🏠 قائمة وحدات الصف الأول الثانوي</a>
+        </div>
+    </div>
+
+    <!-- Framework & Data Scripts -->
+    <script src="../../assets/js/bidi.js"></script>
+    <script src="../../assets/js/audio.js"></script>
+    <script src="../../assets/js/tabs.js"></script>
+    <script src="../../assets/js/quiz-engine.js"></script>
+    <script src="../../assets/js/story-engine.js"></script>
+    <script src="../../assets/js/ui.js?v=6"></script>
+
+    <!-- Modular Curriculum Sub-Renderers -->
+    <script src="../../assets/js/renderers/ui-primitives.js"></script>
+    <script src="../../assets/js/renderers/vocab-renderer.js"></script>
+    <script src="../../assets/js/renderers/lexicon-renderer.js"></script>
+    <script src="../../assets/js/renderers/dialogue-player.js"></script>
+
+    <!-- Pure Decoupled Lesson Data Payload -->
+    <script src="./lesson-1.data.js"></script>
+
+    <!-- Universal Dynamic Curriculum Renderer -->
+    <script src="../../assets/js/curriculum-renderer.js"></script>
+    <script src="../../assets/js/main.js"></script>
+
+    <script>
+        function changeStoryPage(dir) {
+            if (window.storyEngine && typeof window.storyEngine.changePage === 'function') {
+                window.storyEngine.changePage(dir);
+            }
+        }
+        function toggleStoryteller() {
+            if (window.storyEngine && typeof window.storyEngine.toggleStoryteller === 'function') {
+                window.storyEngine.toggleStoryteller();
+            }
+        }
+        function speakCurrentStoryPage(btn) {
+            if (window.storyEngine && window.storyEngine.storyPages) {
+                const cur = window.storyEngine.storyPages[window.storyEngine.currentPage];
+                const text = cur ? (cur.textEn || cur.text || '') : '';
+                if (text && typeof speakText === 'function') speakText(text, btn);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.CurriculumRenderer && typeof window.CurriculumRenderer.init === 'function') {
+                window.CurriculumRenderer.init();
+            }
+            if (typeof loadQuestion === 'function' && document.getElementById('question')) {
+                loadQuestion();
+            }
+            if (window.storyEngine && window.lessonData && window.lessonData.storyPages) {
+                window.storyEngine.loadPages(window.lessonData.storyPages);
+            }
+        });
+    </script>
+</body>
+</html>
+'''
+
+with open('Sec_1/unit-1/lesson-1.html', 'w', encoding='utf-8') as f:
+    f.write(clean_h1)
+
+print(f"Refactored Sec_1/unit-1/lesson-1.html! New line count: {len(clean_h1.splitlines())}")

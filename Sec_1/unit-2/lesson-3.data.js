@@ -663,7 +663,7 @@ window.lessonData = {
             "title": "The Community Outreach",
             "badge": "Scene 1 • An Unpaid Calling",
             "caption": "Tarek joins the voluntary initiative with retired professionals",
-            "image": "../../assets/images/gem_museum.webp",
+            "image": "../../assets/images/common/gem_museum.webp",
             "textEn": "Tarek was a high school student in Port Said who often spent his summer vacations playing video games. One morning, his uncle, Mr. Hany—a retired civil engineer—invited him to join a local community outreach initiative. Unlike paid employment, this program was run entirely by volunteers who gave their time freely without expecting financial rewards. When Tarek arrived at the community hall, he was amazed to see people of all ages, from enthusiastic teenagers to retired professionals, planning neighborhood development projects. Their collective contributions were aimed at making a visible difference in the district.",
             "translation": "كان طارق طالباً بالمرحلة الثانوية في بورسعيد يقضي عطلاته الصيفية غالباً في ألعاب الفيديو. وفي أحد الصباحات، دعاه خاله الأستاذ هاني — وهو مهندس مدني متقاعد — للمشاركة في مبادرة مجتمعية محلية. وخلافاً للوظائف مدفوعة الأجر، كان هذا البرنامج يُدار بالكامل بواسطة متطوعين يمنحون أوقاتهم طواعية وبحرية ودون انتظار أي مكافآت مالية. وعندما وصل طارق إلى قاعة المجتمع، ذُهل لرؤية أشخاص من مختلف الأعمار، من مراهقين متحمسين إلى مهنيين متقاعدين، يخططون معاً لمشاريع تطوير الحي. كانت مساهماتهم المشتركة تهدف إلى إحداث فرق ملحوظ وملموس في المنطقة.",
             "vocabulary": [
@@ -679,7 +679,7 @@ window.lessonData = {
             "title": "Learning from Uncle Mahmoud",
             "badge": "Scene 2 • Empathy & Patience",
             "caption": "Assisting elderly patients and discovering that small actions matter",
-            "image": "../../assets/images/gem_museum.webp",
+            "image": "../../assets/images/common/gem_museum.webp",
             "textEn": "Tarek was assigned to assist elderly patients at the local community hospital. At first, he felt nervous and wondered if a young student could really help. He was introduced to Uncle Mahmoud, an eighty-year-old retired ship captain who felt lonely. Tarek sat beside him, listened patiently to his vivid stories about sailing the Suez Canal, and read the daily newspaper aloud. Over two weeks, Tarek developed remarkable empathy and patience. He saw Uncle Mahmoud's eyes light up with joy and realized that even simple gestures bring immense comfort to those who feel neglected.",
             "translation": "كُلف طارق بمساعدة المرضى كبار السن في مستشفى الرعاية المجتمعي المحلي. في البداية، شعر بالارتباك وتساءل عما إذا كان طالب صغير مثله قادراً بالفعل على المساعدة. تعرّف على 'عم محمود'، وهو قبطان سفن متقاعد في الثمانين من عمره كان يعاني من الوحدة. جلس طارق إلى جانبه، واستمع إليه بصبر وهو يروي ذكرياته الحية عن الإبحار في قناة السويس، وقرأ له الصحف اليومية بصوت واضح. وعلى مدار أسبوعين، نمت لدى طارق مشاعر عميقة من التعاطف والصبر؛ ورأى عيني عم محمود تشرقان بالبهجة، وأدرك أن أبسط اللفتات تجلب راحة وسكينة هائلة لمن يشعرون بالوحدة.",
             "vocabulary": [
@@ -695,7 +695,7 @@ window.lessonData = {
             "title": "Wealth Measured in Kindness",
             "badge": "Scene 3 • Social Connections & Skills",
             "caption": "Teamwork, leadership, and personal satisfaction",
-            "image": "../../assets/images/gem_museum.webp",
+            "image": "../../assets/images/common/gem_museum.webp",
             "textEn": "By the end of the summer, Tarek had not only helped dozens of patients, but he also gained crucial practical skills including teamwork, problem-solving, and leadership. Working alongside neighbors from varied cultural backgrounds strengthened his social connections and taught him the power of cooperation. As he received a simple certificate of appreciation, a profound feeling of personal satisfaction filled his chest. He realized that true wealth is never measured in money or bank accounts, but in the kindness, solidarity, and service one leaves in the hearts of others.",
             "translation": "مع نهاية فصل الصيف، لم يقتصر إنجاز طارق على مساعدة عشرات المرضى، بل اكتسب أيضاً مهارات عملية بالغة الأهمية شملت العمل الجماعي وحل المشكلات والقيادة. لقد ساهم عمله جنباً إلى جنب مع جيران من خلفيات ثقافية متنوعة في تعزيز روابطه الاجتماعية وتعليمه قوة التعاون. وعندما تسلم شهادة تقدير بسيطة، غمر صدره شعور عميق بالرضا والقناعة الشخصية. لقد أدرك أن الثروة الحقيقية لا تُقاس أبداً بالأموال أو الأرصدة البنكية، بل بالطيبة والتكاتف والخدمة الصادقة التي يتركها المرء في قلوب الآخرين.",
             "vocabulary": [

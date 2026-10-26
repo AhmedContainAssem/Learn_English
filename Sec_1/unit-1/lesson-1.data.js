@@ -631,7 +631,7 @@ window.lessonData = {
     "storyPages": [
         {
             "title": "Chapter 1: The Beating Heart of History",
-            "imageUrl": "../../assets/images/egypt_beating_heart_1789597912200.webp",
+            "imageUrl": "../../assets/images/sec_1/unit_1/egypt_beating_heart_1789597912200.webp",
             "caption": "A land where the historic past and vibrant present meet in timeless harmony",
             "textEn": "Egypt is a land with a heart that has been beating for thousands of years. We are proud to call it our home. It is a place where the past and the present meet in harmony.",
             "textAr": "مصر أرض ذات قلب ينبض منذ آلاف السنين. نحن فخورون بأن نطلق عليها وطننا وبيتنا. إنها المكان الذي يلتقي فيه الماضي والحاضر في تناغم وانسجام تام.",
@@ -639,7 +639,7 @@ window.lessonData = {
         },
         {
             "title": "Chapter 2: The Cradle of Knowledge & Civilization",
-            "imageUrl": "../../assets/images/egypt_hieroglyphs_knowledge_1789597926244.webp",
+            "imageUrl": "../../assets/images/sec_1/unit_1/egypt_hieroglyphs_knowledge_1789597926244.webp",
             "caption": "Ancient temple walls recording timeless knowledge in mathematics, medicine, and learning",
             "textEn": "Egypt has always played an important role in the world. Our ancestors built one of the greatest civilizations in history. They gave the world knowledge in writing, mathematics, and medicine. The hieroglyphs carved into temple walls were not just beautiful art; they were a way to record history. The Library of Alexandria once gathered knowledge from all over the world, making Egypt a center of learning.",
             "textAr": "لطالما لعبت مصر دوراً محورياً في العالم. لقد بنى أجدادنا واحدة من أعظم الحضارات في التاريخ، وقدموا للعالم المعرفة في الكتابة والرياضيات والطب. ولم تكن الرموز الهيروغليفية المنحوتة على جدران المعابد مجرد فن جميل، بل كانت وسيلة لتدوين التاريخ وتسجيله. وكانت مكتبة الإسكندرية تجمع المعرفة من كافة أنحاء العالم، مما جعل مصر مركزاً للعلم والتعلم.",
@@ -647,7 +647,7 @@ window.lessonData = {
         },
         {
             "title": "Chapter 3: A Crossroads for Trade & Inspiration",
-            "imageUrl": "../../assets/images/egypt_nile_trade_1789597940219.webp",
+            "imageUrl": "../../assets/images/sec_1/unit_1/egypt_nile_trade_1789597940219.webp",
             "caption": "Merchants traveling along the Nile and deserts, making Egypt a bridge between civilizations",
             "textEn": "Egypt was also a crossroads for trade. Merchants traveled along the Nile and across the deserts, carrying goods such as gold, spices, papyrus, and grain. Our land was a bridge where people met and exchanged ideas, making Egypt a source of inspiration for many civilizations.",
             "textAr": "كانت مصر أيضاً ملتقى طرق للتجارة العالمية. كان التجار يسافرون على طول نهر النيل وعبر الصحاري، حاملين بضائع مثل الذهب، والتوابل، وورق البردي، والحبوب. وكانت أرضنا جسراً التقى فيه الناس وتبادلوا الأفكار، مما جعل مصر مصدراً للإلهام للعديد من الحضارات.",
@@ -655,7 +655,7 @@ window.lessonData = {
         },
         {
             "title": "Chapter 4: Modern Progress & Grand Egyptian Museum",
-            "imageUrl": "../../assets/images/egypt_heritage_future_1789597952593.webp",
+            "imageUrl": "../../assets/images/sec_1/unit_1/egypt_heritage_future_1789597952593.webp",
             "caption": "From the Pyramids of Giza to the Grand Egyptian Museum, honoring history while shaping our future",
             "textEn": "Today, Egypt continues to grow. Our cities rise with modern buildings, while our historical monuments still stand with pride. We are building new roads, bridges, and neighborhoods that show the world our determination to progress. From the Pyramids of Giza to the Grand Egyptian Museum, we continue to honor our history while shaping our future.",
             "textAr": "واليوم، تواصل مصر نموها ونهضتها؛ ترتفع مدننا بالمباني والمنشآت الحديثة، بينما لا تزال آثارنا التاريخية تقف بشموخ وفخر. نحن نبني طرقاً وجسوراً وأحياء سكنية جديدة تبرهن للعالم على عزيمتنا وإصرارنا على التقدم. ومن أهرامات الجيزة إلى المتحف المصري الكبير، نواصل تكريم تاريخنا بينما نصنع مستقبلنا.",
@@ -663,7 +663,7 @@ window.lessonData = {
         },
         {
             "title": "Chapter 5: Taking Pride in Our Heritage & Future",
-            "imageUrl": "../../assets/images/egypt_citizens_heritage_1789599015280.webp",
+            "imageUrl": "../../assets/images/sec_1/unit_1/egypt_citizens_heritage_1789599015280.webp",
             "caption": "Proud citizens protecting our cultural heritage and building a prosperous nation for coming generations",
             "textEn": "We take pride in our country, not only for its beauty, but also because we understand the sacrifices of our ancestors. We work hard to make it greater for generations to come. Every citizen has a role to play – protecting our heritage, contributing to our economy, and sharing our culture with the world.",
             "textAr": "نحن نفتخر ببلدنا الحبيب، ليس فقط لجماله الأخاذ، بل أيضاً لأننا ندرك ونقدر تضحيات أجدادنا العظام. ونعمل بجد لجعل مصر أعظم وأرقى للأجيال القادمة. فلكل مواطن دور حيوي يلعبه - حماية تراثنا وصونه، والمساهمة في دعم اقتصادنا، ومشاركة ثقافتنا العريقة مع العالم أجمع.",

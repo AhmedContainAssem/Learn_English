@@ -1,0 +1,172 @@
+import re
+import json
+
+# 1. Update Prep_3/unit-1/lesson-5-6.data.js
+with open('Prep_3/unit-1/lesson-5-6.data.js', 'r', encoding='utf-8') as f:
+    data_js = f.read()
+
+# Extract arabic translations from HTML if present
+with open('Prep_3/unit-1/lesson-5-6.html', 'r', encoding='utf-8') as f:
+    html_old = f.read()
+
+ar_translations = re.findall(r'<div class="story-ar-translation">\s*💬\s*<em>(.*?)</em>', html_old)
+
+# Parse storyLines from data_js
+pos_sl = data_js.find('"storyLines": [')
+pos_sl_end = data_js.find('],', pos_sl)
+sl_json_str = data_js[pos_sl + len('"storyLines": '):pos_sl_end + 1]
+
+try:
+    story_lines = json.loads(sl_json_str)
+except Exception as e:
+    print("Error parsing storyLines:", e)
+    story_lines = []
+
+dialogue_turns = []
+for idx, line in enumerate(story_lines):
+    ar = ar_translations[idx].strip() if idx < len(ar_translations) else ""
+    dialogue_turns.append({
+        "speaker": line.get("speaker", "Speaker"),
+        "speakerAr": "هالة" if line.get("speaker") == "Hala" else "عمر",
+        "avatar": "👩‍🎓" if line.get("speaker") == "Hala" else "👨‍🎓",
+        "textEn": line.get("text", ""),
+        "textAr": ar
+    })
+
+dialogue_obj = {
+    "title": "Respecting Personal Identity • حوار تفاعلي بين هالة وعمر (SB Page 22)",
+    "turns": dialogue_turns
+}
+
+# Add dialogue to window.lessonData
+if '"dialogue":' not in data_js:
+    pos_end = data_js.rfind('};')
+    extra = ',\n    "dialogue": ' + json.dumps(dialogue_obj, ensure_ascii=False, indent=8) + '\n'
+    data_js = data_js[:pos_end] + extra + data_js[pos_end:]
+    with open('Prep_3/unit-1/lesson-5-6.data.js', 'w', encoding='utf-8') as f:
+        f.write(data_js)
+    print("Updated Prep_3/unit-1/lesson-5-6.data.js with dialogue!")
+
+# 2. Rebuild clean Prep_3/unit-1/lesson-5-6.html
+clean_html = '''<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prep 3 - Unit 1 - Lessons 5 & 6: Let's Talk • This is Me | Mr. Ahmed Assem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css?v=6">
+    <link rel="stylesheet" href="../../assets/css/curriculum.css">
+    <link rel="stylesheet" href="../../assets/css/quiz.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Breadcrumb Navigation -->
+        <div class="breadcrumb">
+            <a href="../index.html">Prep 3</a> / <a href="./index.html">Unit 1</a> / <span>Lessons 5 & 6 (Let's Talk)</span>
+        </div>
+
+        <!-- Teacher Profile Header -->
+        <div class="teacher-profile-header">
+            <div class="avatar-wrapper">
+                <img src="../../my-photo-profile.webp" alt="Mr. Ahmed Assem" class="teacher-avatar" onerror="this.onerror=null; this.src='../../my-photo-profile.webp';">
+            </div>
+            <h1 class="teacher-title">Mr. Ahmed Assem</h1>
+            <div class="slogan">✨ Easy Peasy Ya Englezeey ✨</div>
+            <div class="badges-row">
+                <span class="badge badge-active">Prep 3 • Unit 1 • Lessons 5 & 6</span>
+                <span class="badge badge-gold">📖 Let's Talk • This is Me</span>
+            </div>
+            <h2 id="title" class="lesson-header-title">Lessons 5 & 6: Let's Talk • This is Me</h2>
+            <p id="description" class="lesson-desc-display">المفردات الأساسية والتكميلية، الأفعال الشاذة، المتلازمات اللفظية، المرادفات والمتضادات، المقاطع البادئة والناهية، والتعبيرات، وحوار الهوية الشخصية مع اختبار تفاعلي شامل 🎯</p>
+        </div>
+
+        <!-- Tabs Navigation Bar -->
+        <div class="tabs-container">
+            <button class="tab-btn active" onclick="switchTab('vocab', this)">📖 المفردات (Vocabulary)</button>
+            <button class="tab-btn" onclick="switchTab('verbs', this)">⚡ تصريف الأفعال (Verbs)</button>
+            <button class="tab-btn" onclick="switchTab('collocations', this)">🔗 المتلازمات والتعبيرات</button>
+            <button class="tab-btn" onclick="switchTab('synonyms', this)">🔄 المرادفات والمتضادات</button>
+            <button class="tab-btn" onclick="switchTab('affixes', this)">🔤 اللواحق والمقاطع (Affixes)</button>
+            <button class="tab-btn" onclick="switchTab('dialogue', this)">💬 الحوار الناطق (Dialogue)</button>
+            <button class="tab-btn" onclick="switchTab('quiz', this)">🎯 اختبار الدرس الشامل (Quiz)</button>
+        </div>
+
+        <!-- Dynamic Content Containers (Hydrated by CurriculumRenderer) -->
+        <div id="vocab" class="tab-content active"></div>
+        <div id="verbs" class="tab-content"></div>
+        <div id="collocations" class="tab-content"></div>
+        <div id="synonyms" class="tab-content"></div>
+        <div id="affixes" class="tab-content"></div>
+
+        <!-- Tab: Interactive Dialogue Stream -->
+        <div id="dialogue" class="tab-content">
+            <div id="dialogue-banner-container" style="margin-bottom: 20px;"></div>
+            <div id="dialogue-list-container" class="dialogue-list"></div>
+        </div>
+
+        <!-- Tab 7: QuizEngine Contract -->
+        <div id="quiz" class="tab-content">
+            <div class="score-board">
+                <span>السؤال: <span id="current-q">1</span> / <span id="total-q">30</span></span>
+                <span>النقاط: <span id="score">0</span> 🌟</span>
+            </div>
+
+            <div class="question-card">
+                <span class="emoji-display" id="emoji">🎯</span>
+                <div class="question-text" id="question">جاري تحميل السؤال...</div>
+                <div class="options-grid" id="options"></div>
+                <div class="feedback" id="feedback"></div>
+            </div>
+
+            <div class="center-row" style="margin-top: 20px;">
+                <button type="button" class="action-btn next-btn" id="next-btn" onclick="nextQuestion()" style="display: none;">السؤال التالي ➔</button>
+            </div>
+        </div>
+
+        <!-- Bottom Return Controls -->
+        <div class="nav-controls" style="margin-top: 36px;">
+            <a href="./index.html" class="action-btn secondary" data-sound-click="click">⬅ العودة لقائمة دروس الوحدة الأولى</a>
+            <a href="../index.html" class="action-btn secondary" data-sound-click="click">🏠 قائمة وحدات الصف الثالث الإعدادي</a>
+        </div>
+    </div>
+
+    <!-- Framework & Data Scripts -->
+    <script src="../../assets/js/bidi.js"></script>
+    <script src="../../assets/js/audio.js"></script>
+    <script src="../../assets/js/tabs.js"></script>
+    <script src="../../assets/js/quiz-engine.js"></script>
+    <script src="../../assets/js/ui.js?v=6"></script>
+
+    <!-- Modular Curriculum Sub-Renderers -->
+    <script src="../../assets/js/renderers/ui-primitives.js"></script>
+    <script src="../../assets/js/renderers/vocab-renderer.js"></script>
+    <script src="../../assets/js/renderers/lexicon-renderer.js"></script>
+    <script src="../../assets/js/renderers/dialogue-player.js"></script>
+
+    <!-- Pure Decoupled Lesson Data Payload -->
+    <script src="./lesson-5-6.data.js"></script>
+
+    <!-- Universal Dynamic Curriculum Renderer -->
+    <script src="../../assets/js/curriculum-renderer.js"></script>
+    <script src="../../assets/js/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (window.CurriculumRenderer && typeof window.CurriculumRenderer.init === 'function') {
+                window.CurriculumRenderer.init();
+            }
+            if (typeof loadQuestion === 'function' && document.getElementById('question')) {
+                loadQuestion();
+            }
+        });
+    </script>
+</body>
+</html>
+'''
+
+with open('Prep_3/unit-1/lesson-5-6.html', 'w', encoding='utf-8') as f:
+    f.write(clean_html)
+
+print(f"Refactored Prep 3 Unit 1 lesson-5-6.html! New line count: {len(clean_html.splitlines())}")

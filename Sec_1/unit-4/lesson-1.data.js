@@ -967,7 +967,7 @@ window.lessonData = {
             "title": "Why Go Green? • لماذا نتحول للأخضر؟",
             "badge": "Scene 1 • Green Revolution",
             "caption": "From Industrial Smoke to Eco-Friendly Responsibility",
-            "image": "../../assets/images/gem_museum.webp",
+            "image": "../../assets/images/common/gem_museum.webp",
             "textEn": "After many years since the Industrial Revolution, the large-scale production of machines and automobiles caused widespread air and water pollution, alongside the overuse of natural resources. For this reason, environmental concerns have become a major issue. 'Going green' means making crucial changes in the way individuals, organizations, and societies live and work so that their actions protect the planet.",
             "textAr": "بعد عقود طويلة من الثورة الصناعية، أدى الإنتاج الضخم والواسع للآلات والسيارات إلى تلوث بيئي هائل وإفراط شديد في استنزاف الموارد الطبيعية. ولهذا السبب، غدت القضايا البيئية شغلاً شاغلاً للعالم. إن 'التحول للأخضر' يعني إجراء تغييرات حقيقية في نمط حياة الأفراد والمنظمات والمجتمعات لتصبح ممارساتهم صديقة للبيئة وتحمي كوكب الأرض."
         },
@@ -976,7 +976,7 @@ window.lessonData = {
             "title": "Green Manufacturing • التصنيع الأخضر",
             "badge": "Scene 2 • Sustainable Production",
             "caption": "Clean Energy & Zero Landfill Waste",
-            "image": "../../assets/images/gem_museum.webp",
+            "image": "../../assets/images/common/gem_museum.webp",
             "textEn": "Today, 'Go Green' is a widely used slogan in industry. Green manufacturing refers to producing goods without harming nature, ensuring resources are preserved for future generations. This is achieved in two ways: first, by powering factories with renewable solar and wind energy; and second, by making the production process greener through recycling and reusing materials to slow the depletion of raw minerals and eliminate waste in landfills.",
             "textAr": "اليوم، أصبح شعار 'Go Green' نداءً رئيسياً في القطاع الصناعي. ويشير التصنيع الأخضر إلى إنتاج البضائع والسلع دون الإضرار بالطبيعة، مع صون الموارد للأجيال القادمة. ويتحقق هذا بطريقتين: الأولى عبر استخدام الطاقة المتجددة كالشمس والرياح في المصانع؛ والثانية بجعل العملية التصنيعية أكثر خضرة عبر إعادة تدوير المواد وإعادة استعمالها لإبطاء نفاد الموارد والحد من مقالب النفايات."
         },
@@ -985,7 +985,7 @@ window.lessonData = {
             "title": "One Bag at a Time • كيس واحد في كل مرة",
             "badge": "Scene 3 • Local Youth Initiative",
             "caption": "Ahmed's Bag Swap Day Inspires the Community",
-            "image": "../../assets/images/gem_museum.webp",
+            "image": "../../assets/images/common/gem_museum.webp",
             "textEn": "Last year, Ahmed noticed that local shops were giving away thousands of plastic bags that were thrown away after just one single use. He launched an initiative called 'One Bag at a Time' and organized a festive 'Bag Swap Day'. Customers exchanged used plastic bags for free durable cloth bags. Soon, shop owners cut their costs, neighborhoods became cleaner, and small daily habits inspired everyone to build a sustainable future.",
             "textAr": "في العام الماضي، لاحظ أحمد أن المحال التجارية المحلية توزع آلاف الأكياس البلاستيكية التي تُلقى في القمامة بعد استخدام واحد فقط. فأطلق مبادرة رائدة بعنوان 'كيس واحد في كل مرة' ونظم 'يوم مبادلة الأكياس'. استبدل فيه الأهالي أكياسهم البلاستيكية بأكياس قماشية متينة مجاناً. وسرعان ما خفض أصحاب المتاجر تكاليفهم، وصارت الشوارع أنظف، وأثبتت الأفعال الصغيرة قدرتها على بناء مستقبل مستدام."
         }

@@ -603,7 +603,7 @@ window.lessonData = {
     "storyPages": [
         {
             "title": "Scene 1: Sinking Megacities: Alexandria & Jakarta on the Frontlines (SB Page 41)",
-            "imageUrl": "../../assets/images/sec3_u3_l45_coastal_defense.webp",
+            "imageUrl": "../../assets/images/sec_3/unit_3/sec3_u3_l45_coastal_defense.webp",
             "caption": "Historic Mediterranean coastal cities confronting sea-level rise and gradual soil subsidence",
             "textEn": "Coastal megacities across the globe are sounding the alarm. From Alexandria on the Mediterranean to Jakarta in Southeast Asia, rising sea levels and land subsidence are turning former tourist promenades into flood zones. In Alexandria, winter storms frequently breach traditional corniche barriers, exposing historic neighborhoods to salty inundation. Satellite projections indicate that without immediate, large-scale defense systems, low-lying coastal areas will become permanently uninhabitable by mid-century.",
             "textAr": "تدق المدن الساحلية العملاقة حول العالم نواقيس الخطر. فمن الإسكندرية على ساحل البحر الأبيض المتوسط إلى جاكرتا في جنوب شرق آسيا، يؤدي ارتفاع منسوب مياه البحر والهبوط الأرضي التدريجي إلى تحويل الكورنيش والواجهات السياحية إلى مناطق معرضة للغرق. وفي الإسكندرية، تخترق العواصف الشتوية حواجز الشواطئ مراراً، كاشفة الأحياء التاريخية لخطر الغمر بالمياه المالحة. وتشير توقعات الأقمار الصناعية إلى أنه دون منظومات دفاعية ضخمة وواسعة النطاق، ستصبح المناطق الساحلية المنخفضة غير صالحة للسكن البشري نهائياً بحلول منتصف القرن.",
@@ -611,7 +611,7 @@ window.lessonData = {
         },
         {
             "title": "Scene 2: Amphibious Architecture: Floating Communities of Tomorrow",
-            "imageUrl": "../../assets/images/sec3_u3_l45_coastal_defense.webp",
+            "imageUrl": "../../assets/images/sec_3/unit_3/sec3_u3_l45_coastal_defense.webp",
             "caption": "Visionary architects engineering amphibious floating houses that rise smoothly with surging tidal waves",
             "textEn": "Faced with persistent flooding, architects are turning to revolutionary amphibious architecture. Unlike conventional static buildings that succumb to water pressure, amphibious homes rest on specialized foundations anchored into the ground. When sea waters rise, hollow buoyant basements act like ship hulls, allowing entire residential structures to float gently upward on guiding vertical steel pillars. This groundbreaking mechanism proves that humanity can adapt to water rather than flee from it.",
             "textAr": "وفي مواجهة الفيضانات المتكررة، يبتكر المعماريون عمارة برمائية ثورية تغير مفاهيم البناء. فبخلاف المباني التقليدية الثابتة التي تستسلم لضغط المياه، تستقر المنازل البرمائية على أساسات ذكية متصلة بالأرض. وحين يرتفع منسوب المياه، تعمل الطوابق السفلية المجوفة والمصنوعة من مواد تطفو مثل هياكل السفن، مما يسمح للمباني السكنية بأكملها بالطفو بسلاسة نحو الأعلى على أعمدة فولاذية موجهة. تثبت هذه الآلية الرائدة أن البشرية قادرة على التكيف مع الماء والتعايش معه بدلاً من الهروب والنزوح.",
@@ -619,7 +619,7 @@ window.lessonData = {
         },
         {
             "title": "Scene 3: The Human Face of Climate Migration",
-            "imageUrl": "../../assets/images/sec3_u3_l45_coastal_defense.webp",
+            "imageUrl": "../../assets/images/sec_3/unit_3/sec3_u3_l45_coastal_defense.webp",
             "caption": "Coastal families compelled to relocate inland due to saltwater intrusion and ruined farmland",
             "textEn": "Behind cold meteorological statistics lie deep personal tragedies of climate migration. In coastal farming villages outside Damietta and Alexandria, saltwater intrusion has ruined fertile black soil, rendering agriculture impossible. Smallholder farmers who tended ancestral land for generations are compelled to abandon their homes and relocate into crowded metropolitan centers. Their poignant stories remind the world that sea-level rise is not merely a theoretical ecological trend, but a devastating humanitarian crisis.",
             "textAr": "وراء إحصائيات الأرصاد الجوية الجافة، تكمن مآسٍ إنسانية عميقة ترويها قصص النزوح والهجرة المناخية. ففي القرى الزراعية الساحلية المتاخمة لدمياط والإسكندرية، أدى تسرب المياه المالحة إلى إتلاف التربة الخصبة، مما جعل الزراعة أمراً مستحيلاً. واضطر صغار المزارعين الذين توارثوا أرض الأجداد لأجيال إلى هجر بيوتهم والنزوح نحو المراكز الحضرية المكتظة. إن قصصهم المؤثرة تذكر العالم بأن ارتفاع مستوى سطح البحر ليس مجرد اتجاه بيئي نظري، بل أزمة إنسانية مأساوية تتطلب نجدة عاجلة.",
@@ -627,7 +627,7 @@ window.lessonData = {
         },
         {
             "title": "Scene 4: Sea Defense Barriers & Coastal Engineering Hope",
-            "imageUrl": "../../assets/images/sec3_u3_l45_coastal_defense.webp",
+            "imageUrl": "../../assets/images/sec_3/unit_3/sec3_u3_l45_coastal_defense.webp",
             "caption": "Engineers deploying massive tetrapod concrete blocks and sand dunes to mitigate ferocious Mediterranean storm surges",
             "textEn": "Egypt is fighting back with robust coastal engineering. Along vulnerable coastal sectors from Abu Qir to Port Said, the Ministry of Water Resources has installed miles of massive concrete tetrapod sea barriers and elevated natural sand dunes. These monumental defense mechanisms absorb ferocious wave energy, preventing tidal erosion and buying precious time for coastal communities. Through proactive commitment and engineering resilience, hope remains anchored against the rising tide.",
             "textAr": "وتخوض مصر معركة الدفاع عن سواحلها بهندسة متطورة وخطط حازمة. فعلى امتداد القطاعات الساحلية الحساسة من خليج أبي قير حتى بورسعيد، أنشأت وزارة الموارد المائية حواجز خرسانية عملاقة رباعية الأرجل (Tetrapods) وكثباناً رملية مرتفعة ومعززة بالنباتات. تمتص هذه المنظومات الدفاعية الهائلة طاقة الأمواج الهائجة، مما يمنع تآكل الشواطئ ويمنح المجتمعات الساحلية وقتاً ثميناً للنمو والازدهار. ومن خلال الالتزام الاستباقي والمرونة الهندسية، يظل الأمل راسخاً في وجه المد المتصاعد.",

@@ -735,7 +735,7 @@ window.lessonData = {
     "storyPages": [
         {
             "title": "Scene 1: Ancient Engineering Marvels (Ramps & Levers)",
-            "imageUrl": "../../assets/images/sec3_u2_l12_machinery.webp",
+            "imageUrl": "../../assets/images/sec_3/unit_2/sec3_u2_l12_machinery.webp",
             "caption": "Ancient Egyptian builders utilizing monumental earthen ramps and wooden levers to haul massive limestone blocks",
             "textEn": "Long before computers and steam engines, ancient Egyptians laid the groundwork for engineering. To construct the Great Pyramids, they did not rely on complex machinery; instead, they adopted monumental inclined ramps and wooden levers. Thousands of organized workers moved massive limestone blocks with awe-inspiring precision, proving that simple machines could achieve wonders.",
             "textAr": "قبل الحواسيب والمحركات البخارية بقرون طويلة، وضع قدماء المصريين حجر الأساس للهندسة الإنشائية. ولبناء الأهرامات العظيمة، لم يعتمدوا على آلات بالغة التعقيد، بل تبنوا منحدرات ترابية مائلة عملاقة وروافع خشبية متينة. قام آلاف العمال المنظمين بسحب كتل الحجر الجيري الهائلة بدقة مذهلة، مبرهنين على أن الآلات البسيطة قادرة على صنع المعجزات.",
@@ -743,7 +743,7 @@ window.lessonData = {
         },
         {
             "title": "Scene 2: The Industrial Leap & The Cotton Gin",
-            "imageUrl": "../../assets/images/sec3_u2_l12_machinery.webp",
+            "imageUrl": "../../assets/images/sec_3/unit_2/sec3_u2_l12_machinery.webp",
             "caption": "The 19th-century industrial revolution under the Muhammad Ali Dynasty: the cotton gin revolutionizing agriculture",
             "textEn": "In the 19th century under the Muhammad Ali Dynasty, Egypt experienced an industrial revolution. A defining breakthrough was the adoption of the cotton gin, a machine capable of rapidly separating cotton seeds from fine fibers. This single technological driver replaced exhausting manual labor, multiplied agricultural productivity, and revolutionized Egypt's textile economy worldwide.",
             "textAr": "وفي القرن التاسع عشر في عهد أسرة محمد علي، شهدت مصر ثورة صناعية حقيقية. وكان التحول الأبرز هو إدخال مِحْلَج القطن، وهي آلة ميكانيكية قادرة على فصل بذور القطن عن أليافه بسرعة فائقة. نجح هذا المحرك التقني في الحلول محل العمل اليدوي الشاق، وضاعف الإنتاجية الزراعية، وأحدث ثورة في اقتصاد المنسوجات المصري حول العالم.",
@@ -751,7 +751,7 @@ window.lessonData = {
         },
         {
             "title": "Scene 3: Modern Mega Infrastructure & Solar Automation",
-            "imageUrl": "../../assets/images/sec3_u2_l12_machinery.webp",
+            "imageUrl": "../../assets/images/sec_3/unit_2/sec3_u2_l12_machinery.webp",
             "caption": "Charging full steam ahead into renewable energy: Benban Solar Park with automated tracking panels in Aswan",
             "textEn": "Today, Egypt is charging full steam ahead into modern infrastructure and clean energy. In Aswan, the monumental Benban Solar Park spans thousands of desert acres with automated photovoltaic panels tracking the sun. Supported by public-private partnerships, sophisticated automation and smart grids ensure electricity is distributed smoothly and sustainably across the nation.",
             "textAr": "واليوم، تنطلق مصر بأقصى سرعة وقوة نحو تطوير البنية التحتية العملاقة والطاقة النظيفة. ففي أسوان، يمتد مجمع بنبان للطاقة الشمسية على مساحة آلاف الأفدنة الصحراوية بألواح كهروضوئية ذكية تتبع حركة الشمس آلياً. وبدعم من الشراكات بين القطاعين العام والخاص، تضمن الميكنة المتطورة والشبكات الذكية توزيع الكهرباء بسلاسة واستدامة في جميع أنحاء الوطن.",
@@ -759,7 +759,7 @@ window.lessonData = {
         },
         {
             "title": "Scene 4: The AI & Robotics Frontier in Archaeology",
-            "imageUrl": "../../assets/images/sec3_u2_l12_machinery.webp",
+            "imageUrl": "../../assets/images/sec_3/unit_2/sec3_u2_l12_machinery.webp",
             "caption": "Archaeologists and conservators employing 3D laser scanners and robotics to preserve priceless historical artifacts",
             "textEn": "The journey comes full circle as modern machines preserve ancient history. In the Grand Egyptian Museum's conservation labs, archaeologists employ high-tech robotic arms and sophisticated 3D laser scanners. These computerized systems analyze delicate golden artifacts and pharaonic treasures without touching them, proving that the machines of today are the ultimate guardians of yesterday's marvels.",
             "textAr": "وتكتمل الدائرة حين تُسخَّر أحدث الآلات لصيانة التاريخ القديم وحمايته. ففي معامل الترميم بالمتحف المصري الكبير، يستعين علماء الآثار بأذرع روبوتية متقدمة وماسحات ليزر ثلاثية الأبعاد بالغة التطور. تقوم هذه الأنظمة المحوسبة بفحص القطع الأثرية الذهبية والكنوز الفرعونية بدقة دون لمسها، مؤكدة أن آلات اليوم هي الحارس الأمين لأعظم إنجازات الأمس.",

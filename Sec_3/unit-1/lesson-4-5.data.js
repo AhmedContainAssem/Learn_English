@@ -366,7 +366,7 @@ window.lessonData = {
             "id": 1,
             "en": "pale as a ghost",
             "ar": "شديد الشحوب / باهت (من الخوف أو المرض)",
-            "img": "../../assets/images/pale_as_a_ghost.webp",
+            "img": "../../assets/images/sec_3/unit_1/pale_as_a_ghost.webp",
             "explain": "شحوب الوجه الشديد والمفاجئ نتيجة الخوف الشديد، الصدمة العصبية، أو النزيف والألم.",
             "exampleEn": "A construction worker, <strong style='color: var(--accent-primary);'>pale as a ghost</strong>, clutched his bleeding hand, trying not to cry out.",
             "exampleAr": "عامل بناء، شاحب كالشبح، أمسك بيده النازفة محاولاً ألا يصرخ من الألم."
@@ -375,7 +375,7 @@ window.lessonData = {
             "id": 2,
             "en": "rain cats and dogs",
             "ar": "تمطر بغزارة شديدة",
-            "img": "../../assets/images/rain_cats_and_dogs.webp",
+            "img": "../../assets/images/sec_3/unit_1/rain_cats_and_dogs.webp",
             "explain": "تعبير مجازي شهير يصف هطول الأمطار بغزارة طوفانية شديدة.",
             "exampleEn": "Outside, it was <strong style='color: var(--accent-primary);'>raining cats and dogs</strong> as Dr. Basem ran into the hospital.",
             "exampleAr": "في الخارج، كانت السماء تمطر بغزارة شديدة عندما ركض الدكتور باسم للمستشفى."
@@ -384,7 +384,7 @@ window.lessonData = {
             "id": 3,
             "en": "soaked to the skin",
             "ar": "مبتل تماماً حتى النخاع / غارق في المطر",
-            "img": "../../assets/images/soaked_to_the_skin.webp",
+            "img": "../../assets/images/sec_3/unit_1/soaked_to_the_skin.webp",
             "explain": "تعبير اصطلاحي يصف الشخص عندما يبتل بالكامل من رأسه لقدمه بماء المطر الغزير.",
             "exampleEn": "Dr. Basem ran into the emergency room, <strong style='color: var(--accent-primary);'>soaked to the skin</strong>, ready to treat patients.",
             "exampleAr": "ركض الدكتور باسم إلى غرفة الطوارئ وهو مبتل تماماً بالماء، ومستعد لعلاج المرضى."
@@ -393,7 +393,7 @@ window.lessonData = {
             "id": 4,
             "en": "under pressure",
             "ar": "تحت وطأة الضغط الشديد",
-            "img": "../../assets/images/under_pressure.webp",
+            "img": "../../assets/images/sec_3/unit_1/under_pressure.webp",
             "explain": "الحفاظ على الهدوء والتركيز المهني أثناء مواجهة المواقف الطارئة والمهام الصعبة.",
             "exampleEn": "Nurse Noura, calm <strong style='color: var(--accent-primary);'>under pressure</strong>, gave clear and confident instructions.",
             "exampleAr": "الممرضة نورا، الهادئة تحت الضغط، أعطت تعليمات واضحة وواثقة للجميع."
@@ -402,7 +402,7 @@ window.lessonData = {
             "id": 5,
             "en": "without hesitation",
             "ar": "دون تردد / على الفور وبحسم",
-            "img": "../../assets/images/without_hesitation.webp",
+            "img": "../../assets/images/sec_3/unit_1/without_hesitation.webp",
             "explain": "اتخاذ القرار وتنفيذه فوراً وبحزم في اللحظات الحرجة لإنقاذ حياة المريض دون أي تأخير.",
             "exampleEn": "The child had swallowed a coin. <strong style='color: var(--accent-primary);'>Without hesitation</strong>, the team jumped into action.",
             "exampleAr": "كان الطفل قد ابتلع عملة معدنية؛ وبدون تردد، انطلق الفريق للعمل فوراً."
@@ -411,7 +411,7 @@ window.lessonData = {
             "id": 6,
             "en": "come to an end",
             "ar": "يصل لنهايته / ينتهي",
-            "img": "../../assets/images/come_to_an_end.webp",
+            "img": "../../assets/images/sec_3/unit_1/come_to_an_end.webp",
             "explain": "انتهاء فترة صعبة أو شاقة وبداية مرحلة الهدوء والراحة (مثل انتهاء ليلة الطوارئ الحافلة).",
             "exampleEn": "Another demanding night filled with urgency and life-saving teamwork had <strong style='color: var(--accent-primary);'>come to an end</strong>.",
             "exampleAr": "لقد وصلت ليلة شاقة أخرى مفعمة بالضرورة الملحة والعمل الجماعي المنقذ للحياة إلى نهايتها."
@@ -508,7 +508,7 @@ window.lessonData = {
             "pages": [
                 {
                     "title": "Scene 1: Paramedics Rush In & Stormy Arrival",
-                    "imageUrl": "./sec 3 storybook photos/sec3_u1_l45_scene1_ambulance_storm.webp",
+                    "imageUrl": "../../assets/images/sec_3/unit_1/sec3_u1_l45_scene1_ambulance_storm.webp",
                     "caption": "Paramedics rushing car crash victim into hospital during heavy rainstorm",
                     "textEn": "Last night, paramedics rushed in with a man injured in a car crash. He had broken his leg before arrival, and his face was covered in blood. Nurses quickly took him for X-rays while Dr. Maha prepared to stitch a deep cut on his forehead. “Teamwork saved him,” said the emergency room “ER” director proudly. Outside, it was raining cats and dogs as Dr. Basem ran into the hospital, soaked to the skin.",
                     "textAr": "في الليلة الماضية، هرع المسعفون برجل أصيب في حادث سيارة. كان قد كُسرت ساقه قبل وصوله، وكان وجهه مغطى بالدماء. سارعت الممرضات بنقله لإجراء أشعة سينية بينما استعدت الدكتورة مها لخياطة جرح عميق في جبهته. قال مدير غرفة الطوارئ بفخر: \"لقد أنقذه العمل الجماعي\". وفي الخارج، كانت السماء تمطر بغزارة شديدة عندما ركض الدكتور باسم إلى داخل المستشفى مبتلاً تماماً من رأسه لقدمه.",
@@ -516,7 +516,7 @@ window.lessonData = {
                 },
                 {
                     "title": "Scene 2: Inside the ER Chaos & Calm Under Pressure",
-                    "imageUrl": "./sec 3 storybook photos/sec3_u1_l45_scene2_er_chaos.webp",
+                    "imageUrl": "../../assets/images/sec_3/unit_1/sec3_u1_l45_scene2_er_chaos.webp",
                     "caption": "Bustling emergency room with beeping monitors and calm Nurse Noura directing sterile equipment",
                     "textEn": "Inside, the emergency room was in full chaos — patients groaning, nurses hurrying, and machines beeping non-stop. In one corner, a teenager with a broken arm moaned quietly. A construction worker, pale as a ghost, clutched his bleeding hand, trying not to cry out. Nurse Noura, calm under pressure, gave clear and confident instructions. “Prepare the sterile equipment and state its condition before use”, she ordered.",
                     "textAr": "في الداخل، كانت غرفة الطوارئ في حالة فوضى تامة — المرضى يتأوهون، والممرضات يهرعن، والآلات تصدر صفير تنبيه دون توقف. وفي إحدى الزوايا، كان مراهق ذو ذراع مكسورة يئن في هدوء. بينما عامل بناء، شاحب كالطيف من شدة الألم، أمسك بقوة بيده النازفة محاولاً ألا يصرخ. وقامت الممرضة نورا، الهادئة تحت الضغط، بإعطاء تعليمات واضحة وواثقة: \"جهزوا المعدات المعقمة واذكروا حالتها قبل الاستخدام\".",
@@ -524,7 +524,7 @@ window.lessonData = {
                 },
                 {
                     "title": "Scene 3: Swallowed Coin & Flexible Scope Rescue",
-                    "imageUrl": "./sec 3 storybook photos/sec3_u1_l45_scene3_pediatric_scope.webp",
+                    "imageUrl": "../../assets/images/sec_3/unit_1/sec3_u1_l45_scene3_pediatric_scope.webp",
                     "caption": "Pediatric emergency care: Doctor treating and comforting the toddler with mother present",
                     "textEn": "Suddenly, the ER doors flew open. A panicked mother rushed in, holding her toddler. “He’s not responding!”, she shouted. The child had swallowed a coin. Without hesitation, the team jumped into action. Using a flexible scope, they carefully removed the coin. Moments later, the child opened his eyes. The mother wept with relief and gratitude. Around her, staff members smiled — some hiding their own tears.",
                     "textAr": "وفجأة، فُتحت أبواب غرفة الطوارئ على مصراعيها. دخلت أم مذعورة مسرعة وهي تحمل طفلها الصغير وصرخت: \"إنه لا يستجيب!\". كان الطفل قد ابتلع عملة معدنية. وبدون أدنى تردد، انطلق الفريق في العمل بسرعة؛ وباستخدام منظار طبي مرن، استخرجوا العملة بحذر وعناية. بعد لحظات، فتح الطفل عينيه، وبكت الأم من الفرح والارتياح والعرفان بالجميل، وابتسم أفراد الطاقم حولها وأخفى بعضهم دموعه.",
@@ -532,7 +532,7 @@ window.lessonData = {
                 },
                 {
                     "title": "Scene 4: Sunrise Dawn & Life-Saving Teamwork",
-                    "imageUrl": "./sec 3 storybook photos/sec3_u1_l45_scene4_dawn_relief.webp",
+                    "imageUrl": "../../assets/images/sec_3/unit_1/sec3_u1_l45_scene4_dawn_relief.webp",
                     "caption": "Sunrise glowing through hospital windows as exhausted doctors review medical charts",
                     "textEn": "As the sun began to rise, calm slowly returned. Dr. Basem sat down, exhausted. Around him, the team cleaned up and checked medical charts. Another night filled with fear, urgency, and life-saving teamwork had come to an end.",
                     "textAr": "ومع بدء شروق الشمس، عاد الهدوء ببطء. جلس الدكتور باسم منهكاً من التعب. ومن حوله، قام الفريق بالتنظيف ومراجعة السجلات والملفات الطبية. لقد انتهت ليلة أخرى كانت مفعمة بالخوف، الضرورة الملحة، والعمل الجماعي المنقذ للحياة.",
@@ -546,7 +546,7 @@ window.lessonData = {
             "pages": [
                 {
                     "title": "Scene 1: An Unwelcome Visitor — Catching a Cold",
-                    "imageUrl": "./sec 3 storybook photos/sec3_u1_l45_scene5_cold_recovery.webp",
+                    "imageUrl": "../../assets/images/sec_3/unit_1/sec3_u1_l45_scene5_cold_recovery.webp",
                     "caption": "Patient resting at home suffering from severe cold symptoms and fatigue",
                     "textEn": "Hello everyone! I want to share something that happened to me recently. About two weeks ago, I started to feel a little tired. I also had a small cough. I didn’t think it was very serious at first. But then, the symptoms got much worse. My throat was very sore, and my nose was running all the time. I also had a bad headache and felt very tired. It was difficult to sleep at night because of the cough. I felt really miserable and uncomfortable. After a few days, I decided I needed to see a doctor.",
                     "textAr": "مرحباً بالجميع! أود أن أشارككم أمراً حدث لي مؤخراً. منذ حوالي أسبوعين، بدأت أشعر ببعض التعب، وكان لدي سعال خفيف. لم أكن أعتقد أن الأمر خطير في البداية. لكن بعد ذلك، ازدادت الأعراض سوءاً بكثير؛ صار حلقي ملتهباً للغاية، وكان أنفي يسيل طوال الوقت، كما أصبت بصداع شديد وشعرت بإرهاق بالغ. كان من الصعب النوم ليلاً بسبب السعال. شعرت بالبؤس الشديد وعدم الراحة، وبعد بضعة أيام، قررت أنني بحاجة لرؤية الطبيب.",
@@ -554,7 +554,7 @@ window.lessonData = {
                 },
                 {
                     "title": "Scene 2: Clinic Visit, Stethoscope & Medical Advice",
-                    "imageUrl": "./sec 3 storybook photos/sec3_u1_l45_scene6_clinic_doctor.webp",
+                    "imageUrl": "../../assets/images/sec_3/unit_1/sec3_u1_l45_scene6_clinic_doctor.webp",
                     "caption": "Doctor examining chest with stethoscope and issuing prescription for recovery",
                     "textEn": "So, I called my clinic and made an appointment. When I arrived, the waiting room was full of other people who also looked sick. After a short wait, the doctor called my name. He asked me many questions about my symptoms and how long I had felt bad. Then, he checked my throat, listened to my chest with a stethoscope, and took my temperature. He said I had a severe viral cold. The doctor gave me a prescription for some medicine to help with the symptoms. He also told me to rest a lot and drink many warm liquids like tea. I went home, took the medicine, and tried to sleep as much as possible. Slowly, after about three or four days, I started to feel much better.",
                     "textAr": "لذا، اتصلت بعيادتي وحجزت موعداً. وعندما وصلت، كانت غرفة الانتظار ممتلئة بأشخاص آخرين بدت عليهم علامات المرض أيضاً. بعد انتظار قصير، نادى الطبيب اسمي؛ وسألني أسئلة كثيرة عن أعراضي وكم من الوقت شعرت بالسوء. ثم فحص حلقي، واستمع إلى صدري بالسماعة الطبية، وقاس درجة حرارتي. وقال إنني مصاب بنزلة برد فيروسية حادة. أعطاني الطبيب وصفة طبية لبعض الأدوية، ونصحني بالراحة التامة وشرب الكثير من السوائل الدافئة كالشاي. ذهبت للمنزل، وتناولت الدواء، ونمت قدر الإمكان. وتدريجياً، بعد 3 أو 4 أيام، بدأت أشعر بتحسن كبير.",
@@ -562,7 +562,7 @@ window.lessonData = {
                 },
                 {
                     "title": "Scene 3: Health Restored & Interactive Call to Action",
-                    "imageUrl": "./sec 3 storybook photos/sec3_u1_l45_scene7_recovered_blogger.webp",
+                    "imageUrl": "../../assets/images/sec_3/unit_1/sec3_u1_l45_scene7_recovered_blogger.webp",
                     "caption": "Healthy blogger happy and recovered, writing reflections on laptop",
                     "textEn": "Now, I am healthy again, and I feel very happy about it! This experience reminded me how important our health is. It’s also good to know that doctors are there to help us when we need them. Have you ever had a very bad cold? How do you usually recover? Let me know in the comments!",
                     "textAr": "والآن، أصبحت بصحة جيدة مرة أخرى، وأشعر بسعادة غامرة حيال ذلك! لقد ذكرتني هذه التجربة بمدى أهمية صحتنا. كما أنه من الرائع معرفة أن الأطباء متواجدون دائماً لمساعدتنا عند الحاجة. هل أصبت من قبل بنزلة برد شديدة؟ وكيف تتعافى منها عادةً؟ شاركوني تجاربكم في التعليقات!",
@@ -574,7 +574,7 @@ window.lessonData = {
     "storyPages": [
         {
             "title": "Scene 1: Paramedics Rush In & Stormy Arrival",
-            "imageUrl": "./sec 3 storybook photos/sec3_u1_l45_scene1_ambulance_storm.webp",
+            "imageUrl": "../../assets/images/sec_3/unit_1/sec3_u1_l45_scene1_ambulance_storm.webp",
             "caption": "Paramedics rushing car crash victim into hospital during heavy rainstorm",
             "textEn": "Last night, paramedics rushed in with a man injured in a car crash. He had broken his leg before arrival, and his face was covered in blood. Nurses quickly took him for X-rays while Dr. Maha prepared to stitch a deep cut on his forehead. “Teamwork saved him,” said the emergency room “ER” director proudly. Outside, it was raining cats and dogs as Dr. Basem ran into the hospital, soaked to the skin.",
             "textAr": "في الليلة الماضية، هرع المسعفون برجل أصيب في حادث سيارة. كان قد كُسرت ساقه قبل وصوله، وكان وجهه مغطى بالدماء. سارعت الممرضات بنقله لإجراء أشعة سينية بينما استعدت الدكتورة مها لخياطة جرح عميق في جبهته. قال مدير غرفة الطوارئ بفخر: \"لقد أنقذه العمل الجماعي\". وفي الخارج، كانت السماء تمطر بغزارة شديدة عندما ركض الدكتور باسم إلى داخل المستشفى مبتلاً تماماً من رأسه لقدمه.",
@@ -582,7 +582,7 @@ window.lessonData = {
         },
         {
             "title": "Scene 2: Inside the ER Chaos & Calm Under Pressure",
-            "imageUrl": "./sec 3 storybook photos/sec3_u1_l45_scene2_er_chaos.webp",
+            "imageUrl": "../../assets/images/sec_3/unit_1/sec3_u1_l45_scene2_er_chaos.webp",
             "caption": "Bustling emergency room with beeping monitors and calm Nurse Noura directing sterile equipment",
             "textEn": "Inside, the emergency room was in full chaos — patients groaning, nurses hurrying, and machines beeping non-stop. In one corner, a teenager with a broken arm moaned quietly. A construction worker, pale as a ghost, clutched his bleeding hand, trying not to cry out. Nurse Noura, calm under pressure, gave clear and confident instructions. “Prepare the sterile equipment and state its condition before use”, she ordered.",
             "textAr": "في الداخل، كانت غرفة الطوارئ في حالة فوضى تامة — المرضى يتأوهون، والممرضات يهرعن، والآلات تصدر صفير تنبيه دون توقف. وفي إحدى الزوايا، كان مراهق ذو ذراع مكسورة يئن في هدوء. بينما عامل بناء، شاحب كالطيف من شدة الألم، أمسك بقوة بيده النازفة محاولاً ألا يصرخ. وقامت الممرضة نورا، الهادئة تحت الضغط، بإعطاء تعليمات واضحة وواثقة: \"جهزوا المعدات المعقمة واذكروا حالتها قبل الاستخدام\".",
@@ -590,7 +590,7 @@ window.lessonData = {
         },
         {
             "title": "Scene 3: Swallowed Coin & Flexible Scope Rescue",
-            "imageUrl": "./sec 3 storybook photos/sec3_u1_l45_scene3_pediatric_scope.webp",
+            "imageUrl": "../../assets/images/sec_3/unit_1/sec3_u1_l45_scene3_pediatric_scope.webp",
             "caption": "Pediatric emergency care: Doctor treating and comforting the toddler with mother present",
             "textEn": "Suddenly, the ER doors flew open. A panicked mother rushed in, holding her toddler. “He’s not responding!”, she shouted. The child had swallowed a coin. Without hesitation, the team jumped into action. Using a flexible scope, they carefully removed the coin. Moments later, the child opened his eyes. The mother wept with relief and gratitude. Around her, staff members smiled — some hiding their own tears.",
             "textAr": "وفجأة، فُتحت أبواب غرفة الطوارئ على مصراعيها. دخلت أم مذعورة مسرعة وهي تحمل طفلها الصغير وصرخت: \"إنه لا يستجيب!\". كان الطفل قد ابتلع عملة معدنية. وبدون أدنى تردد، انطلق الفريق في العمل بسرعة؛ وباستخدام منظار طبي مرن، استخرجوا العملة بحذر وعناية. بعد لحظات، فتح الطفل عينيه، وبكت الأم من الفرح والارتياح والعرفان بالجميل، وابتسم أفراد الطاقم حولها وأخفى بعضهم دموعه.",
@@ -598,7 +598,7 @@ window.lessonData = {
         },
         {
             "title": "Scene 4: Sunrise Dawn & Life-Saving Teamwork",
-            "imageUrl": "./sec 3 storybook photos/sec3_u1_l45_scene4_dawn_relief.webp",
+            "imageUrl": "../../assets/images/sec_3/unit_1/sec3_u1_l45_scene4_dawn_relief.webp",
             "caption": "Sunrise glowing through hospital windows as exhausted doctors review medical charts",
             "textEn": "As the sun began to rise, calm slowly returned. Dr. Basem sat down, exhausted. Around him, the team cleaned up and checked medical charts. Another night filled with fear, urgency, and life-saving teamwork had come to an end.",
             "textAr": "ومع بدء شروق الشمس، عاد الهدوء ببطء. جلس الدكتور باسم منهكاً من التعب. ومن حوله، قام الفريق بالتنظيف ومراجعة السجلات والملفات الطبية. لقد انتهت ليلة أخرى كانت مفعمة بالخوف، الضرورة الملحة، والعمل الجماعي المنقذ للحياة.",

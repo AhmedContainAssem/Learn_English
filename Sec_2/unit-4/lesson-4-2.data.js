@@ -691,7 +691,7 @@ window.lessonData = {
     "storyPages": [
         {
             "badge": "🏷️ Scene 1: Waking Up in a Branded World",
-            "image": "../../assets/images/sec2_u4_l2_cover.png",
+            "image": "../../assets/images/sec_2/unit_4/sec2_u4_l2_cover.webp",
             "caption": "From Morning to Night: How Subtle Brand Logos Surround Our Daily Routine",
             "titleEn": "More Than a Logo: The Hidden Influences Around Us",
             "textEn": "From the very moment teenagers wake up in the morning, their eyes are met with a flood of commercial symbols. When Omar turns off the alarm on his smartphone, he glances at the sleek silver fruit on its case. As he laces up his trainers, he sees a prominent black tick stitched onto the fabric. At breakfast, his cereal box features a cheerful cartoon bird promising boundless morning energy. None of these occurrences are accidental. We live in an era where brands are no longer just product names; they are powerful visual cues engineered to shape our choices before we even leave the front door.",
@@ -707,7 +707,7 @@ window.lessonData = {
         },
         {
             "badge": "🧠 Scene 2: The Neuroscience of Belonging",
-            "image": "../../assets/images/egypt_youth_mindfulness.webp",
+            "image": "../../assets/images/sec_2/common/egypt_youth_mindfulness.webp",
             "caption": "Brain Scans Show Favourite Brands Light Up the Areas Linked to Friendship and Identity",
             "titleEn": "Inside the Brain: Why We Crave Brand Connection",
             "textEn": "Modern neuroscientists have uncovered a fascinating truth about marketing psychology. When consumers are placed inside medical MRI scanners and shown logos of brands they love, the emotional parts of their brains illuminate instantly—the exact same neural pathways that activate when people think about their closest friends and personal identity! Multinational companies invest billions in emotional storytelling, creating campaigns that do not merely promote sneaker durability or camera megapixels, but rather sell a deep psychological feeling of belonging. Wearing that specific badge makes consumers feel accepted, successful, and part of a winning tribe.",
@@ -723,7 +723,7 @@ window.lessonData = {
         },
         {
             "badge": "🎯 Scene 3: Mindful Consumption & Real Value",
-            "image": "../../assets/images/family_dinner_laughter_1790200387542.webp",
+            "image": "../../assets/images/common/family_dinner_laughter_1790200387542.webp",
             "caption": "Empowered Choices: Looking Beyond the Logo to Practical Utility and Ethical Value",
             "titleEn": "Beyond the Label: Cultivating Mindful Consumption",
             "textEn": "Recognizing the subconscious power of branding does not mean we must discard every branded item we own; rather, it empowers us to cultivate mindful consumption. When we choose a product over an unbranded alternative, we should ask ourselves: 'Am I paying for genuine durability, or am I purely buying an illusion of social status?' By learning to resist impulsive commercial manipulations, young adults reclaim their autonomy. True self-worth and belonging come from our inner character, values, and genuine friendships—never from the stitched logo on our chest.",

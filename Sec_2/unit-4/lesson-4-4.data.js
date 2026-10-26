@@ -643,7 +643,7 @@ window.lessonData = {
     "storyPages": [
         {
             "badge": "🏷️ Scene 1: The Psychology of the Sale",
-            "image": "../../assets/images/sec2_u4_l4_cover.png",
+            "image": "../../assets/images/sec_2/unit_4/sec2_u4_l4_cover.webp",
             "caption": "Sale Events Make People Believe They Are Saving Money While Actually Spending More",
             "titleEn": "The Excitement and the Illusion of Saving",
             "textEn": "Sale events make people feel excited and believe they are saving money! However, companies use clever tricks to influence our decisions and push us to buy more. These tricks create urgency and make products seem more valuable than they really are. Every year, millions of people around the world wait for events like Black Friday to go shopping. They feel excited as they plan their purchases in advance and they believe they are making smart choices. But are they really saving money, or are they falling for a set of very clever tricks?",
@@ -658,7 +658,7 @@ window.lessonData = {
         },
         {
             "badge": "🧠 Scene 2: Loss Aversion in Action",
-            "image": "../../assets/images/egypt_youth_mindfulness.webp",
+            "image": "../../assets/images/sec_2/common/egypt_youth_mindfulness.webp",
             "caption": "Our Brains Interpret Missing a Discount as an Actual Loss, Fueling Impulse Purchases",
             "titleEn": "Loss Aversion: Why Not Buying Feels Like a Loss",
             "textEn": "One of the most common tricks is called loss aversion. Imagine a jacket that costs 400 Egyptian pounds. You do not really need it. Then a sign appears: 'Was 800 LE, Now 400 LE, Save 50%!' Suddenly, the jacket feels much more attractive. Your brain tells you, 'If I don't buy it, I will lose the chance to save 400 pounds.' Of course, you have not lost anything, but that is how our brains work. Not buying something feels like an immediate loss, driving shoppers to purchase items they had never planned to acquire.",
@@ -673,7 +673,7 @@ window.lessonData = {
         },
         {
             "badge": "⏳ Scene 3: The Reality Behind the Countdown",
-            "image": "../../assets/images/sec2_u4_l2_cover.png",
+            "image": "../../assets/images/sec_2/unit_4/sec2_u4_l2_cover.webp",
             "caption": "Timers and Stock Warnings Force Rapid Decisions Before You Have Time to Think",
             "titleEn": "Ticking Clocks, Fake Scarcity, and the Final Bill",
             "textEn": "Sale events also use other psychological pressures. Phrases like 'Only 3 left in stock!' create a feeling of urgency. You feel that you must decide immediately or you will miss the chance. Countdown clocks on websites force you to decide quickly, before you have time to think carefully. Research has found something surprising: people who shop during sales actually spend more money overall than people who do not. The sale is not designed to save you money; it is designed to make you spend more and feel happy about it!",

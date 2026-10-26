@@ -749,7 +749,7 @@ window.lessonData = {
     "storyPages": [
         {
             "badge": "🥫 Scene 1: The Kitchen Dilemma",
-            "image": "../../assets/images/sec2_u4_l1_scene1.jpg",
+            "image": "../../assets/images/sec_2/unit_4/sec2_u4_l1_scene1.webp",
             "caption": "Examining Food Labels and Dates on Everyday Groceries",
             "titleEn": "The Hidden Meaning Behind Food Labels",
             "textEn": "In kitchens around the world, an invisible crisis unfolds every evening. When Salma opened her refrigerator to make dinner, she picked up a carton of milk and a jar of tomato paste. The paste had passed its 'best-before' date yesterday, while the milk was approaching its 'use-by' date. Hesitant and unsure, she threw both into the rubbish bin. Like millions of shoppers every day, Salma experienced the common confusion surrounding date markings. Many people mistakenly believe that any date on a food package indicates a biological hazard, throwing away perfectly good, edible food that could easily have fed a family.",
@@ -765,7 +765,7 @@ window.lessonData = {
         },
         {
             "badge": "🌍 Scene 2: Environmental Impact & Survey Findings",
-            "image": "../../assets/images/egypt_youth_nutrition.webp",
+            "image": "../../assets/images/sec_2/common/egypt_youth_nutrition.webp",
             "caption": "How Food Decomposing in Landfills Produces Greenhouse Gases",
             "titleEn": "From the Kitchen Bin to Global Emissions",
             "textEn": "According to a recent consumer survey, food waste is not simply an individual pocket problem; it is a serious environmental threat. When edible leftovers rot in massive city landfills, they break down without oxygen and generate methane, a devastating greenhouse gas twenty-five times more potent than carbon dioxide. The findings revealed that almost one-third of household waste consists of food discarded incorrectly due to poor storage or misunderstandings about labels. Experts emphasize that addressing this issue is essential if we wish to reduce emissions and protect our climate.",
@@ -781,7 +781,7 @@ window.lessonData = {
         },
         {
             "badge": "🤝 Scene 3: Generosity with Wisdom",
-            "image": "../../assets/images/family_dinner_laughter_1790200387542.webp",
+            "image": "../../assets/images/common/family_dinner_laughter_1790200387542.webp",
             "caption": "Preserving Egyptian Hospitality While Eliminating Waste",
             "titleEn": "Hospitality Without Waste: A Practical Path",
             "textEn": "In Egyptian culture, serving abundant food has always been celebrated as a noble sign of generosity and warm hospitality. However, true generosity lies in sharing and preserving resources rather than throwing them away. By following clear recommendations, families can plan their meals before visiting local markets, learn proper dry storage for dry pulses and grains, and send fresh surplus food to food banks. When communities adopt these mindful habits, the amount of wasted food goes down significantly, proving that tradition and sustainability can walk hand in hand.",

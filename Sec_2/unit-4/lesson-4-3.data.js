@@ -496,7 +496,7 @@ window.lessonData = {
     "storyPages": [
         {
             "badge": "📱 Scene 1: The Illusion of Free",
-            "image": "../../assets/images/sec2_u4_l3_cover.png",
+            "image": "../../assets/images/sec_2/unit_4/sec2_u4_l3_cover.webp",
             "caption": "If You Are Not Paying for the Product, Your Attention Is What Is Being Sold",
             "titleEn": "If You're Not Paying, You Are the Product",
             "textEn": "Millions of teenagers unlock their smartphones every single morning believing that social media apps are completely free gifts. However, seasoned digital analysts remind us of a famous modern truth: 'If you are not paying for the product, you are the product.' Every second you spend browsing, complex tracking algorithms monitor your digital behavior: which photos catch your eye, which posts you immediately ignore, and what topics prompt an emotional reaction. This intimate profile is then packaged and sold to commercial enterprises eager to place persuasive advertisements directly in front of your eyes.",
@@ -512,7 +512,7 @@ window.lessonData = {
         },
         {
             "badge": "♾️ Scene 2: The Architecture of Infinite Scroll",
-            "image": "../../assets/images/egypt_youth_mindfulness.webp",
+            "image": "../../assets/images/sec_2/common/egypt_youth_mindfulness.webp",
             "caption": "Autoplay and Endless Feeds Are Psychological Features Engineered to Keep You Hooked",
             "titleEn": "Engineering Addiction: Infinite Feeds & Autoplay",
             "textEn": "Features such as infinite scroll—where the feed replenishes endlessly without a bottom margin—and video autoplay were not discovered by accident. They were painstakingly engineered by teams of professional psychologists and software designers whose core job is to maximize screen time. In previous decades, a physical book or newspaper had natural stopping points: the end of a page or chapter. Today's digital apps remove all natural friction, keeping teenagers glued to their screens so that by age seventeen, the average teenager has spent more hours on social apps than sitting inside school classrooms!",
@@ -528,7 +528,7 @@ window.lessonData = {
         },
         {
             "badge": "🧠 Scene 3: Reclaiming Your Mental Energy",
-            "image": "../../assets/images/family_dinner_laughter_1790200387542.webp",
+            "image": "../../assets/images/common/family_dinner_laughter_1790200387542.webp",
             "caption": "Putting Your Phone in Another Room Reclaims Mental Energy and Restores Deep Focus",
             "titleEn": "Regaining Control: Sane Habits for a Digital World",
             "textEn": "Medical research confirms that even hearing a phone buzz in your pocket depletes mental energy. Your brain enters a state of anticipation, craving the dopamine reward of checking the alert. Consequently, students who study with their smartphones nearby perform significantly worse than those who leave devices in another room. Technology offers wonderful advantages: it helps us stay connected, access global knowledge, and express creativity. But the first step toward digital mastery is realizing that your time and attention have immense value. When you control your digital habits, you reclaim your mind and your future.",

@@ -435,7 +435,7 @@ window.lessonData = {
     "storyPages": [
         {
             "title": "Chapter 1: The Awkward Silence at the Dinner Table",
-            "imageUrl": "../../assets/images/silent_dinner_table_1790200343363.webp",
+            "imageUrl": "../../assets/images/prep_3/unit_2/silent_dinner_table_1790200343363.webp",
             "caption": "Omar and his parents sitting in heavy silence at the family dinner table",
             "textEn": "Omar sat at the dinner table, pushing his food around with a fork. His parents were sitting across from him, quietly eating. The room was filled with silence—that strange, heavy kind of silence that made everything feel awkward. It wasn't always like this. A year ago, Omar and his parents used to laugh together at dinner. But lately, things had changed. Due to school stress, phone distractions, and arguments over small things, communication had almost disappeared. Everyone seemed frustrated, but no one said why. That night, Omar decided to try something different. Instead of eating quietly, he spoke.",
             "textAr": "جلس عمر على طاولة العشاء، يقلب طعامه بالشوكة. كان والداه يجلسان أمامه، يأكلان في هدوء. كانت الغرفة ممتلئة بالصمت — ذلك النوع الغريب والثقيل من الصمت الذي جعل كل شيء يبدو محرجاً وغريباً. لم يكن الأمر هكذا دائماً. قبل عام، اعتاد عمر ووالداه أن يضحكوا معاً على العشاء. ولكن مؤخراً، تغيرت الأمور؛ بسبب ضغوط المدرسة، ومشتتات الهاتف، والجدال حول أشياء صغيرة، كاد التواصل أن يختفي تماماً. بدا الجميع محبطين، لكن لم يقل أحد لماذا. في تلك الليلة، قرر عمر أن يجرب شيئاً مختلفاً، فبدلاً من تناول الطعام في صمت، تحدث.",
@@ -443,7 +443,7 @@ window.lessonData = {
         },
         {
             "title": "Chapter 2: Speaking Up Honestly",
-            "imageUrl": "../../assets/images/teenager_speaking_up_1790200355330.webp",
+            "imageUrl": "../../assets/images/prep_3/unit_2/teenager_speaking_up_1790200355330.webp",
             "caption": "Omar speaking up honestly to express his feelings to his parents",
             "textEn": "“I miss how we used to talk,” he said, looking at his plate. “I feel like we’ve all been strangers lately.”",
             "textAr": "قال وهو ينظر إلى طبقه: 'أفتقد كيف اعتدنا التحدث. أشعر وكأننا جميعاً أصبحنا غرباء مؤخراً.'",
@@ -451,7 +451,7 @@ window.lessonData = {
         },
         {
             "title": "Chapter 3: Mutual Understanding & Agreement",
-            "imageUrl": "../../assets/images/parents_listening_gently_1790200366091.webp",
+            "imageUrl": "../../assets/images/prep_3/unit_2/parents_listening_gently_1790200366091.webp",
             "caption": "His mother putting down her fork and father nodding his head in agreement",
             "textEn": "His words surprised his parents. His mother put down her fork. “You’re right,” she said softly. “We all have been too busy or tired to talk.” His father nodded his head. “Let’s fix that.”",
             "textAr": "فاجأت كلماته والديه. وضعت والدته شوكتها جانباً وقالت بلطف: 'أنت محق، لقد كنا جميعاً مشغولين جداً أو متعبين للغاية للحديث.' هز والده رأسه موافقاً: 'دعنا نصلح ذلك.'",
@@ -459,7 +459,7 @@ window.lessonData = {
         },
         {
             "title": "Chapter 4: A Meaningful Gesture & Sincere Words",
-            "imageUrl": "../../assets/images/family_hand_gesture_1790200376592.webp",
+            "imageUrl": "../../assets/images/prep_3/unit_2/family_hand_gesture_1790200376592.webp",
             "caption": "Honest words and a meaningful gesture that broke the barrier of silence",
             "textEn": "It wasn’t a long conversation, no big speeches, just a few honest words and a meaningful gesture. At that moment, the silence broke. It was the start of something better.",
             "textAr": "لم تكن محادثة طويلة، ولا خطابات كبيرة، فقط بضع كلمات صادقة وإشارة معبرة وذات مغزى. في تلك اللحظة، انكسر حاجز الصمت، وكانت بداية لشيء أفضل.",
@@ -467,7 +467,7 @@ window.lessonData = {
         },
         {
             "title": "Chapter 5: Reconnecting with Warmth & Laughter",
-            "imageUrl": "../../assets/images/family_dinner_laughter_1790200387542.webp",
+            "imageUrl": "../../assets/images/common/family_dinner_laughter_1790200387542.webp",
             "caption": "Family dinner slowly filled with warmth, genuine communication, and laughter again",
             "textEn": "That small act of communication helped them reconnect—not through shouting or long messages, but by simply choosing to speak and listen. And from that night on, their dinners slowly became filled with laughter again.",
             "textAr": "ساعدهم ذلك العمل البسيط من التواصل على إعادة الاتصال والتواصل من جديد — ليس من خلال الصراخ أو الرسائل الطويلة، بل بمجرد اختيار التحدث والاستماع. ومنذ تلك الليلة، أصبحت موائد عشائهم تمتلئ بالضحك ببطء من جديد.",

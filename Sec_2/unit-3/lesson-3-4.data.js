@@ -871,7 +871,7 @@ window.lessonData = {
             "title": "The Slow Pace of the Past",
             "badge": "Scene 1 • Official Channels & Scholarly Gatekeepers",
             "caption": "How Archaeological News Used to Travel",
-            "image": "../../assets/images/gem_museum.webp",
+            "image": "../../assets/images/common/gem_museum.webp",
             "textEn": "For most of human history, news of a great archaeological discovery traveled slowly. A royal tomb found in the Valley of the Kings might be reported in a specialist journal months after the excavation began, reaching only a small community of scholars and museum professionals. The wider public — whether in Egypt or abroad — would wait years before seeing even a photograph of what had been uncovered. Knowledge of the past was carefully managed, moving through official channels before it reached ordinary people.",
             "translation": "خلال معظم التاريخ البشري، كانت أنباء الاكتشافات الأثرية الكبرى تسير وتنتقل ببطء شديد. فالمقبرة الملكية المكتشفة في وادي الملوك كان يُعلن عنها في مجلة دورية متخصصة بعد أشهر طويلة من بدء أعمال التنقيب، ولا يصل خبرها إلا لمجتمع ضيق من الباحثين وخبراء المتاحف. وكان الجمهور العريض — سواء داخل مصر أو خارجها — ينتظر سنوات قبل أن يرى مجرد صورة فوتوغرافية لما تم الكشف عنه. فقد كانت المعرفة بالتاريخ تُدار بحرص شديد، وتمر عبر قنوات رسمية قبل أن تصل إلى الناس العاديين.",
             "vocabulary": [
@@ -887,7 +887,7 @@ window.lessonData = {
             "title": "The Real-Time Digital Revolution",
             "badge": "Scene 2 • Bringing Egyptian Discoveries to the World",
             "caption": "From Sealed Tombs to Submerged Cities Instantly",
-            "image": "../../assets/images/gem_museum.webp",
+            "image": "../../assets/images/common/gem_museum.webp",
             "textEn": "Social media has transformed this process in remarkable ways. When an exciting find is made today, whether a sealed tomb in Luxor, a submerged city off the coast of Alexandria, or an ancient papyrus in the Delta, it can be photographed, posted, and shared with millions of people within hours. Official accounts run by organizations such as the Ministry of Tourism and Antiquities now use platforms like X and Instagram to document discoveries in real time, allowing followers from Cairo to Tokyo to watch history being uncovered. For the first time, Egypt's extraordinary heritage is being shared with the world at the very moment it is found.",
             "translation": "لقد غيّر الإعلام الاجتماعي هذه العملية بشكل جذري وبطرق مدهشة ولفتة للنظر. فعندما يتم التوصل إلى اكتشاف مثير اليوم، سواء كانت مقبرة مغلقة بإحكام في الأقصر، أو مدينة مغمورة تحت الماء قبالة ساحل الإسكندرية، أو بردية قديمة في الدلتا، يمكن تصويرها ونشرها ومشاركتها مع ملايين البشر في غضون ساعات قليلة. وتستخدم الحسابات الرسمية التي تديرها منظمات كوزارة السياحة والآثار منصات مثل X وإنستغرام لتوثيق الاكتشافات في الوقت الفعلي والتزامن المباشر، مما يتيح للمتابعين من القاهرة إلى طوكيو مشاهدة التاريخ وهو يُكشف عنه. ولأول مرة، يُشارك تراث مصر الاستثنائي مع العالم فور اكتشافه مباشرة.",
             "vocabulary": [
@@ -904,7 +904,7 @@ window.lessonData = {
             "title": "Digital Fragility and Academic Balance",
             "badge": "Scene 3 • Preserving Context in a Fast-Paced World",
             "caption": "Why Social Media Needs Academic Documentation",
-            "image": "../../assets/images/gem_museum.webp",
+            "image": "../../assets/images/common/gem_museum.webp",
             "textEn": "There are challenges to consider, however. A post on X can be deleted; an Instagram story expires after twenty-four hours; a TikTok video may be removed by its creator or by the platform's moderation systems within minutes of going viral. Unlike a stone inscription or a printed journal, social media documentation is fragile. There is also the question of accuracy: not every post about an Egyptian discovery is published by experts, and images or claims can sometimes be misunderstood or shared out of context. Specialists argue that social media is most valuable when it works alongside careful academic documentation and preservation.",
             "translation": "مع ذلك، ثمة تحديات ومخاطر حقيقية يجب أن نأخذها في الحسبان. فالمنشور على منصة X يمكن حذفه، و\"ستوري\" الإنستغرام تنتهي صلاحيتها وتختفي بعد أربع وعشرين ساعة، ومقطع التيك توك قد يزيله منشئه أو تحذفه أنظمة الإشراف على المحتوى في غضون دقائق من انتشاره كالنار في الهشيم. وعلى عكس النقوش الحجرية الصلبة أو المجلات المطبوعة، فإن التوثيق الرقمي عبر السوشيال ميديا يتسم بالهشاشة وقابلية الزوال السريع. يُضاف إلى ذلك مسألة الدقة؛ فليس كل منشور عن اكتشاف مصري يكتبه خبراء متخصصون، وقد يُساء فهم الصور والادعاءات أو يتم تداولها خارج سياقها الصحيح. ولذلك يؤكد المتخصصون أن السوشيال ميديا تحقق أعظم فائدة عندما تعمل جنباً إلى جنب مع التوثيق الأكاديمي الدقيق وجهود الحفظ والصيانة.",
             "vocabulary": [

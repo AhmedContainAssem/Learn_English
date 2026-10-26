@@ -1,0 +1,38 @@
+
+==========================================
+CHECKING QUIZ DATA IN: Sec_3/unit-3
+==========================================
+- Sec_3/unit-3\lesson-1-2.data.js: Could not match sample question!
+- Sec_3/unit-3\lesson-4-5.data.js: Could not match sample question!
+
+==========================================
+CHECKING QUIZ DATA IN: Sec_2/unit-3
+==========================================
+- Sec_2/unit-3\lesson-3-1.data.js: Could not match sample question!
+- Sec_2/unit-3\lesson-3-2.data.js: Could not match sample question!
+- Sec_2/unit-3\lesson-3-3.data.js: keys = {'id', 'explanation', 'options', 'question', 'correct'} | opts:True, choices:False, ans:False, correct:True, correctAns:False
+- Sec_2/unit-3\lesson-3-4.data.js: Could not match sample question!
+
+==========================================
+CHECKING QUIZ DATA IN: Sec_2/unit-4
+==========================================
+- Sec_2/unit-4\lesson-4-1.data.js: Could not match sample question!
+- Sec_2/unit-4\lesson-4-2.data.js: Could not match sample question!
+- Sec_2/unit-4\lesson-4-3.data.js: Could not match sample question!
+- Sec_2/unit-4\lesson-4-4.data.js: Could not match sample question!
+
+==========================================
+CHECKING QUIZ DATA IN: Grade_6
+==========================================
+- Grade_6\unit-1\lesson-1.data.js: keys = {'id', 'text', 'options', 'isCorrect', 'question', 'emoji'} | opts:True, choices:False, ans:False, correct:False, correctAns:False
+- Grade_6\unit-1\lesson-2.data.js: keys = {'id', 'text', 'options', 'isCorrect', 'question', 'emoji'} | opts:True, choices:False, ans:False, correct:False, correctAns:False
+- Grade_6\unit-1\lesson-3.data.js: keys = {'id', 'explanation', 'options', 'question', 'correct'} | opts:True, choices:False, ans:False, correct:True, correctAns:False
+- Grade_6\unit-1\lesson-4-5.data.js: keys = {'id', 'explanation', 'options', 'question', 'correct'} | opts:True, choices:False, ans:False, correct:True, correctAns:False
+- Grade_6\unit-2\lesson-1.data.js: keys = {'question', 'explanation', 'correct', 'options'} | opts:True, choices:False, ans:False, correct:True, correctAns:False
+- Grade_6\unit-2\lesson-2.data.js: keys = {'question', 'explanation', 'correct', 'options'} | opts:True, choices:False, ans:False, correct:True, correctAns:False
+- Grade_6\unit-2\lesson-3.data.js: keys = {'question', 'explanation', 'correct', 'options'} | opts:True, choices:False, ans:False, correct:True, correctAns:False
+- Grade_6\unit-2\lesson-4-5.data.js: keys = {'question', 'explanation', 'correct', 'options'} | opts:True, choices:False, ans:False, correct:True, correctAns:False
+- Grade_6\unit-3\lesson-1.data.js: keys = {'question', 'explanation', 'correct', 'options'} | opts:True, choices:False, ans:False, correct:True, correctAns:False
+- Grade_6\unit-3\lesson-2.data.js: keys = {'question', 'explanation', 'correct', 'options'} | opts:True, choices:False, ans:False, correct:True, correctAns:False
+- Grade_6\unit-3\lesson-3.data.js: keys = {'question', 'explanation', 'correct', 'options'} | opts:True, choices:False, ans:False, correct:True, correctAns:False
+- Grade_6\unit-3\lesson-4-5.data.js: keys = {'question', 'explanation', 'correct', 'options'} | opts:True, choices:False, ans:False, correct:True, correctAns:False

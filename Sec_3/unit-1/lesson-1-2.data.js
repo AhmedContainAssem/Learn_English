@@ -757,7 +757,7 @@ window.lessonData = {
             "id": 1,
             "en": "a set period of time",
             "ar": "فترة محددة من الوقت / مدة معينة",
-            "img": "./sec 3 storybook photos/sec3_u1_scene1_nurse_sarah.webp",
+            "img": "../../assets/images/sec_3/unit_1/sec3_u1_scene1.webp",
             "explain": "فترة محددة ومعروفة البداية والنهاية، كنوبة عمل متواصلة (مثل وردية الـ 12 ساعة في المستشفى).",
             "exampleEn": "Doctors and nurses in Cairo work for <strong style='color: var(--accent-primary);'>a set period of time</strong> before handing over to the night team.",
             "exampleAr": "يعمل الأطباء والتمريض في القاهرة لفترة محددة من الوقت قبل تسليم النوبة للفريق الليلي."
@@ -766,7 +766,7 @@ window.lessonData = {
             "id": 2,
             "en": "aware of",
             "ar": "مدرك لـ - على علم بـ",
-            "img": "./sec 3 storybook photos/sec3_u1_scene3_emergency_team.webp",
+            "img": "../../assets/images/sec_3/unit_1/sec3_u1_scene3.webp",
             "explain": "الانتباه والوعي الكامل بالخطر أو الموقف والتعامل معه بحذر وفطنة.",
             "exampleEn": "Emergency doctors must be fully <strong style='color: var(--accent-primary);'>aware of</strong> the patient's critical condition upon arrival.",
             "exampleAr": "يجب أن يكون أطباء الطوارئ على دراية كاملة بحالة المريض الحرجة فور وصوله."
@@ -775,7 +775,7 @@ window.lessonData = {
             "id": 3,
             "en": "due to",
             "ar": "بسبب / ناتج عن",
-            "img": "./sec 3 storybook photos/sec3_u1_scene4_documenting_progress.webp",
+            "img": "../../assets/images/sec_3/unit_1/sec3_u1_scene4.webp",
             "explain": "تأتي لبيان السبب ويتبعها اسم (Noun) أو (V+ing) وتساوي (because of / owing to).",
             "exampleEn": "The patient made a quick recovery <strong style='color: var(--accent-primary);'>due to</strong> excellent medical care and attentive nurses.",
             "exampleAr": "تماثل المريض للشفاء السريع بسبب الرعاية الطبية الممتازة والممرضات المخلصات."
@@ -784,7 +784,7 @@ window.lessonData = {
             "id": 4,
             "en": "make sure",
             "ar": "يتأكد / يحرص على التيقن",
-            "img": "./sec 3 storybook photos/sec3_u1_scene2_patient_care.webp",
+            "img": "../../assets/images/sec_3/unit_1/sec3_u1_scene2.webp",
             "explain": "التحقق المباشر من سلامة الإجراء أو راحة الشخص قبل المضي قدماً.",
             "exampleEn": "Sarah always <strong style='color: var(--accent-primary);'>makes sure</strong> that elderly patient Amm Ramy feels comfortable after his surgery.",
             "exampleAr": "تحرص سارة دائماً على التأكد من راحة المريض المسن عم رامي بعد الجراحة."
@@ -793,7 +793,7 @@ window.lessonData = {
             "id": 5,
             "en": "rewarding work",
             "ar": "عمل مرضٍ ومجزٍ / رسالة سامية",
-            "img": "./sec 3 storybook photos/sec3_u1_scene5_patient_care_vocation.webp",
+            "img": "../../assets/images/sec_3/unit_1/sec3_u1_scene5.webp",
             "explain": "عمل يمنح صاحبه شعوراً بالفخر والسعادة والإشباع الداخلي رغم مشقته، كمهنة الطب والتمريض.",
             "exampleEn": "Nursing in Egyptian public hospitals is demanding but truly <strong style='color: var(--accent-primary);'>rewarding work</strong>.",
             "exampleAr": "إن التمريض في المستشفيات المصرية مجهد لكنه عمل مجزٍ ومرضٍ للغاية."
@@ -802,7 +802,7 @@ window.lessonData = {
             "id": 6,
             "en": "ups and downs",
             "ar": "أفراح وأحزان - تقلبات الحياة",
-            "img": "./sec 3 storybook photos/sec3_u1_scene6_rollercoaster_vocation.webp",
+            "img": "../../assets/images/sec_3/unit_1/sec3_u1_scene6.webp",
             "explain": "تعبير اصطلاحي شهير يعني الأوقات الجيدة والسيئة المتلاحقة (تقلبات المزاج أو ظروف العمل).",
             "exampleEn": "Hospital life has its <strong style='color: var(--accent-primary);'>ups and downs</strong>, but saving lives makes every moment worthwhile.",
             "exampleAr": "لحياة المستشفى تقلباتها بين السراء والضراء، لكن إنقاذ الأرواح يجعل كل لحظة ذات قيمة."
@@ -1123,7 +1123,7 @@ window.lessonData = {
     "storyPages": [
         {
             "title": "Scene 1: Morning Coffee & Mental Preparation",
-            "imageUrl": "./sec 3 storybook photos/sec3_u1_scene1.webp",
+            "imageUrl": "../../assets/images/sec_3/unit_1/sec3_u1_scene1.webp",
             "caption": "Nurse Sarah mentally preparing for her demanding 12-hour hospital shift with morning coffee",
             "textEn": "Every morning, Nurse Sarah kicks off her day with a strong cup of coffee before her 12-hour shift begins. She is always preparing herself mentally for the challenges ahead.",
             "textAr": "في كل صباح، تستهل الممرضة سارة يومها بفنجان قوي من القهوة قبل أن تبدأ نوبتها الممتدة لـ 12 ساعة. وهي تُعد نفسها دائماً ذهنياً لمواجهة التحديات المقبلة.",
@@ -1131,7 +1131,7 @@ window.lessonData = {
         },
         {
             "title": "Scene 2: Checking Charts & A Buzzing Hospital",
-            "imageUrl": "./sec 3 storybook photos/sec3_u1_scene2.webp",
+            "imageUrl": "../../assets/images/sec_3/unit_1/sec3_u1_scene2.webp",
             "caption": "Sarah reviewing patient charts at the nurses' station amidst a buzzing hospital morning",
             "textEn": "As soon as she arrives, she checks patients' charts and reviews updates from the night shift. The hospital is buzzing with activity – doctors rushing, monitors beeping, and patients waiting.",
             "textAr": "وبمجرد وصولها، تتفقد ملفات المرضى وتراجع تحديثات نوبة الليل. ويضج المستشفى بالنشاط والحركة - أطباء يسارعون الخطى، وأجهزة مراقبة تصدر صفارات التنبيه، ومرضى في الانتظار.",
@@ -1139,7 +1139,7 @@ window.lessonData = {
         },
         {
             "title": "Scene 3: Administering Medication & Caring for Mr. Ramy",
-            "imageUrl": "./sec 3 storybook photos/sec3_u1_scene3.webp",
+            "imageUrl": "../../assets/images/sec_3/unit_1/sec3_u1_scene3.webp",
             "caption": "Sarah administering medication and comforting elderly patient Mr. Ramy recovering from surgery",
             "textEn": "Sarah's first task is administering medication to her patients. Some have been waiting anxiously, while others are resting quietly. She has cared for many patients over the years, but each day brings new surprises. One elderly patient, Mr. Ramy, has been recovering from surgery and needs extra attention. Sarah makes sure he is comfortable before moving on.",
             "textAr": "كانت مهمة سارة الأولى هي إعطاء الأدوية لمرضاها. كان بعضهم ينتظر بقلق، بينما كان آخرون يستريحون في هدوء. لقد اعتنت بالكثير من المرضى على مدار السنين، غير أن كل يوم يحمل مفاجآت جديدة. كان أحد المرضى المسنين، السيد رامي، يتعافى من عملية جراحية ويحتاج إلى عناية إضافية. تأكدت سارة من شعوره بالراحة قبل أن تنتقل إلى مريض آخر.",
@@ -1147,7 +1147,7 @@ window.lessonData = {
         },
         {
             "title": "Scene 4: Midday Emergencies & Teamwork in Action",
-            "imageUrl": "./sec 3 storybook photos/sec3_u1_scene4.webp",
+            "imageUrl": "../../assets/images/sec_3/unit_1/sec3_u1_scene4.webp",
             "caption": "Emergencies arise: the medical team springs into action rushing an accident victim to the ER",
             "textEn": "By midday, emergencies arise – a car accident victim is rushed in, and the team springs into action. Sarah assists the doctors, ensuring everything runs smoothly. Despite the chaos, she remains calm and focuses on her duties. “Teamwork makes the dream work,” she often says, relying on her colleagues for support.",
             "textAr": "بحلول الظهيرة، تنشأ حالات طوارئ - حيث يُنقل ضحية حادث سيارة على عجل، وينطلق الفريق الطبي للعمل بسرعة. تساعد سارة الأطباء، وتتأكد من سير كل شيء بسلاسة. وعلى الرغم من الفوضى، تظل هادئة وتركز على واجباتها. وكثيراً ما تقول: \"العمل الجماعي يحقق النجاح المنشود\"، معتمدة على زملائها للحصول على الدعم.",
@@ -1155,7 +1155,7 @@ window.lessonData = {
         },
         {
             "title": "Scene 5: Documenting Patient Progress & Evening Check",
-            "imageUrl": "./sec 3 storybook photos/sec3_u1_scene5.webp",
+            "imageUrl": "../../assets/images/sec_3/unit_1/sec3_u1_scene5.webp",
             "caption": "Sarah documenting each patient's medical progress at the desk by evening",
             "textEn": "By evening, Sarah has checked on all her patients and has documented their progress. She feels exhausted but fulfilled.",
             "textAr": "بحلول المساء، تكون سارة قد اطمأنت على جميع مرضاها ووثقت تقدمهم الصحي. تشعر بالإرهاق لكنها تشعر بالرضا والامتلاء الداخلي.",
@@ -1163,7 +1163,7 @@ window.lessonData = {
         },
         {
             "title": "Scene 6: Heading Home & A Rewarding Vocation",
-            "imageUrl": "./sec 3 storybook photos/sec3_u1_scene6.webp",
+            "imageUrl": "../../assets/images/sec_3/unit_1/sec3_u1_scene6.webp",
             "caption": "Heading home after a 12-hour shift: nursing is a rollercoaster, but truly rewarding",
             "textEn": "As she heads home, she reflects on the day – some moments were heartbreaking, but many were rewarding. Nursing is a never-ending rollercoaster, but Sarah wouldn't trade it for anything.",
             "textAr": "وبينما تتجه إلى منزلها، تتأمل في أحداث اليوم - بعض اللحظات كانت مفجعة ومؤلمة، لكن الكثير منها كان مجزياً ومُرضياً. التمريض بمثابة أفعوانية مليئة بالتقلبات الشديدة التي لا تنتهي، لكن سارة لن تستبدل مهنتها بأي شيء في العالم.",

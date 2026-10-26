@@ -194,7 +194,7 @@ window.lessonData = {
             title: "The Speed of the Viral Past",
             badge: "Page 1 • The Algorithm and the Archive",
             caption: "Viral Speed vs Historical Reality",
-            image: "../../assets/images/gem_museum.webp",
+            image: "../../assets/images/common/gem_museum.webp",
             textEn: "Never before in human history have historical images, artifacts, and claims reached many people so quickly. A single post about an Egyptian pharaoh can accumulate millions of views within twenty-four hours; a colorized photograph of ancient Alexandria can be shared across continents before a single historian has had the opportunity to verify its accuracy. The scale and speed of this spread are, in themselves, remarkable. The problem is that scale and speed have no real relationship to truth.",
             translation: "لم يحدث من قبل في تاريخ البشرية أن وصلت الصور التاريخية والقطع الأثرية والادعاءات إلى هذا العدد الكبير من الناس بهذه السرعة. يمكن لمنشور واحد عن فرعون مصري أن يحصد ملايين المشاهدات في غضون 24 ساعة؛ كما يمكن مشاركة صورة فوتوغرافية ملونة للإسكندرية القديمة عبر القارات قبل أن تتاح الفرصة لمؤرخ واحد للتحقق من دقتها. إن نطاق وسرعة هذا الانتشار في حد ذاتهما أمر لافت للنظر. لكن المشكلة تكمن في أن الحجم والسرعة لا علاقة حقيقية لهما بالحقيقة.",
             vocabulary: ["accumulate", "colorized", "verify", "scale", "remarkable"]
@@ -203,7 +203,7 @@ window.lessonData = {
             title: "Emotion Over Evidence",
             badge: "Page 2 • The Algorithm and the Archive",
             caption: "Why Social Media Favors Emotion Over Fact",
-            image: "../../assets/images/gem_museum.webp",
+            image: "../../assets/images/common/gem_museum.webp",
             textEn: "The way social media platforms work increases this risk considerably. These platforms are designed not to prioritize accuracy but to promote engagement. Research consistently shows that engagement is driven by emotion. Content that causes surprise, pride, nostalgia, or strong reaction spreads more rapidly than content that is measured, detailed, or carefully qualified.",
             translation: "تزيد الطريقة التي تعمل بها منصات التواصل الاجتماعي من هذا الخطر بشكل ملحوظ. لم تُصمم هذه المنصات لإعطاء الأولوية للدقة، بل لتعزيز التفاعل والمشاركة. وتُظهر الأبحاث باستمرار أن التفاعل مدفوع بالعاطفة. فالمحتوى الذي يثير الدهشة أو الفخر أو الحنين إلى الماضي أو رد فعل قوي ينتشر بسرعة أكبر بكثير من المحتوى المتأنّي والمفصل أو المؤهل بدقة.",
             vocabulary: ["prioritize", "engagement", "consistently", "nostalgia", "measured"]
@@ -212,7 +212,7 @@ window.lessonData = {
             title: "Myths versus Real Construction",
             badge: "Page 3 • The Algorithm and the Archive",
             caption: "The Reality of Ancient Construction",
-            image: "../../assets/images/gem_museum.webp",
+            image: "../../assets/images/common/gem_museum.webp",
             textEn: "A viral post may claim that the Great Pyramid was built in a single decade by a team of fifty engineers. Such posts often accumulate more shares than carefully sourced corrections. In reality, the actual construction process unfolded over decades and involved tens of thousands of workers.",
             translation: "قد يدّعي منشور واسع الانتشار أن الهرم الأكبر قد تم بناؤه في عقد واحد من الزمان على يد فريق مكوّن من خمسين مهندساً فقط. وغالباً ما تحصد مثل هذه المنشورات مشاركات تفوق بكثير التصحيحات المدعومة بمصادر موثوقة. وفي الواقع، فإن عملية البناء الحقيقية تكشفت وامتدت عبر عقود من الزمن وشاركت فيها عشرات الآلاف من العمال.",
             vocabulary: ["claim", "accumulate", "correction", "construction", "unfolded"]
@@ -221,7 +221,7 @@ window.lessonData = {
             title: "Distorting Heritage and Identity",
             badge: "Page 4 • The Algorithm and the Archive",
             caption: "The Danger to National Heritage",
-            image: "../../assets/images/gem_museum.webp",
+            image: "../../assets/images/common/gem_museum.webp",
             textEn: "The consequences for our understanding of history are significant. In Egypt, where the relationship between ancient heritage and national identity is particularly important, the viral spread of historical myths and false claims risks distorting the public's understanding of who they are and where they come from.",
             translation: "إن العواقب على فهمنا للتاريخ وخيمة وذات أثر كبير. ففي مصر، حيث تكتسي العلاقة بين التراث القديم والهوية الوطنية أهمية بالغة، يُهدد الانتشار الفيروسي للأساطير التاريخية والادعاءات الكاذبة بتشويه فهم الجمهور لهويتهم وجذورهم.",
             vocabulary: ["consequences", "significant", "heritage", "myth", "distorting"]
@@ -230,7 +230,7 @@ window.lessonData = {
             title: "The Weapon of Media Literacy",
             badge: "Page 5 • The Algorithm and the Archive",
             caption: "Distinguishing What Happened from What Trends",
-            image: "../../assets/images/gem_museum.webp",
+            image: "../../assets/images/common/gem_museum.webp",
             textEn: "Rarely do virality and accuracy move in the same direction. Only through deliberate media literacy — the developed habit of questioning sources, checking dates, and consulting multiple perspectives — can citizens distinguish between the past that actually happened and the past that merely trends.",
             translation: "نادراً ما يسير الانتشار الفيروسي والدقة في الاتجاه ذاته. فقط من خلال الوعي الإعلامي المدروس — وهو العادة المتأصلة في مساءلة المصادر، والتحقق من التواريخ، والرجوع إلى وجهات نظر متعددة — يستطيع المواطنون التمييز بين الماضي الذي حدث بالفعل والماضي الذي يتصدر التريند فحسب.",
             vocabulary: ["virality", "media literacy", "questioning", "perspectives", "distinguish"]

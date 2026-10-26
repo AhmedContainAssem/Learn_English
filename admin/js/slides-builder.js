@@ -72,7 +72,7 @@ function renderSlidesList() {
                             <span>مسار / رابط صورة الشريحة (Image URL - WebP):</span>
                             <span style="color: var(--accent-primary); font-size: 0.8rem;">.webp مُوصى به</span>
                         </label>
-                        <input type="text" class="form-input" placeholder="e.g. ../../assets/images/slides/slide-1.webp أو ./sec 3 storybook photos/1.webp" value="${escapeHTML(slide.imageUrl || '')}" oninput="updateSlideField(${idx}, 'imageUrl', this.value)" style="direction: ltr; font-family: monospace; font-size: 0.85rem;">
+                        <input type="text" class="form-input" placeholder="e.g. ../../assets/images/slides/slide-1.webp" value="${escapeHTML(slide.imageUrl || '')}" oninput="updateSlideField(${idx}, 'imageUrl', this.value)" style="direction: ltr; font-family: monospace; font-size: 0.85rem;">
                     </div>
 
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">

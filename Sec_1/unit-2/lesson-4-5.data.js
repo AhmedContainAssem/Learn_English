@@ -879,7 +879,7 @@ window.lessonData = {
             "title": "The Beach Emergency",
             "badge": "Scene 1 • Swift Action at Sea",
             "caption": "Lifeguard Youssef rescues a child from dangerous waves",
-            "image": "../../assets/images/gem_museum.webp",
+            "image": "../../assets/images/common/gem_museum.webp",
             "textEn": "It was a scorching summer afternoon along the Alexandria coastline. Ten-year-old Ziad was playing with a colorful beach ball when a sudden rogue current dragged him into deep water. He began to splash frantically, unable to stay afloat. On the wooden observation tower stood Youssef, a trained lifeguard who believed protecting swimmers was his moral obligation. The moment he spotted the emergency, Youssef blew his whistle and plunged into the churning sea. Swimming against powerful waves was risky, but Youssef knew that hesitation meant losing a precious life. Within moments, he reached the terrified child and safely towed him back to the sandy shore.",
             "translation": "كانت ظهيرة صيفية شديدة الحرارة على ساحل الإسكندرية. كان زياد، وهو طفل في العاشرة من عمره، يلعب بكرة شاطئية ملونة حين جرفه تيار مائي مفاجئ وعنيف إلى المياه العميقة. أخذ يتخبط مذعوراً غير قادر على البقاء فوق سطح الماء. وعلى برج المراقبة الخشبي، كان يقف يوسف، وهو منقذ سباحة مدرب يؤمن بأن حماية المصطافين التزام وواجب أخلاقي مقدس. وفي اللحظة التي لمح فيها حالة الطوارئ، أطلق يوسف صفارته وقفز بقوة في البحر المتلاطم. كانت السباحة ضد الأمواج العاتية أمراً محفوفاً بالمخاطر، لكن يوسف كان يعلم أن أي تردد قد يؤدي إلى فقدان روح بريئة. وفي غضون لحظات، وصل إلى الطفل المذعور وسحبه بأمان إلى الشاطئ الرملي.",
             "vocabulary": [
@@ -895,7 +895,7 @@ window.lessonData = {
             "title": "Battling the Timber Blaze",
             "badge": "Scene 2 • Firefighters in the Night",
             "caption": "Putting out fires and saving trapped residents through teamwork",
-            "image": "../../assets/images/gem_museum.webp",
+            "image": "../../assets/images/common/gem_museum.webp",
             "textEn": "Later that autumn, an electrical short sparked a fierce fire inside a historic carpentry workshop in Old Cairo. In the middle of the night, thick black smoke billowed into the narrow alleys, trapping an elderly couple on the second floor. Captain Hazem and his squad arrived within minutes. The heavy smoke made it hard to breathe, and dry wooden planks threatened to collapse. Demonstrating remarkable teamwork and problem-solving, two firefighters operated the high-pressure hoses to put out the raging flames, while Hazem climbed the rescue ladder to carry the elderly residents out. Their courage proved that serving the community in times of danger is worth every risk.",
             "translation": "وفي وقت لاحق من ذلك الخريف، أدى ماس كهربائي إلى نشوب حريق هائل داخل ورشة نجارة تاريخية في القاهرة القديمة. وفي منتصف الليل، تصاعدت سحب الدخان الأسود الكثيف في الأزقة الضيقة، مما أدى إلى احتجاز زوجين مسنين في الطابق الثاني. وصل النقيب حازم وفرقته في غضون دقائق معدودة؛ وكان الدخان الخانق يجعل التنفس عسيراً للغاية، بينما هددت الألواح الخشبية الجافة بالانهيار. ومن خلال تجسيد رائع للعمل الجماعي وحل المشكلات، قام اثنان من الإطفائيين بتشغيل خراطيم المياه ذات الضغط العالي لإخماد النيران، بينما تسلق حازم سلم الإنقاذ لإخراج المسنين بأمان. أثبتت شجاعتهم أن خدمة المجتمع في أوقات الخطر تستحق كل مخاطرة وتضحية.",
             "vocabulary": [
@@ -911,7 +911,7 @@ window.lessonData = {
             "title": "Trust and Lifelong Brotherhood",
             "badge": "Scene 3 • Unity in Crisis",
             "caption": "Mutual trust and gratitude between rescuers and the community",
-            "image": "../../assets/images/gem_museum.webp",
+            "image": "../../assets/images/common/gem_museum.webp",
             "textEn": "The following week, the neighborhood council held a gathering to honor Youssef and Captain Hazem's squad. Neighbors from diverse backgrounds embraced each other and thanked the brave men. The incident proved that when people cooperate and trust their emergency services, communities emerge stronger and more united. For Hazem and Youssef, the smiles of the saved victims and the pride of serving their people brought a profound sense of personal satisfaction that no money could ever equal. Their selfless actions showed everyone that true heroes do not seek wealth; they protect lives.",
             "translation": "في الأسبوع التالي، أقام مجلس الحي احتفالية لتكريم يوسف وفرقة النقيب حازم. تعانق الجيران من مختلف الخلفيات وشكروا هؤلاء الأبطال البواسل. أثبتت تلك الحادثة أنه عندما يتعاون الناس ويثقون في أجهزة الطوارئ، يخرج المجتمع أكثر قوة وتماسكاً. وبالنسبة لحازم ويوسف، فإن ابتسامات الضحايا الذين تم إنقاذهم وفخر خدمة وطنهم جلب لهم شعوراً عميقاً بالرضا الشخصي لا يمكن لأي مال في الدنيا أن يضاهيه. لقد أظهرت أفعالهم النبيلة للجميع أن الأبطال الحقيقيين لا يسعون وراء الثراء، بل يحمون الأرواح.",
             "vocabulary": [

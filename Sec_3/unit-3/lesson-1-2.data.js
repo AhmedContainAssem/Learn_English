@@ -741,7 +741,7 @@ window.lessonData = {
     "storyPages": [
         {
             "title": "Scene 1: Frontline Communities & Climate Justice (SB Page 37)",
-            "imageUrl": "../../assets/images/sec3_u3_l12_climate_justice.webp",
+            "imageUrl": "../../assets/images/sec_3/unit_3/sec3_u3_l12_climate_justice.webp",
             "caption": "Marginalized smallholder farming communities facing the harsh reality of global drought and extreme weather",
             "textEn": "Around the world, climate change is not experienced equally. Marginalized communities and smallholder farmers in developing nations contribute the least to greenhouse gas emissions, yet they bear the brunt of extreme weather. When scorching heat waves dry out irrigation channels and unpredictable droughts destroy crops, these vulnerable families shoulder an unbearable economic burden. True climate equity demands urgent global solidarity and climate funds to protect those on the frontlines.",
             "textAr": "حول العالم، لا تتوزع آثار التغير المناخي بالتساوي. فالمجتمعات المهمشة وصغار المزارعين في الدول النامية يساهمون بأقل نسبة في انبعاثات غازات الاحتباس الحراري، ومع ذلك فإنهم يتحملون العبء الأكبر من قسوة الطقس المتطرف. وحين تجفف موجات الحر اللاهفة قنوات الري ويدمر الجفاف غير المتوقع المحاصيل، تتحمل هذه الأسر المستضعفة عبئاً اقتصادياً لا يطاق. إن الإنصاف والعدالة المناخية الحقيقية تقتضي تضامناً عالمياً عاجلاً وتوفير صناديق مناخية لحماية المتضررين في خط المواجهة الأول.",
@@ -749,7 +749,7 @@ window.lessonData = {
         },
         {
             "title": "Scene 2: Meteorological Forecasting & Heat Wave Anomalies (SB Page 39)",
-            "imageUrl": "../../assets/images/sec3_u3_l12_climate_justice.webp",
+            "imageUrl": "../../assets/images/sec_3/unit_3/sec3_u3_l12_climate_justice.webp",
             "caption": "Meteorologists tracking intense heat waves and erratic rainfall patterns on satellite radar screens",
             "textEn": "Inside meteorological headquarters, Chief Meteorologist Tamer Mansour monitors complex atmospheric satellite maps. 'This summer's heat wave is unprecedented,' he warns during a live radio broadcast. 'Temperatures have remained baking hot for ten consecutive days, creating extreme fire hazards.' Modern forecasting relies on supercomputers and satellite sensors, enabling governments to take emergency precautions before catastrophic storms or severe droughts strike.",
             "textAr": "داخل مقر هيئة الأرصاد الجوية، يراقب كبير خبراء الأرصاد تامر منصور خرائط الأقمار الصناعية الجوية المعقدة. وحذر خلال بث إذاعي مباشر قائلاً: 'إن موجة الحر لهذا الصيف غير مسبوقة على الإطلاق؛ فقد ظلت درجات الحرارة لافحة وشديدة السخونة لعشرة أيام متتالية، مما يهدد بنشوب حرائق خطيرة'. يعتمد التنبؤ الجوي الحديث على الحواسيب العملاقة ومستشعرات الأقمار الصناعية، مما يمكّن الحكومات من اتخاذ التدابير الوقائية الطارئة قبل أن تضرب العواصف الكارثية أو موجات الجفاف الشديدة.",
@@ -757,7 +757,7 @@ window.lessonData = {
         },
         {
             "title": "Scene 3: Youth Climate Activism & Taking the Heat",
-            "imageUrl": "../../assets/images/sec3_u3_l12_climate_justice.webp",
+            "imageUrl": "../../assets/images/sec_3/unit_3/sec3_u3_l12_climate_justice.webp",
             "caption": "Young activists raising their voices and running awareness campaigns for international climate equity",
             "textEn": "Determined not to be passive victims, youth-led movements are rising up globally. Young innovators and volunteers organize awareness campaigns, challenging industrialized leaders to face the music and slash fossil fuel subsidies. They give a voice to indigenous peoples and demand tangible investments in renewable energy. As one teenage leader stated, 'We are willing to take the heat and hold polluters accountable today, so our children inherit a viable planet tomorrow.'",
             "textAr": "وإيماناً منهم بألا يكونوا ضحايا مستسلمين، تتصاعد الحركات الشبابية في شتى بقاع الأرض. ينظم المبتكرون والمتطوعون الشباب حملات توعية واسعة، متفرغين لمواجهة قادة الدول الصناعية وحثهم على تحمل العواقب بشجاعة وخفض دعم الوقود الأحفوري. إنهم يمنحون صوتاً للمجتمعات الأصلية ويطالبون باستثمارات ملموسة في الطاقة المتجددة. وكما قالت إحدى القيادات الشابة: 'نحن مستعدون لتحمل اللوم ومواجهة الضغوط اليوم لمساءلة الملوثين، حتى يرث أطفالنا كوكباً قابلاً للحياة غداً.'",
@@ -765,7 +765,7 @@ window.lessonData = {
         },
         {
             "title": "Scene 4: Climate Resilience in Action: Green Innovation",
-            "imageUrl": "../../assets/images/sec3_u3_l12_climate_justice.webp",
+            "imageUrl": "../../assets/images/sec_3/unit_3/sec3_u3_l12_climate_justice.webp",
             "caption": "Farmers implementing climate-resilient drip irrigation and solar powered green pumps in the Delta",
             "textEn": "Resilience is taking root on Egyptian soil. In response to fluctuating rainfall patterns and soaring temperatures, agricultural engineers have introduced climate-resilient drought-resistant seeds and automated drip irrigation. In the Nile Delta and New Valley, solar-powered water management systems operate with maximum energy efficiency, proving that localized innovation, profound dedication, and sustainable practices can overcome the harshest environmental crises.",
             "textAr": "تتجلى المرونة واقعاً ملموساً على أرض مصر. واستجابة لتقلبات أنماط هطول الأمطار والارتفاع الشديد في درجات الحرارة، أدخل مهندسو الزراعة بذوراً عالية الصمود ومقاومة للجفاف وأنظمة ري بالتنقيط المؤتمتة. وفي دلتا النيل والوادي الجديد، تعمل شبكات إدارة المياه بالطاقة الشمسية بأعلى كفاءة استخدام للطاقة، مبرهنة على أن الابتكار المحلي، والإخلاص العميق، والممارسات المستدامة قادرة على قهر أقسى الأزمات البيئية.",

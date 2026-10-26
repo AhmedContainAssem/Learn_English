@@ -789,7 +789,7 @@ window.lessonData = {
     "storyPages": [
         {
             "badge": "🏛️ Scene 1: An Architectural Wonder on the Plateau",
-            "image": "../../assets/images/gem_facade.jpg",
+            "image": "../../assets/images/sec_2/unit_3/gem_facade.webp",
             "caption": "The Grand Egyptian Museum facing the Giza Pyramids at sunset",
             "titleEn": "A Journey Through Time: The Monument on the Giza Plateau",
             "textEn": "The Grand Egyptian Museum (GEM) sits majestically on the edge of the Giza plateau, offering breathtaking panoramic views of the Great Pyramids. Spanning more than 45,000 square meters of exhibition space, it is not merely the largest archaeological museum in the world, but a visionary bridge between Egypt's ancient past and its dynamic future. Its translucent stone and glass facade aligns with mathematical precision towards the tips of the pyramids, inviting visitors to embark on an unforgettable journey through five millennia of human creativity and spiritual depth.",
@@ -805,7 +805,7 @@ window.lessonData = {
         },
         {
             "badge": "👑 Scene 2: The Grand Staircase & The Narrative of Kings",
-            "image": "../../assets/images/gem_grand_staircase.jpg",
+            "image": "../../assets/images/sec_2/unit_3/gem_grand_staircase.webp",
             "caption": "87 colossal statues rising along the chronological Grand Staircase",
             "titleEn": "The Grand Staircase: Ascending Chronologically Through Dynasties",
             "textEn": "Entering the atrium, visitors encounter the colossal 3,200-year-old statue of King Ramesses II welcoming the world. From there, the monumental Grand Staircase rises dramatically. Along this awe-inspiring ascent, 87 colossal royal statues, monumental sarcophagi, and architectural columns are arranged in precise chronological order. Starting from prehistoric dawn and the Old Kingdom, ascending through Middle and New Kingdom dynasties, to the Greco-Roman period, the curated exhibits tell a continuous narrative of royal power, divine balance, and timeless artistic mastery.",
@@ -821,7 +821,7 @@ window.lessonData = {
         },
         {
             "badge": "🔬 Scene 3: World-Class Conservation & Tutankhamun's Complete Glory",
-            "image": "../../assets/images/gem_conservation.jpg",
+            "image": "../../assets/images/sec_2/unit_3/gem_conservation.webp",
             "caption": "Specialists restoring golden treasures in the GEM Conservation Center",
             "titleEn": "Guardians of Heritage: Conservation Labs & The Boy King's Treasures",
             "textEn": "Behind the gleaming galleries lies the GEM Conservation Center, one of the most advanced archaeological preservation facilities on earth. Here, dedicated Egyptian conservators use state-of-the-art laser technology, chemical analyses, and climate-controlled laboratories to restore fragile wood, leather, and textiles. For the very first time in human history, the complete collection of King Tutankhamun—more than 5,000 priceless treasures—is displayed together under one roof. With multilingual interactive guides and educational workshops, the museum ensures that our glorious heritage remains accessible, inspiring, and preserved for generations to come.",
