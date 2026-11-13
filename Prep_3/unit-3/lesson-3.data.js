@@ -63,6 +63,47 @@ window.lessonData = {
         }
     ],
 
+    "popQuiz": {
+        "wordsBank": ["instantly", "shiny", "customized", "confused", "connection"],
+        "questions": [
+            {
+                "prefix": "1. The AI teaching assistant corrected our homework",
+                "correct": "instantly",
+                "suffix": "without any delay.",
+                "fullSentence": "The AI teaching assistant corrected our homework instantly without any delay.",
+                "ar": "قام المساعد الروبوتي بتصحيح واجبنا على الفور دون أي تأخير."
+            },
+            {
+                "prefix": "2. Students were feeling",
+                "correct": "confused",
+                "suffix": "until the teacher explained the grammar rule clearly.",
+                "fullSentence": "Students were feeling confused until the teacher explained the grammar rule clearly.",
+                "ar": "كان الطلاب يشعرون بالحيرة والارتباك حتى شرح المعلم قاعدة القواعد بوضوح."
+            },
+            {
+                "prefix": "3. The smart robot has a",
+                "correct": "shiny",
+                "suffix": "silver surface that reflects lights.",
+                "fullSentence": "The smart robot has a shiny silver surface that reflects lights.",
+                "ar": "يمتلك الروبوت الذكي سطحاً فضياً لامعاً يعكس الأضواء."
+            },
+            {
+                "prefix": "4. The app provides",
+                "correct": "customized",
+                "suffix": "exercises to match every student's learning level.",
+                "fullSentence": "The app provides customized exercises to match every student's learning level.",
+                "ar": "يوفر التطبيق تدريبات مخصصة لتلائم مستوى تعلم كل طالب."
+            },
+            {
+                "prefix": "5. A real teacher builds a genuine emotional",
+                "correct": "connection",
+                "suffix": "with all students.",
+                "fullSentence": "A real teacher builds a genuine emotional connection with all students.",
+                "ar": "يبني المعلم الحقيقي رابطة وتواصلاً عاطفياً وإنسانياً صادقاً مع جميع طلابه."
+            }
+        ]
+    },
+
     "extraVocabulary": [
         {
             "word": "explain",
@@ -367,42 +408,70 @@ window.lessonData = {
 
     "languageNotes": [
         {
-            "title": "الفرق بين miss و lose",
-            "rule": "الفعل miss يعني (يفتقد شخصاً أو يفوته وسيلة مواصلات أو مناسبة)، بينما الفعل lose يعني (يفقد أو يضيع منه شيء مادي ملموس أو يخسر مباراة).",
-            "example": "Sara missed her real teacher. • Her friend lost her favorite pen."
+            "title": "مفهوم التغذية الراجعة الفورية (Feedback in Education)",
+            "titleEn": "Immediate Feedback in Education",
+            "titleAr": "أهمية التغذية الراجعة الفورية في تحسين مستوى الطلاب",
+            "rule": "كلمة feedback تعني التوجيه والتقييم البناء. وتساعد التغذية الراجعة الفورية (instant feedback) الطلاب على تصحيح أخطائهم خطوة بخطوة وتدارك نقاط الضعف فوراً.",
+            "examples": [
+                { "en": "The AI assistant gives immediate feedback on homework mistakes.", "ar": "يقدم المساعد الذكي تغذية راجعة فورية وملاحظات توجيهية حول أخطاء الواجب." },
+                { "en": "Constructive feedback helps learners improve quickly.", "ar": "تساعد التغذية الراجعة البناءة المتعلمين على التحسن بسرعة ملحوظة." }
+            ]
         },
         {
-            "title": "الفرق بين at the end of و in the end",
-            "rule": "التركيب at the end of يتبعه اسم (at the end of the film / day / street). أما in the end فتأتي كظرف في بداية أو نهاية الجملة بمعنى (أخيراً / في نهاية المطاف) وتساوي finally.",
-            "example": "He gave feedback at the end of the lesson. • In the end, they found the missing pen."
-        },
-        {
-            "title": "الفعل replace واستخدامه",
-            "rule": "الفعل replace يعني يستبدل أو يحل محل، ويأتي في التركيب: replace [something/someone] with [another].",
-            "example": "Technology cannot replace a real teacher."
+            "title": "الفورية مقابل التدرج (instantly vs gradually)",
+            "titleEn": "instantly vs gradually",
+            "titleAr": "الفرق بين الفورية التامة (instantly) والتدرج خطوة بخطوة (gradually)",
+            "rule": "الظرف instantly يعني في التو واللحظة دون أي تأخير، بينما gradually تعني خطوة بخطوة وعلى مراحل متتابعة.",
+            "examples": [
+                { "en": "The smart computer corrected the test instantly.", "ar": "صحح الحاسوب الذكي الاختبار على الفور في ثوانٍ معدودة." },
+                { "en": "Students gradually learned how to use the new educational app.", "ar": "تعلم الطلاب تدريجياً خطوة بخطوة كيفية استخدام التطبيق التعليمي الجديد." }
+            ]
         }
     ],
 
     "confusionNotes": [
         {
             "title": "الفرق بين miss و lose",
-            "rule": "الفعل miss يعني (يفتقد شخصاً أو يفوته وسيلة مواصلات أو مناسبة)، بينما الفعل lose يعني (يفقد أو يضيع منه شيء مادي ملموس أو يخسر مباراة).",
-            "example": "Sara missed her real teacher. • Her friend lost her favorite pen."
+            "titleEn": "miss vs lose",
+            "titleAr": "الفرق بين (miss - يفتقد / يفوته) و (lose - يفقد / يضيع / يخسر)",
+            "rule": "الفعل miss يعني يفتقد شخصاً عزيزاً (miss a person) أو يفوته وسيلة مواصلات أو موعد (miss the bus / train / meeting). بينما الفعل lose يعني يضيع أو يفقد شيئاً مادياً ملموساً (lose a pen / keys) أو يخسر لعبة أو مباراة (lose a match).",
+            "examples": [
+                { "en": "Sara missed her real teacher when she was absent.", "ar": "افتقدت سارة معلمتها الحقيقية عندما غابت عن المدرسة." },
+                { "en": "Hany ran fast, but he still missed the morning school bus.", "ar": "ركض هاني بسرعة، لكنه مع ذلك فاته أتوبيس المدرسة الصباحي." },
+                { "en": "Her friend lost her favorite silver pen in the classroom.", "ar": "أضاعت صديقتها قلمها الفضي المفضل داخل الفصل المدرسي." },
+                { "en": "Our football team didn't want to lose the final match.", "ar": "لم يرغب فريق كرة القدم في خسارة المباراة النهائية." }
+            ]
         },
         {
             "title": "الفرق بين at the end of و in the end",
-            "rule": "التركيب at the end of يتبعه اسم (at the end of the film / day / street). أما in the end فتأتي كظرف في بداية أو نهاية الجملة بمعنى (أخيراً / في نهاية المطاف) وتساوي finally.",
-            "example": "He gave feedback at the end of the lesson. • In the end, they found the missing pen."
+            "titleEn": "at the end of vs in the end",
+            "titleAr": "الفرق بين (at the end of - في نهاية) و (in the end - في النهاية / أخيراً)",
+            "rule": "التركيب at the end of يتبعه اسم دائماً (at the end of the film / lesson / street). أما in the end فتأتي كظرف مستقل بمعنى (أخيراً / في نهاية المطاف) وتساوي كلمة finally، وتأتي في بداية الجملة أو نهايتها متبوعة بفاصلة.",
+            "examples": [
+                { "en": "The teacher gave helpful feedback at the end of the lesson.", "ar": "قدم المعلم تغذية راجعة مفيدة في نهاية الحصة الدراسية." },
+                { "en": "In the end, all students passed the challenging science exam.", "ar": "في نهاية المطاف وأخيراً، اجتاز جميع الطلاب امتحان العلوم الصعب." }
+            ]
         },
         {
-            "title": "الفعل replace واستخدامه",
+            "title": "الفعل replace واستخدامه مع حرف الجر with",
+            "titleEn": "replace ... with ...",
+            "titleAr": "استخدام الفعل replace (يستبدل شيئاً بآخر)",
             "rule": "الفعل replace يعني يستبدل أو يحل محل، ويأتي في التركيب: replace [something/someone] with [another].",
-            "example": "Technology cannot replace a real teacher."
+            "examples": [
+                { "en": "Smart technology cannot replace a warm, caring teacher.", "ar": "التكنولوجيا الذكية لا يمكن أن تحل محل معلم دافئ حنون ومهتم." },
+                { "en": "The school replaced old blackboards with modern smart boards.", "ar": "استبدلت المدرسة السبورات القديمة بسبورات ذكية حديثة." }
+            ]
         },
         {
-            "title": "البوادئ واللواحق (Prefixes & Suffixes)",
-            "rule": "اللاحقة -ize تحول الاسم إلى فعل (custom -> customize). واللاحقة -ly تحول الصفة إلى ظرف (instant -> instantly). والبادئة un- تعطي العكس (important -> unimportant).",
-            "example": "customize (v) • instantly (adv) • unimportant (adj)"
+            "title": "البوادئ واللواحق (Prefixes & Suffixes: -ize, -ly, un-)",
+            "titleEn": "Word Formation: Prefixes & Suffixes",
+            "titleAr": "اشتقاق وتكوين الكلمات عبر البوادئ واللواحق",
+            "rule": "1) اللاحقة -ize تحول الاسم أو الصفة إلى فعل (custom -> customize: يخصص). 2) اللاحقة -ly تحول الصفة إلى ظرف (instant -> instantly: فوراً). 3) البادئة un- تعطي عكس المعنى (important -> unimportant: غير مهم).",
+            "examples": [
+                { "en": "Teachers customize exercises to fit each student.", "ar": "يخصص المعلمون التدريبات لتلائم كل طالب بمفرده." },
+                { "en": "The system alerts you instantly when an error occurs.", "ar": "ينبهك النظام فوراً وبشكل لحظي بمجرد حدوث خطأ." },
+                { "en": "Do not waste your energy on unimportant distractions.", "ar": "لا تهدر طاقتك ووقتك على مشتتات تافهة وغير مهمة." }
+            ]
         }
     ],
 

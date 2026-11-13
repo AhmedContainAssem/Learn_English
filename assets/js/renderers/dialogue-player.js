@@ -14,9 +14,28 @@
     const DialoguePlayer = {
         isDiagPlaying: false,
         currentDiagIdx: 0,
+        currentDeckIdx: 0,
+
+        switchDeck: function (idx) {
+            const decks = window.dialogueDecks || (window.lessonData && window.lessonData.dialogueDecks);
+            if (decks && decks[idx]) {
+                this.currentDeckIdx = idx;
+                this.render(decks[idx]);
+                if (typeof window.playSound === 'function') window.playSound('click');
+            }
+        },
 
         render: function (dialogueData) {
             if (!dialogueData) return;
+
+            // Detect array of dialogue decks
+            if (Array.isArray(dialogueData)) {
+                if (dialogueData.length > 0 && (dialogueData[0].lines || dialogueData[0].turns || dialogueData[0].dialogue)) {
+                    window.dialogueDecks = dialogueData;
+                    const idx = this.currentDeckIdx || 0;
+                    return this.render(dialogueData[idx] || dialogueData[0]);
+                }
+            }
 
             let title = 'حوار الاستماع التفاعلي (Listening Dialogue)';
             let subtitle = 'استمع للمحادثة وتدرّب على النطق بالإنجليزية ومتابعة الترجمة بالتزامن.';
@@ -37,7 +56,7 @@
             // Normalize turns
             const turns = rawTurns.map(t => {
                 let speakerName = t.speaker || t.name || 'Speaker';
-                let avatar = '';
+                let avatar = t.avatar || '';
                 let role = t.role || t.tags || '';
 
                 if (characters) {
@@ -49,7 +68,7 @@
                     }
                     if (c) {
                         speakerName = c.name || speakerName;
-                        avatar = c.avatar || '';
+                        avatar = avatar || c.avatar || '';
                         role = role || c.role || '';
                     }
                 }
@@ -70,7 +89,22 @@
 
             if (!mainContainer && !listContainer) return;
 
+            const decks = window.dialogueDecks || (window.lessonData && window.lessonData.dialogueDecks);
+            let deckSwitcherHtml = '';
+            if (decks && Array.isArray(decks) && decks.length > 1) {
+                const curIdx = this.currentDeckIdx || 0;
+                deckSwitcherHtml = `
+                <div class="dialogue-deck-switcher" style="display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap;">
+                    ${decks.map((d, dIdx) => `
+                        <button type="button" class="badge ${dIdx === curIdx ? 'badge-active' : 'badge-gold'}" onclick="DialoguePlayer.switchDeck(${dIdx})" style="cursor: pointer; padding: 9px 18px; font-size: 0.95rem; border-radius: 25px; transition: all 0.25s ease;">
+                            💬 ${UI.escapeHTML(d.title || ('المحادثة ' + (dIdx + 1)))}
+                        </button>
+                    `).join('')}
+                </div>`;
+            }
+
             const headerHtml = `
+            ${deckSwitcherHtml}
             <div class="section-title">🗣️ ${UI.escapeHTML(title)}</div>
             <p class="section-hint" style="color: #94a3b8; font-size: 0.95rem; margin-bottom: 20px;">
                 💡 <strong>حوار استماع حي:</strong> ${UI.escapeHTML(subtitle)}

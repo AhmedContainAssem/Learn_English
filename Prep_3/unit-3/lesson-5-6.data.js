@@ -94,25 +94,29 @@ window.lessonData = {
                 "prefix": "1. They can",
                 "suffix": "the robot using special apps on their smartphones.",
                 "correct": "control",
-                "fullSentence": "They can control the robot using special apps on their smartphones."
+                "fullSentence": "They can control the robot using special apps on their smartphones.",
+                "ar": "يمكنهم التحكم في الروبوت وتوجيهه باستخدام تطبيقات خاصة على هواتفهم الذكية."
             },
             {
                 "prefix": "2. Modern airplanes have very",
                 "suffix": "engines to fly across vast oceans.",
                 "correct": "powerful",
-                "fullSentence": "Modern airplanes have very powerful engines to fly across vast oceans."
+                "fullSentence": "Modern airplanes have very powerful engines to fly across vast oceans.",
+                "ar": "تمتلك الطائرات الحديثة محركات قوية وفائقة للتحليق عبر المحيطات الشاسعة."
             },
             {
                 "prefix": "3. We live in a remarkable age of technological",
                 "suffix": "where new ideas appear every day.",
                 "correct": "innovation",
-                "fullSentence": "We live in a remarkable age of technological innovation where new ideas appear every day."
+                "fullSentence": "We live in a remarkable age of technological innovation where new ideas appear every day.",
+                "ar": "نعيش في عصر فريد ومتميز من الابتكار التكنولوجي حيث تبزغ أفكار جديدة كل يوم."
             },
             {
                 "prefix": "4. Writing poems and inventing original tales is a fun way to practice",
                 "suffix": ".",
                 "correct": "creativity",
-                "fullSentence": "Writing poems and inventing original tales is a fun way to practice creativity."
+                "fullSentence": "Writing poems and inventing original tales is a fun way to practice creativity.",
+                "ar": "كتابة القصائد وتأليف الحكايات المبتكرة طريقة ممتعة لممارسة الإبداع."
             }
         ]
     },
@@ -251,31 +255,56 @@ window.lessonData = {
     "confusionNotes": [
         {
             "title": "الفرق بين even و even though",
-            "rule": "تُستخدم even كظرف بمعنى (حتى أو كذلك) لإضافة تأكيد: AI will be used in schools, hospitals, and even at home. أما even though فهي رابط يعبر عن التناقض ويساوي although: Even though AI is powerful, it will be controlled by humans.",
-            "example": "Even though AI is fast, it cannot replace human creativity."
+            "titleEn": "even vs even though",
+            "titleAr": "الفرق بين ظرف التأكيد (even - حتى) ورابط التناقض (even though - بالرغم من)",
+            "rule": "1) تُستخدم even كظرف بمعنى (حتى أو كذلك) لإضافة تأكيد أو معلومة مفاجئة: AI will be used in schools, and even at home. 2) أما even though فهي رابط جمل يعبر عن التناقض ويساوي although، ويأتي بعده فاعل وفعل: Even though AI is powerful, it cannot replace human creativity.",
+            "examples": [
+                { "en": "Smart robots can clean floors, cook meals, and even drive cars.", "ar": "تستطيع الروبوتات الذكية تنظيف الأرضيات، وطهي الوجبات، وحتى قيادة السيارات." },
+                { "en": "Even though modern machines are super fast, humans still control them.", "ar": "على الرغم من أن الآلات الحديثة فائقة السرعة، إلا أن البشر لا يزالون يتحكمون فيها." }
+            ]
         },
         {
-            "title": "نصائح التحدث الفعال (Conversations Tip: Fluency vs Accuracy)",
-            "rule": "للحفاظ على استمرار الحديث (Open-ended questions)، استخدم أسئلة تبدأ بـ How, Why, What بدلاً من أسئلة نعم أو لا. واهتم بالطلاقة (Fluency) وسهولة التواصل جنباً إلى جنب مع الدقة اللغوية (Accuracy).",
-            "example": "How do you think smart robots will change healthcare?"
+            "title": "الطلاقة والدقة اللغوية (Fluency vs Accuracy)",
+            "titleEn": "Fluency vs Accuracy in Speaking",
+            "titleAr": "التوازن بين الطلاقة (Fluency) والدقة اللغوية (Accuracy) في التحدث",
+            "rule": "الطلاقة (Fluency) تعني التحدث بسلاسة وتدفق دون توقفات طويلة لنقل المعنى، بينما الدقة (Accuracy) تعني صحة القواعد والنطق واستخدام المفردات السليمة دون أخطاء.",
+            "examples": [
+                { "en": "Focus on fluency first to express your ideas naturally.", "ar": "ركز على الطلاقة أولاً لتعبر عن أفكارك بصورة طبيعية وسلسة." },
+                { "en": "Practicing grammar rules regularly improves your speaking accuracy.", "ar": "ممارسة قواعد الجرامر بانتظام تطور دقة حديثك وصحته اللغوية." }
+            ]
         },
         {
-            "title": "عناصر كتابة البريد الإلكتروني (Writing an Email)",
-            "rule": "يبدأ البريد بـ To و From و Subject، ثم التحية (Dear / Hi / Hello)، والمقدمة، وجسم الرسالة الرئيسي (Main part)، والخاتمة (Write back soon! / Best wishes)، ثم التوقيع.",
-            "example": "To: Sandy • Subject: The Future Use of AI"
+            "title": "عناصر كتابة البريد الإلكتروني (Writing an Informal Email)",
+            "titleEn": "Key Elements of an Email",
+            "titleAr": "العناصر الأساسية المنهجية لصياغة البريد الإلكتروني",
+            "rule": "يبدأ البريد بتحديد المُرسل إليه (To)، والراسل (From)، والموضوع (Subject)، ثم التحية الودية (Dear / Hi)، فالمقدمة الشيقة، وجسم الرسالة (Main Body)، والخاتمة المهذبة (Write back soon! / Best wishes)، ثم التوقيع بالاسم.",
+            "examples": [
+                { "en": "To: Sandy • Subject: How AI will change our future schools.", "ar": "إلى: ساندي • الموضوع: كيف سيغير الذكاء الاصطناعي مدارسنا المستقبلية." },
+                { "en": "Write back soon and let me know your thoughts!", "ar": "راسلني قريباً وأخبرني برأيك وأفكارك حول الموضوع!" }
+            ]
         }
     ],
 
     "languageNotes": [
         {
-            "title": "الفرق بين even و even though",
-            "rule": "تُستخدم even كظرف بمعنى (حتى أو كذلك) لإضافة تأكيد، بينما even though تفيد التناقض.",
-            "example": "Even though AI is powerful, it will be controlled by humans."
+            "title": "مهارة المحادثة: استخدام الأسئلة المفتوحة (Open-Ended Questions)",
+            "titleEn": "Open-Ended Questions for Engaging Conversations",
+            "titleAr": "صياغة الأسئلة المفتوحة لفتح حوار تفاعلي مستمر",
+            "rule": "للحفاظ على استمرار المحادثة وتجنب الإجابات المقتضبة بنعم أو لا، اطرح أسئلة مفتوحة تبدأ بأدوات الاستفهام مثل: How, Why, What.",
+            "examples": [
+                { "en": "How do you think smart robots will assist doctors in hospitals?", "ar": "كيف تعتقد أن الروبوتات الذكية ستساعد الأطباء في المستشفيات؟" },
+                { "en": "Why is human empathy and compassion essential in teaching?", "ar": "لماذا يُعد التعاطف الإنساني والرحمة أمراً جوهرياً لا غنى عنه في التدريس؟" }
+            ]
         },
         {
-            "title": "مهارة المحادثة: الأسئلة المفتوحة",
-            "rule": "اطرح أسئلة تبدأ بـ How, Why, What لتشجيع الطرف الآخر على المشاركة وتوضيح أفكاره.",
-            "example": "Why is human creativity essential when programming smart robots?"
+            "title": "عبارات التعبير عن الرأي واليقين (Expressing Opinions & Certainty)",
+            "titleEn": "Expressing Opinions & Certainty (definitely, maybe)",
+            "titleAr": "أساليب التعبير عن التأكيد (definitely) والاحتمال (maybe)",
+            "rule": "نستخدم definitely للتعبير عن ثقة ويقين بنسبة 100%، بينما نستخدم maybe للتعبير عن الشك أو الاحتمالية غير المؤكدة.",
+            "examples": [
+                { "en": "AI will definitely transform the way we learn languages.", "ar": "الذكاء الاصطناعي سيغير بكل تأكيد وبلا شك الطريقة التي نتعلم بها اللغات." },
+                { "en": "Maybe future cars will fly, but we are not sure yet.", "ar": "ربما تطير سيارات المستقبل، لكننا لسنا متأكدين بعد." }
+            ]
         }
     ],
 

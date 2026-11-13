@@ -107,7 +107,7 @@
             if (pageBadge) pageBadge.textContent = page.badge || ('🖼️ Scene ' + (this.currentPage + 1) + ' of ' + total);
             const placeholderEl = document.getElementById('storyArtworkPlaceholder');
             if (pageArtworkImg) {
-                pageArtworkImg.onerror = () => {
+                const showPlaceholder = () => {
                     pageArtworkImg.style.display = 'none';
                     if (placeholderEl) {
                         placeholderEl.style.display = 'flex';
@@ -117,15 +117,18 @@
                             autoPh = document.createElement('div');
                             autoPh.className = 'auto-story-placeholder';
                             autoPh.style.cssText = 'display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:220px; padding:20px; background:linear-gradient(135deg, rgba(14,165,233,0.12), rgba(99,102,241,0.15)); border-radius:12px; border:1px dashed var(--border-color); text-align:center; width:100%; box-sizing:border-box;';
-                            const titleSafe = (page.title || 'Interactive StoryBook').replace(/</g, '&lt;');
-                            autoPh.innerHTML = '<span style="font-size:2.4rem; margin-bottom:8px;">📖</span><div style="font-weight:700; color:var(--accent-primary); font-size:1.05rem;">' + titleSafe + '</div><div style="font-size:0.85rem; color:#94a3b8; margin-top:4px;">Mr. Ahmed Assem • Easy Peasy Ya Englezeey</div>';
                             pageArtworkImg.parentNode.appendChild(autoPh);
                         }
+                        const titleSafe = (page.title || 'Interactive StoryBook').replace(/</g, '&lt;');
+                        const captionSafe = (page.caption || 'Mr. Ahmed Assem • Easy Peasy Ya Englezeey').replace(/</g, '&lt;');
+                        autoPh.innerHTML = '<span style="font-size:2.4rem; margin-bottom:8px;">🎨</span><div style="font-weight:700; color:var(--accent-primary); font-size:1.05rem;">' + titleSafe + '</div><div style="font-size:0.85rem; color:#94a3b8; margin-top:4px;">' + captionSafe + '</div>';
                         autoPh.style.display = 'flex';
                     }
                 };
 
-                if (imageUrl) {
+                pageArtworkImg.onerror = showPlaceholder;
+
+                if (imageUrl && imageUrl.trim()) {
                     pageArtworkImg.classList.remove('hidden');
                     pageArtworkImg.src = imageUrl;
                     pageArtworkImg.style.display = 'block';
@@ -133,8 +136,7 @@
                     const existingAutoPh = pageArtworkImg.parentNode ? pageArtworkImg.parentNode.querySelector('.auto-story-placeholder') : null;
                     if (existingAutoPh) existingAutoPh.style.display = 'none';
                 } else {
-                    pageArtworkImg.style.display = 'none';
-                    if (placeholderEl) placeholderEl.style.display = 'flex';
+                    showPlaceholder();
                 }
             }
             if (pageCaption) pageCaption.textContent = page.caption || '';

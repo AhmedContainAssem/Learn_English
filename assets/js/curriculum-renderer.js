@@ -33,16 +33,127 @@
         }
     }
 
+    function ensureAssetScript(name, file) {
+        if (!window[name] && typeof document !== 'undefined') {
+            const src = basePath + file;
+            if (!document.querySelector(`script[src="${src}"]`)) {
+                const script = document.createElement('script');
+                script.src = src;
+                script.async = false;
+                document.head.appendChild(script);
+            }
+        }
+    }
+
+    ensureModule('BaseRenderer', 'base-renderer.js');
     ensureModule('CurriculumUIPrimitives', 'ui-primitives.js');
     ensureModule('VocabRenderer', 'vocab-renderer.js');
     ensureModule('LexiconRenderer', 'lexicon-renderer.js');
+    ensureModule('NotesRenderer', 'notes-renderer.js');
+    ensureModule('GrammarRenderer', 'grammar-renderer.js');
+    ensureModule('PhonicsRenderer', 'phonics-renderer.js');
     ensureModule('DialoguePlayer', 'dialogue-player.js');
     ensureModule('WritingRenderer', 'writing-renderer.js');
+    ensureAssetScript('grammarSlidesEngine', 'slides-engine.js');
+    ensureAssetScript('storyEngine', 'story-engine.js');
+    ensureAssetScript('quizEngine', 'quiz-engine.js');
 
     const CurriculumRenderer = {
+        /**
+         * Universal Data Normalization Pipeline
+         * Standardizes polymorphic schema keys across curriculum stages and lesson formats.
+         * Guarantees zero blank tabs caused by naming discrepancies.
+         */
+        normalizeData: function (raw) {
+            if (!raw || typeof raw !== 'object') return raw || {};
+            const data = { ...raw };
+
+            // 1. Grammar Normalization (grammarDeck / grammarSlides / grammarLessons / grammar.slides)
+            const resolvedSlides = data.grammarSlides || 
+                                   data.grammarDeck || 
+                                   data.grammarLessons || 
+                                   (data.grammar && (data.grammar.slides || data.grammar.deck)) || 
+                                   [];
+            data.grammarSlides = Array.isArray(resolvedSlides) ? resolvedSlides : [];
+            data.grammarDeck = data.grammarSlides;
+            window.grammarSlides = data.grammarSlides;
+
+            if (!data.grammarContentHtml && data.grammar) {
+                data.grammarContentHtml = typeof data.grammar === 'string' ? data.grammar : (data.grammar.html || data.grammar.contentHtml || '');
+            }
+
+            // 2. Reading & Interactive Storybook Normalization
+            if (data.readingDecks && Array.isArray(data.readingDecks) && data.readingDecks.length > 0) {
+                window.readingDecks = data.readingDecks;
+                if (!data.storyPages || data.storyPages.length === 0) {
+                    const firstDeck = data.readingDecks[0];
+                    data.storyPages = firstDeck.pages || firstDeck.scenes || [];
+                }
+            } else if (data.storyPages && Array.isArray(data.storyPages) && data.storyPages.length > 0) {
+                if (!data.readingDecks) {
+                    data.readingDecks = [{ id: 'deck_1', title: data.title || 'Reading Deck', pages: data.storyPages }];
+                }
+                window.readingDecks = data.readingDecks;
+            } else if (data.storyBook && data.storyBook.scenes) {
+                data.storyPages = data.storyBook.scenes.map(s => ({
+                    title: s.titleEn || s.title || '',
+                    titleAr: s.titleAr || '',
+                    textEn: s.textEn || s.narrativeEn || s.text || '',
+                    textAr: s.textAr || s.narrativeAr || s.translation || '',
+                    imageUrl: s.image || s.illustration || s.imageUrl || '',
+                    caption: s.caption || '',
+                    vocabNotes: s.vocabWords || s.targetWords || ''
+                }));
+                data.readingDecks = [{ id: 'deck_1', title: data.title || 'Reading Deck', pages: data.storyPages }];
+                window.readingDecks = data.readingDecks;
+            }
+
+            // 3. Dialogue Normalization
+            if (data.dialogueDecks && Array.isArray(data.dialogueDecks) && data.dialogueDecks.length > 0) {
+                window.dialogueDecks = data.dialogueDecks;
+                data.dialogue = data.dialogue || data.dialogueDecks[0];
+            } else if (data.dialogue) {
+                if (!data.dialogueDecks) {
+                    data.dialogueDecks = [data.dialogue];
+                }
+                window.dialogueDecks = data.dialogueDecks;
+            } else if (data.speakingDialogue) {
+                data.dialogue = data.speakingDialogue;
+                data.dialogueDecks = [data.dialogue];
+                window.dialogueDecks = data.dialogueDecks;
+            } else if (data.dialogues && Array.isArray(data.dialogues)) {
+                data.dialogueDecks = data.dialogues;
+                data.dialogue = data.dialogues[0];
+                window.dialogueDecks = data.dialogueDecks;
+            }
+
+            // 4. Vocabulary Normalization
+            data.keyVocabulary = data.keyVocabulary || data.vocabulary || data.importantVocabulary || data.lessonVocabulary || [];
+            data.accumulativeVocabulary = data.accumulativeVocabulary || data.extraVocabulary || [];
+
+            // 5. Verbs Normalization
+            data.verbs = data.verbs || data.irregularVerbs || data.verbConjugations || [];
+
+            // 6. Definitions, Synonyms, Affixes, Collocations
+            data.definitions = data.definitions || [];
+            data.synonyms = data.synonyms || data.synonymsAndAntonyms || [];
+            data.affixes = data.affixes || data.prefixesAndSuffixes || [];
+            data.collocations = data.collocations || data.expressions || data.expressionsAndPrepositions || [];
+            data.languageNotes = data.languageNotes || data.derivatives || data.confusionNotes || [];
+
+            // 7. Quiz Normalization
+            data.quiz = data.quiz || data.questions || [];
+            data.questions = data.quiz;
+            window.quiz = data.quiz;
+            window.questions = data.quiz;
+
+            return data;
+        },
+
         init: function () {
-            const data = window.lessonData || window.__LESSON_DATA__;
+            let data = window.lessonData || window.__LESSON_DATA__;
             if (!data) return;
+            data = this.normalizeData(data);
             window.lessonData = data;
             window.__LESSON_DATA__ = data;
 
@@ -55,32 +166,32 @@
             }
 
             // 3. Vocabulary Tab
-            if (data.learningOutcomes || data.keyVocabulary || data.keyIdioms || data.accumulativeVocabulary || data.importantVocabulary || data.lessonVocabulary || data.popQuiz) {
+            if (data.learningOutcomes || (data.keyVocabulary && data.keyVocabulary.length > 0) || data.keyIdioms || data.accumulativeVocabulary || data.importantVocabulary || data.lessonVocabulary || data.popQuiz) {
                 this.renderVocabTab(data);
             }
 
             // 4. Definitions, Synonyms & Antonyms
-            if (data.definitions || data.synonyms || data.antonyms) {
+            if ((data.definitions && data.definitions.length > 0) || (data.synonyms && data.synonyms.length > 0) || data.antonyms) {
                 this.renderDefinitionsTab(data);
             }
 
             // 5. Affixes, Prefixes & Suffixes
-            if (data.prefixes || data.suffixes || data.affixes) {
+            if (data.prefixes || data.suffixes || (data.affixes && data.affixes.length > 0)) {
                 this.renderAffixesTab(data);
             }
 
             // 6. Collocations, Expressions & Prepositions Tab
-            if (data.collocations || data.verbPrepositions || data.expressions || data.prepositions || data.expressionsAndPrepositions) {
+            if ((data.collocations && data.collocations.length > 0) || data.verbPrepositions || data.expressions || data.prepositions || data.expressionsAndPrepositions) {
                 this.renderCollocationsTab(data);
             }
 
             // 7. Language Notes & Derivatives
-            if (data.derivatives || data.derivativeRoots || data.wordFamilies || data.confusionNotes || data.clearConfusion) {
+            if (data.derivatives || data.derivativeRoots || data.wordFamilies || data.confusionNotes || data.clearConfusion || (data.languageNotes && data.languageNotes.length > 0)) {
                 this.renderLanguageNotesTab(data);
             }
 
-            // 8. Grammar Slides & Lectures
-            if (data.grammarSlides || data.youtubeLecture || data.youtubeShorts || data.videoLessons) {
+            // 8. Grammar Slides, Decks & Video Lectures
+            if ((data.grammarSlides && data.grammarSlides.length > 0) || data.grammarDeck || data.grammarContentHtml || data.youtubeLecture || data.youtubeShorts || data.videoLessons) {
                 this.renderGrammarTab(data);
             }
 
@@ -99,10 +210,10 @@
                 this.initStorybook(data);
             }
 
-            // 10. Dialogue Tab
-            const diagData = data.dialogue || data.speakingDialogue;
-            if (diagData) {
-                this.renderDialogueTab(diagData);
+            // 10. Dialogue Tab (Supports single dialogue or multi-deck arrays)
+            const diagPayload = data.dialogueDecks || data.dialogue || data.speakingDialogue;
+            if (diagPayload) {
+                this.renderDialogueTab(diagPayload);
             }
 
             // 11. Quiz Engine Integration
@@ -117,8 +228,8 @@
             }
 
             // 13. Slides Engine Sync
-            if (window.GrammarSlides && typeof window.GrammarSlides.init === 'function') {
-                window.GrammarSlides.init();
+            if (window.grammarSlidesEngine && typeof window.grammarSlidesEngine.init === 'function') {
+                window.grammarSlidesEngine.init();
             }
         },
 
@@ -165,22 +276,34 @@
         },
 
         renderLanguageNotesTab: function (data) {
-            if (window.LexiconRenderer) window.LexiconRenderer.renderLanguageNotes(data);
+            if (window.NotesRenderer) {
+                window.NotesRenderer.renderLanguageNotes(data);
+            } else if (window.LexiconRenderer) {
+                window.LexiconRenderer.renderLanguageNotes(data);
+            }
         },
 
         renderGrammarTab: function (data) {
-            if (window.LexiconRenderer) window.LexiconRenderer.renderGrammar(data);
+            if (window.GrammarRenderer) {
+                window.GrammarRenderer.renderGrammar(data);
+            } else if (window.LexiconRenderer) {
+                window.LexiconRenderer.renderGrammar(data);
+            }
         },
 
         initStorybook: function (data) {
-            let pages = data.storyPages || data.readingDecks;
-            if (!pages && data.storyBook && data.storyBook.scenes) {
+            let pages = data.storyPages;
+            if ((!pages || pages.length === 0) && data.readingDecks && data.readingDecks.length > 0) {
+                pages = data.readingDecks[0].pages || data.readingDecks[0].scenes;
+            }
+            if ((!pages || pages.length === 0) && data.storyBook && data.storyBook.scenes) {
                 pages = data.storyBook.scenes.map(s => ({
                     title: s.titleEn || s.title || '',
                     titleAr: s.titleAr || '',
                     narrativeEn: s.textEn || s.narrativeEn || s.text || '',
                     narrativeAr: s.textAr || s.narrativeAr || s.translation || '',
-                    image: s.image || s.illustration || '',
+                    image: s.image || s.illustration || s.imageUrl || '',
+                    caption: s.caption || '',
                     vocabWords: s.vocabWords || s.targetWords || []
                 }));
             }
@@ -198,7 +321,9 @@
         },
 
         renderPronunciationTab: function (data) {
-            if (window.LexiconRenderer && typeof window.LexiconRenderer.renderPronunciation === 'function') {
+            if (window.PhonicsRenderer) {
+                window.PhonicsRenderer.renderPronunciation(data);
+            } else if (window.LexiconRenderer && typeof window.LexiconRenderer.renderPronunciation === 'function') {
                 window.LexiconRenderer.renderPronunciation(data);
             }
         },

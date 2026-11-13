@@ -204,158 +204,6 @@
       ]
     },
     {
-      "id": "Prep_3",
-      "slug": "Prep_3",
-      "name": "الصف الثالث الإعدادي (Prep 3)",
-      "category": "المرحلة الإعدادية",
-      "icon": "🎓",
-      "indexPath": "Prep_3/index.html",
-      "status": "active",
-      "units": [
-        {
-          "id": "unit-1",
-          "slug": "unit-1",
-          "name": "Unit 1: Identity & Key Vocabulary",
-          "arabicName": "الوحدة الأولى",
-          "icon": "📘",
-          "indexPath": "Prep_3/unit-1/index.html",
-          "status": "active",
-          "lessons": [
-            {
-              "id": "lesson-1-part-1",
-              "slug": "lesson-1-part-1.html",
-              "name": "Lesson 1 (Part 1): Key & Extra Vocabulary",
-              "arabicName": "الدرس الأول (جزء 1): الكلمات والمفردات الأساسية",
-              "path": "Prep_3/unit-1/lesson-1-part-1.html",
-              "archetype": "direct_quiz",
-              "status": "active"
-            },
-            {
-              "id": "lesson-1-part-2",
-              "slug": "lesson-1-part-2.html",
-              "name": "Lesson 1 (Part 2): Verbs, Definitions, Synonyms & Quiz",
-              "arabicName": "الدرس الأول (جزء 2): أفعال وتعريفات ومترادفات",
-              "path": "Prep_3/unit-1/lesson-1-part-2.html",
-              "archetype": "curriculum_tabs",
-              "status": "active"
-            },
-            {
-              "id": "connect-plus-lesson-1",
-              "slug": "connect-plus-lesson-1.html",
-              "name": "Connect Plus (G9) - Lessons 1 & 2: Family, Community & Neighborhood",
-              "arabicName": "كونكت بلس (G9) - الدرسان 1 و2: العائلة والمجتمع والحي (مفردات، قصة، تعريفات، واختبار)",
-              "path": "Prep_3/unit-1/connect-plus-lesson-1.html",
-              "archetype": "curriculum_tabs",
-              "status": "active"
-            },
-            {
-              "id": "connect-plus-lesson-3",
-              "slug": "connect-plus-lesson-3.html",
-              "name": "Connect Plus (G9) - Lesson 3: Family Ties & Our Ancestors",
-              "arabicName": "كونكت بلس (G9) - الدرس 3: روابط العائلة والأجداد (قصص تفاعلية، محادثتان، فيديو وشرائح، واختبار)",
-              "path": "Prep_3/unit-1/connect-plus-lesson-3.html",
-              "archetype": "curriculum_tabs",
-              "status": "active"
-            },
-            {
-              "id": "connect-plus-lesson-4-5",
-              "slug": "connect-plus-lesson-4-5.html",
-              "name": "Connect Plus (G9) - Lessons 4 & 5: Unusual Communities & Family Heritage",
-              "arabicName": "كونكت بلس (G9) - الدرسان 4 و5: مجتمعات غير عادية وتاريخ العائلة (3 قصص تفاعلية، محادثة ناطقة، واختبار)",
-              "path": "Prep_3/unit-1/connect-plus-lesson-4-5.html",
-              "archetype": "curriculum_tabs",
-              "status": "active"
-            },
-            {
-              "id": "lesson-3",
-              "slug": "lesson-2.html",
-              "name": "Lesson 3: Digital Devices (Full Vocabulary, Grammar Videos & Slides, Structure & Quiz)",
-              "arabicName": "الدرس الثالث: الأجهزة الرقمية (مفردات وشرح القواعد بالفيديو والشرائح التفاعلية وتصريفات وتعريفات واختبار 73 سؤال)",
-              "path": "Prep_3/unit-1/lesson-2.html",
-              "archetype": "curriculum_tabs",
-              "status": "active"
-            },
-            {
-              "id": "lesson-5-6",
-              "slug": "lesson-5-6.html",
-              "name": "Lessons 5 & 6: Let's Talk • This is Me (Full Structure, Story Book & Quiz)",
-              "arabicName": "الدرس الخامس والسادس: لنتحدث • هذا أنا (قصة وحوار تفاعلي ومفردات وأفعال ومتلازمات واختبار 65 سؤال)",
-              "path": "Prep_3/unit-1/lesson-5-6.html",
-              "archetype": "curriculum_tabs",
-              "status": "active"
-            }
-          ]
-        },
-        {
-          "id": "unit-2",
-          "slug": "unit-2",
-          "name": "Unit 2: Stay Connected",
-          "arabicName": "الوحدة الثانية: التواصل، التحديات والحلول",
-          "icon": "📗",
-          "indexPath": "Prep_3/unit-2/index.html",
-          "status": "active",
-          "lessons": [
-            {
-              "id": "lesson-1-2",
-              "slug": "lesson-1-2.html",
-              "name": "Lessons 1 & 2: Stay connected • Communication, Challenges and Solutions",
-              "arabicName": "الدرسان 1 و 2: المفردات، الأفعال، التعريفات، المتلازمات، المرادفات والمتضادات، البوادئ واختبار شامل",
-              "path": "Prep_3/unit-2/lesson-1-2.html",
-              "archetype": "curriculum_tabs",
-              "status": "active"
-            },
-            {
-              "id": "lesson-3",
-              "slug": "lesson-3.html",
-              "name": "Lesson 3: The Silent Dinner (Vocabulary, StoryEngine Reader, Present Perfect vs Progressive, 16 Slides & Quiz)",
-              "arabicName": "الدرس الثالث: عشاء الصمت (المفردات، تدريب Pop Quiz، تصريف الأفعال، التعريفات، المتلازمات، محرك القراءة والقصص الصوتي StoryEngine، مقارنة المضارع التام والمستمر بالفيديوهات والشرائح الـ 16، واختبار شامل)",
-              "path": "Prep_3/unit-2/lesson-3.html",
-              "archetype": "curriculum_tabs",
-              "status": "active"
-            },
-            {
-              "id": "lesson-4-5",
-              "slug": "lesson-4-5.html",
-              "name": "Lessons 4 & 5 (5 & 6): Let's Talk • Staying Close (SB pages 36 : 38)",
-              "arabicName": "الدرسان 4 و 5 (5 و 6): لنتحدث والبقاء قريبين (المفردات وتدريب Pop Quiz، تصريف الأفعال، المترادفات والمتضادات، اللواحق والبوادئ، ملاحظات لغوية، تعبيرات وحروف جر، قراءة StoryEngine، واختبار شامل)",
-              "path": "Prep_3/unit-2/lesson-4-5.html",
-              "archetype": "curriculum_tabs",
-              "status": "active"
-            },
-            {
-              "id": "connect-plus-lesson-1-2",
-              "slug": "connect-plus-lesson-1-2.html",
-              "name": "Connect Plus (G9) - Lessons 1 & 2: Changes (Future Progressive, Ambitions & Future of Social Media)",
-              "arabicName": "كونكت بلس (G9) - الدرسان 1 و2: التغيرات (المفردات، قراءة واستماع، مهارات المحادثة، المستقبل المستمر، واختبار شامل)",
-              "path": "Prep_3/unit-2/connect-plus-lesson-1-2.html",
-              "archetype": "curriculum_tabs",
-              "status": "active"
-            }
-          ]
-        },
-        {
-          "id": "unit-3",
-          "slug": "unit-3",
-          "name": "Unit 3: Artificial Intelligence",
-          "arabicName": "الوحدة الثالثة: الذكاء الاصطناعي والتكنولوجيا الحديثة",
-          "icon": "🤖",
-          "indexPath": "Prep_3/unit-3/index.html",
-          "status": "active",
-          "lessons": [
-            {
-              "id": "lesson-1",
-              "slug": "lesson-1.html",
-              "name": "Lessons 1 & 2: Artificial Intelligence & AI Technology (Active & Passive)",
-              "arabicName": "الدرسان 1 و 2: الذكاء الاصطناعي والتكنولوجيا، الأفعال، المتلازمات، القصة، المحادثة، وقواعد المبني للمجهول",
-              "path": "Prep_3/unit-3/lesson-1.html",
-              "archetype": "curriculum_tabs",
-              "status": "active"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "Grade_1",
       "slug": "Grade_1",
       "name": "الصف الأول الابتدائي (Grade 1)",
@@ -556,6 +404,381 @@
       "indexPath": "Prep_2/index.html",
       "status": "locked",
       "units": []
+    },
+    {
+      "id": "Prep_3",
+      "slug": "Prep_3",
+      "name": "الصف الثالث الإعدادي (Prep 3 & Connect Plus)",
+      "category": "المرحلة الإعدادية",
+      "icon": "🏫",
+      "indexPath": "Prep_3/index.html",
+      "status": "active",
+      "units": [
+        {
+          "id": "unit-1",
+          "slug": "unit-1",
+          "name": "Unit 1: Around Town",
+          "arabicName": "الوحدة الأولى: حول المدينة",
+          "indexPath": "Prep_3/unit-1/index.html",
+          "status": "active",
+          "lessons": [
+            {
+              "id": "lesson-1-part-1",
+              "slug": "lesson-1-part-1.html",
+              "title": "Lesson 1 (Part 1): Around Town & Prepositions of Place",
+              "path": "Prep_3/unit-1/lesson-1-part-1.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            },
+            {
+              "id": "lesson-1-part-2",
+              "slug": "lesson-1-part-2.html",
+              "title": "Lesson 1 (Part 2): Around Town & Prepositions of Time",
+              "path": "Prep_3/unit-1/lesson-1-part-2.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            },
+            {
+              "id": "lesson-2",
+              "slug": "lesson-2.html",
+              "title": "Lesson 2: Present Simple for Timetables",
+              "path": "Prep_3/unit-1/lesson-2.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            },
+            {
+              "id": "lesson-3",
+              "slug": "lesson-3.html",
+              "title": "Lesson 3: Public Transport & Adjectives ending in -ed / -ing",
+              "path": "Prep_3/unit-1/lesson-3.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            },
+            {
+              "id": "lesson-5-6",
+              "slug": "lesson-5-6.html",
+              "title": "Lessons 5 & 6: Giving Directions & Writing an Email",
+              "path": "Prep_3/unit-1/lesson-5-6.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            },
+            {
+              "id": "connect-plus-lesson-1",
+              "slug": "connect-plus-lesson-1.html",
+              "title": "Connect Plus - Lesson 1: Smart Habitats & Ecocities",
+              "path": "Prep_3/unit-1/connect-plus-lesson-1.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            },
+            {
+              "id": "connect-plus-lesson-3",
+              "slug": "connect-plus-lesson-3.html",
+              "title": "Connect Plus - Lesson 3: Urban Renewal & Green Architecture",
+              "path": "Prep_3/unit-1/connect-plus-lesson-3.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            },
+            {
+              "id": "connect-plus-lesson-4-5",
+              "slug": "connect-plus-lesson-4-5.html",
+              "title": "Connect Plus - Lessons 4 & 5: Sustainable Communities & Transport",
+              "path": "Prep_3/unit-1/connect-plus-lesson-4-5.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "id": "unit-2",
+          "slug": "unit-2",
+          "name": "Unit 2: Let's Go Shopping",
+          "arabicName": "الوحدة الثانية: لنذهب للتسوق",
+          "indexPath": "Prep_3/unit-2/index.html",
+          "status": "active",
+          "lessons": [
+            {
+              "id": "lesson-1-2",
+              "slug": "lesson-1-2.html",
+              "title": "Lessons 1 & 2: Shopping for Electrical Appliances • Comparatives",
+              "path": "Prep_3/unit-2/lesson-1-2.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            },
+            {
+              "id": "lesson-3",
+              "slug": "lesson-3.html",
+              "title": "Lesson 3: Online Shopping Complaints & Past Simple vs Continuous",
+              "path": "Prep_3/unit-2/lesson-3.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            },
+            {
+              "id": "lesson-4-5",
+              "slug": "lesson-4-5.html",
+              "title": "Lessons 4 & 5: Writing a Review & Product Delivery",
+              "path": "Prep_3/unit-2/lesson-4-5.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            },
+            {
+              "id": "connect-plus-lesson-1-2",
+              "slug": "connect-plus-lesson-1-2.html",
+              "title": "Connect Plus - Lessons 1 & 2: Consumer Psychology & Smart Purchasing",
+              "path": "Prep_3/unit-2/connect-plus-lesson-1-2.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            },
+            {
+              "id": "connect-plus-lesson-3",
+              "slug": "connect-plus-lesson-3.html",
+              "title": "Connect Plus - Lesson 3: E-Commerce Logistics & Global Supply Chains",
+              "path": "Prep_3/unit-2/connect-plus-lesson-3.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            },
+            {
+              "id": "connect-plus-lesson-4-5",
+              "slug": "connect-plus-lesson-4-5.html",
+              "title": "Connect Plus - Lessons 4 & 5: Consumer Rights & Ethical Advertising",
+              "path": "Prep_3/unit-2/connect-plus-lesson-4-5.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "id": "unit-3",
+          "slug": "unit-3",
+          "name": "Unit 3: Artificial Intelligence",
+          "arabicName": "الوحدة الثالثة: الذكاء الاصطناعي والتكنولوجيا الحديثة",
+          "indexPath": "Prep_3/unit-3/index.html",
+          "status": "active",
+          "lessons": [
+            {
+              "id": "lesson-1",
+              "slug": "lesson-1.html",
+              "title": "Lessons 1 & 2: Artificial Intelligence & AI Technology (Active & Passive)",
+              "path": "Prep_3/unit-3/lesson-1.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            },
+            {
+              "id": "lesson-3",
+              "slug": "lesson-3.html",
+              "title": "Lesson 3: A Robot Teacher (AI in the Classroom)",
+              "path": "Prep_3/unit-3/lesson-3.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            },
+            {
+              "id": "lesson-5-6",
+              "slug": "lesson-5-6.html",
+              "title": "Lessons 5 & 6: Let's Talk • Smart Robots (The Future of AI)",
+              "path": "Prep_3/unit-3/lesson-5-6.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            },
+            {
+              "id": "connect-plus-lesson-1-2",
+              "slug": "connect-plus-lesson-1-2.html",
+              "title": "Connect Plus - Lessons 1 & 2: Intelligent Systems, Robotics & Modal Passives",
+              "path": "Prep_3/unit-3/connect-plus-lesson-1-2.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            },
+            {
+              "id": "connect-plus-lesson-3",
+              "slug": "connect-plus-lesson-3.html",
+              "title": "Connect Plus - Lesson 3: The Human Mind vs AI & Impersonal Passives",
+              "path": "Prep_3/unit-3/connect-plus-lesson-3.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            },
+            {
+              "id": "connect-plus-lesson-4-5",
+              "slug": "connect-plus-lesson-4-5.html",
+              "title": "Connect Plus - Lessons 4 & 5: Deep Space Exploration & EgyptSat-2",
+              "path": "Prep_3/unit-3/connect-plus-lesson-4-5.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "id": "unit-4",
+          "slug": "unit-4",
+          "name": "Unit 4: Screen Time",
+          "arabicName": "الوحدة الرابعة: وقت استخدام الشاشات والوعي الرقمي",
+          "indexPath": "Prep_3/unit-4/index.html",
+          "status": "active",
+          "lessons": [
+            {
+              "id": "lesson-1",
+              "slug": "lesson-1.html",
+              "title": "Lessons 1 & 2: Screen Time & Egypt's Smart Future (Modals)",
+              "path": "Prep_3/unit-4/lesson-1.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            },
+            {
+              "id": "lesson-3",
+              "slug": "lesson-3.html",
+              "title": "Lesson 3: Balancing Screen Time (Digital Wellness)",
+              "path": "Prep_3/unit-4/lesson-3.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            },
+            {
+              "id": "lesson-5-6",
+              "slug": "lesson-5-6.html",
+              "title": "Lessons 5 & 6: Let's Talk • Small Change & Connectors",
+              "path": "Prep_3/unit-4/lesson-5-6.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            },
+            {
+              "id": "connect-plus-lesson-1-2",
+              "slug": "connect-plus-lesson-1-2.html",
+              "title": "Connect Plus - Lessons 1 & 2: Digital Footprint, Cyber Safety & Relative Clauses",
+              "path": "Prep_3/unit-4/connect-plus-lesson-1-2.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            },
+            {
+              "id": "connect-plus-lesson-3",
+              "slug": "connect-plus-lesson-3.html",
+              "title": "Connect Plus - Lesson 3: Algorithms, Dopamine Loops & Conditionals",
+              "path": "Prep_3/unit-4/connect-plus-lesson-3.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            },
+            {
+              "id": "connect-plus-lesson-4-5",
+              "slug": "connect-plus-lesson-4-5.html",
+              "title": "Connect Plus - Lessons 4 & 5: Media Ethics, Online Civility & Contrast Connectors",
+              "path": "Prep_3/unit-4/connect-plus-lesson-4-5.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "id": "unit-5",
+          "slug": "unit-5",
+          "name": "Unit 5: Design Thinking",
+          "arabicName": "الوحدة الخامسة: التفكير التصميمي والابتكار",
+          "indexPath": "Prep_3/unit-5/index.html",
+          "status": "active",
+          "lessons": [
+            {
+              "id": "lesson-1",
+              "slug": "lesson-1.html",
+              "title": "Lessons 1 & 2: Think Like a Designer & Sequence Adverbs • Imperative",
+              "path": "Prep_3/unit-5/lesson-1.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            },
+            {
+              "id": "lesson-3",
+              "slug": "lesson-3.html",
+              "title": "Lesson 3: See Through Their Eyes (Empathy & Stop Rules)",
+              "path": "Prep_3/unit-5/lesson-3.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            },
+            {
+              "id": "lesson-5-6",
+              "slug": "lesson-5-6.html",
+              "title": "Lessons 5 & 6: Let's Talk • Active Listening & Writing a Design Review",
+              "path": "Prep_3/unit-5/lesson-5-6.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            },
+            {
+              "id": "connect-plus-lesson-1-2",
+              "slug": "connect-plus-lesson-1-2.html",
+              "title": "Connect Plus - Lessons 1 & 2: Design Thinking & Second Conditional",
+              "path": "Prep_3/unit-5/connect-plus-lesson-1-2.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            },
+            {
+              "id": "connect-plus-lesson-3",
+              "slug": "connect-plus-lesson-3.html",
+              "title": "Connect Plus - Lesson 3: Biomimicry, Nature's Engineering & Third Conditional",
+              "path": "Prep_3/unit-5/connect-plus-lesson-3.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            },
+            {
+              "id": "connect-plus-lesson-4-5",
+              "slug": "connect-plus-lesson-4-5.html",
+              "title": "Connect Plus - Lessons 4 & 5: Frugal Innovation & Gerunds vs Infinitives",
+              "path": "Prep_3/unit-5/connect-plus-lesson-4-5.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "id": "unit-6",
+          "slug": "unit-6",
+          "name": "Unit 6: Why do We Like Stories?",
+          "arabicName": "الوحدة السادسة: لماذا نحب القصص؟",
+          "indexPath": "Prep_3/unit-6/index.html",
+          "status": "active",
+          "lessons": [
+            {
+              "id": "lesson-1",
+              "slug": "lesson-1.html",
+              "title": "Lessons 1 & 2: The Power of Stories & Reported Speech",
+              "path": "Prep_3/unit-6/lesson-1.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            },
+            {
+              "id": "lesson-3",
+              "slug": "lesson-3.html",
+              "title": "Lesson 3: Elements of a Story • The Clever Fox",
+              "path": "Prep_3/unit-6/lesson-3.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            },
+            {
+              "id": "lesson-5-6",
+              "slug": "lesson-5-6.html",
+              "title": "Lessons 5 & 6: Let's Talk • Storytelling & The Dog and His Shadow",
+              "path": "Prep_3/unit-6/lesson-5-6.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            },
+            {
+              "id": "connect-plus-lesson-1-2",
+              "slug": "connect-plus-lesson-1-2.html",
+              "title": "Connect Plus - Lessons 1 & 2: The Art of Storytelling & Past Perfect",
+              "path": "Prep_3/unit-6/connect-plus-lesson-1-2.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            },
+            {
+              "id": "connect-plus-lesson-3",
+              "slug": "connect-plus-lesson-3.html",
+              "title": "Connect Plus - Lesson 3: Egyptian Folk Tales & Reported Speech",
+              "path": "Prep_3/unit-6/connect-plus-lesson-3.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            },
+            {
+              "id": "connect-plus-lesson-4-5",
+              "slug": "connect-plus-lesson-4-5.html",
+              "title": "Connect Plus - Lessons 4 & 5: World Literature & Participle Clauses",
+              "path": "Prep_3/unit-6/connect-plus-lesson-4-5.html",
+              "archetype": "curriculum_tabs",
+              "status": "active"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "Sec_1",
@@ -838,6 +1061,35 @@
               "arabicTitle": "الدروس 4 و 5: اختراع الآلات وكتابة المقال الجدلي",
               "archetype": "curriculum_tabs",
               "path": "Sec_3/unit-2/lesson-4-5.html",
+              "status": "active"
+            }
+          ]
+        },
+        {
+          "id": "unit-3",
+          "slug": "unit-3",
+          "title": "الوحدة الثالثة: Protect Nature, Protect Future",
+          "name": "Unit 3: Protect Nature, Protect Future",
+          "arabicName": "الوحدة الثالثة: حماية الطبيعة وحماية المستقبل",
+          "indexPath": "Sec_3/unit-3/index.html",
+          "status": "active",
+          "lessons": [
+            {
+              "id": "lesson-1-2",
+              "slug": "lesson-1-2.html",
+              "title": "Lessons 1 & 2: Climate Justice & Weather Extremes",
+              "arabicTitle": "الدروس 1 و 2: العدالة المناخية والظواهر الجوية المتطرفة",
+              "archetype": "curriculum_tabs",
+              "path": "Sec_3/unit-3/lesson-1-2.html",
+              "status": "active"
+            },
+            {
+              "id": "lesson-4-5",
+              "slug": "lesson-4-5.html",
+              "title": "Lessons 4 & 5: Rising Seas, Megacities & Persuasive Essay Masterclass",
+              "arabicTitle": "الدروس 4 و 5: ارتفاع منسوب البحار والمدن العملاقة وماستر كلاس المقال الإقناعي",
+              "archetype": "curriculum_tabs",
+              "path": "Sec_3/unit-3/lesson-4-5.html",
               "status": "active"
             }
           ]

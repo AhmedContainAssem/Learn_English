@@ -112,32 +112,37 @@ window.lessonData = {
             {
                 "prefix": "1. The",
                 "correct": "robot",
-                "suffix": "can do dangerous tasks in the factory. (الروبوت ينجز المهام الخطرة في المصانع)",
-                "fullSentence": "The robot can do dangerous tasks in the factory."
+                "suffix": "can do dangerous tasks in the factory.",
+                "fullSentence": "The robot can do dangerous tasks in the factory.",
+                "ar": "يمكن للروبوت إنجاز المهام الخطرة في المصنع."
             },
             {
                 "prefix": "2.",
                 "correct": "Humans",
-                "suffix": "only can have real emotions and empathy. (البشر فقط يمتلكون المشاعر الحقيقية)",
-                "fullSentence": "Humans only can have real emotions and empathy."
+                "suffix": "only can have real emotions and empathy.",
+                "fullSentence": "Humans only can have real emotions and empathy.",
+                "ar": "البشر فقط هم من يمتلكون المشاعر الحقيقية والتعاطف الإنساني."
             },
             {
                 "prefix": "3. Modern sports and AI health apps have many",
                 "correct": "benefits",
-                "suffix": "for your health. (فوائد ومزايا صحية)",
-                "fullSentence": "Modern sports and AI health apps have many benefits for your health."
+                "suffix": "for your health.",
+                "fullSentence": "Modern sports and AI health apps have many benefits for your health.",
+                "ar": "للرياضات الحديثة وتطبيقات الصحة بالذكاء الاصطناعي فوائد ومزايا عديدة لصحتك."
             },
             {
                 "prefix": "4. You should set a time",
                 "correct": "limit",
-                "suffix": "to use the internet on your phone. (حد أقصى للوقت)",
-                "fullSentence": "You should set a time limit to use the internet on your phone."
+                "suffix": "to use the internet on your phone.",
+                "fullSentence": "You should set a time limit to use the internet on your phone.",
+                "ar": "ينبغي عليك وضع حد أقصى للوقت عند استخدام الإنترنت على هاتفك المحمول."
             },
             {
                 "prefix": "5. The teacher gave the creative students 20 minutes to compose their",
                 "correct": "poems",
-                "suffix": "and complete tasks. (قصائد ومهمات)",
-                "fullSentence": "The teacher gave the creative students 20 minutes to compose their poems and complete tasks."
+                "suffix": "and complete tasks.",
+                "fullSentence": "The teacher gave the creative students 20 minutes to compose their poems and complete tasks.",
+                "ar": "منح المعلم الطلاب المبدعين 20 دقيقة لتأليف قصائدهم وإتمام مهامهم."
             }
         ]
     },
@@ -145,86 +150,114 @@ window.lessonData = {
         {
             "word": "machine",
             "pos": "Noun",
-            "meaning": "",
-            "explain": ""
+            "meaning": "آلة - جهاز ميكانيكي أو كهربائي",
+            "explain": "جهاز به أجزاء متحركة يستخدم الطاقة لأداء عمل محدد (A piece of equipment that uses power to perform work).",
+            "example": "Robots are smart machines designed to help humans in industry.",
+            "exampleAr": "الروبوتات هي آلات ذكية مصممة لمساعدة البشر في الصناعة."
         },
         {
             "word": "simple",
             "pos": "Adjective",
-            "meaning": "",
-            "explain": ""
+            "meaning": "بسيط - غير معقد - سهل الفهم",
+            "explain": "سهل ومباشر ولا يحتوي على تعقيدات (Easy to understand or do; not complex).",
+            "example": "Calculators perform simple mathematical operations in seconds.",
+            "exampleAr": "تؤدي الآلات الحاسبة عمليات حسابية بسيطة في ثوانٍ."
         },
         {
             "word": "factory",
             "pos": "Noun",
-            "meaning": "",
-            "explain": ""
+            "meaning": "مصنع - منشأة إنتاجية",
+            "explain": "مبنى أو مجموعة مبانٍ تصنع فيها البضائع بواسطة الآلات والعمال (A building where goods are manufactured).",
+            "example": "Modern car factories rely heavily on automated robotic arms.",
+            "exampleAr": "تعتمد مصانع السيارات الحديثة اعتماداً كبيراً على الأذرع الروبوتية الآلية."
         },
         {
             "word": "surgery",
             "pos": "Noun",
-            "meaning": "",
-            "explain": ""
+            "meaning": "جراحة - عملية جراحية",
+            "explain": "علاج طبي يشمل إجراء عمليات جراحية داخل الجسم (Medical treatment involving cutting open the body to repair damage).",
+            "example": "AI-assisted robots help doctors perform delicate eye surgery.",
+            "exampleAr": "تساعد الروبوتات المدعومة بالذكاء الاصطناعي الأطباء في إجراء جراحات العيون الدقيقة."
         },
         {
             "word": "medicine",
             "pos": "Noun",
-            "meaning": "",
-            "explain": ""
+            "meaning": "دواء - علم الطب",
+            "explain": "العلاج الدوائي أو العلم المعني بصحة الإنسان ومكافحة الأمراض (Substances used to treat illness or the science of healing).",
+            "example": "Artificial intelligence helps scientists invent new medicine faster.",
+            "exampleAr": "يساعد الذكاء الاصطناعي العلماء في ابتكار أدوية جديدة بسرعة أكبر."
         },
         {
             "word": "smart",
             "pos": "Adjective",
-            "meaning": "",
-            "explain": ""
+            "meaning": "ذكي - متصل بالتقنية والإنترنت",
+            "explain": "قادر على معالجة البيانات واتخاذ قرارات باستخدام التكنولوجيا المتقدمة (Using digital technology to act intelligently).",
+            "example": "Smart sensors can control the room temperature automatically.",
+            "exampleAr": "يمكن للمستشعرات الذكية التحكم في درجة حرارة الغرفة تلقائياً."
         },
         {
             "word": "replace",
             "pos": "Verb",
-            "meaning": "",
-            "explain": ""
+            "meaning": "يستبدل - يحل محل",
+            "explain": "أن يحل شيء أو شخص محل آخر (To take the place of something or someone else).",
+            "example": "Robots will not completely replace caring human teachers.",
+            "exampleAr": "لن تحل الروبوتات بالكامل محل المعلمين البشر الذين يتحلون بالرعاية والاهتمام."
         },
         {
             "word": "brain",
             "pos": "Noun",
-            "meaning": "",
-            "explain": ""
+            "meaning": "مخ - دماغ بشري",
+            "explain": "العضو المركزي في الرأس المسؤول عن التفكير والشعور والتحكم في الجسم (The organ in the head that controls body functions and thoughts).",
+            "example": "The human brain has billions of complex connections.",
+            "exampleAr": "يمتلك المخ البشري مليارات من الروابط العصبية المعقدة."
         },
         {
             "word": "follow",
             "pos": "Verb",
-            "meaning": "",
-            "explain": ""
+            "meaning": "يتبع - ينفذ التعليمات",
+            "explain": "الامتثال للأوامر والتعليمات بدقة (To obey rules, directions, or orders).",
+            "example": "Simple machines only follow basic programmed instructions.",
+            "exampleAr": "تتبع الآلات البسيطة التعليمات المبرمجة الأساسية فقط."
         },
         {
             "word": "basic",
             "pos": "Adjective",
-            "meaning": "",
-            "explain": ""
+            "meaning": "أساسي - جوهري - أولي",
+            "explain": "يشكل القاعدة أو البداية البسيطة لشيء ما (Forming the necessary base or foundation of something).",
+            "example": "Learning basic coding helps you understand how AI works.",
+            "exampleAr": "يساعدك تعلم البرمجة الأساسية على فهم كيفية عمل الذكاء الاصطناعي."
         },
         {
             "word": "orders",
             "pos": "Noun",
-            "meaning": "",
-            "explain": ""
+            "meaning": "أوامر - تعليمات إلزامية",
+            "explain": "توجيهات أو طلبات رسمية تلزم بالتنفيذ (Commands or directions given with authority).",
+            "example": "The robot followed all verbal orders given by the supervisor.",
+            "exampleAr": "نفذ الروبوت جميع الأوامر الشفهية التي أصدرها المشرف."
         },
         {
             "word": "program",
             "pos": "Verb / Noun",
-            "meaning": "",
-            "explain": ""
+            "meaning": "يبرمج / برنامج حاسوبي",
+            "explain": "كتابة تعليمات برمجية ليعمل الجهاز بموجبها، أو حزمة البرمجيات (To give instructions to a computer).",
+            "example": "Engineers program machines to work safely in dangerous areas.",
+            "exampleAr": "يبرمج المهندسون الآلات لتعمل بأمان في المناطق الخطرة."
         },
         {
             "word": "action",
             "pos": "Noun",
-            "meaning": "",
-            "explain": ""
+            "meaning": "فعل - حركة - إجراء تنفيذي",
+            "explain": "القيام بنشاط أو رد فعل بدني أو عملي (The process of doing something to achieve an aim).",
+            "example": "The autonomous vehicle took quick action to avoid a sudden collision.",
+            "exampleAr": "اتخذت المركبة ذاتية القيادة إجراءً سريعاً لتفادي الاصطدام المفاجئ."
         },
         {
             "word": "control",
             "pos": "Verb / Noun",
-            "meaning": "",
-            "explain": ""
+            "meaning": "يتحكم في - يسيطر على / تحكم ورقابة",
+            "explain": "القدرة على توجيه مسار أو تشغيل جهاز أو نظام (To direct the behavior or operation of a system).",
+            "example": "Humans will always control and monitor artificial intelligence systems.",
+            "exampleAr": "سيظل البشر دائماً متحكمين في أنظمة الذكاء الاصطناعي ومراقبين لها."
         }
     ],
     "verbs": [
@@ -542,23 +575,29 @@ window.lessonData = {
     "confusionNotes": [
         {
             "titleEn": "surgery vs. surgeon",
-            "titleAr": "علم الجراحة / العملية مقابل الطبيب الجراح",
+            "titleAr": "علم الجراحة / العملية الجراحية مقابل الطبيب الجراح",
             "items": [
                 {
                     "term": "surgery vs. surgeon",
-                    "meaning": "surgery: تعني علم الجراحة أو العملية الجراحية كإجراء طبي. surgeon: هو الطبيب المتخصص في إجراء العمليات الجراحية (طبيب جراح).",
-                    "example": "He specializes in brain surgery. / Dr Magdy Yacoub is a famous Egyptian heart surgeon."
+                    "meaning": "surgery: تعني علم الجراحة أو العملية الجراحية كإجراء طبي ملموس. أما surgeon: فهو الطبيب المتخصص في إجراء العمليات الجراحية (طبيب جراح).",
+                    "examples": [
+                        { "en": "He specializes in delicate brain surgery.", "ar": "هو متخصص في جراحة المخ والأعصاب الدقيقة." },
+                        { "en": "Dr. Magdy Yacoub is a world-famous Egyptian heart surgeon.", "ar": "الدكتور مجدي يعقوب طبيب جراح قلب مصري مشهور عالمياً." }
+                    ]
                 }
             ]
         },
         {
             "titleEn": "allow vs. let",
-            "titleAr": "صيغ التعبير عن الإذن والسماح",
+            "titleAr": "صيغ التعبير عن الإذن والسماح (allow to + inf مقابل let + inf)",
             "items": [
                 {
                     "term": "allow vs. let",
-                    "meaning": "allow + مفعول + to + المصدر: AI allows the robot to make decisions. let + مفعول + المصدر (بدون to): Let me explain this point clearly.",
-                    "example": "The teacher allowed us to leave. / Please let me answer the question."
+                    "meaning": "allow + مفعول + to + المصدر: AI allows the robot to make decisions. أما let + مفعول + المصدر (بدون to): Let me explain this clearly.",
+                    "examples": [
+                        { "en": "The teacher allowed us to leave the classroom early.", "ar": "سمح لنا المعلم بمغادرة الفصل مبكراً (allowed + us + to leave)." },
+                        { "en": "Please let me answer the difficult question.", "ar": "من فضلك دعني أجب عن السؤال الصعب (let + me + answer بدون to)." }
+                    ]
                 }
             ]
         },
@@ -568,30 +607,39 @@ window.lessonData = {
             "items": [
                 {
                     "term": "without + [noun / v-ing]",
-                    "meaning": "يأتي بعد without اسم (Noun) أو فعل مضافاً له (v-ing) ليدل على عدم وجود شيء أو القيام بفعل بدون آخر.",
-                    "example": "Without AI, the robot can only follow basic commands. / He answered without thinking."
+                    "meaning": "يأتي بعد without اسم (Noun) أو فعل مضافاً له (v-ing) ليدل على عدم وجود شيء أو القيام بفعل دون آخر.",
+                    "examples": [
+                        { "en": "Without AI, the robot can only follow basic commands.", "ar": "بدون الذكاء الاصطناعي، يستطيع الروبوت فقط اتباع الأوامر الأساسية." },
+                        { "en": "He answered the exam questions without thinking carefully.", "ar": "أجاب عن أسئلة الامتحان دون تفكير متأنٍ." }
+                    ]
                 }
             ]
         },
         {
             "titleEn": "brain vs. mind",
-            "titleAr": "المخ (عضو مادي) مقابل العقل (القدرة الفكرية)",
+            "titleAr": "المخ كعضو مادي بيولوجي مقابل العقل والقدرة الفكرية",
             "items": [
                 {
                     "term": "brain vs. mind",
-                    "meaning": "brain: المخ كعضو بيولوجي مادي داخل الرأس يتحكم في الحواس. mind: العقل والقدرة على التفكير والتحليل والشعور.",
-                    "example": "Our brains control our senses. / Her mind works wrongly; she never behaves correctly."
+                    "meaning": "brain: المخ كعضو بيولوجي داخل الجمجمة يتحكم في وظائف الجسم والحواس. أما mind: فهو العقل والقدرة الفكرية على التفكير والتحليل والشعور.",
+                    "examples": [
+                        { "en": "Our brains control all our physical senses.", "ar": "أدمغتنا وأمخاخنا تتحكم في جميع حواسنا البدنية." },
+                        { "en": "Keep an open mind when learning about new technology.", "ar": "اجعل عقلك منفتحاً ومستعداً عند التعرف على التكنولوجيا الجديدة." }
+                    ]
                 }
             ]
         },
         {
             "titleEn": "virtual world vs. real world",
-            "titleAr": "العالم الافتراضي مقابل العالم الواقعي",
+            "titleAr": "العالم الافتراضي الرقمي مقابل العالم الواقعي الملموس",
             "items": [
                 {
                     "term": "virtual world vs. real world",
-                    "meaning": "virtual world: العالم الرقمي غير المادي الذي يتم إنشاؤه عبر الإنترنت والحواسيب. real world: العالم الحقيقي الملموس المليء بالأنشطة والتحديات الحقيقية.",
-                    "example": "Most teenagers spend hours in a virtual world. / Our real world needs active work."
+                    "meaning": "virtual world: العالم الرقمي غير المادي المنشأ عبر الإنترنت والواقع الافتراضي. أما real world: فهو العالم الحقيقي الملموس المليء بالأنشطة والتفاعلات الإنسانية الحية.",
+                    "examples": [
+                        { "en": "Most teenagers spend too many hours in a virtual world.", "ar": "يقضي معظم المراهقين ساعات طويلة للغاية داخل العالم الافتراضي." },
+                        { "en": "Our real world needs our active presence and genuine relationships.", "ar": "عالمنا الحقيقي يحتاج إلى حضورنا الفاعل وعلاقاتنا الإنسانية الصادقة." }
+                    ]
                 }
             ]
         }
@@ -1106,393 +1154,7 @@ window.lessonData = {
             "hint": "ممتاز! emotions تعني المشاعر والعواطف (+10)"
         }
     ],
-    "questions": [
-        {
-            "q": "A/An ........ is a machine that can move and do tasks, sometimes following orders.",
-            "options": [
-                "robot",
-                "algorithm",
-                "poem",
-                "emotion"
-            ],
-            "answer": 0,
-            "hint": "ممتاز! robot هو الإنسان الآلي (+10)"
-        },
-        {
-            "q": "Artificial ........ (AI) allows computers and machines to think and make decisions.",
-            "options": [
-                "Intelligence",
-                "Stupidity",
-                "Ignorance",
-                "Emotion"
-            ],
-            "answer": 0,
-            "hint": "أحسنت! Artificial Intelligence تعني الذكاء الاصطناعي (+10)"
-        },
-        {
-            "q": "A special mathematical set of rules used by computers to solve problems is a/an ........ .",
-            "options": [
-                "algorithm",
-                "surgery",
-                "vacuum",
-                "factory"
-            ],
-            "answer": 0,
-            "hint": "رائع! algorithm هي الخوارزمية (+10)"
-        },
-        {
-            "q": "A smart robot ........ cleaner can learn the shape of your room and clean it automatically.",
-            "options": [
-                "vacuum",
-                "factory",
-                "surgeon",
-                "disease"
-            ],
-            "answer": 0,
-            "hint": "صحيح! robot vacuum cleaner هي مكنسة الروبوت (+10)"
-        },
-        {
-            "q": "Smart robots in hospitals can bring medicine to patients and assist during ........ .",
-            "options": [
-                "surgery",
-                "advertisement",
-                "poetry",
-                "traffic"
-            ],
-            "answer": 0,
-            "hint": "ممتاز! surgery تعني عملية جراحية (+10)"
-        },
-        {
-            "q": "Dr Magdy Yacoub is a world-famous Egyptian heart ........ .",
-            "options": [
-                "surgeon",
-                "surgery",
-                "robot",
-                "algorithm"
-            ],
-            "answer": 0,
-            "hint": "أحسنت! surgeon هو الطبيب الجراح (+10)"
-        },
-        {
-            "q": "Advanced AI programs can compose ........ and create beautiful songs.",
-            "options": [
-                "music",
-                "surgery",
-                "vacuum",
-                "machines"
-            ],
-            "answer": 0,
-            "hint": "إجابة صحيحة! compose music تعني يؤلف موسيقى (+10)"
-        },
-        {
-            "q": "Some poets use AI to get creative ideas and write rhyming ........ .",
-            "options": [
-                "poems",
-                "cleaners",
-                "surgeries",
-                "factories"
-            ],
-            "answer": 0,
-            "hint": "ممتاز! poems تعني قصائد شعرية (+10)"
-        },
-        {
-            "q": "A ........ artist created by AI does not exist in the real world.",
-            "options": [
-                "virtual",
-                "natural",
-                "basic",
-                "useless"
-            ],
-            "answer": 0,
-            "hint": "رائع! virtual تعني افتراضي (+10)"
-        },
-        {
-            "q": "In the near future, self-driving cars ........ by millions of commuters.",
-            "options": [
-                "will be used",
-                "will use",
-                "are used",
-                "used"
-            ],
-            "answer": 0,
-            "hint": "بطل! صيغة المبني للمجهول في المستقبل هي will be + p.p. (+10)"
-        },
-        {
-            "q": "Active: He will plant trees. ➔ Passive: Trees ........ (by him).",
-            "options": [
-                "will be planted",
-                "will plant",
-                "were planted",
-                "are planting"
-            ],
-            "answer": 0,
-            "hint": "ممتاز! will be planted هي صيغة المبني للمجهول (+10)"
-        },
-        {
-            "q": "They won't use AI to fix cars. ➔ AI ........ to fix cars by them.",
-            "options": [
-                "won't be used",
-                "won't use",
-                "isn't used",
-                "wasn't used"
-            ],
-            "answer": 0,
-            "hint": "أحسنت! won't be used نفي المجهول في المستقبل (+10)"
-        },
-        {
-            "q": "Will people use self-driving cars? ➔ Will self-driving cars ........ by people?",
-            "options": [
-                "be used",
-                "use",
-                "used",
-                "being used"
-            ],
-            "answer": 0,
-            "hint": "صحيح! صيغة السؤال: Will + obj + be + p.p. (+10)"
-        },
-        {
-            "q": "When will the doctor do the surgery? ➔ When will the surgery ........ by the doctor?",
-            "options": [
-                "be done",
-                "do",
-                "did",
-                "being done"
-            ],
-            "answer": 0,
-            "hint": "ممتاز! be done تصريف ثالث بعد be (+10)"
-        },
-        {
-            "q": "The teacher ........ the students to use their tablets in the lab.",
-            "options": [
-                "allowed",
-                "let",
-                "made",
-                "stopped"
-            ],
-            "answer": 0,
-            "hint": "رائع! allow + مفعول + to + مصدر (+10)"
-        },
-        {
-            "q": "Please ........ me explain the new English lesson clearly.",
-            "options": [
-                "let",
-                "allow",
-                "order",
-                "encourage"
-            ],
-            "answer": 0,
-            "hint": "أحسنت! let + مفعول + مصدر بدون to (+10)"
-        },
-        {
-            "q": "He answered the exam questions without ........ carefully.",
-            "options": [
-                "thinking",
-                "think",
-                "to think",
-                "thought"
-            ],
-            "answer": 0,
-            "hint": "صحيح! without يأتي بعدها اسم أو v-ing (+10)"
-        },
-        {
-            "q": "Our physical ........ is the biological organ inside our head that controls senses.",
-            "options": [
-                "brain",
-                "mind",
-                "surgery",
-                "factory"
-            ],
-            "answer": 0,
-            "hint": "ممتاز! brain هو العضو المادي في الرأس (+10)"
-        },
-        {
-            "q": "The human ........ represents the mental ability to think, reason, and understand.",
-            "options": [
-                "mind",
-                "brain",
-                "robot",
-                "machine"
-            ],
-            "answer": 0,
-            "hint": "رائع! mind هو العقل والقدرة على التفكير (+10)"
-        },
-        {
-            "q": "AI is an assistive tool for people, not a total ........ for human workers.",
-            "options": [
-                "replacement",
-                "algorithm",
-                "factory",
-                "vacuum"
-            ],
-            "answer": 0,
-            "hint": "بطل! replacement تعني بديل (+10)"
-        },
-        {
-            "q": "The synonym of 'advanced' is ........ .",
-            "options": [
-                "developed",
-                "backward",
-                "useless",
-                "cheap"
-            ],
-            "answer": 0,
-            "hint": "ممتاز! مرادف advanced هو developed أو modern (+10)"
-        },
-        {
-            "q": "The antonym of 'advanced' is ........ .",
-            "options": [
-                "backward",
-                "modern",
-                "creative",
-                "smart"
-            ],
-            "answer": 0,
-            "hint": "أحسنت! مضاد متطور هو متخلف backward (+10)"
-        },
-        {
-            "q": "The synonym of 'expensive' is ........ .",
-            "options": [
-                "costly",
-                "cheap",
-                "basic",
-                "simple"
-            ],
-            "answer": 0,
-            "hint": "صحيح! costly تعني باهظ الثمن (+10)"
-        },
-        {
-            "q": "The antonym of 'expensive' is ........ .",
-            "options": [
-                "inexpensive",
-                "costly",
-                "advanced",
-                "vital"
-            ],
-            "answer": 0,
-            "hint": "ممتاز! مضاد غالي هو رخيص: inexpensive أو cheap (+10)"
-        },
-        {
-            "q": "The synonym of 'creative' is ........ .",
-            "options": [
-                "innovative",
-                "boring",
-                "unimaginative",
-                "backward"
-            ],
-            "answer": 0,
-            "hint": "رائع! creative تعني مبتكر ومبدع innovative (+10)"
-        },
-        {
-            "q": "The antonym of 'creative' is ........ .",
-            "options": [
-                "unimaginative",
-                "innovative",
-                "intelligent",
-                "smart"
-            ],
-            "answer": 0,
-            "hint": "أحسنت! مضاد مبدع هو غير إبداعي unimaginative (+10)"
-        },
-        {
-            "q": "The suffix in 'intelligence' is ........ .",
-            "options": [
-                "-ence",
-                "-ness",
-                "-ive",
-                "-less"
-            ],
-            "answer": 0,
-            "hint": "ممتاز! اللاحقة هي -ence وتحول الصفة لاسم (+10)"
-        },
-        {
-            "q": "The suffix in 'behavior' is ........ .",
-            "options": [
-                "-ior",
-                "-tion",
-                "-ness",
-                "-ence"
-            ],
-            "answer": 0,
-            "hint": "صحيح! اللاحقة -ior تحول الفعل لاسم (+10)"
-        },
-        {
-            "q": "The suffix '-less' in 'useless' gives the meaning of ........ .",
-            "options": [
-                "without",
-                "full of",
-                "very much",
-                "able to"
-            ],
-            "answer": 0,
-            "hint": "رائع! اللاحقة -less تعني بدون أو فاقد للشيء (+10)"
-        },
-        {
-            "q": "In healthcare, AI helps doctors by ........ diseases early and accurately.",
-            "options": [
-                "diagnosing",
-                "inventing",
-                "replacing",
-                "ignoring"
-            ],
-            "answer": 0,
-            "hint": "ممتاز! diagnose a disease تعني يشخص مرضاً (+10)"
-        },
-        {
-            "q": "Using automated systems in businesses helps reduce human ........ .",
-            "options": [
-                "errors",
-                "creativity",
-                "benefits",
-                "innovations"
-            ],
-            "answer": 0,
-            "hint": "أحسنت! reduce human errors تعني تقليل الأخطاء البشرية (+10)"
-        },
-        {
-            "q": "Special algorithms can ........ words into realistic digital artwork.",
-            "options": [
-                "turn",
-                "plant",
-                "reduce",
-                "respond"
-            ],
-            "answer": 0,
-            "hint": "صحيح! حرف الجر turn into يعني يحول إلى (+10)"
-        },
-        {
-            "q": "Personalized learning helps students learn at their own pace in ........ .",
-            "options": [
-                "education",
-                "traffic",
-                "surgery",
-                "factories"
-            ],
-            "answer": 0,
-            "hint": "ممتاز! التعليم هو education (+10)"
-        },
-        {
-            "q": "Looking to the future, global climate problems ........ with the help of AI.",
-            "options": [
-                "will be solved",
-                "will solve",
-                "are solving",
-                "solved"
-            ],
-            "answer": 0,
-            "hint": "بطل! المبني للمجهول في المستقبل will be solved (+10)"
-        },
-        {
-            "q": "Unlike robots, human beings can truly feel ........ and share empathy.",
-            "options": [
-                "emotions",
-                "algorithms",
-                "machines",
-                "vacuums"
-            ],
-            "answer": 0,
-            "hint": "ممتاز! emotions تعني المشاعر والعواطف (+10)"
-        }
-    ],
+    "questions": [],
     "totalQuestions": 35,
     "dialogue": {
         "title": "حوار لينا وأدهم حول الذكاء الاصطناعي والإبداع (SB page 44)",
@@ -1581,3 +1243,7 @@ window.lessonData = {
     },
     "grammarContentHtml": "id=\"grammar\" class=\"tab-content\" style=\"display: none;\">\n            <div class=\"section-title\">⚡ قواعد الوحدة: زمن المستقبل البسيط مبني للمعلوم والمجهول (Future Simple: Active & Passive)</div>\n            <div class=\"lesson-desc-display\" style=\"text-align: right; margin-bottom: 24px;\">\n                💡 <strong>مفهوم المبني للمجهول في المستقبل (Future Simple Passive):</strong> يُستخدم لوصف أحداث سوف تقع في المستقبل مع التركيز على الحدث نفسه أو الشيء المتأثر (المفعول به) بدلاً من الفاعل <em>(will be + p.p.)</em>.\n            </div>\n\n            <div class=\"note-card\" style=\"border-color: var(--accent-primary);\">\n                <div class=\"note-header\">\n                    <div class=\"note-title-en\" dir=\"ltr\">Basic Principle of Passive Voice</div>\n                    <div class=\"note-title-ar\">القاعدة الذهبية لتحويل المستقبل للمجهول</div>\n                </div>\n                <div class=\"goes-with-box\" style=\"direction: ltr; text-align: left;\">\n                    <strong style=\"color: var(--accent-green);\">Rule:</strong> In Future Simple Passive, we start with the <strong>Object</strong>, followed by <strong>will be / won't be</strong>, and the <strong>Past Participle (p.p.)</strong> of the main verb:\n                    <div style=\"margin-top: 8px; font-size: 1.15rem; font-weight: 800; color: var(--accent-primary);\">\n                        Object + will be + p.p.... (by + Subject)\n                    </div>\n                </div>\n            </div>\n\n            <h3 class=\"section-subtitle\">جدول المقارنة والتطبيق الشامل لكافة الصيغ (Grammar Reference Table):</h3>\n            <div style=\"overflow-x: auto;\">\n                <table class=\"grammar-table\" dir=\"ltr\">\n                    <thead>\n                        <tr>\n                            <th>Form (الصيغة)</th>\n                            <th>Active Voice (المبني للمعلوم)</th>\n                            <th>Passive Voice (المبني للمجهول)</th>\n                        </tr>\n                    </thead>\n                    <tbody>\n    \n                        <tr>\n                            <td style=\"font-weight: 800; color: var(--accent-orange);\">Affirmative (الإثبات)</td>\n                            <td>\n                                <strong style=\"color: var(--accent-secondary);\">Subject + will + inf....</strong><br>\n                                <span style=\"color: #cbd5e1;\">ex. He will plant trees tomorrow.</span>\n                            </td>\n                            <td>\n                                <strong style=\"color: var(--accent-green);\">Object + will + be + p.p.... (by + agent)</strong><br>\n                                <span style=\"color: #f8fafc; font-weight: 700;\">ex. Trees will be planted (by him) tomorrow.</span>\n                            </td>\n                        </tr>\n        \n                        <tr>\n                            <td style=\"font-weight: 800; color: var(--accent-orange);\">Negative (النفي)</td>\n                            <td>\n                                <strong style=\"color: var(--accent-secondary);\">Subject + won't + inf....</strong><br>\n                                <span style=\"color: #cbd5e1;\">ex. They won't use AI to fix cars.</span>\n                            </td>\n                            <td>\n                                <strong style=\"color: var(--accent-green);\">Object + won't + be + p.p.... (by + agent)</strong><br>\n                                <span style=\"color: #f8fafc; font-weight: 700;\">ex. AI won't be used to fix cars by them.</span>\n                            </td>\n                        </tr>\n        \n                        <tr>\n                            <td style=\"font-weight: 800; color: var(--accent-orange);\">Yes / No Question (السؤال بـ هل)</td>\n                            <td>\n                                <strong style=\"color: var(--accent-secondary);\">Will + subject + inf....?</strong><br>\n                                <span style=\"color: #cbd5e1;\">ex. Will people use self-driving cars in the future?</span>\n                            </td>\n                            <td>\n                                <strong style=\"color: var(--accent-green);\">Will + Object + be + p.p....?</strong><br>\n                                <span style=\"color: #f8fafc; font-weight: 700;\">ex. Will self-driving cars be used in the future (by people)?</span>\n                            </td>\n                        </tr>\n        \n                        <tr>\n                            <td style=\"font-weight: 800; color: var(--accent-orange);\">Wh- Question (السؤال بأداة الاستفهام)</td>\n                            <td>\n                                <strong style=\"color: var(--accent-secondary);\">Q.W. + will + subject + inf....?</strong><br>\n                                <span style=\"color: #cbd5e1;\">ex. When will the doctor do the surgery?</span>\n                            </td>\n                            <td>\n                                <strong style=\"color: var(--accent-green);\">Q.W. + will + Object + be + p.p....?</strong><br>\n                                <span style=\"color: #f8fafc; font-weight: 700;\">ex. When will the surgery be done (by the doctor)?</span>\n                            </td>\n                        </tr>\n        \n                    </tbody>\n                </table>\n            </div>\n\n            <h3 class=\"section-subtitle\" style=\"margin-top: 36px;\">ملاحظات ونماذج إضافية موضع الامتحان:</h3>\n            <div class=\"cards-grid grid-cards\">\n                <div class=\"card\" onclick=\"playSound('click')\">\n                    <div class=\"card-header\">\n                        <span class=\"tag-badge\">Example 1</span>\n                        <div class=\"word-en\" dir=\"ltr\">Hospitals & AI</div>\n                    </div>\n                    <div class=\"card-body\">\n                        <div style=\"direction: ltr; text-align: left; margin-bottom: 6px;\">\n                            <strong>Active:</strong> Doctors will perform surgery with smart robots.\n                        </div>\n                        <div style=\"direction: ltr; text-align: left; color: var(--accent-green); font-weight: 700;\">\n                            <strong>Passive:</strong> Surgery will be performed with smart robots (by doctors).\n                        </div>\n                    </div>\n                </div>\n\n                <div class=\"card\" onclick=\"playSound('click')\">\n                    <div class=\"card-header\">\n                        <span class=\"tag-badge\">Example 2</span>\n                        <div class=\"word-en\" dir=\"ltr\">Schools & Language</div>\n                    </div>\n                    <div class=\"card-body\">\n                        <div style=\"direction: ltr; text-align: left; margin-bottom: 6px;\">\n                            <strong>Active:</strong> Students will learn new languages using AI apps.\n                        </div>\n                        <div style=\"direction: ltr; text-align: left; color: var(--accent-green); font-weight: 700;\">\n                            <strong>Passive:</strong> New languages will be learned using AI apps.\n                        </div>\n                    </div>\n                </div>\n\n                <div class=\"card\" onclick=\"playSound('click')\">\n                    <div class=\"card-header\">\n                        <span class=\"tag-badge\">Example 3</span>\n                        <div class=\"word-en\" dir=\"ltr\">Business & Automation</div>\n                    </div>\n                    <div class=\"card-body\">\n                        <div style=\"direction: ltr; text-align: left; margin-bottom: 6px;\">\n                            <strong>Active:</strong> Smart systems will automate repetitive tasks.\n                        </div>\n                        <div style=\"direction: ltr; text-align: left; color: var(--accent-green); font-weight: 700;\">\n                            <strong>Passive:</strong> Repetitive tasks will be automated by smart systems.\n                        </div>\n                    </div>\n                </div>\n\n                <div class=\"card\" onclick=\"playSound('click')\">\n                    <div class=\"card-header\">\n                        <span class=\"tag-badge\">Example 4</span>\n                        <div class=\"word-en\" dir=\"ltr\">Environment & Climate</div>\n                    </div>\n                    <div class=\"card-body\">\n                        <div style=\"direction: ltr; text-align: left; margin-bottom: 6px;\">\n                            <strong>Active:</strong> Scientists will solve global energy problems.\n                        </div>\n                        <div style=\"direction: ltr; text-align: left; color: var(--accent-green); font-weight: 700;\">\n                            <strong>Passive:</strong> Global energy problems will be solved with AI.\n                        </div>\n                    </div>\n                </div>\n            </div>"
 };
+
+if (window.lessonData && (!window.lessonData.questions || window.lessonData.questions.length === 0)) {
+    window.lessonData.questions = window.lessonData.quiz;
+}
